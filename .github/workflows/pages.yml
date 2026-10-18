@@ -18,9 +18,20 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Check content
+        run: node tools/validate.mjs && node tools/build.mjs --check
+      - name: Collect site files
+        run: |
+          mkdir -p _site/content
+          cp -r index.html privacy.html manifest.json sw.js css js icons screenshots _site/
+          cp -r content/catalog.js content/placement.js content/levels _site/content/
+          touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: .
+          path: _site
       - id: deployment
         uses: actions/deploy-pages@v4

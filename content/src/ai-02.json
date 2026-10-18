@@ -1,0 +1,371 @@
+{
+  "id": "ai-02",
+  "topic": "aihear",
+  "title": "Why We Started AIHEAR",
+  "titleTr": "AIHEAR'ı Neden Kurduk",
+  "levels": {
+    "A1": {
+      "intro": "Şirketini neden kurduğunu çok basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "en": "One in five people has some hearing loss.", "tr": "Her beş kişiden birinde bir miktar işitme kaybı var." },
+        { "en": "But many of them never have a hearing test.", "tr": "Ama birçoğu hiç işitme testi yaptırmıyor." },
+        { "en": "There are not enough experts to do the tests.", "tr": "Testleri yapacak yeterli uzman yok." },
+        { "en": "In small towns, people wait months for a test.", "tr": "Küçük kasabalarda insanlar bir test için aylarca bekliyor." },
+        { "en": "Our idea is simple: a machine can do the test.", "tr": "Fikrimiz basit: bir makine bu testi yapabilir." },
+        { "en": "That idea is now AIHEAR.", "tr": "O fikir bugün AIHEAR." },
+        { "en": "We want hearing tests for everyone, everywhere.", "tr": "Herkes için, her yerde işitme testi istiyoruz." },
+        { "en": "We are from Turkey, but the problem is global.", "tr": "Türkiye'deniz ama sorun küresel." }
+      ],
+      "vocab": [
+        { "en": "hearing loss", "tr": "işitme kaybı", "ex": "Many people have hearing loss." },
+        { "en": "expert", "tr": "uzman", "ex": "There are not enough experts." },
+        { "en": "small town", "tr": "küçük kasaba", "ex": "People in small towns wait a long time." },
+        { "en": "wait for", "tr": "...i beklemek", "ex": "People wait months for a test." },
+        { "en": "machine", "tr": "makine", "ex": "A machine can do the test." },
+        { "en": "global", "tr": "küresel", "ex": "The problem is global." }
+      ],
+      "grammar": {
+        "title": "There is / there are",
+        "tr": "Bir şeyin var olup olmadığını söylerken 'there is' (tekil) ve 'there are' (çoğul) kullanılır. Olumsuzu: there is not / there are not.",
+        "examples": ["There are not enough experts.", "There is a simple idea.", "There are many small towns in Turkey."]
+      },
+      "questions": [
+        { "q": "How many people have some hearing loss?", "options": ["One in five", "One in fifty", "One in a hundred"], "a": 0 },
+        { "q": "Why do many people never have a test?", "options": ["The test is too long", "There are not enough experts", "They do not want a test"], "a": 1 },
+        { "q": "Where is the company from?", "options": ["Germany", "The USA", "Turkey"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "One in five people has some hearing ___.", "a": "loss", "hint": "kayıp" },
+        { "s": "There are not enough ___ to do the tests.", "a": "experts", "hint": "uzmanlar" },
+        { "s": "We are from Turkey, but the problem is ___.", "a": "global", "hint": "küresel" }
+      ],
+      "order": [
+        { "a": "There are not enough experts to do the tests." },
+        { "a": "We want hearing tests for everyone." }
+      ],
+      "translate": [
+        { "tr": "Sorun küresel.", "en": "The problem is global.", "keys": ["problem", "global"] },
+        { "tr": "Biz Türkiye'deniz.", "en": "We are from Turkey.", "keys": ["from Turkey"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir teknoloji gazetecisi kısa bir röportajda AIHEAR'ın hikâyesini soruyor.",
+        "turns": [
+          { "ai": "What is the problem?", "aiTr": "Sorun ne?", "hint": "One in five people has hearing loss, but there are not enough experts.", "keys": ["hearing loss", "experts", "not enough"] },
+          { "ai": "What is your idea?", "aiTr": "Fikriniz ne?", "hint": "A machine can do the hearing test.", "keys": ["machine", "test"] },
+          { "ai": "Where is your company from?", "aiTr": "Şirketiniz nereden?", "hint": "We are from Turkey, but the problem is global.", "keys": ["Turkey", "global"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Kuruluş hikayeni anlatmak: sorun, fikir ve misyon.",
+      "text": [
+        { "en": "Around the world, more than one billion people have some hearing loss.", "tr": "Dünya genelinde bir milyardan fazla insanın bir miktar işitme kaybı var." },
+        { "en": "Many of them never get a hearing test because there are not enough experts.", "tr": "Birçoğu hiç işitme testi yaptırmıyor, çünkü yeterli uzman yok." },
+        { "en": "In small towns, people sometimes wait months for an appointment.", "tr": "Küçük kasabalarda insanlar bazen randevu için aylarca bekliyor." },
+        { "en": "We saw this problem and asked a simple question.", "tr": "Bu sorunu gördük ve basit bir soru sorduk." },
+        { "en": "What if a machine could do the test without an expert?", "tr": "Ya bir makine testi uzman olmadan yapabilseydi?" },
+        { "en": "That question became AIHEAR.", "tr": "O soru AIHEAR'a dönüştü." },
+        { "en": "Our mission is to make hearing tests accessible to everyone, everywhere.", "tr": "Misyonumuz işitme testlerini herkes için, her yerde erişilebilir kılmak." },
+        { "en": "We started in Turkey, but the problem is global, so our market is too.", "tr": "Türkiye'de başladık ama sorun küresel, bu yüzden pazarımız da öyle." }
+      ],
+      "vocab": [
+        { "en": "hearing loss", "tr": "işitme kaybı", "ex": "Many people have hearing loss." },
+        { "en": "appointment", "tr": "randevu", "ex": "People wait months for an appointment." },
+        { "en": "What if...?", "tr": "Ya ... olsaydı?", "ex": "What if a machine could do the test?" },
+        { "en": "mission", "tr": "misyon, amaç", "ex": "Our mission is to help people hear." },
+        { "en": "accessible", "tr": "erişilebilir", "ex": "We want to make hearing tests accessible." },
+        { "en": "everyone, everywhere", "tr": "herkes, her yerde", "ex": "Hearing tests should be for everyone, everywhere." },
+        { "en": "global", "tr": "küresel", "ex": "The problem is global." },
+        { "en": "market", "tr": "pazar", "ex": "Our market is global." }
+      ],
+      "grammar": {
+        "title": "Past simple: our story",
+        "tr": "Geçmişte bitmiş olayları anlatırken past simple kullanılır. Düzenli fiiller -ed alır (asked, started), düzensiz fiiller değişir (see → saw, become → became).",
+        "examples": ["We saw this problem.", "We asked a simple question.", "That question became AIHEAR."]
+      },
+      "questions": [
+        { "q": "How many people have some hearing loss?", "options": ["One million", "Ten thousand", "More than one billion"], "a": 2 },
+        { "q": "Why do many people never get a test?", "options": ["There are not enough experts", "Tests are too easy", "They don't want one"], "a": 0 },
+        { "q": "What is AIHEAR's mission?", "options": ["To sell headphones", "To make hearing tests accessible to everyone", "To open hospitals"], "a": 1 },
+        { "q": "Where did the company start?", "options": ["Germany", "Turkey", "The USA"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "People sometimes wait months for an ___.", "a": "appointment", "hint": "randevu" },
+        { "s": "Our ___ is to make hearing tests accessible.", "a": "mission", "hint": "misyon" },
+        { "s": "The problem is ___, so our market is too.", "a": "global", "hint": "küresel" }
+      ],
+      "order": [
+        { "a": "That question became AIHEAR." },
+        { "a": "There are not enough experts." }
+      ],
+      "translate": [
+        { "tr": "Sorun küresel.", "en": "The problem is global.", "keys": ["problem", "global"] },
+        { "tr": "Biz Türkiye'de başladık.", "en": "We started in Turkey.", "keys": ["started", "Turkey"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir teknoloji gazetecisi kısa bir röportaj için şirketin hikayesini soruyor.",
+        "turns": [
+          { "ai": "Why did you start AIHEAR? What was the problem?", "aiTr": "AIHEAR'ı neden kurdunuz? Sorun neydi?", "hint": "More than one billion people have hearing loss, but there are not enough experts.", "keys": ["hearing loss", "experts", "not enough"] },
+          { "ai": "So what was your idea?", "aiTr": "Peki fikriniz neydi?", "hint": "We asked: what if a machine could do the test without an expert?", "keys": ["what if", "machine", "without"] },
+          { "ai": "What is your mission today?", "aiTr": "Bugünkü misyonunuz ne?", "hint": "Our mission is to make hearing tests accessible to everyone, everywhere.", "keys": ["mission", "accessible", "everyone"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Kuruluş hikâyeni anlatıyorsun: sorun, fikir, ekip ve misyon.",
+      "text": [
+        { "en": "About one in five people in the world, over a billion in total, has some hearing loss.", "tr": "Dünyada her beş kişiden biri, yani toplamda bir milyardan fazla insan, bir miktar işitme kaybı yaşıyor." },
+        { "en": "However, most of them have never had a hearing test.", "tr": "Ancak bunların çoğu hiç işitme testi yaptırmadı." },
+        { "en": "The main reason is simple: there aren't enough audiologists.", "tr": "Asıl neden basit: yeterli odyolog yok." },
+        { "en": "In small towns, people often have to wait months for an appointment.", "tr": "Küçük kasabalarda insanlar bir randevu için çoğu zaman aylarca beklemek zorunda kalıyor." },
+        { "en": "When we saw this, we asked ourselves a simple question.", "tr": "Bunu görünce kendimize basit bir soru sorduk." },
+        { "en": "What if a machine could do the test without an expert in the room?", "tr": "Ya bir makine bu testi odada bir uzman olmadan yapabilseydi?" },
+        { "en": "That question became AIHEAR, and it has guided everything we've done since.", "tr": "O soru AIHEAR'a dönüştü ve o günden beri yaptığımız her şeye yön verdi." },
+        { "en": "Today we are a team of six: three engineers, one doctor and two business people.", "tr": "Bugün altı kişilik bir ekibiz: üç mühendis, bir doktor ve iki iş insanı." },
+        { "en": "Our mission is to make hearing tests accessible to everyone, everywhere.", "tr": "Misyonumuz işitme testlerini herkes için, her yerde erişilebilir kılmak." },
+        { "en": "That's why, although we started in Turkey, we've always seen our market as global.", "tr": "Bu yüzden Türkiye'de başlamış olsak da pazarımızı her zaman küresel olarak gördük." }
+      ],
+      "vocab": [
+        { "en": "hearing loss", "tr": "işitme kaybı", "ex": "One in five people has some hearing loss.", "def": "when a person cannot hear as well as normal" },
+        { "en": "audiologist", "tr": "odyolog", "ex": "There aren't enough audiologists.", "def": "a specialist who tests and treats hearing problems" },
+        { "en": "wait months for", "tr": "...için aylarca beklemek", "ex": "People wait months for an appointment.", "def": "to wait a very long time for something" },
+        { "en": "appointment", "tr": "randevu", "ex": "It's hard to get an appointment in a small town.", "def": "a fixed time to see a doctor or other professional" },
+        { "en": "What if...?", "tr": "Ya ... olsaydı?", "ex": "What if a machine could do the test?", "def": "used to imagine a possible situation" },
+        { "en": "guide", "tr": "yön vermek", "ex": "That question has guided everything we've done.", "def": "to influence or direct someone's decisions" },
+        { "en": "accessible", "tr": "erişilebilir", "ex": "We want to make hearing tests accessible to everyone.", "def": "easy to get or use" },
+        { "en": "see something as", "tr": "...olarak görmek", "ex": "We've always seen our market as global.", "def": "to think of something in a particular way" }
+      ],
+      "grammar": {
+        "title": "Present perfect vs past simple",
+        "tr": "Geçmişte belirli bir anda olan olaylar için past simple kullanılır (We started in Turkey). Şimdiye kadarki deneyimler ve bugüne uzanan durumlar için present perfect kullanılır (Most of them have never had a test).",
+        "examples": ["Most of them have never had a hearing test.", "When we saw this, we asked a simple question.", "That question has guided everything we've done since."]
+      },
+      "questions": [
+        { "q": "What is the main reason people don't get tested?", "options": ["The test is too expensive", "There aren't enough audiologists", "People don't care about hearing"], "a": 1 },
+        { "q": "What problem do people in small towns have?", "options": ["They wait months for an appointment", "They have no doctors at all", "They have to travel abroad"], "a": 0 },
+        { "q": "Who is in the AIHEAR team?", "options": ["Six engineers", "Two doctors and four engineers", "Three engineers, one doctor and two business people"], "a": 2 },
+        { "q": "How does the company see its market?", "options": ["As only Turkish", "As global", "As only European"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Most of them have never ___ a hearing test.", "a": "had", "hint": "yaptırmak (V3)" },
+        { "s": "The main reason is simple: there aren't enough ___.", "a": "audiologists", "hint": "odyolog" },
+        { "s": "Our mission is to make hearing tests ___ to everyone.", "a": "accessible", "hint": "erişilebilir" }
+      ],
+      "order": [
+        { "a": "What if a machine could do the test?" },
+        { "a": "Most of them have never had a hearing test." }
+      ],
+      "translate": [
+        { "tr": "Çoğu insan hiç işitme testi yaptırmadı.", "en": "Most people have never had a hearing test.", "keys": ["never had", "hearing test"] },
+        { "tr": "Pazarımızı her zaman küresel olarak gördük.", "en": "We have always seen our market as global.", "keys": ["always seen", "market", "global"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir teknoloji gazetecisi röportaj için AIHEAR'ın kuruluş hikâyesini soruyor.",
+        "turns": [
+          { "ai": "Why did you start AIHEAR? What problem did you see?", "aiTr": "AIHEAR'ı neden kurdunuz? Nasıl bir sorun gördünüz?", "hint": "One in five people has some hearing loss, but most of them have never had a test because there aren't enough audiologists.", "keys": ["hearing loss", "never had", "audiologists"] },
+          { "ai": "Is it really that hard to get a test?", "aiTr": "Test yaptırmak gerçekten o kadar zor mu?", "hint": "Yes, in small towns people often have to wait months for an appointment.", "keys": ["small towns", "months", "appointment"] },
+          { "ai": "So where did the idea come from?", "aiTr": "Peki fikir nereden çıktı?", "hint": "We asked ourselves: what if a machine could do the test without an expert?", "keys": ["what if", "machine", "without an expert"] },
+          { "ai": "And what's your mission today?", "aiTr": "Peki bugünkü misyonunuz ne?", "hint": "Our mission is to make hearing tests accessible to everyone, everywhere.", "keys": ["mission", "accessible", "everyone"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir röportajda şirketin hikâyesini ve misyonunu akıcı ve ikna edici biçimde anlatıyorsun.",
+      "text": [
+        { "en": "Roughly one in five people worldwide, well over a billion, lives with some degree of hearing loss.", "tr": "Dünya genelinde kabaca her beş kişiden biri, yani bir milyarı rahatça aşan sayıda insan, bir derece işitme kaybıyla yaşıyor." },
+        { "en": "Yet the vast majority of them are never tested, largely because there simply aren't enough audiologists to go around.", "tr": "Yine de bunların büyük çoğunluğu hiç test edilmiyor; bunun başlıca nedeni de herkese yetecek kadar odyolog olmaması." },
+        { "en": "In smaller towns, it isn't unusual for people to wait several months just to get an appointment.", "tr": "Daha küçük kasabalarda insanların sırf randevu alabilmek için birkaç ay beklemesi alışılmadık bir durum değil." },
+        { "en": "By the time they're finally seen, the problem has often been affecting their work and relationships for years.", "tr": "Sonunda muayene olduklarında, sorun çoğu zaman yıllardır işlerini ve ilişkilerini etkiliyor oluyor." },
+        { "en": "Looking at this, we kept coming back to one question.", "tr": "Buna bakınca sürekli aynı soruya geri döndük." },
+        { "en": "What if the test could be carried out by a machine, without an expert having to be in the room?", "tr": "Ya test, odada bir uzmanın bulunmasına gerek kalmadan bir makine tarafından yapılabilseydi?" },
+        { "en": "That question is what AIHEAR was built on.", "tr": "AIHEAR'ın üzerine kurulduğu şey işte bu soru." },
+        { "en": "Today we're a team of six, which is made up of three engineers, a doctor and two business people.", "tr": "Bugün üç mühendis, bir doktor ve iki iş insanından oluşan altı kişilik bir ekibiz." },
+        { "en": "Our mission, put simply, is to make hearing tests accessible to everyone, wherever they live.", "tr": "Kısaca söylemek gerekirse misyonumuz, işitme testlerini nerede yaşarlarsa yaşasınlar herkes için erişilebilir kılmak." },
+        { "en": "We started in Turkey, but since the problem is global, it seems natural that our market should be too.", "tr": "Türkiye'de başladık ama sorun küresel olduğu için pazarımızın da öyle olması doğal görünüyor." },
+        { "en": "If hearing tests were as easy to get as a blood pressure check, I'd say we would have done our job.", "tr": "İşitme testi yaptırmak tansiyon ölçtürmek kadar kolay olsaydı, bence işimizi yapmış olurduk." }
+      ],
+      "vocab": [
+        { "en": "live with", "tr": "...ile yaşamak", "ex": "Millions of people live with hearing loss.", "def": "to have a condition that continues for a long time" },
+        { "en": "the vast majority", "tr": "büyük çoğunluk", "ex": "The vast majority of them are never tested.", "def": "almost all of a group" },
+        { "en": "to go around", "tr": "herkese yetecek kadar", "ex": "There aren't enough audiologists to go around.", "def": "enough for everyone who needs it" },
+        { "en": "it isn't unusual for", "tr": "...alışılmadık bir durum değil", "ex": "It isn't unusual for people to wait months.", "def": "used to say that something happens quite often" },
+        { "en": "keep coming back to", "tr": "sürekli ...e geri dönmek", "ex": "We kept coming back to one question.", "def": "to return to the same idea again and again" },
+        { "en": "be built on", "tr": "...üzerine kurulmak", "ex": "AIHEAR was built on a simple question.", "def": "to have something as its base or starting point" },
+        { "en": "be made up of", "tr": "...den oluşmak", "ex": "Our team is made up of six people.", "def": "to consist of particular parts or people" },
+        { "en": "put simply", "tr": "kısaca söylemek gerekirse", "ex": "Put simply, we want everyone to get tested.", "def": "said in an easy, clear way" }
+      ],
+      "grammar": {
+        "title": "Passive: telling the company story",
+        "tr": "Eylemi yapanın değil, eylemin önemli olduğu durumlarda passive kullanılır: be + V3. Şirket hikâyesini anlatırken olayları daha nesnel gösterir.",
+        "examples": ["The vast majority of them are never tested.", "What if the test could be carried out by a machine?", "That question is what AIHEAR was built on."]
+      },
+      "questions": [
+        { "q": "Why are most people with hearing loss never tested?", "options": ["Tests are too dangerous", "There aren't enough audiologists to go around", "Hearing loss is very rare"], "a": 1 },
+        { "q": "What does the speaker say about small towns?", "options": ["People often wait months for an appointment", "Every town has an audiologist", "Tests there are free"], "a": 0 },
+        { "q": "Who is on the team?", "options": ["Six engineers", "Two doctors and four engineers", "Three engineers, a doctor and two business people"], "a": 2 },
+        { "q": "What does the blood pressure comparison suggest?", "options": ["The company also wants to measure blood pressure", "They want hearing tests to become routine and easy to get", "Blood pressure checks are too expensive"], "a": 1 },
+        { "q": "Why does the speaker think the market should be global?", "options": ["Turkey is too small", "Investors asked for it", "The team lives abroad", "The problem itself is global"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "There simply aren't enough audiologists to go ___.", "a": "around", "hint": "herkese yetecek kadar" },
+        { "s": "That question is what AIHEAR was built ___.", "a": "on", "hint": "üzerine kurulmak" },
+        { "s": "Our team is made ___ of three engineers, a doctor and two business people.", "a": "up", "hint": "oluşmak" }
+      ],
+      "order": [
+        { "a": "The vast majority of them are never tested." },
+        { "a": "That question is what AIHEAR was built on." }
+      ],
+      "translate": [
+        { "tr": "Herkese yetecek kadar odyolog yok.", "en": "There aren't enough audiologists to go around.", "keys": ["enough audiologists", "to go around"] },
+        { "tr": "Ekibimiz altı kişiden oluşuyor.", "en": "Our team is made up of six people.", "keys": ["made up of", "six people"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir teknoloji dergisinden bir gazeteci, AIHEAR'ın neden var olduğunu sorguluyor.",
+        "turns": [
+          { "ai": "Hearing loss isn't usually seen as a big problem, so why build a company around it?", "aiTr": "İşitme kaybı genelde büyük bir sorun olarak görülmez; neden bunun üzerine bir şirket kurdunuz?", "hint": "Because one in five people lives with some hearing loss, yet the vast majority are never tested.", "keys": ["one in five", "never tested", "vast majority"] },
+          { "ai": "And why aren't they tested?", "aiTr": "Peki neden test edilmiyorlar?", "hint": "Mainly because there aren't enough audiologists to go around, so in small towns people wait months for an appointment.", "keys": ["audiologists", "to go around", "months"] },
+          { "ai": "Where did the idea for AIHEAR actually come from?", "aiTr": "AIHEAR fikri aslında nereden çıktı?", "hint": "We kept coming back to one question: what if the test could be carried out by a machine, without an expert in the room?", "keys": ["what if", "machine", "without an expert"] },
+          { "ai": "If you had to sum up your mission in one sentence, what would it be?", "aiTr": "Misyonunuzu tek cümleyle özetlemeniz gerekse, ne olurdu?", "hint": "Put simply, it would be to make hearing tests accessible to everyone, wherever they live.", "keys": ["accessible", "everyone", "wherever"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Kuruluş hikâyeni, vurgulu yapılar ve ölçülü bir dille deneyimli bir gazeteciye anlatıyorsun.",
+      "text": [
+        { "en": "Roughly one in five people on the planet lives with some degree of hearing loss, which adds up to well over a billion.", "tr": "Dünyada kabaca her beş kişiden biri bir derece işitme kaybıyla yaşıyor; bu da bir milyarı rahatça aşan bir sayı ediyor." },
+        { "en": "What struck us wasn't the number itself but how few of those people ever get tested.", "tr": "Bizi asıl çarpan rakamın kendisi değil, bu insanların ne kadar azının test yaptırdığıydı." },
+        { "en": "The bottleneck isn't the technology; it's the chronic shortage of audiologists.", "tr": "Darboğaz teknoloji değil; kronik odyolog eksikliği." },
+        { "en": "Outside the big cities, waiting several months for an appointment is not the exception but the rule.", "tr": "Büyük şehirlerin dışında bir randevu için birkaç ay beklemek istisna değil, kural." },
+        { "en": "Faced with that, we kept circling back to one deceptively simple question.", "tr": "Bununla karşılaşınca, aldatıcı derecede basit bir soruya sürekli geri döndük." },
+        { "en": "What if the test itself could be run by a machine, with no expert needing to be in the room?", "tr": "Ya testin kendisi, odada bir uzmanın bulunmasına gerek kalmadan bir makine tarafından yapılabilseydi?" },
+        { "en": "That question is, in a very real sense, what AIHEAR was built on.", "tr": "Bu soru, gerçek anlamda AIHEAR'ın üzerine kurulduğu şey." },
+        { "en": "We're now a team of six, and the mix is deliberate: three engineers, a doctor and two people on the business side.", "tr": "Şu an altı kişilik bir ekibiz ve bu karışım bilinçli: üç mühendis, bir doktor ve iş tarafında iki kişi." },
+        { "en": "Our mission is to make hearing tests accessible to everyone, regardless of where they happen to live.", "tr": "Misyonumuz, işitme testlerini insanlar nerede yaşıyor olursa olsun herkes için erişilebilir kılmak." },
+        { "en": "Not only is the problem far from unique to Turkey, but it is arguably most acute where healthcare is stretched thinnest.", "tr": "Sorun Türkiye'ye özgü olmaktan çok uzak olmakla kalmıyor, sağlık sisteminin en zorlandığı yerlerde belki de en ağır hâlini alıyor." },
+        { "en": "That's why, although we started in Turkey, we've always seen the market as global.", "tr": "Bu yüzden Türkiye'de başlamış olsak da pazarı her zaman küresel olarak gördük." }
+      ],
+      "vocab": [
+        { "en": "add up to", "tr": "toplamda ... etmek", "ex": "One in five people adds up to over a billion.", "def": "to make a particular total" },
+        { "en": "what struck us", "tr": "bizi asıl çarpan şey", "ex": "What struck us was how few people get tested.", "def": "the thing that made a strong impression on us" },
+        { "en": "bottleneck", "tr": "darboğaz", "ex": "The real bottleneck is the shortage of audiologists.", "def": "something that slows down or limits a process" },
+        { "en": "chronic shortage", "tr": "kronik eksiklik", "ex": "There is a chronic shortage of audiologists.", "def": "a lack of something that continues for a long time" },
+        { "en": "not the exception but the rule", "tr": "istisna değil, kural", "ex": "Long waits are not the exception but the rule.", "def": "something that is normal, not unusual" },
+        { "en": "circle back to", "tr": "...e geri dönmek", "ex": "We kept circling back to the same question.", "def": "to return to a topic again" },
+        { "en": "in a very real sense", "tr": "gerçek anlamda", "ex": "In a very real sense, that question built the company.", "def": "used to say that something is true in an important way" },
+        { "en": "regardless of", "tr": "...e bakılmaksızın", "ex": "Everyone should get tested, regardless of where they live.", "def": "without being affected by something" },
+        { "en": "far from unique to", "tr": "...e özgü olmaktan çok uzak", "ex": "The problem is far from unique to Turkey.", "def": "definitely not found in only one place" },
+        { "en": "stretched thin", "tr": "kaynakları çok zorlanmış", "ex": "Healthcare is stretched thinnest in rural areas.", "def": "having too few resources for what is needed" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences for emphasis",
+        "tr": "Cleft cümleler (What ... was ... / It's ... that ...) bir bilgiyi öne çıkarıp vurgular. Hikâye anlatırken dinleyicinin dikkatini asıl noktaya çeker.",
+        "examples": ["What struck us wasn't the number itself but how few people get tested.", "That question is what AIHEAR was built on.", "It's the shortage of audiologists that creates the bottleneck."]
+      },
+      "questions": [
+        { "q": "What surprised the founders most?", "options": ["The number of people with hearing loss", "How few people with hearing loss ever get tested", "The cost of hearing aids"], "a": 1 },
+        { "q": "According to the speaker, what is the real bottleneck?", "options": ["A chronic shortage of audiologists", "The technology", "The price of headphones"], "a": 0 },
+        { "q": "What does 'not the exception but the rule' imply about waiting times?", "options": ["Long waits are rare", "Only big cities have long waits", "Long waits are normal outside big cities"], "a": 2 },
+        { "q": "Why does the speaker describe the team mix as 'deliberate'?", "options": ["It happened by accident", "It was chosen on purpose to cover technology, medicine and business", "They couldn't find more engineers"], "a": 1 },
+        { "q": "What is the speaker's attitude towards growing beyond Turkey?", "options": ["Hesitant", "Indifferent", "Reluctant because of costs", "It was always part of the plan"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "The ___ isn't the technology; it's the shortage of audiologists.", "a": "bottleneck", "hint": "darboğaz" },
+        { "s": "We kept circling ___ to one simple question.", "a": "back", "hint": "geri dönmek" },
+        { "s": "We want tests to be accessible to everyone, ___ of where they live.", "a": "regardless", "hint": "...e bakılmaksızın" }
+      ],
+      "order": [
+        { "a": "That question is what AIHEAR was built on." },
+        { "a": "We have always seen the market as global." }
+      ],
+      "translate": [
+        { "tr": "Darboğaz teknoloji değil, odyolog eksikliği.", "en": "The bottleneck isn't the technology but the shortage of audiologists.", "keys": ["bottleneck", "shortage of audiologists"] },
+        { "tr": "Bizi asıl çarpan şey, ne kadar az insanın test yaptırdığıydı.", "en": "What struck us was how few people get tested.", "keys": ["what struck us", "few people"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Uluslararası bir iş dergisinden deneyimli bir gazeteci, kuruluş hikâyeni zorlayıcı sorularla dinliyor.",
+        "turns": [
+          { "ai": "Hearing tests aren't exactly the most glamorous corner of health tech, so what drew you to it?", "aiTr": "İşitme testleri sağlık teknolojisinin en göz alıcı köşesi sayılmaz; sizi buna ne çekti?", "hint": "What struck us was how few of the billion-plus people with hearing loss ever get tested.", "keys": ["what struck us", "get tested", "hearing loss"] },
+          { "ai": "Surely that's a funding problem rather than something technology can fix?", "aiTr": "Bu, teknolojinin çözebileceği bir şeyden çok bir finansman sorunu değil mi?", "hint": "Partly, but the real bottleneck is a chronic shortage of audiologists, and you can't train them fast enough.", "keys": ["bottleneck", "shortage", "audiologists"] },
+          { "ai": "So how did that turn into a company?", "aiTr": "Peki bu nasıl bir şirkete dönüştü?", "hint": "We kept circling back to one question: what if a machine could run the test with no expert in the room?", "keys": ["circling back", "what if", "no expert"] },
+          { "ai": "You're based in Turkey, so is this really a global business, or is that just pitch talk?", "aiTr": "Türkiye'de yerleşiksiniz; bu gerçekten küresel bir iş mi, yoksa sadece sunum lafı mı?", "hint": "Not only is the problem far from unique to Turkey, but it's often most acute where healthcare is stretched thinnest.", "keys": ["far from unique", "most acute", "stretched"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Kuruluş hikâyeni, ince ironi ve zarif bir anlatımla, bir yazar gibi anlatıyorsun.",
+      "text": [
+        { "en": "One in five people lives with some degree of hearing loss, which is north of a billion, if you like your numbers big.", "tr": "Her beş kişiden biri bir derece işitme kaybıyla yaşıyor; büyük rakamları seviyorsanız, bu bir milyarın üzerinde demek." },
+        { "en": "The figure that actually kept us up at night, though, was a much smaller one: the share of those people who are ever tested.", "tr": "Yine de bizi asıl uykusuz bırakan rakam çok daha küçüktü: bu insanların içinde hiç test yaptıranların oranı." },
+        { "en": "It isn't for want of technology; it's that there simply aren't enough audiologists to go round.", "tr": "Mesele teknoloji eksikliği değil; herkese yetecek kadar odyolog yok, o kadar." },
+        { "en": "Step outside a major city and a wait of several months for an appointment is less a scandal than a fact of life.", "tr": "Büyük bir şehrin dışına çıktığınızda, bir randevu için aylarca beklemek bir skandaldan çok hayatın olağan bir gerçeği." },
+        { "en": "Somewhere in all that, a rather impertinent question took hold.", "tr": "Bütün bunların ortasında oldukça cüretkâr bir soru zihnimize yerleşti." },
+        { "en": "What if the test didn't need an expert in the room at all?", "tr": "Ya testin odada bir uzmana hiç ihtiyacı olmasaydı?" },
+        { "en": "AIHEAR is, for better or worse, our attempt at an answer.", "tr": "AIHEAR, iyisiyle kötüsüyle, bu soruya cevap verme girişimimiz." },
+        { "en": "There are six of us: three engineers, a doctor and two on the business side, which is about as lean as medtech gets.", "tr": "Altı kişiyiz: üç mühendis, bir doktor ve iş tarafında iki kişi; bu da bir medikal teknoloji ekibinin olabileceği en yalın hâl." },
+        { "en": "The mission, stripped of pitch-deck gloss, is to make a hearing test as unremarkable to get hold of as a blood pressure check.", "tr": "Sunum süslerinden arındırıldığında misyonumuz, işitme testine ulaşmayı tansiyon ölçtürmek kadar sıradan hâle getirmek." },
+        { "en": "We happen to have started in Turkey, but the problem has never respected borders.", "tr": "Türkiye'de başlamış olmamız bir rastlantı; sorun ise hiçbir zaman sınır tanımadı." },
+        { "en": "By the same token, neither, we hope, will the solution.", "tr": "Aynı şekilde, umarız çözüm de tanımayacak." }
+      ],
+      "vocab": [
+        { "en": "north of", "tr": "...in üzerinde", "ex": "Hearing loss affects north of a billion people.", "def": "more than (informal)" },
+        { "en": "keep someone up at night", "tr": "birini uykusuz bırakmak", "ex": "The figure that kept us up at night was a small one.", "def": "to make someone worry a lot" },
+        { "en": "for want of", "tr": "...eksikliğinden", "ex": "It isn't for want of technology.", "def": "because of a lack of something" },
+        { "en": "go round", "tr": "herkese yetmek", "ex": "There aren't enough audiologists to go round.", "def": "to be enough for everyone (British English)" },
+        { "en": "a fact of life", "tr": "hayatın bir gerçeği", "ex": "Long waits are a fact of life outside the cities.", "def": "something unpleasant that people simply have to accept" },
+        { "en": "impertinent", "tr": "cüretkâr, küstahça", "ex": "It was a rather impertinent question.", "def": "slightly rude or bold, challenging what is normal" },
+        { "en": "take hold", "tr": "yerleşmek, kök salmak", "ex": "Slowly, the idea took hold.", "def": "to become strong and established" },
+        { "en": "for better or worse", "tr": "iyisiyle kötüsüyle", "ex": "For better or worse, this is our answer.", "def": "whether the result is good or bad" },
+        { "en": "lean", "tr": "yalın", "ex": "Our team is about as lean as medtech gets.", "def": "using few people or resources" },
+        { "en": "stripped of pitch-deck gloss", "tr": "sunum süslerinden arındırılmış", "ex": "Stripped of pitch-deck gloss, our mission is simple.", "def": "without the attractive marketing language" }
+      ],
+      "grammar": {
+        "title": "Understatement and ironic hedging",
+        "tr": "C2'de anlamı yumuşatmak ya da ironik bir ton katmak için ölçülü ifadeler kullanılır: 'rather impertinent', 'for better or worse', 'less a scandal than a fact of life'. Doğrudan iddia yerine dinleyicinin çıkarım yapmasına izin verir.",
+        "examples": ["A rather impertinent question took hold.", "AIHEAR is, for better or worse, our attempt at an answer.", "A long wait is less a scandal than a fact of life."]
+      },
+      "questions": [
+        { "q": "What is the tone of 'if you like your numbers big'?", "options": ["Slightly ironic", "Angry", "Apologetic"], "a": 0 },
+        { "q": "Which number worried the founders most?", "options": ["The total number of people with hearing loss", "The share of people who are ever tested", "The price of a hearing test"], "a": 1 },
+        { "q": "What does 'less a scandal than a fact of life' suggest?", "options": ["Long waits are rare and shocking", "Long waits only happen in big cities", "Long waits are so common that people simply accept them"], "a": 2 },
+        { "q": "Why does the speaker call the question 'rather impertinent'?", "options": ["It was rude to doctors", "It challenged the assumption that an expert must be present", "It was asked by a journalist"], "a": 1 },
+        { "q": "What does 'neither, we hope, will the solution' imply?", "options": ["The solution will only work in Turkey", "They are unsure the product works", "They hope to stay small", "They intend the product to cross borders too"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "There simply aren't enough audiologists to go ___.", "a": "round", "hint": "herkese yetmek" },
+        { "s": "It isn't for ___ of technology.", "a": "want", "hint": "eksiklik" },
+        { "s": "AIHEAR is, for better or ___, our attempt at an answer.", "a": "worse", "hint": "iyisiyle kötüsüyle" },
+        { "s": "Somewhere in all that, a rather impertinent question took ___.", "a": "hold", "hint": "yerleşmek" }
+      ],
+      "order": [
+        { "a": "The problem has never respected borders." },
+        { "a": "What if the test didn't need an expert at all?" }
+      ],
+      "translate": [
+        { "tr": "Mesele teknoloji eksikliği değil.", "en": "It isn't for want of technology.", "keys": ["for want of", "technology"] },
+        { "tr": "Sorun hiçbir zaman sınır tanımadı.", "en": "The problem has never respected borders.", "keys": ["never respected borders"] },
+        { "tr": "Altı kişilik yalın bir ekibiz.", "en": "We are a lean team of six.", "keys": ["lean team", "six"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Tanınmış bir yayından keskin zekâlı bir gazeteci, klişe olmayan bir kuruluş hikâyesi duymak istiyor.",
+        "turns": [
+          { "ai": "Every founder has an origin story, so what's yours, minus the pitch-deck gloss?", "aiTr": "Her kurucunun bir çıkış hikâyesi vardır; sizinki ne, sunum süslerini çıkarırsak?", "hint": "Honestly, it was one figure that kept us up at night: how few of the billion-plus people with hearing loss are ever tested.", "keys": ["kept us up at night", "ever tested", "hearing loss"] },
+          { "ai": "Isn't that just a question of money, though?", "aiTr": "Ama bu sadece bir para meselesi değil mi?", "hint": "Not really; it isn't for want of technology or funding so much as audiologists, and there simply aren't enough to go round.", "keys": ["for want of", "audiologists", "go round"] },
+          { "ai": "And the idea itself, was there a eureka moment?", "aiTr": "Peki fikrin kendisi; bir 'buldum!' anı oldu mu?", "hint": "Less a eureka moment than a rather impertinent question: what if the test didn't need an expert in the room at all?", "keys": ["impertinent", "what if", "expert"] },
+          { "ai": "A Turkish start-up with six people taking on a global problem: isn't that a little ambitious?", "aiTr": "Altı kişilik bir Türk girişimi küresel bir sorunu üstleniyor; bu biraz fazla iddialı değil mi?", "hint": "Perhaps, but the problem has never respected borders, and by the same token, we don't intend the solution to either.", "keys": ["respected borders", "by the same token", "solution"] }
+        ]
+      }
+    }
+  }
+}

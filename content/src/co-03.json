@@ -1,0 +1,375 @@
+{
+  "id": "co-03",
+  "topic": "comms",
+  "title": "Disagreeing Politely in a Meeting",
+  "titleTr": "Toplantıda Nazikçe Karşı Çıkmak",
+  "levels": {
+    "A1": {
+      "intro": "Ortağın fiyatı düşürmek istiyor; sen basit ve nazik cümlelerle karşı çıkıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "I think our price is too high.", "tr": "Bence fiyatımız çok yüksek." },
+        { "who": "Partner", "en": "Let's sell the device for 2,000 euros.", "tr": "Cihazı 2.000 euroya satalım." },
+        { "who": "Me", "en": "I understand, but I am not sure about that.", "tr": "Anlıyorum ama bundan emin değilim." },
+        { "who": "Me", "en": "The device costs 1,500 euros to make.", "tr": "Cihazın üretimi 1.500 euroya mal oluyor." },
+        { "who": "Partner", "en": "But customers say it is expensive.", "tr": "Ama müşteriler pahalı olduğunu söylüyor." },
+        { "who": "Me", "en": "Yes, but we can show them how much they save.", "tr": "Evet ama onlara ne kadar tasarruf ettiklerini gösterebiliriz." },
+        { "who": "Partner", "en": "Good idea, let's try that for two months.", "tr": "İyi fikir, bunu iki ay deneyelim." },
+        { "who": "Me", "en": "Great, thank you for listening.", "tr": "Harika, dinlediğin için teşekkürler." }
+      ],
+      "vocab": [
+        { "en": "price", "tr": "fiyat", "ex": "I think our price is too high." },
+        { "en": "too high", "tr": "çok yüksek", "ex": "The price is too high for small clinics." },
+        { "en": "expensive", "tr": "pahalı", "ex": "Customers say the device is expensive." },
+        { "en": "I am not sure", "tr": "emin değilim", "ex": "I understand, but I am not sure about that." },
+        { "en": "cost", "tr": "mal olmak, tutmak", "ex": "The device costs 1,500 euros to make." },
+        { "en": "save money", "tr": "para tasarruf etmek", "ex": "Our test helps clinics save money." }
+      ],
+      "grammar": {
+        "title": "To be: am / is / are",
+        "tr": "'To be' fiili 'olmak' anlamındadır: I am, it is, we/they are. Olumsuz için 'not' eklenir: I am not sure.",
+        "examples": ["Our price is too high.", "It is expensive.", "I am not sure about that."]
+      },
+      "questions": [
+        { "q": "What price does the partner want?", "options": ["4,000 euros", "2,000 euros", "1,500 euros"], "a": 1 },
+        { "q": "How much does the device cost to make?", "options": ["1,500 euros", "2,000 euros", "100 euros"], "a": 0 },
+        { "q": "What do they try for two months?", "options": ["A lower price", "A new device", "Showing customers the savings"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I think our ___ is too high.", "a": "price", "hint": "fiyat" },
+        { "s": "But customers say it is ___.", "a": "expensive", "hint": "pahalı" },
+        { "s": "I understand, but I am not ___ about that.", "a": "sure", "hint": "emin" }
+      ],
+      "order": [
+        { "a": "I think our price is too high." },
+        { "a": "But customers say it is expensive." }
+      ],
+      "translate": [
+        { "tr": "Fiyatımız çok yüksek.", "en": "Our price is too high.", "keys": ["price", "too high"] },
+        { "tr": "Bundan emin değilim.", "en": "I am not sure about that.", "keys": ["not sure"] }
+      ],
+      "roleplay": {
+        "persona": "Business partner",
+        "personaTr": "İş ortağı",
+        "scene": "Ortağın cihazı ücretsiz vermek istiyor. Sen nazikçe 'emin değilim' diyorsun.",
+        "turns": [
+          { "ai": "Let's give the device away for free.", "aiTr": "Cihazı ücretsiz verelim.", "hint": "I understand, but I am not sure. The device costs 1,500 euros.", "keys": ["not sure", "costs", "understand"] },
+          { "ai": "But customers love free things!", "aiTr": "Ama müşteriler ücretsiz şeyleri sever!", "hint": "Yes, but we need money to make the device.", "keys": ["yes but", "need money"] },
+          { "ai": "OK. What is your idea?", "aiTr": "Tamam. Senin fikrin ne?", "hint": "Let's try both ideas with a few clinics for two months.", "keys": ["try", "two months", "clinics"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Ortağın fiyatı düşürmek istiyor. Sen 'ama' ve 'çünkü' ile nedenini açıklayarak nazikçe karşı çıkıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "I want to lower the price to 2,000 euros so we sell faster.", "tr": "Daha hızlı satalım diye fiyatı 2.000 euroya düşürmek istiyorum." },
+        { "who": "Me", "en": "I understand, but I'm not sure that's the best idea.", "tr": "Anlıyorum ama bunun en iyi fikir olduğundan emin değilim." },
+        { "who": "Me", "en": "The device costs 1,500 euros to make.", "tr": "Cihazın üretimi 1.500 euroya mal oluyor." },
+        { "who": "Me", "en": "At 2,000 euros, our margin is going to be too small.", "tr": "2.000 euroda kâr marjımız çok küçük olacak." },
+        { "who": "Partner", "en": "But customers told us the device is too expensive.", "tr": "Ama müşteriler bize cihazın çok pahalı olduğunu söyledi." },
+        { "who": "Me", "en": "That's true, but we need to show them how much they save every month.", "tr": "Doğru ama onlara her ay ne kadar tasarruf ettiklerini göstermemiz gerekiyor." },
+        { "who": "Partner", "en": "Good point, but how can we do that?", "tr": "Haklısın ama bunu nasıl yapabiliriz?" },
+        { "who": "Me", "en": "We can make a simple calculator that shows the savings.", "tr": "Tasarrufu gösteren basit bir hesaplayıcı yapabiliriz." },
+        { "who": "Partner", "en": "OK, let's try it for two months before we change the price.", "tr": "Tamam, fiyatı değiştirmeden önce bunu iki ay deneyelim." }
+      ],
+      "vocab": [
+        { "en": "lower the price", "tr": "fiyatı düşürmek", "ex": "I want to lower the price to sell faster." },
+        { "en": "I'm not sure", "tr": "emin değilim", "ex": "I'm not sure that's the best idea." },
+        { "en": "margin", "tr": "kâr marjı", "ex": "At 2,000 euros, our margin is going to be too small." },
+        { "en": "That's true, but...", "tr": "Doğru ama...", "ex": "That's true, but we need to show them the savings." },
+        { "en": "save", "tr": "tasarruf etmek", "ex": "Clinics save money every month." },
+        { "en": "Good point.", "tr": "Haklısın. / İyi bir nokta.", "ex": "Good point, but how can we do that?" },
+        { "en": "calculator", "tr": "hesaplayıcı, hesap aracı", "ex": "We can make a simple calculator." }
+      ],
+      "grammar": {
+        "title": "want to / need to + verb",
+        "tr": "'want to' bir şeyi yapmak istediğini, 'need to' bir şeyi yapmanın gerekli olduğunu anlatır. İkisinden sonra fiilin yalın hali gelir.",
+        "examples": ["I want to lower the price.", "We need to show them the savings.", "Do you want to try it for two months?"]
+      },
+      "questions": [
+        { "q": "Why does the partner want a lower price?", "options": ["To sell faster", "To make the device better", "Because the device costs less now"], "a": 0 },
+        { "q": "How much does the device cost to make?", "options": ["2,000 euros", "4,000 euros", "1,500 euros"], "a": 2 },
+        { "q": "What does the speaker want to show customers?", "options": ["A new device", "How much money they save", "The team"], "a": 1 },
+        { "q": "How long are they going to try the calculator?", "options": ["Two weeks", "Two months", "One year"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I want to ___ the price to 2,000 euros.", "a": "lower", "hint": "düşürmek" },
+        { "s": "At 2,000 euros, our ___ is going to be too small.", "a": "margin", "hint": "kâr marjı" },
+        { "s": "We need to ___ them how much they save.", "a": "show", "hint": "göstermek" }
+      ],
+      "order": [
+        { "a": "I'm not sure that's the best idea." },
+        { "a": "We can make a simple calculator." }
+      ],
+      "translate": [
+        { "tr": "Fiyatı düşürmek istiyorum.", "en": "I want to lower the price.", "keys": ["want to", "lower the price"] },
+        { "tr": "Bunun en iyi fikir olduğundan emin değilim.", "en": "I'm not sure that's the best idea.", "keys": ["not sure", "best idea"] }
+      ],
+      "roleplay": {
+        "persona": "Business partner",
+        "personaTr": "İş ortağı",
+        "scene": "Ortağın cihazı ücretsiz verip sadece yazılımı satmak istiyor; sen nazikçe karşı çıkıyorsun.",
+        "turns": [
+          { "ai": "I want to give the device away for free and only sell the software.", "aiTr": "Cihazı ücretsiz verip sadece yazılımı satmak istiyorum.", "hint": "I understand, but I'm not sure that's a good idea. The device costs us 1,500 euros.", "keys": ["not sure", "costs", "understand"] },
+          { "ai": "But customers are going to love a free device!", "aiTr": "Ama müşteriler ücretsiz bir cihaza bayılacak!", "hint": "That's true, but then we need to charge more for the software.", "keys": ["that's true", "charge more", "software"] },
+          { "ai": "OK, good point. So what do you want to do?", "aiTr": "Tamam, haklısın. Peki ne yapmak istiyorsun?", "hint": "Let's try both ideas with a few clinics for two months.", "keys": ["try", "both", "two months"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Farklı düşündüğünü kavga etmeden, net ve saygılı söylemek: fiyat tartışmasında ortağına karşı çıkıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "I think we should lower the price to 2,000 euros so that we can sell faster.", "tr": "Bence daha hızlı satabilmek için fiyatı 2.000 euroya düşürmeliyiz." },
+        { "who": "Me", "en": "I see your point, but I'm not sure that's the best way forward.", "tr": "Ne demek istediğini anlıyorum ama bunun en doğru yol olduğundan emin değilim." },
+        { "who": "Me", "en": "The device costs 1,500 euros to make, so if we lower the price, our margin will become very small.", "tr": "Cihazın üretimi 1.500 euro tutuyor, yani fiyatı düşürürsek marjımız çok küçülür." },
+        { "who": "Partner", "en": "But several customers have told us that the device is too expensive.", "tr": "Ama birçok müşteri bize cihazın çok pahalı olduğunu söyledi." },
+        { "who": "Me", "en": "That's true; however, I think the real problem is that they don't see the value yet.", "tr": "Doğru; ancak bence asıl sorun, değerini henüz görmemeleri." },
+        { "who": "Me", "en": "We should show them how much money they can save every month.", "tr": "Onlara her ay ne kadar para tasarruf edebileceklerini göstermeliyiz." },
+        { "who": "Partner", "en": "Hmm, that's a fair point, but how would we do that?", "tr": "Hmm, haklı bir nokta ama bunu nasıl yaparız?" },
+        { "who": "Me", "en": "We could prepare a simple calculator: \"If you do 100 tests a month, you save 1,500 euros.\"", "tr": "Basit bir hesaplayıcı hazırlayabiliriz: \"Ayda 100 test yaparsanız 1.500 euro tasarruf edersiniz.\"" },
+        { "who": "Partner", "en": "OK, let's try that for two months before we change the price.", "tr": "Tamam, fiyatı değiştirmeden önce bunu iki ay deneyelim." },
+        { "who": "Me", "en": "Agreed, and thanks for listening.", "tr": "Anlaştık, dinlediğin için de teşekkürler." }
+      ],
+      "vocab": [
+        { "en": "lower the price", "tr": "fiyatı düşürmek", "ex": "We should lower the price to sell faster.", "def": "to make something cheaper" },
+        { "en": "I see your point, but...", "tr": "Ne demek istediğini anlıyorum ama...", "ex": "I see your point, but I'm not sure it's the best way.", "def": "a polite way to start disagreeing with someone" },
+        { "en": "margin", "tr": "kâr marjı", "ex": "If we lower the price, our margin will become very small.", "def": "the money left after you pay the cost of making a product" },
+        { "en": "however", "tr": "ancak, fakat", "ex": "That's true; however, the real problem is the value.", "def": "a word that introduces a different or opposite idea" },
+        { "en": "value", "tr": "değer", "ex": "Customers don't see the value yet.", "def": "how useful or important something is for someone" },
+        { "en": "a fair point", "tr": "haklı bir nokta", "ex": "Hmm, that's a fair point.", "def": "an idea that is reasonable and that you accept" },
+        { "en": "prepare", "tr": "hazırlamak", "ex": "We could prepare a simple calculator.", "def": "to make something ready to use" },
+        { "en": "Agreed.", "tr": "Anlaştık.", "ex": "Agreed, let's try it for two months.", "def": "a short way to say 'I agree'" }
+      ],
+      "grammar": {
+        "title": "First conditional: If we..., ... will...",
+        "tr": "Gerçek bir olasılık ve sonucu için kullanılır: If + geniş zaman, will + fiil. Toplantıda bir önerinin sonucunu göstermek için çok işe yarar.",
+        "examples": ["If we lower the price, our margin will become very small.", "If customers see the value, they will pay.", "If the calculator works, we won't change the price."]
+      },
+      "questions": [
+        { "q": "What does the partner want to do?", "options": ["Raise the price", "Lower the price to 2,000 euros", "Give the device for free"], "a": 1 },
+        { "q": "Why does the speaker disagree?", "options": ["The margin will become very small", "Customers don't like the design", "The team is too small"], "a": 0 },
+        { "q": "According to the speaker, what is the real problem?", "options": ["The price", "The calculator", "Customers don't see the value yet"], "a": 2 },
+        { "q": "What do they decide in the end?", "options": ["To lower the price now", "To try the calculator for two months", "To stop selling the device"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I see your ___, but I'm not sure that's the best way forward.", "a": "point", "hint": "görüş, nokta" },
+        { "s": "If we lower the price, our ___ will become very small.", "a": "margin", "hint": "kâr marjı" },
+        { "s": "Hmm, that's a ___ point.", "a": "fair", "hint": "haklı, makul" }
+      ],
+      "order": [
+        { "a": "I'm not sure that's the best way forward." },
+        { "a": "We should show them how much money they can save." }
+      ],
+      "translate": [
+        { "tr": "Bence asıl sorun fiyat değil.", "en": "I don't think the price is the real problem.", "keys": ["real problem", "price"] },
+        { "tr": "Fiyatı değiştirmeden önce bunu iki ay deneyelim.", "en": "Let's try this for two months before we change the price.", "keys": ["two months", "change the price"] }
+      ],
+      "roleplay": {
+        "persona": "Business partner",
+        "personaTr": "İş ortağı",
+        "scene": "Ortağın cihazı ücretsiz vermeyi öneriyor; sen nazikçe karşı çıkıp bir deneme öneriyorsun.",
+        "turns": [
+          { "ai": "I think we should give the device away for free and only charge for the software.", "aiTr": "Bence cihazı ücretsiz verip sadece yazılım için ücret almalıyız.", "hint": "I see your point, but I'm not sure that's the best way. The device costs us 1,500 euros to make.", "keys": ["see your point", "not sure", "costs"] },
+          { "ai": "But customers would love a free device!", "aiTr": "Ama müşteriler ücretsiz bir cihaza bayılır!", "hint": "That's true. However, if we do that, we'll have to charge a much higher software fee.", "keys": ["however", "software fee", "have to"] },
+          { "ai": "OK, that's a fair point. So what do you suggest?", "aiTr": "Tamam, haklı bir nokta. Peki ne öneriyorsun?", "hint": "I suggest we test both models with a few clinics for two months. Agreed?", "keys": ["suggest", "test", "two months", "agreed"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Ortağının fiyat indirimi önerisine, onu kırmadan ama net gerekçelerle karşı çıkıyor ve alternatif sunuyorsun.",
+      "text": [
+        { "who": "Partner", "en": "I'd like to propose that we cut the price to 2,000 euros, which should help us close deals faster.", "tr": "Fiyatı 2.000 euroya indirmemizi öneriyorum; bu, satışları daha hızlı bağlamamıza yardımcı olur." },
+        { "who": "Me", "en": "I can see where you're coming from, but I'm not convinced that's the right move.", "tr": "Neden böyle düşündüğünü anlıyorum ama bunun doğru adım olduğuna ikna olmadım." },
+        { "who": "Me", "en": "Since each device costs us 1,500 euros to build, our gross margin would fall from about 60 percent to 25 percent.", "tr": "Her cihazın üretimi bize 1.500 euroya mal olduğu için brüt kâr marjımız yüzde 60 civarından yüzde 25'e düşer." },
+        { "who": "Partner", "en": "Fair enough, but several clinics have told us the device is simply too expensive.", "tr": "Haklısın ama birçok klinik bize cihazın düpedüz çok pahalı olduğunu söyledi." },
+        { "who": "Me", "en": "That's a valid concern, although I'd say the price itself isn't really the issue.", "tr": "Bu haklı bir endişe, ama bence asıl mesele fiyatın kendisi değil." },
+        { "who": "Me", "en": "It seems that most clinics don't yet see how much money the device would save them.", "tr": "Görünüşe göre çoğu klinik, cihazın kendilerine ne kadar para kazandıracağını henüz görmüyor." },
+        { "who": "Me", "en": "If they could see the monthly savings in black and white, I think the price would be much easier to justify.", "tr": "Aylık tasarrufu açık açık görebilselerdi, bence fiyatı savunmak çok daha kolay olurdu." },
+        { "who": "Partner", "en": "That's a fair point, but how would we actually show them that?", "tr": "Haklı bir nokta ama bunu onlara gerçekte nasıl gösterirdik?" },
+        { "who": "Me", "en": "We could build a simple calculator which shows, for example, that a clinic doing 100 tests a month saves 1,500 euros.", "tr": "Örneğin ayda 100 test yapan bir kliniğin 1.500 euro tasarruf ettiğini gösteren basit bir hesaplayıcı yapabiliriz." },
+        { "who": "Partner", "en": "All right, let's test that approach for two months before we touch the price.", "tr": "Peki, fiyata dokunmadan önce bu yaklaşımı iki ay test edelim." },
+        { "who": "Me", "en": "Sounds good, and thanks for hearing me out.", "tr": "Kulağa iyi geliyor, beni sonuna kadar dinlediğin için de teşekkürler." }
+      ],
+      "vocab": [
+        { "en": "close deals", "tr": "satışı bağlamak, anlaşma yapmak", "ex": "A lower price might help us close deals faster.", "def": "to successfully finish a sale or agreement" },
+        { "en": "I can see where you're coming from", "tr": "neden böyle düşündüğünü anlıyorum", "ex": "I can see where you're coming from, but I disagree.", "def": "I understand why you think this (a polite start before disagreeing)" },
+        { "en": "I'm not convinced", "tr": "pek ikna olmadım", "ex": "I'm not convinced that's the right move.", "def": "I don't fully believe it is right" },
+        { "en": "gross margin", "tr": "brüt kâr marjı", "ex": "Our gross margin would fall to 25 percent.", "def": "the part of the price left after paying the cost of making the product" },
+        { "en": "a valid concern", "tr": "haklı bir endişe", "ex": "That's a valid concern, but the price isn't the issue.", "def": "a worry that is reasonable and should be taken seriously" },
+        { "en": "I'd say", "tr": "bence, diyebilirim ki", "ex": "I'd say the price itself isn't really the issue.", "def": "a soft way to give your opinion" },
+        { "en": "justify the price", "tr": "fiyatı gerekçelendirmek", "ex": "Clear savings make it easier to justify the price.", "def": "to show that a price is reasonable" },
+        { "en": "in black and white", "tr": "açık açık, yazılı olarak", "ex": "They need to see the savings in black and white.", "def": "clearly, in writing or in numbers" },
+        { "en": "hear someone out", "tr": "birini sonuna kadar dinlemek", "ex": "Thanks for hearing me out.", "def": "to listen to everything someone wants to say before you react" }
+      ],
+      "grammar": {
+        "title": "Second conditional: If they could..., ... would...",
+        "tr": "Şu an gerçek olmayan ya da varsayımsal durumlar için: If + geçmiş zaman, would + fiil. Toplantıda bir fikri daha yumuşak ve varsayımsal biçimde tartışmanı sağlar.",
+        "examples": ["If they could see the savings, the price would be easier to justify.", "If we cut the price, our margin would fall to 25 percent.", "Would you agree if we tested it for two months?"]
+      },
+      "questions": [
+        { "q": "What reason does the partner give for cutting the price?", "options": ["To close deals faster", "To beat a competitor", "To reduce production costs"], "a": 0 },
+        { "q": "What would happen to the gross margin at 2,000 euros?", "options": ["It would rise to 60 percent", "It would stay the same", "It would fall to about 25 percent"], "a": 2 },
+        { "q": "What have several clinics told the partner?", "options": ["The device is too slow", "The device is too expensive", "The calculator is confusing"], "a": 1 },
+        { "q": "What does the speaker think is the real issue?", "options": ["The device needs new features", "The software fee is too high", "The sales team is too small", "Clinics don't yet see the savings"], "a": 3 },
+        { "q": "What can we infer about the partner at the end?", "options": ["They are still annoyed", "They are willing to delay a decision on price", "They now want to raise the price"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I can see where you're ___ from, but I'm not convinced.", "a": "coming", "hint": "(bakış açısı) geliyorsun" },
+        { "s": "If they could see the savings, the price would be easier to ___.", "a": "justify", "hint": "gerekçelendirmek" },
+        { "s": "Thanks for hearing me ___.", "a": "out", "hint": "sonuna kadar" }
+      ],
+      "order": [
+        { "a": "I'm not convinced that's the right move." },
+        { "a": "Let's test that approach for two months." }
+      ],
+      "translate": [
+        { "tr": "Bunun doğru adım olduğuna ikna olmadım.", "en": "I'm not convinced that's the right move.", "keys": ["not convinced", "right move"] },
+        { "tr": "Bu haklı bir endişe ama bence asıl mesele fiyat değil.", "en": "That's a valid concern, but I'd say the price isn't the real issue.", "keys": ["valid concern", "real issue"] }
+      ],
+      "roleplay": {
+        "persona": "Business partner",
+        "personaTr": "İş ortağı",
+        "scene": "Ortağın cihazı bedava verip parayı yazılımdan kazanmayı öneriyor. Sen gerekçeleriyle karşı çıkıp bir test öneriyorsun.",
+        "turns": [
+          { "ai": "Here's a thought: what if we gave the device away for free and made our money on the software?", "aiTr": "Bir fikrim var: cihazı ücretsiz verip paramızı yazılımdan kazansak?", "hint": "I can see where you're coming from, but I'm not convinced. Each device costs us 1,500 euros to build.", "keys": ["coming from", "not convinced", "costs us"] },
+          { "ai": "Sure, but clinics would sign up much faster if there were no upfront cost.", "aiTr": "Evet ama başta hiç maliyet olmasa klinikler çok daha hızlı kaydolurdu.", "hint": "That's a valid concern. However, if we did that, the software fee would have to be much higher.", "keys": ["valid concern", "would have to", "software fee"] },
+          { "ai": "So you think clinics wouldn't accept a higher monthly fee?", "aiTr": "Yani kliniklerin daha yüksek bir aylık ücreti kabul etmeyeceğini mi düşünüyorsun?", "hint": "I'd say it's risky; our customers pay 99 euros a month now and seem happy with that.", "keys": ["I'd say", "risky", "99 euros"] },
+          { "ai": "Fair enough. What would you suggest instead?", "aiTr": "Peki, haklısın. Onun yerine ne önerirsin?", "hint": "I'd suggest testing both models with a few clinics for two months and then comparing the numbers.", "keys": ["suggest", "both models", "two months"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Fiyatı yarıya indirme önerisine diplomatik ama kararlı bir dille itiraz ediyor, tartışmayı veriye taşıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "I'd like to put something on the table: if we brought the price down to 2,000 euros, I think deals would close a lot faster.", "tr": "Bir öneri getirmek istiyorum: fiyatı 2.000 euroya indirirsek bence satışlar çok daha hızlı kapanır." },
+        { "who": "Me", "en": "I take your point, and I agree we need to shorten the sales cycle, but I'm not sure halving the price is the way to do it.", "tr": "Söylediğin mantıklı, satış döngüsünü kısaltmamız gerektiğine de katılıyorum, ama bunun yolunun fiyatı yarıya indirmek olduğundan emin değilim." },
+        { "who": "Me", "en": "Given that each unit costs us 1,500 euros to build, we'd be cutting our gross margin from around 60 percent to a mere 25.", "tr": "Her cihazın üretiminin bize 1.500 euroya mal olduğunu düşünürsek, brüt marjımızı yüzde 60 civarından yüzde 25 gibi cılız bir seviyeye indirmiş oluruz." },
+        { "who": "Me", "en": "Not only would that squeeze our cash flow, but it would also be very hard to raise the price again later.", "tr": "Bu hem nakit akışımızı sıkıştırır hem de fiyatı daha sonra yeniden yükseltmeyi çok zorlaştırır." },
+        { "who": "Partner", "en": "I hear you, but the feedback from clinics is pretty consistent: the device is too expensive.", "tr": "Seni anlıyorum ama kliniklerden gelen geri bildirim oldukça tutarlı: cihaz çok pahalı." },
+        { "who": "Me", "en": "That's a fair concern, though what I'm hearing in those conversations is something slightly different.", "tr": "Bu haklı bir endişe, ama o görüşmelerde benim duyduğum şey biraz farklı." },
+        { "who": "Me", "en": "What clinics are really struggling with isn't the price itself, but the fact that they can't yet see the return on it.", "tr": "Kliniklerin asıl zorlandığı şey fiyatın kendisi değil, bu paranın karşılığını henüz görememeleri." },
+        { "who": "Me", "en": "Framed in terms of monthly savings, the same 4,000 euros starts to look like a sensible investment rather than a cost.", "tr": "Aylık tasarruf üzerinden sunulduğunda aynı 4.000 euro bir maliyet değil, mantıklı bir yatırım gibi görünmeye başlıyor." },
+        { "who": "Partner", "en": "That's a fair point, so how do you propose we make those savings tangible?", "tr": "Haklı bir nokta; peki bu tasarrufu nasıl somutlaştırmayı öneriyorsun?" },
+        { "who": "Me", "en": "We could put together a simple ROI calculator showing, for instance, that a clinic running 100 tests a month saves 1,500 euros.", "tr": "Örneğin ayda 100 test yapan bir kliniğin 1.500 euro tasarruf ettiğini gösteren basit bir yatırım getirisi hesaplayıcısı hazırlayabiliriz." },
+        { "who": "Partner", "en": "All right, let's give it two months before we touch the pricing.", "tr": "Peki, fiyatlandırmaya dokunmadan önce buna iki ay verelim." },
+        { "who": "Me", "en": "Sounds like a plan, and I appreciate you hearing me out on this.", "tr": "Anlaştık; bu konuda beni dinlediğin için de teşekkür ederim." }
+      ],
+      "vocab": [
+        { "en": "put something on the table", "tr": "bir öneriyi masaya koymak, gündeme getirmek", "ex": "I'd like to put a new idea on the table.", "def": "to suggest an idea so that people can discuss it" },
+        { "en": "I take your point", "tr": "söylediğini kabul ediyorum", "ex": "I take your point, but I see it differently.", "def": "I accept that what you say is partly true (often said before disagreeing)" },
+        { "en": "shorten the sales cycle", "tr": "satış döngüsünü kısaltmak", "ex": "We need to shorten the sales cycle.", "def": "to reduce the time between first contact and a finished sale" },
+        { "en": "squeeze cash flow", "tr": "nakit akışını sıkıştırmak", "ex": "A big price cut would squeeze our cash flow.", "def": "to reduce the money a company has available to run day to day" },
+        { "en": "return (on something)", "tr": "getiri, karşılık", "ex": "Clinics can't yet see the return on the device.", "def": "the money or benefit you get back from what you spend" },
+        { "en": "frame something in terms of", "tr": "bir şeyi ... üzerinden sunmak", "ex": "Framed in terms of savings, the price looks reasonable.", "def": "to present an idea in a particular way so people see it differently" },
+        { "en": "a sensible investment", "tr": "mantıklı bir yatırım", "ex": "The device is a sensible investment for a busy clinic.", "def": "money spent in a reasonable way that is likely to pay off" },
+        { "en": "make something tangible", "tr": "bir şeyi somutlaştırmak", "ex": "A calculator makes the savings tangible.", "def": "to make something real and easy to see or understand" },
+        { "en": "put together", "tr": "hazırlamak, bir araya getirmek", "ex": "We could put together a simple ROI calculator.", "def": "to create or prepare something by combining parts" },
+        { "en": "Sounds like a plan.", "tr": "Anlaştık. / İyi plan.", "ex": "Two months of testing? Sounds like a plan.", "def": "an informal way to agree to a proposal" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not only'",
+        "tr": "'Not only' cümle başına gelince soru düzeni kullanılır (yardımcı fiil + özne). İkinci kısım 'but ... also' ile gelir. Bu yapı itirazına ağırlık ve resmiyet katar.",
+        "examples": ["Not only would that squeeze our cash flow, but it would also be hard to raise the price later.", "Not only does the device save time, but it also removes the need for an expert in the room.", "Not only is the price high, but the value is also hard to see."]
+      },
+      "questions": [
+        { "q": "Why does the speaker object to halving the price?", "options": ["It would damage the brand's image", "It would cut the gross margin to about 25 percent", "Competitors would do the same", "The distributor would refuse"], "a": 1 },
+        { "q": "What does the speaker imply about raising the price later?", "options": ["It would be easy to do", "It would require investor approval", "It would be very difficult"], "a": 2 },
+        { "q": "According to the speaker, what are clinics really struggling with?", "options": ["Seeing the return on the device", "Understanding the software", "Finding space for the device"], "a": 0 },
+        { "q": "How would you describe the speaker's tone throughout?", "options": ["Dismissive and impatient", "Uncertain and apologetic", "Sarcastic", "Firm but respectful"], "a": 3 },
+        { "q": "What does the partner's final line suggest?", "options": ["They have rejected the price cut for good", "They are willing to postpone the price decision", "They want to raise the price immediately"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I take your ___, but I'm not sure halving the price is the way to do it.", "a": "point", "hint": "görüş, nokta" },
+        { "s": "Not only would that ___ our cash flow, but it would also be hard to raise the price later.", "a": "squeeze", "hint": "sıkıştırmak" },
+        { "s": "How do you propose we make those savings ___?", "a": "tangible", "hint": "somut" },
+        { "s": "Let's give it two months before we touch the ___.", "a": "pricing", "hint": "fiyatlandırma" }
+      ],
+      "order": [
+        { "a": "We need to shorten the sales cycle." },
+        { "a": "Let's give it two months before we touch the pricing." }
+      ],
+      "translate": [
+        { "tr": "Fiyatı yarıya indirmenin doğru yol olduğundan emin değilim.", "en": "I'm not sure halving the price is the way to do it.", "keys": ["not sure", "halving the price"] },
+        { "tr": "Kliniklerin asıl zorlandığı şey fiyatın kendisi değil.", "en": "What clinics are really struggling with isn't the price itself.", "keys": ["struggling with", "price itself"] },
+        { "tr": "Bu konuda beni dinlediğin için teşekkür ederim.", "en": "I appreciate you hearing me out on this.", "keys": ["appreciate", "hearing me out"] }
+      ],
+      "roleplay": {
+        "persona": "Business partner",
+        "personaTr": "İş ortağı",
+        "scene": "Ortağın donanımı bedava verip tüm geliri abonelikten elde etmeyi öneriyor. Sen diplomatik ama net biçimde itiraz edip pilot uygulama öneriyorsun.",
+        "turns": [
+          { "ai": "I've been thinking: why don't we give the hardware away and make all our money on subscriptions?", "aiTr": "Düşünüyordum da: neden donanımı ücretsiz verip tüm paramızı aboneliklerden kazanmıyoruz?", "hint": "I take your point, but given that each unit costs us 1,500 euros to build, we'd be funding every sale out of our own pocket.", "keys": ["take your point", "given that", "1,500 euros"] },
+          { "ai": "Surely the subscriptions would make up for that over time, though?", "aiTr": "Ama zamanla abonelikler bunu telafi etmez mi?", "hint": "In theory, yes, but not only would it take years to break even, it would also squeeze our cash flow.", "keys": ["not only", "break even", "cash flow"] },
+          { "ai": "So what's really holding clinics back, in your view?", "aiTr": "Sence klinikleri asıl geri tutan ne?", "hint": "What's really holding them back is that they can't see the return yet, so we need to make the savings tangible.", "keys": ["holding them back", "return", "tangible"] },
+          { "ai": "Fair enough. How would you like to move forward?", "aiTr": "Peki. Nasıl ilerlemek istersin?", "hint": "I'd propose piloting both models with a handful of clinics for two months and letting the numbers decide.", "keys": ["piloting", "both models", "two months", "numbers"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Ortağının fiyatı yarıya indirme fikrine ince bir diplomasiyle, yumuşatıcı ifadeler ve hafif ironiyle karşı çıkıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "Let me play devil's advocate for a moment: what if we simply halved the price to 2,000 euros and let volume do the rest?", "tr": "Bir an şeytanın avukatlığını yapayım: fiyatı 2.000 euroya, yani yarıya indirsek ve gerisini satış hacmine bıraksak?" },
+        { "who": "Me", "en": "I can see the appeal, and I'd be the last person to argue that our sales cycle is short enough.", "tr": "Cazip yanını görüyorum; satış döngümüzün yeterince kısa olduğunu savunacak son kişi de benim." },
+        { "who": "Me", "en": "That said, at 1,500 euros a unit, we'd be trading a healthy 60 percent margin for a rather precarious 25, which feels like a steep price to pay for speed.", "tr": "Yine de cihaz başına 1.500 euroluk maliyetle, sağlıklı bir yüzde 60 marjı oldukça kırılgan bir yüzde 25'e değişmiş oluruz; hız için ödenecek ağır bir bedel gibi geliyor." },
+        { "who": "Me", "en": "And once you've taught the market that the device is worth 2,000 euros, it's notoriously hard to persuade anyone it's worth twice that.", "tr": "Üstelik piyasaya cihazın 2.000 euro ettiğini bir kez öğrettin mi, kimseyi bunun iki katı ettiğine ikna edememek bilinen bir gerçektir." },
+        { "who": "Partner", "en": "Granted, but I keep hearing the same thing from clinics, namely that it's simply too expensive.", "tr": "Kabul, ama kliniklerden sürekli aynı şeyi duyuyorum: cihaz düpedüz çok pahalı." },
+        { "who": "Me", "en": "I don't doubt that's what they say, though I'd gently suggest it isn't quite what they mean.", "tr": "Bunu söylediklerinden şüphem yok, ama kastettikleri şeyin tam olarak bu olmadığını nazikçe belirtmek isterim." },
+        { "who": "Me", "en": "Nobody balks at a price they can see paying for itself; what they're balking at, I suspect, is a cost whose return is invisible to them.", "tr": "Kimse kendini amorti ettiğini gördüğü bir fiyattan çekinmez; bence çekindikleri şey, getirisini göremedikleri bir maliyet." },
+        { "who": "Me", "en": "By the same token, if we made the monthly savings impossible to ignore, the 4,000-euro price tag would more or less justify itself.", "tr": "Aynı mantıkla, aylık tasarrufu göz ardı edilemez hale getirirsek 4.000 euroluk fiyat etiketi kendini aşağı yukarı kendiliğinden haklı çıkarır." },
+        { "who": "Partner", "en": "Fair enough, but that's easier said than done, so what exactly do you have in mind?", "tr": "Peki, ama söylemesi kolay; tam olarak aklında ne var?" },
+        { "who": "Me", "en": "Something almost embarrassingly simple: a calculator showing that a clinic running 100 tests a month saves 1,500 euros.", "tr": "Neredeyse utandıracak kadar basit bir şey: ayda 100 test yapan bir kliniğin 1.500 euro tasarruf ettiğini gösteren bir hesaplayıcı." },
+        { "who": "Partner", "en": "All right, I'll hold off on the price for two months and we'll see whether the numbers bear you out.", "tr": "Peki, fiyat konusunu iki ay bekletiyorum; bakalım rakamlar seni haklı çıkaracak mı." },
+        { "who": "Me", "en": "That seems more than fair, and thank you for entertaining a dissenting view.", "tr": "Bu fazlasıyla adil, farklı bir görüşü dikkate aldığın için de teşekkür ederim." }
+      ],
+      "vocab": [
+        { "en": "play devil's advocate", "tr": "şeytanın avukatlığını yapmak", "ex": "Let me play devil's advocate for a moment.", "def": "to argue for an idea you may not believe, in order to test it" },
+        { "en": "I'd be the last person to...", "tr": "...yapacak son kişi benim", "ex": "I'd be the last person to say our sales are fast enough.", "def": "I would never... (used to show you partly agree)" },
+        { "en": "a steep price to pay", "tr": "ağır bir bedel", "ex": "Losing half our margin is a steep price to pay for speed.", "def": "a high cost, not only in money" },
+        { "en": "notoriously", "tr": "bilindiği üzere, kötü şöhretiyle", "ex": "Prices are notoriously hard to raise once they fall.", "def": "in a way that is well known, usually for something bad or difficult" },
+        { "en": "balk at", "tr": "...den çekinmek, ...e yanaşmamak", "ex": "Clinics balk at costs they can't justify.", "def": "to be unwilling to accept something, such as a price" },
+        { "en": "pay for itself", "tr": "kendini amorti etmek", "ex": "The device pays for itself within months.", "def": "to save or earn as much money as it costs" },
+        { "en": "by the same token", "tr": "aynı mantıkla", "ex": "By the same token, clear savings would justify the price.", "def": "for the same reason; in the same way" },
+        { "en": "easier said than done", "tr": "söylemesi kolay, yapması zor", "ex": "Showing the value is easier said than done.", "def": "simple to suggest but hard to actually do" },
+        { "en": "bear someone out", "tr": "birini haklı çıkarmak", "ex": "Let's see whether the numbers bear you out.", "def": "to show that what someone said is true" },
+        { "en": "entertain a dissenting view", "tr": "farklı bir görüşü dikkate almak", "ex": "Thank you for entertaining a dissenting view.", "def": "to seriously consider an opinion that disagrees with yours" }
+      ],
+      "grammar": {
+        "title": "Nuanced hedging: softening disagreement",
+        "tr": "C2 düzeyinde itiraz çoğu zaman doğrudan 'hayır' demek yerine yumuşatıcılarla yapılır: I'd gently suggest, I suspect, not quite, rather. Bu ifadeler karşı tarafın yüzünü korurken görüşünü net bırakır.",
+        "examples": ["I'd gently suggest it isn't quite what they mean.", "What they're balking at, I suspect, is a cost whose return is invisible.", "We'd be trading a healthy margin for a rather precarious one."]
+      },
+      "questions": [
+        { "q": "Why does the partner present the idea as playing devil's advocate?", "options": ["To signal that they are testing an idea, not insisting on it", "To show that they are angry", "To end the discussion quickly"], "a": 0 },
+        { "q": "What does the speaker mean by \"a steep price to pay for speed\"?", "options": ["Fast delivery costs a lot", "The device is overpriced", "Faster sales would cost too much margin"], "a": 2 },
+        { "q": "Why, in the speaker's view, would halving the price be hard to undo?", "options": ["Regulators would object", "The market would get used to the lower price", "Customers would sign long contracts"], "a": 1 },
+        { "q": "What is the speaker implying with \"it isn't quite what they mean\"?", "options": ["Clinics are being dishonest", "Clinics want a cheaper model", "Clinics have not read the brochure", "Clinics are reacting to an unclear return, not the price itself"], "a": 3 },
+        { "q": "How would you describe the tone of the final exchange?", "options": ["Grudging and tense", "Cooperative, with the decision left to the data", "Ironic and dismissive"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Let me play devil's ___ for a moment.", "a": "advocate", "hint": "avukat" },
+        { "s": "Nobody ___ at a price they can see paying for itself.", "a": "balks", "hint": "çekinir" },
+        { "s": "By the same ___, clear savings would justify the price.", "a": "token", "hint": "(aynı) mantıkla" },
+        { "s": "We'll see whether the numbers bear you ___.", "a": "out", "hint": "haklı çıkarmak" }
+      ],
+      "order": [
+        { "a": "I'd gently suggest it isn't quite what they mean." },
+        { "a": "That's easier said than done." }
+      ],
+      "translate": [
+        { "tr": "Bir an şeytanın avukatlığını yapayım.", "en": "Let me play devil's advocate for a moment.", "keys": ["devil's advocate"] },
+        { "tr": "Söylemesi kolay, yapması zor.", "en": "That's easier said than done.", "keys": ["easier said than done"] },
+        { "tr": "Farklı bir görüşü dikkate aldığın için teşekkürler.", "en": "Thank you for entertaining a dissenting view.", "keys": ["entertaining", "dissenting view"] }
+      ],
+      "roleplay": {
+        "persona": "Business partner",
+        "personaTr": "İş ortağı",
+        "scene": "Ortağın SaaS şirketlerini örnek göstererek donanımı bedava vermeyi savunuyor. Sen ince bir diplomasiyle itiraz edip kararı verilere bırakmayı öneriyorsun.",
+        "turns": [
+          { "ai": "Hear me out: what if the hardware were free and we lived entirely off subscriptions, the way every SaaS company does?", "aiTr": "Beni bir dinle: donanım ücretsiz olsa ve her SaaS şirketi gibi tamamen aboneliklerden geçinsek?", "hint": "It's an intriguing idea, though I'd point out that SaaS companies don't pay 1,500 euros to build each customer's hardware.", "keys": ["intriguing", "I'd point out", "hardware"] },
+          { "ai": "Surely the subscriptions would claw that back within a year or two?", "aiTr": "Abonelikler bunu bir iki yıl içinde geri kazandırmaz mı?", "hint": "Possibly, but at 99 euros a month it would take well over a year per unit, and in the meantime we'd be bankrolling our own customers.", "keys": ["possibly", "in the meantime", "bankrolling"] },
+          { "ai": "So you'd rather keep a price that clinics keep telling us is too high?", "aiTr": "Yani kliniklerin sürekli çok yüksek dediği bir fiyatı korumayı mı tercih edersin?", "hint": "Not necessarily; I'd simply rather we made the savings impossible to ignore before concluding that the price is the problem.", "keys": ["not necessarily", "impossible to ignore", "price is the problem"] },
+          { "ai": "All right, I'm not entirely persuaded, but I'm listening. What do you propose?", "aiTr": "Peki, tam olarak ikna olmadım ama dinliyorum. Ne öneriyorsun?", "hint": "Let's pilot both models with a handful of clinics for two months and let the data settle it.", "keys": ["pilot", "two months", "let the data"] }
+        ]
+      }
+    }
+  }
+}

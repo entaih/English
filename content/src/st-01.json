@@ -1,0 +1,376 @@
+{
+  "id": "st-01",
+  "topic": "startup",
+  "title": "Explaining My Startup to a Potential Partner",
+  "titleTr": "Girişimimi Olası Bir Ortağa Anlatmak",
+  "levels": {
+    "A1": {
+      "intro": "Bir kahve molasında şirketini çok basit cümlelerle tanıtıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "Hello, what does your company do?", "tr": "Merhaba, şirketiniz ne yapıyor?" },
+        { "who": "Me", "en": "We are a medical technology startup from Turkey.", "tr": "Biz Türkiye'den bir medikal teknoloji girişimiyiz." },
+        { "who": "Me", "en": "We make a device that tests hearing.", "tr": "İşitmeyi test eden bir cihaz yapıyoruz." },
+        { "who": "Partner", "en": "Who are your customers?", "tr": "Müşterileriniz kimler?" },
+        { "who": "Me", "en": "Our customers are hospitals, clinics and hearing aid shops.", "tr": "Müşterilerimiz hastaneler, klinikler ve işitme cihazı mağazaları." },
+        { "who": "Me", "en": "They do not have enough experts.", "tr": "Yeterli uzmanları yok." },
+        { "who": "Me", "en": "We are a small team of six people.", "tr": "Altı kişilik küçük bir ekibiz." },
+        { "who": "Me", "en": "I am here to find partners in Europe.", "tr": "Avrupa'da ortak bulmak için buradayım." }
+      ],
+      "vocab": [
+        { "en": "startup", "tr": "girişim", "ex": "We are a startup from Turkey.", "def": "a new, small company" },
+        { "en": "device", "tr": "cihaz", "ex": "We make a device that tests hearing.", "def": "a machine or tool" },
+        { "en": "customer", "tr": "müşteri", "ex": "Our customers are hospitals and clinics.", "def": "a person or company that buys from you" },
+        { "en": "expert", "tr": "uzman", "ex": "They do not have enough experts.", "def": "a person who knows a lot about one thing" },
+        { "en": "team", "tr": "ekip", "ex": "We are a small team of six people.", "def": "a group of people who work together" },
+        { "en": "partner", "tr": "ortak, iş ortağı", "ex": "I am here to find partners in Europe.", "def": "a person or company you work with" }
+      ],
+      "grammar": {
+        "title": "To be: am / is / are",
+        "tr": "Kim ya da ne olduğumuzu söylemek için 'to be' kullanırız: I am, we are, they are. Olumsuz cümlede 'not' ekleriz: They are not.",
+        "examples": ["We are a medical technology startup.", "Our customers are hospitals and clinics.", "I am here to find partners."]
+      },
+      "questions": [
+        { "q": "Where is the startup from?", "options": ["Germany", "Turkey", "Spain"], "a": 1 },
+        { "q": "How many people are in the team?", "options": ["Six", "Three", "Ten"], "a": 0 },
+        { "q": "Who are the customers?", "options": ["Schools", "Banks", "Hospitals, clinics and hearing aid shops"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "We make a ___ that tests hearing.", "a": "device", "hint": "cihaz" },
+        { "s": "Our ___ are hospitals, clinics and hearing aid shops.", "a": "customers", "hint": "müşteriler" },
+        { "s": "We are a small ___ of six people.", "a": "team", "hint": "ekip" }
+      ],
+      "order": [
+        { "a": "We are a small team of six people." },
+        { "a": "I am here to find partners in Europe." }
+      ],
+      "translate": [
+        { "tr": "Biz küçük bir ekibiz.", "en": "We are a small team.", "keys": ["small team"] },
+        { "tr": "İşitmeyi test eden bir cihaz yapıyoruz.", "en": "We make a device that tests hearing.", "keys": ["device", "tests hearing"] }
+      ],
+      "roleplay": {
+        "persona": "Potential partner",
+        "personaTr": "Olası iş ortağı",
+        "scene": "Bir konferansta kahve molasında Almanya'dan bir klinik zinciri yöneticisiyle tanışıyorsun.",
+        "turns": [
+          { "ai": "Hello! What does your company do?", "aiTr": "Merhaba! Şirketiniz ne yapıyor?", "hint": "We make a device that tests hearing.", "keys": ["device", "hearing", "test"] },
+          { "ai": "Who are your customers?", "aiTr": "Müşterileriniz kimler?", "hint": "Our customers are hospitals, clinics and hearing aid shops.", "keys": ["hospital", "clinic", "customer"] },
+          { "ai": "Why are you here?", "aiTr": "Neden buradasınız?", "hint": "I am here to find partners in Europe.", "keys": ["partner", "Europe"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir kahve sohbetinde şirketini kısa ve net anlatıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "So, tell me about your company.", "tr": "Peki, bana şirketinden bahset." },
+        { "who": "Me", "en": "We are a medical technology startup from Turkey.", "tr": "Biz Türkiye'den bir medikal teknoloji girişimiyiz." },
+        { "who": "Me", "en": "We build a device that tests hearing automatically.", "tr": "İşitmeyi otomatik olarak test eden bir cihaz geliştiriyoruz." },
+        { "who": "Partner", "en": "Interesting, so who are your customers?", "tr": "İlginç, peki müşterileriniz kimler?" },
+        { "who": "Me", "en": "Our customers are hospitals, clinics and hearing aid shops.", "tr": "Müşterilerimiz hastaneler, klinikler ve işitme cihazı mağazaları." },
+        { "who": "Me", "en": "They need a fast and reliable test, but they don't have enough experts.", "tr": "Hızlı ve güvenilir bir teste ihtiyaçları var ama yeterli uzmanları yok." },
+        { "who": "Partner", "en": "How big is your team?", "tr": "Ekibiniz ne kadar büyük?" },
+        { "who": "Me", "en": "We're a small team of six: three engineers, one doctor and two business people.", "tr": "Altı kişilik küçük bir ekibiz: üç mühendis, bir doktor ve iki iş insanı." },
+        { "who": "Me", "en": "Our next step is to find partners in Europe, and that's why I'm here.", "tr": "Bir sonraki adımımız Avrupa'da ortaklar bulmak, bu yüzden buradayım." }
+      ],
+      "vocab": [
+        { "en": "startup", "tr": "girişim, yeni kurulmuş şirket", "ex": "We are a medical technology startup.", "def": "a new company, often in technology" },
+        { "en": "build a device", "tr": "bir cihaz geliştirmek / üretmek", "ex": "We build a device that tests hearing.", "def": "to design and make a machine" },
+        { "en": "customer", "tr": "müşteri", "ex": "Our customers are hospitals and clinics.", "def": "a person or company that buys something" },
+        { "en": "reliable", "tr": "güvenilir", "ex": "They need a fast and reliable test.", "def": "that you can trust to work well" },
+        { "en": "expert", "tr": "uzman", "ex": "They don't have enough experts.", "def": "a person with special knowledge or skill" },
+        { "en": "team of six", "tr": "altı kişilik ekip", "ex": "We're a small team of six.", "def": "a group of six people who work together" },
+        { "en": "next step", "tr": "sonraki adım", "ex": "Our next step is to find partners.", "def": "the thing you plan to do after this" },
+        { "en": "that's why", "tr": "bu yüzden", "ex": "That's why I'm here.", "def": "for this reason" }
+      ],
+      "grammar": {
+        "title": "Linking ideas: but / that's why",
+        "tr": "'But' iki zıt fikri bağlar (ihtiyaçları var ama uzmanları yok). 'That's why' ise sonucu verir: 'bu yüzden'.",
+        "examples": ["They need a fast test, but they don't have enough experts.", "Our next step is to find partners, and that's why I'm here."]
+      },
+      "questions": [
+        { "q": "What does the company build?", "options": ["A hearing aid", "A device that tests hearing", "A hospital app"], "a": 1 },
+        { "q": "Who are the customers?", "options": ["Only hospitals", "Schools and parents", "Hospitals, clinics and hearing aid shops"], "a": 2 },
+        { "q": "How many people are in the team?", "options": ["Three", "Ten", "Six"], "a": 2 },
+        { "q": "Why is the speaker at the meeting?", "options": ["To find partners in Europe", "To sell a hospital", "To hire a doctor"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "We build a ___ that tests hearing automatically.", "a": "device", "hint": "cihaz" },
+        { "s": "They need a fast and ___ test.", "a": "reliable", "hint": "güvenilir" },
+        { "s": "Our next ___ is to find partners in Europe.", "a": "step", "hint": "adım" }
+      ],
+      "order": [
+        { "a": "We're a small team of six people." },
+        { "a": "Our customers are hospitals and clinics." }
+      ],
+      "translate": [
+        { "tr": "Biz Türkiye'den bir medikal teknoloji girişimiyiz.", "en": "We are a medical technology startup from Turkey.", "keys": ["startup", "Turkey"] },
+        { "tr": "Bu yüzden buradayım.", "en": "That's why I'm here.", "keys": ["that's why", "here"] }
+      ],
+      "roleplay": {
+        "persona": "Potential partner",
+        "personaTr": "Olası iş ortağı",
+        "scene": "Bir konferansta kahve molasında Almanya'dan bir klinik zinciri yöneticisiyle tanışıyorsun.",
+        "turns": [
+          { "ai": "Nice to meet you. What does your company do?", "aiTr": "Tanıştığımıza memnun oldum. Şirketiniz ne yapıyor?", "hint": "We are a medical technology startup, and we build a device that tests hearing.", "keys": ["device", "startup", "hearing"] },
+          { "ai": "Who uses it? Who are your customers?", "aiTr": "Kim kullanıyor? Müşterileriniz kimler?", "hint": "Our customers are hospitals, clinics and hearing aid shops.", "keys": ["customer", "hospital", "clinic"] },
+          { "ai": "And why are you here in Europe?", "aiTr": "Peki neden Avrupa'dasınız?", "hint": "Our next step is to find partners in Europe, and that's why I'm here.", "keys": ["partner", "next step", "that's why"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Bir konferans arasında olası bir ortağa ürününü, müşterilerini ve ekibini anlatıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "So, what exactly does your company do?", "tr": "Peki, şirketiniz tam olarak ne yapıyor?" },
+        { "who": "Me", "en": "We're a medical technology startup from Turkey, and we've built a device that tests hearing automatically.", "tr": "Türkiye'den bir medikal teknoloji girişimiyiz ve işitmeyi otomatik olarak test eden bir cihaz geliştirdik." },
+        { "who": "Me", "en": "The patient puts on headphones and presses a button when they hear a sound.", "tr": "Hasta kulaklığı takıyor ve bir ses duyduğunda bir düğmeye basıyor." },
+        { "who": "Me", "en": "The test takes under ten minutes, and you don't need an expert in the room.", "tr": "Test on dakikadan kısa sürüyor ve odada bir uzmana gerek yok." },
+        { "who": "Partner", "en": "That sounds useful, but who actually buys it?", "tr": "Kulağa faydalı geliyor ama onu aslında kim satın alıyor?" },
+        { "who": "Me", "en": "Our customers are hospitals, clinics and hearing aid shops that don't have enough audiologists.", "tr": "Müşterilerimiz yeterli odyoloğu olmayan hastaneler, klinikler ve işitme cihazı mağazaları." },
+        { "who": "Me", "en": "So far, we've signed five paying customers.", "tr": "Şimdiye kadar beş ücretli müşteriyle anlaştık." },
+        { "who": "Partner", "en": "And how big is your team at the moment?", "tr": "Peki ekibiniz şu an ne kadar büyük?" },
+        { "who": "Me", "en": "There are six of us: three engineers, one doctor and two business people.", "tr": "Altı kişiyiz: üç mühendis, bir doktor ve iki iş insanı." },
+        { "who": "Me", "en": "Our next step is to find partners in Europe, which is why I'm here today.", "tr": "Bir sonraki adımımız Avrupa'da ortaklar bulmak, bugün burada olmamın nedeni de bu." }
+      ],
+      "vocab": [
+        { "en": "build a device", "tr": "bir cihaz geliştirmek", "ex": "We've built a device that tests hearing.", "def": "to design and make a machine or tool" },
+        { "en": "automatically", "tr": "otomatik olarak", "ex": "The device tests hearing automatically.", "def": "by itself, without a person controlling it" },
+        { "en": "press a button", "tr": "bir düğmeye basmak", "ex": "The patient presses a button when they hear a sound.", "def": "to push a button with your finger" },
+        { "en": "take under ten minutes", "tr": "on dakikadan kısa sürmek", "ex": "The test takes under ten minutes.", "def": "to need less than ten minutes" },
+        { "en": "audiologist", "tr": "odyolog", "ex": "Many clinics don't have enough audiologists.", "def": "a health expert who tests and treats hearing" },
+        { "en": "paying customer", "tr": "ücretli müşteri, ödeme yapan müşteri", "ex": "We've signed five paying customers.", "def": "a customer who really pays for your product" },
+        { "en": "so far", "tr": "şimdiye kadar", "ex": "We've signed five customers so far.", "def": "until now" },
+        { "en": "which is why", "tr": "bu yüzden, işte bu nedenle", "ex": "We need partners in Europe, which is why I'm here.", "def": "used to give the result of what you just said" }
+      ],
+      "grammar": {
+        "title": "Present perfect: results until now",
+        "tr": "'have/has + V3' ile geçmişte olup bugüne sonucu uzanan şeyleri anlatırız. Ne zaman olduğu değil, sonuç önemlidir; 'so far' ve 'already' ile sık kullanılır.",
+        "examples": ["We've built a device that tests hearing automatically.", "So far, we've signed five paying customers."]
+      },
+      "questions": [
+        { "q": "What does the patient do during the test?", "options": ["Talks to a doctor", "Presses a button when they hear a sound", "Writes down the results"], "a": 1 },
+        { "q": "How long does the test take?", "options": ["Under ten minutes", "About an hour", "Two days"], "a": 0 },
+        { "q": "Why do clinics need this device?", "options": ["It is cheaper than headphones", "The government tells them to buy it", "They don't have enough audiologists"], "a": 2 },
+        { "q": "Why is the speaker at this meeting?", "options": ["To hire an engineer", "To find partners in Europe", "To sell the company"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "The test takes under ten ___.", "a": "minutes", "hint": "dakika" },
+        { "s": "So far, we've ___ five paying customers.", "a": "signed", "hint": "anlaştık" },
+        { "s": "Many clinics don't have enough ___.", "a": "audiologists", "hint": "odyologlar" }
+      ],
+      "order": [
+        { "a": "The test takes under ten minutes." },
+        { "a": "Our next step is to find partners in Europe." }
+      ],
+      "translate": [
+        { "tr": "Şimdiye kadar beş ücretli müşteriyle anlaştık.", "en": "So far, we've signed five paying customers.", "keys": ["so far", "five paying customers"] },
+        { "tr": "Test on dakikadan kısa sürüyor.", "en": "The test takes under ten minutes.", "keys": ["takes", "under ten minutes"] }
+      ],
+      "roleplay": {
+        "persona": "Potential partner",
+        "personaTr": "Olası iş ortağı",
+        "scene": "Bir konferansta kahve molasında Almanya'dan bir klinik zinciri yöneticisiyle tanışıyorsun.",
+        "turns": [
+          { "ai": "Nice to meet you! So, what exactly does your company do?", "aiTr": "Tanıştığımıza memnun oldum! Peki, şirketiniz tam olarak ne yapıyor?", "hint": "We're a medical technology startup from Turkey, and we've built a device that tests hearing automatically.", "keys": ["device", "hearing", "startup"] },
+          { "ai": "How does the test work for the patient?", "aiTr": "Test hasta için nasıl işliyor?", "hint": "The patient puts on headphones and presses a button when they hear a sound.", "keys": ["headphones", "button", "sound"] },
+          { "ai": "Who buys it, and why?", "aiTr": "Kim satın alıyor, neden?", "hint": "Hospitals, clinics and hearing aid shops buy it because they don't have enough audiologists.", "keys": ["hospitals", "clinics", "audiologists"] },
+          { "ai": "And what brings you to Europe?", "aiTr": "Peki sizi Avrupa'ya getiren ne?", "hint": "Our next step is to find partners in Europe, which is why I'm here.", "keys": ["partners", "next step", "which is why"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Olası bir ortağa ürününün nasıl çalıştığını, hangi sorunu çözdüğünü ve neden ortak aradığını anlatıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "So, what's the story behind your company?", "tr": "Peki, şirketinizin hikayesi ne?" },
+        { "who": "Me", "en": "We're a medtech startup from Turkey, and we've developed an AI-assisted audiometer that runs a full hearing test on its own.", "tr": "Türkiye'den bir medikal teknoloji girişimiyiz ve tam bir işitme testini kendi başına yapan, yapay zekâ destekli bir odyometre geliştirdik." },
+        { "who": "Me", "en": "The patient simply presses a button whenever they hear a sound, and the AI adjusts the test in real time.", "tr": "Hasta bir ses duyduğunda sadece bir düğmeye basıyor, yapay zekâ da testi gerçek zamanlı olarak ayarlıyor." },
+        { "who": "Me", "en": "At the end, an audiogram is produced in under ten minutes, with no expert needed in the room.", "tr": "Sonunda, odada bir uzmana gerek kalmadan on dakikadan kısa sürede bir odyogram çıkarılıyor." },
+        { "who": "Partner", "en": "Who would you say is your main customer?", "tr": "Sizce asıl müşteriniz kim?" },
+        { "who": "Me", "en": "I'd say it's hospitals, clinics and hearing aid shops, which are often short of audiologists.", "tr": "Bence hastaneler, klinikler ve işitme cihazı mağazaları; bunlarda genellikle odyolog sıkıntısı var." },
+        { "who": "Me", "en": "In smaller towns, patients are often kept waiting for months just to get an appointment.", "tr": "Küçük şehirlerde hastalar sadece randevu alabilmek için çoğu zaman aylarca bekletiliyor." },
+        { "who": "Partner", "en": "And who's on the team?", "tr": "Peki ekipte kimler var?" },
+        { "who": "Me", "en": "We're a lean team of six: three engineers, a doctor and two of us on the business side.", "tr": "Altı kişilik, küçük ama verimli bir ekibiz: üç mühendis, bir doktor ve iş tarafında iki kişi." },
+        { "who": "Me", "en": "If we found the right partners in Europe, we could grow much faster than we would on our own.", "tr": "Avrupa'da doğru ortakları bulsak, tek başımıza olacağından çok daha hızlı büyüyebilirdik." },
+        { "who": "Me", "en": "That's really why I wanted to talk to you today.", "tr": "Aslında bugün seninle konuşmak istememin nedeni de bu." }
+      ],
+      "vocab": [
+        { "en": "AI-assisted", "tr": "yapay zekâ destekli", "ex": "We've developed an AI-assisted audiometer.", "def": "helped or partly run by artificial intelligence" },
+        { "en": "on its own", "tr": "kendi başına", "ex": "The device runs a full hearing test on its own.", "def": "without help from anyone else" },
+        { "en": "in real time", "tr": "gerçek zamanlı olarak", "ex": "The AI adjusts the test in real time.", "def": "immediately, while things are happening" },
+        { "en": "audiogram", "tr": "odyogram (işitme grafiği)", "ex": "An audiogram is produced in under ten minutes.", "def": "a chart that shows how well someone hears" },
+        { "en": "be short of", "tr": "...sıkıntısı çekmek, eksiği olmak", "ex": "Many clinics are short of audiologists.", "def": "to not have enough of something" },
+        { "en": "get an appointment", "tr": "randevu almak", "ex": "People wait for months to get an appointment.", "def": "to arrange a time to see a doctor or expert" },
+        { "en": "lean team", "tr": "küçük ve verimli ekip", "ex": "We're a lean team of six.", "def": "a small team that works efficiently with few resources" },
+        { "en": "on the business side", "tr": "iş tarafında", "ex": "Two of us work on the business side.", "def": "working on sales, money or strategy rather than technology" },
+        { "en": "I'd say", "tr": "bence, diyebilirim ki", "ex": "I'd say our main customers are clinics.", "def": "a polite way to give your opinion" }
+      ],
+      "grammar": {
+        "title": "Passive voice: focusing on the result",
+        "tr": "İşi kimin yaptığı değil, sonucun kendisi önemliyse 'be + V3' ile pasif kullanırız. Bir ürünü ya da bir sorunu anlatırken çok doğal durur.",
+        "examples": ["An audiogram is produced in under ten minutes.", "Patients are often kept waiting for months."]
+      },
+      "questions": [
+        { "q": "What does the AI do during the test?", "options": ["It talks to the patient", "It adjusts the test in real time", "It calls an audiologist"], "a": 1 },
+        { "q": "How long does it take to get an audiogram?", "options": ["Over an hour", "About thirty minutes", "Under ten minutes"], "a": 2 },
+        { "q": "Why are clinics a good market for the device, according to the speaker?", "options": ["They are often short of audiologists", "They have too many patients from big cities", "They want cheaper headphones"], "a": 0 },
+        { "q": "What can we infer about the speaker's goal in this conversation?", "options": ["They want to sell the company", "They hope the listener could become a partner in Europe", "They are looking for a job"], "a": 1 },
+        { "q": "How many people work on the business side?", "options": ["One", "Three", "Two"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "The AI adjusts the test in real ___.", "a": "time", "hint": "gerçek zamanlı" },
+        { "s": "Hospitals and clinics are often ___ of audiologists.", "a": "short", "hint": "...sıkıntısı çekmek" },
+        { "s": "We're a ___ team of six.", "a": "lean", "hint": "küçük ve verimli" }
+      ],
+      "order": [
+        { "a": "An audiogram is produced in under ten minutes." },
+        { "a": "That's really why I wanted to talk to you." }
+      ],
+      "translate": [
+        { "tr": "Avrupa'da doğru ortakları bulsak çok daha hızlı büyüyebilirdik.", "en": "If we found the right partners in Europe, we could grow much faster.", "keys": ["right partners", "grow much faster"] },
+        { "tr": "Odyogram on dakikadan kısa sürede çıkarılıyor.", "en": "The audiogram is produced in under ten minutes.", "keys": ["audiogram is produced", "under ten minutes"] }
+      ],
+      "roleplay": {
+        "persona": "Potential partner",
+        "personaTr": "Olası iş ortağı",
+        "scene": "Bir konferansta kahve molasında Almanya'dan bir klinik zinciri yöneticisiyle tanışıyorsun.",
+        "turns": [
+          { "ai": "So, what's the story behind your company?", "aiTr": "Peki, şirketinizin hikayesi ne?", "hint": "We're a medtech startup from Turkey, and we've developed an AI-assisted audiometer that runs a hearing test on its own.", "keys": ["audiometer", "AI", "hearing test"] },
+          { "ai": "What makes it different from a normal hearing test?", "aiTr": "Normal bir işitme testinden farkı ne?", "hint": "The AI adjusts the test in real time, and an audiogram is produced in under ten minutes with no expert in the room.", "keys": ["real time", "no expert", "ten minutes"] },
+          { "ai": "Who would you say is your main customer?", "aiTr": "Sizce asıl müşteriniz kim?", "hint": "I'd say it's hospitals, clinics and hearing aid shops, which are often short of audiologists.", "keys": ["clinics", "hospitals", "short of"] },
+          { "ai": "And what would you need from someone like me?", "aiTr": "Peki benim gibi birinden neye ihtiyacınız olur?", "hint": "If we found the right partners in Europe, we could grow much faster than we would on our own.", "keys": ["partners", "grow", "Europe"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Olası bir ortağa girişimini ikna edici, net ve doğal bir dille anlatıyor, pazardaki boşluğu vurguluyorsun.",
+      "text": [
+        { "who": "Partner", "en": "I've heard a bit about AIHEAR, but I'd love to hear it in your own words.", "tr": "AIHEAR hakkında biraz bir şeyler duydum ama senin ağzından dinlemeyi çok isterim." },
+        { "who": "Me", "en": "In a nutshell, we're a Turkish medtech startup that has built an autonomous, AI-assisted audiometer.", "tr": "Kısacası, otonom ve yapay zekâ destekli bir odyometre geliştirmiş bir Türk medikal teknoloji girişimiyiz." },
+        { "who": "Me", "en": "Put simply, it does what an audiologist does, but without needing one in the room.", "tr": "Basitçe söylemek gerekirse, bir odyoloğun yaptığını yapıyor ama odada bir odyoloğa ihtiyaç duymadan." },
+        { "who": "Me", "en": "The patient presses a button whenever they hear a tone, while the AI adapts the test in real time and produces an audiogram in under ten minutes.", "tr": "Hasta her ton duyduğunda bir düğmeye basıyor; bu sırada yapay zekâ testi gerçek zamanlı uyarlıyor ve on dakikadan kısa sürede bir odyogram çıkarıyor." },
+        { "who": "Partner", "en": "And where exactly do you see the gap in the market?", "tr": "Peki pazardaki boşluğu tam olarak nerede görüyorsun?" },
+        { "who": "Me", "en": "What most people don't realise is that roughly one in five people has some degree of hearing loss, yet most are never tested.", "tr": "Çoğu insanın fark etmediği şey, yaklaşık her beş kişiden birinin bir dereceye kadar işitme kaybı yaşadığı, ama çoğunun hiç test edilmediği." },
+        { "who": "Me", "en": "The bottleneck isn't the technology; it's the chronic shortage of audiologists, especially in smaller towns where people wait months for an appointment.", "tr": "Darboğaz teknoloji değil; özellikle insanların randevu için aylarca beklediği küçük şehirlerdeki kronik odyolog eksikliği." },
+        { "who": "Partner", "en": "So who's actually buying it at this stage?", "tr": "Peki bu aşamada onu gerçekten kim satın alıyor?" },
+        { "who": "Me", "en": "Mainly hospitals, clinics and hearing aid shops, and we already have five paying customers on board.", "tr": "Ağırlıklı olarak hastaneler, klinikler ve işitme cihazı mağazaları; şimdiden beş ücretli müşterimiz var." },
+        { "who": "Me", "en": "Not only does it free up specialists' time, but it also lets clinics test far more patients a day.", "tr": "Hem uzmanlara zaman kazandırıyor hem de kliniklerin günde çok daha fazla hastayı test etmesini sağlıyor." },
+        { "who": "Me", "en": "Behind it is a team of six: three engineers, a doctor and two of us handling the commercial side.", "tr": "Arkasında altı kişilik bir ekip var: üç mühendis, bir doktor ve ticari tarafı yürüten iki kişi." },
+        { "who": "Me", "en": "Having won over our first customers, we're now looking for the right partners to take AIHEAR into Europe, which is really why I wanted to catch you today.", "tr": "İlk müşterilerimizi kazandıktan sonra şimdi AIHEAR'ı Avrupa'ya taşıyacak doğru ortakları arıyoruz; bugün seni yakalamak istememin asıl nedeni de bu." }
+      ],
+      "vocab": [
+        { "en": "in a nutshell", "tr": "kısacası", "ex": "In a nutshell, we're a Turkish medtech startup.", "def": "in a few words" },
+        { "en": "autonomous", "tr": "otonom, kendi kendine çalışan", "ex": "We've built an autonomous, AI-assisted audiometer.", "def": "able to work without a person controlling it" },
+        { "en": "adapt in real time", "tr": "gerçek zamanlı uyarlamak", "ex": "The AI adapts the test in real time.", "def": "to change something immediately as things happen" },
+        { "en": "gap in the market", "tr": "pazardaki boşluk", "ex": "Where do you see the gap in the market?", "def": "a need that no product is meeting yet" },
+        { "en": "bottleneck", "tr": "darboğaz", "ex": "The bottleneck is the shortage of audiologists.", "def": "the one thing that slows down the whole process" },
+        { "en": "chronic shortage", "tr": "kronik eksiklik", "ex": "There's a chronic shortage of audiologists.", "def": "a lack of something that continues for a long time" },
+        { "en": "on board", "tr": "dahil, bizimle birlikte", "ex": "We already have five paying customers on board.", "def": "involved in and supporting a project" },
+        { "en": "free up", "tr": "(zaman/kaynak) açmak", "ex": "It frees up specialists' time.", "def": "to make time or resources available for something else" },
+        { "en": "the commercial side", "tr": "ticari taraf", "ex": "Two of us handle the commercial side.", "def": "the part of a business that deals with sales and money" },
+        { "en": "win over", "tr": "ikna edip kazanmak", "ex": "We've won over our first customers.", "def": "to persuade someone to support or buy from you" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not only'",
+        "tr": "'Not only' cümlenin başına gelince yardımcı fiil özneden önce gelir (does it, is it, have we). Vurgu katar ve ikna edici konuşmada çok etkilidir.",
+        "examples": ["Not only does it free up specialists' time, but it also lets clinics test more patients.", "Not only is the test fast, but it's also accurate.", "Not only have we built the device, but we've also won our first customers."]
+      },
+      "questions": [
+        { "q": "What does the speaker identify as the real bottleneck?", "options": ["The cost of the technology", "The shortage of audiologists", "A lack of patients"], "a": 1 },
+        { "q": "Why does the speaker begin with 'What most people don't realise'?", "options": ["To admit a weakness in the product", "To change the subject", "To highlight a problem the listener may underestimate"], "a": 2 },
+        { "q": "How would you describe the speaker's attitude when presenting the company?", "options": ["Confident and concise", "Nervous and apologetic", "Bored and distant"], "a": 0 },
+        { "q": "What does 'having won over our first customers' suggest?", "options": ["The company has no sales yet", "There is early proof that clinics will pay for the product", "The customers got the device for free"], "a": 1 },
+        { "q": "What does the speaker most likely want from the listener?", "options": ["Investment for the clinical study", "A job at their clinic chain", "Help entering the European market as a partner"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "The ___ isn't the technology; it's the shortage of audiologists.", "a": "bottleneck", "hint": "darboğaz" },
+        { "s": "We already have five paying customers on ___.", "a": "board", "hint": "dahil, bizimle" },
+        { "s": "It ___ up specialists' time.", "a": "frees", "hint": "zaman açmak" },
+        { "s": "In a ___, we're a Turkish medtech startup.", "a": "nutshell", "hint": "kısacası" }
+      ],
+      "order": [
+        { "a": "Most people with hearing loss are never tested." },
+        { "a": "We already have five paying customers on board." }
+      ],
+      "translate": [
+        { "tr": "Kısacası, otonom bir odyometre geliştirdik.", "en": "In a nutshell, we've built an autonomous audiometer.", "keys": ["in a nutshell", "autonomous audiometer"] },
+        { "tr": "Asıl darboğaz odyolog eksikliği.", "en": "The real bottleneck is the shortage of audiologists.", "keys": ["bottleneck", "shortage of audiologists"] }
+      ],
+      "roleplay": {
+        "persona": "Potential partner",
+        "personaTr": "Olası iş ortağı",
+        "scene": "Berlin'deki bir sağlık teknolojisi konferansında, Almanya'da bir klinik zinciri yöneten biriyle kahve içiyorsun.",
+        "turns": [
+          { "ai": "I've heard a bit about AIHEAR, but I'd love to hear it in your own words.", "aiTr": "AIHEAR hakkında biraz bir şeyler duydum ama senin ağzından dinlemeyi çok isterim.", "hint": "In a nutshell, we've built an autonomous, AI-assisted audiometer that does what an audiologist does, without needing one in the room.", "keys": ["in a nutshell", "audiometer", "audiologist"] },
+          { "ai": "Hearing tests aren't new, though; where exactly is the gap in the market?", "aiTr": "Ama işitme testleri yeni değil; pazardaki boşluk tam olarak nerede?", "hint": "What most people don't realise is that one in five people has some hearing loss, and the real bottleneck is the shortage of audiologists.", "keys": ["bottleneck", "shortage", "one in five"] },
+          { "ai": "Is anyone actually paying for it yet, or is it still a prototype?", "aiTr": "Şu an gerçekten para ödeyen var mı, yoksa hâlâ bir prototip mi?", "hint": "We already have five paying customers on board, and not only does it free up specialists' time, but it also lets clinics test far more patients.", "keys": ["five paying customers", "on board", "free up"] },
+          { "ai": "So what would you want from a partner like us?", "aiTr": "Peki bizim gibi bir ortaktan ne beklersin?", "hint": "We're looking for the right partners to take AIHEAR into Europe, which is really why I wanted to catch you today.", "keys": ["partners", "Europe", "take AIHEAR"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Deneyimli bir sektör oyuncusuna girişimini akıcı, esprili ve kendinden emin bir dille anlatıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "Give me the elevator pitch: what is it you're actually building?", "tr": "Bana kısa tanıtımını yap: tam olarak ne inşa ediyorsunuz?" },
+        { "who": "Me", "en": "The short version is that we've built an autonomous audiometer: a hearing test that, for all intents and purposes, runs itself.", "tr": "Kısa versiyonu şu: otonom bir odyometre geliştirdik; yani pratikte kendi kendini yürüten bir işitme testi." },
+        { "who": "Me", "en": "The patient presses a button when they hear a tone, the AI adapts on the fly, and within ten minutes you have a full audiogram.", "tr": "Hasta bir ton duyduğunda düğmeye basıyor, yapay zekâ anında uyum sağlıyor ve on dakika içinde elinizde eksiksiz bir odyogram oluyor." },
+        { "who": "Partner", "en": "Hearing tests are hardly a new idea, though.", "tr": "Ama işitme testi pek de yeni bir fikir sayılmaz." },
+        { "who": "Me", "en": "Fair point, but the test was never really the problem; access is.", "tr": "Haklısın, ama sorun hiçbir zaman testin kendisi değildi; sorun erişim." },
+        { "who": "Me", "en": "Something like one in five people lives with some degree of hearing loss, and the vast majority are never tested, simply because there aren't enough audiologists to go round.", "tr": "Aşağı yukarı her beş kişiden biri bir dereceye kadar işitme kaybıyla yaşıyor ve büyük çoğunluk, sırf herkese yetecek kadar odyolog olmadığı için hiç test edilmiyor." },
+        { "who": "Me", "en": "Outside the big cities, a months-long wait for an appointment is par for the course.", "tr": "Büyük şehirlerin dışında randevu için aylarca beklemek olağan bir durum." },
+        { "who": "Partner", "en": "And I take it there's a market willing to pay for that?", "tr": "Ve sanırım bunun için para ödemeye hazır bir pazar var?" },
+        { "who": "Me", "en": "Admittedly, five paying customers is a modest start, but it's proof that clinics will actually pay rather than just nod politely at a demo.", "tr": "Kabul etmek gerekir ki beş ücretli müşteri mütevazı bir başlangıç, ama kliniklerin bir demoda kibarca başını sallamakla kalmayıp gerçekten para ödediğinin kanıtı." },
+        { "who": "Me", "en": "We're a team of six, three engineers, a doctor and two of us on the commercial side, so our bandwidth is, shall we say, finite.", "tr": "Altı kişilik bir ekibiz; üç mühendis, bir doktor ve ticari tarafta iki kişi, yani kapasitemiz, nasıl desem, sınırlı." },
+        { "who": "Me", "en": "That said, what we lack in headcount we make up for in focus.", "tr": "Yine de kişi sayısındaki eksikliğimizi odaklanmayla telafi ediyoruz." },
+        { "who": "Me", "en": "Which brings me to why I wanted to talk: we'd make far more headway in Europe with a partner who already knows the terrain than we ever would on our own.", "tr": "Bu da beni konuşmak isteme nedenime getiriyor: Avrupa'da sahayı zaten tanıyan bir ortakla, tek başımıza olabileceğimizden çok daha fazla yol alırız." }
+      ],
+      "vocab": [
+        { "en": "elevator pitch", "tr": "çok kısa tanıtım konuşması", "ex": "Give me the elevator pitch.", "def": "a very short summary of a business, short enough for a lift ride" },
+        { "en": "for all intents and purposes", "tr": "pratikte, fiilen", "ex": "The test, for all intents and purposes, runs itself.", "def": "in every way that really matters" },
+        { "en": "on the fly", "tr": "anında, o anda", "ex": "The AI adapts on the fly.", "def": "while something is happening, without stopping" },
+        { "en": "go round", "tr": "herkese yetmek", "ex": "There aren't enough audiologists to go round.", "def": "to be enough for everyone who needs it" },
+        { "en": "par for the course", "tr": "olağan, beklenen durum", "ex": "A months-long wait is par for the course.", "def": "normal and expected, usually in a negative way" },
+        { "en": "a modest start", "tr": "mütevazı bir başlangıç", "ex": "Five paying customers is a modest start.", "def": "a small but real beginning" },
+        { "en": "bandwidth", "tr": "kapasite (zaman ve enerji)", "ex": "Our bandwidth is, shall we say, finite.", "def": "the time and energy a person or team has available" },
+        { "en": "make up for", "tr": "telafi etmek", "ex": "What we lack in headcount we make up for in focus.", "def": "to balance a weakness with a strength" },
+        { "en": "make headway", "tr": "yol almak, ilerleme kaydetmek", "ex": "We'd make far more headway with a partner.", "def": "to make progress, especially when it is difficult" },
+        { "en": "know the terrain", "tr": "sahayı tanımak", "ex": "We need a partner who already knows the terrain.", "def": "to understand a market or situation well" }
+      ],
+      "grammar": {
+        "title": "Hedging and understatement",
+        "tr": "Akıcı konuşanlar güçlü bir iddiayı yumuşatmak ya da ince bir ironi katmak için 'admittedly', 'shall we say', 'something like' gibi ifadeler kullanır. Bu, kendinden emin ama abartısız bir izlenim bırakır.",
+        "examples": ["Admittedly, five paying customers is a modest start.", "Our bandwidth is, shall we say, finite.", "Something like one in five people lives with some degree of hearing loss."]
+      },
+      "questions": [
+        { "q": "According to the speaker, what is the real problem?", "options": ["The quality of existing hearing tests", "Access to testing, because there are too few audiologists", "The price of headphones"], "a": 1 },
+        { "q": "What is the tone of 'our bandwidth is, shall we say, finite'?", "options": ["Wry understatement about how stretched the team is", "An angry complaint about the engineers", "A formal technical description"], "a": 0 },
+        { "q": "Why does the speaker say 'rather than just nod politely at a demo'?", "options": ["To criticise their own customers", "To suggest demos are a waste of time", "To show that interest has turned into real money"], "a": 2 },
+        { "q": "How does the speaker respond to 'Hearing tests are hardly a new idea'?", "options": ["They get defensive and change the subject", "They concede the point and reframe the problem", "They ignore the comment"], "a": 1 },
+        { "q": "What does the final line imply about the listener?", "options": ["The speaker wants them to invest money", "The speaker wants to hire them as an engineer", "The speaker sees them as a possible partner who knows the European market"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "The AI adapts on the ___.", "a": "fly", "hint": "anında" },
+        { "s": "There aren't enough audiologists to go ___.", "a": "round", "hint": "herkese yetecek kadar" },
+        { "s": "A months-long wait is par for the ___.", "a": "course", "hint": "olağan durum" },
+        { "s": "We'd make far more ___ with a partner who knows the terrain.", "a": "headway", "hint": "ilerleme, yol" }
+      ],
+      "order": [
+        { "a": "The test was never really the problem." },
+        { "a": "Five paying customers is a modest start." }
+      ],
+      "translate": [
+        { "tr": "Kabul etmek gerekir ki beş müşteri mütevazı bir başlangıç.", "en": "Admittedly, five customers is a modest start.", "keys": ["admittedly", "modest start"] },
+        { "tr": "Asıl sorun test değil, erişim.", "en": "The real problem isn't the test; it's access.", "keys": ["isn't the test", "access"] },
+        { "tr": "Sahayı tanıyan bir ortakla çok daha fazla yol alırız.", "en": "We'd make far more headway with a partner who knows the terrain.", "keys": ["headway", "knows the terrain"] }
+      ],
+      "roleplay": {
+        "persona": "Potential partner",
+        "personaTr": "Olası iş ortağı",
+        "scene": "Berlin'deki bir sağlık teknolojisi konferansında, Almanya'da büyük bir klinik zinciri yöneten deneyimli biriyle kahve içiyorsun.",
+        "turns": [
+          { "ai": "Give me the elevator pitch: what is it you're actually building?", "aiTr": "Bana kısa tanıtımını yap: tam olarak ne inşa ediyorsunuz?", "hint": "The short version is that we've built an autonomous audiometer, a hearing test that, for all intents and purposes, runs itself.", "keys": ["autonomous audiometer", "runs itself", "short version"] },
+          { "ai": "Hearing tests are hardly a new idea, though, are they?", "aiTr": "Ama işitme testleri pek yeni bir fikir değil, değil mi?", "hint": "Fair point, but the test was never really the problem; access is, because there aren't enough audiologists to go round.", "keys": ["access", "go round", "fair point"] },
+          { "ai": "And is anyone actually paying, or is it all pilots and goodwill at this stage?", "aiTr": "Peki gerçekten para ödeyen var mı, yoksa bu aşamada her şey pilot projeler ve iyi niyetten mi ibaret?", "hint": "Admittedly, five paying customers is a modest start, but it's proof that clinics will actually pay rather than just nod politely.", "keys": ["paying customers", "modest start", "proof"] },
+          { "ai": "So where would someone like me fit in?", "aiTr": "Peki benim gibi biri bu resmin neresinde?", "hint": "We'd make far more headway in Europe with a partner who already knows the terrain than we ever would on our own.", "keys": ["headway", "partner", "terrain"] }
+        ]
+      }
+    }
+  }
+}

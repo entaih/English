@@ -1,0 +1,376 @@
+{
+  "id": "ai-04",
+  "topic": "aihear",
+  "title": "Medical Device Certification",
+  "titleTr": "Tıbbi Cihaz Sertifikasyonu",
+  "levels": {
+    "A1": {
+      "intro": "Tıbbi bir cihazı Avrupa'da satmak için neye ihtiyacın olduğunu basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "en": "We make a medical device for hearing tests.", "tr": "İşitme testleri için tıbbi bir cihaz yapıyoruz." },
+        { "en": "In Europe, a medical device needs a CE mark.", "tr": "Avrupa'da tıbbi bir cihazın CE işaretine ihtiyacı var." },
+        { "en": "Without the CE mark, we cannot sell it there.", "tr": "CE işareti olmadan onu orada satamayız." },
+        { "en": "Our device has a medium level of risk.", "tr": "Cihazımızın risk düzeyi orta." },
+        { "en": "We must show that it is safe and works.", "tr": "Güvenli olduğunu ve çalıştığını göstermemiz gerekiyor." },
+        { "en": "Our results match an expert's results in 94% of tests.", "tr": "Testlerin %94'ünde sonuçlarımız bir uzmanın sonuçlarıyla aynı." },
+        { "en": "The process is slow, and we need many documents.", "tr": "Süreç yavaş ve çok sayıda belgeye ihtiyacımız var." },
+        { "en": "We want to finish by the end of next year.", "tr": "Gelecek yılın sonuna kadar bitirmek istiyoruz." }
+      ],
+      "vocab": [
+        { "en": "medical device", "tr": "tıbbi cihaz", "ex": "Our audiometer is a medical device." },
+        { "en": "sell", "tr": "satmak", "ex": "We cannot sell the device without the CE mark." },
+        { "en": "risk", "tr": "risk", "ex": "The device has a medium level of risk." },
+        { "en": "safe", "tr": "güvenli", "ex": "The test is safe for patients." },
+        { "en": "result", "tr": "sonuç", "ex": "Our results are very good." },
+        { "en": "document", "tr": "belge", "ex": "We need many documents." }
+      ],
+      "grammar": {
+        "title": "can / cannot",
+        "tr": "'can' bir şeyi yapabildiğimizi, 'cannot' yapamadığımızı söyler. Arkasından fiil yalın gelir: can sell, cannot sell. Soru için 'can' başa gelir.",
+        "examples": ["We cannot sell it in Europe.", "We can show that it is safe.", "Can you sell it today?"]
+      },
+      "questions": [
+        { "q": "What does a medical device need in Europe?", "options": ["A CE mark", "A big office", "A new name"], "a": 0 },
+        { "q": "What level of risk does the device have?", "options": ["High", "Low", "Medium"], "a": 2 },
+        { "q": "When do they want to finish?", "options": ["This month", "By the end of next year", "In ten years"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "In Europe, a medical device needs a CE ___.", "a": "mark", "hint": "işaret" },
+        { "s": "We must show that it is ___ and works.", "a": "safe", "hint": "güvenli" },
+        { "s": "The process is slow, and we need many ___.", "a": "documents", "hint": "belgeler" }
+      ],
+      "order": [
+        { "a": "We make a medical device for hearing tests." },
+        { "a": "Our device has a medium level of risk." }
+      ],
+      "translate": [
+        { "tr": "Cihaz güvenli.", "en": "The device is safe.", "keys": ["device", "safe"] },
+        { "tr": "Onu Avrupa'da satamayız.", "en": "We cannot sell it in Europe.", "keys": ["cannot sell", "Europe"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Bir yatırımcı CE işaretini ve zaman planını soruyor.",
+        "turns": [
+          { "ai": "Can you sell your device in Europe now?", "aiTr": "Cihazınızı şu anda Avrupa'da satabilir misiniz?", "hint": "Not yet. We need a CE mark first.", "keys": ["CE mark", "not yet", "need"] },
+          { "ai": "Is the device safe?", "aiTr": "Cihaz güvenli mi?", "hint": "Yes, it is safe. Our results match an expert's results in 94% of tests.", "keys": ["safe", "94", "results"] },
+          { "ai": "When can you finish?", "aiTr": "Ne zaman bitirebilirsiniz?", "hint": "We want to finish by the end of next year.", "keys": ["next year", "end of", "finish"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir yatırımcıya CE işaretini, risk sınıfını ve klinik testleri basitçe anlatıyorsun.",
+      "text": [
+        { "en": "Before we can sell our audiometer in Europe, we need a CE mark.", "tr": "Odyometremizi Avrupa'da satabilmemiz için önce CE işaretine ihtiyacımız var." },
+        { "en": "Later, we also want to get FDA approval for the United States.", "tr": "Daha sonra Amerika Birleşik Devletleri için FDA onayı da almak istiyoruz." },
+        { "en": "Our device is Class IIa, so it has a medium level of risk.", "tr": "Cihazımız Sınıf IIa, yani orta düzeyde bir riske sahip." },
+        { "en": "We need to prove that it is safe and that it works well.", "tr": "Güvenli olduğunu ve iyi çalıştığını kanıtlamamız gerekiyor." },
+        { "en": "We tested it with 200 people in two university hospitals.", "tr": "Onu iki üniversite hastanesinde 200 kişiyle test ettik." },
+        { "en": "Our results matched an audiologist's results in 94% of cases.", "tr": "Vakaların %94'ünde sonuçlarımız bir odyoloğun sonuçlarıyla eşleşti." },
+        { "en": "There is also a lot of paperwork, so the process is slow and expensive.", "tr": "Ayrıca çok fazla evrak işi var, bu yüzden süreç yavaş ve pahalı." },
+        { "en": "Our plan is to get the CE mark by the end of next year.", "tr": "Planımız CE işaretini gelecek yılın sonuna kadar almak." },
+        { "en": "An experienced consultant helps us, but it may take longer than planned.", "tr": "Deneyimli bir danışman bize yardım ediyor ama planlanandan uzun sürebilir." }
+      ],
+      "vocab": [
+        { "en": "CE mark", "tr": "CE işareti", "ex": "We need a CE mark to sell in Europe." },
+        { "en": "approval", "tr": "onay", "ex": "We want FDA approval later." },
+        { "en": "level of risk", "tr": "risk düzeyi", "ex": "The device has a medium level of risk." },
+        { "en": "prove", "tr": "kanıtlamak", "ex": "We need to prove that the device is safe." },
+        { "en": "match", "tr": "eşleşmek, uyuşmak", "ex": "Our results matched the audiologist's results." },
+        { "en": "paperwork", "tr": "evrak işi", "ex": "Certification needs a lot of paperwork." },
+        { "en": "consultant", "tr": "danışman", "ex": "An experienced consultant helps us." },
+        { "en": "take longer than planned", "tr": "planlanandan uzun sürmek", "ex": "Certification may take longer than planned." }
+      ],
+      "grammar": {
+        "title": "Past simple: what we did",
+        "tr": "Geçmişte bitmiş işler için past simple kullanırız. Düzenli fiillere -ed eklenir: test → tested, match → matched. Soru ve olumsuzda 'did' kullanılır.",
+        "examples": ["We tested it with 200 people.", "Our results matched an audiologist's results.", "Did you test it in a hospital?"]
+      },
+      "questions": [
+        { "q": "Why does the company need a CE mark?", "options": ["To get a bank loan", "To sell the device in Europe", "To hire more staff"], "a": 1 },
+        { "q": "How many people took part in the tests?", "options": ["94", "2,000", "200"], "a": 2 },
+        { "q": "Who is helping the company?", "options": ["An experienced consultant", "A big hospital", "The FDA"], "a": 0 },
+        { "q": "What is the problem with the process?", "options": ["It is too easy", "It is slow and expensive", "It is not necessary"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Our device is Class IIa, so it has a medium level of ___.", "a": "risk", "hint": "risk" },
+        { "s": "We need to ___ that it is safe.", "a": "prove", "hint": "kanıtlamak" },
+        { "s": "Our results ___ an audiologist's results in 94% of cases.", "a": "matched", "hint": "eşleşti" }
+      ],
+      "order": [
+        { "a": "We tested it with 200 people in two hospitals." },
+        { "a": "Later we want to get FDA approval too." }
+      ],
+      "translate": [
+        { "tr": "Cihazın güvenli olduğunu kanıtlamamız gerekiyor.", "en": "We need to prove that the device is safe.", "keys": ["prove", "safe"] },
+        { "tr": "Süreç yavaş ve pahalı.", "en": "The process is slow and expensive.", "keys": ["slow", "expensive"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Bir yatırımcı sertifikasyonu ve klinik testleri soruyor.",
+        "turns": [
+          { "ai": "Can you sell the device in Europe today?", "aiTr": "Cihazı bugün Avrupa'da satabilir misiniz?", "hint": "Not yet. We need a CE mark first, because it is a medical device.", "keys": ["CE mark", "not yet", "medical device"] },
+          { "ai": "How did you prove that it works?", "aiTr": "Çalıştığını nasıl kanıtladınız?", "hint": "We tested it with 200 people in two hospitals. Our results matched an audiologist's results in 94% of cases.", "keys": ["200", "94", "matched", "tested"] },
+          { "ai": "When are you going to get the CE mark?", "aiTr": "CE işaretini ne zaman alacaksınız?", "hint": "By the end of next year, but it may take longer than planned.", "keys": ["next year", "take longer", "end of"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "CE işareti, FDA, risk sınıfı ve klinik doğrulama gibi kavramları bir yatırımcıya açıklıyorsun.",
+      "text": [
+        { "en": "In Europe, a medical device cannot be sold without the CE mark.", "tr": "Avrupa'da tıbbi bir cihaz CE işareti olmadan satılamaz." },
+        { "en": "In the United States, we will also need FDA approval later.", "tr": "Amerika Birleşik Devletleri'nde ise ileride FDA onayına da ihtiyacımız olacak." },
+        { "en": "Our audiometer is a Class IIa device, which means it has a medium level of risk.", "tr": "Odyometremiz Sınıf IIa bir cihaz, yani orta düzeyde bir riske sahip." },
+        { "en": "To get the CE mark, we have to prove that the device is safe and works as we say.", "tr": "CE işaretini almak için cihazın güvenli olduğunu ve söylediğimiz gibi çalıştığını kanıtlamak zorundayız." },
+        { "en": "This is called clinical validation.", "tr": "Buna klinik doğrulama denir." },
+        { "en": "We have already compared our results with those of trained audiologists in two university hospitals.", "tr": "Sonuçlarımızı iki üniversite hastanesinde eğitimli odyologların sonuçlarıyla zaten karşılaştırdık." },
+        { "en": "The results matched in 94% of cases, and the study was published last spring.", "tr": "Sonuçlar vakaların %94'ünde eşleşti ve çalışma geçen bahar yayımlandı." },
+        { "en": "We also have to build a quality management system and prepare a lot of documentation.", "tr": "Ayrıca bir kalite yönetim sistemi kurmamız ve çok fazla dokümantasyon hazırlamamız gerekiyor." },
+        { "en": "The process is slow and expensive, but in the end it protects patients, and it protects us too.", "tr": "Süreç yavaş ve pahalı ama sonuçta hastaları koruyor, bizi de koruyor." },
+        { "en": "If everything goes to plan, we will complete certification by the end of next year.", "tr": "Her şey plana göre giderse sertifikasyonu gelecek yılın sonuna kadar tamamlayacağız." }
+      ],
+      "vocab": [
+        { "en": "certification", "tr": "sertifikasyon, belgelendirme", "ex": "We need certification before we can sell the device in Europe.", "def": "official proof that a product meets the required standards" },
+        { "en": "FDA approval", "tr": "FDA onayı", "ex": "We will apply for FDA approval later.", "def": "permission from the US authority to sell a medical product" },
+        { "en": "prove", "tr": "kanıtlamak", "ex": "We have to prove that the device is safe.", "def": "to show with facts that something is true" },
+        { "en": "clinical validation", "tr": "klinik doğrulama", "ex": "Clinical validation shows that the device works with real patients.", "def": "testing a medical product with real patients to show that it works" },
+        { "en": "compare with", "tr": "...ile karşılaştırmak", "ex": "We compared our results with those of trained audiologists.", "def": "to look at two things to see how similar they are" },
+        { "en": "quality management system", "tr": "kalite yönetim sistemi", "ex": "A quality management system controls how we design and build the device.", "def": "a set of rules and processes that make sure a product is always made well" },
+        { "en": "documentation", "tr": "dokümantasyon, belgeler", "ex": "Certification needs a lot of documentation.", "def": "written records that explain and prove how something works" },
+        { "en": "go to plan", "tr": "plana göre gitmek", "ex": "If everything goes to plan, we will finish next year.", "def": "to happen in the way you expected" }
+      ],
+      "grammar": {
+        "title": "Present perfect vs past simple",
+        "tr": "Present perfect (have + V3) geçmişte olmuş ama şimdi önemli olan şeyler için kullanılır; zamanı söylemeyiz. Zaman belliyse (last spring) past simple kullanırız.",
+        "examples": ["We have already compared our results with trained audiologists.", "The study was published last spring.", "Have you started the certification process?"]
+      },
+      "questions": [
+        { "q": "What does the company need to sell the device in Europe?", "options": ["FDA approval", "A patent", "The CE mark", "A distributor"], "a": 2 },
+        { "q": "What does 'Class IIa' tell us about the device?", "options": ["It has a medium level of risk", "It is very cheap", "It is only for children"], "a": 0 },
+        { "q": "What is clinical validation?", "options": ["Selling the device to clinics", "Proving that the device is safe and works", "Training doctors to use the device"], "a": 1 },
+        { "q": "When will they complete certification if everything goes to plan?", "options": ["By the end of this year", "In five years", "Next month", "By the end of next year"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "To get the CE mark, we have to ___ that the device is safe.", "a": "prove", "hint": "kanıtlamak" },
+        { "s": "This is called clinical ___.", "a": "validation", "hint": "doğrulama" },
+        { "s": "If everything goes to ___, we will finish by the end of next year.", "a": "plan", "hint": "plan" }
+      ],
+      "order": [
+        { "a": "The process is slow and expensive." },
+        { "a": "We also have to build a quality management system." }
+      ],
+      "translate": [
+        { "tr": "Sonuçlarımızı eğitimli odyologlarınkiyle karşılaştırdık.", "en": "We have compared our results with those of trained audiologists.", "keys": ["compared", "results", "audiologists"] },
+        { "tr": "Her şey plana göre giderse gelecek yılın sonuna kadar bitireceğiz.", "en": "If everything goes to plan, we will finish by the end of next year.", "keys": ["goes to plan", "end of next year"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı (mevzuat soruları)",
+        "scene": "Yatırımcı sertifikasyon riskini ve zaman planını soruyor.",
+        "turns": [
+          { "ai": "Can you sell the device in Europe today?", "aiTr": "Cihazı bugün Avrupa'da satabilir misiniz?", "hint": "Not yet. In Europe, a medical device cannot be sold without the CE mark.", "keys": ["CE mark", "not yet", "cannot be sold", "certification"] },
+          { "ai": "What do you have to do to get the CE mark?", "aiTr": "CE işaretini almak için ne yapmanız gerekiyor?", "hint": "We have to prove that the device is safe and works. This is called clinical validation.", "keys": ["prove", "safe", "clinical validation"] },
+          { "ai": "Have you already tested it with patients?", "aiTr": "Cihazı hastalarla test ettiniz mi?", "hint": "Yes. We have compared our results with trained audiologists in two university hospitals, and they matched in 94% of cases.", "keys": ["94", "compared", "two university hospitals", "matched"] },
+          { "ai": "When will you finish?", "aiTr": "Ne zaman bitireceksiniz?", "hint": "If everything goes to plan, we will complete certification by the end of next year.", "keys": ["end of next year", "goes to plan", "complete"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir yatırımcıya onaylanmış kuruluşu, klinik kanıtı ve sertifikasyonun en büyük riskini açıklıyorsun.",
+      "text": [
+        { "en": "No medical device can be placed on the European market until it has been certified.", "tr": "Hiçbir tıbbi cihaz sertifika almadan Avrupa pazarına sürülemez." },
+        { "en": "For us, that means getting the CE mark first, with FDA approval for the US following later.", "tr": "Bizim için bu, önce CE işaretini almak, ABD için FDA onayının da ardından gelmesi demek." },
+        { "en": "Our audiometer is classified as Class IIa, which is the medium-risk category under EU rules.", "tr": "Odyometremiz, AB kurallarına göre orta risk kategorisi olan Sınıf IIa olarak sınıflandırılıyor." },
+        { "en": "Because of that, it has to be assessed by an independent organization known as a notified body.", "tr": "Bu nedenle, onaylanmış kuruluş denen bağımsız bir kurum tarafından değerlendirilmesi gerekiyor." },
+        { "en": "The key requirement is clinical evidence, in other words proof that the device is safe and does what we claim.", "tr": "Temel şart klinik kanıt, yani cihazın güvenli olduğunun ve iddia ettiğimiz şeyi yaptığının kanıtı." },
+        { "en": "Our study, which was carried out at two university hospitals, compared our results with those of a trained audiologist.", "tr": "İki üniversite hastanesinde yürütülen çalışmamız, sonuçlarımızı eğitimli bir odyoloğun sonuçlarıyla karşılaştırdı." },
+        { "en": "The results matched in 94% of cases, and the small differences in the rest didn't change the diagnosis.", "tr": "Sonuçlar vakaların %94'ünde eşleşti; geri kalanlardaki küçük farklar teşhisi değiştirmedi." },
+        { "en": "On top of that, we're required to run a quality management system and keep detailed technical documentation.", "tr": "Bunun yanında bir kalite yönetim sistemi işletmemiz ve ayrıntılı teknik dokümantasyon tutmamız gerekiyor." },
+        { "en": "Our regulatory consultant, who has guided several similar devices through the process, says we're on track.", "tr": "Benzer birkaç cihazı bu süreçten geçirmiş olan mevzuat danışmanımız, doğru yolda olduğumuzu söylüyor." },
+        { "en": "I'd say the biggest risk is time, because certification often takes longer than planned.", "tr": "Bence en büyük risk zaman, çünkü sertifikasyon çoğu zaman planlanandan uzun sürüyor." },
+        { "en": "If it were up to us, we'd be on the market tomorrow, but realistically we're aiming for the end of next year.", "tr": "Bize kalsa yarın piyasada olurduk ama gerçekçi olmak gerekirse gelecek yılın sonunu hedefliyoruz." }
+      ],
+      "vocab": [
+        { "en": "place on the market", "tr": "piyasaya sürmek", "ex": "A device cannot be placed on the market without the CE mark.", "def": "to make a product available for sale for the first time" },
+        { "en": "be classified as", "tr": "...olarak sınıflandırılmak", "ex": "Our audiometer is classified as Class IIa.", "def": "to be officially put into a group or category" },
+        { "en": "notified body", "tr": "onaylanmış kuruluş", "ex": "A notified body has to assess our device.", "def": "an independent organization that checks medical devices for EU certification" },
+        { "en": "clinical evidence", "tr": "klinik kanıt", "ex": "The notified body will look closely at our clinical evidence.", "def": "data from studies with patients that shows a device is safe and works" },
+        { "en": "carry out a study", "tr": "çalışma yürütmek", "ex": "We carried out the study at two university hospitals.", "def": "to do a piece of research" },
+        { "en": "technical documentation", "tr": "teknik dokümantasyon", "ex": "We keep detailed technical documentation for every version of the device.", "def": "detailed documents that describe how a product is designed, built and tested" },
+        { "en": "be on track", "tr": "doğru yolda olmak, plana uygun ilerlemek", "ex": "Our consultant says we're on track.", "def": "to be making the progress you expected" },
+        { "en": "take longer than planned", "tr": "planlanandan uzun sürmek", "ex": "Certification often takes longer than planned.", "def": "to need more time than you expected" },
+        { "en": "aim for", "tr": "hedeflemek", "ex": "We're aiming for the end of next year.", "def": "to try to achieve a particular result or date" }
+      ],
+      "grammar": {
+        "title": "The passive in regulatory language",
+        "tr": "Passive (be + V3), işi kimin yaptığı değil işin kendisi önemli olduğunda kullanılır. Resmî ve mevzuat dilinde çok yaygındır; yapan kişi gerekirse 'by' ile eklenir.",
+        "examples": ["Our audiometer is classified as Class IIa.", "It has to be assessed by a notified body.", "The study was carried out at two university hospitals."]
+      },
+      "questions": [
+        { "q": "Why does the audiometer need to be assessed by a notified body?", "options": ["Because it will be sold in the US", "Because it is a Class IIa device", "Because the study was small"], "a": 1 },
+        { "q": "What happened in the 6% of cases where the results were different?", "options": ["The diagnosis changed", "The patients were tested again", "The differences were small and didn't change the diagnosis"], "a": 2 },
+        { "q": "What does the consultant think?", "options": ["The company is on track", "The company should give up", "The study must be repeated"], "a": 0 },
+        { "q": "What can we infer about the founder's attitude to the timeline?", "options": ["They are sure it will finish early", "They are hopeful but realistic about possible delays", "They don't care about the deadline", "They think FDA approval comes first"], "a": 1 },
+        { "q": "Which market does the company want to enter first?", "options": ["The United States", "Asia", "South America", "Europe"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Our audiometer is ___ as Class IIa.", "a": "classified", "hint": "sınıflandırılmak" },
+        { "s": "It has to be assessed by a notified ___.", "a": "body", "hint": "kuruluş" },
+        { "s": "Certification often takes longer than ___.", "a": "planned", "hint": "planlanan" }
+      ],
+      "order": [
+        { "a": "The study was carried out at two university hospitals." },
+        { "a": "Our consultant says we are on track." }
+      ],
+      "translate": [
+        { "tr": "Cihazımız Sınıf IIa olarak sınıflandırılıyor.", "en": "Our device is classified as Class IIa.", "keys": ["classified as", "Class IIa"] },
+        { "tr": "Bence en büyük risk zaman.", "en": "I'd say the biggest risk is time.", "keys": ["I'd say", "biggest risk"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı (durum tespiti)",
+        "scene": "Bir yatırımcı yatırım öncesi incelemede sertifikasyon sürecini ve risklerini soruyor.",
+        "turns": [
+          { "ai": "What exactly stands between you and the European market?", "aiTr": "Sizinle Avrupa pazarı arasında tam olarak ne var?", "hint": "The CE mark. Our device is classified as Class IIa, so it has to be assessed by a notified body.", "keys": ["CE mark", "Class IIa", "notified body"] },
+          { "ai": "How strong is your clinical evidence?", "aiTr": "Klinik kanıtınız ne kadar güçlü?", "hint": "Quite strong, I'd say. Our study at two university hospitals matched a trained audiologist in 94% of cases.", "keys": ["94", "study", "matched"] },
+          { "ai": "What's the biggest risk in the process?", "aiTr": "Süreçteki en büyük risk ne?", "hint": "Time. Certification often takes longer than planned, but our consultant says we're on track.", "keys": ["takes longer", "on track", "time"] },
+          { "ai": "If the CE mark were delayed by six months, what would you do?", "aiTr": "CE işareti altı ay gecikseydi ne yapardınız?", "hint": "If that happened, we would keep our costs low and use the funding to cover the extra months.", "keys": ["would", "costs", "funding"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir risk sermayesi ortağına AB mevzuatını, klinik kanıtları ve takvim riskini profesyonel bir dille anlatıyorsun.",
+      "text": [
+        { "en": "Under the EU's Medical Device Regulation, nothing reaches patients without a CE mark, and our audiometer is no exception.", "tr": "AB Tıbbi Cihaz Tüzüğü'ne göre hiçbir şey CE işareti olmadan hastaya ulaşamaz ve odyometremiz de bir istisna değil." },
+        { "en": "Classified as Class IIa, it falls into the medium-risk category, which means a notified body must audit both the device and the company behind it.", "tr": "Sınıf IIa olarak sınıflandırıldığı için orta risk kategorisine giriyor; bu da onaylanmış bir kuruluşun hem cihazı hem de arkasındaki şirketi denetlemesi gerektiği anlamına geliyor." },
+        { "en": "What the notified body really scrutinizes is our clinical evidence: does the device do what we claim, safely and consistently?", "tr": "Onaylanmış kuruluşun asıl titizlikle incelediği şey klinik kanıtlarımız: Cihaz iddia ettiğimiz şeyi güvenli ve tutarlı biçimde yapıyor mu?" },
+        { "en": "Our blind study across two university hospitals, involving 200 participants aged 18 to 75, matched a trained audiologist's results in 94% of cases.", "tr": "İki üniversite hastanesinde, 18-75 yaş arası 200 katılımcıyla yürüttüğümüz kör çalışmada sonuçlarımız vakaların %94'ünde eğitimli bir odyoloğunkilerle eşleşti." },
+        { "en": "Crucially, the remaining 6% showed only minor discrepancies, none of which altered the diagnosis.", "tr": "Daha da önemlisi, kalan %6'da yalnızca küçük farklar vardı ve hiçbiri teşhisi değiştirmedi." },
+        { "en": "Having published those findings in a medical journal last spring, we now have independent backing for our core claims.", "tr": "Bu bulguları geçen bahar bir tıp dergisinde yayımladığımız için artık temel iddialarımızı destekleyen bağımsız bir dayanağımız var." },
+        { "en": "Not only do we need solid clinical data, but we also have to demonstrate a robust quality management system and maintain exhaustive technical documentation.", "tr": "Sadece sağlam klinik verilere ihtiyacımız yok; aynı zamanda güçlü bir kalite yönetim sistemi gösterip kapsamlı teknik dokümantasyon da tutmamız gerekiyor." },
+        { "en": "Since our software is updated roughly once a month, every change has to be validated and traceable, which adds a layer of complexity most investors underestimate.", "tr": "Yazılımımız yaklaşık ayda bir güncellendiği için her değişikliğin doğrulanmış ve izlenebilir olması gerekiyor; bu da çoğu yatırımcının hafife aldığı bir karmaşıklık katmanı ekliyor." },
+        { "en": "We've brought in a seasoned regulatory consultant to help us navigate the process and avoid the usual pitfalls.", "tr": "Süreçte yolumuzu bulmamıza ve bilinen tuzaklardan kaçınmamıza yardım etmesi için deneyimli bir mevzuat danışmanıyla çalışmaya başladık." },
+        { "en": "The real bottleneck, though, is notified body capacity, so timelines can slip through no fault of our own.", "tr": "Asıl darboğaz ise onaylanmış kuruluşların kapasitesi; bu yüzden takvimler bizim hiçbir hatamız olmadan kayabiliyor." },
+        { "en": "We're targeting certification by the end of next year, and we've built some slack into the plan to mitigate that risk.", "tr": "Sertifikasyonu gelecek yılın sonuna kadar almayı hedefliyoruz ve bu riski azaltmak için plana biraz pay bıraktık." },
+        { "en": "Painful as the process is, it's ultimately what protects patients, and it's a moat that latecomers will find hard to cross.", "tr": "Süreç ne kadar zahmetli olsa da sonuçta hastaları koruyan şey bu ve geç gelen rakiplerin aşmakta zorlanacağı bir savunma hattı." }
+      ],
+      "vocab": [
+        { "en": "fall into a category", "tr": "bir kategoriye girmek", "ex": "Our audiometer falls into the medium-risk category.", "def": "to belong to a particular group" },
+        { "en": "scrutinize", "tr": "titizlikle incelemek", "ex": "The notified body will scrutinize our clinical evidence.", "def": "to examine something very carefully" },
+        { "en": "discrepancy", "tr": "tutarsızlık, fark", "ex": "The remaining 6% showed only minor discrepancies.", "def": "a difference between things that should be the same" },
+        { "en": "robust", "tr": "sağlam, güçlü", "ex": "We need a robust quality management system.", "def": "strong and unlikely to fail" },
+        { "en": "traceable", "tr": "izlenebilir", "ex": "Every software change must be traceable.", "def": "having a clear record that shows where something came from and what was done" },
+        { "en": "seasoned", "tr": "deneyimli", "ex": "We hired a seasoned regulatory consultant.", "def": "having a lot of experience" },
+        { "en": "navigate the process", "tr": "süreçte yolunu bulmak", "ex": "Our consultant helps us navigate the process.", "def": "to find your way through a complicated system" },
+        { "en": "bottleneck", "tr": "darboğaz", "ex": "Notified body capacity is the real bottleneck.", "def": "a point where progress slows down because of limited capacity" },
+        { "en": "slip", "tr": "kaymak, gecikmek", "ex": "Timelines can slip for reasons we can't control.", "def": "(of a deadline or schedule) to be delayed" },
+        { "en": "mitigate a risk", "tr": "bir riski azaltmak", "ex": "We've built slack into the plan to mitigate that risk.", "def": "to make a risk less likely or less serious" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not only'",
+        "tr": "'Not only' cümlenin başına gelince soru düzeni kullanılır (yardımcı fiil + özne). İkinci kısım genellikle 'but … also' ile gelir. Resmî ve vurgulu bir üsluptur.",
+        "examples": ["Not only do we need solid clinical data, but we also have to demonstrate a robust quality system.", "Not only does the device save time, but it also reduces costs.", "Rarely does a certification process run exactly to plan."]
+      },
+      "questions": [
+        { "q": "Why must a notified body be involved?", "options": ["Because the device will be sold in the US", "Because the device is classified as Class IIa", "Because the company is based outside the EU", "Because the study was blind"], "a": 1 },
+        { "q": "What point is the speaker making about the remaining 6% of cases?", "options": ["They reveal a serious flaw", "They were excluded from the study", "They had no clinical significance", "They need to be retested"], "a": 2 },
+        { "q": "What does the speaker imply most investors underestimate?", "options": ["The complexity of validating frequent software updates", "The cost of the hardware", "The size of the market"], "a": 0 },
+        { "q": "How does the speaker feel about possible delays?", "options": ["Unconcerned, because the consultant guarantees the date", "Resigned, because nothing can be done", "Angry at the notified body", "Realistic, and has planned for them"], "a": 3 },
+        { "q": "What does the speaker mean by calling certification 'a moat'?", "options": ["It is a legal trap", "It protects the company from new competitors", "It slows the company down for no reason"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Every software change has to be validated and ___.", "a": "traceable", "hint": "izlenebilir" },
+        { "s": "The real ___ is notified body capacity.", "a": "bottleneck", "hint": "darboğaz" },
+        { "s": "We've built some slack into the plan to ___ that risk.", "a": "mitigate", "hint": "azaltmak" },
+        { "s": "___ only do we need solid clinical data, but we also need a robust quality system.", "a": "Not", "hint": "sadece … değil (devrik yapı)" }
+      ],
+      "order": [
+        { "a": "The remaining 6% showed only minor discrepancies." },
+        { "a": "We have brought in a seasoned regulatory consultant." }
+      ],
+      "translate": [
+        { "tr": "Onaylanmış kuruluşun asıl titizlikle incelediği şey klinik kanıtlarımız.", "en": "What the notified body really scrutinizes is our clinical evidence.", "keys": ["scrutinizes", "clinical evidence"] },
+        { "tr": "Takvimler bizim hiçbir hatamız olmadan kayabilir.", "en": "Timelines can slip through no fault of our own.", "keys": ["slip", "no fault of our own"] }
+      ],
+      "roleplay": {
+        "persona": "VC partner",
+        "personaTr": "Risk sermayesi fonu ortağı",
+        "scene": "Bir yatırım fonunun ortağı, yatırım öncesi incelemede sertifikasyon riskini ayrıntılı biçimde sorguluyor.",
+        "turns": [
+          { "ai": "Walk me through what stands between you and the European market.", "aiTr": "Sizinle Avrupa pazarı arasında ne olduğunu adım adım anlatın.", "hint": "Essentially, the CE mark. Being Class IIa, the device has to be audited by a notified body, which will scrutinize our clinical evidence and our quality system.", "keys": ["notified body", "Class IIa", "CE mark", "clinical evidence"] },
+          { "ai": "How confident are you that your clinical data will hold up under scrutiny?", "aiTr": "Klinik verilerinizin bu incelemeye dayanacağından ne kadar eminsiniz?", "hint": "Fairly confident. Our blind study across two university hospitals matched a trained audiologist in 94% of cases, and it was published in a medical journal last spring.", "keys": ["94", "blind", "published", "two university hospitals"] },
+          { "ai": "Monthly software updates sound like a regulatory headache. How do you handle that?", "aiTr": "Aylık yazılım güncellemeleri mevzuat açısından baş ağrısı gibi duruyor. Bunu nasıl yönetiyorsunuz?", "hint": "It does add complexity, admittedly. Every change is validated and fully traceable within our quality management system.", "keys": ["validated", "traceable", "quality management"] },
+          { "ai": "And if the timeline slips, what's your plan B?", "aiTr": "Peki takvim kayarsa B planınız ne?", "hint": "We've built some slack into the plan, and our consultant helps us avoid the usual pitfalls, so we can mitigate that risk.", "keys": ["slack", "mitigate", "pitfalls"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Yönetim kurulunda sertifikasyon sürecini, ölçülü ama güven veren, mevzuata hâkim bir dille savunuyorsun.",
+      "text": [
+        { "en": "Regulators, understandably, take a dim view of uncertified medical devices, so the CE mark is less a milestone than a precondition for everything else.", "tr": "Düzenleyiciler anlaşılır biçimde sertifikasız tıbbi cihazlara pek sıcak bakmıyor; bu yüzden CE işareti bir kilometre taşından çok, diğer her şeyin ön koşulu." },
+        { "en": "As a Class IIa device under the MDR, our audiometer can't simply self-certify; a notified body has to sign off on both the product and the processes behind it.", "tr": "MDR kapsamında Sınıf IIa bir cihaz olarak odyometremiz kendi kendini sertifikalandıramaz; hem ürünü hem de arkasındaki süreçleri onaylanmış bir kuruluşun onaylaması gerekir." },
+        { "en": "That puts our clinical evidence squarely under the microscope.", "tr": "Bu da klinik kanıtlarımızı doğrudan mercek altına koyuyor." },
+        { "en": "Here, I'd venture to say, we're on reasonably firm ground: a blind comparison across two university hospitals, 200 participants aged 18 to 75, and 94% agreement with a trained audiologist.", "tr": "Bu konuda, söylemeye cüret edersem, oldukça sağlam bir zemindeyiz: iki üniversite hastanesinde kör karşılaştırma, 18-75 yaş arası 200 katılımcı ve eğitimli bir odyologla %94 uyum." },
+        { "en": "Admittedly, the remaining 6% diverged, but only marginally, and not once did the discrepancy alter a diagnosis.", "tr": "Kabul etmek gerekir ki kalan %6'da sonuçlar ayrıştı, ama yalnızca çok az; ve bu farklar bir kez bile teşhisi değiştirmedi." },
+        { "en": "Nor does it hurt that the findings were published in a medical journal last spring, since assessors tend to be wary of data that has never faced outside scrutiny.", "tr": "Bulguların geçen bahar bir tıp dergisinde yayımlanmış olmasının da zararı yok, çünkü değerlendiriciler dışarıdan hiç incelenmemiş verilere temkinli yaklaşır." },
+        { "en": "The less glamorous part is the quality management system and the technical file, which, for all their tedium, are where certifications are quietly won or lost.", "tr": "İşin daha az göz alıcı kısmı kalite yönetim sistemi ve teknik dosya; ne kadar sıkıcı olsalar da sertifikasyonlar sessiz sedasız orada kazanılır ya da kaybedilir." },
+        { "en": "Our monthly software updates complicate matters further, because each release has to be validated, documented and traceable: agile development, but with a paper trail.", "tr": "Aylık yazılım güncellemelerimiz işleri daha da karmaşıklaştırıyor, çünkü her sürümün doğrulanmış, belgelenmiş ve izlenebilir olması gerekiyor: çevik geliştirme, ama arkasında bir belge iziyle." },
+        { "en": "We've retained a regulatory consultant who has steered several devices through this process, which, while no guarantee, does take some of the guesswork out of it.", "tr": "Birkaç cihazı bu süreçten başarıyla geçirmiş bir mevzuat danışmanıyla çalışıyoruz; bu bir garanti olmasa da işin tahmine dayalı kısmını epey azaltıyor." },
+        { "en": "The one variable we genuinely can't control is notified body capacity, and it would be naive to assume our timeline is immune to it.", "tr": "Gerçekten kontrol edemediğimiz tek değişken onaylanmış kuruluşların kapasitesi ve takvimimizin bundan etkilenmeyeceğini varsaymak saflık olur." },
+        { "en": "So while we're aiming for certification by the end of next year, I'd be loath to promise it to the month.", "tr": "Yani sertifikasyonu gelecek yılın sonuna kadar almayı hedeflesek de bunu ayı ayına söz vermekten kaçınırım." },
+        { "en": "That said, the very difficulty of the process cuts both ways: it slows us down, but by the same token, it keeps less rigorous competitors out.", "tr": "Bununla birlikte, sürecin zorluğu iki tarafı keskin bir bıçak: Bizi yavaşlatıyor ama aynı şekilde daha az titiz rakipleri de dışarıda tutuyor." }
+      ],
+      "vocab": [
+        { "en": "take a dim view of", "tr": "hoş karşılamamak, olumsuz bakmak", "ex": "Regulators take a dim view of uncertified devices.", "def": "to disapprove of something" },
+        { "en": "sign off on", "tr": "resmî onay vermek", "ex": "A notified body has to sign off on the device.", "def": "to give official approval to something" },
+        { "en": "under the microscope", "tr": "mercek altında", "ex": "Our clinical evidence is now under the microscope.", "def": "being examined very closely" },
+        { "en": "on firm ground", "tr": "sağlam bir zeminde", "ex": "With 94% agreement, we're on firm ground.", "def": "in a position supported by strong facts" },
+        { "en": "diverge", "tr": "ayrışmak, farklılaşmak", "ex": "The results diverged only marginally.", "def": "to differ or go in different directions" },
+        { "en": "paper trail", "tr": "belge izi, kayıt zinciri", "ex": "Every release leaves a clear paper trail.", "def": "a series of documents that shows what was done and when" },
+        { "en": "steer something through", "tr": "bir şeyi bir süreçten başarıyla geçirmek", "ex": "Our consultant has steered several devices through certification.", "def": "to guide something successfully through a difficult process" },
+        { "en": "take the guesswork out of", "tr": "tahmine dayalı kısmı ortadan kaldırmak", "ex": "Experience takes some of the guesswork out of the process.", "def": "to make something more predictable" },
+        { "en": "be loath to", "tr": "...mekte isteksiz olmak", "ex": "I'd be loath to promise an exact month.", "def": "to be unwilling to do something" },
+        { "en": "cut both ways", "tr": "iki tarafı keskin bıçak olmak", "ex": "Strict regulation cuts both ways.", "def": "to have both good and bad effects" }
+      ],
+      "grammar": {
+        "title": "Nuanced hedging: confident but honest",
+        "tr": "'I'd venture to say', 'I'd be loath to', 'while no guarantee', 'it would be naive to assume' gibi ifadeler iddianı yumuşatır ama zayıflatmaz. Yatırımcı karşısında hem dürüst hem güvenilir görünmeni sağlar.",
+        "examples": ["Here, I'd venture to say, we're on reasonably firm ground.", "I'd be loath to promise it to the month.", "It would be naive to assume our timeline is immune to it."]
+      },
+      "questions": [
+        { "q": "Why can't the audiometer self-certify?", "options": ["Because it was developed in Turkey", "Because it is a Class IIa device under the MDR", "Because it uses AI", "Because the study was too small"], "a": 1 },
+        { "q": "What does the speaker suggest about the quality management system and the technical file?", "options": ["They are dull but often decisive", "They are a formality that rarely matters", "They have already been approved", "They are the consultant's responsibility"], "a": 0 },
+        { "q": "What is the tone of 'agile development, but with a paper trail'?", "options": ["Openly hostile", "Deeply anxious", "Wryly ironic", "Purely technical"], "a": 2 },
+        { "q": "What does the speaker imply by being 'loath to promise it to the month'?", "options": ["The target is unrealistic and will be dropped", "The overall target stands, but the exact timing may shift", "Certification is already complete", "The consultant disagrees with the plan"], "a": 1 },
+        { "q": "Why does the speaker say the difficulty of the process 'cuts both ways'?", "options": ["It costs money but attracts grants", "It helps patients but frustrates doctors", "It speeds up sales but raises prices", "It delays the company but also keeps weaker competitors out"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Regulators take a ___ view of uncertified medical devices.", "a": "dim", "hint": "olumsuz (… view of)" },
+        { "s": "A notified body has to sign ___ on both the product and the processes.", "a": "off", "hint": "onay vermek (sign … on)" },
+        { "s": "Not once did the discrepancy ___ a diagnosis.", "a": "alter", "hint": "değiştirmek" },
+        { "s": "I'd be ___ to promise it to the month.", "a": "loath", "hint": "isteksiz" }
+      ],
+      "order": [
+        { "a": "That puts our clinical evidence squarely under the microscope." },
+        { "a": "Not once did the discrepancy alter a diagnosis." }
+      ],
+      "translate": [
+        { "tr": "Bu bir garanti olmasa da işin tahmine dayalı kısmını azaltıyor.", "en": "While no guarantee, it takes some of the guesswork out of it.", "keys": ["no guarantee", "guesswork"] },
+        { "tr": "Takvimimizin bundan etkilenmeyeceğini varsaymak saflık olur.", "en": "It would be naive to assume our timeline is immune to it.", "keys": ["naive to assume", "immune"] },
+        { "tr": "Sürecin zorluğu iki tarafı keskin bir bıçak.", "en": "The difficulty of the process cuts both ways.", "keys": ["cuts both ways"] }
+      ],
+      "roleplay": {
+        "persona": "Lead investor",
+        "personaTr": "Lider yatırımcı (yönetim kurulu üyesi)",
+        "scene": "Yönetim kurulu toplantısında lider yatırımcı sertifikasyon takvimini sorguluyor ve seni zorluyor.",
+        "turns": [
+          { "ai": "Let's not sugar-coat it: how exposed are we if the notified body drags its feet?", "aiTr": "Lafı dolandırmayalım: Onaylanmış kuruluş işi ağırdan alırsa ne kadar risk altındayız?", "hint": "Fairly exposed, I'd venture to say. Notified body capacity is the one variable we can't control, so I'd be loath to promise the date to the month.", "keys": ["can't control", "loath", "capacity"] },
+          { "ai": "Is the clinical evidence strong enough, or are we going to be sent back for more data?", "aiTr": "Klinik kanıt yeterince güçlü mü, yoksa daha fazla veri için geri mi gönderileceğiz?", "hint": "I think we're on reasonably firm ground: a blind comparison across two university hospitals, 94% agreement, and not once did a discrepancy alter a diagnosis.", "keys": ["firm ground", "94", "blind", "diagnosis"] },
+          { "ai": "The monthly updates worry me. Aren't we creating a compliance nightmare for ourselves?", "aiTr": "Aylık güncellemeler beni endişelendiriyor. Kendimize bir uyum kabusu yaratmıyor muyuz?", "hint": "It's more work, admittedly, but every release is validated, documented and traceable, so there's a clear paper trail.", "keys": ["paper trail", "traceable", "validated"] },
+          { "ai": "Give me one good reason this whole ordeal is worth it.", "aiTr": "Bütün bu çilenin neden buna değdiğine dair bana tek bir iyi sebep söyle.", "hint": "The difficulty cuts both ways: it slows us down, but by the same token, it keeps less rigorous competitors out.", "keys": ["cuts both ways", "competitors", "by the same token"] }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,376 @@
+{
+  "id": "in-01",
+  "topic": "invest",
+  "title": "Pitching a Startup in Three Minutes",
+  "titleTr": "Bir Girişimi Üç Dakikada Sunmak",
+  "levels": {
+    "A1": {
+      "intro": "Yatırımcılara girişimini çok kısa ve basit cümlelerle tanıtıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Hello everyone, I am {name}, the founder of AIHEAR.", "tr": "Herkese merhaba, ben {name}, AIHEAR'ın kurucusuyum." },
+        { "who": "Me", "en": "One in five people has hearing loss.", "tr": "Her beş kişiden biri işitme kaybı yaşıyor." },
+        { "who": "Me", "en": "But there are not enough hearing experts.", "tr": "Ama yeterince işitme uzmanı yok." },
+        { "who": "Me", "en": "Our device tests hearing without an expert.", "tr": "Cihazımız işitmeyi uzman olmadan test ediyor." },
+        { "who": "Me", "en": "The test takes less than ten minutes.", "tr": "Test on dakikadan kısa sürüyor." },
+        { "who": "Me", "en": "We have five paying customers and a team of six.", "tr": "Beş ödeme yapan müşterimiz ve altı kişilik bir ekibimiz var." },
+        { "who": "Me", "en": "We need 500,000 euros to sell in Europe.", "tr": "Avrupa'da satış yapmak için 500.000 euroya ihtiyacımız var." },
+        { "who": "Me", "en": "Thank you for listening.", "tr": "Dinlediğiniz için teşekkürler." }
+      ],
+      "vocab": [
+        { "en": "founder", "tr": "kurucu", "ex": "I am the founder of AIHEAR." },
+        { "en": "hearing loss", "tr": "işitme kaybı", "ex": "One in five people has hearing loss." },
+        { "en": "expert", "tr": "uzman", "ex": "There are not enough experts." },
+        { "en": "paying customer", "tr": "ödeme yapan müşteri", "ex": "We have five paying customers." },
+        { "en": "team", "tr": "ekip", "ex": "We have a team of six." },
+        { "en": "less than", "tr": "-den az", "ex": "The test takes less than ten minutes." }
+      ],
+      "grammar": {
+        "title": "Have / has",
+        "tr": "'Have' sahip olmayı anlatır. I, you, we, they ile 'have'; he, she, it ile 'has' kullanılır. 'One in five people' tekil sayıldığı için 'has' alır.",
+        "examples": ["We have five paying customers.", "One in five people has hearing loss.", "We have a team of six."]
+      },
+      "questions": [
+        { "q": "Who is speaking?", "options": ["A doctor", "The founder of AIHEAR", "An investor"], "a": 1 },
+        { "q": "How long does the test take?", "options": ["Less than ten minutes", "One hour", "One day"], "a": 0 },
+        { "q": "How much money do they need?", "options": ["50,000 euros", "5 million euros", "500,000 euros"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I am the ___ of AIHEAR.", "a": "founder", "hint": "kurucu" },
+        { "s": "One in five people has hearing ___.", "a": "loss", "hint": "kayıp" },
+        { "s": "We have five paying ___.", "a": "customers", "hint": "müşteriler" }
+      ],
+      "order": [
+        { "a": "Our device tests hearing without an expert." },
+        { "a": "The test takes less than ten minutes." }
+      ],
+      "translate": [
+        { "tr": "Ben AIHEAR'ın kurucusuyum.", "en": "I am the founder of AIHEAR.", "keys": ["founder", "AIHEAR"] },
+        { "tr": "Altı kişilik bir ekibimiz var.", "en": "We have a team of six.", "keys": ["team of six"] }
+      ],
+      "roleplay": {
+        "persona": "Investor at a demo day",
+        "personaTr": "Demo günü yatırımcısı",
+        "scene": "Sunumun bitti. Yatırımcı kısa sorular soruyor.",
+        "turns": [
+          { "ai": "Hi! What is your name and your company?", "aiTr": "Merhaba! Adınız ve şirketiniz ne?", "hint": "My name is {name}, and I am the founder of AIHEAR.", "keys": ["founder", "AIHEAR", "my name is"] },
+          { "ai": "What does your device do?", "aiTr": "Cihazınız ne yapıyor?", "hint": "It tests hearing without an expert, in less than ten minutes.", "keys": ["tests hearing", "without an expert", "ten minutes"] },
+          { "ai": "How much money do you need?", "aiTr": "Ne kadar paraya ihtiyacınız var?", "hint": "We need 500,000 euros.", "keys": ["500,000", "euros"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Üç dakikalık bir sunumda girişimini, sorunu ve çözümü anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Hello everyone, my name is {name}, and I'm the founder of AIHEAR.", "tr": "Herkese merhaba, benim adım {name} ve AIHEAR'ın kurucusuyum." },
+        { "who": "Me", "en": "One in five people has hearing loss, but most are never tested.", "tr": "Her beş kişiden biri işitme kaybı yaşıyor, ama çoğu hiç test edilmiyor." },
+        { "who": "Me", "en": "That's because there aren't enough hearing experts, so people wait for months.", "tr": "Bunun nedeni yeterince işitme uzmanı olmaması, bu yüzden insanlar aylarca bekliyor." },
+        { "who": "Me", "en": "Our solution is a smart device that tests hearing without an expert.", "tr": "Çözümümüz, işitmeyi uzman olmadan test eden akıllı bir cihaz." },
+        { "who": "Me", "en": "The test is fully automatic and takes less than ten minutes.", "tr": "Test tamamen otomatik ve on dakikadan kısa sürüyor." },
+        { "who": "Me", "en": "We sell the device and charge clinics a monthly fee for the software.", "tr": "Cihazı satıyoruz ve kliniklerden yazılım için aylık bir ücret alıyoruz." },
+        { "who": "Me", "en": "We already have five paying customers and a team of six people.", "tr": "Şimdiden beş ödeme yapan müşterimiz ve altı kişilik bir ekibimiz var." },
+        { "who": "Me", "en": "We're raising 500,000 euros to get certified and enter the European market.", "tr": "Sertifika almak ve Avrupa pazarına girmek için 500.000 euro yatırım topluyoruz." },
+        { "who": "Me", "en": "Thank you, and I'm happy to answer your questions.", "tr": "Teşekkürler, sorularınızı yanıtlamaktan memnuniyet duyarım." }
+      ],
+      "vocab": [
+        { "en": "founder", "tr": "kurucu", "ex": "I'm the founder of AIHEAR." },
+        { "en": "hearing loss", "tr": "işitme kaybı", "ex": "Most people with hearing loss are never tested." },
+        { "en": "solution", "tr": "çözüm", "ex": "Our solution is a smart device." },
+        { "en": "charge a fee", "tr": "ücret almak", "ex": "We charge clinics a monthly fee." },
+        { "en": "paying customer", "tr": "ödeme yapan müşteri", "ex": "We have five paying customers." },
+        { "en": "raise money", "tr": "yatırım toplamak", "ex": "We want to raise 500,000 euros." },
+        { "en": "enter the market", "tr": "pazara girmek", "ex": "We want to enter the European market." }
+      ],
+      "grammar": {
+        "title": "Linking ideas: but, because, so",
+        "tr": "'But' zıtlık, 'because' sebep, 'so' sonuç bildirir. Kısa bir sunumda fikirleri bu üç kelimeyle bağlamak konuşmanı akıcı yapar.",
+        "examples": ["One in five people has hearing loss, but most are never tested.", "That's because there aren't enough hearing experts.", "There aren't enough experts, so people wait for months."]
+      },
+      "questions": [
+        { "q": "Why are most people never tested?", "options": ["The test is too expensive", "There aren't enough hearing experts", "They don't want to know"], "a": 1 },
+        { "q": "How long does the test take?", "options": ["Less than ten minutes", "About an hour", "Two days"], "a": 0 },
+        { "q": "How does the company make money?", "options": ["From advertising", "From the government", "It sells the device and charges a monthly fee"], "a": 2 },
+        { "q": "What is the 500,000 euros for?", "options": ["A new office", "Certification and the European market", "Free devices for hospitals"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Our ___ is a smart device that tests hearing.", "a": "solution", "hint": "çözüm" },
+        { "s": "We ___ clinics a monthly fee for the software.", "a": "charge", "hint": "ücret alıyoruz" },
+        { "s": "We want to ___ 500,000 euros.", "a": "raise", "hint": "toplamak" }
+      ],
+      "order": [
+        { "a": "The test is fully automatic and takes less than ten minutes." },
+        { "a": "We already have five paying customers." }
+      ],
+      "translate": [
+        { "tr": "Çoğu insan hiç test edilmiyor.", "en": "Most people are never tested.", "keys": ["never tested"] },
+        { "tr": "Pazara girmek istiyoruz.", "en": "We want to enter the market.", "keys": ["want to", "enter the market"] }
+      ],
+      "roleplay": {
+        "persona": "Investor at a demo day",
+        "personaTr": "Demo günü yatırımcısı",
+        "scene": "Sunumun bitti. Yatırımcı üç soru soruyor.",
+        "turns": [
+          { "ai": "Nice pitch! What problem do you solve?", "aiTr": "Güzel sunum! Hangi sorunu çözüyorsunuz?", "hint": "One in five people has hearing loss, but most are never tested.", "keys": ["hearing loss", "never tested", "one in five"] },
+          { "ai": "How do you make money?", "aiTr": "Nasıl para kazanıyorsunuz?", "hint": "We sell the device and charge a monthly fee for the software.", "keys": ["sell the device", "monthly fee", "charge"] },
+          { "ai": "How much do you want to raise?", "aiTr": "Ne kadar yatırım toplamak istiyorsunuz?", "hint": "We want to raise 500,000 euros to get certified and enter the European market.", "keys": ["500,000", "certified", "European market"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Kısa bir yatırımcı sunumunun yapısını öğreniyorsun: sorun, çözüm, pazar, ekip ve talep.",
+      "text": [
+        { "who": "Me", "en": "Hello everyone, my name is {name}, and I'm the founder of AIHEAR.", "tr": "Herkese merhaba, benim adım {name} ve AIHEAR'ın kurucusuyum." },
+        { "who": "Me", "en": "Here's the problem: one in five people has some hearing loss, but most of them are never tested.", "tr": "Sorun şu: her beş kişiden biri bir ölçüde işitme kaybı yaşıyor, ama çoğu hiç test edilmiyor." },
+        { "who": "Me", "en": "That's because a hearing test needs an expert, and in small towns people wait months to see one.", "tr": "Çünkü işitme testi bir uzman gerektiriyor ve küçük şehirlerde insanlar bir uzmana görünmek için aylarca bekliyor." },
+        { "who": "Me", "en": "Our solution is an autonomous audiometer that does the whole test by itself in under ten minutes.", "tr": "Çözümümüz, tüm testi on dakikadan kısa sürede kendi kendine yapan otonom bir odyometre." },
+        { "who": "Me", "en": "Our customers are hospitals, clinics and hearing aid shops, and the market is huge.", "tr": "Müşterilerimiz hastaneler, klinikler ve işitme cihazı mağazaları; pazar ise devasa." },
+        { "who": "Me", "en": "Our business model is simple: we sell the device and charge a monthly software fee.", "tr": "İş modelimiz basit: cihazı satıyoruz ve aylık bir yazılım ücreti alıyoruz." },
+        { "who": "Me", "en": "So far, we've built a working prototype and signed five paying customers.", "tr": "Şimdiye kadar çalışan bir prototip geliştirdik ve beş ödeme yapan müşteriyle anlaştık." },
+        { "who": "Me", "en": "Our team of six includes three engineers, a doctor and two business people.", "tr": "Altı kişilik ekibimizde üç mühendis, bir doktor ve iki iş insanı var." },
+        { "who": "Me", "en": "We're raising 500,000 euros to complete certification and enter the European market.", "tr": "Sertifikasyonu tamamlamak ve Avrupa pazarına girmek için 500.000 euro yatırım topluyoruz." },
+        { "who": "Me", "en": "Thank you, and I'm happy to answer your questions.", "tr": "Teşekkürler, sorularınızı yanıtlamaktan memnuniyet duyarım." }
+      ],
+      "vocab": [
+        { "en": "founder", "tr": "kurucu", "ex": "I'm the founder of AIHEAR.", "def": "the person who starts a company" },
+        { "en": "one in five", "tr": "her beş kişiden biri", "ex": "One in five people has some hearing loss.", "def": "20 percent of a group" },
+        { "en": "autonomous", "tr": "otonom, kendi kendine çalışan", "ex": "Our audiometer is autonomous.", "def": "able to work by itself" },
+        { "en": "business model", "tr": "iş modeli", "ex": "Our business model is simple.", "def": "the way a company makes money" },
+        { "en": "charge a fee", "tr": "ücret almak", "ex": "We charge a monthly software fee.", "def": "to ask for money for a product or service" },
+        { "en": "sign a customer", "tr": "bir müşteriyle anlaşmak", "ex": "We've signed five paying customers.", "def": "to get a customer to agree to buy" },
+        { "en": "raise (money)", "tr": "yatırım toplamak", "ex": "We're raising 500,000 euros.", "def": "to get money from investors" },
+        { "en": "enter the market", "tr": "pazara girmek", "ex": "We want to enter the European market.", "def": "to start selling in a new place" }
+      ],
+      "grammar": {
+        "title": "Present perfect: what we have achieved",
+        "tr": "Present perfect (have/has + V3), sonucu bugün önemli olan başarıları anlatmak için kullanılır; 'so far' ve 'already' ile sık görülür. Yatırımcıya ilerlemeni göstermenin en doğal yolu budur.",
+        "examples": ["So far, we've built a working prototype.", "We've signed five paying customers.", "Have you tested it in hospitals?"]
+      },
+      "questions": [
+        { "q": "Why are most people with hearing loss never tested?", "options": ["Tests are too expensive", "Tests need an expert, and there aren't enough", "People don't care"], "a": 1 },
+        { "q": "Who are the customers?", "options": ["Hospitals, clinics and hearing aid shops", "Only patients", "Schools and universities"], "a": 0 },
+        { "q": "How many people are in the team?", "options": ["Three", "Ten", "Six"], "a": 2 },
+        { "q": "How much are they raising?", "options": ["50,000 euros", "500,000 euros", "5 million euros"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I'm the ___ of AIHEAR.", "a": "founder", "hint": "kurucu" },
+        { "s": "Our business ___ is simple.", "a": "model", "hint": "model" },
+        { "s": "We're ___ 500,000 euros to complete certification.", "a": "raising", "hint": "topluyoruz" }
+      ],
+      "order": [
+        { "a": "So far we've built a working prototype." },
+        { "a": "Our team includes three engineers and a doctor." }
+      ],
+      "translate": [
+        { "tr": "Çözümümüz otonom bir odyometre.", "en": "Our solution is an autonomous audiometer.", "keys": ["solution", "autonomous audiometer"] },
+        { "tr": "Sorularınızı yanıtlamaktan memnuniyet duyarım.", "en": "I'm happy to answer your questions.", "keys": ["happy to answer", "questions"] }
+      ],
+      "roleplay": {
+        "persona": "Investor at a demo day",
+        "personaTr": "Demo günü yatırımcısı",
+        "scene": "Sunumun bitti. Yatırımcı dört soru soruyor.",
+        "turns": [
+          { "ai": "Good pitch. In one sentence: what problem do you solve?", "aiTr": "İyi sunum. Tek cümleyle: çözdüğünüz sorun ne?", "hint": "One in five people has hearing loss, but most are never tested because there aren't enough experts.", "keys": ["hearing loss", "never tested", "experts", "one in five"] },
+          { "ai": "How do you make money?", "aiTr": "Nasıl para kazanıyorsunuz?", "hint": "We sell the device and charge a monthly software fee.", "keys": ["sell", "fee", "monthly"] },
+          { "ai": "What have you achieved so far?", "aiTr": "Şimdiye kadar neler başardınız?", "hint": "We've built a working prototype and signed five paying customers.", "keys": ["working prototype", "five paying customers", "signed"] },
+          { "ai": "How much are you raising, and what for?", "aiTr": "Ne kadar topluyorsunuz ve ne için?", "hint": "We're raising 500,000 euros to complete certification and enter the European market.", "keys": ["raising", "certification", "European market"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir demo gününde girişimini yatırımcılara ikna edici ve akıcı bir dille sunuyorsun.",
+      "text": [
+        { "who": "Me", "en": "Good afternoon, everyone — I'm {name}, founder of AIHEAR, and we're on a mission to make hearing tests available to everyone.", "tr": "Herkese iyi günler — ben {name}, AIHEAR'ın kurucusuyum; işitme testlerini herkes için erişilebilir kılmayı misyon edindik." },
+        { "who": "Me", "en": "Roughly one in five people has some degree of hearing loss, yet the vast majority are never tested.", "tr": "Her beş kişiden yaklaşık biri bir dereceye kadar işitme kaybı yaşıyor, ancak büyük çoğunluğu hiç test edilmiyor." },
+        { "who": "Me", "en": "The reason is a shortage of audiologists: in smaller towns, patients often wait months just to get an appointment.", "tr": "Bunun nedeni odyolog eksikliği: küçük şehirlerde hastalar sadece randevu almak için çoğu zaman aylarca bekliyor." },
+        { "who": "Me", "en": "We've built an autonomous, AI-assisted audiometer that runs a full hearing test in under ten minutes, with no expert in the room.", "tr": "Odada bir uzmana gerek kalmadan tam bir işitme testini on dakikadan kısa sürede yapan otonom, yapay zekâ destekli bir odyometre geliştirdik." },
+        { "who": "Me", "en": "The patient simply puts on headphones and presses a button, while the AI adjusts the test in real time.", "tr": "Hasta yalnızca kulaklığı takıyor ve bir düğmeye basıyor; yapay zekâ ise testi gerçek zamanlı olarak uyarlıyor." },
+        { "who": "Me", "en": "We make money in two ways: a one-off device sale and a monthly software fee, which gives us recurring revenue.", "tr": "İki yoldan para kazanıyoruz: tek seferlik cihaz satışı ve bize tekrarlayan gelir sağlayan aylık yazılım ücreti." },
+        { "who": "Me", "en": "Our prototype is already in its third version, and five clinics are paying customers.", "tr": "Prototipimiz şimdiden üçüncü versiyonunda ve beş klinik ödeme yapan müşterimiz." },
+        { "who": "Me", "en": "In a study at two university hospitals, our results matched those of a trained audiologist in 94% of cases.", "tr": "İki üniversite hastanesinde yapılan bir çalışmada sonuçlarımız, vakaların %94'ünde eğitimli bir odyoloğun sonuçlarıyla örtüştü." },
+        { "who": "Me", "en": "Behind all this is a team of six: three engineers, a doctor and two business people.", "tr": "Tüm bunların arkasında altı kişilik bir ekip var: üç mühendis, bir doktor ve iki iş insanı." },
+        { "who": "Me", "en": "We're raising €500,000, which will allow us to complete CE certification and enter the European market.", "tr": "500.000 € topluyoruz; bu yatırım CE sertifikasyonunu tamamlamamızı ve Avrupa pazarına girmemizi sağlayacak." },
+        { "who": "Me", "en": "If you'd like to hear more, I'd be delighted to take your questions.", "tr": "Daha fazlasını duymak isterseniz sorularınızı memnuniyetle yanıtlarım." }
+      ],
+      "vocab": [
+        { "en": "be on a mission to", "tr": "...yı misyon edinmek", "ex": "We're on a mission to make hearing tests available to everyone.", "def": "to have a strong goal you are working towards" },
+        { "en": "some degree of", "tr": "bir dereceye kadar", "ex": "One in five people has some degree of hearing loss.", "def": "a certain amount of" },
+        { "en": "the vast majority", "tr": "büyük çoğunluk", "ex": "The vast majority are never tested.", "def": "almost all of a group" },
+        { "en": "shortage of", "tr": "...eksikliği, kıtlığı", "ex": "There is a shortage of audiologists.", "def": "a situation where there is not enough of something" },
+        { "en": "in real time", "tr": "gerçek zamanlı olarak", "ex": "The AI adjusts the test in real time.", "def": "immediately, as things happen" },
+        { "en": "one-off", "tr": "tek seferlik", "ex": "A one-off device sale brings in cash.", "def": "happening only once" },
+        { "en": "recurring revenue", "tr": "tekrarlayan gelir", "ex": "The monthly fee gives us recurring revenue.", "def": "income that comes in regularly" },
+        { "en": "paying customer", "tr": "ödeme yapan müşteri", "ex": "Five clinics are paying customers.", "def": "a customer who pays for the product" },
+        { "en": "take questions", "tr": "soruları yanıtlamak", "ex": "I'd be delighted to take your questions.", "def": "to answer questions from an audience" }
+      ],
+      "grammar": {
+        "title": "Relative clauses: that and which",
+        "tr": "Defining relative clause ('that') neyi kastettiğimizi tanımlar; non-defining relative clause ('which', virgülle) ek bilgi verir. Sunumda tek cümlede daha fazla bilgi vermeni sağlar.",
+        "examples": ["We've built an audiometer that runs a full hearing test.", "We charge a monthly fee, which gives us recurring revenue.", "We're raising €500,000, which will allow us to enter Europe."]
+      },
+      "questions": [
+        { "q": "What causes long waiting times in smaller towns?", "options": ["Expensive devices", "A shortage of audiologists", "Bad internet"], "a": 1 },
+        { "q": "What does the patient do during the test?", "options": ["Puts on headphones and presses a button", "Answers questions from a doctor", "Fills in a form online"], "a": 0 },
+        { "q": "Why does the founder mention the monthly software fee?", "options": ["To show the product is cheap", "To explain why the device is free", "To highlight a source of recurring revenue that investors value"], "a": 2 },
+        { "q": "What does the 94% figure show?", "options": ["How many customers renewed", "How often results matched a trained audiologist", "The company's gross margin"], "a": 1 },
+        { "q": "What will the €500,000 be used for?", "options": ["CE certification and entering the European market", "Opening a US office", "Hiring ten more engineers"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "The vast majority are never tested because of a ___ of audiologists.", "a": "shortage", "hint": "eksiklik" },
+        { "s": "The AI adjusts the test in real ___.", "a": "time", "hint": "zaman" },
+        { "s": "The monthly fee gives us ___ revenue.", "a": "recurring", "hint": "tekrarlayan" }
+      ],
+      "order": [
+        { "a": "Our prototype is already in its third version." },
+        { "a": "Five clinics are already paying customers." }
+      ],
+      "translate": [
+        { "tr": "Büyük çoğunluğu hiç test edilmiyor.", "en": "The vast majority are never tested.", "keys": ["vast majority", "never tested"] },
+        { "tr": "Yapay zekâ testi gerçek zamanlı olarak uyarlıyor.", "en": "The AI adjusts the test in real time.", "keys": ["adjusts", "in real time"] }
+      ],
+      "roleplay": {
+        "persona": "Investor at a demo day",
+        "personaTr": "Demo günü yatırımcısı",
+        "scene": "Sunumun bitti. Yatırımcı ürününü, sonuçlarını ve yatırımı nasıl kullanacağını soruyor.",
+        "turns": [
+          { "ai": "Thanks for that. What makes your solution different from a normal hearing test?", "aiTr": "Teşekkürler. Çözümünüzü normal bir işitme testinden farklı kılan ne?", "hint": "It's autonomous, so no expert needs to be in the room, and the test takes under ten minutes.", "keys": ["autonomous", "no expert", "under ten minutes"] },
+          { "ai": "How do you know the results are reliable?", "aiTr": "Sonuçların güvenilir olduğunu nereden biliyorsunuz?", "hint": "In a study at two university hospitals, our results matched a trained audiologist in 94% of cases.", "keys": ["94", "university hospitals", "matched"] },
+          { "ai": "And how does the business make money?", "aiTr": "Peki şirket nasıl para kazanıyor?", "hint": "We sell the device and charge a monthly software fee, which gives us recurring revenue.", "keys": ["recurring revenue", "monthly software fee", "sell the device"] },
+          { "ai": "What would you do with our money?", "aiTr": "Paramızla ne yapardınız?", "hint": "We'd use the €500,000 to complete CE certification and enter the European market.", "keys": ["CE certification", "European market", "500,000"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Sahnede, etkileyici bir açılış ve güçlü bir kapanışla üç dakikalık bir sunum yapıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Good afternoon — I'm {name}, founder of AIHEAR.", "tr": "İyi günler — ben {name}, AIHEAR'ın kurucusuyum." },
+        { "who": "Me", "en": "Here's a number worth sitting with: roughly one in five people on the planet lives with some degree of hearing loss.", "tr": "Üzerinde biraz düşünmeye değer bir rakam: dünyada her beş kişiden yaklaşık biri bir dereceye kadar işitme kaybıyla yaşıyor." },
+        { "who": "Me", "en": "That's well over a billion people, and the overwhelming majority of them will never be tested.", "tr": "Bu, bir milyarı rahatlıkla aşan bir insan sayısı demek ve bunların ezici çoğunluğu hiçbir zaman test edilmeyecek." },
+        { "who": "Me", "en": "It isn't for lack of demand; it's because there simply aren't enough audiologists, and in smaller towns the wait for an appointment can stretch to months.", "tr": "Sebebi talep eksikliği değil; yeterince odyolog yok ve küçük şehirlerde randevu bekleme süresi aylara uzayabiliyor." },
+        { "who": "Me", "en": "So we asked ourselves a simple question: what if the test didn't need an expert in the room at all?", "tr": "Biz de kendimize basit bir soru sorduk: Ya test için odada bir uzmana hiç gerek olmasaydı?" },
+        { "who": "Me", "en": "The result is an autonomous, AI-assisted audiometer: the patient puts on headphones, presses a button whenever they hear a tone, and the AI adapts the test in real time.", "tr": "Ortaya çıkan şey otonom, yapay zekâ destekli bir odyometre: hasta kulaklığı takıyor, bir ses duyduğunda düğmeye basıyor ve yapay zekâ testi gerçek zamanlı olarak uyarlıyor." },
+        { "who": "Me", "en": "In under ten minutes, it produces a full audiogram.", "tr": "On dakikadan kısa sürede eksiksiz bir odyogram çıkarıyor." },
+        { "who": "Me", "en": "Not only is it fast, but in a blind study at two university hospitals it matched a trained audiologist in 94% of cases.", "tr": "Üstelik yalnızca hızlı değil; iki üniversite hastanesinde yapılan kör bir çalışmada vakaların %94'ünde eğitimli bir odyologla aynı sonucu verdi." },
+        { "who": "Me", "en": "We monetise through device sales and a monthly software subscription, which gives us a healthy stream of recurring revenue.", "tr": "Gelirimizi cihaz satışları ve aylık yazılım aboneliğinden elde ediyoruz; bu da bize sağlıklı bir tekrarlayan gelir akışı sağlıyor." },
+        { "who": "Me", "en": "We're already on our third prototype, with five paying customers and a team of six spanning engineering, medicine and business.", "tr": "Şimdiden üçüncü prototipimizdeyiz; beş ödeme yapan müşterimiz ve mühendislik, tıp ve iş alanlarını kapsayan altı kişilik bir ekibimiz var." },
+        { "who": "Me", "en": "We're raising €500,000 to take us through CE certification and into the European market.", "tr": "Bizi CE sertifikasyonundan geçirip Avrupa pazarına taşıyacak 500.000 € yatırım topluyoruz." },
+        { "who": "Me", "en": "Hearing care will never scale one audiologist at a time — and with your support, it won't have to.", "tr": "İşitme sağlığı hiçbir zaman tek tek odyologlarla ölçeklenemez — sizin desteğinizle buna gerek de kalmayacak." }
+      ],
+      "vocab": [
+        { "en": "worth sitting with", "tr": "üzerinde düşünmeye değer", "ex": "Here's a number worth sitting with.", "def": "worth pausing to think about carefully" },
+        { "en": "the overwhelming majority", "tr": "ezici çoğunluk", "ex": "The overwhelming majority are never tested.", "def": "almost all of a group" },
+        { "en": "for lack of", "tr": "...eksikliğinden", "ex": "It isn't for lack of demand.", "def": "because there is not enough of something" },
+        { "en": "stretch to", "tr": "...e uzamak", "ex": "The wait can stretch to months.", "def": "to continue for a long time" },
+        { "en": "adapt something in real time", "tr": "bir şeyi gerçek zamanlı uyarlamak", "ex": "The AI adapts the test in real time.", "def": "to change something instantly as needed" },
+        { "en": "blind study", "tr": "kör çalışma", "ex": "In a blind study, the results matched in 94% of cases.", "def": "a study where the people comparing results don't know which is which" },
+        { "en": "monetise", "tr": "gelire dönüştürmek, para kazanmak", "ex": "We monetise through device sales and subscriptions.", "def": "to earn money from a product" },
+        { "en": "recurring revenue", "tr": "tekrarlayan gelir", "ex": "The subscription brings in recurring revenue.", "def": "income that comes in regularly" },
+        { "en": "span", "tr": "kapsamak", "ex": "Our team spans engineering, medicine and business.", "def": "to cover a range of areas" },
+        { "en": "scale", "tr": "ölçeklenmek", "ex": "Hearing care will never scale one audiologist at a time.", "def": "to grow quickly without costs growing as fast" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not only'",
+        "tr": "'Not only' cümle başına gelince yardımcı fiil özneden önce gelir (Not only is it fast...). İkinci kısım genellikle 'but (also)' ile tamamlanır ve sunumda etkileyici bir vurgu yaratır.",
+        "examples": ["Not only is it fast, but it matched a trained audiologist in 94% of cases.", "Not only do we sell the device, but we also earn a monthly fee.", "Not only is the market huge, but it is also underserved."]
+      },
+      "questions": [
+        { "q": "What point does the founder make with 'It isn't for lack of demand'?", "options": ["People don't want hearing tests", "The problem is the supply of experts, not patients' interest", "The device is too expensive"], "a": 1 },
+        { "q": "What is the purpose of the question 'what if the test didn't need an expert in the room at all?'", "options": ["To introduce the core idea behind the product", "To criticise audiologists", "To ask the investors for advice"], "a": 0 },
+        { "q": "Why does the founder mention the blind study?", "options": ["To show the device is cheap", "To explain the team structure", "To prove the results are clinically credible"], "a": 2 },
+        { "q": "What does the founder imply about the business model?", "options": ["It depends only on one-off sales", "It combines device sales with steady subscription income", "It is still undecided"], "a": 1 },
+        { "q": "What is the tone of the closing line?", "options": ["Confident and visionary", "Apologetic and cautious", "Angry and critical"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "The ___ majority of them will never be tested.", "a": "overwhelming", "hint": "ezici" },
+        { "s": "It isn't for ___ of demand.", "a": "lack", "hint": "eksiklik" },
+        { "s": "We ___ through device sales and a monthly software subscription.", "a": "monetise", "hint": "gelir elde etmek" },
+        { "s": "Hearing care will never ___ one audiologist at a time.", "a": "scale", "hint": "ölçeklenmek" }
+      ],
+      "order": [
+        { "a": "In under ten minutes it produces a full audiogram." },
+        { "a": "We're already on our third prototype." }
+      ],
+      "translate": [
+        { "tr": "Bu, talep eksikliğinden değil.", "en": "It isn't for lack of demand.", "keys": ["for lack of demand"] },
+        { "tr": "Sadece hızlı değil, aynı zamanda doğru.", "en": "Not only is it fast, but it is also accurate.", "keys": ["not only is it fast", "accurate"] },
+        { "tr": "Bekleme süresi aylara uzayabiliyor.", "en": "The wait can stretch to months.", "keys": ["stretch to months"] }
+      ],
+      "roleplay": {
+        "persona": "VC partner",
+        "personaTr": "Risk sermayesi fonu ortağı",
+        "scene": "Sunumdan sonra bir VC ortağı seni sıkıştırıyor; kısa, net ve kendinden emin cevaplar ver.",
+        "turns": [
+          { "ai": "You've picked a big problem, but why hasn't anyone cracked this already?", "aiTr": "Büyük bir sorun seçmişsiniz, ama neden bunu daha önce kimse çözemedi?", "hint": "Because until now the test needed an expert in the room, and what we've done is make it fully autonomous.", "keys": ["expert in the room", "autonomous", "what we've done"] },
+          { "ai": "Autonomous is a bold claim — how do you know it's accurate?", "aiTr": "Otonom iddialı bir söz — doğru olduğunu nereden biliyorsunuz?", "hint": "In a blind study at two university hospitals, it matched a trained audiologist in 94% of cases.", "keys": ["blind study", "94", "matched"] },
+          { "ai": "Walk me through how you monetise.", "aiTr": "Nasıl gelir elde ettiğinizi bana adım adım anlatın.", "hint": "We sell the device and charge a monthly software subscription, which gives us recurring revenue.", "keys": ["subscription", "recurring revenue", "sell the device"] },
+          { "ai": "And what does this round get you?", "aiTr": "Peki bu yatırım turu size ne kazandıracak?", "hint": "The €500,000 takes us through CE certification and into the European market.", "keys": ["CE certification", "European market", "500,000"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Deneyimli yatırımcılar karşısında, retorik açıdan ustalıklı ve doğal bir üç dakikalık sunum yapıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Good afternoon — I'm {name}, and I'd like to start with a figure that tends to stop people in their tracks.", "tr": "İyi günler — ben {name}; insanları genellikle olduğu yerde durduran bir rakamla başlamak istiyorum." },
+        { "who": "Me", "en": "One in five people on the planet lives with some degree of hearing loss — well over a billion of us — and most will go their entire lives without a single test.", "tr": "Dünyada her beş kişiden biri bir dereceye kadar işitme kaybıyla yaşıyor — bu bir milyarı rahatlıkla aşan bir sayı — ve çoğu, tüm hayatı boyunca tek bir test bile yaptırmayacak." },
+        { "who": "Me", "en": "The bottleneck isn't awareness, and it certainly isn't demand; it's that there are nowhere near enough audiologists to go round.", "tr": "Darboğaz farkındalık değil, talep ise hiç değil; sorun, herkese yetecek kadar odyoloğun olmaması." },
+        { "who": "Me", "en": "In a small town, the wait for an appointment is measured not in days but in months.", "tr": "Küçük bir kasabada randevu için bekleme süresi günlerle değil, aylarla ölçülüyor." },
+        { "who": "Me", "en": "At AIHEAR, we've taken the expert out of the room without taking the expertise out of the test.", "tr": "AIHEAR'da uzmanı odadan çıkardık, ama uzmanlığı testten çıkarmadık." },
+        { "who": "Me", "en": "Our autonomous, AI-assisted audiometer lets the patient put on headphones and simply press a button whenever they hear a tone, while the AI adapts the test in real time.", "tr": "Otonom, yapay zekâ destekli odyometremizde hasta kulaklığı takıyor ve bir ses duyduğunda yalnızca düğmeye basıyor; yapay zekâ ise testi gerçek zamanlı olarak uyarlıyor." },
+        { "who": "Me", "en": "Inside ten minutes, it delivers a full audiogram — and in a blind study at two university hospitals, it matched a trained audiologist in 94% of cases.", "tr": "On dakikanın altında eksiksiz bir odyogram çıkarıyor — ve iki üniversite hastanesinde yapılan kör bir çalışmada vakaların %94'ünde eğitimli bir odyologla aynı sonuca ulaştı." },
+        { "who": "Me", "en": "Commercially, the model is deliberately unglamorous: a device sale up front, followed by a monthly software fee that compounds quietly in the background.", "tr": "Ticari açıdan model bilinçli olarak gösterişsiz: önce cihaz satışı, ardından arka planda sessizce katlanarak büyüyen aylık bir yazılım ücreti." },
+        { "who": "Me", "en": "We're on our third prototype, we have five paying customers, and the six of us cover engineering, medicine and business between us.", "tr": "Üçüncü prototipimizdeyiz, beş ödeme yapan müşterimiz var ve altı kişi olarak mühendislik, tıp ve iş alanlarını birlikte kapsıyoruz." },
+        { "who": "Me", "en": "We're raising €500,000 to carry us through CE certification and into the European market.", "tr": "Bizi CE sertifikasyonundan geçirip Avrupa pazarına taşıyacak 500.000 € topluyoruz." },
+        { "who": "Me", "en": "Hearing care has never scaled one audiologist at a time, and, with the right partners, it no longer has to.", "tr": "İşitme sağlığı hiçbir zaman tek tek odyologlarla ölçeklenemedi ve doğru ortaklarla artık buna gerek de yok." },
+        { "who": "Me", "en": "I'd be delighted to take your questions.", "tr": "Sorularınızı memnuniyetle yanıtlarım." }
+      ],
+      "vocab": [
+        { "en": "stop someone in their tracks", "tr": "birini olduğu yerde durdurmak, şaşkına çevirmek", "ex": "That figure tends to stop people in their tracks.", "def": "to make someone suddenly stop and pay attention" },
+        { "en": "go (your) entire life without", "tr": "ömür boyu ...meden yaşamak", "ex": "Most people go their entire lives without a single test.", "def": "to never do or have something at any point in your life" },
+        { "en": "bottleneck", "tr": "darboğaz", "ex": "The bottleneck isn't demand.", "def": "the one point that slows down a whole process" },
+        { "en": "nowhere near enough", "tr": "yeterli olmanın çok uzağında", "ex": "There are nowhere near enough audiologists.", "def": "far less than is needed" },
+        { "en": "to go round", "tr": "herkese yetmek", "ex": "There aren't enough audiologists to go round.", "def": "to be enough for everyone" },
+        { "en": "measured in months", "tr": "aylarla ölçülmek", "ex": "The wait is measured in months.", "def": "lasting so long that you count it in months" },
+        { "en": "up front", "tr": "peşin, başta", "ex": "Clinics pay for the device up front.", "def": "at the beginning, before other payments" },
+        { "en": "unglamorous", "tr": "gösterişsiz", "ex": "Our business model is deliberately unglamorous.", "def": "not exciting, but solid and practical" },
+        { "en": "compound", "tr": "katlanarak büyümek", "ex": "Recurring fees compound quietly in the background.", "def": "to grow faster and faster over time" },
+        { "en": "carry someone through", "tr": "birini bir aşamadan geçirmek", "ex": "The round will carry us through certification.", "def": "to give enough support to reach the end of a stage" }
+      ],
+      "grammar": {
+        "title": "Emphatic contrast: not X but Y",
+        "tr": "'Not ... but ...' ve 'It isn't X; it's Y' yapıları, dinleyicinin beklentisini düzeltip asıl noktayı vurgular. Güçlü sunumlarda sık kullanılır.",
+        "examples": ["The wait is measured not in days but in months.", "The bottleneck isn't demand; it's the shortage of audiologists.", "We've taken the expert out of the room, not the expertise out of the test."]
+      },
+      "questions": [
+        { "q": "What does the founder identify as the real bottleneck?", "options": ["Lack of awareness", "Low demand", "Too few audiologists"], "a": 2 },
+        { "q": "What is implied by 'we've taken the expert out of the room without taking the expertise out of the test'?", "options": ["The device keeps clinical quality without a specialist present", "Audiologists are no longer needed anywhere", "The test is less accurate than before"], "a": 0 },
+        { "q": "Why does the founder call the business model 'deliberately unglamorous'?", "options": ["To admit it is not profitable", "To present it as simple, solid and predictable", "To suggest it will change soon"], "a": 1 },
+        { "q": "What is the 94% figure meant to show?", "options": ["Customer satisfaction", "Gross margin", "Clinical reliability"], "a": 2 },
+        { "q": "What is the tone of the line about scaling hearing care?", "options": ["Defensive", "Confident and quietly persuasive", "Uncertain"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "The ___ isn't awareness, and it certainly isn't demand.", "a": "bottleneck", "hint": "darboğaz" },
+        { "s": "There are nowhere near enough audiologists to go ___.", "a": "round", "hint": "herkese yetmek (go round)" },
+        { "s": "The wait is measured not in days but in ___.", "a": "months", "hint": "aylar" },
+        { "s": "We're raising €500,000 to carry us ___ CE certification.", "a": "through", "hint": "bir aşamadan geçirmek (carry through)" }
+      ],
+      "order": [
+        { "a": "Commercially the model is deliberately unglamorous." },
+        { "a": "We're on our third prototype with five paying customers." }
+      ],
+      "translate": [
+        { "tr": "Darboğaz talep değil.", "en": "The bottleneck isn't demand.", "keys": ["bottleneck", "isn't demand"] },
+        { "tr": "Bekleme süresi aylarla ölçülüyor.", "en": "The wait is measured in months.", "keys": ["measured in months"] },
+        { "tr": "Uzmanı odadan çıkardık.", "en": "We've taken the expert out of the room.", "keys": ["taken the expert out", "the room"] }
+      ],
+      "roleplay": {
+        "persona": "Lead partner at a European VC fund",
+        "personaTr": "Avrupalı bir VC fonunun yönetici ortağı",
+        "scene": "Sunumdan sonra deneyimli bir yatırımcı iddialarını zorluyor; kısa, zarif ve ikna edici cevaplar ver.",
+        "turns": [
+          { "ai": "Lovely story, but autonomous diagnostics is a crowded field — what makes you think you'll be the ones to crack it?", "aiTr": "Güzel hikâye, ama otonom teşhis kalabalık bir alan — bunu çözenin siz olacağınızı nereden çıkarıyorsunuz?", "hint": "We've taken the expert out of the room without taking the expertise out of the test, and a blind study backs that up.", "keys": ["expert out of the room", "blind study", "expertise"] },
+          { "ai": "Ninety-four percent sounds impressive, but what about the other six?", "aiTr": "Yüzde doksan dört etkileyici görünüyor, ama ya kalan altı?", "hint": "Those differed only slightly, and in none of them did the diagnosis change.", "keys": ["differed only slightly", "diagnosis", "none of them"] },
+          { "ai": "Your model sounds rather pedestrian — where's the upside?", "aiTr": "Modeliniz biraz sıradan görünüyor — büyüme potansiyeli nerede?", "hint": "It's deliberately unglamorous: a device sale up front and a monthly fee that compounds as every new clinic signs on.", "keys": ["unglamorous", "compounds", "up front"] },
+          { "ai": "And how far does half a million actually get you?", "aiTr": "Peki yarım milyon sizi gerçekte ne kadar ileri götürür?", "hint": "It carries us through CE certification and into the European market, which is exactly where growth takes off.", "keys": ["carries us through", "CE certification", "European market"] }
+        ]
+      }
+    }
+  }
+}

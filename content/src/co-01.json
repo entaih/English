@@ -1,0 +1,374 @@
+{
+  "id": "co-01",
+  "topic": "comms",
+  "title": "Introducing Myself at a Conference",
+  "titleTr": "Bir Konferansta Kendimi Tanıtmak",
+  "levels": {
+    "A1": {
+      "intro": "Bir konferansta yeni biriyle tanışıyor ve kendini kısaca tanıtıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Hi, my name is {name}.", "tr": "Merhaba, benim adım {name}." },
+        { "who": "Sarah", "en": "Hello {name}, I'm Sarah from a UK hospital group.", "tr": "Merhaba {name}, ben Sarah, İngiltere'deki bir hastane grubundanım." },
+        { "who": "Me", "en": "I am the founder of a startup from Turkey.", "tr": "Ben Türkiye'den bir girişimin kurucusuyum." },
+        { "who": "Me", "en": "We make a device that tests hearing without an expert.", "tr": "Uzman olmadan işitmeyi test eden bir cihaz yapıyoruz." },
+        { "who": "Sarah", "en": "We have long waiting lists for hearing tests.", "tr": "İşitme testleri için uzun bekleme listelerimiz var." },
+        { "who": "Me", "en": "That is the problem we solve.", "tr": "Bizim çözdüğümüz sorun tam da bu." },
+        { "who": "Me", "en": "Here is my card.", "tr": "Buyurun, kartım." },
+        { "who": "Sarah", "en": "Thanks, let's talk after the next session.", "tr": "Teşekkürler, bir sonraki oturumdan sonra konuşalım." }
+      ],
+      "vocab": [
+        { "en": "founder", "tr": "kurucu", "ex": "I am the founder of a startup." },
+        { "en": "startup", "tr": "girişim", "ex": "My startup is from Turkey." },
+        { "en": "hearing test", "tr": "işitme testi", "ex": "The device does a hearing test." },
+        { "en": "waiting list", "tr": "bekleme listesi", "ex": "The waiting list is very long." },
+        { "en": "card", "tr": "kartvizit", "ex": "Here is my card." },
+        { "en": "session", "tr": "oturum", "ex": "Let's talk after the next session." }
+      ],
+      "grammar": {
+        "title": "To be: I am, it is",
+        "tr": "Kendini tanıtırken 'to be' fiili kullanılır: I am, you are, he/she/it is. Konuşmada genelde kısaltılır: I'm, it's, that's.",
+        "examples": ["I am the founder of a startup.", "I'm Sarah.", "That is the problem we solve."]
+      },
+      "questions": [
+        { "q": "Where does Sarah work?", "options": ["At a startup in Turkey", "At a hospital group in the UK", "At a university"], "a": 1 },
+        { "q": "What does the device test?", "options": ["Hearing", "Eyes", "Blood"], "a": 0 },
+        { "q": "When do they want to talk again?", "options": ["Tomorrow", "Next week", "After the next session"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I am the ___ of a startup from Turkey.", "a": "founder", "hint": "kurucu" },
+        { "s": "We have long waiting ___ for hearing tests.", "a": "lists", "hint": "listeler" },
+        { "s": "Here is my ___.", "a": "card", "hint": "kartvizit" }
+      ],
+      "order": [
+        { "a": "We make a device that tests hearing without an expert." },
+        { "a": "That is the problem we solve." }
+      ],
+      "translate": [
+        { "tr": "Ben bir girişimin kurucusuyum.", "en": "I am the founder of a startup.", "keys": ["founder", "startup"] },
+        { "tr": "Buyurun, kartım.", "en": "Here is my card.", "keys": ["my card"] }
+      ],
+      "roleplay": {
+        "persona": "Conference guest",
+        "personaTr": "Konferans katılımcısı",
+        "scene": "Kahve molasında biri seninle konuşuyor. Kendini kısaca tanıt.",
+        "turns": [
+          { "ai": "Hi, I'm Emma. What's your name?", "aiTr": "Merhaba, ben Emma. Adınız ne?", "hint": "Hi Emma, my name is {name}. Nice to meet you.", "keys": ["my name is", "nice to meet you"] },
+          { "ai": "Nice to meet you. What do you do?", "aiTr": "Tanıştığımıza memnun oldum. Ne iş yapıyorsunuz?", "hint": "I am the founder of a startup from Turkey. We make a hearing test device.", "keys": ["founder", "startup", "hearing"] },
+          { "ai": "Oh, we have long waiting lists in our clinics.", "aiTr": "Aa, kliniklerimizde uzun bekleme listeleri var.", "hint": "That is the problem we solve. Here is my card.", "keys": ["problem we solve", "my card"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Networking için kısa, doğal ve akılda kalıcı bir şekilde kendini tanıtıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Hi, I don't think we've met — I'm {name}.", "tr": "Merhaba, sanırım tanışmadık; ben {name}." },
+        { "who": "Sarah", "en": "Hi {name}, I'm Sarah, and I work for a hospital group in the UK.", "tr": "Merhaba {name}, ben Sarah; İngiltere'de bir hastane grubunda çalışıyorum." },
+        { "who": "Me", "en": "I'm the founder of a medical device startup from Turkey.", "tr": "Türkiye'den bir tıbbi cihaz girişiminin kurucusuyum." },
+        { "who": "Sarah", "en": "Oh, what kind of device?", "tr": "Aa, ne tür bir cihaz?" },
+        { "who": "Me", "en": "It's a self-service audiometer, so you can test hearing without an expert.", "tr": "Self servis bir odyometre, böylece işitmeyi uzman olmadan test edebiliyorsunuz." },
+        { "who": "Sarah", "en": "That sounds useful, because we have long waiting lists for hearing tests.", "tr": "Kulağa faydalı geliyor, çünkü işitme testleri için uzun bekleme listelerimiz var." },
+        { "who": "Me", "en": "That's exactly the problem we solve.", "tr": "Çözdüğümüz sorun tam olarak bu." },
+        { "who": "Me", "en": "Can I give you my card?", "tr": "Size kartımı verebilir miyim?" },
+        { "who": "Sarah", "en": "Sure, let's talk more after the next session.", "tr": "Tabii, bir sonraki oturumdan sonra daha fazla konuşalım." }
+      ],
+      "vocab": [
+        { "en": "I don't think we've met.", "tr": "Sanırım tanışmadık.", "ex": "Hi, I don't think we've met." },
+        { "en": "work for", "tr": "...de çalışmak", "ex": "I work for a hospital group." },
+        { "en": "founder", "tr": "kurucu", "ex": "I'm the founder of a medical device startup." },
+        { "en": "What kind of...?", "tr": "Ne tür...?", "ex": "What kind of device is it?" },
+        { "en": "self-service", "tr": "self servis", "ex": "It's like a self-service hearing test." },
+        { "en": "That sounds useful.", "tr": "Kulağa faydalı geliyor.", "ex": "That sounds useful for our clinics." },
+        { "en": "waiting list", "tr": "bekleme listesi", "ex": "We have long waiting lists." },
+        { "en": "exactly", "tr": "tam olarak", "ex": "That's exactly the problem we solve." }
+      ],
+      "grammar": {
+        "title": "Linking with because and so",
+        "tr": "'because' bir sebep verir (çünkü), 'so' bir sonuç verir (bu yüzden, böylece). İki kısa cümleyi bağlayıp daha akıcı konuşmanı sağlar.",
+        "examples": ["That sounds useful, because we have long waiting lists.", "We make a self-service audiometer, so people don't need an expert.", "I was busy, so I missed the first session."]
+      },
+      "questions": [
+        { "q": "Where does Sarah work?", "options": ["At a hospital group in the UK", "At a startup in Turkey", "At a university in Ireland"], "a": 0 },
+        { "q": "What is special about the audiometer?", "options": ["It is very cheap", "People can test their hearing without an expert", "It works only in hospitals"], "a": 1 },
+        { "q": "What problem does Sarah have?", "options": ["Not enough money", "Too many doctors", "Long waiting lists for hearing tests"], "a": 2 },
+        { "q": "What do they plan to do?", "options": ["Sign a contract today", "Talk more after the next session", "Have dinner tonight"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Hi, I don't think we've ___.", "a": "met", "hint": "tanışmak" },
+        { "s": "That ___ useful.", "a": "sounds", "hint": "kulağa geliyor" },
+        { "s": "That's ___ the problem we solve.", "a": "exactly", "hint": "tam olarak" }
+      ],
+      "order": [
+        { "a": "Can I give you my card?" },
+        { "a": "Let's talk more after the next session." }
+      ],
+      "translate": [
+        { "tr": "Tanıştığımıza memnun oldum.", "en": "Nice to meet you.", "keys": ["nice to meet you"] },
+        { "tr": "Ne tür bir cihaz?", "en": "What kind of device?", "keys": ["what kind", "device"] }
+      ],
+      "roleplay": {
+        "persona": "Conference attendee",
+        "personaTr": "Konferans katılımcısı",
+        "scene": "Kahve kuyruğunda yanındaki kişi seninle konuşmaya başlıyor.",
+        "turns": [
+          { "ai": "Hi there! I'm Emma, from a clinic chain in Ireland. And you?", "aiTr": "Merhaba! Ben Emma, İrlanda'daki bir klinik zincirindenim. Ya siz?", "hint": "Nice to meet you, Emma. I'm {name}, and I'm the founder of a medical device startup from Turkey.", "keys": ["nice to meet", "founder", "startup", "Turkey"] },
+          { "ai": "What kind of device do you make?", "aiTr": "Ne tür bir cihaz yapıyorsunuz?", "hint": "We make a self-service audiometer, so people can test their hearing without an expert.", "keys": ["audiometer", "hearing", "expert", "self-service"] },
+          { "ai": "Interesting! We have very long waiting lists.", "aiTr": "İlginç! Bizim çok uzun bekleme listelerimiz var.", "hint": "That's exactly the problem we solve. Can I give you my card?", "keys": ["exactly", "problem", "card", "solve"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Bir konferansta yeni biriyle tanışıyor, girişimini ve ürününü kısa ve net biçimde anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Hi, I don't think we've met yet — I'm {name}.", "tr": "Merhaba, sanırım henüz tanışmadık; ben {name}." },
+        { "who": "Sarah", "en": "Hi {name}, I'm Sarah, and I work for a hospital group in the UK.", "tr": "Merhaba {name}, ben Sarah; İngiltere'de bir hastane grubunda çalışıyorum." },
+        { "who": "Me", "en": "Nice to meet you, Sarah — I'm the founder of AIHEAR, a medical device startup from Turkey.", "tr": "Tanıştığımıza memnun oldum Sarah; ben Türkiye'den bir tıbbi cihaz girişimi olan AIHEAR'ın kurucusuyum." },
+        { "who": "Sarah", "en": "Oh, what kind of device have you developed?", "tr": "Aa, ne tür bir cihaz geliştirdiniz?" },
+        { "who": "Me", "en": "We've built an audiometer that tests hearing on its own, so patients don't need an expert in the room.", "tr": "İşitmeyi kendi kendine test eden bir odyometre geliştirdik, böylece hastaların odada bir uzmana ihtiyacı olmuyor." },
+        { "who": "Me", "en": "Basically, it works like a self-service hearing test and takes less than ten minutes.", "tr": "Kısacası self servis bir işitme testi gibi çalışıyor ve on dakikadan kısa sürüyor." },
+        { "who": "Sarah", "en": "That sounds really useful, because our waiting lists for hearing tests have become very long.", "tr": "Kulağa gerçekten faydalı geliyor, çünkü işitme testleri için bekleme listelerimiz çok uzadı." },
+        { "who": "Me", "en": "That's exactly the problem we're trying to solve, especially outside the big cities.", "tr": "Çözmeye çalıştığımız sorun tam olarak bu, özellikle büyük şehirlerin dışında." },
+        { "who": "Me", "en": "Here's my card — should we talk more after the next session?", "tr": "Buyurun kartım; bir sonraki oturumdan sonra daha fazla konuşalım mı?" },
+        { "who": "Sarah", "en": "Definitely, let's meet by the coffee stand after the next session.", "tr": "Kesinlikle, bir sonraki oturumdan sonra kahve standının yanında buluşalım." }
+      ],
+      "vocab": [
+        { "en": "I don't think we've met", "tr": "sanırım tanışmadık", "ex": "Hi, I don't think we've met yet.", "def": "a polite way to start talking to someone new" },
+        { "en": "work for", "tr": "...de çalışmak", "ex": "Sarah works for a hospital group in the UK.", "def": "to be employed by a company or organisation" },
+        { "en": "founder of", "tr": "...nın kurucusu", "ex": "I'm the founder of AIHEAR.", "def": "the person who started a company" },
+        { "en": "develop a device", "tr": "cihaz geliştirmek", "ex": "What kind of device have you developed?", "def": "to design and build a new product" },
+        { "en": "on its own", "tr": "kendi kendine", "ex": "The audiometer tests hearing on its own.", "def": "without help from anyone" },
+        { "en": "self-service", "tr": "self servis", "ex": "It works like a self-service hearing test.", "def": "done by the user without help from staff" },
+        { "en": "waiting list", "tr": "bekleme listesi", "ex": "Our waiting lists have become very long.", "def": "a list of people who are waiting for a service" },
+        { "en": "solve a problem", "tr": "bir sorunu çözmek", "ex": "That's exactly the problem we're trying to solve.", "def": "to find an answer to a difficulty" }
+      ],
+      "grammar": {
+        "title": "Present perfect: experience and results",
+        "tr": "Zamanı belirtilmeyen ve sonucu şimdi önemli olan olaylar için 'have/has + V3' kullanılır. Kendini tanıtırken ne yaptığını anlatmak için çok kullanışlıdır.",
+        "examples": ["I don't think we've met yet.", "We've built an audiometer that tests hearing on its own.", "Our waiting lists have become very long."]
+      },
+      "questions": [
+        { "q": "How long does the hearing test take?", "options": ["About an hour", "A whole day", "Less than ten minutes"], "a": 2 },
+        { "q": "Why does Sarah think the device is useful?", "options": ["It is cheaper than a hearing aid", "Her hospital group has long waiting lists", "She needs a new job"], "a": 1 },
+        { "q": "What does 'on its own' mean in the text?", "options": ["Without help from an expert", "With a doctor in the room", "Only at home"], "a": 0 },
+        { "q": "What do they agree to do?", "options": ["Sign a contract today", "Meet after the next session", "Visit a hospital together"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Oh, what kind of device have you ___?", "a": "developed", "hint": "geliştirmek" },
+        { "s": "The audiometer tests hearing on its ___.", "a": "own", "hint": "kendi kendine" },
+        { "s": "Our ___ lists for hearing tests have become very long.", "a": "waiting", "hint": "bekleme" }
+      ],
+      "order": [
+        { "a": "We have built an audiometer that tests hearing on its own." },
+        { "a": "That is exactly the problem we are trying to solve." }
+      ],
+      "translate": [
+        { "tr": "Sanırım henüz tanışmadık.", "en": "I don't think we've met yet.", "keys": ["don't think", "met yet"] },
+        { "tr": "Bir sonraki oturumdan sonra daha fazla konuşalım mı?", "en": "Should we talk more after the next session?", "keys": ["should we", "next session"] }
+      ],
+      "roleplay": {
+        "persona": "Conference attendee",
+        "personaTr": "Konferans katılımcısı",
+        "scene": "Kahve kuyruğunda İrlandalı bir klinik yöneticisi seninle konuşmaya başlıyor.",
+        "turns": [
+          { "ai": "Hi there! I'm Emma, from a clinic chain in Ireland. I don't think we've met.", "aiTr": "Merhaba! Ben Emma, İrlanda'daki bir klinik zincirindenim. Sanırım tanışmadık.", "hint": "Nice to meet you, Emma. I'm {name}, the founder of AIHEAR, a medical device startup from Turkey.", "keys": ["nice to meet", "founder", "startup", "Turkey"] },
+          { "ai": "What kind of device have you developed?", "aiTr": "Ne tür bir cihaz geliştirdiniz?", "hint": "We've built an audiometer that tests hearing on its own, so patients don't need an expert in the room.", "keys": ["audiometer", "on its own", "expert"] },
+          { "ai": "Interesting. Our waiting lists have become really long lately.", "aiTr": "İlginç. Son zamanlarda bekleme listelerimiz gerçekten uzadı.", "hint": "That's exactly the problem we're trying to solve. A test takes less than ten minutes.", "keys": ["exactly", "problem", "ten minutes"] },
+          { "ai": "I'd love to hear more, but the next session is starting.", "aiTr": "Daha fazlasını duymak isterdim ama bir sonraki oturum başlıyor.", "hint": "Here's my card. Should we talk more after the session?", "keys": ["card", "should we", "after the session"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir konferansta sağlık sektöründen biriyle tanışıyor, girişimini ilgi çekici ve profesyonel bir şekilde tanıtıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Hi, I don't think we've been introduced — I'm {name}.", "tr": "Merhaba, sanırım tanıştırılmadık; ben {name}." },
+        { "who": "Sarah", "en": "Lovely to meet you, {name} — I'm Sarah, and I work for a hospital group in the UK.", "tr": "Tanıştığımıza çok memnun oldum {name}; ben Sarah, İngiltere'de bir hastane grubunda çalışıyorum." },
+        { "who": "Me", "en": "I run AIHEAR, a medical device startup from Turkey that's tackling the shortage of audiologists.", "tr": "Odyolog eksikliğine çözüm arayan, Türkiye merkezli bir tıbbi cihaz girişimi olan AIHEAR'ı yönetiyorum." },
+        { "who": "Sarah", "en": "So what kind of device are we talking about?", "tr": "Peki nasıl bir cihazdan bahsediyoruz?" },
+        { "who": "Me", "en": "It's an audiometer that runs the entire test on its own, so no expert needs to be in the room.", "tr": "Testin tamamını kendi başına yapan bir odyometre, bu yüzden odada bir uzmanın bulunmasına gerek yok." },
+        { "who": "Me", "en": "I'd describe it as a self-service hearing test that's completed in under ten minutes.", "tr": "Bunu on dakikadan kısa sürede tamamlanan self servis bir işitme testi olarak tanımlayabilirim." },
+        { "who": "Sarah", "en": "That could be really useful for us, since patients are being kept waiting for months for a basic hearing test.", "tr": "Bu bizim için gerçekten faydalı olabilir, çünkü hastalar basit bir işitme testi için aylarca bekletiliyor." },
+        { "who": "Me", "en": "That's exactly the gap we're trying to close, and I'd be happy to tell you more.", "tr": "Kapatmaya çalıştığımız boşluk tam olarak bu ve size daha fazlasını anlatmaktan memnuniyet duyarım." },
+        { "who": "Me", "en": "Why don't I leave you my card, and we can pick this up after the next session?", "tr": "Size kartımı bırakayım, bir sonraki oturumdan sonra konuya kaldığımız yerden devam edelim mi?" },
+        { "who": "Sarah", "en": "I'd like that — I'll come and find you once the panel has finished.", "tr": "Bunu isterim; panel bittiğinde gelip sizi bulurum." }
+      ],
+      "vocab": [
+        { "en": "be introduced", "tr": "tanıştırılmak", "ex": "I don't think we've been introduced.", "def": "to be formally presented to someone you have not met" },
+        { "en": "run a company", "tr": "bir şirketi yönetmek", "ex": "I run a medical device startup.", "def": "to manage and be in charge of a business" },
+        { "en": "tackle", "tr": "(bir sorunla) uğraşmak, çözmeye çalışmak", "ex": "We're tackling the shortage of audiologists.", "def": "to deal with a difficult problem" },
+        { "en": "shortage of", "tr": "...eksikliği", "ex": "There is a shortage of audiologists.", "def": "a situation where there is not enough of something" },
+        { "en": "on its own", "tr": "kendi başına", "ex": "The device runs the entire test on its own.", "def": "without help from anyone" },
+        { "en": "keep someone waiting", "tr": "birini bekletmek", "ex": "Patients are being kept waiting for months.", "def": "to make someone wait for a long time" },
+        { "en": "close a gap", "tr": "bir boşluğu kapatmak", "ex": "That's exactly the gap we're trying to close.", "def": "to fix a difference between what is needed and what exists" },
+        { "en": "pick something up", "tr": "kaldığı yerden devam etmek", "ex": "We can pick this up after the next session.", "def": "to continue a conversation or activity later" },
+        { "en": "panel", "tr": "panel (konuşmacı grubu)", "ex": "I'll find you once the panel has finished.", "def": "a group of experts who discuss a topic in front of an audience" }
+      ],
+      "grammar": {
+        "title": "The passive in everyday business talk",
+        "tr": "Eylemi kimin yaptığı önemli değilse veya belliyse edilgen yapı kullanılır: 'be + V3'. Süren durumlar için 'are being kept' gibi biçimler kullanılır.",
+        "examples": ["I don't think we've been introduced.", "The test is completed in under ten minutes.", "Patients are being kept waiting for months."]
+      },
+      "questions": [
+        { "q": "What problem is AIHEAR tackling?", "options": ["The high price of hearing aids", "The shortage of audiologists", "Slow internet in hospitals"], "a": 1 },
+        { "q": "How long does the test take?", "options": ["About half an hour", "Several hours", "Under ten minutes"], "a": 2 },
+        { "q": "Why is Sarah interested?", "options": ["Her patients wait months for a hearing test", "She wants to invest in startups", "She is looking for a new job"], "a": 0 },
+        { "q": "What can we infer from Sarah's last line?", "options": ["She is trying to end the conversation politely", "She genuinely wants to continue the conversation later", "She will miss the panel"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "It's a medical device startup that's ___ the shortage of audiologists.", "a": "tackling", "hint": "çözmeye çalışmak" },
+        { "s": "Patients are being kept ___ for months.", "a": "waiting", "hint": "beklemek" },
+        { "s": "That's exactly the ___ we're trying to close.", "a": "gap", "hint": "boşluk" }
+      ],
+      "order": [
+        { "a": "I don't think we have been introduced." },
+        { "a": "We can pick this up after the next session." }
+      ],
+      "translate": [
+        { "tr": "Hastalar aylarca bekletiliyor.", "en": "Patients are being kept waiting for months.", "keys": ["kept waiting", "months"] },
+        { "tr": "Size kartımı bırakayım.", "en": "Let me leave you my card.", "keys": ["leave you my card"] }
+      ],
+      "roleplay": {
+        "persona": "Clinic chain manager",
+        "personaTr": "Klinik zinciri yöneticisi",
+        "scene": "İrlanda'da bir klinik zinciri yöneten Emma ile bir oturum arasında tanışıyorsun.",
+        "turns": [
+          { "ai": "Hi, I'm Emma, and I run a chain of clinics in Ireland. I don't think we've been introduced.", "aiTr": "Merhaba, ben Emma; İrlanda'da bir klinik zinciri yönetiyorum. Sanırım tanıştırılmadık.", "hint": "Lovely to meet you, Emma. I'm {name}, and I run AIHEAR, a medical device startup from Turkey.", "keys": ["lovely to meet", "run", "startup", "Turkey"] },
+          { "ai": "So what's the idea behind it?", "aiTr": "Peki arkasındaki fikir ne?", "hint": "We've built an audiometer that runs the whole test on its own, so no expert needs to be in the room.", "keys": ["audiometer", "on its own", "expert"] },
+          { "ai": "Our patients are being kept waiting for months. Could it help with that?", "aiTr": "Hastalarımız aylarca bekletiliyor. Buna yardımı olabilir mi?", "hint": "That's exactly the gap we're trying to close, since a test is completed in under ten minutes.", "keys": ["gap", "ten minutes", "exactly"] },
+          { "ai": "I'm afraid I have to run to the next panel.", "aiTr": "Korkarım bir sonraki panele koşmam gerekiyor.", "hint": "Of course. Why don't I leave you my card, and we can pick this up afterwards?", "keys": ["card", "pick this up", "afterwards"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir konferansta sektörden biriyle tanışıyor, girişimini net bir sorun ve çözüm çerçevesinde, akıcı ve etkileyici biçimde tanıtıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Excuse me, I don't believe we've met — I'm {name}.", "tr": "Affedersiniz, sanırım tanışmadık; ben {name}." },
+        { "who": "Sarah", "en": "Nice to meet you, {name} — I'm Sarah, and I'm with a hospital group in the UK.", "tr": "Tanıştığımıza memnun oldum {name}; ben Sarah, İngiltere'de bir hastane grubunda çalışıyorum." },
+        { "who": "Me", "en": "I'm the founder of AIHEAR, a Turkish medtech startup working on one very specific problem: the global shortage of audiologists.", "tr": "Çok belirli bir sorun üzerinde çalışan Türk medtech girişimi AIHEAR'ın kurucusuyum: dünya çapındaki odyolog eksikliği." },
+        { "who": "Sarah", "en": "That's certainly one we feel, so what's your angle on it?", "tr": "Bu kesinlikle bizim de hissettiğimiz bir sorun; peki siz konuya nasıl yaklaşıyorsunuz?" },
+        { "who": "Me", "en": "We've developed an autonomous audiometer that runs the entire hearing test without a specialist in the room.", "tr": "Odada bir uzman olmadan tüm işitme testini yapan otonom bir odyometre geliştirdik." },
+        { "who": "Me", "en": "Essentially, the patient puts on headphones, presses a button whenever they hear a tone, and the AI adapts the test as it goes.", "tr": "Özetle hasta kulaklığı takıyor, bir ses duyduğunda düğmeye basıyor ve yapay zekâ testi anında uyarlıyor." },
+        { "who": "Me", "en": "What comes out at the end, in under ten minutes, is a full audiogram.", "tr": "Sonunda, on dakikadan kısa sürede, eksiksiz bir odyogram çıkıyor." },
+        { "who": "Sarah", "en": "Now that would make a dent in our waiting lists, which in some areas stretch to several months.", "tr": "İşte bu, bazı bölgelerde birkaç aya kadar uzayan bekleme listelerimizi gözle görülür biçimde azaltır." },
+        { "who": "Me", "en": "That's precisely the bottleneck we set out to remove, particularly for clinics that simply can't hire more audiologists.", "tr": "Ortadan kaldırmak için yola çıktığımız darboğaz tam olarak bu, özellikle de daha fazla odyolog işe alamayan klinikler için." },
+        { "who": "Me", "en": "Rather than keep you from the next session, may I leave you my card and pick this up afterwards?", "tr": "Sizi bir sonraki oturumdan alıkoymak yerine, kartımı bırakıp konuya sonra devam edebilir miyiz?" },
+        { "who": "Sarah", "en": "Please do — I'd genuinely like to hear how it performed in your clinical study.", "tr": "Lütfen; klinik çalışmanızda nasıl bir performans gösterdiğini gerçekten duymak isterim." },
+        { "who": "Me", "en": "Then I'll find you over coffee and bring the results with me.", "tr": "O zaman kahve molasında sizi bulurum ve sonuçları da yanımda getiririm." }
+      ],
+      "vocab": [
+        { "en": "be with a company", "tr": "bir şirkette çalışmak", "ex": "I'm with a hospital group in the UK.", "def": "to work for a particular organisation" },
+        { "en": "medtech", "tr": "medikal teknoloji", "ex": "AIHEAR is a Turkish medtech startup.", "def": "short for medical technology" },
+        { "en": "angle on something", "tr": "bir konuya yaklaşım", "ex": "What's your angle on the problem?", "def": "a particular way of approaching a problem" },
+        { "en": "autonomous", "tr": "otonom, kendi kendine çalışan", "ex": "We've developed an autonomous audiometer.", "def": "able to work without human control" },
+        { "en": "as it goes", "tr": "ilerledikçe, anında", "ex": "The AI adapts the test as it goes.", "def": "while the activity is happening" },
+        { "en": "make a dent in", "tr": "gözle görülür biçimde azaltmak", "ex": "This could make a dent in our waiting lists.", "def": "to reduce something by a noticeable amount" },
+        { "en": "stretch to", "tr": "...e kadar uzamak", "ex": "Waiting lists stretch to several months.", "def": "to last or reach as far as a certain length" },
+        { "en": "bottleneck", "tr": "darboğaz", "ex": "The shortage of audiologists is the bottleneck.", "def": "a point where a process slows down because of a limit" },
+        { "en": "set out to", "tr": "...mek için yola çıkmak", "ex": "We set out to remove that bottleneck.", "def": "to start doing something with a clear aim" },
+        { "en": "keep someone from", "tr": "birini ...den alıkoymak", "ex": "I don't want to keep you from the next session.", "def": "to stop someone from going somewhere or doing something" }
+      ],
+      "grammar": {
+        "title": "Reduced relative clauses: a startup working on …",
+        "tr": "'which is working' yerine sadece '-ing' kullanarak cümleyi kısaltabilirsin. Kendini tanıtırken bu yapı seni akıcı ve profesyonel gösterir.",
+        "examples": ["AIHEAR is a Turkish medtech startup working on the shortage of audiologists.", "Clinics struggling with long waiting lists need faster tests.", "We met a hospital group looking for new diagnostic tools."]
+      },
+      "questions": [
+        { "q": "How does the founder frame the company in the introduction?", "options": ["As a general health app", "As focused on one specific problem", "As a hearing aid maker"], "a": 1 },
+        { "q": "What does Sarah imply with 'That's certainly one we feel'?", "options": ["Her hospital group also struggles with a lack of audiologists", "She dislikes the idea", "She thinks the problem is exaggerated"], "a": 0 },
+        { "q": "What does 'make a dent in our waiting lists' mean?", "options": ["Make them longer", "Publish them online", "Reduce them noticeably"], "a": 2 },
+        { "q": "Why does the founder suggest continuing later?", "options": ["To respect Sarah's time before the next session", "They are bored with the conversation", "They have nothing more to say"], "a": 0 },
+        { "q": "What does Sarah's interest in the clinical study suggest?", "options": ["She is only being polite", "She has already decided to buy", "She is genuinely interested and wants evidence"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "That's certainly one we feel, so what's your ___ on it?", "a": "angle", "hint": "yaklaşım" },
+        { "s": "Now that would make a ___ in our waiting lists.", "a": "dent", "hint": "gözle görülür azalma" },
+        { "s": "That's precisely the bottleneck we set ___ to remove.", "a": "out", "hint": "yola çıkmak" },
+        { "s": "The AI adapts the test as it ___.", "a": "goes", "hint": "ilerledikçe" }
+      ],
+      "order": [
+        { "a": "What comes out at the end is a full audiogram." },
+        { "a": "May I leave you my card?" }
+      ],
+      "translate": [
+        { "tr": "Bu, bekleme listelerimizi gözle görülür biçimde azaltır.", "en": "It would make a dent in our waiting lists.", "keys": ["make a dent", "waiting lists"] },
+        { "tr": "Konuya oturumdan sonra devam edelim.", "en": "Let's pick this up after the session.", "keys": ["pick this up"] },
+        { "tr": "İngiltere'de bir hastane grubunda çalışıyorum.", "en": "I'm with a hospital group in the UK.", "keys": ["with a hospital group"] }
+      ],
+      "roleplay": {
+        "persona": "Head of operations at a clinic chain",
+        "personaTr": "Bir klinik zincirinin operasyon direktörü",
+        "scene": "Konferans arasında İrlanda'dan bir klinik zinciri yöneticisiyle tanışıyorsun; kısa ama etkileyici bir tanıtım yap.",
+        "turns": [
+          { "ai": "I don't believe we've met. I'm Emma, and I head up operations for a clinic chain in Ireland.", "aiTr": "Sanırım tanışmadık. Ben Emma; İrlanda'da bir klinik zincirinin operasyonlarını yönetiyorum.", "hint": "Lovely to meet you, Emma. I'm {name}, founder of AIHEAR, a Turkish medtech startup working on the shortage of audiologists.", "keys": ["founder", "medtech", "shortage", "audiologists"] },
+          { "ai": "That's certainly a problem we feel. What's your angle on it?", "aiTr": "Bu kesinlikle bizim de hissettiğimiz bir sorun. Siz nasıl yaklaşıyorsunuz?", "hint": "We've developed an autonomous audiometer that runs the entire hearing test without a specialist in the room.", "keys": ["autonomous", "audiometer", "specialist", "without"] },
+          { "ai": "And how does it actually work for the patient?", "aiTr": "Peki hasta açısından aslında nasıl işliyor?", "hint": "The patient presses a button whenever they hear a tone, the AI adapts as it goes, and in under ten minutes you get an audiogram.", "keys": ["button", "adapts", "audiogram", "ten minutes"] },
+          { "ai": "I'd love to hear more, but I'm due at the next panel.", "aiTr": "Daha fazlasını duymak isterdim ama bir sonraki panelde olmam gerekiyor.", "hint": "Of course. May I leave you my card, and we can pick this up afterwards?", "keys": ["card", "pick this up", "afterwards"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Bir konferansta kendini esprili, akıcı ve ikna edici bir şekilde tanıtıyor, kısa bir sohbeti somut bir fırsata dönüştürüyorsun.",
+      "text": [
+        { "who": "Me", "en": "I don't think we've crossed paths yet — I'm {name}.", "tr": "Sanırım yollarımız henüz kesişmedi; ben {name}." },
+        { "who": "Sarah", "en": "Sarah, from a hospital group in the UK, and I confess I'm in desperate need of a coffee after that last panel.", "tr": "Sarah, İngiltere'deki bir hastane grubundan; itiraf edeyim, o son panelden sonra bir kahveye fena hâlde ihtiyacım var." },
+        { "who": "Me", "en": "Then I'll keep it brief: I founded AIHEAR, a Turkish medtech company tackling a problem most people never hear about, quite literally.", "tr": "O zaman kısa keseyim: çoğu insanın, kelimenin tam anlamıyla, hiç duymadığı bir sorunu çözmeye çalışan Türk medtech şirketi AIHEAR'ı kurdum." },
+        { "who": "Sarah", "en": "Go on, you've piqued my interest.", "tr": "Devam edin, merakımı uyandırdınız." },
+        { "who": "Me", "en": "One in five people has some degree of hearing loss, yet most are never tested, simply because there aren't enough audiologists to go round.", "tr": "Her beş kişiden birinde bir derece işitme kaybı var, ama çoğu hiç test edilmiyor; çünkü herkese yetecek kadar odyolog yok." },
+        { "who": "Me", "en": "So we've built an autonomous audiometer that runs the whole test without a specialist in the room.", "tr": "Biz de odada bir uzman olmadan testin tamamını yapan otonom bir odyometre geliştirdik." },
+        { "who": "Me", "en": "The patient simply presses a button at each tone, the AI adapts on the fly, and the audiogram is ready in under ten minutes.", "tr": "Hasta her seste sadece bir düğmeye basıyor, yapay zekâ anında uyum sağlıyor ve odyogram on dakikadan kısa sürede hazır oluyor." },
+        { "who": "Sarah", "en": "If that holds up, it would take a serious bite out of our waiting lists, which in some regions run to several months.", "tr": "Bu gerçekten doğruysa, bazı bölgelerde birkaç ayı bulan bekleme listelerimizi ciddi biçimde kısaltır." },
+        { "who": "Me", "en": "Our clinical data suggest it does hold up, though I'd rather show you the numbers than oversell them in a coffee queue.", "tr": "Klinik verilerimiz bunun gerçekten tuttuğunu gösteriyor, ama rakamları bir kahve kuyruğunda abartmaktansa size göstermeyi tercih ederim." },
+        { "who": "Me", "en": "I won't hold you up any longer, but may I leave you my card, and perhaps we could pick this up after the next session?", "tr": "Sizi daha fazla tutmayayım; kartımı bırakabilir miyim, belki bir sonraki oturumdan sonra konuya devam ederiz?" },
+        { "who": "Sarah", "en": "By all means, and do bring those numbers: I'm far more persuadable with data than with adjectives.", "tr": "Elbette, o rakamları mutlaka getirin; çünkü beni sıfatlardan çok veriler ikna eder." }
+      ],
+      "vocab": [
+        { "en": "cross paths", "tr": "yolları kesişmek", "ex": "I don't think we've crossed paths before.", "def": "to meet someone, often by chance" },
+        { "en": "keep it brief", "tr": "kısa kesmek", "ex": "I'll keep it brief, since you need a coffee.", "def": "to say something in as few words as possible" },
+        { "en": "pique someone's interest", "tr": "birinin merakını uyandırmak", "ex": "You've piqued my interest.", "def": "to make someone curious to know more" },
+        { "en": "go round", "tr": "herkese yetmek", "ex": "There aren't enough audiologists to go round.", "def": "to be enough for everyone who needs it" },
+        { "en": "on the fly", "tr": "anında, iş sürerken", "ex": "The AI adapts the test on the fly.", "def": "while something is happening, without stopping" },
+        { "en": "hold up", "tr": "geçerliliğini korumak, doğru çıkmak", "ex": "Our clinical data suggest the claim holds up.", "def": "to remain true when tested or examined" },
+        { "en": "take a bite out of", "tr": "önemli ölçüde azaltmak", "ex": "It would take a serious bite out of our waiting lists.", "def": "to reduce something by a significant amount" },
+        { "en": "run to", "tr": "...i bulmak, ...e varmak", "ex": "Waiting lists run to several months.", "def": "to reach a particular amount or length" },
+        { "en": "oversell", "tr": "abartmak, olduğundan fazla övmek", "ex": "I'd rather show you the numbers than oversell them.", "def": "to praise something more than it deserves" },
+        { "en": "persuadable", "tr": "ikna edilebilir", "ex": "I'm more persuadable with data than with adjectives.", "def": "able to be convinced" }
+      ],
+      "grammar": {
+        "title": "Understatement and soft persuasion",
+        "tr": "C2 düzeyinde ikna, abartıdan değil ölçülü ifadeden gelir: 'I'd rather show you than oversell', 'perhaps we could', 'if that holds up'. Bu yapılar güven veren ve kendinden emin bir ton yaratır.",
+        "examples": ["I'd rather show you the numbers than oversell them.", "Perhaps we could pick this up after the next session.", "If that holds up, it would take a serious bite out of our waiting lists."]
+      },
+      "questions": [
+        { "q": "What is the tone of Sarah's first line?", "options": ["Cold and formal", "Light-hearted and self-deprecating", "Impatient and rude", "Nervous"], "a": 1 },
+        { "q": "What is the founder's phrase 'a problem most people never hear about, quite literally' playing on?", "options": ["The founder's accent", "The noise in the conference hall", "The fact that the problem is hearing loss"], "a": 2 },
+        { "q": "Why, according to the founder, are most people never tested?", "options": ["There aren't enough audiologists to go round", "Tests are too expensive", "People don't care about their hearing"], "a": 0 },
+        { "q": "What does the founder imply by preferring to show the numbers rather than oversell them?", "options": ["They are unsure the device works", "They trust the data to speak for itself", "They have no data yet"], "a": 1 },
+        { "q": "What does Sarah's final remark imply?", "options": ["She is losing interest", "She dislikes the founder's style", "Evidence will persuade her more than enthusiasm"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I don't think we've crossed ___ yet.", "a": "paths", "hint": "yollar" },
+        { "s": "Go on, you've ___ my interest.", "a": "piqued", "hint": "uyandırmak" },
+        { "s": "The AI adapts on the ___.", "a": "fly", "hint": "anında" },
+        { "s": "There aren't enough audiologists to go ___.", "a": "round", "hint": "herkese yetmek" }
+      ],
+      "order": [
+        { "a": "Then I'll keep it brief." },
+        { "a": "The audiogram is ready in under ten minutes." }
+      ],
+      "translate": [
+        { "tr": "Kısa keseyim.", "en": "I'll keep it brief.", "keys": ["keep it brief"] },
+        { "tr": "Merakımı uyandırdınız.", "en": "You've piqued my interest.", "keys": ["piqued my interest"] },
+        { "tr": "Rakamları abartmaktansa size göstermeyi tercih ederim.", "en": "I'd rather show you the numbers than oversell them.", "keys": ["rather show you", "oversell"] }
+      ],
+      "roleplay": {
+        "persona": "Operations director at a clinic chain",
+        "personaTr": "Bir klinik zincirinin operasyon direktörü",
+        "scene": "Kalabalık bir konferans arasında kısa bir fırsatın var; kendini esprili, öz ve ikna edici biçimde tanıt.",
+        "turns": [
+          { "ai": "Emma, I run operations for a clinic chain in Ireland, and I'm told you're the person to talk to about hearing.", "aiTr": "Emma; İrlanda'da bir klinik zincirinin operasyonlarını yönetiyorum ve işitme konusunda konuşulacak kişinin siz olduğunuzu duydum.", "hint": "Guilty as charged. I'm {name}, and I founded AIHEAR, a Turkish medtech company tackling the shortage of audiologists.", "keys": ["founded", "medtech", "shortage", "audiologists"] },
+          { "ai": "Give me the thirty-second version.", "aiTr": "Bana otuz saniyelik özetini verin.", "hint": "One in five people has some hearing loss, yet most are never tested, so we've built an autonomous audiometer that needs no specialist in the room.", "keys": ["one in five", "autonomous", "no specialist", "never tested"] },
+          { "ai": "Bold claim. Does it actually hold up?", "aiTr": "İddialı bir söz. Gerçekten tutuyor mu?", "hint": "Our clinical data suggest it does, though I'd rather show you the numbers than oversell them in a coffee queue.", "keys": ["clinical data", "rather show you", "numbers"] },
+          { "ai": "Fair enough, but I'm due at the next panel.", "aiTr": "Makul, ama bir sonraki panelde olmam gerekiyor.", "hint": "I won't hold you up, then. May I leave you my card, and perhaps we could pick this up afterwards?", "keys": ["card", "pick this up", "hold you up"] }
+        ]
+      }
+    }
+  }
+}

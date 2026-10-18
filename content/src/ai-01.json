@@ -1,0 +1,376 @@
+{
+  "id": "ai-01",
+  "topic": "aihear",
+  "title": "How Our Autonomous Audiometer Works",
+  "titleTr": "Otonom Odyometremiz Nasıl Çalışır",
+  "levels": {
+    "A1": {
+      "intro": "Cihazını çok basit cümlelerle, adım adım anlatıyorsun.",
+      "text": [
+        { "en": "An audiometer is a device for hearing tests.", "tr": "Odyometre, işitme testleri için kullanılan bir cihazdır." },
+        { "en": "A normal test needs an expert and about thirty minutes.", "tr": "Normal bir test için bir uzman ve yaklaşık otuz dakika gerekir." },
+        { "en": "Our audiometer is autonomous: it does not need an expert.", "tr": "Bizim odyometremiz otonom: uzmana ihtiyaç duymuyor." },
+        { "en": "The patient puts on the headphones.", "tr": "Hasta kulaklıkları takar." },
+        { "en": "When the patient hears a sound, they press a button.", "tr": "Hasta bir ses duyduğunda bir düğmeye basar." },
+        { "en": "The AI changes the test in real time.", "tr": "Yapay zekâ testi anında uyarlar." },
+        { "en": "At the end, the device makes an audiogram.", "tr": "Sonunda cihaz bir odyogram oluşturur." },
+        { "en": "The test takes less than ten minutes.", "tr": "Test on dakikadan kısa sürer." }
+      ],
+      "vocab": [
+        { "en": "headphones", "tr": "kulaklık", "ex": "The patient puts on the headphones." },
+        { "en": "press a button", "tr": "düğmeye basmak", "ex": "Press the button when you hear a sound." },
+        { "en": "expert", "tr": "uzman", "ex": "We do not need an expert." },
+        { "en": "autonomous", "tr": "otonom, kendi kendine çalışan", "ex": "Our device is autonomous." },
+        { "en": "audiogram", "tr": "odyogram (işitme grafiği)", "ex": "The device makes an audiogram." },
+        { "en": "less than", "tr": "...den az", "ex": "It takes less than ten minutes." }
+      ],
+      "grammar": {
+        "title": "Present simple: how something works",
+        "tr": "Bir şeyin nasıl çalıştığını anlatırken present simple kullanılır. he / she / it ile fiil -s alır: it makes, the patient presses.",
+        "examples": ["The patient puts on the headphones.", "The device makes an audiogram.", "The test takes less than ten minutes."]
+      },
+      "questions": [
+        { "q": "What does the patient put on?", "options": ["Glasses", "Headphones", "A watch"], "a": 1 },
+        { "q": "What does the patient do when they hear a sound?", "options": ["They press a button", "They say yes", "They stand up"], "a": 0 },
+        { "q": "How long does the test take?", "options": ["About thirty minutes", "One hour", "Less than ten minutes"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "The patient puts on the ___.", "a": "headphones", "hint": "kulaklık" },
+        { "s": "When the patient hears a sound, they press a ___.", "a": "button", "hint": "düğme" },
+        { "s": "The test takes less than ten ___.", "a": "minutes", "hint": "dakika" }
+      ],
+      "order": [
+        { "a": "The patient puts on the headphones." },
+        { "a": "The test takes less than ten minutes." }
+      ],
+      "translate": [
+        { "tr": "Uzmana ihtiyacımız yok.", "en": "We do not need an expert.", "keys": ["need", "expert"] },
+        { "tr": "Test on dakikadan kısa sürer.", "en": "The test takes less than ten minutes.", "keys": ["less than", "ten minutes"] }
+      ],
+      "roleplay": {
+        "persona": "Curious doctor",
+        "personaTr": "Meraklı doktor",
+        "scene": "Bir fuarda İngiliz bir kulak burun boğaz doktoru standına gelip cihazını soruyor.",
+        "turns": [
+          { "ai": "Hello! What is this device?", "aiTr": "Merhaba! Bu cihaz ne?", "hint": "It is an audiometer. It tests hearing.", "keys": ["audiometer", "hearing"] },
+          { "ai": "How does it work?", "aiTr": "Nasıl çalışıyor?", "hint": "The patient puts on the headphones and presses a button.", "keys": ["headphones", "button", "press"] },
+          { "ai": "Is it fast?", "aiTr": "Hızlı mı?", "hint": "Yes. The test takes less than ten minutes.", "keys": ["less than", "ten minutes", "minutes"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Cihazını basit cümlelerle, adım adım anlatmak.",
+      "text": [
+        { "en": "An audiometer is a device that measures how well a person can hear.", "tr": "Odyometre, bir kişinin ne kadar iyi duyabildiğini ölçen bir cihazdır." },
+        { "en": "A normal hearing test needs an expert, a quiet room and about thirty minutes.", "tr": "Normal bir işitme testi için bir uzman, sessiz bir oda ve yaklaşık otuz dakika gerekir." },
+        { "en": "Our audiometer is autonomous, so it can work by itself.", "tr": "Bizim odyometremiz otonom, yani kendi kendine çalışabiliyor." },
+        { "en": "The patient puts on the headphones and follows the instructions on the screen.", "tr": "Hasta kulaklıkları takar ve ekrandaki talimatları takip eder." },
+        { "en": "The device plays sounds at different volumes and frequencies.", "tr": "Cihaz farklı ses seviyelerinde ve frekanslarda sesler çalar." },
+        { "en": "When the patient hears a sound, they press a button.", "tr": "Hasta bir ses duyduğunda bir düğmeye basar." },
+        { "en": "Our AI checks the answers and changes the test in real time.", "tr": "Yapay zekâmız cevapları kontrol eder ve testi gerçek zamanlı olarak değiştirir." },
+        { "en": "At the end, the device creates a report called an audiogram.", "tr": "Sonunda cihaz, odyogram adı verilen bir rapor oluşturur." },
+        { "en": "It takes less than ten minutes, and no expert needs to be there.", "tr": "Test on dakikadan kısa sürer ve orada bir uzmanın bulunması gerekmez." }
+      ],
+      "vocab": [
+        { "en": "measure", "tr": "ölçmek", "ex": "Our device measures how well people hear." },
+        { "en": "autonomous", "tr": "otonom, kendi kendine çalışan", "ex": "Our audiometer is autonomous." },
+        { "en": "put on the headphones", "tr": "kulaklıkları takmak", "ex": "The patient puts on the headphones." },
+        { "en": "follow the instructions", "tr": "talimatları takip etmek", "ex": "Follow the instructions on the screen." },
+        { "en": "frequency", "tr": "frekans", "ex": "It plays sounds at different frequencies." },
+        { "en": "press a button", "tr": "düğmeye basmak", "ex": "When you hear a sound, press the button." },
+        { "en": "in real time", "tr": "gerçek zamanlı olarak", "ex": "The AI changes the test in real time." },
+        { "en": "audiogram", "tr": "odyogram (işitme grafiği)", "ex": "The device creates an audiogram." }
+      ],
+      "grammar": {
+        "title": "When + present simple: steps in a process",
+        "tr": "Bir süreçteki adımları anlatırken 'when' ile iki eylemi bağlarsın: biri olunca diğeri olur. İki tarafta da present simple kullanılır.",
+        "examples": ["When the patient hears a sound, they press a button.", "When the test ends, the device creates an audiogram."]
+      },
+      "questions": [
+        { "q": "What does an audiometer measure?", "options": ["Blood pressure", "Eyesight", "How well a person can hear"], "a": 2 },
+        { "q": "What does 'autonomous' mean here?", "options": ["It is very expensive", "It can work by itself", "It is very small"], "a": 1 },
+        { "q": "What does the patient do when they hear a sound?", "options": ["Press a button", "Say 'yes'", "Raise a hand"], "a": 0 },
+        { "q": "How long does a normal hearing test take?", "options": ["Less than ten minutes", "Two hours", "About thirty minutes"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "An audiometer ___ how well a person can hear.", "a": "measures", "hint": "ölçer" },
+        { "s": "The patient puts on the ___ and follows the instructions.", "a": "headphones", "hint": "kulaklık" },
+        { "s": "The AI changes the test in real ___.", "a": "time", "hint": "gerçek zamanlı" }
+      ],
+      "order": [
+        { "a": "Our audiometer can work by itself." },
+        { "a": "It takes less than ten minutes." }
+      ],
+      "translate": [
+        { "tr": "Odada uzman gerekmez.", "en": "No expert is needed in the room.", "keys": ["expert", "room"] },
+        { "tr": "Cihaz bir rapor oluşturur.", "en": "The device creates a report.", "keys": ["device", "report"] }
+      ],
+      "roleplay": {
+        "persona": "Curious doctor",
+        "personaTr": "Meraklı doktor",
+        "scene": "Bir fuarda, standına gelen İngiliz bir kulak burun boğaz doktoru cihazı soruyor.",
+        "turns": [
+          { "ai": "What is this device? What does it do?", "aiTr": "Bu cihaz ne? Ne yapıyor?", "hint": "It is an autonomous audiometer. It measures how well a person can hear.", "keys": ["audiometer", "measure", "autonomous"] },
+          { "ai": "How does the patient use it?", "aiTr": "Hasta nasıl kullanıyor?", "hint": "The patient puts on the headphones and follows the instructions. When they hear a sound, they press a button.", "keys": ["headphones", "instructions", "button"] },
+          { "ai": "And how long does it take?", "aiTr": "Peki ne kadar sürüyor?", "hint": "Less than ten minutes, and no expert needs to be in the room.", "keys": ["minutes", "less than", "expert"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Cihazının nasıl çalıştığını sıralama ifadeleriyle net bir şekilde anlatıyorsun.",
+      "text": [
+        { "en": "An audiometer is a device that measures how well a person can hear.", "tr": "Odyometre, bir kişinin ne kadar iyi duyabildiğini ölçen bir cihazdır." },
+        { "en": "Normally, an expert has to do the test in a quiet room, and it takes about thirty minutes.", "tr": "Normalde testi sessiz bir odada bir uzmanın yapması gerekir ve yaklaşık otuz dakika sürer." },
+        { "en": "Our audiometer is autonomous, which means it can run the whole test by itself.", "tr": "Bizim odyometremiz otonom, yani tüm testi kendi başına yürütebiliyor." },
+        { "en": "First, the patient puts on the headphones and follows the instructions on the screen.", "tr": "Önce hasta kulaklıkları takar ve ekrandaki talimatları takip eder." },
+        { "en": "The device then plays sounds at different volumes and frequencies.", "tr": "Ardından cihaz farklı ses seviyelerinde ve frekanslarda sesler çalar." },
+        { "en": "Every time the patient hears a sound, they press a button.", "tr": "Hasta her ses duyduğunda bir düğmeye basar." },
+        { "en": "Our AI analyses each answer and adjusts the next sound in real time.", "tr": "Yapay zekâmız her cevabı analiz eder ve bir sonraki sesi gerçek zamanlı olarak ayarlar." },
+        { "en": "In the end, the device produces an audiogram, which is a chart of the patient's hearing.", "tr": "Sonunda cihaz, hastanın işitmesini gösteren bir grafik olan odyogramı oluşturur." },
+        { "en": "The whole test takes less than ten minutes, and there's no need for an expert in the room.", "tr": "Tüm test on dakikadan kısa sürer ve odada bir uzmana gerek yoktur." },
+        { "en": "The AI runs on the device itself, so patient data stays private and it even works without internet.", "tr": "Yapay zekâ doğrudan cihazın üzerinde çalışır; bu yüzden hasta verileri gizli kalır ve cihaz internet olmadan da çalışır." }
+      ],
+      "vocab": [
+        { "en": "measure", "tr": "ölçmek", "ex": "The device measures how well a person can hear.", "def": "to find the size, amount or level of something" },
+        { "en": "run a test", "tr": "test yapmak, yürütmek", "ex": "The device runs the whole test by itself.", "def": "to carry out a test from start to finish" },
+        { "en": "follow the instructions", "tr": "talimatları takip etmek", "ex": "The patient follows the instructions on the screen.", "def": "to do what the instructions say" },
+        { "en": "frequency", "tr": "frekans", "ex": "The device plays sounds at different frequencies.", "def": "how high or low a sound is" },
+        { "en": "adjust", "tr": "ayarlamak", "ex": "The AI adjusts the next sound in real time.", "def": "to change something slightly so it works better" },
+        { "en": "in real time", "tr": "gerçek zamanlı olarak", "ex": "The test changes in real time.", "def": "immediately, while something is happening" },
+        { "en": "there's no need for", "tr": "...e gerek yok", "ex": "There's no need for an expert in the room.", "def": "used to say that something is not necessary" },
+        { "en": "stay private", "tr": "gizli kalmak", "ex": "Patient data stays private.", "def": "to not be seen or shared by other people" }
+      ],
+      "grammar": {
+        "title": "Sequencing words: first, then, every time, in the end",
+        "tr": "Bir süreci adım adım anlatırken sıralama ifadeleri kullan: first (önce), then (sonra), every time (her ...-diğinde), in the end (sonunda). Dinleyicinin süreci takip etmesini kolaylaştırır.",
+        "examples": ["First, the patient puts on the headphones.", "The device then plays sounds at different frequencies.", "In the end, the device produces an audiogram."]
+      },
+      "questions": [
+        { "q": "How is a normal hearing test usually done?", "options": ["By the patient at home", "By an expert in a quiet room", "By a computer in a hospital"], "a": 1 },
+        { "q": "What does the AI do in real time?", "options": ["It adjusts the next sound", "It calls the doctor", "It prints the audiogram"], "a": 0 },
+        { "q": "What is an audiogram?", "options": ["A type of headphones", "A sound the device plays", "A chart of the patient's hearing"], "a": 2 },
+        { "q": "Why does patient data stay private?", "options": ["The test is very short", "The AI runs on the device itself", "An expert checks it"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Our AI ___ the next sound in real time.", "a": "adjusts", "hint": "ayarlar" },
+        { "s": "There's no ___ for an expert in the room.", "a": "need", "hint": "gerek" },
+        { "s": "The AI runs on the device ___, so patient data stays private.", "a": "itself", "hint": "kendisi" }
+      ],
+      "order": [
+        { "a": "Every time the patient hears a sound they press a button." },
+        { "a": "The device produces an audiogram at the end." }
+      ],
+      "translate": [
+        { "tr": "Hasta ekrandaki talimatları takip eder.", "en": "The patient follows the instructions on the screen.", "keys": ["follows the instructions", "screen"] },
+        { "tr": "Hasta verileri gizli kalır.", "en": "Patient data stays private.", "keys": ["patient data", "stays private"] }
+      ],
+      "roleplay": {
+        "persona": "Curious doctor",
+        "personaTr": "Meraklı doktor",
+        "scene": "Bir fuarda, standına gelen İngiliz bir kulak burun boğaz doktoru cihazın nasıl çalıştığını soruyor.",
+        "turns": [
+          { "ai": "This looks interesting. What exactly does it do?", "aiTr": "İlginç görünüyor. Tam olarak ne yapıyor?", "hint": "It's an autonomous audiometer, which means it can run a full hearing test by itself.", "keys": ["autonomous", "audiometer", "by itself"] },
+          { "ai": "So how does the patient actually use it?", "aiTr": "Peki hasta onu nasıl kullanıyor?", "hint": "First, they put on the headphones. Then, every time they hear a sound, they press a button.", "keys": ["headphones", "press a button", "every time"] },
+          { "ai": "And what does the AI do during the test?", "aiTr": "Peki test sırasında yapay zekâ ne yapıyor?", "hint": "It analyses each answer and adjusts the next sound in real time.", "keys": ["adjusts", "real time", "analyses"] },
+          { "ai": "What about patient data? Do you send it to the cloud?", "aiTr": "Peki hasta verileri? Buluta mı gönderiyorsunuz?", "hint": "No, the AI runs on the device itself, so the data stays private.", "keys": ["on the device", "private"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Teknik süreci passive yapılarla, net ve profesyonel bir şekilde açıklıyorsun.",
+      "text": [
+        { "en": "An audiometer measures how well someone can hear, and it's one of the most basic tools in hearing care.", "tr": "Odyometre, birinin ne kadar iyi duyabildiğini ölçer ve işitme sağlığındaki en temel araçlardan biridir." },
+        { "en": "Traditionally, the test is carried out by a trained audiologist in a quiet room and takes around thirty minutes.", "tr": "Geleneksel olarak test, sessiz bir odada eğitimli bir odyolog tarafından yapılır ve yaklaşık otuz dakika sürer." },
+        { "en": "Our audiometer is autonomous, which means the whole test can be run without an expert in the room.", "tr": "Bizim odyometremiz otonom; yani tüm test, odada bir uzman olmadan yürütülebilir." },
+        { "en": "The patient simply puts on the headphones and follows the instructions that appear on the screen.", "tr": "Hasta sadece kulaklıkları takar ve ekranda beliren talimatları takip eder." },
+        { "en": "Sounds are played at different volumes and frequencies, and the patient presses a button whenever they hear one.", "tr": "Farklı ses seviyelerinde ve frekanslarda sesler çalınır ve hasta bir ses duyduğu her an bir düğmeye basar." },
+        { "en": "Each response is analysed by our AI, which adjusts the next sound in real time.", "tr": "Her yanıt yapay zekâmız tarafından analiz edilir ve yapay zekâ bir sonraki sesi gerçek zamanlı olarak ayarlar." },
+        { "en": "That way, the test adapts to each patient instead of following a fixed script.", "tr": "Böylece test, sabit bir senaryoyu izlemek yerine her hastaya uyum sağlar." },
+        { "en": "At the end, an audiogram is generated automatically, which a doctor can then review.", "tr": "Sonunda otomatik olarak bir odyogram oluşturulur ve bir doktor bunu daha sonra inceleyebilir." },
+        { "en": "The whole process takes under ten minutes, which I'd say is about a third of the usual time.", "tr": "Tüm süreç on dakikadan kısa sürer; bence bu, normal sürenin yaklaşık üçte biri." },
+        { "en": "Since the AI runs on the device itself, patient data never has to leave the clinic, and it works offline too.", "tr": "Yapay zekâ cihazın kendisinde çalıştığı için hasta verilerinin kliniği hiç terk etmesi gerekmez ve cihaz çevrimdışı da çalışır." },
+        { "en": "Software updates are sent about once a month, so the system keeps improving.", "tr": "Yazılım güncellemeleri yaklaşık ayda bir gönderilir, böylece sistem sürekli gelişir." }
+      ],
+      "vocab": [
+        { "en": "carry out a test", "tr": "test yapmak", "ex": "The test is usually carried out by an audiologist.", "def": "to do or perform a test" },
+        { "en": "trained audiologist", "tr": "eğitimli odyolog", "ex": "A trained audiologist usually runs the test.", "def": "a specialist with professional training in hearing tests" },
+        { "en": "analyse a response", "tr": "bir yanıtı analiz etmek", "ex": "Each response is analysed by the AI.", "def": "to examine something carefully to understand it" },
+        { "en": "adapt to", "tr": "...e uyum sağlamak", "ex": "The test adapts to each patient.", "def": "to change to suit a new situation or person" },
+        { "en": "follow a fixed script", "tr": "sabit bir senaryoyu izlemek", "ex": "Traditional tests often follow a fixed script.", "def": "to do the same steps every time, without change" },
+        { "en": "be generated automatically", "tr": "otomatik olarak oluşturulmak", "ex": "An audiogram is generated automatically.", "def": "to be produced by a machine without human work" },
+        { "en": "review", "tr": "incelemek", "ex": "A doctor can then review the results.", "def": "to look at something carefully to check it" },
+        { "en": "work offline", "tr": "çevrimdışı çalışmak", "ex": "The device works offline, even in small towns.", "def": "to work without an internet connection" },
+        { "en": "keep improving", "tr": "sürekli gelişmek", "ex": "The system keeps improving with each update.", "def": "to continue getting better" }
+      ],
+      "grammar": {
+        "title": "Passive: describing a technical process",
+        "tr": "Kimin yaptığı değil, ne yapıldığı önemliyse passive (be + V3) kullanılır. Teknik süreçleri anlatırken çok yaygındır.",
+        "examples": ["The test is carried out by a trained audiologist.", "Each response is analysed by our AI.", "An audiogram is generated automatically."]
+      },
+      "questions": [
+        { "q": "Who traditionally carries out a hearing test?", "options": ["The patient", "A trained audiologist", "A software engineer"], "a": 1 },
+        { "q": "What happens after each response?", "options": ["The doctor is called", "The test starts again", "The AI adjusts the next sound"], "a": 2 },
+        { "q": "Why does patient data never have to leave the clinic?", "options": ["The AI runs on the device itself", "The test is short", "It is deleted once a month"], "a": 0 },
+        { "q": "What can we infer from 'the test adapts to each patient'?", "options": ["Every patient hears exactly the same sounds", "Different patients may hear a different sequence of sounds", "Patients choose their own sounds"], "a": 1 },
+        { "q": "Roughly how much time does the device save compared to a traditional test?", "options": ["About five minutes", "No time at all", "About an hour", "About two-thirds of the time"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Traditionally, the test is ___ out by a trained audiologist.", "a": "carried", "hint": "yapılır" },
+        { "s": "The test ___ to each patient instead of following a fixed script.", "a": "adapts", "hint": "uyum sağlar" },
+        { "s": "Since the AI runs on the device, it works ___ too.", "a": "offline", "hint": "çevrimdışı" }
+      ],
+      "order": [
+        { "a": "Each response is analysed by our AI." },
+        { "a": "An audiogram is generated automatically at the end." }
+      ],
+      "translate": [
+        { "tr": "Her yanıt yapay zekâ tarafından analiz edilir.", "en": "Each response is analysed by the AI.", "keys": ["response", "by the AI"] },
+        { "tr": "Hasta verilerinin kliniği terk etmesi gerekmez.", "en": "Patient data doesn't have to leave the clinic.", "keys": ["patient data", "leave the clinic"] }
+      ],
+      "roleplay": {
+        "persona": "Curious doctor",
+        "personaTr": "Meraklı doktor",
+        "scene": "Bir fuarda İngiliz bir kulak burun boğaz doktoru cihazı biraz şüpheyle inceliyor ve sorular soruyor.",
+        "turns": [
+          { "ai": "So is this one of those apps that replaces the audiologist, or something more serious?", "aiTr": "Yani bu, odyoloğun yerini alan o uygulamalardan biri mi, yoksa daha ciddi bir şey mi?", "hint": "It's a medical device rather than an app: an autonomous audiometer that runs the whole test without an expert in the room.", "keys": ["autonomous audiometer", "without an expert", "medical device"] },
+          { "ai": "How does it decide which sounds to play?", "aiTr": "Hangi sesleri çalacağına nasıl karar veriyor?", "hint": "Each response is analysed by our AI, which adjusts the next sound in real time, so the test adapts to each patient.", "keys": ["adjusts", "real time", "adapts"] },
+          { "ai": "And how long would a typical test take?", "aiTr": "Peki tipik bir test ne kadar sürer?", "hint": "Under ten minutes, which I'd say is about a third of the usual time.", "keys": ["ten minutes", "third"] },
+          { "ai": "Where does the patient data go? Our hospital is very strict about that.", "aiTr": "Hasta verileri nereye gidiyor? Hastanemiz bu konuda çok katı.", "hint": "It stays on the device, because the AI runs locally, so the data never has to leave your clinic.", "keys": ["on the device", "locally", "leave your clinic"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Cihazını deneyimli bir doktora derinlemesine ve ikna edici bir dille anlatıyorsun.",
+      "text": [
+        { "en": "At its core, an audiometer does one thing: it measures how well someone can hear across different pitches and volumes.", "tr": "Özünde bir odyometre tek bir şey yapar: birinin farklı perdelerde ve ses seviyelerinde ne kadar iyi duyduğunu ölçer." },
+        { "en": "Conventionally, that means a trained audiologist, a soundproofed room and the best part of half an hour per patient.", "tr": "Geleneksel olarak bu, eğitimli bir odyolog, ses yalıtımlı bir oda ve hasta başına neredeyse yarım saat demektir." },
+        { "en": "What we've built is an autonomous audiometer, one that runs the entire test without an expert having to be in the room.", "tr": "Bizim geliştirdiğimiz şey otonom bir odyometre; yani odada bir uzmanın bulunmasına gerek kalmadan tüm testi yürüten bir cihaz." },
+        { "en": "The patient puts on a pair of headphones, follows the on-screen instructions and presses a button whenever they hear a tone.", "tr": "Hasta bir kulaklık takar, ekrandaki talimatları izler ve bir ton duyduğu her an bir düğmeye basar." },
+        { "en": "Rather than working through a fixed sequence, our AI interprets each response and calibrates the next tone in real time.", "tr": "Yapay zekâmız sabit bir sırayı takip etmek yerine her yanıtı yorumlar ve bir sonraki tonu gerçek zamanlı olarak ayarlar." },
+        { "en": "In practice, this means the test homes in on each patient's hearing thresholds far faster than a standard protocol would.", "tr": "Pratikte bu, testin her hastanın işitme eşiklerini standart bir protokolden çok daha hızlı saptaması anlamına gelir." },
+        { "en": "Once the test is complete, the device generates an audiogram that a clinician can review straight away.", "tr": "Test tamamlandığında cihaz, bir klinisyenin hemen inceleyebileceği bir odyogram oluşturur." },
+        { "en": "Not only does the whole process take under ten minutes, but it also frees up specialists for the cases that genuinely need them.", "tr": "Tüm süreç on dakikadan kısa sürmekle kalmaz, uzmanları gerçekten onlara ihtiyaç duyan vakalar için de serbest bırakır." },
+        { "en": "Crucially, the AI runs locally on the device rather than in the cloud.", "tr": "En önemlisi, yapay zekâ bulutta değil, doğrudan cihazın üzerinde çalışır." },
+        { "en": "Patient data therefore never leaves the clinic, and the device works just as well in a small town with no internet connection.", "tr": "Bu nedenle hasta verileri kliniği asla terk etmez ve cihaz internet bağlantısı olmayan küçük bir kasabada da aynı şekilde çalışır." },
+        { "en": "We push software updates roughly once a month, so the device keeps improving long after it has been installed.", "tr": "Yazılım güncellemelerini yaklaşık ayda bir gönderiyoruz, böylece cihaz kurulduktan çok sonra da gelişmeye devam ediyor." }
+      ],
+      "vocab": [
+        { "en": "at its core", "tr": "özünde", "ex": "At its core, the device measures hearing.", "def": "at the most basic or important level" },
+        { "en": "soundproofed room", "tr": "ses yalıtımlı oda", "ex": "Most clinics test patients in a soundproofed room.", "def": "a room built so that outside noise cannot get in" },
+        { "en": "the best part of", "tr": "neredeyse tamamı", "ex": "A standard test takes the best part of half an hour.", "def": "almost all of a period of time" },
+        { "en": "calibrate", "tr": "kalibre etmek, hassas ayarlamak", "ex": "The AI calibrates the next tone in real time.", "def": "to adjust something precisely so it gives accurate results" },
+        { "en": "home in on", "tr": "...i hızla saptamak", "ex": "The test homes in on each patient's thresholds.", "def": "to move quickly and directly towards a target" },
+        { "en": "hearing threshold", "tr": "işitme eşiği", "ex": "The device finds the hearing threshold at each frequency.", "def": "the quietest sound a person can hear" },
+        { "en": "free up", "tr": "serbest bırakmak, zaman açmak", "ex": "Automation frees up specialists for complex cases.", "def": "to make someone or something available for other uses" },
+        { "en": "run locally", "tr": "yerel olarak çalışmak", "ex": "The AI runs locally on the device.", "def": "to work on the device itself, not on a remote server" },
+        { "en": "crucially", "tr": "en önemlisi", "ex": "Crucially, patient data never leaves the clinic.", "def": "used to introduce the most important point" },
+        { "en": "push an update", "tr": "güncelleme göndermek", "ex": "We push an update roughly once a month.", "def": "to send new software to devices that are already in use" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not only'",
+        "tr": "'Not only' cümle başına gelince yardımcı fiil özneden önce gelir (Not only does it...). Vurgu katar ve resmi sunumlarda etkili durur. İkinci kısım genelde 'but (it) also' ile devam eder.",
+        "examples": ["Not only does the process take under ten minutes, but it also frees up specialists.", "Not only is the data safer, but the device also works offline.", "Not only did we cut the test time, but we also removed the need for an expert in the room."]
+      },
+      "questions": [
+        { "q": "What does 'the best part of half an hour' mean?", "options": ["Exactly thirty minutes", "Almost thirty minutes", "The most useful thirty minutes"], "a": 1 },
+        { "q": "How does the AI differ from a standard protocol?", "options": ["It interprets each response and calibrates the next tone", "It plays every tone in a fixed order", "It lets the patient choose the volume"], "a": 0 },
+        { "q": "What does the speaker imply about specialists?", "options": ["They will no longer be needed", "They don't trust the device", "Their time is better spent on cases that genuinely need them"], "a": 2 },
+        { "q": "Why does the speaker say 'crucially' before mentioning that the AI runs locally?", "options": ["They see privacy and offline use as a key advantage", "They want to apologise for missing cloud features", "They are unsure whether it works"], "a": 0 },
+        { "q": "What is the speaker's attitude towards the product?", "options": ["Apologetic and unsure", "Casual and joking", "Critical of its design", "Confident but precise"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Conventionally, that means a trained audiologist and a ___ room.", "a": "soundproofed", "hint": "ses yalıtımlı" },
+        { "s": "The test homes ___ on each patient's thresholds.", "a": "in", "hint": "hızla saptamak (home ___ on)" },
+        { "s": "___ does the process take under ten minutes, but it also frees up specialists.", "a": "Not only", "hint": "sadece ... değil" },
+        { "s": "The AI runs ___ on the device rather than in the cloud.", "a": "locally", "hint": "yerel olarak" }
+      ],
+      "order": [
+        { "a": "The AI runs locally on the device rather than in the cloud." },
+        { "a": "Patient data never leaves the clinic." }
+      ],
+      "translate": [
+        { "tr": "Hasta verileri kliniği asla terk etmez.", "en": "Patient data never leaves the clinic.", "keys": ["patient data", "never leaves"] },
+        { "tr": "Cihaz, odada bir uzman olmadan tüm testi yürütür.", "en": "The device runs the entire test without an expert in the room.", "keys": ["without an expert", "in the room"] },
+        { "tr": "Uzmanları gerçekten ihtiyaç duyulan vakalar için serbest bırakır.", "en": "It frees up specialists for the cases that really need them.", "keys": ["frees up", "specialists"] }
+      ],
+      "roleplay": {
+        "persona": "Curious doctor",
+        "personaTr": "Meraklı doktor",
+        "scene": "Bir fuarda deneyimli bir İngiliz kulak burun boğaz uzmanı, cihazını eleştirel sorularla sınıyor.",
+        "turns": [
+          { "ai": "I've seen a few 'AI audiometers' at these fairs, and frankly most of them are glorified hearing screeners.", "aiTr": "Bu fuarlarda birkaç 'yapay zekâlı odyometre' gördüm ve açıkçası çoğu, abartılmış işitme tarama cihazlarından ibaret.", "hint": "That's a fair point, but what we've built is a full autonomous audiometer: it runs the entire test and produces a proper audiogram.", "keys": ["autonomous audiometer", "entire test", "audiogram"] },
+          { "ai": "How does it cope with patients who respond inconsistently?", "aiTr": "Tutarsız yanıt veren hastalarla nasıl başa çıkıyor?", "hint": "Rather than following a fixed sequence, the AI interprets each response and calibrates the next tone in real time, so it homes in on the true threshold.", "keys": ["calibrates", "real time", "fixed sequence"] },
+          { "ai": "My worry is that it takes audiologists out of the picture altogether.", "aiTr": "Benim endişem, odyologları tamamen devre dışı bırakması.", "hint": "Not at all: it frees up audiologists for the cases that genuinely need them, and a clinician can still review every audiogram.", "keys": ["frees up", "review", "genuinely need"] },
+          { "ai": "And where does all that patient data end up?", "aiTr": "Peki tüm bu hasta verileri nereye gidiyor?", "hint": "Nowhere, in fact: the AI runs locally on the device, so the data never leaves your clinic.", "keys": ["locally", "never leaves", "on the device"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Cihazının mantığını, uzman bir doktora zarif ve akıcı bir dille, kendinden emin ama ölçülü anlatıyorsun.",
+      "text": [
+        { "en": "Strip away the jargon and an audiometer answers a deceptively simple question: how quietly can a sound be played before this person stops hearing it?", "tr": "Jargonu bir kenara bırakırsanız, odyometre aldatıcı derecede basit bir soruyu yanıtlar: bir ses ne kadar kısık çalındığında bu kişi onu duymayı bırakır?" },
+        { "en": "Answering it properly has traditionally required an audiologist, a soundproofed booth and the best part of half an hour, which is precisely why so few people get tested.", "tr": "Bu soruyu doğru yanıtlamak geleneksel olarak bir odyolog, ses yalıtımlı bir kabin ve neredeyse yarım saat gerektirmiştir; işte bu yüzden çok az insan test yaptırır." },
+        { "en": "Our device does away with the first of those and most of the last.", "tr": "Bizim cihazımız bunlardan ilkini tamamen, sonuncusunun da büyük kısmını ortadan kaldırıyor." },
+        { "en": "The patient puts on the headphones, follows the prompts on screen and presses a button each time a tone registers.", "tr": "Hasta kulaklıkları takar, ekrandaki yönergeleri izler ve bir tonu her algıladığında bir düğmeye basar." },
+        { "en": "Behind that unassuming routine, the AI is weighing every response and deciding, in real time, which tone is most worth playing next.", "tr": "Bu sıradan görünen rutinin arkasında yapay zekâ her yanıtı tartar ve sırada hangi tonun çalınmaya en değer olduğuna gerçek zamanlı olarak karar verir." },
+        { "en": "The upshot is a test that converges on the patient's thresholds rather than plodding through a fixed protocol.", "tr": "Sonuç, sabit bir protokolü ağır ağır izlemek yerine hastanın işitme eşiklerine hızla yaklaşan bir testtir." },
+        { "en": "In under ten minutes, the device has produced an audiogram that a clinician can read at a glance, without an expert having had to sit in the room.", "tr": "On dakikadan kısa bir sürede cihaz, bir klinisyenin bir bakışta okuyabileceği bir odyogram üretmiş olur; üstelik odada bir uzmanın oturmasına gerek kalmadan." },
+        { "en": "None of this, I should stress, is about writing audiologists out of the story.", "tr": "Şunu özellikle vurgulamalıyım: bunların hiçbiri odyologları hikâyeden çıkarmakla ilgili değil." },
+        { "en": "If anything, it is about reserving their expertise for the patients who genuinely need it.", "tr": "Aksine, mesele onların uzmanlığını gerçekten ihtiyaç duyan hastalara ayırmak." },
+        { "en": "Equally deliberate was the decision to run the AI on the device rather than in the cloud.", "tr": "Yapay zekâyı bulutta değil, cihazın üzerinde çalıştırma kararı da aynı derecede bilinçliydi." },
+        { "en": "Patient data never leaves the room, and a clinic with temperamental Wi-Fi loses nothing in the process.", "tr": "Hasta verileri odadan hiç çıkmaz ve Wi-Fi'ı nazlı bir klinik bu süreçte hiçbir şey kaybetmez." },
+        { "en": "Software updates arrive roughly once a month, so the device you install today should be quietly sharper a year from now.", "tr": "Yazılım güncellemeleri yaklaşık ayda bir gelir; böylece bugün kurduğunuz cihaz bir yıl sonra sessiz sedasız daha keskin olur." }
+      ],
+      "vocab": [
+        { "en": "strip away the jargon", "tr": "jargonu bir kenara bırakmak", "ex": "Strip away the jargon and the idea is simple.", "def": "to remove technical language so the main idea is clear" },
+        { "en": "deceptively simple", "tr": "aldatıcı derecede basit", "ex": "It answers a deceptively simple question.", "def": "seeming simple but actually more complex" },
+        { "en": "do away with", "tr": "ortadan kaldırmak", "ex": "Our device does away with the need for an expert in the room.", "def": "to remove or get rid of something" },
+        { "en": "unassuming", "tr": "gösterişsiz, sıradan görünen", "ex": "Behind that unassuming routine, the AI is working hard.", "def": "modest and not attracting attention" },
+        { "en": "the upshot", "tr": "sonuç, netice", "ex": "The upshot is a much shorter test.", "def": "the final result of a process" },
+        { "en": "converge on", "tr": "...e yakınsamak, hızla yaklaşmak", "ex": "The test converges on the patient's thresholds.", "def": "to move towards one point from different directions" },
+        { "en": "plod through", "tr": "ağır ağır ilerlemek", "ex": "Standard tests plod through a fixed protocol.", "def": "to do something slowly and without imagination" },
+        { "en": "at a glance", "tr": "bir bakışta", "ex": "A clinician can read the audiogram at a glance.", "def": "immediately, with only a quick look" },
+        { "en": "write someone out of the story", "tr": "birini hikâyeden çıkarmak, devre dışı bırakmak", "ex": "We are not writing audiologists out of the story.", "def": "to remove someone from a role or situation" },
+        { "en": "temperamental", "tr": "nazlı, güvenilmez (cihaz)", "ex": "The clinic's Wi-Fi is temperamental.", "def": "not working reliably; often failing" }
+      ],
+      "grammar": {
+        "title": "Emphasis and hedging: I should stress, if anything, should",
+        "tr": "C2'de vurgu ve yumuşatmayı birlikte kullanırsın. 'I should stress' önemli bir noktayı öne çıkarır, 'if anything' beklenenin tersini nazikçe söyler, 'should be quietly sharper' iddiayı abartmadan yapar.",
+        "examples": ["None of this, I should stress, is about writing audiologists out of the story.", "If anything, it is about reserving their expertise for the patients who need it.", "The device you install today should be quietly sharper a year from now."]
+      },
+      "questions": [
+        { "q": "What does 'Our device does away with the first of those and most of the last' mean?", "options": ["It removes the need for a soundproofed booth", "It removes the need for an audiologist and saves most of the time", "It makes the test longer but cheaper"], "a": 1 },
+        { "q": "How does the AI choose the next tone?", "options": ["It follows a fixed protocol", "It lets the clinician decide", "It weighs each response and picks the most useful tone"], "a": 2 },
+        { "q": "What is the purpose of 'None of this, I should stress, ...'?", "options": ["To reassure audiologists that they are not being replaced", "To criticise audiologists", "To admit a weakness in the product"], "a": 0 },
+        { "q": "What does 'a clinic with temperamental Wi-Fi loses nothing' imply?", "options": ["Clinics need fast internet to use it", "The company provides Wi-Fi", "Wi-Fi problems slow the test down", "The device works fully without the internet"], "a": 3 },
+        { "q": "Why does the speaker mention that 'so few people get tested'?", "options": ["To blame patients for not caring", "To explain the problem the device is designed to solve", "To suggest the market is small"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Our device does ___ with the first of those.", "a": "away", "hint": "ortadan kaldırmak" },
+        { "s": "The ___ is a test that converges on the patient's thresholds.", "a": "upshot", "hint": "sonuç" },
+        { "s": "A clinician can read the audiogram at a ___.", "a": "glance", "hint": "bir bakışta" },
+        { "s": "None of this, I should ___, is about replacing audiologists.", "a": "stress", "hint": "vurgulamak" }
+      ],
+      "order": [
+        { "a": "Patient data never leaves the room." },
+        { "a": "The device produces an audiogram in under ten minutes." }
+      ],
+      "translate": [
+        { "tr": "Bir klinisyen odyogramı bir bakışta okuyabilir.", "en": "A clinician can read the audiogram at a glance.", "keys": ["audiogram", "at a glance"] },
+        { "tr": "Bu, odyologların yerini almakla ilgili değil.", "en": "This isn't about replacing audiologists.", "keys": ["replacing audiologists"] },
+        { "tr": "Hasta verileri odadan hiç çıkmaz.", "en": "Patient data never leaves the room.", "keys": ["patient data", "never leaves"] }
+      ],
+      "roleplay": {
+        "persona": "Curious doctor",
+        "personaTr": "Meraklı doktor",
+        "scene": "Bir fuarda kıdemli bir İngiliz odyoloji profesörü, cihazını kibar ama keskin bir şüphecilikle sorguluyor.",
+        "turns": [
+          { "ai": "Forgive the scepticism, but 'autonomous' is a big word to put on a medical device.", "aiTr": "Şüpheciliğimi bağışlayın ama 'otonom', tıbbi bir cihaz için büyük bir söz.", "hint": "Fair enough, and what I mean is narrower than it sounds: the device runs the full test and produces an audiogram without an expert in the room.", "keys": ["without an expert", "full test", "audiogram"] },
+          { "ai": "Fine, but what's actually going on under the hood while the patient sits there pressing a button?", "aiTr": "Peki, hasta orada oturup düğmeye basarken kaputun altında aslında ne oluyor?", "hint": "The AI weighs each response and decides in real time which tone is most worth playing next, so it converges on the thresholds instead of plodding through a fixed protocol.", "keys": ["real time", "converges", "fixed protocol"] },
+          { "ai": "You can see why some of my colleagues might feel a little threatened by this.", "aiTr": "Bazı meslektaşlarımın bundan neden biraz tehdit altında hissedebileceğini anlarsınız.", "hint": "I can, but if anything it reserves their expertise for the patients who genuinely need it rather than for routine screening.", "keys": ["if anything", "expertise", "genuinely need"] },
+          { "ai": "Last thing: our IT people will want to know where the data goes.", "aiTr": "Son bir şey: BT ekibimiz verilerin nereye gittiğini bilmek isteyecek.", "hint": "Reassuringly, nowhere: the AI runs on the device itself, so patient data never leaves the room and it works perfectly well offline.", "keys": ["on the device", "never leaves", "offline"] }
+        ]
+      }
+    }
+  }
+}

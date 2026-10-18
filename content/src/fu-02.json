@@ -1,0 +1,374 @@
+{
+  "id": "fu-02",
+  "topic": "future",
+  "title": "Who Owns Your Health Data?",
+  "titleTr": "Sağlık Verin Kimin?",
+  "levels": {
+    "A1": {
+      "intro": "Bir gazeteci seninle sağlık verileri hakkında röportaj yapıyor. Basit cümlelerle cevap veriyorsun.",
+      "text": [
+        { "who": "Journalist", "en": "Who owns a patient's health data?", "tr": "Bir hastanın sağlık verileri kime ait?" },
+        { "who": "Me", "en": "The patient owns the data, not the company.", "tr": "Verilerin sahibi şirket değil, hastadır." },
+        { "who": "Me", "en": "We always ask the patient first.", "tr": "Her zaman önce hastaya soruyoruz." },
+        { "who": "Me", "en": "For research, we remove names from the data.", "tr": "Araştırma için verilerden isimleri siliyoruz." },
+        { "who": "Me", "en": "In Europe, there are strict rules for health data.", "tr": "Avrupa'da sağlık verileri için sıkı kurallar var." },
+        { "who": "Me", "en": "Our AI works on the device.", "tr": "Yapay zekâmız cihazın üzerinde çalışıyor." },
+        { "who": "Me", "en": "The test data stays in the clinic.", "tr": "Test verileri klinikte kalıyor." },
+        { "who": "Me", "en": "More data can make AI better, but privacy is important.", "tr": "Daha fazla veri yapay zekâyı daha iyi yapabilir, ama gizlilik önemlidir." }
+      ],
+      "vocab": [
+        { "en": "health data", "tr": "sağlık verisi", "ex": "Health data is very personal." },
+        { "en": "own", "tr": "sahip olmak", "ex": "The patient owns the data." },
+        { "en": "remove", "tr": "silmek, çıkarmak", "ex": "We remove names from the data." },
+        { "en": "rule", "tr": "kural", "ex": "There are strict rules in Europe." },
+        { "en": "stay", "tr": "kalmak", "ex": "The test data stays in the clinic." },
+        { "en": "privacy", "tr": "gizlilik", "ex": "Privacy is important." }
+      ],
+      "grammar": {
+        "title": "Present simple: -s with he, she, it",
+        "tr": "Present simple'da he, she, it ve tekil isimlerle fiile -s eklenir: the patient owns, the AI works, the data stays.",
+        "examples": ["The patient owns the data.", "Our AI works on the device.", "The test data stays in the clinic."]
+      },
+      "questions": [
+        { "q": "Who owns the health data?", "options": ["The company", "The patient", "The government"], "a": 1 },
+        { "q": "Where does the test data stay?", "options": ["In the clinic", "On the internet", "In the company office"], "a": 0 },
+        { "q": "Where are there strict rules for health data?", "options": ["In Asia", "In America", "In Europe"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "The patient ___ the data, not the company.", "a": "owns", "hint": "sahip olmak" },
+        { "s": "For research, we remove ___ from the data.", "a": "names", "hint": "isimler" },
+        { "s": "The test data stays in the ___.", "a": "clinic", "hint": "klinik" }
+      ],
+      "order": [
+        { "a": "We always ask the patient first." },
+        { "a": "Our AI works on the device." }
+      ],
+      "translate": [
+        { "tr": "Verinin sahibi hastadır.", "en": "The patient owns the data.", "keys": ["patient", "owns the data"] },
+        { "tr": "Gizlilik önemlidir.", "en": "Privacy is important.", "keys": ["privacy", "important"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir gazeteci sağlık verileri hakkında sorular soruyor. Kısa ve net cevap ver.",
+        "turns": [
+          { "ai": "Who owns the health data?", "aiTr": "Sağlık verileri kime ait?", "hint": "The patient owns the data.", "keys": ["patient", "owns"] },
+          { "ai": "Where is the test data?", "aiTr": "Test verileri nerede?", "hint": "It stays in the clinic. Our AI works on the device.", "keys": ["clinic", "device", "stays"] },
+          { "ai": "Is more data good for AI?", "aiTr": "Daha fazla veri yapay zekâ için iyi mi?", "hint": "Yes, but privacy is important too.", "keys": ["privacy", "important", "yes"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir gazeteci seninle sağlık verilerinin etiği hakkında röportaj yapıyor; verinin kime ait olduğunu ve şirketinin veriyi nasıl koruduğunu anlatıyorsun.",
+      "text": [
+        { "who": "Journalist", "en": "Who should own a patient's health data?", "tr": "Bir hastanın sağlık verileri kime ait olmalı?" },
+        { "who": "Me", "en": "The patient, because it is information about their body and their life.", "tr": "Hastaya, çünkü bunlar onun bedeni ve hayatı hakkında bilgiler." },
+        { "who": "Me", "en": "Patients need to know how we use their data, and they need to agree.", "tr": "Hastaların verilerini nasıl kullandığımızı bilmeleri ve buna onay vermeleri gerekir." },
+        { "who": "Me", "en": "For research, we remove names, so nobody knows who the patient is.", "tr": "Araştırma için isimleri siliyoruz, böylece kimse hastanın kim olduğunu bilmiyor." },
+        { "who": "Me", "en": "In Europe, a law called GDPR protects health data.", "tr": "Avrupa'da GDPR adlı bir yasa sağlık verilerini koruyor." },
+        { "who": "Me", "en": "Our AI runs on the device, so the test data stays in the clinic.", "tr": "Yapay zekâmız cihazın üzerinde çalışıyor, bu yüzden test verileri klinikte kalıyor." },
+        { "who": "Journalist", "en": "But doesn't AI need more data to get better?", "tr": "Ama yapay zekânın gelişmek için daha fazla veriye ihtiyacı yok mu?" },
+        { "who": "Me", "en": "Yes, more data makes AI smarter, but it is also a bigger risk.", "tr": "Evet, daha fazla veri yapay zekâyı daha akıllı yapar ama aynı zamanda daha büyük bir risktir." },
+        { "who": "Me", "en": "We only use anonymous data from people who agreed, because privacy comes first.", "tr": "Sadece onay veren kişilerin anonim verilerini kullanıyoruz, çünkü önce gizlilik gelir." }
+      ],
+      "vocab": [
+        { "en": "own", "tr": "sahip olmak", "ex": "Patients should own their health data." },
+        { "en": "agree", "tr": "onay vermek, kabul etmek", "ex": "Patients need to agree first." },
+        { "en": "remove", "tr": "silmek, çıkarmak", "ex": "We remove names for research." },
+        { "en": "law", "tr": "yasa, kanun", "ex": "GDPR is a European law." },
+        { "en": "protect", "tr": "korumak", "ex": "GDPR protects health data." },
+        { "en": "risk", "tr": "risk", "ex": "More data is also a bigger risk." },
+        { "en": "anonymous", "tr": "anonim, isimsiz", "ex": "We only use anonymous data." },
+        { "en": "come first", "tr": "önce gelmek", "ex": "Privacy comes first for us." }
+      ],
+      "grammar": {
+        "title": "need to: what is necessary",
+        "tr": "'Need to + fiil' bir şeyin gerekli olduğunu anlatır: Patients need to know, they need to agree. Olumsuz biçim: 'don't need to'. Soru biçimi: 'Does AI need…?' ya da 'Doesn't AI need…?'",
+        "examples": ["Patients need to know how we use their data.", "They need to agree.", "Doesn't AI need more data to get better?"]
+      },
+      "questions": [
+        { "q": "Why should the patient own the data?", "options": ["Because it is about their body and life", "Because the company says so", "Because the data is cheap"], "a": 0 },
+        { "q": "What does the company remove for research?", "options": ["The test results", "The devices", "Names"], "a": 2 },
+        { "q": "What is GDPR?", "options": ["A hearing test", "A European law that protects data", "A software update"], "a": 1 },
+        { "q": "What is the problem with more data?", "options": ["It is too slow", "It costs nothing", "It is illegal", "It is a bigger risk"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Our AI runs on the ___, so the test data stays in the clinic.", "a": "device", "hint": "cihaz" },
+        { "s": "In Europe, a law called GDPR ___ health data.", "a": "protects", "hint": "korur" },
+        { "s": "We only use anonymous data from people who ___.", "a": "agreed", "hint": "onay verdi" }
+      ],
+      "order": [
+        { "a": "Patients need to know how we use their data." },
+        { "a": "Our AI runs on the device." }
+      ],
+      "translate": [
+        { "tr": "Bizim için önce gizlilik gelir.", "en": "Privacy comes first for us.", "keys": ["privacy", "comes first"] },
+        { "tr": "Araştırma için isimleri siliyoruz.", "en": "We remove names for research.", "keys": ["remove names", "research"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir gazeteci sağlık verileri ve gizlilik hakkında sorular soruyor. Net ve kısa cevaplar veriyorsun.",
+        "turns": [
+          { "ai": "Who do you think owns a patient's health data?", "aiTr": "Sizce bir hastanın sağlık verileri kime ait?", "hint": "The patient owns it, because it is about their body and their life.", "keys": ["patient owns", "their body", "patient"] },
+          { "ai": "Does your company send the test data to the cloud?", "aiTr": "Şirketiniz test verilerini buluta gönderiyor mu?", "hint": "No. Our AI runs on the device, so the data stays in the clinic.", "keys": ["runs on the device", "stays in the clinic", "no"] },
+          { "ai": "But doesn't AI need a lot of data?", "aiTr": "Ama yapay zekânın çok veriye ihtiyacı yok mu?", "hint": "Yes, but we only use anonymous data from people who agreed. Privacy comes first.", "keys": ["anonymous", "agreed", "privacy comes first"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Bir gazeteci seninle sağlık verilerinin etiği üzerine röportaj yapıyor; hasta hakları, onam, anonimleştirme ve GDPR hakkında konuşuyorsun.",
+      "text": [
+        { "who": "Journalist", "en": "Health data has become very valuable, so who should actually own it?", "tr": "Sağlık verileri çok değerli hale geldi; peki aslında kime ait olmalı?" },
+        { "who": "Me", "en": "I believe patients should own their data and decide who can use it.", "tr": "Bence hastalar verilerinin sahibi olmalı ve onları kimin kullanabileceğine kendileri karar vermeli." },
+        { "who": "Me", "en": "That's why informed consent is so important: people have to understand what we collect and why before they agree.", "tr": "Bu yüzden bilgilendirilmiş onam çok önemli: insanlar onay vermeden önce neyi neden topladığımızı anlamak zorunda." },
+        { "who": "Me", "en": "They should also be able to change their mind later.", "tr": "Ayrıca daha sonra fikirlerini değiştirebilmeleri gerekir." },
+        { "who": "Me", "en": "Before we use data for research, we anonymise it, so nobody can tell who the patient is.", "tr": "Verileri araştırmada kullanmadan önce anonimleştiriyoruz, böylece kimse hastanın kim olduğunu anlayamıyor." },
+        { "who": "Me", "en": "In Europe, GDPR gives health data extra protection, and companies have to follow strict rules.", "tr": "Avrupa'da GDPR sağlık verilerine ek koruma sağlıyor ve şirketler sıkı kurallara uymak zorunda." },
+        { "who": "Me", "en": "At AIHEAR, our AI runs on the device, so the test data stays in the clinic.", "tr": "AIHEAR'da yapay zekâmız cihazın üzerinde çalışıyor, bu yüzden test verileri klinikte kalıyor." },
+        { "who": "Journalist", "en": "But if AI needs lots of data to improve, isn't that a problem for you?", "tr": "Ama yapay zekâ gelişmek için çok veriye ihtiyaç duyuyorsa, bu sizin için bir sorun değil mi?" },
+        { "who": "Me", "en": "It's a real trade-off, because more data usually means better AI, but also more risk to privacy.", "tr": "Bu gerçek bir ödünleşim, çünkü daha fazla veri genellikle daha iyi yapay zekâ demek, ama gizlilik için daha fazla risk de demek." },
+        { "who": "Me", "en": "In the end, we've chosen privacy, so we only use anonymised data from clinical studies where people gave consent.", "tr": "Sonunda gizliliği seçtik; bu yüzden yalnızca katılımcıların onay verdiği klinik çalışmalardan gelen anonim verileri kullanıyoruz." }
+      ],
+      "vocab": [
+        { "en": "valuable", "tr": "değerli", "ex": "Health data has become very valuable.", "def": "worth a lot of money or very useful" },
+        { "en": "own", "tr": "sahip olmak", "ex": "Patients should own their data.", "def": "to have something that belongs to you" },
+        { "en": "informed consent", "tr": "bilgilendirilmiş onam", "ex": "Informed consent protects patients.", "def": "agreement given after someone fully understands what will happen" },
+        { "en": "change your mind", "tr": "fikrini değiştirmek", "ex": "Patients can change their mind later.", "def": "to make a different decision from before" },
+        { "en": "anonymise", "tr": "anonimleştirmek", "ex": "We anonymise the data before research.", "def": "to remove details that show who a person is" },
+        { "en": "follow the rules", "tr": "kurallara uymak", "ex": "Companies have to follow strict rules.", "def": "to do what the rules say" },
+        { "en": "trade-off", "tr": "ödünleşim, denge", "ex": "There is a trade-off between better AI and privacy.", "def": "a balance between two good things that you cannot fully have at the same time" },
+        { "en": "privacy", "tr": "gizlilik, mahremiyet", "ex": "We've chosen privacy over speed.", "def": "the right to keep personal information to yourself" }
+      ],
+      "grammar": {
+        "title": "Present perfect for changes up to now",
+        "tr": "Geçmişte başlayıp bugüne etkisi süren değişimler ve sonuçlar için present perfect kullanılır: 'Health data has become valuable', 'we've chosen privacy'. Ne zaman olduğu söylenmez; sonuç önemlidir.",
+        "examples": ["Health data has become very valuable.", "In the end, we've chosen privacy.", "Every participant has given consent."]
+      },
+      "questions": [
+        { "q": "Who does the speaker think should own health data?", "options": ["The company", "Patients", "Hospitals", "The government"], "a": 1 },
+        { "q": "What does informed consent mean here?", "options": ["People agree after they understand what is collected and why", "People pay for their data", "Doctors decide for patients"], "a": 0 },
+        { "q": "Where does AIHEAR's test data stay?", "options": ["On the company's servers", "In the cloud", "In the clinic"], "a": 2 },
+        { "q": "What is the trade-off the speaker mentions?", "options": ["Speed versus price", "Better AI versus more risk to privacy", "Doctors versus machines"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Patients should own their data and ___ who can use it.", "a": "decide", "hint": "karar vermek" },
+        { "s": "Before we use data for research, we ___ it.", "a": "anonymise", "hint": "anonimleştirmek" },
+        { "s": "It's a real ___, because more data means better AI but more risk.", "a": "trade-off", "hint": "ödünleşim" }
+      ],
+      "order": [
+        { "a": "Patients should own their data." },
+        { "a": "The test data stays in the clinic." }
+      ],
+      "translate": [
+        { "tr": "Hastalar daha sonra fikirlerini değiştirebilmeli.", "en": "Patients should be able to change their mind later.", "keys": ["change their mind", "later"] },
+        { "tr": "Avrupa'da şirketler sıkı kurallara uymak zorunda.", "en": "In Europe, companies have to follow strict rules.", "keys": ["have to follow", "strict rules"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir sağlık teknolojisi dergisinden bir gazeteci, sağlık verilerinin etiği hakkında seninle röportaj yapıyor.",
+        "turns": [
+          { "ai": "In your opinion, who should own a patient's health data?", "aiTr": "Sizce bir hastanın sağlık verileri kime ait olmalı?", "hint": "I believe patients should own their data and decide who can use it.", "keys": ["patients should own", "decide", "their data"] },
+          { "ai": "How do patients know what happens to their data?", "aiTr": "Hastalar verilerine ne olduğunu nasıl biliyor?", "hint": "Through informed consent: we explain what we collect and why, and they can change their mind later.", "keys": ["informed consent", "explain", "change their mind"] },
+          { "ai": "Does your device send data to the cloud?", "aiTr": "Cihazınız verileri buluta gönderiyor mu?", "hint": "No, our AI runs on the device, so the test data stays in the clinic.", "keys": ["runs on the device", "stays in the clinic"] },
+          { "ai": "But won't your AI be worse with less data?", "aiTr": "Ama daha az veriyle yapay zekânız daha kötü olmaz mı?", "hint": "It's a trade-off, but we've chosen privacy and only use anonymised data from people who gave consent.", "keys": ["trade-off", "privacy", "anonymised", "consent"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir gazeteciyle sağlık verilerinin etiği üzerine röportajdasın; hastaların verileri üzerindeki kontrolünü ve gizlilik ile daha iyi yapay zekâ arasındaki dengeyi tartışıyorsun.",
+      "text": [
+        { "who": "Journalist", "en": "Health data is often described as the new oil, so who do you think it really belongs to?", "tr": "Sağlık verileri sık sık yeni petrol olarak tanımlanıyor; sizce gerçekte kime ait?" },
+        { "who": "Me", "en": "I'd say it belongs to the patient, and they should have a real say in who uses it and for what.", "tr": "Bence hastaya ait ve onu kimin, ne amaçla kullandığı konusunda gerçek bir söz hakları olmalı." },
+        { "who": "Me", "en": "That's where informed consent comes in: people need to be told clearly what is collected, why, and for how long.", "tr": "Bilgilendirilmiş onam tam burada devreye giriyor: insanlara neyin, neden ve ne kadar süreyle toplandığı açıkça söylenmeli." },
+        { "who": "Me", "en": "Consent also has to be something patients can withdraw, not a box they tick once and forget about.", "tr": "Onam ayrıca hastaların geri çekebileceği bir şey olmalı; bir kez işaretleyip unuttukları bir kutucuk değil." },
+        { "who": "Me", "en": "Whenever data is used for research, it should be anonymised so that individuals can't be identified.", "tr": "Veriler araştırmada her kullanıldığında, kişilerin kimliği belirlenemesin diye anonimleştirilmeli." },
+        { "who": "Me", "en": "In Europe, GDPR treats health data as a special category, which means companies are held to much stricter standards.", "tr": "Avrupa'da GDPR sağlık verilerini özel nitelikli bir kategori olarak görüyor; bu da şirketlerin çok daha sıkı standartlara tabi olması demek." },
+        { "who": "Me", "en": "Our own approach is to run the AI on the device itself, so test data never has to leave the clinic.", "tr": "Bizim yaklaşımımız yapay zekâyı doğrudan cihazın üzerinde çalıştırmak; böylece test verilerinin klinikten hiç çıkması gerekmiyor." },
+        { "who": "Journalist", "en": "Critics would argue that if you kept more data, your AI would improve much faster.", "tr": "Eleştirmenler, daha fazla veri tutsaydınız yapay zekânızın çok daha hızlı gelişeceğini söylerdi." },
+        { "who": "Me", "en": "They're not wrong, and that's the uncomfortable trade-off: more data generally leads to better models, but every extra copy is another privacy risk.", "tr": "Haksız değiller ve rahatsız edici ödünleşim de bu: daha fazla veri genellikle daha iyi modeller demek, ama her ek kopya bir gizlilik riski daha demek." },
+        { "who": "Me", "en": "We've decided to accept slower progress, so the model is only improved with anonymised data from clinical studies where participants gave consent.", "tr": "Daha yavaş ilerlemeyi kabul etmeye karar verdik; bu yüzden model yalnızca katılımcıların onay verdiği klinik çalışmalardan gelen anonim verilerle geliştiriliyor." },
+        { "who": "Me", "en": "In the long run, I believe trust will turn out to be worth more than data.", "tr": "Uzun vadede güvenin veriden daha değerli olduğunun ortaya çıkacağına inanıyorum." }
+      ],
+      "vocab": [
+        { "en": "the new oil", "tr": "yeni petrol", "ex": "Some people call data the new oil.", "def": "something extremely valuable in today's economy" },
+        { "en": "have a say in", "tr": "...de söz sahibi olmak", "ex": "Patients should have a say in who uses their data.", "def": "to have the right to influence a decision" },
+        { "en": "come in", "tr": "devreye girmek", "ex": "That's where informed consent comes in.", "def": "used to show the role that something plays in a situation" },
+        { "en": "withdraw consent", "tr": "onayı geri çekmek", "ex": "Patients can withdraw consent at any time.", "def": "to take back permission you gave earlier" },
+        { "en": "tick a box", "tr": "kutucuk işaretlemek", "ex": "Consent shouldn't be a box you tick once.", "def": "to mark a form, often without really thinking about it" },
+        { "en": "be identified", "tr": "kimliği belirlenmek", "ex": "Individuals can't be identified from anonymised data.", "def": "to be recognised as a particular person" },
+        { "en": "special category", "tr": "özel nitelikli kategori", "ex": "GDPR treats health data as a special category.", "def": "a type of personal data that the law protects more strictly" },
+        { "en": "be held to a standard", "tr": "bir standarda tabi tutulmak", "ex": "Companies are held to stricter standards.", "def": "to be expected to reach a certain level" },
+        { "en": "in the long run", "tr": "uzun vadede", "ex": "In the long run, trust is worth more than data.", "def": "over a long period of time" }
+      ],
+      "grammar": {
+        "title": "The passive in formal explanations",
+        "tr": "Kurallar ve süreçler anlatılırken passive (be + V3) sık kullanılır: 'data is anonymised', 'individuals can't be identified', 'companies are held to stricter standards'. Vurgu, işi yapan kişide değil sürecin kendisindedir.",
+        "examples": ["Whenever data is used for research, it should be anonymised.", "Individuals can't be identified.", "Companies are held to much stricter standards."]
+      },
+      "questions": [
+        { "q": "Who does the speaker think health data belongs to?", "options": ["The patient", "Whoever collects it", "The government"], "a": 0 },
+        { "q": "According to the speaker, what should be true of consent?", "options": ["It is given once and forever", "Patients can withdraw it", "Only doctors can give it"], "a": 1 },
+        { "q": "Why does test data stay in the clinic?", "options": ["The clinic has better computers", "GDPR bans all data transfers", "The AI runs on the device itself"], "a": 2 },
+        { "q": "What can we infer about the company's decision?", "options": ["It plans to sell data later", "It has chosen privacy even if the AI improves more slowly", "It ignores the critics completely"], "a": 1 },
+        { "q": "What does the speaker mean by 'trust will turn out to be worth more than data'?", "options": ["Data will soon become cheap", "Trust can be bought with data", "Keeping patients' trust is more valuable in the long term"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Patients should have a real ___ in who uses their data.", "a": "say", "hint": "söz hakkı" },
+        { "s": "Consent has to be something patients can ___.", "a": "withdraw", "hint": "geri çekmek" },
+        { "s": "GDPR treats health data as a special ___.", "a": "category", "hint": "kategori" }
+      ],
+      "order": [
+        { "a": "Test data never has to leave the clinic." },
+        { "a": "Trust is worth more than data." }
+      ],
+      "translate": [
+        { "tr": "Daha fazla veri tutsaydınız, yapay zekânız daha hızlı gelişirdi.", "en": "If you kept more data, your AI would improve faster.", "keys": ["if you kept", "would improve"] },
+        { "tr": "Kişilerin kimliği belirlenemez.", "en": "Individuals can't be identified.", "keys": ["can't be identified"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Bir gazeteci, sağlık verilerinin etiği hakkında zorlayıcı sorularla seninle röportaj yapıyor.",
+        "turns": [
+          { "ai": "Some say health data is the new oil. Who does it really belong to?", "aiTr": "Bazıları sağlık verisinin yeni petrol olduğunu söylüyor. Aslında kime ait?", "hint": "I'd say it belongs to the patient, and they should have a real say in who uses it.", "keys": ["belongs to the patient", "real say", "have a say"] },
+          { "ai": "Isn't consent just a box people tick without reading?", "aiTr": "Onam, insanların okumadan işaretlediği bir kutucuktan ibaret değil mi?", "hint": "It shouldn't be; people need to be told clearly what is collected and why, and they can withdraw consent.", "keys": ["told clearly", "withdraw", "what is collected"] },
+          { "ai": "How is your company's approach different?", "aiTr": "Şirketinizin yaklaşımı nasıl farklı?", "hint": "Our AI runs on the device itself, so test data never has to leave the clinic.", "keys": ["runs on the device", "never has to leave", "clinic"] },
+          { "ai": "Wouldn't your AI improve faster if you collected more data?", "aiTr": "Daha fazla veri toplasaydınız yapay zekânız daha hızlı gelişmez miydi?", "hint": "Probably, but it's a trade-off; we only use anonymised data from studies where participants gave consent.", "keys": ["trade-off", "anonymised", "consent"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir gazeteciyle sağlık verilerinin mülkiyeti, onam ve gizlilik ile yapay zekâ performansı arasındaki gerilim üzerine derinlikli bir röportaj yapıyorsun.",
+      "text": [
+        { "who": "Journalist", "en": "With health data now being traded like a commodity, who, in your view, actually owns it?", "tr": "Sağlık verileri artık bir emtia gibi alınıp satılırken, sizce gerçekte kime ait?" },
+        { "who": "Me", "en": "It's the patient who owns it, and ownership only means something if it comes with genuine control over who uses it and why.", "tr": "Sahibi hastadır ve sahiplik ancak onu kimin, neden kullandığı üzerinde gerçek bir kontrolle birlikte gelirse bir anlam taşır." },
+        { "who": "Me", "en": "Hence the importance of informed consent, which should be specific, written in plain language and, crucially, revocable.", "tr": "Bilgilendirilmiş onamın önemi de buradan gelir; onam belirli olmalı, sade bir dille yazılmalı ve en önemlisi geri alınabilmeli." },
+        { "who": "Me", "en": "Consent buried on page twelve of a contract isn't consent at all; it's a liability waiver in disguise.", "tr": "Bir sözleşmenin on ikinci sayfasına gömülmüş onam, onam değildir; kılık değiştirmiş bir sorumluluk feragatnamesidir." },
+        { "who": "Me", "en": "Where data is used for research, it has to be properly anonymised, since stripping out names alone rarely prevents re-identification.", "tr": "Veriler araştırmada kullanılıyorsa gerçekten anonimleştirilmeli, çünkü yalnızca isimleri silmek yeniden kimliklendirmeyi nadiren önler." },
+        { "who": "Me", "en": "In Europe, GDPR classifies health data as a special category, so the bar for processing it is deliberately high.", "tr": "Avrupa'da GDPR sağlık verilerini özel nitelikli kategori olarak sınıflandırıyor; bu yüzden onları işlemenin çıtası bilinçli olarak yüksek." },
+        { "who": "Me", "en": "Rather than treat compliance as a box-ticking exercise, we built privacy into the architecture: our AI runs on the device, so test data never leaves the clinic.", "tr": "Uyumluluğu göstermelik bir formalite olarak görmek yerine gizliliği mimarinin içine yerleştirdik: yapay zekâmız cihazın üzerinde çalışıyor, bu yüzden test verileri klinikten hiç çıkmıyor." },
+        { "who": "Journalist", "en": "Doesn't that leave you at a disadvantage against competitors who hoover up every scrap of data they can get?", "tr": "Bu sizi ele geçirebildikleri her veri kırıntısını silip süpüren rakiplere karşı dezavantajlı duruma düşürmüyor mu?" },
+        { "who": "Me", "en": "To some extent, yes, and I won't pretend the trade-off isn't real: more data generally means better models, but every additional dataset widens the attack surface.", "tr": "Bir ölçüde evet ve bu ödünleşim gerçek değilmiş gibi yapmayacağım: daha fazla veri genellikle daha iyi modeller demek, ama her ek veri seti saldırı yüzeyini genişletiyor." },
+        { "who": "Me", "en": "Having weighed the two, we chose to improve the model only with anonymised data from clinical studies whose participants gave explicit consent.", "tr": "İkisini tarttıktan sonra modeli yalnızca katılımcılarının açık onay verdiği klinik çalışmalardan gelen anonim verilerle geliştirmeyi seçtik." },
+        { "who": "Me", "en": "Not only is that the right thing to do, but in a sector built on trust, it's also a competitive advantage.", "tr": "Bu sadece doğru olan şey değil; güven üzerine kurulu bir sektörde aynı zamanda bir rekabet avantajı." }
+      ],
+      "vocab": [
+        { "en": "commodity", "tr": "emtia, ticari mal", "ex": "Health data is being traded like a commodity.", "def": "a product that can be bought and sold" },
+        { "en": "revocable", "tr": "geri alınabilir", "ex": "Consent should always be revocable.", "def": "able to be cancelled or taken back" },
+        { "en": "in plain language", "tr": "sade bir dille", "ex": "Consent forms should be written in plain language.", "def": "using simple, clear words" },
+        { "en": "liability waiver", "tr": "sorumluluk feragatnamesi", "ex": "Hidden consent is really a liability waiver.", "def": "a document that protects a company from legal responsibility" },
+        { "en": "re-identification", "tr": "yeniden kimliklendirme", "ex": "Removing names alone rarely prevents re-identification.", "def": "working out who a person is from data that was meant to be anonymous" },
+        { "en": "the bar is high", "tr": "çıta yüksek", "ex": "The bar for processing health data is high.", "def": "the standard you must reach is difficult" },
+        { "en": "build something into", "tr": "...in içine yerleştirmek", "ex": "We built privacy into the architecture.", "def": "to make something a basic part of a design from the start" },
+        { "en": "box-ticking exercise", "tr": "göstermelik formalite", "ex": "Compliance shouldn't be a box-ticking exercise.", "def": "doing something only to satisfy formal rules, not because it helps" },
+        { "en": "hoover up", "tr": "silip süpürmek, toplamak", "ex": "Some companies hoover up every scrap of data.", "def": "to collect large amounts of something, often greedily" },
+        { "en": "attack surface", "tr": "saldırı yüzeyi", "ex": "Every extra dataset widens the attack surface.", "def": "all the points where a system could be attacked or leak data" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences: 'It's … who/that …'",
+        "tr": "'It is + vurgulanan öğe + who/that' yapısı cümlenin bir parçasını öne çıkarır. Röportajlarda asıl mesajı netleştirmek ve karşı görüşü düzeltmek için kullanılır.",
+        "examples": ["It's the patient who owns it.", "It's trust, not data, that gives us an advantage.", "It's the architecture that protects patients, not a policy document."]
+      },
+      "questions": [
+        { "q": "According to the speaker, when does ownership of data 'mean something'?", "options": ["When it comes with genuine control over its use", "When the data is sold", "When a doctor signs it"], "a": 0 },
+        { "q": "What does the speaker imply about consent 'buried on page twelve'?", "options": ["It is the most legal form of consent", "It protects the company rather than the patient", "It is easy for patients to read"], "a": 1 },
+        { "q": "Why does removing names alone not go far enough?", "options": ["GDPR does not allow it", "It slows down the AI", "People can often still be re-identified"], "a": 2 },
+        { "q": "What is the speaker's attitude to the trade-off?", "options": ["Dismissive", "Confused", "Defensive and evasive", "Candid about its costs"], "a": 3 },
+        { "q": "What does the final sentence suggest?", "options": ["Privacy can also be good for business", "The company regrets its choice", "Competitors will soon fail"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Consent should be specific, written in plain language and ___.", "a": "revocable", "hint": "geri alınabilir" },
+        { "s": "Stripping out names alone rarely prevents ___.", "a": "re-identification", "hint": "yeniden kimliklendirme" },
+        { "s": "We built privacy ___ the architecture.", "a": "into", "hint": "içine" },
+        { "s": "Every additional dataset widens the attack ___.", "a": "surface", "hint": "yüzey" }
+      ],
+      "order": [
+        { "a": "It's the patient who owns the data." },
+        { "a": "Our AI runs on the device itself." }
+      ],
+      "translate": [
+        { "tr": "Uyumluluğu göstermelik bir formalite olarak görmek yerine gizliliği mimarinin içine yerleştirdik.", "en": "Rather than treat compliance as a box-ticking exercise, we built privacy into the architecture.", "keys": ["box-ticking exercise", "built privacy into"] },
+        { "tr": "Bu sadece doğru olan şey değil, aynı zamanda bir rekabet avantajı.", "en": "Not only is that the right thing to do, but it's also a competitive advantage.", "keys": ["not only is", "competitive advantage"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Deneyimli bir sağlık muhabiri, şirketinin veri politikasını sorguluyor. Net, dürüst ve ikna edici yanıtlar veriyorsun.",
+        "turns": [
+          { "ai": "Health data is being traded like any other commodity; who, in your view, really owns it?", "aiTr": "Sağlık verileri diğer emtialar gibi alınıp satılıyor; sizce gerçekte kime ait?", "hint": "It's the patient who owns it, and that only means something if it comes with genuine control over who uses it.", "keys": ["patient who owns", "genuine control"] },
+          { "ai": "Isn't informed consent largely a fiction, though, given that nobody reads the small print?", "aiTr": "Ama kimse ince yazıları okumadığına göre bilgilendirilmiş onam büyük ölçüde bir kurgu değil mi?", "hint": "It often is, which is why consent should be specific, written in plain language and revocable.", "keys": ["plain language", "revocable", "specific"] },
+          { "ai": "What stops your own company from quietly hoovering up patient data?", "aiTr": "Sizin şirketinizi hasta verilerini sessizce toplamaktan alıkoyan ne?", "hint": "The architecture itself: our AI runs on the device, so test data never leaves the clinic.", "keys": ["architecture", "runs on the device", "never leaves the clinic"] },
+          { "ai": "Surely that puts you at a disadvantage against less scrupulous competitors?", "aiTr": "Bu sizi daha az titiz rakiplere karşı dezavantajlı duruma düşürmüyor mu?", "hint": "To some extent, but we only use anonymised data from consenting study participants, and in a sector built on trust that's an advantage.", "keys": ["to some extent", "anonymised", "built on trust"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Deneyimli bir gazeteciyle sağlık verilerinin etiği üzerine; hasta özerkliği, onam ve gizlilik ile yapay zekâ arasındaki gerilimi incelikli bir dille tartışıyorsun.",
+      "text": [
+        { "who": "Journalist", "en": "It's become something of a cliché to call health data the new oil, but if it is, who exactly holds the drilling rights?", "tr": "Sağlık verilerine yeni petrol demek neredeyse klişe oldu; ama öyleyse sondaj hakları tam olarak kimde?" },
+        { "who": "Me", "en": "The patient, unequivocally, and I'd go further: ownership is a hollow notion unless it comes with meaningful control over who uses the data, and to what end.", "tr": "Kesinlikle hastada; hatta daha da ileri giderim: veriyi kimin, ne amaçla kullandığı üzerinde anlamlı bir kontrol yoksa sahiplik içi boş bir kavramdır." },
+        { "who": "Me", "en": "That's what informed consent is supposed to guarantee, though all too often it's reduced to a checkbox nobody reads.", "tr": "Bilgilendirilmiş onamın güvence altına alması gereken şey budur; ama çoğu zaman kimsenin okumadığı bir kutucuğa indirgenir." },
+        { "who": "Me", "en": "Consent worth the name is specific, intelligible and, above all, revocable; anything less is a legal fig leaf.", "tr": "Adına layık bir onam belirli, anlaşılır ve her şeyden önce geri alınabilir olmalıdır; bunun altındaki her şey hukuki bir göstermelik örtüdür." },
+        { "who": "Me", "en": "Anonymisation is the other safeguard, although stripping out names is, frankly, the bare minimum, since a postcode and a date of birth can be enough to re-identify someone.", "tr": "Anonimleştirme diğer güvencedir; ama açıkçası isimleri silmek asgari düzeydir, çünkü bir posta kodu ve doğum tarihi birinin kimliğini yeniden belirlemeye yetebilir." },
+        { "who": "Me", "en": "In Europe, GDPR rightly treats health data as a special category, which raises the bar considerably for anyone wishing to process it.", "tr": "Avrupa'da GDPR haklı olarak sağlık verilerini özel nitelikli kategori sayar; bu da onları işlemek isteyen herkes için çıtayı epey yükseltir." },
+        { "who": "Me", "en": "We took the view that privacy shouldn't be bolted on after the fact, so our AI runs on the device and test data never leaves the clinic.", "tr": "Gizliliğin sonradan iliştirilmemesi gerektiği görüşündeydik; bu yüzden yapay zekâmız cihazın üzerinde çalışıyor ve test verileri klinikten hiç çıkmıyor." },
+        { "who": "Journalist", "en": "Isn't that a rather expensive principle, given that your competitors' models presumably grow smarter with every record they hoard?", "tr": "Rakiplerinizin modelleri muhtemelen istifledikleri her kayıtla daha da akıllanırken, bu oldukça pahalı bir ilke değil mi?" },
+        { "who": "Me", "en": "I won't pretend otherwise: more data does make for better models, and every dataset you keep is, by the same token, one more thing that can leak.", "tr": "Aksini iddia etmeyeceğim: daha fazla veri gerçekten daha iyi modeller sağlar ve aynı mantıkla, tuttuğunuz her veri seti sızabilecek bir şey daha demektir." },
+        { "who": "Me", "en": "Our compromise is to improve the model solely with anonymised data from clinical studies whose participants gave explicit consent, and to accept that progress will be somewhat slower.", "tr": "Bizim uzlaşmamız, modeli yalnızca katılımcılarının açık onay verdiği klinik çalışmalardan gelen anonim verilerle geliştirmek ve ilerlemenin biraz daha yavaş olacağını kabul etmek." },
+        { "who": "Me", "en": "That said, I'd argue it's less a sacrifice than an investment, since in healthcare trust takes years to earn and a single breach to squander.", "tr": "Bununla birlikte, bunun bir fedakârlıktan çok bir yatırım olduğunu savunurum, çünkü sağlıkta güveni kazanmak yıllar alır, heba etmek ise tek bir ihlal." }
+      ],
+      "vocab": [
+        { "en": "unequivocally", "tr": "kesinlikle, tereddütsüz", "ex": "The data belongs, unequivocally, to the patient.", "def": "in a way that leaves no doubt" },
+        { "en": "a hollow notion", "tr": "içi boş bir kavram", "ex": "Ownership is a hollow notion without control.", "def": "an idea that sounds good but has no real meaning" },
+        { "en": "to what end", "tr": "ne amaçla", "ex": "Patients should know who uses their data and to what end.", "def": "for what purpose" },
+        { "en": "fig leaf", "tr": "göstermelik örtü", "ex": "Weak consent is just a legal fig leaf.", "def": "something used to hide an embarrassing truth" },
+        { "en": "the bare minimum", "tr": "asgari düzey", "ex": "Removing names is the bare minimum.", "def": "the smallest amount that is acceptable" },
+        { "en": "re-identify", "tr": "kimliğini yeniden belirlemek", "ex": "A postcode can be enough to re-identify someone.", "def": "to work out who a person is from anonymous data" },
+        { "en": "bolt on", "tr": "sonradan iliştirmek", "ex": "Privacy shouldn't be bolted on after the fact.", "def": "to add something as an extra rather than as part of the original design" },
+        { "en": "hoard", "tr": "istiflemek", "ex": "Some companies hoard every record they can.", "def": "to collect and keep large amounts of something" },
+        { "en": "make for", "tr": "sağlamak, ...e yol açmak", "ex": "More data does make for better models.", "def": "to result in or help to create" },
+        { "en": "squander", "tr": "heba etmek", "ex": "A single breach can squander years of trust.", "def": "to waste something valuable" }
+      ],
+      "grammar": {
+        "title": "Concession and emphatic 'do'",
+        "tr": "Karşı tarafın haklı olduğu noktayı kabul etmek için 'I won't pretend otherwise', 'frankly', 'that said' gibi ifadeler; vurgu için yardımcı fiil 'do/does' kullanılır: 'more data does make for better models'. 'Less a X than a Y' yapısı bir kavramı zarifçe yeniden çerçeveler.",
+        "examples": ["I won't pretend otherwise: more data does make for better models.", "That said, I'd argue it's less a sacrifice than an investment.", "Stripping out names is, frankly, the bare minimum."]
+      },
+      "questions": [
+        { "q": "How does the speaker answer the question of ownership?", "options": ["Hesitantly, saying it depends", "Unequivocally: the patient owns it", "By saying it belongs to the clinic", "By avoiding the question"], "a": 1 },
+        { "q": "Why does the speaker call stripping out names 'the bare minimum'?", "options": ["Because GDPR forbids it", "Because names are not personal data", "Because a postcode and a date of birth can still identify someone"], "a": 2 },
+        { "q": "What is the tone of the journalist's question about 'drilling rights'?", "options": ["Playfully ironic, extending the 'new oil' metaphor", "Angry and accusatory", "Purely technical", "Sympathetic"], "a": 0 },
+        { "q": "What does 'a legal fig leaf' imply about weak consent?", "options": ["It gives patients too much power", "It is too expensive", "It is required by GDPR", "It covers the company legally while hiding the lack of real choice"], "a": 3 },
+        { "q": "What does the final sentence suggest about the company's choice?", "options": ["It is a long-term bet that trust will pay off", "It was forced on them by regulators", "It will be reversed soon"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "The patient, ___, and I'd go further.", "a": "unequivocally", "hint": "kesinlikle" },
+        { "s": "Anything less is a legal fig ___.", "a": "leaf", "hint": "yaprak (deyim: göstermelik örtü)" },
+        { "s": "Privacy shouldn't be ___ on after the fact.", "a": "bolted", "hint": "sonradan iliştirilmek" },
+        { "s": "Trust takes years to earn and a single breach to ___.", "a": "squander", "hint": "heba etmek" }
+      ],
+      "order": [
+        { "a": "Test data never leaves the clinic." },
+        { "a": "Trust takes years to earn." }
+      ],
+      "translate": [
+        { "tr": "Kontrol olmadan sahiplik içi boş bir kavramdır.", "en": "Ownership is a hollow notion without control.", "keys": ["hollow notion", "ownership"] },
+        { "tr": "Aksini iddia etmeyeceğim: daha fazla veri gerçekten daha iyi modeller sağlar.", "en": "I won't pretend otherwise: more data does make for better models.", "keys": ["won't pretend otherwise", "make for better models"] },
+        { "tr": "Bunu bir fedakârlıktan çok bir yatırım olarak görüyorum.", "en": "I see it less as a sacrifice than as an investment.", "keys": ["less as a sacrifice", "investment"] }
+      ],
+      "roleplay": {
+        "persona": "Journalist",
+        "personaTr": "Gazeteci",
+        "scene": "Keskin dilli, deneyimli bir gazeteci seni ilkelerinle iş modelin arasında sıkıştırmaya çalışıyor. Zarif, dürüst ve kararlı yanıtlar veriyorsun.",
+        "turns": [
+          { "ai": "Everyone calls health data the new oil; so who, in your view, holds the drilling rights?", "aiTr": "Herkes sağlık verisine yeni petrol diyor; sizce sondaj hakları kimde?", "hint": "The patient, unequivocally, and ownership is a hollow notion unless it comes with real control over who uses the data and to what end.", "keys": ["unequivocally", "hollow notion", "to what end"] },
+          { "ai": "Be honest: isn't informed consent mostly a checkbox that protects companies rather than patients?", "aiTr": "Dürüst olun: bilgilendirilmiş onam çoğunlukla hastaları değil şirketleri koruyan bir kutucuk değil mi?", "hint": "All too often, yes; consent worth the name is specific, intelligible and revocable, and anything less is a legal fig leaf.", "keys": ["revocable", "fig leaf", "worth the name"] },
+          { "ai": "And what makes your company any different?", "aiTr": "Peki sizin şirketinizi farklı kılan ne?", "hint": "We didn't bolt privacy on after the fact: our AI runs on the device, so test data never leaves the clinic.", "keys": ["bolt", "runs on the device", "never leaves the clinic"] },
+          { "ai": "Isn't that an expensive principle when your rivals hoard every record they can?", "aiTr": "Rakipleriniz ellerine geçen her kaydı istiflerken bu pahalı bir ilke değil mi?", "hint": "I won't pretend otherwise, but trust takes years to earn and a single breach to squander, so I see it as an investment.", "keys": ["won't pretend otherwise", "single breach", "investment"] }
+        ]
+      }
+    }
+  }
+}

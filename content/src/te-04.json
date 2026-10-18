@@ -1,0 +1,373 @@
+{
+  "id": "te-04",
+  "topic": "tech",
+  "title": "Choosing Between Two Engineering Solutions",
+  "titleTr": "İki Mühendislik Çözümü Arasında Seçim Yapmak",
+  "levels": {
+    "A1": {
+      "intro": "Yapay zekâ nerede çalışmalı: bulutta mı, cihazda mı? Basit bir seçim yapıyorsun.",
+      "text": [
+        { "who": "Engineer", "en": "We have two options: the cloud or the device.", "tr": "İki seçeneğimiz var: bulut ya da cihaz." },
+        { "who": "Engineer", "en": "The cloud is very powerful and easy to update.", "tr": "Bulut çok güçlü ve güncellemesi kolay." },
+        { "who": "Engineer", "en": "But the cloud does not work without the internet.", "tr": "Ama bulut internet olmadan çalışmıyor." },
+        { "who": "Engineer", "en": "Some hospitals do not let patient data leave the building.", "tr": "Bazı hastaneler hasta verisinin binadan çıkmasına izin vermiyor." },
+        { "who": "Me", "en": "What about the device?", "tr": "Peki ya cihaz?" },
+        { "who": "Engineer", "en": "The device works offline and keeps data private.", "tr": "Cihaz internetsiz çalışıyor ve verileri gizli tutuyor." },
+        { "who": "Engineer", "en": "But the hardware costs more.", "tr": "Ama donanım daha pahalı." },
+        { "who": "Me", "en": "Privacy is important for us, so we choose the device.", "tr": "Gizlilik bizim için önemli, bu yüzden cihazı seçiyoruz." }
+      ],
+      "vocab": [
+        { "en": "option", "tr": "seçenek", "ex": "We have two options." },
+        { "en": "the cloud", "tr": "bulut", "ex": "The AI can run in the cloud." },
+        { "en": "patient data", "tr": "hasta verisi", "ex": "Patient data stays in the hospital." },
+        { "en": "offline", "tr": "internetsiz, çevrimdışı", "ex": "The device works offline." },
+        { "en": "keep data private", "tr": "verileri gizli tutmak", "ex": "The device keeps data private." },
+        { "en": "choose", "tr": "seçmek", "ex": "We choose the device." }
+      ],
+      "grammar": {
+        "title": "Present simple negative: do not / does not",
+        "tr": "Geniş zamanın olumsuzunda I, you, we, they ile 'do not', he, she, it ile 'does not' kullanılır. Fiil yalın kalır: 'It does not work'.",
+        "examples": ["Some hospitals do not let patient data leave the building.", "The cloud does not work without the internet.", "We do not use the cloud."]
+      },
+      "questions": [
+        { "q": "How many options do they have?", "options": ["One", "Two", "Three"], "a": 1 },
+        { "q": "Which option works offline?", "options": ["The device", "The cloud", "The internet"], "a": 0 },
+        { "q": "What do they choose?", "options": ["The cloud", "A new phone", "The device"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "We have two ___: the cloud or the device.", "a": "options", "hint": "seçenekler" },
+        { "s": "The device works ___.", "a": "offline", "hint": "internetsiz" },
+        { "s": "Privacy is important for us, so we ___ the device.", "a": "choose", "hint": "seçiyoruz" }
+      ],
+      "order": [
+        { "a": "The cloud is very powerful and easy to update." },
+        { "a": "The device works offline and keeps data private." }
+      ],
+      "translate": [
+        { "tr": "Gizlilik önemli.", "en": "Privacy is important.", "keys": ["privacy", "important"] },
+        { "tr": "Bulut çok güçlü.", "en": "The cloud is very powerful.", "keys": ["cloud", "powerful"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital IT manager",
+        "personaTr": "Hastane bilgi işlem müdürü",
+        "scene": "Bir hastanenin bilgi işlem müdürü hasta verisini soruyor. Kısa ve basit cevap ver.",
+        "turns": [
+          { "ai": "Does the device send patient data to the internet?", "aiTr": "Cihaz hasta verisini internete gönderiyor mu?", "hint": "No. The AI runs on the device, and the data stays private.", "keys": ["on the device", "private", "stays"] },
+          { "ai": "Does it need the internet?", "aiTr": "İnternet gerekiyor mu?", "hint": "No, it works offline.", "keys": ["offline", "works"] },
+          { "ai": "Why not the cloud?", "aiTr": "Neden bulut değil?", "hint": "Privacy is very important for hospitals.", "keys": ["privacy", "important"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir mühendisle bulut ve cihaz seçeneklerini karşılaştırıp karar veriyorsun.",
+      "text": [
+        { "who": "Engineer", "en": "We need to decide where to run the AI.", "tr": "Yapay zekâyı nerede çalıştıracağımıza karar vermemiz gerekiyor." },
+        { "who": "Me", "en": "What are the advantages of the cloud?", "tr": "Bulutun avantajları neler?" },
+        { "who": "Engineer", "en": "The cloud is more powerful, and updates are easier.", "tr": "Bulut daha güçlü ve güncellemeler daha kolay." },
+        { "who": "Engineer", "en": "But it needs the internet, and some hospitals don't let data leave the building.", "tr": "Ama internet gerektiriyor ve bazı hastaneler verinin binadan çıkmasına izin vermiyor." },
+        { "who": "Me", "en": "And what about the device?", "tr": "Peki ya cihaz?" },
+        { "who": "Engineer", "en": "The data stays private and the test works offline, but the hardware costs more.", "tr": "Veri gizli kalıyor ve test internetsiz çalışıyor, ama donanım daha pahalıya mal oluyor." },
+        { "who": "Me", "en": "We're going to run the AI on the device because privacy matters most.", "tr": "Yapay zekâyı cihazda çalıştıracağız, çünkü en önemli şey gizlilik." },
+        { "who": "Me", "en": "We can send updates once a month when the device is online.", "tr": "Cihaz internete bağlandığında ayda bir güncelleme gönderebiliriz." },
+        { "who": "Engineer", "en": "OK, that makes sense to me.", "tr": "Tamam, bence mantıklı." }
+      ],
+      "vocab": [
+        { "en": "decide", "tr": "karar vermek", "ex": "We need to decide where to run the AI." },
+        { "en": "advantage", "tr": "avantaj", "ex": "What are the advantages of the cloud?" },
+        { "en": "powerful", "tr": "güçlü", "ex": "The cloud is more powerful." },
+        { "en": "let", "tr": "izin vermek", "ex": "Some hospitals don't let data leave the building." },
+        { "en": "offline", "tr": "çevrimdışı, internetsiz", "ex": "The test works offline." },
+        { "en": "cost more", "tr": "daha pahalı olmak", "ex": "The hardware costs more." },
+        { "en": "once a month", "tr": "ayda bir", "ex": "We send updates once a month." },
+        { "en": "That makes sense.", "tr": "Mantıklı.", "ex": "That makes sense to me." }
+      ],
+      "grammar": {
+        "title": "Comparatives: more powerful, easier",
+        "tr": "İki şeyi karşılaştırırken kısa sıfatlara -er eklenir (easy → easier), uzun sıfatların önüne 'more' gelir (more powerful). Ardından 'than' gelebilir.",
+        "examples": ["The cloud is more powerful than the device.", "Updates are easier in the cloud.", "The hardware costs more."]
+      },
+      "questions": [
+        { "q": "What is one advantage of the cloud?", "options": ["It is cheaper", "It works offline", "It is more powerful"], "a": 2 },
+        { "q": "Why don't some hospitals like the cloud?", "options": ["It is too slow", "They don't let data leave the building", "It is too expensive"], "a": 1 },
+        { "q": "What is the problem with running the AI on the device?", "options": ["The hardware costs more", "The data is not private", "It needs the internet"], "a": 0 },
+        { "q": "How often will they send updates?", "options": ["Once a week", "Once a month", "Once a year"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "What are the ___ of the cloud?", "a": "advantages", "hint": "avantajlar" },
+        { "s": "On the device, the test works ___.", "a": "offline", "hint": "internetsiz" },
+        { "s": "We can send updates once a ___.", "a": "month", "hint": "ay" }
+      ],
+      "order": [
+        { "a": "We need to decide where to run the AI." },
+        { "a": "We can send updates once a month." }
+      ],
+      "translate": [
+        { "tr": "Bulut daha güçlü.", "en": "The cloud is more powerful.", "keys": ["more powerful"] },
+        { "tr": "Bence mantıklı.", "en": "That makes sense to me.", "keys": ["makes sense"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital IT manager",
+        "personaTr": "Hastane bilgi işlem müdürü",
+        "scene": "Bir hastanenin bilgi işlem müdürü hasta verisinin nereye gittiğini soruyor.",
+        "turns": [
+          { "ai": "Does your device send patient data to the internet?", "aiTr": "Cihazınız hasta verisini internete gönderiyor mu?", "hint": "No, it doesn't. The AI runs on the device, so the data stays private.", "keys": ["runs on the device", "private", "stays"] },
+          { "ai": "Why didn't you use the cloud? It's more powerful.", "aiTr": "Neden bulutu kullanmadınız? Daha güçlü.", "hint": "Yes, but privacy is more important for hospitals, so we chose the device.", "keys": ["privacy", "chose the device", "more important"] },
+          { "ai": "How do you update the software?", "aiTr": "Yazılımı nasıl güncelliyorsunuz?", "hint": "We send updates once a month when the device is online.", "keys": ["once a month", "updates", "online"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Bulut mu, cihaz üzerinde mi? Teknik bir tartışmayı yönetip karar veriyorsun.",
+      "text": [
+        { "who": "Engineer", "en": "We need to decide where the AI runs: on the device or in the cloud.", "tr": "Yapay zekânın nerede çalışacağına karar vermemiz gerekiyor: cihazda mı, bulutta mı?" },
+        { "who": "Me", "en": "What are the advantages of the cloud?", "tr": "Bulutun avantajları neler?" },
+        { "who": "Engineer", "en": "The cloud is more powerful, and we can update the model easily.", "tr": "Bulut daha güçlü ve modeli kolayca güncelleyebiliriz." },
+        { "who": "Engineer", "en": "However, it needs an internet connection, and some hospitals don't allow patient data to leave the building.", "tr": "Ancak internet bağlantısı gerektiriyor ve bazı hastaneler hasta verisinin binadan çıkmasına izin vermiyor." },
+        { "who": "Me", "en": "And what happens if we run it on the device?", "tr": "Peki onu cihazda çalıştırırsak ne olur?" },
+        { "who": "Engineer", "en": "The data will stay private and the test will work offline, but the hardware will be more expensive.", "tr": "Veri gizli kalır ve test çevrimdışı çalışır, ama donanım daha pahalı olur." },
+        { "who": "Me", "en": "I've spoken to several hospitals, and every one of them has asked about privacy.", "tr": "Birçok hastaneyle konuştum ve hepsi gizliliği sordu." },
+        { "who": "Me", "en": "Privacy is very important to our customers, so I think we should run the AI on the device.", "tr": "Gizlilik müşterilerimiz için çok önemli, bu yüzden bence yapay zekâyı cihazda çalıştırmalıyız." },
+        { "who": "Me", "en": "We can still send updates once a month when the device is connected.", "tr": "Cihaz bağlandığında yine de ayda bir güncelleme gönderebiliriz." },
+        { "who": "Engineer", "en": "That makes sense — it's a trade-off, but in this case privacy wins.", "tr": "Mantıklı — bu bir ödünleşim, ama bu durumda gizlilik kazanıyor." }
+      ],
+      "vocab": [
+        { "en": "run on the device", "tr": "cihazda çalışmak", "ex": "The AI runs on the device.", "def": "to work on a particular machine, not on the internet" },
+        { "en": "the cloud", "tr": "bulut", "ex": "The cloud is more powerful.", "def": "computers on the internet that store data and run software" },
+        { "en": "advantage", "tr": "avantaj", "ex": "What are the advantages of the cloud?", "def": "something that makes one option better" },
+        { "en": "internet connection", "tr": "internet bağlantısı", "ex": "It needs an internet connection.", "def": "a link to the internet" },
+        { "en": "allow", "tr": "izin vermek", "ex": "Some hospitals don't allow patient data to leave the building.", "def": "to let someone do something" },
+        { "en": "work offline", "tr": "çevrimdışı çalışmak", "ex": "The test works offline.", "def": "to work without the internet" },
+        { "en": "trade-off", "tr": "ödünleşim (bir şeyi kazanmak için başka bir şeyden vazgeçmek)", "ex": "It's a trade-off, but privacy wins.", "def": "a balance between two good things you can't fully have at the same time" },
+        { "en": "That makes sense.", "tr": "Mantıklı.", "ex": "That makes sense, so let's do it.", "def": "used to say you understand and agree" }
+      ],
+      "grammar": {
+        "title": "Should for recommendations",
+        "tr": "Bir öneri ya da tavsiye sunarken 'should + fiil' kullanılır. 'I think we should...' kibar ama net bir öneridir.",
+        "examples": ["I think we should run the AI on the device.", "We should send updates once a month.", "Should we use the cloud?"]
+      },
+      "questions": [
+        { "q": "What is an advantage of the cloud?", "options": ["It works offline", "It is more powerful and easy to update", "It is cheaper for hospitals"], "a": 1 },
+        { "q": "Why do some hospitals not like the cloud?", "options": ["Patient data must not leave the building", "It is too slow", "It is too expensive"], "a": 0 },
+        { "q": "What is the disadvantage of running the AI on the device?", "options": ["No privacy", "No results offline", "More expensive hardware"], "a": 2 },
+        { "q": "What has every hospital asked about?", "options": ["Privacy", "Price", "Design"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "However, it needs an internet ___.", "a": "connection", "hint": "bağlantı" },
+        { "s": "I think we ___ run the AI on the device.", "a": "should", "hint": "-meli / -malı" },
+        { "s": "It's a ___, but in this case privacy wins.", "a": "trade-off", "hint": "ödünleşim" }
+      ],
+      "order": [
+        { "a": "The data will stay private and the test will work offline." },
+        { "a": "I think we should run the AI on the device." }
+      ],
+      "translate": [
+        { "tr": "Avantajları neler?", "en": "What are the advantages?", "keys": ["advantages"] },
+        { "tr": "Bence yapay zekâyı cihazda çalıştırmalıyız.", "en": "I think we should run the AI on the device.", "keys": ["should", "on the device"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital IT manager",
+        "personaTr": "Hastane bilgi işlem müdürü",
+        "scene": "Bir hastanenin bilgi işlem müdürü hasta verisinin nereye gittiğini ve neden bu çözümü seçtiğinizi soruyor.",
+        "turns": [
+          { "ai": "Does your device send patient data to the internet?", "aiTr": "Cihazınız hasta verisini internete gönderiyor mu?", "hint": "No. The AI runs on the device, so the data stays private and the test works offline.", "keys": ["on the device", "private", "offline"] },
+          { "ai": "Why didn't you use the cloud? It's more powerful.", "aiTr": "Neden bulutu kullanmadınız? Daha güçlü.", "hint": "That's true, but privacy is very important for hospitals. It's a trade-off, and privacy wins.", "keys": ["privacy", "trade-off", "important"] },
+          { "ai": "Isn't the hardware more expensive?", "aiTr": "Donanım daha pahalı değil mi?", "hint": "Yes, it is, but every hospital we've spoken to has asked about privacy.", "keys": ["every hospital", "privacy", "spoken to"] },
+          { "ai": "How do you update the software, then?", "aiTr": "Peki yazılımı nasıl güncelliyorsunuz?", "hint": "We send updates once a month when the device is connected.", "keys": ["once a month", "updates", "connected"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "İki teknik seçeneğin artılarını ve eksilerini tartıp gerekçeli bir karar veriyorsun.",
+      "text": [
+        { "who": "Engineer", "en": "Before we lock in the hardware, we need to settle one question: does the AI run on the device or in the cloud?", "tr": "Donanımı kesinleştirmeden önce bir soruyu netleştirmemiz gerekiyor: yapay zekâ cihazda mı çalışacak, bulutta mı?" },
+        { "who": "Me", "en": "Let's weigh it up properly — what would we gain by going with the cloud?", "tr": "Bunu doğru dürüst tartalım — bulutu seçersek ne kazanırız?" },
+        { "who": "Engineer", "en": "We'd have far more computing power, and the model could be updated whenever we liked.", "tr": "Çok daha fazla işlem gücümüz olur ve model istediğimiz zaman güncellenebilir." },
+        { "who": "Engineer", "en": "The downside is that every test would depend on a stable internet connection, which many small clinics simply don't have.", "tr": "Dezavantajı, her testin sabit bir internet bağlantısına bağlı olması; birçok küçük klinikte de böyle bir bağlantı yok." },
+        { "who": "Engineer", "en": "On top of that, some hospitals have strict rules that don't allow patient data to leave the building.", "tr": "Üstelik bazı hastanelerin, hasta verisinin binadan çıkmasına izin vermeyen katı kuralları var." },
+        { "who": "Me", "en": "And if the AI ran on the device itself?", "tr": "Peki yapay zekâ cihazın kendisinde çalışsaydı?" },
+        { "who": "Engineer", "en": "Then the data would never leave the room and the test would work offline, but each unit would need more expensive hardware.", "tr": "O zaman veri odadan hiç çıkmaz ve test çevrimdışı çalışırdı, ama her cihaz daha pahalı bir donanıma ihtiyaç duyardı." },
+        { "who": "Me", "en": "From what I've heard, privacy is the first thing hospital IT teams ask about, so it seems to me that's where we can't compromise.", "tr": "Duyduğum kadarıyla hastane bilgi işlem ekiplerinin ilk sorduğu şey gizlilik, o yüzden bana kalırsa taviz veremeyeceğimiz nokta bu." },
+        { "who": "Me", "en": "I'd say we run the AI on the device and push model updates once a month whenever the device is connected.", "tr": "Bence yapay zekâyı cihazda çalıştıralım ve cihaz bağlandığında model güncellemelerini ayda bir gönderelim." },
+        { "who": "Engineer", "en": "Fair enough — it's a trade-off, but if privacy is what closes the deal, the extra hardware cost is worth paying.", "tr": "Haklısın — bu bir ödünleşim, ama anlaşmayı kapattıran şey gizlilikse ek donanım maliyetine değer." }
+      ],
+      "vocab": [
+        { "en": "lock in", "tr": "kesinleştirmek", "ex": "Before we lock in the hardware, we need to decide.", "def": "to make a final decision that is hard to change" },
+        { "en": "weigh something up", "tr": "bir şeyin artısını eksisini tartmak", "ex": "Let's weigh up both options.", "def": "to think carefully about the good and bad points" },
+        { "en": "computing power", "tr": "işlem gücü", "ex": "The cloud gives us more computing power.", "def": "how much work a computer can do" },
+        { "en": "downside", "tr": "dezavantaj, olumsuz yan", "ex": "The downside is the internet connection.", "def": "a disadvantage" },
+        { "en": "strict rules", "tr": "katı kurallar", "ex": "Some hospitals have strict rules about patient data.", "def": "rules that must be followed exactly" },
+        { "en": "compromise on something", "tr": "...den taviz vermek", "ex": "We can't compromise on privacy.", "def": "to accept less than you want" },
+        { "en": "push an update", "tr": "güncelleme göndermek", "ex": "We push updates once a month.", "def": "to send new software to devices" },
+        { "en": "close the deal", "tr": "anlaşmayı kapatmak", "ex": "Privacy is what closes the deal.", "def": "to finally agree a sale" },
+        { "en": "be worth (doing)", "tr": "değmek", "ex": "The extra cost is worth paying.", "def": "good enough to justify the cost or effort" }
+      ],
+      "grammar": {
+        "title": "Second conditional: comparing options",
+        "tr": "Varsayımsal durumları tartışırken second conditional kullanılır: if + past simple, would + fiil. Seçenekleri karşılaştırırken çok işe yarar.",
+        "examples": ["If the AI ran on the device, the test would work offline.", "We'd have far more computing power with the cloud.", "If we chose the cloud, every test would depend on the internet."]
+      },
+      "questions": [
+        { "q": "What would the cloud offer?", "options": ["Lower hardware costs only", "More computing power and easy model updates", "Better privacy"], "a": 1 },
+        { "q": "Why could the cloud be a problem for small clinics?", "options": ["Many don't have a stable internet connection", "They don't like new technology", "They can't afford a subscription"], "a": 0 },
+        { "q": "What is the main cost of running the AI on the device?", "options": ["Slower tests", "Less privacy", "More expensive hardware for each unit"], "a": 2 },
+        { "q": "Why does the engineer agree in the end?", "options": ["The cloud turns out to be too slow", "Privacy will help win customers", "The device is cheaper to build"], "a": 1 },
+        { "q": "How will the model be updated?", "options": ["Monthly, whenever the device is connected", "Every day through the cloud", "Only when a technician visits"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Before we lock ___ the hardware, we need to settle one question.", "a": "in", "hint": "kesinleştirmek (lock in)" },
+        { "s": "The ___ is that every test would depend on the internet.", "a": "downside", "hint": "dezavantaj" },
+        { "s": "Privacy is where we can't ___.", "a": "compromise", "hint": "taviz vermek" }
+      ],
+      "order": [
+        { "a": "Some hospitals don't allow patient data to leave the building." },
+        { "a": "The extra hardware cost is worth paying." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekâ cihazda çalışsaydı test çevrimdışı çalışırdı.", "en": "If the AI ran on the device, the test would work offline.", "keys": ["if the ai ran", "would work offline"] },
+        { "tr": "Gizlilikten taviz veremeyiz.", "en": "We can't compromise on privacy.", "keys": ["compromise on privacy"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital IT manager",
+        "personaTr": "Hastane bilgi işlem müdürü",
+        "scene": "Bir hastanenin bilgi işlem müdürü cihazınızın veriyi nasıl işlediğini ve neden bulutu seçmediğinizi soruyor.",
+        "turns": [
+          { "ai": "Before we go any further, I need to know where patient data is processed.", "aiTr": "Daha ileri gitmeden önce hasta verisinin nerede işlendiğini bilmem gerekiyor.", "hint": "Everything is processed on the device itself, so patient data never leaves the room.", "keys": ["on the device", "never leaves", "processed"] },
+          { "ai": "Most vendors use the cloud these days — why didn't you?", "aiTr": "Bugünlerde çoğu tedarikçi bulut kullanıyor — siz neden kullanmadınız?", "hint": "We weighed it up carefully, but we decided we couldn't compromise on privacy.", "keys": ["weighed it up", "compromise on privacy", "privacy"] },
+          { "ai": "What happens if our internet goes down?", "aiTr": "İnternetimiz kesilirse ne olur?", "hint": "Nothing changes, because the test works offline.", "keys": ["works offline", "offline", "nothing changes"] },
+          { "ai": "And how is the model kept up to date?", "aiTr": "Peki model nasıl güncel tutuluyor?", "hint": "Updates are pushed once a month whenever the device is connected.", "keys": ["once a month", "pushed", "connected"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir mimari kararı mühendisinle derinlemesine tartışıp müşterinin bakış açısıyla sonuca bağlıyorsun.",
+      "text": [
+        { "who": "Engineer", "en": "Before we commit to a hardware spec, we need to settle where the model actually lives: on the device or in the cloud.", "tr": "Bir donanım spesifikasyonuna bağlanmadan önce modelin aslında nerede çalışacağını netleştirmemiz gerekiyor: cihazda mı, bulutta mı?" },
+        { "who": "Me", "en": "Talk me through the case for the cloud first.", "tr": "Önce bulutun lehine olan argümanları bana anlat." },
+        { "who": "Engineer", "en": "We'd be able to run a much heavier model, and we could iterate on it daily without touching a single unit in the field.", "tr": "Çok daha ağır bir model çalıştırabilir ve sahadaki tek bir cihaza dokunmadan onu her gün geliştirebilirdik." },
+        { "who": "Engineer", "en": "The catch is that every test would hinge on a stable connection, which is far from a given in small-town clinics.", "tr": "İşin püf noktası şu: her test sabit bir bağlantıya bağlı olurdu ve küçük kasaba kliniklerinde bu hiç de garanti değil." },
+        { "who": "Engineer", "en": "More to the point, a number of hospitals flatly refuse to let patient data leave the building, whatever safeguards we put in place.", "tr": "Daha da önemlisi, bazı hastaneler, ne tür güvenlik önlemleri alırsak alalım, hasta verisinin binadan çıkmasını kesinlikle reddediyor." },
+        { "who": "Me", "en": "And keeping everything on the device?", "tr": "Peki her şeyi cihazda tutarsak?" },
+        { "who": "Engineer", "en": "Running it locally keeps the data in the room and lets the test work offline, though it does push up the cost of each unit.", "tr": "Yerelde çalıştırmak veriyi odada tutar ve testin çevrimdışı çalışmasını sağlar, ama her cihazın maliyetini de artırır." },
+        { "who": "Engineer", "en": "We'd also have to slim the model down to fit the hardware, which is doable but not trivial.", "tr": "Ayrıca modeli donanıma sığacak şekilde küçültmemiz gerekir; bu yapılabilir ama basit bir iş değil." },
+        { "who": "Me", "en": "What strikes me is that privacy comes up in practically every conversation I've had with hospital IT teams.", "tr": "Dikkatimi çeken şu: hastane bilgi işlem ekipleriyle yaptığım neredeyse her görüşmede gizlilik konusu açılıyor." },
+        { "who": "Me", "en": "Given that, I'd rather absorb a slightly higher hardware cost than hand our customers a reason to say no.", "tr": "Bunu göz önünde bulundurursak, müşterilerimize hayır demeleri için bir sebep vermektense biraz daha yüksek bir donanım maliyetini üstlenmeyi tercih ederim." },
+        { "who": "Me", "en": "So let's run the model on the device and push updates once a month whenever a unit connects.", "tr": "O halde modeli cihazda çalıştıralım ve bir cihaz bağlandığında ayda bir güncelleme gönderelim." },
+        { "who": "Engineer", "en": "Agreed — it's a genuine trade-off, but privacy is the one thing we can't afford to get wrong.", "tr": "Katılıyorum — bu gerçek bir ödünleşim, ama gizlilik, hata yapmayı göze alamayacağımız tek konu." }
+      ],
+      "vocab": [
+        { "en": "commit to something", "tr": "bir şeye bağlanmak, karar kılmak", "ex": "Before we commit to a hardware spec, let's decide.", "def": "to make a firm decision to do or use something" },
+        { "en": "talk someone through something", "tr": "birine bir şeyi adım adım anlatmak", "ex": "Talk me through the case for the cloud.", "def": "to explain something to someone step by step" },
+        { "en": "iterate on", "tr": "yinelemeli olarak geliştirmek", "ex": "We could iterate on the model daily.", "def": "to improve something through repeated small changes" },
+        { "en": "the catch is", "tr": "işin püf noktası / sorun şu ki", "ex": "The catch is that every test needs a connection.", "def": "used to introduce the hidden problem with something that seems good" },
+        { "en": "hinge on", "tr": "...ye bağlı olmak", "ex": "Every test would hinge on a stable connection.", "def": "to depend completely on something" },
+        { "en": "far from a given", "tr": "hiç de garanti olmamak", "ex": "A stable connection is far from a given in small towns.", "def": "not something you can expect or assume" },
+        { "en": "flatly refuse", "tr": "kesinlikle reddetmek", "ex": "Some hospitals flatly refuse to let data leave the building.", "def": "to refuse completely and directly" },
+        { "en": "slim something down", "tr": "bir şeyi küçültmek, hafifletmek", "ex": "We'd have to slim the model down.", "def": "to make something smaller or lighter" },
+        { "en": "absorb a cost", "tr": "bir maliyeti üstlenmek", "ex": "I'd rather absorb a higher hardware cost.", "def": "to pay for an extra cost yourself instead of passing it on" },
+        { "en": "can't afford to get something wrong", "tr": "hata yapmayı göze alamamak", "ex": "Privacy is the one thing we can't afford to get wrong.", "def": "to be too important to risk a mistake" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences: What strikes me is…",
+        "tr": "'What + özne + fiil + is...' yapısındaki cleft (bölünmüş) cümleler bir bilgiyi öne çıkarıp vurgulamak için kullanılır. Toplantılarda ana noktanızı güçlü biçimde sunmanızı sağlar.",
+        "examples": ["What strikes me is that privacy comes up in every conversation.", "What we need to settle is where the model lives.", "What hospitals care about most is privacy."]
+      },
+      "questions": [
+        { "q": "What does the engineer see as the main appeal of the cloud?", "options": ["A heavier model and the freedom to iterate quickly", "Lower hardware costs", "Better privacy for hospitals"], "a": 0 },
+        { "q": "What does 'far from a given' imply about small-town clinics?", "options": ["They have fast and stable internet", "They prefer cloud solutions", "Their internet connection can't be relied on"], "a": 2 },
+        { "q": "What is the speaker's attitude towards the extra hardware cost?", "options": ["Willing to accept it as the price of customer trust", "Strongly opposed to it", "Unaware of it"], "a": 0 },
+        { "q": "Why does the speaker mention conversations with hospital IT teams?", "options": ["To complain about hospital bureaucracy", "To show that privacy is a real and repeated customer concern", "To suggest selling to IT companies instead"], "a": 1 },
+        { "q": "What does the engineer's final remark suggest?", "options": ["The engineer still prefers the cloud", "The engineer wants more time to decide", "The engineer accepts the decision despite the costs"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Every test would ___ on a stable connection.", "a": "hinge", "hint": "bağlı olmak" },
+        { "s": "We'd also have to ___ the model down to fit the hardware.", "a": "slim", "hint": "küçültmek" },
+        { "s": "I'd rather ___ a slightly higher hardware cost.", "a": "absorb", "hint": "üstlenmek" }
+      ],
+      "order": [
+        { "a": "Privacy comes up in practically every conversation." },
+        { "a": "Let's run the model on the device." }
+      ],
+      "translate": [
+        { "tr": "Dikkatimi çeken şu: gizlilik her görüşmede gündeme geliyor.", "en": "What strikes me is that privacy comes up in every conversation.", "keys": ["what strikes me", "comes up"] },
+        { "tr": "İşin püf noktası şu: her test bir bağlantıya bağlı olurdu.", "en": "The catch is that every test would hinge on a connection.", "keys": ["the catch is", "hinge on"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital IT director",
+        "personaTr": "Hastane bilgi işlem direktörü",
+        "scene": "Büyük bir hastanenin bilgi işlem direktörü mimari kararlarınızı sorguluyor; ikna edici ve net olmalısın.",
+        "turns": [
+          { "ai": "Our data protection officer will want to know exactly where patient data ends up — what should I tell them?", "aiTr": "Veri koruma sorumlumuz hasta verisinin tam olarak nereye gittiğini bilmek isteyecek — ona ne söylemeliyim?", "hint": "You can tell them it never leaves the room, because the model runs entirely on the device.", "keys": ["never leaves", "on the device", "entirely"] },
+          { "ai": "Wouldn't a cloud model be more accurate, though?", "aiTr": "Ama bulut modeli daha doğru olmaz mıydı?", "hint": "We could run a heavier model in the cloud, but we'd rather slim it down than ask you to send patient data off-site.", "keys": ["slim it down", "heavier model", "off-site"] },
+          { "ai": "Some of our satellite clinics have patchy internet — is that going to be an issue?", "aiTr": "Bazı bağlı kliniklerimizin interneti kesik kesik — bu sorun olur mu?", "hint": "Not at all; since the test works offline, it doesn't hinge on a stable connection.", "keys": ["works offline", "hinge on", "not at all"] },
+          { "ai": "Then how do you keep the model from going stale?", "aiTr": "O zaman modelin eskimesini nasıl önlüyorsunuz?", "hint": "We push an update once a month whenever a unit connects, so it stays current without any effort on your side.", "keys": ["once a month", "push an update", "connects"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Kritik bir mimari tercihi ustalıkla tartışıyor, karşı argümanları kabul edip kararını net biçimde savunuyorsun.",
+      "text": [
+        { "who": "Engineer", "en": "Before we freeze the hardware spec, there's one architectural question we can't keep kicking down the road: does the model live on the device or in the cloud?", "tr": "Donanım spesifikasyonunu dondurmadan önce, daha fazla erteleyemeyeceğimiz bir mimari soru var: model cihazda mı yaşayacak, bulutta mı?" },
+        { "who": "Me", "en": "Make the strongest case you can for the cloud, and then let's see whether it survives contact with our customers.", "tr": "Bulut için yapabileceğin en güçlü savunmayı yap, sonra da bunun müşterilerimizle karşılaşınca ayakta kalıp kalmadığına bakalım." },
+        { "who": "Engineer", "en": "In the cloud we could run a far heavier model and iterate on it as often as we liked, without ever touching a unit in the field.", "tr": "Bulutta çok daha ağır bir model çalıştırabilir ve sahadaki tek bir cihaza bile dokunmadan onu istediğimiz sıklıkta geliştirebilirdik." },
+        { "who": "Engineer", "en": "The rub, of course, is that every single test would then be hostage to the clinic's internet connection, which in a small-town practice is anything but guaranteed.", "tr": "İşin sıkıntılı yanı tabii ki her bir testin kliniğin internet bağlantısına mahkûm olması; küçük bir kasaba muayenehanesinde bu hiç de garanti değil." },
+        { "who": "Engineer", "en": "And that's before we get to the hospitals whose data policies flatly forbid patient information from leaving the building.", "tr": "Üstelik daha, veri politikaları hasta bilgisinin binadan çıkmasını kesinlikle yasaklayan hastanelere gelmedik bile." },
+        { "who": "Me", "en": "Whereas keeping it on the device buys us what, exactly?", "tr": "Peki modeli cihazda tutmak bize tam olarak ne kazandırıyor?" },
+        { "who": "Engineer", "en": "Privacy by design and a test that works offline — at the cost of a heftier bill of materials and a model we'd have to trim to fit.", "tr": "Tasarımdan gelen gizlilik ve çevrimdışı çalışan bir test — bunun bedeli de daha yüklü bir malzeme maliyeti ve sığması için küçültmemiz gereken bir model." },
+        { "who": "Me", "en": "Frankly, I've yet to sit down with a hospital IT team that didn't raise privacy within the first five minutes.", "tr": "Açıkçası, ilk beş dakika içinde gizliliği gündeme getirmeyen bir hastane bilgi işlem ekibiyle henüz hiç oturmadım." },
+        { "who": "Me", "en": "Admittedly, it dents the margin, but a somewhat higher unit cost strikes me as a small price for taking one of the most common objections off the table.", "tr": "Kabul ediyorum, kâr marjını biraz zedeliyor, ama en sık duyduğumuz itirazlardan birini ortadan kaldırmak için biraz daha yüksek bir birim maliyeti bana küçük bir bedel gibi geliyor." },
+        { "who": "Me", "en": "So let's keep the model on the device and ship updates monthly, whenever a unit happens to be connected.", "tr": "O halde modeli cihazda tutalım ve güncellemeleri, cihaz ne zaman bağlanırsa, ayda bir gönderelim." },
+        { "who": "Engineer", "en": "Fair enough — it's a genuine trade-off, but I'd much rather justify a higher unit cost than explain a data breach to a hospital board.", "tr": "Makul — bu gerçek bir ödünleşim, ama bir hastane yönetim kuruluna veri ihlali açıklamaktansa daha yüksek bir birim maliyetini savunmayı çok daha fazla tercih ederim." }
+      ],
+      "vocab": [
+        { "en": "kick something down the road", "tr": "bir şeyi sürekli ertelemek", "ex": "We can't keep kicking this decision down the road.", "def": "to keep delaying dealing with a problem" },
+        { "en": "survive contact with", "tr": "...ile karşılaşınca ayakta kalmak", "ex": "Let's see whether the plan survives contact with our customers.", "def": "to still work when tested in reality" },
+        { "en": "the rub", "tr": "işin sıkıntılı noktası", "ex": "The rub is that every test depends on the internet.", "def": "the main difficulty (slightly literary)" },
+        { "en": "be hostage to", "tr": "...ye mahkûm olmak, ...nin insafına kalmak", "ex": "Every test would be hostage to the connection.", "def": "to be controlled by something you cannot control" },
+        { "en": "anything but", "tr": "hiç de ... değil", "ex": "A stable connection is anything but guaranteed.", "def": "not at all" },
+        { "en": "privacy by design", "tr": "tasarımdan gelen gizlilik", "ex": "On-device AI gives us privacy by design.", "def": "privacy built into a product from the start" },
+        { "en": "bill of materials", "tr": "malzeme listesi (ve maliyeti)", "ex": "A heftier bill of materials raises our unit cost.", "def": "the list and cost of all the parts needed to build a product" },
+        { "en": "I've yet to", "tr": "henüz hiç ...medim", "ex": "I've yet to meet an IT team that didn't raise privacy.", "def": "used to say something has not happened so far" },
+        { "en": "dent the margin", "tr": "kâr marjını zedelemek", "ex": "Admittedly, it dents the margin.", "def": "to reduce profit a little" },
+        { "en": "take something off the table", "tr": "bir şeyi gündemden çıkarmak, ortadan kaldırmak", "ex": "It takes a common objection off the table.", "def": "to remove something as an issue" }
+      ],
+      "grammar": {
+        "title": "Conceding a point: Admittedly…, but…",
+        "tr": "İkna ederken önce karşı tarafın haklı olduğu noktayı kabul edip ('Admittedly', 'Fair enough', 'Granted') ardından asıl argümanınızı 'but' ile sunmak sizi hem dürüst hem güçlü gösterir.",
+        "examples": ["Admittedly, it dents the margin, but the price is worth it.", "Fair enough, it's a genuine trade-off, but privacy comes first.", "Granted, the cloud is more powerful, but our customers want privacy."]
+      },
+      "questions": [
+        { "q": "Why does the engineer insist on deciding now?", "options": ["The hardware spec is about to be frozen", "An investor demanded it", "The cloud provider raised its prices"], "a": 0 },
+        { "q": "What does 'see whether it survives contact with our customers' imply?", "options": ["The founder has already chosen the cloud", "Any option must hold up against real customer concerns", "Customers have rejected the device"], "a": 1 },
+        { "q": "What does 'I've yet to sit down with a hospital IT team that didn't raise privacy' suggest?", "options": ["The founder has never met a hospital IT team", "IT teams rarely care about privacy", "Privacy comes up in virtually every hospital meeting"], "a": 2 },
+        { "q": "What is the tone of the founder's comment on the margin?", "options": ["Dismissive and careless", "Candid but firm", "Anxious and uncertain"], "a": 1 },
+        { "q": "What is the engineer's final position?", "options": ["Accepts the decision, preferring a higher cost to a privacy failure", "Still pushes for the cloud", "Wants to delay the decision"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "There's one question we can't keep kicking down the ___.", "a": "road", "hint": "yol (ertelemek)" },
+        { "s": "Every test would be ___ to the clinic's internet connection.", "a": "hostage", "hint": "mahkûm, rehin" },
+        { "s": "I've ___ to sit down with a hospital IT team that didn't raise privacy.", "a": "yet", "hint": "henüz" },
+        { "s": "It takes one of the most common objections off the ___.", "a": "table", "hint": "masa (gündem)" }
+      ],
+      "order": [
+        { "a": "A stable connection is anything but guaranteed." },
+        { "a": "Let's keep the model on the device and ship updates monthly." }
+      ],
+      "translate": [
+        { "tr": "Kabul ediyorum, kâr marjını zedeliyor.", "en": "Admittedly, it dents the margin.", "keys": ["admittedly", "dents the margin"] },
+        { "tr": "Bu, en sık duyduğumuz itirazlardan birini ortadan kaldırıyor.", "en": "It takes one of the most common objections off the table.", "keys": ["objections", "off the table"] },
+        { "tr": "Tasarımdan gelen gizlilik sunuyoruz.", "en": "We offer privacy by design.", "keys": ["privacy by design"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital chief information officer",
+        "personaTr": "Hastanenin bilgi işlem direktörü (CIO)",
+        "scene": "Bir üniversite hastanesinin bilgi işlem direktörü mimari tercihinizi sorguluyor ve kolay ikna olmuyor.",
+        "turns": [
+          { "ai": "Every vendor tells me their system is secure, so forgive me if I'm sceptical — where does our patients' data actually go?", "aiTr": "Her tedarikçi bana sisteminin güvenli olduğunu söylüyor, şüpheciliğimi mazur görün — hastalarımızın verisi aslında nereye gidiyor?", "hint": "Healthy scepticism; the honest answer is nowhere, because the model runs entirely on the device, so privacy is built in by design.", "keys": ["on the device", "by design", "nowhere"] },
+          { "ai": "Surely running it locally means you're compromising on accuracy?", "aiTr": "Yerelde çalıştırmak doğruluktan taviz verdiğiniz anlamına gelmiyor mu?", "hint": "We did have to trim the model to fit, admittedly, but it still matched a trained audiologist in 94% of cases in our clinical study.", "keys": ["admittedly", "94", "trim the model"] },
+          { "ai": "And when the connection in a rural clinic drops out halfway through a test?", "aiTr": "Peki kırsaldaki bir klinikte test yarıdayken bağlantı koparsa?", "hint": "The test simply carries on, because it works offline and is never hostage to the connection.", "keys": ["works offline", "hostage", "carries on"] },
+          { "ai": "How do you keep the model from falling behind, then?", "aiTr": "O zaman modelin geride kalmasını nasıl önlüyorsunuz?", "hint": "We ship an update once a month whenever a unit happens to be connected, so it never falls far behind.", "keys": ["once a month", "ship an update", "connected"] }
+        ]
+      }
+    }
+  }
+}

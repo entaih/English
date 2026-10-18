@@ -1,0 +1,376 @@
+{
+  "id": "te-02",
+  "topic": "tech",
+  "title": "Building Software with AI Coding Assistants",
+  "titleTr": "Yapay Zekâ Kod Asistanlarıyla Yazılım Geliştirmek",
+  "levels": {
+    "A1": {
+      "intro": "Küçük ekibinin yapay zekâ araçlarıyla nasıl kod yazdığını basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "en": "We have three engineers in our team.", "tr": "Ekibimizde üç mühendis var." },
+        { "en": "They use AI tools to write code.", "tr": "Kod yazmak için yapay zekâ araçları kullanıyorlar." },
+        { "en": "We tell the AI what we want.", "tr": "Yapay zekâya ne istediğimizi söylüyoruz." },
+        { "en": "Then the AI writes the first version.", "tr": "Sonra yapay zekâ ilk sürümü yazıyor." },
+        { "en": "Our engineers check the code and test it.", "tr": "Mühendislerimiz kodu kontrol edip test ediyor." },
+        { "en": "AI is fast, but it can make mistakes.", "tr": "Yapay zekâ hızlı ama hata yapabilir." },
+        { "en": "Now a one-week task takes one or two days.", "tr": "Artık bir haftalık bir iş bir ya da iki gün sürüyor." },
+        { "en": "It is like having three more engineers.", "tr": "Üç mühendisimiz daha varmış gibi." }
+      ],
+      "vocab": [
+        { "en": "write code", "tr": "kod yazmak", "ex": "They use AI tools to write code." },
+        { "en": "engineer", "tr": "mühendis", "ex": "We have three engineers." },
+        { "en": "first version", "tr": "ilk sürüm", "ex": "The AI writes the first version." },
+        { "en": "check", "tr": "kontrol etmek", "ex": "Our engineers check the code." },
+        { "en": "test", "tr": "test etmek", "ex": "We test the code every day." },
+        { "en": "mistake", "tr": "hata", "ex": "AI can make mistakes." }
+      ],
+      "grammar": {
+        "title": "Present simple: we / they",
+        "tr": "Her zaman yaptığımız işler için present simple kullanırız. I, you, we, they ile fiil yalın kalır: we tell, they use, our engineers check.",
+        "examples": ["They use AI tools to write code.", "We tell the AI what we want.", "Our engineers check the code."]
+      },
+      "questions": [
+        { "q": "How many engineers are in the team?", "options": ["Two", "Three", "Six"], "a": 1 },
+        { "q": "Who checks the code?", "options": ["The AI", "The customers", "The engineers"], "a": 2 },
+        { "q": "How long does a one-week task take now?", "options": ["One or two days", "Two weeks", "One hour"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "They use AI tools to write ___.", "a": "code", "hint": "kod" },
+        { "s": "Then the AI writes the first ___.", "a": "version", "hint": "sürüm" },
+        { "s": "AI is fast, but it can make ___.", "a": "mistakes", "hint": "hatalar" }
+      ],
+      "order": [
+        { "a": "Our engineers check the code and test it." },
+        { "a": "We tell the AI what we want." }
+      ],
+      "translate": [
+        { "tr": "Mühendislerimiz kodu kontrol ediyor.", "en": "Our engineers check the code.", "keys": ["engineers", "check", "code"] },
+        { "tr": "Yapay zekâ hızlı ama hata yapabilir.", "en": "AI is fast, but it can make mistakes.", "keys": ["fast", "mistakes"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Bir yatırımcı küçük ekibinin nasıl hızlı çalıştığını soruyor.",
+        "turns": [
+          { "ai": "Your team is small. How do you work so fast?", "aiTr": "Ekibiniz küçük. Nasıl bu kadar hızlı çalışıyorsunuz?", "hint": "We use AI tools to write code.", "keys": ["AI tools", "write code"] },
+          { "ai": "Is the AI code good?", "aiTr": "Yapay zekânın yazdığı kod iyi mi?", "hint": "Not always. Our engineers check the code and test it.", "keys": ["check", "test", "engineers"] },
+          { "ai": "How much time do you save?", "aiTr": "Ne kadar zaman kazanıyorsunuz?", "hint": "A lot. Now a one-week task takes one or two days.", "keys": ["one or two days", "one-week", "a lot"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "İki yıl önce ve bugün kod yazma şeklinizi karşılaştırıyorsun.",
+      "text": [
+        { "en": "Two years ago, our engineers wrote every line of code by hand.", "tr": "İki yıl önce mühendislerimiz her kod satırını elle yazıyordu." },
+        { "en": "Today we use AI coding assistants for a big part of our work.", "tr": "Bugün işimizin büyük bir kısmı için yapay zekâ kod asistanları kullanıyoruz." },
+        { "en": "An assistant can write code, explain it and find bugs.", "tr": "Bir asistan kod yazabilir, kodu açıklayabilir ve hataları bulabilir." },
+        { "en": "We describe what we want in plain English, and it writes a first version.", "tr": "Ne istediğimizi sade bir İngilizceyle anlatıyoruz, o da ilk sürümü yazıyor." },
+        { "en": "Then our engineers review the code and test it carefully.", "tr": "Sonra mühendislerimiz kodu inceleyip dikkatle test ediyor." },
+        { "en": "A task that took a week now takes a day or two.", "tr": "Eskiden bir hafta süren bir iş artık bir iki gün sürüyor." },
+        { "en": "But AI code can look correct and still have hidden problems.", "tr": "Ama yapay zekânın yazdığı kod doğru görünüp yine de gizli sorunlar içerebilir." },
+        { "en": "So we never release code without a human review and automatic tests.", "tr": "Bu yüzden insan incelemesi ve otomatik testler olmadan asla kod yayınlamıyoruz." },
+        { "en": "For a small startup like ours, it's like having three extra engineers.", "tr": "Bizimki gibi küçük bir girişim için bu, üç ekstra mühendise sahip olmak gibi." }
+      ],
+      "vocab": [
+        { "en": "by hand", "tr": "elle", "ex": "We wrote every line of code by hand." },
+        { "en": "coding assistant", "tr": "kod asistanı", "ex": "We use AI coding assistants." },
+        { "en": "bug", "tr": "yazılım hatası", "ex": "The assistant can find bugs." },
+        { "en": "plain English", "tr": "sade İngilizce", "ex": "We describe the task in plain English." },
+        { "en": "review", "tr": "incelemek", "ex": "Our engineers review the code." },
+        { "en": "hidden", "tr": "gizli", "ex": "AI code can have hidden problems." },
+        { "en": "release", "tr": "yayınlamak", "ex": "We never release code without tests." },
+        { "en": "extra", "tr": "ekstra, fazladan", "ex": "It's like having three extra engineers." }
+      ],
+      "grammar": {
+        "title": "Past simple vs present simple: then and now",
+        "tr": "Geçmişte bitmiş durumlar için past simple (wrote, took), bugünkü alışkanlıklar için present simple (use, takes) kullanırız. 'Two years ago' ve 'today' gibi zaman ifadeleri ipucu verir.",
+        "examples": ["Two years ago, our engineers wrote every line of code by hand.", "Today we use AI coding assistants.", "A task that took a week now takes a day or two."]
+      },
+      "questions": [
+        { "q": "How did the engineers write code two years ago?", "options": ["With AI", "By hand", "They didn't write code"], "a": 1 },
+        { "q": "What does the assistant write after the team describes the task?", "options": ["A first version of the code", "A report for investors", "The final product"], "a": 0 },
+        { "q": "What is the problem with AI code?", "options": ["It's too slow", "It's too expensive", "It can look correct but have hidden problems"], "a": 2 },
+        { "q": "What do they always do before releasing code?", "options": ["Ask the customers", "Wait a week", "Nothing special", "A human review and automatic tests"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Two years ago, we wrote every line of code by ___.", "a": "hand", "hint": "elle (by …)" },
+        { "s": "We describe what we want in ___ English.", "a": "plain", "hint": "sade" },
+        { "s": "AI code can look correct and still have ___ problems.", "a": "hidden", "hint": "gizli" }
+      ],
+      "order": [
+        { "a": "A task that took a week now takes a day or two." },
+        { "a": "Our engineers review the code and test it." }
+      ],
+      "translate": [
+        { "tr": "Bu, üç ekstra mühendise sahip olmak gibi.", "en": "It's like having three extra engineers.", "keys": ["like having", "three extra engineers"] },
+        { "tr": "İki yıl önce kodu elle yazdık.", "en": "Two years ago, we wrote the code by hand.", "keys": ["two years ago", "by hand"] }
+      ],
+      "roleplay": {
+        "persona": "Tech investor",
+        "personaTr": "Teknoloji yatırımcısı",
+        "scene": "Bir yatırımcı küçük ekibinizin nasıl bu kadar hızlı ürün çıkardığını soruyor.",
+        "turns": [
+          { "ai": "Your team is very small. How do you build software so fast?", "aiTr": "Ekibiniz çok küçük. Yazılımı nasıl bu kadar hızlı geliştiriyorsunuz?", "hint": "We use AI coding assistants. We describe what we want, and the assistant writes a first version.", "keys": ["coding assistants", "describe", "first version"] },
+          { "ai": "Can you trust AI code?", "aiTr": "Yapay zekânın yazdığı koda güvenebilir misiniz?", "hint": "Not always, because it can have hidden problems. So our engineers review it and test it.", "keys": ["hidden problems", "review", "test"] },
+          { "ai": "How much time does it save?", "aiTr": "Ne kadar zaman kazandırıyor?", "hint": "A lot. A task that took a week now takes a day or two.", "keys": ["a day or two", "took a week", "a lot"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Ekibin yapay zekâ araçlarıyla nasıl daha hızlı kod yazdığını ve neden dikkatli olduğunu anlatıyorsun.",
+      "text": [
+        { "en": "Two years ago, our team wrote every line of code by hand.", "tr": "İki yıl önce ekibimiz her kod satırını elle yazıyordu." },
+        { "en": "Since then, AI coding assistants have become a big part of how we work.", "tr": "O zamandan beri yapay zekâ kod asistanları çalışma şeklimizin büyük bir parçası haline geldi." },
+        { "en": "An assistant can write code, explain code that someone else wrote and find bugs.", "tr": "Bir asistan kod yazabilir, başkasının yazdığı kodu açıklayabilir ve hataları bulabilir." },
+        { "en": "We describe what we want in plain English, and the assistant writes a first version.", "tr": "Ne istediğimizi sade bir İngilizceyle anlatıyoruz ve asistan ilk sürümü yazıyor." },
+        { "en": "Then our engineers review the code and test it carefully.", "tr": "Sonra mühendislerimiz kodu inceleyip dikkatle test ediyor." },
+        { "en": "This saves a lot of time: a task that used to take a week now takes a day or two.", "tr": "Bu çok zaman kazandırıyor: Eskiden bir hafta süren bir iş artık bir iki gün sürüyor." },
+        { "en": "However, AI can write code that looks correct but has hidden problems.", "tr": "Ancak yapay zekâ doğru görünen ama gizli sorunları olan kod yazabilir." },
+        { "en": "Our software runs on a medical device, so we can't take any risks.", "tr": "Yazılımımız bir tıbbi cihazda çalışıyor, bu yüzden hiçbir risk alamayız." },
+        { "en": "That's why we never deploy code without a human review and automatic tests.", "tr": "Bu yüzden insan incelemesi ve otomatik testler olmadan asla kodu canlıya almıyoruz." },
+        { "en": "For a small startup with only three engineers, these tools are like having three extra engineers.", "tr": "Yalnızca üç mühendisi olan küçük bir girişim için bu araçlar, üç ekstra mühendis gibi." }
+      ],
+      "vocab": [
+        { "en": "coding assistant", "tr": "kod asistanı", "ex": "AI coding assistants have become a big part of our work.", "def": "an AI tool that helps people write and understand code" },
+        { "en": "find bugs", "tr": "hata bulmak", "ex": "The assistant can find bugs quickly.", "def": "to discover mistakes in computer code" },
+        { "en": "plain English", "tr": "sade İngilizce", "ex": "We describe the task in plain English.", "def": "simple, clear language without technical words" },
+        { "en": "review the code", "tr": "kodu incelemek", "ex": "Our engineers review the code before it goes live.", "def": "to read code carefully to check that it is correct" },
+        { "en": "save time", "tr": "zaman kazandırmak", "ex": "AI tools save us a lot of time.", "def": "to make something take less time" },
+        { "en": "hidden problem", "tr": "gizli sorun", "ex": "The code looked correct but had a hidden problem.", "def": "a problem that is not easy to see" },
+        { "en": "deploy", "tr": "canlıya almak, yayınlamak", "ex": "We never deploy code without tests.", "def": "to put new software into use for real users" },
+        { "en": "take a risk", "tr": "risk almak", "ex": "With a medical device, we can't take any risks.", "def": "to do something that could have a bad result" }
+      ],
+      "grammar": {
+        "title": "Linking words: however, so, that's why",
+        "tr": "'However' zıtlık bildirir (ancak). 'So' ve 'that's why' sonuç bildirir (bu yüzden). Cümleleri birbirine bağlayarak anlatımı daha akıcı yapar.",
+        "examples": ["However, AI can write code that looks correct but has hidden problems.", "Our software runs on a medical device, so we can't take any risks.", "That's why we never deploy code without a human review."]
+      },
+      "questions": [
+        { "q": "What has changed in the last two years?", "options": ["The team has hired more engineers", "AI coding assistants have become a big part of their work", "They have stopped testing"], "a": 1 },
+        { "q": "What happens after the assistant writes the first version?", "options": ["The engineers review and test it", "It goes straight to customers", "The investors check it"], "a": 0 },
+        { "q": "Why can't the team take any risks?", "options": ["Their engineers are new", "They have no money", "Their software runs on a medical device"], "a": 2 },
+        { "q": "How do the tools help a small startup?", "options": ["They replace all the engineers", "They make the device cheaper", "They find new customers", "They're like having extra engineers"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "We describe what we want in ___ English.", "a": "plain", "hint": "sade" },
+        { "s": "Our engineers ___ the code and test it carefully.", "a": "review", "hint": "incelemek" },
+        { "s": "We never ___ code without a human review and automatic tests.", "a": "deploy", "hint": "canlıya almak" }
+      ],
+      "order": [
+        { "a": "An assistant can write code and find bugs." },
+        { "a": "This saves a lot of time." }
+      ],
+      "translate": [
+        { "tr": "Bu çok zaman kazandırıyor.", "en": "This saves a lot of time.", "keys": ["saves", "a lot of time"] },
+        { "tr": "Yapay zekâ kod asistanları işimizin büyük bir parçası haline geldi.", "en": "AI coding assistants have become a big part of our work.", "keys": ["have become", "big part"] }
+      ],
+      "roleplay": {
+        "persona": "Tech investor",
+        "personaTr": "Teknoloji yatırımcısı",
+        "scene": "Bir yatırımcı küçük ekibinizin nasıl bu kadar hızlı ürün çıkardığını ve bunun güvenli olup olmadığını soruyor.",
+        "turns": [
+          { "ai": "Your team is very small. How do you build software so fast?", "aiTr": "Ekibiniz çok küçük. Yazılımı nasıl bu kadar hızlı geliştiriyorsunuz?", "hint": "We use AI coding assistants. We describe what we want in plain English, and the assistant writes a first version.", "keys": ["coding assistants", "plain English", "first version"] },
+          { "ai": "Is AI code safe? Can you trust it?", "aiTr": "Yapay zekânın yazdığı kod güvenli mi? Ona güvenebilir misiniz?", "hint": "Not always. It can look correct but have hidden problems, so our engineers review it and we run automatic tests.", "keys": ["hidden problems", "review", "tests"] },
+          { "ai": "Why are you so careful?", "aiTr": "Neden bu kadar dikkatlisiniz?", "hint": "Because our software runs on a medical device, so we can't take any risks.", "keys": ["medical device", "risks"] },
+          { "ai": "How much time does it really save?", "aiTr": "Gerçekte ne kadar zaman kazandırıyor?", "hint": "A lot. A task that used to take a week now takes a day or two.", "keys": ["used to take a week", "a day or two", "a lot"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir yatırımcıyla yaptığın konuşmayı aktararak yapay zekâ ile yazılan kodu nasıl denetlediğinizi anlatıyorsun.",
+      "text": [
+        { "en": "When we started, every line of our code was written by hand by our three engineers.", "tr": "Başladığımızda kodumuzun her satırı üç mühendisimiz tarafından elle yazılıyordu." },
+        { "en": "These days, a large share of our first drafts is generated by AI coding assistants.", "tr": "Bugünlerde ilk taslaklarımızın büyük bir kısmı yapay zekâ kod asistanları tarafından üretiliyor." },
+        { "en": "An engineer describes the task in plain English, and the assistant proposes an implementation.", "tr": "Bir mühendis görevi sade bir İngilizceyle anlatıyor, asistan da bir uygulama öneriyor." },
+        { "en": "It's also surprisingly good at explaining unfamiliar code and spotting bugs that a tired human might miss.", "tr": "Ayrıca yabancı kodu açıklamakta ve yorgun bir insanın gözden kaçırabileceği hataları fark etmekte şaşırtıcı derecede iyi." },
+        { "en": "As a result, features that used to take a week are often finished in a day or two.", "tr": "Sonuç olarak eskiden bir hafta süren özellikler çoğu zaman bir iki günde bitiyor." },
+        { "en": "Last month, an investor asked me whether we trusted code that a machine had written.", "tr": "Geçen ay bir yatırımcı bana bir makinenin yazdığı koda güvenip güvenmediğimizi sordu." },
+        { "en": "I told her that we didn't trust it blindly, because AI code can look correct and still hide subtle problems.", "tr": "Ona körü körüne güvenmediğimizi söyledim, çünkü yapay zekâ kodu doğru görünüp yine de ince sorunlar barındırabilir." },
+        { "en": "Since our software runs on a medical device, every change is reviewed by a human and checked by automated tests before it's deployed.", "tr": "Yazılımımız bir tıbbi cihazda çalıştığı için her değişiklik canlıya alınmadan önce bir insan tarafından incelenip otomatik testlerle kontrol ediliyor." },
+        { "en": "Our lead engineer once told me that the assistant had suggested a fix that would have broken the audiogram calculation.", "tr": "Baş mühendisimiz bir keresinde asistanın, odyogram hesaplamasını bozacak bir düzeltme önerdiğini anlatmıştı." },
+        { "en": "It was caught in review, which is exactly why we never skip that step.", "tr": "Hata incelemede yakalandı; o adımı asla atlamamamızın sebebi de tam olarak bu." },
+        { "en": "I'd say these tools are like having three extra engineers, which is a huge difference for a six-person startup.", "tr": "Bence bu araçlar üç ekstra mühendis gibi; altı kişilik bir girişim için bu çok büyük bir fark." }
+      ],
+      "vocab": [
+        { "en": "first draft", "tr": "ilk taslak", "ex": "The assistant writes most of our first drafts.", "def": "the first version of something, which will be improved later" },
+        { "en": "generate", "tr": "üretmek", "ex": "Much of our code is generated by AI.", "def": "to produce or create something" },
+        { "en": "propose an implementation", "tr": "bir uygulama önermek", "ex": "The assistant proposes an implementation in seconds.", "def": "to suggest a way of building a feature in code" },
+        { "en": "spot a bug", "tr": "bir hatayı fark etmek", "ex": "It's good at spotting bugs that humans miss.", "def": "to notice an error in code" },
+        { "en": "trust something blindly", "tr": "bir şeye körü körüne güvenmek", "ex": "We don't trust AI code blindly.", "def": "to trust something without checking it" },
+        { "en": "subtle", "tr": "ince, fark edilmesi zor", "ex": "The code had a subtle problem.", "def": "small and difficult to notice" },
+        { "en": "automated tests", "tr": "otomatik testler", "ex": "Every change is checked by automated tests.", "def": "programs that check code automatically" },
+        { "en": "deploy", "tr": "canlıya almak", "ex": "Nothing is deployed without a review.", "def": "to release software so that people can use it" },
+        { "en": "skip a step", "tr": "bir adımı atlamak", "ex": "We never skip the review step.", "def": "to leave out one part of a process" }
+      ],
+      "grammar": {
+        "title": "Reported speech: told / asked",
+        "tr": "Birinin söylediğini aktarırken zaman genellikle bir adım geriye kayar: trust → trusted, has written → had written. Soru aktarırken 'whether' ya da 'if' kullanılır ve soru düzeni bozulur.",
+        "examples": ["An investor asked me whether we trusted code that a machine had written.", "I told her that we didn't trust it blindly.", "Our lead engineer told me that the assistant had suggested a fix."]
+      },
+      "questions": [
+        { "q": "Who produces most of the first drafts today?", "options": ["The investors", "AI coding assistants", "External freelancers"], "a": 1 },
+        { "q": "What did the founder tell the investor?", "options": ["That they trust AI code completely", "That they don't use AI at all", "That they don't trust AI code blindly"], "a": 2 },
+        { "q": "Why is every change reviewed and tested?", "options": ["Because the software runs on a medical device", "Because investors require it", "Because the engineers are new"], "a": 0 },
+        { "q": "What does the story about the audiogram calculation suggest?", "options": ["The assistant is useless", "Human review can catch serious errors that AI introduces", "The audiogram calculation is not important", "The engineers made the mistake"], "a": 1 },
+        { "q": "Why does the founder compare the tools to 'three extra engineers'?", "options": ["Because they cost the same as three salaries", "Because they will replace the current engineers", "Because they give a small team much more capacity"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "A large share of our first drafts is ___ by AI coding assistants.", "a": "generated", "hint": "üretilmek" },
+        { "s": "An investor asked me ___ we trusted code that a machine had written.", "a": "whether", "hint": "-ip -mediğini" },
+        { "s": "It was caught in review, which is exactly why we never ___ that step.", "a": "skip", "hint": "atlamak" }
+      ],
+      "order": [
+        { "a": "Every change is reviewed by a human." },
+        { "a": "It was caught in review." }
+      ],
+      "translate": [
+        { "tr": "Bir yatırımcı bana bir makinenin yazdığı koda güvenip güvenmediğimizi sordu.", "en": "An investor asked me whether we trusted code that a machine had written.", "keys": ["asked me whether", "had written"] },
+        { "tr": "Ona körü körüne güvenmediğimizi söyledim.", "en": "I told her that we didn't trust it blindly.", "keys": ["told her", "trust it blindly"] }
+      ],
+      "roleplay": {
+        "persona": "Tech investor",
+        "personaTr": "Teknoloji yatırımcısı",
+        "scene": "Bir teknoloji yatırımcısı, yapay zekâyla yazılan kodun bir tıbbi cihazda ne kadar güvenli olduğunu sorguluyor.",
+        "turns": [
+          { "ai": "I've heard you build most of your software with AI. Is that true?", "aiTr": "Yazılımınızın çoğunu yapay zekâyla geliştirdiğinizi duydum. Doğru mu?", "hint": "Partly. A large share of our first drafts is generated by AI coding assistants, but our engineers review everything.", "keys": ["first drafts", "generated", "review"] },
+          { "ai": "Do you trust code that a machine has written?", "aiTr": "Bir makinenin yazdığı koda güveniyor musunuz?", "hint": "Not blindly. AI code can look correct and still hide subtle problems, so every change is reviewed by a human and checked by automated tests.", "keys": ["blindly", "subtle", "automated tests", "reviewed"] },
+          { "ai": "Has the review process ever actually caught anything?", "aiTr": "İnceleme süreci gerçekten hiç bir şey yakaladı mı?", "hint": "Yes. Our lead engineer told me that the assistant had suggested a fix that would have broken the audiogram calculation.", "keys": ["told me", "audiogram", "broken"] },
+          { "ai": "What would happen if you stopped using these tools?", "aiTr": "Bu araçları kullanmayı bıraksaydınız ne olurdu?", "hint": "If we stopped, we'd probably need three more engineers, which is a lot for a six-person startup.", "keys": ["three more engineers", "six-person", "we'd"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Teknik durum tespiti yapan bir uzmana, yapay zekâ destekli geliştirme sürecinizi mühendislik diliyle ve ayrıntılı olarak anlatıyorsun.",
+      "text": [
+        { "en": "Two years ago, every line of our codebase was written by hand; today, AI coding assistants produce a substantial share of our first drafts.", "tr": "İki yıl önce kod tabanımızın her satırı elle yazılıyordu; bugün ilk taslaklarımızın önemli bir kısmını yapay zekâ kod asistanları üretiyor." },
+        { "en": "Our engineers now spend less time typing and more time specifying, reviewing and testing.", "tr": "Mühendislerimiz artık daha az yazıyor, daha çok tanımlama, inceleme ve test yapıyor." },
+        { "en": "Describing a feature in plain English, an engineer can get a working first pass within minutes rather than hours.", "tr": "Bir mühendis bir özelliği sade İngilizceyle anlatarak, saatler yerine dakikalar içinde çalışan bir ilk taslak elde edebiliyor." },
+        { "en": "The assistants are also remarkably good at explaining legacy code and surfacing bugs that would otherwise slip through.", "tr": "Asistanlar ayrıca eski kodu açıklamakta ve aksi halde gözden kaçacak hataları ortaya çıkarmakta dikkat çekici derecede iyi." },
+        { "en": "The upshot is that tasks which used to take a week routinely ship in a day or two.", "tr": "Sonuç olarak eskiden bir hafta süren işler artık rutin olarak bir iki günde yayına çıkıyor." },
+        { "en": "What makes AI-generated code dangerous, however, is precisely that it looks plausible.", "tr": "Ancak yapay zekânın ürettiği kodu tehlikeli kılan şey, tam da akla yatkın görünmesi." },
+        { "en": "It compiles, it survives a cursory glance, and it can still harbor a subtle logic error that only surfaces in production.", "tr": "Derleniyor, üstünkörü bir bakıştan geçiyor ve yine de ancak canlı ortamda ortaya çıkan ince bir mantık hatası barındırabiliyor." },
+        { "en": "Given that our software runs on a regulated medical device, that's a risk we simply can't afford to take.", "tr": "Yazılımımızın mevzuata tabi bir tıbbi cihazda çalıştığı düşünülürse, bu bizim kesinlikle göze alamayacağımız bir risk." },
+        { "en": "Every change therefore goes through human code review and an automated test suite, and it's documented so that it remains traceable.", "tr": "Bu nedenle her değişiklik insan kod incelemesinden ve otomatik bir test paketinden geçiyor, ayrıca izlenebilir kalması için belgeleniyor." },
+        { "en": "Rarely does a week go by without a reviewer catching something the assistant got confidently wrong.", "tr": "İncelemeyi yapan birinin, asistanın kendinden emin bir şekilde yanlış yaptığı bir şeyi yakalamadığı hafta nadiren geçiyor." },
+        { "en": "Used with that discipline, the tools are a genuine force multiplier for a team of only three engineers.", "tr": "Bu disiplinle kullanıldığında araçlar, yalnızca üç mühendislik bir ekip için gerçek bir güç çarpanı." },
+        { "en": "In effect, they give us the output of three extra engineers without the payroll.", "tr": "Aslında bize maaş bordrosu olmadan üç ekstra mühendisin üretimini sağlıyorlar." }
+      ],
+      "vocab": [
+        { "en": "codebase", "tr": "kod tabanı", "ex": "Our codebase has grown quickly this year.", "def": "all the source code of a software product" },
+        { "en": "first pass", "tr": "ilk deneme, ilk taslak", "ex": "The assistant gives us a working first pass in minutes.", "def": "a first attempt that will be improved later" },
+        { "en": "legacy code", "tr": "eski (miras) kod", "ex": "It's good at explaining legacy code.", "def": "old code that is still used but hard to understand or change" },
+        { "en": "slip through", "tr": "gözden kaçmak", "ex": "Some bugs slip through even careful reviews.", "def": "to get past checks without being noticed" },
+        { "en": "ship", "tr": "yayına almak, teslim etmek", "ex": "Most features now ship in a day or two.", "def": "to release a product or feature to users" },
+        { "en": "plausible", "tr": "akla yatkın, inandırıcı", "ex": "AI-generated code often looks plausible.", "def": "seeming reasonable or likely to be true" },
+        { "en": "cursory", "tr": "üstünkörü", "ex": "A cursory glance is not enough.", "def": "quick and not thorough" },
+        { "en": "harbor", "tr": "barındırmak", "ex": "The code can harbor a subtle logic error.", "def": "to contain something hidden, usually something bad" },
+        { "en": "test suite", "tr": "test paketi", "ex": "Every change runs through our test suite.", "def": "a collection of automated tests that are run together" },
+        { "en": "force multiplier", "tr": "güç çarpanı", "ex": "AI tools are a force multiplier for small teams.", "def": "something that greatly increases what a team can achieve" }
+      ],
+      "grammar": {
+        "title": "Participle clauses",
+        "tr": "'-ing' ya da V3 ile başlayan yan cümleler, iki cümleyi kısa ve resmî biçimde birleştirir: 'Describing a feature…' (anlatarak), 'Used with that discipline…' (kullanıldığında), 'Given that…' (düşünülürse).",
+        "examples": ["Describing a feature in plain English, an engineer can get a working first pass within minutes.", "Used with that discipline, the tools are a genuine force multiplier.", "Given that our software runs on a medical device, that's a risk we can't take."]
+      },
+      "questions": [
+        { "q": "How has the engineers' work changed?", "options": ["They type more code than before", "They spend more time specifying, reviewing and testing", "They no longer test code", "They only fix legacy code"], "a": 1 },
+        { "q": "According to the speaker, what makes AI-generated code dangerous?", "options": ["It is slow to write", "It rarely compiles", "It looks plausible even when it is wrong"], "a": 2 },
+        { "q": "What does 'Rarely does a week go by without a reviewer catching something' imply?", "options": ["Reviews regularly catch AI mistakes", "Reviews are rarely necessary", "The assistant almost never makes mistakes"], "a": 0 },
+        { "q": "What is the speaker's attitude toward AI coding assistants?", "options": ["Uncritical enthusiasm", "Total distrust", "Indifference", "Enthusiastic but disciplined"], "a": 3 },
+        { "q": "Why does every change need to be documented?", "options": ["To impress investors", "So that it remains traceable on a regulated device", "Because the assistants require it"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "AI coding assistants produce a substantial ___ of our first drafts.", "a": "share", "hint": "pay, kısım" },
+        { "s": "___ a feature in plain English, an engineer can get a working first pass within minutes.", "a": "Describing", "hint": "anlatarak" },
+        { "s": "It can still ___ a subtle logic error that only surfaces in production.", "a": "harbor", "hint": "barındırmak" },
+        { "s": "___ with that discipline, the tools are a genuine force multiplier.", "a": "Used", "hint": "kullanıldığında" }
+      ],
+      "order": [
+        { "a": "Every change goes through human code review." },
+        { "a": "That's a risk we simply can't afford to take." }
+      ],
+      "translate": [
+        { "tr": "Eskiden bir hafta süren işler artık rutin olarak bir iki günde yayına çıkıyor.", "en": "Tasks that used to take a week routinely ship in a day or two.", "keys": ["used to take a week", "ship"] },
+        { "tr": "Yapay zekânın ürettiği kodu tehlikeli kılan şey, tam da akla yatkın görünmesi.", "en": "What makes AI-generated code dangerous is precisely that it looks plausible.", "keys": ["what makes", "looks plausible"] }
+      ],
+      "roleplay": {
+        "persona": "Technical due diligence lead",
+        "personaTr": "Teknik durum tespiti sorumlusu",
+        "scene": "Bir yatırım fonunun teknik danışmanı geliştirme sürecinizi ayrıntılı biçimde sorguluyor.",
+        "turns": [
+          { "ai": "How much of your codebase is actually written by AI these days?", "aiTr": "Bugünlerde kod tabanınızın ne kadarı gerçekten yapay zekâ tarafından yazılıyor?", "hint": "A substantial share of our first drafts, but our engineers spend their time specifying, reviewing and testing every change.", "keys": ["first drafts", "reviewing", "substantial share"] },
+          { "ai": "AI-generated code can look perfectly fine and still be wrong. How do you guard against that?", "aiTr": "Yapay zekânın ürettiği kod gayet iyi görünüp yine de yanlış olabilir. Buna karşı nasıl önlem alıyorsunuz?", "hint": "Every change goes through human code review and an automated test suite, and it's documented so that it remains traceable.", "keys": ["code review", "test suite", "traceable"] },
+          { "ai": "Does the review process actually catch things, or is it a formality?", "aiTr": "İnceleme süreci gerçekten bir şeyler yakalıyor mu, yoksa sadece formalite mi?", "hint": "It genuinely catches things. Rarely does a week go by without a reviewer spotting something the assistant got confidently wrong.", "keys": ["rarely does a week", "confidently wrong", "catches"] },
+          { "ai": "Bottom line: what does this mean for your burn rate?", "aiTr": "Kısacası, bu sizin nakit yakma hızınız için ne anlama geliyor?", "hint": "Used with that discipline, the tools give us the output of three extra engineers without the payroll.", "keys": ["three extra engineers", "without the payroll", "output"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Deneyimli ve şüpheci bir CTO'ya, yapay zekâ kod asistanlarına ne kadar ve nasıl güvendiğinizi ölçülü, ironik ve teknik bir dille anlatıyorsun.",
+      "text": [
+        { "en": "Two years ago, our three engineers wrote every line by hand, which in hindsight feels faintly quaint.", "tr": "İki yıl önce üç mühendisimiz her satırı elle yazıyordu; geriye dönüp bakınca bu biraz eski moda geliyor." },
+        { "en": "These days, an AI assistant produces most first drafts, and the craft has shifted from typing code to specifying intent and interrogating the result.", "tr": "Bugünlerde ilk taslakların çoğunu bir yapay zekâ asistanı üretiyor; zanaat da kod yazmaktan, amacı tanımlamaya ve sonucu sorgulamaya kaydı." },
+        { "en": "Give it a well-framed brief in plain English and it will hand back a plausible implementation before you've finished your coffee.", "tr": "Ona sade İngilizceyle iyi kurgulanmış bir görev tanımı verin, daha kahvenizi bitirmeden size akla yatkın bir uygulama sunar." },
+        { "en": "It's equally adept at untangling legacy code and flagging bugs that a bleary-eyed human would sail straight past.", "tr": "Eski kodu çözmekte ve uykusuz bir insanın hiç fark etmeden geçip gideceği hataları işaretlemekte de aynı derecede usta." },
+        { "en": "The net effect is that work which once took a week now tends to land in a day or two.", "tr": "Net etki şu: Eskiden bir hafta süren iş artık genellikle bir iki günde tamamlanıyor." },
+        { "en": "The catch, of course, is that the assistant is at its most dangerous precisely when it sounds most sure of itself.", "tr": "İşin püf noktası elbette, asistanın tam da kendinden en emin göründüğü anda en tehlikeli olması." },
+        { "en": "Its mistakes are rarely the clumsy kind; they're plausible, idiomatic and wrong in ways that only surface under load or at the edges.", "tr": "Hataları nadiren kaba saba olur; akla yatkın, dile uygun ve ancak yük altında ya da uç durumlarda ortaya çıkan şekillerde yanlıştır." },
+        { "en": "On a medical device, 'it seemed to work' is not a defense anyone wants to mount in front of a notified body.", "tr": "Bir tıbbi cihazda 'çalışıyor gibiydi' kimsenin onaylanmış bir kuruluşun önünde öne sürmek isteyeceği bir savunma değil." },
+        { "en": "So nothing reaches the device without human review, a full automated test suite and a paper trail that would satisfy the most pedantic auditor.", "tr": "Bu yüzden hiçbir şey insan incelemesi, eksiksiz bir otomatik test paketi ve en kılı kırk yaran denetçiyi bile tatmin edecek bir belge izi olmadan cihaza ulaşmıyor." },
+        { "en": "If that sounds like it erodes the time savings, it does, but only at the margins.", "tr": "Bu, kazanılan zamanı aşındırıyor gibi geliyorsa, evet aşındırıyor, ama yalnızca çok küçük ölçüde." },
+        { "en": "Weighed against what we'd pay for three more engineers, it's a trade-off I'd make again without a second thought.", "tr": "Üç mühendis daha için ödeyeceğimiz parayla kıyaslandığında, bu ödünleşimi hiç düşünmeden yine yapardım." },
+        { "en": "That said, I'd stop short of calling the tools a replacement for engineers; they're a lever, and a lever is only as good as the hand on it.", "tr": "Yine de bu araçlara mühendislerin yerine geçen şey demem; onlar bir kaldıraç ve bir kaldıraç ancak onu tutan el kadar iyidir." }
+      ],
+      "vocab": [
+        { "en": "in hindsight", "tr": "geriye dönüp bakınca", "ex": "In hindsight, writing everything by hand was slow.", "def": "when you think about the past with what you know now" },
+        { "en": "quaint", "tr": "eski moda, tuhaf biçimde sevimli", "ex": "Writing every line by hand now feels quaint.", "def": "attractively old-fashioned or unusual" },
+        { "en": "interrogate", "tr": "sorgulamak", "ex": "Engineers have to interrogate every result.", "def": "to examine something very closely and critically" },
+        { "en": "adept at", "tr": "...de usta, becerikli", "ex": "The assistant is adept at untangling legacy code.", "def": "skilled at something" },
+        { "en": "sail straight past", "tr": "fark etmeden geçip gitmek", "ex": "A tired reviewer might sail straight past the bug.", "def": "to pass something without noticing it" },
+        { "en": "the catch", "tr": "işin püf noktası, gizli dezavantaj", "ex": "The catch is that it sounds confident when it's wrong.", "def": "a hidden problem or disadvantage" },
+        { "en": "surface", "tr": "ortaya çıkmak", "ex": "Some errors only surface under load.", "def": "to become visible or known" },
+        { "en": "pedantic", "tr": "kılı kırk yaran, aşırı titiz", "ex": "Our paper trail would satisfy the most pedantic auditor.", "def": "too concerned with small details or rules" },
+        { "en": "at the margins", "tr": "çok küçük ölçüde", "ex": "Reviews reduce our time savings only at the margins.", "def": "only slightly, in small ways" },
+        { "en": "stop short of", "tr": "...e kadar gitmemek", "ex": "I'd stop short of calling it a replacement for engineers.", "def": "to almost do something but decide not to" }
+      ],
+      "grammar": {
+        "title": "Measured claims: hedging with precision",
+        "tr": "'tends to', 'at the margins', 'I'd stop short of…' gibi ifadeler iddianı abartmadan, tam olarak ne kadar emin olduğunu gösterir. Teknik dinleyiciler bu dürüstlüğü güven işareti olarak görür.",
+        "examples": ["Work which once took a week now tends to land in a day or two.", "It erodes the time savings, but only at the margins.", "I'd stop short of calling the tools a replacement for engineers."]
+      },
+      "questions": [
+        { "q": "What is the tone of 'in hindsight feels faintly quaint'?", "options": ["Bitter", "Gently self-mocking", "Angry", "Sad and nostalgic"], "a": 1 },
+        { "q": "According to the speaker, when is the assistant most dangerous?", "options": ["When it is slow", "When it refuses to answer", "When it sounds most confident", "When the brief is in English"], "a": 2 },
+        { "q": "What kind of mistakes does the assistant typically make?", "options": ["Plausible errors that only show up in edge cases or under load", "Obvious syntax errors", "Spelling mistakes in comments"], "a": 0 },
+        { "q": "What does the speaker imply by saying 'it seemed to work' is not a defense anyone wants to mount?", "options": ["Notified bodies don't review software", "The team often uses that excuse", "Testing is optional for small startups", "Regulators expect rigorous evidence, not impressions"], "a": 3 },
+        { "q": "Why does the speaker call the tools 'a lever'?", "options": ["They replace engineers entirely", "They amplify skilled engineers but depend on them", "They are cheap to buy", "They are hard to use"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We wrote every line by hand, which in ___ feels faintly quaint.", "a": "hindsight", "hint": "geriye dönüp bakınca (in …)" },
+        { "s": "It's equally ___ at untangling legacy code.", "a": "adept", "hint": "usta" },
+        { "s": "If that sounds like it erodes the time savings, it does, but only at the ___.", "a": "margins", "hint": "çok küçük ölçüde (at the …)" },
+        { "s": "I'd stop ___ of calling the tools a replacement for engineers.", "a": "short", "hint": "...e kadar gitmemek (stop … of)" }
+      ],
+      "order": [
+        { "a": "Nothing reaches the device without human review." },
+        { "a": "A lever is only as good as the hand on it." }
+      ],
+      "translate": [
+        { "tr": "İşin püf noktası, asistanın kendinden en emin göründüğü anda en tehlikeli olması.", "en": "The catch is that the assistant is at its most dangerous when it sounds most sure of itself.", "keys": ["the catch", "most dangerous"] },
+        { "tr": "Hataları nadiren kaba saba olur; akla yatkın ama yanlıştır.", "en": "Its mistakes are rarely clumsy; they're plausible but wrong.", "keys": ["rarely clumsy", "plausible"] },
+        { "tr": "Bu ödünleşimi hiç düşünmeden yine yapardım.", "en": "I'd make that trade-off again without a second thought.", "keys": ["trade-off", "without a second thought"] }
+      ],
+      "roleplay": {
+        "persona": "Seasoned CTO",
+        "personaTr": "Deneyimli CTO (danışman)",
+        "scene": "Deneyimli ve şüpheci bir CTO, danışma kurulu toplantısında yapay zekâya bu kadar dayanmanın akıllıca olup olmadığını sorguluyor.",
+        "turns": [
+          { "ai": "Be straight with me: aren't you just outsourcing your engineering to a chatbot?", "aiTr": "Bana dürüst olun: Mühendisliğinizi bir sohbet robotuna devretmiyor musunuz?", "hint": "Not quite. The assistant produces most first drafts, but the craft has shifted to specifying intent and interrogating the result.", "keys": ["first drafts", "specifying intent", "interrogating"] },
+          { "ai": "In my experience, these tools are confidently wrong more often than people admit.", "aiTr": "Deneyimime göre bu araçlar, insanların kabul ettiğinden daha sık, kendinden emin bir şekilde yanılıyor.", "hint": "I couldn't agree more. The catch is that it's most dangerous when it sounds most sure of itself, and its mistakes tend to be plausible rather than clumsy.", "keys": ["the catch", "plausible", "most dangerous"] },
+          { "ai": "So how do you keep that from ever reaching a medical device?", "aiTr": "Peki bunun bir tıbbi cihaza ulaşmasını nasıl engelliyorsunuz?", "hint": "Nothing reaches the device without human review, a full automated test suite and a paper trail that would satisfy the most pedantic auditor.", "keys": ["human review", "test suite", "paper trail"] },
+          { "ai": "Doesn't all that process eat up the time you supposedly save?", "aiTr": "Bütün bu süreç, güya kazandığınız zamanı yiyip bitirmiyor mu?", "hint": "It does, but only at the margins, and weighed against the cost of three more engineers, I'd make that trade-off again without a second thought.", "keys": ["at the margins", "trade-off", "three more engineers"] }
+        ]
+      }
+    }
+  }
+}

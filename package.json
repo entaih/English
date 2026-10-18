@@ -1,0 +1,20 @@
+{
+  "name": "aihear-english",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Girişimciler için disleksi dostu İngilizce: her ders A1'den C2'ye altı seviyede.",
+  "type": "module",
+  "scripts": {
+    "validate": "node tools/validate.mjs",
+    "build": "node tools/build.mjs",
+    "check": "node tools/validate.mjs && node tools/build.mjs --check",
+    "test": "node tests/e2e.mjs",
+    "icons": "node tools/icons.mjs",
+    "single": "node tools/build-single.mjs dist/aihear-english.html",
+    "serve": "npx --yes http-server -c-1 -p 8080 ."
+  },
+  "devDependencies": {
+    "playwright": "1.56.1"
+  },
+  "engines": { "node": ">=20" }
+}

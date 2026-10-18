@@ -1,0 +1,375 @@
+{
+  "id": "ab-02",
+  "topic": "abroad",
+  "title": "Opening a Bank Account",
+  "titleTr": "Banka Hesabı Açmak",
+  "levels": {
+    "A1": {
+      "intro": "Berlin'de bir bankadasın ve banka memuruyla basit cümlelerle hesap açıyorsun.",
+      "text": [
+        { "who": "Clerk", "en": "Hello, how can I help you?", "tr": "Merhaba, size nasıl yardımcı olabilirim?" },
+        { "who": "Me", "en": "I want to open a bank account, please.", "tr": "Bir banka hesabı açmak istiyorum, lütfen." },
+        { "who": "Clerk", "en": "Do you have your passport and residence permit?", "tr": "Pasaportunuz ve oturma izniniz yanınızda mı?" },
+        { "who": "Me", "en": "Yes, and I have my address registration too.", "tr": "Evet, adres kayıt belgem de var." },
+        { "who": "Clerk", "en": "Good, your debit card comes by post.", "tr": "Güzel; banka kartınız postayla gelir." },
+        { "who": "Clerk", "en": "Your PIN comes in a different letter.", "tr": "Şifreniz ayrı bir mektupla gelir." },
+        { "who": "Me", "en": "Is the account free?", "tr": "Hesap ücretsiz mi?" },
+        { "who": "Clerk", "en": "Yes, if you get €1,000 or more a month.", "tr": "Evet, ayda 1.000 avro veya daha fazla para gelirse." }
+      ],
+      "vocab": [
+        { "en": "bank account", "tr": "banka hesabı", "ex": "I want to open a bank account." },
+        { "en": "residence permit", "tr": "oturma izni", "ex": "Here is my residence permit." },
+        { "en": "debit card", "tr": "banka kartı", "ex": "Your debit card comes by post." },
+        { "en": "by post", "tr": "postayla", "ex": "The card comes by post." },
+        { "en": "PIN", "tr": "kart şifresi", "ex": "Your PIN comes in a different letter." },
+        { "en": "free", "tr": "ücretsiz", "ex": "Is the account free?" }
+      ],
+      "grammar": {
+        "title": "Present simple: it comes, it is",
+        "tr": "Genel gerçekleri ve her zaman olan şeyleri present simple ile anlatırız. He/she/it ile fiile -s ekleriz: come → comes.",
+        "examples": ["Your debit card comes by post.", "Your PIN comes in a different letter.", "I have my passport."]
+      },
+      "questions": [
+        { "q": "What does the speaker want?", "options": ["A new phone", "A bank account", "A flat"], "a": 1 },
+        { "q": "How does the debit card arrive?", "options": ["By post", "By email", "At the bank today"], "a": 0 },
+        { "q": "When is the account free?", "options": ["Always", "Never", "If €1,000 or more comes in a month"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I want to open a bank ___, please.", "a": "account", "hint": "hesap" },
+        { "s": "Your debit card comes by ___.", "a": "post", "hint": "posta" },
+        { "s": "Do you have your passport and residence ___?", "a": "permit", "hint": "izin" }
+      ],
+      "order": [
+        { "a": "I want to open a bank account." },
+        { "a": "Your PIN comes in a different letter." }
+      ],
+      "translate": [
+        { "tr": "Pasaportum ve oturma iznim var.", "en": "I have my passport and residence permit.", "keys": ["passport", "residence permit"] },
+        { "tr": "Hesap ücretsiz mi?", "en": "Is the account free?", "keys": ["account", "free"] }
+      ],
+      "roleplay": {
+        "persona": "Bank clerk",
+        "personaTr": "Banka memuru",
+        "scene": "Berlin'de bir bankadasın ve hesap açmak istiyorsun. Banka memuru sana sorular soruyor.",
+        "turns": [
+          { "ai": "Hello! How can I help you?", "aiTr": "Merhaba! Size nasıl yardımcı olabilirim?", "hint": "Hello, I want to open a bank account, please.", "keys": ["open", "bank account", "account"] },
+          { "ai": "A personal account or a business account?", "aiTr": "Kişisel hesap mı, şirket hesabı mı?", "hint": "A personal account, please.", "keys": ["personal", "personal account"] },
+          { "ai": "Do you have your passport?", "aiTr": "Pasaportunuz yanınızda mı?", "hint": "Yes, here is my passport and my residence permit.", "keys": ["passport", "residence permit", "here is"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Berlin'de bankada hesap açıyorsun; adres kaydı, belgeler, şirket hesabı ve ücretler hakkında konuşuyorsun.",
+      "text": [
+        { "who": "Clerk", "en": "Good morning, how can I help you today?", "tr": "Günaydın, bugün size nasıl yardımcı olabilirim?" },
+        { "who": "Me", "en": "I want to open an account because I moved to Berlin last month.", "tr": "Geçen ay Berlin'e taşındığım için bir hesap açmak istiyorum." },
+        { "who": "Clerk", "en": "Did you register your address at the citizens' office?", "tr": "Adresinizi Bürgeramt'ta (vatandaşlık bürosunda) kaydettirdiniz mi?" },
+        { "who": "Me", "en": "Yes, I registered last week, and here is the certificate.", "tr": "Evet, geçen hafta kaydettirdim; belgesi de burada." },
+        { "who": "Clerk", "en": "Great, I also need your passport and your residence permit.", "tr": "Harika; pasaportunuza ve oturma izninize de ihtiyacım var." },
+        { "who": "Me", "en": "I want a business account for my company too.", "tr": "Şirketim için de bir ticari hesap istiyorum." },
+        { "who": "Clerk", "en": "A business account needs company papers, so we can open it later.", "tr": "Ticari hesap için şirket belgeleri gerekiyor, o yüzden onu daha sonra açabiliriz." },
+        { "who": "Clerk", "en": "Your debit card and PIN are going to arrive in two separate letters.", "tr": "Banka kartınız ve şifreniz iki ayrı mektupla gelecek." },
+        { "who": "Clerk", "en": "It's free if you pay in €1,000 a month, but otherwise it's €5.", "tr": "Ayda 1.000 avro yatırırsanız ücretsiz, aksi takdirde 5 avro." }
+      ],
+      "vocab": [
+        { "en": "register your address", "tr": "adresini kaydettirmek", "ex": "I registered my address last week." },
+        { "en": "citizens' office", "tr": "Bürgeramt, vatandaşlık bürosu", "ex": "I went to the citizens' office on Monday." },
+        { "en": "residence permit", "tr": "oturma izni", "ex": "I need your passport and your residence permit." },
+        { "en": "business account", "tr": "ticari hesap, şirket hesabı", "ex": "I want a business account for my company." },
+        { "en": "separate", "tr": "ayrı", "ex": "The PIN comes in a separate letter." },
+        { "en": "pay in", "tr": "(hesaba) para yatırmak", "ex": "It's free if you pay in €1,000 a month." },
+        { "en": "otherwise", "tr": "aksi takdirde, yoksa", "ex": "Otherwise it costs €5 a month." }
+      ],
+      "grammar": {
+        "title": "Past simple: Did you…? – I registered…",
+        "tr": "Geçmişte bitmiş eylemler için past simple kullanırız; düzenli fiillere -ed ekleriz. Soru sorarken 'Did + özne + fiilin yalın hali' kullanırız.",
+        "examples": ["Did you register your address?", "Yes, I registered last week.", "I moved to Berlin last month."]
+      },
+      "questions": [
+        { "q": "Where did the speaker register their address?", "options": ["At the bank", "At the citizens' office", "At the post office"], "a": 1 },
+        { "q": "Why can't they open the business account today?", "options": ["They need company papers first", "The bank is closing", "It's too expensive"], "a": 0 },
+        { "q": "How do the card and the PIN arrive?", "options": ["Together in one letter", "By email", "In two separate letters"], "a": 2 },
+        { "q": "How much does the account cost if less than €1,000 comes in?", "options": ["Nothing", "€5 a month", "€15 a month"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Did you ___ your address at the citizens' office?", "a": "register", "hint": "kaydettirmek" },
+        { "s": "Your card and PIN are going to arrive in two ___ letters.", "a": "separate", "hint": "ayrı" },
+        { "s": "It's free if you pay in €1,000 a month, but ___ it's €5.", "a": "otherwise", "hint": "aksi takdirde" }
+      ],
+      "order": [
+        { "a": "I registered my address last week." },
+        { "a": "A business account needs company papers." }
+      ],
+      "translate": [
+        { "tr": "Şirketim için bir ticari hesap istiyorum.", "en": "I want a business account for my company.", "keys": ["business account", "my company"] },
+        { "tr": "Adresimi geçen hafta kaydettirdim.", "en": "I registered my address last week.", "keys": ["registered", "address", "last week"] }
+      ],
+      "roleplay": {
+        "persona": "Bank clerk",
+        "personaTr": "Banka memuru",
+        "scene": "Bankadasın. Memur adres kaydını ve internet bankacılığını soruyor.",
+        "turns": [
+          { "ai": "Hello! Are you already a customer with us?", "aiTr": "Merhaba! Zaten bizim müşterimiz misiniz?", "hint": "No, I'm not, but I want to open an account.", "keys": ["open", "account", "no"] },
+          { "ai": "Did you register your address in Berlin?", "aiTr": "Berlin'de adresinizi kaydettirdiniz mi?", "hint": "Yes, I registered last week, and here is the certificate.", "keys": ["registered", "certificate", "yes"] },
+          { "ai": "OK. Do you want to use our banking app?", "aiTr": "Tamam. Bankacılık uygulamamızı kullanmak ister misiniz?", "hint": "Yes, please, because it's easier than going to the bank.", "keys": ["yes", "easier", "app"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Berlin'de bankada kişisel hesap açıyorsun ve şirket hesabıyla farkını, ücretleri ve kartın nasıl geleceğini öğreniyorsun.",
+      "text": [
+        { "who": "Clerk", "en": "Good morning, how can I help?", "tr": "Günaydın, nasıl yardımcı olabilirim?" },
+        { "who": "Me", "en": "I've just moved to Berlin, and I'd like to open a personal account.", "tr": "Berlin'e yeni taşındım ve kişisel bir hesap açmak istiyorum." },
+        { "who": "Clerk", "en": "Of course, but first, have you registered your address with the city yet?", "tr": "Tabii, ama önce şunu sorayım: adresinizi belediyeye kaydettirdiniz mi?" },
+        { "who": "Me", "en": "Yes, I have, and I've brought the registration certificate, my passport and my residence permit.", "tr": "Evet, kaydettirdim; adres kayıt belgemi, pasaportumu ve oturma iznimi getirdim." },
+        { "who": "Clerk", "en": "Perfect, that's everything we need for a personal account.", "tr": "Mükemmel, kişisel hesap için ihtiyacımız olan her şey bu." },
+        { "who": "Me", "en": "I'd also like to open a business account for my company, if that's possible.", "tr": "Mümkünse şirketim için bir ticari hesap da açmak istiyorum." },
+        { "who": "Clerk", "en": "For a business account, you have to show papers from the commercial register, and it costs €15 a month.", "tr": "Ticari hesap için ticaret sicilinden belgeler göstermeniz gerekiyor ve aylık ücreti 15 avro." },
+        { "who": "Me", "en": "The registration isn't finished yet, so I'll come back for that next week.", "tr": "Tescil henüz bitmedi, o yüzden onun için gelecek hafta tekrar geleceğim." },
+        { "who": "Clerk", "en": "Your personal account is free if at least €1,000 comes in each month; otherwise, it's €5.", "tr": "Her ay en az 1.000 avro gelirse kişisel hesabınız ücretsiz; aksi takdirde 5 avro." },
+        { "who": "Clerk", "en": "Your debit card will arrive by post within five working days, and the PIN will follow in a separate letter.", "tr": "Banka kartınız beş iş günü içinde postayla gelecek, şifreniz de ardından ayrı bir mektupla gelecek." }
+      ],
+      "vocab": [
+        { "en": "personal account", "tr": "kişisel hesap", "ex": "I'd like to open a personal account.", "def": "a bank account for your own private money" },
+        { "en": "business account", "tr": "ticari hesap, şirket hesabı", "ex": "My company needs a business account.", "def": "a bank account used by a company" },
+        { "en": "registration certificate", "tr": "adres kayıt belgesi", "ex": "I've brought my registration certificate.", "def": "an official paper that shows where you live" },
+        { "en": "residence permit", "tr": "oturma izni", "ex": "Here is my residence permit.", "def": "an official document that allows you to live in a country" },
+        { "en": "commercial register", "tr": "ticaret sicili", "ex": "Our company isn't in the commercial register yet.", "def": "an official list of the companies in a country" },
+        { "en": "come in", "tr": "(hesaba) gelmek, yatmak", "ex": "If €1,000 comes in each month, the account is free.", "def": "to be paid into an account" },
+        { "en": "working days", "tr": "iş günleri", "ex": "The card arrives within five working days.", "def": "days when offices are open, usually Monday to Friday" },
+        { "en": "follow", "tr": "ardından gelmek", "ex": "The PIN will follow in a separate letter.", "def": "to come after something else" }
+      ],
+      "grammar": {
+        "title": "Present perfect: just, yet, already",
+        "tr": "Şimdiyle bağlantılı geçmiş eylemler için 'have/has + V3' kullanırız. 'Just' yeni olmuş bir şey, soruda 'yet' 'henüz/şimdiye kadar', 'already' ise 'çoktan' anlamındadır.",
+        "examples": ["I've just moved to Berlin.", "Have you registered your address yet?", "I've already brought my passport."]
+      },
+      "questions": [
+        { "q": "What does the clerk ask first?", "options": ["Whether the speaker has registered their address", "How much money they earn", "Where they work"], "a": 0 },
+        { "q": "Why can't the speaker open a business account today?", "options": ["They don't have a residence permit", "The company registration isn't finished", "The bank doesn't offer them"], "a": 1 },
+        { "q": "How much does the business account cost?", "options": ["€5 a month", "Nothing", "€15 a month"], "a": 2 },
+        { "q": "What will arrive after the debit card?", "options": ["A new passport", "The PIN", "The registration certificate"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Have you registered your address with the city ___?", "a": "yet", "hint": "henüz" },
+        { "s": "You have to show papers from the commercial ___.", "a": "register", "hint": "sicil" },
+        { "s": "Your card will arrive within five ___ days.", "a": "working", "hint": "iş (günü)" }
+      ],
+      "order": [
+        { "a": "I've just moved to Berlin." },
+        { "a": "The PIN will follow in a separate letter." }
+      ],
+      "translate": [
+        { "tr": "Adres kayıt belgemi, pasaportumu ve oturma iznimi getirdim.", "en": "I've brought my registration certificate, my passport and my residence permit.", "keys": ["brought", "registration certificate", "residence permit"] },
+        { "tr": "Tescil henüz bitmedi, o yüzden gelecek hafta tekrar geleceğim.", "en": "The registration isn't finished yet, so I'll come back next week.", "keys": ["isn't finished yet", "come back"] }
+      ],
+      "roleplay": {
+        "persona": "Bank clerk",
+        "personaTr": "Banka memuru",
+        "scene": "Bankada sıra sana geldi. Memur sana adres kaydını ve internet bankacılığını soruyor.",
+        "turns": [
+          { "ai": "Good morning! What can I do for you today?", "aiTr": "Günaydın! Bugün sizin için ne yapabilirim?", "hint": "Good morning, I've just moved to Berlin and I'd like to open a personal account.", "keys": ["open", "personal account", "just moved"] },
+          { "ai": "Have you registered your address yet?", "aiTr": "Adresinizi kaydettirdiniz mi?", "hint": "Yes, I have, and here is my registration certificate.", "keys": ["yes, I have", "registration certificate", "registered"] },
+          { "ai": "Would you like to use online banking as well?", "aiTr": "İnternet bankacılığını da kullanmak ister misiniz?", "hint": "Yes, please, so how do I set up the app?", "keys": ["yes", "app", "set up"] },
+          { "ai": "Just download it, and you'll get a temporary password by text message. Anything else?", "aiTr": "Sadece indirin; kısa mesajla geçici bir şifre alacaksınız. Başka bir şey var mı?", "hint": "No, that's all, thank you for your help.", "keys": ["that's all", "thank you", "no"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Berlin'e şirketinin Avrupa ofisini açmak için taşındın; bankada hem kişisel hem ticari hesap için koşulları öğreniyorsun.",
+      "text": [
+        { "who": "Clerk", "en": "Good morning—are you here to open an account?", "tr": "Günaydın, hesap açmak için mi geldiniz?" },
+        { "who": "Me", "en": "Yes, I've recently relocated to Berlin to set up my company's European office, so I'll need both a personal and a business account.", "tr": "Evet, şirketimin Avrupa ofisini kurmak için kısa süre önce Berlin'e taşındım, o yüzden hem kişisel hem de ticari bir hesaba ihtiyacım olacak." },
+        { "who": "Clerk", "en": "Before we do anything, could I check that you've registered your address, since we can't open an account without it?", "tr": "Bir şey yapmadan önce adresinizi kaydettirdiğinizi kontrol edebilir miyim, çünkü o olmadan hesap açamıyoruz." },
+        { "who": "Me", "en": "I have—here's the registration certificate, along with my passport and residence permit.", "tr": "Kaydettirdim; işte adres kayıt belgesi, pasaportum ve oturma iznimle birlikte." },
+        { "who": "Clerk", "en": "That's all we need for the personal account, which is free provided at least €1,000 is paid in each month.", "tr": "Kişisel hesap için ihtiyacımız olan bu kadar; her ay en az 1.000 avro yatırılması şartıyla hesap ücretsiz." },
+        { "who": "Clerk", "en": "If less comes in, a monthly fee of €5 is charged.", "tr": "Daha az para gelirse aylık 5 avro ücret alınır." },
+        { "who": "Me", "en": "And how is the business account different, apart from the price?", "tr": "Peki ticari hesap, fiyatı dışında nasıl farklı?" },
+        { "who": "Clerk", "en": "It's designed for company transactions, so your business money is kept separate from your personal finances, and it costs €15 a month.", "tr": "Şirket işlemleri için tasarlanmış, böylece şirketinizin parası kişisel paranızdan ayrı tutulur; aylık ücreti de 15 avro." },
+        { "who": "Clerk", "en": "However, it can only be opened once your company has been entered in the commercial register.", "tr": "Ancak şirketiniz ticaret siciline kaydedildikten sonra açılabilir." },
+        { "who": "Me", "en": "I was told that would take another week, so I'll book an appointment for then.", "tr": "Bunun bir hafta daha süreceği söylendi, o yüzden o zamana bir randevu alacağım." },
+        { "who": "Clerk", "en": "In the meantime, your debit card will be sent by post, and the PIN will be posted separately for security reasons.", "tr": "Bu arada banka kartınız postayla gönderilecek, şifreniz de güvenlik nedeniyle ayrıca postalanacak." }
+      ],
+      "vocab": [
+        { "en": "relocate", "tr": "(iş için) taşınmak", "ex": "I've recently relocated to Berlin.", "def": "to move to a new place to live or work" },
+        { "en": "provided", "tr": "...şartıyla, ...mesi koşuluyla", "ex": "It's free provided €1,000 is paid in each month.", "def": "only if" },
+        { "en": "be paid in", "tr": "(hesaba) yatırılmak", "ex": "At least €1,000 is paid in each month.", "def": "to be put into a bank account" },
+        { "en": "charge a fee", "tr": "ücret almak", "ex": "A fee of €5 is charged if less comes in.", "def": "to ask someone to pay money for a service" },
+        { "en": "personal finances", "tr": "kişisel mali işler", "ex": "Keep company money separate from your personal finances.", "def": "the money you earn, spend and save for yourself" },
+        { "en": "commercial register", "tr": "ticaret sicili", "ex": "The company has been entered in the commercial register.", "def": "an official list of the companies in a country" },
+        { "en": "book an appointment", "tr": "randevu almak", "ex": "I'll book an appointment for next week.", "def": "to arrange a time to meet someone" },
+        { "en": "in the meantime", "tr": "bu arada", "ex": "In the meantime, your card will be sent by post.", "def": "while you are waiting for something else to happen" },
+        { "en": "for security reasons", "tr": "güvenlik nedeniyle", "ex": "The PIN is posted separately for security reasons.", "def": "in order to keep something safe" }
+      ],
+      "grammar": {
+        "title": "The passive: is paid, will be sent, can be opened",
+        "tr": "Bankalar ve resmi kurumlar, işi kimin yaptığından çok ne olduğunu vurgulamak için edilgen yapıyı sever: be + V3. Zaman ve modal fiil 'be' ile gösterilir.",
+        "examples": ["A monthly fee of €5 is charged.", "Your debit card will be sent by post.", "It can only be opened once your company has been registered."]
+      },
+      "questions": [
+        { "q": "Why does the speaker need two accounts?", "options": ["They're setting up their company's European office", "They have two flats", "Their partner needs one"], "a": 0 },
+        { "q": "What happens if less than €1,000 comes in?", "options": ["The account is closed", "A €5 fee is charged", "The card is cancelled"], "a": 1 },
+        { "q": "Why must the business account wait?", "options": ["The speaker has no passport", "The bank is too busy", "The company isn't in the commercial register yet"], "a": 2 },
+        { "q": "Why is the PIN probably sent separately from the card?", "options": ["So that someone who steals one letter can't use the card", "Because the post is slow", "Because the PIN isn't ready yet"], "a": 0 },
+        { "q": "What can we infer about the speaker's plans for next week?", "options": ["They'll fly back to Turkey", "They'll return to the bank for the business account", "They'll close the personal account"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "It's free provided at least €1,000 is ___ in each month.", "a": "paid", "hint": "yatırılmak" },
+        { "s": "If less comes in, a monthly fee of €5 is ___.", "a": "charged", "hint": "alınır, tahsil edilir" },
+        { "s": "The PIN will be posted separately for security ___.", "a": "reasons", "hint": "nedenler" }
+      ],
+      "order": [
+        { "a": "I'll need both a personal and a business account." },
+        { "a": "The PIN will be posted separately." }
+      ],
+      "translate": [
+        { "tr": "Hesap, şirket ticaret siciline kaydedildikten sonra açılabilir.", "en": "The account can be opened once the company has been entered in the commercial register.", "keys": ["can be opened", "commercial register"] },
+        { "tr": "Bu arada kartınız postayla gönderilecek.", "en": "In the meantime, your card will be sent by post.", "keys": ["in the meantime", "will be sent", "by post"] }
+      ],
+      "roleplay": {
+        "persona": "Bank clerk",
+        "personaTr": "Banka memuru",
+        "scene": "Bankadasın; memur hesap açma sürecini anlatıyor ve sana birkaç soru soruyor.",
+        "turns": [
+          { "ai": "Morning! What brings you in today?", "aiTr": "Günaydın! Bugün sizi buraya ne getirdi?", "hint": "I've just relocated to Berlin, so I'd like to open a personal account.", "keys": ["relocated", "open", "personal account"] },
+          { "ai": "Have you got your registration certificate with you? We can't do anything without it.", "aiTr": "Adres kayıt belgeniz yanınızda mı? O olmadan hiçbir şey yapamıyoruz.", "hint": "Yes, I registered last week, and I've also brought my passport and residence permit.", "keys": ["registered", "brought", "residence permit"] },
+          { "ai": "Would you like online banking? Most of our customers use the app rather than coming in.", "aiTr": "İnternet bankacılığı ister misiniz? Müşterilerimizin çoğu şubeye gelmek yerine uygulamayı kullanıyor.", "hint": "Definitely, I'd much rather do everything on my phone if possible.", "keys": ["definitely", "rather", "on my phone"] },
+          { "ai": "Great, you'll be sent a temporary password by text message, which you change when you first log in. Anything else?", "aiTr": "Harika; kısa mesajla geçici bir şifre gönderilecek, ilk girişte onu değiştiriyorsunuz. Başka bir şey var mı?", "hint": "I think that's everything, but I'll be back next week for the business account.", "keys": ["that's everything", "business account", "be back"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Berlin'de bankadasın; kişisel ve ticari hesap arasındaki farkı, ücretleri ve süreci akıcı ve doğal bir dille konuşuyorsun.",
+      "text": [
+        { "who": "Clerk", "en": "Good morning—I take it you're here about opening an account?", "tr": "Günaydın; anladığım kadarıyla hesap açmak için geldiniz?" },
+        { "who": "Me", "en": "That's right; having just relocated to Berlin to set up my company's European office, I'm after both a personal and a business account.", "tr": "Doğru; şirketimin Avrupa ofisini kurmak için Berlin'e yeni taşındım ve hem kişisel hem ticari bir hesap istiyorum." },
+        { "who": "Clerk", "en": "What we'll need to see first is your registration certificate, as without a registered address our hands are tied.", "tr": "Önce görmemiz gereken şey adres kayıt belgeniz, çünkü kayıtlı bir adres olmadan elimiz kolumuz bağlı." },
+        { "who": "Me", "en": "I sorted that out at the citizens' office last week, so here it is, together with my passport and residence permit.", "tr": "Onu geçen hafta Bürgeramt'ta hallettim; işte burada, pasaportum ve oturma iznimle birlikte." },
+        { "who": "Clerk", "en": "Excellent—that covers the personal account, which comes free of charge as long as at least €1,000 lands in it each month.", "tr": "Mükemmel; bu kişisel hesap için yeterli, her ay en az 1.000 avro yattığı sürece hesap ücretsiz." },
+        { "who": "Clerk", "en": "Should it fall short, there's a modest fee of €5 a month.", "tr": "Bu tutarın altında kalırsa, aylık 5 avroluk makul bir ücret var." },
+        { "who": "Me", "en": "And what exactly sets the business account apart, beyond the price?", "tr": "Peki fiyatı dışında ticari hesabı tam olarak farklı kılan ne?" },
+        { "who": "Clerk", "en": "It's geared towards company transactions and keeps them ring-fenced from your personal finances, though at €15 a month it's noticeably pricier.", "tr": "Şirket işlemlerine yönelik ve onları kişisel paranızdan ayrı tutuyor, ama aylık 15 avroyla belirgin şekilde daha pahalı." },
+        { "who": "Clerk", "en": "Not until your company appears in the commercial register, however, can we open it.", "tr": "Ancak şirketiniz ticaret siciline girmeden onu açamayız." },
+        { "who": "Me", "en": "I'm told that's a matter of days rather than weeks, so I'll pencil in another appointment for next week.", "tr": "Bana bunun haftalar değil günler meselesi olduğu söylendi, o yüzden gelecek hafta için şimdiden bir randevu not edeyim." },
+        { "who": "Clerk", "en": "Meanwhile, your debit card will be posted to you, with the PIN following in a separate letter as a precaution.", "tr": "Bu arada banka kartınız size postalanacak, şifreniz de önlem olarak ayrı bir mektupla ardından gelecek." },
+        { "who": "Me", "en": "Two letters for one card—that's German thoroughness for you.", "tr": "Bir kart için iki mektup; işte tam Alman titizliği." }
+      ],
+      "vocab": [
+        { "en": "I take it", "tr": "anladığım kadarıyla, sanırım", "ex": "I take it you're here about an account?", "def": "used to say you think something is true" },
+        { "en": "be after something", "tr": "bir şey istemek, peşinde olmak", "ex": "I'm after a business account.", "def": "to want or be looking for something" },
+        { "en": "our hands are tied", "tr": "elimiz kolumuz bağlı", "ex": "Without a registered address, our hands are tied.", "def": "we cannot act because of rules or circumstances" },
+        { "en": "free of charge", "tr": "ücretsiz", "ex": "The personal account comes free of charge.", "def": "costing nothing" },
+        { "en": "fall short", "tr": "eksik kalmak, yetmemek", "ex": "If payments fall short, there's a fee.", "def": "to be less than the amount needed" },
+        { "en": "set apart", "tr": "farklı kılmak, ayırt etmek", "ex": "What sets the business account apart?", "def": "to make something different from others" },
+        { "en": "ring-fenced", "tr": "ayrı tutulan, korumaya alınmış", "ex": "Company money is ring-fenced from personal money.", "def": "kept separate and protected for one purpose" },
+        { "en": "pencil in", "tr": "geçici olarak plana yazmak", "ex": "I'll pencil in an appointment for next week.", "def": "to arrange something that may be changed later" },
+        { "en": "as a precaution", "tr": "önlem olarak", "ex": "The PIN is sent separately as a precaution.", "def": "in order to prevent something bad from happening" },
+        { "en": "that's … for you", "tr": "işte tam ...'e özgü", "ex": "Two letters for one card—that's German thoroughness for you.", "def": "used to say something is typical of a person or place" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not until' and 'Should'",
+        "tr": "'Not until' cümle başına gelince ana cümlede yardımcı fiil özneden önce gelir: 'Not until … can we open it.' 'Should it fall short' ise 'If it falls short' demenin resmi halidir.",
+        "examples": ["Not until your company appears in the register can we open it.", "Not until the PIN arrives can you use the card.", "Should it fall short, there's a fee of €5."]
+      },
+      "questions": [
+        { "q": "What does the clerk mean by 'our hands are tied'?", "options": ["The bank is closed", "The bank cannot act without a registered address", "The clerk is too busy"], "a": 1 },
+        { "q": "How does the clerk describe the €5 fee?", "options": ["As modest", "As unfair", "As temporary"], "a": 0 },
+        { "q": "What is implied about the business account?", "options": ["It is cheaper than the personal one", "It can be opened immediately", "It keeps company money separate but costs more"], "a": 2 },
+        { "q": "How confident is the speaker about the commercial register?", "options": ["Fairly confident it will happen within days", "Very worried it will take months", "Unsure whether the company exists"], "a": 0 },
+        { "q": "What is the speaker's attitude in the last line?", "options": ["Angry at the bank", "Gently amused by German thoroughness", "Confused about the PIN"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Without a registered address, our hands are ___.", "a": "tied", "hint": "bağlı" },
+        { "s": "Not until your company appears in the commercial register ___ we open it.", "a": "can", "hint": "devrik yapı: yardımcı fiil önce" },
+        { "s": "I'll ___ in another appointment for next week.", "a": "pencil", "hint": "geçici olarak plana yazmak" },
+        { "s": "The PIN follows in a separate letter as a ___.", "a": "precaution", "hint": "önlem" }
+      ],
+      "order": [
+        { "a": "It's a matter of days rather than weeks." },
+        { "a": "That covers the personal account." }
+      ],
+      "translate": [
+        { "tr": "Onu geçen hafta Bürgeramt'ta hallettim.", "en": "I sorted that out at the citizens' office last week.", "keys": ["sorted that out", "citizens' office"] },
+        { "tr": "Şirketiniz ticaret siciline girmeden hesabı açamayız.", "en": "Not until your company appears in the commercial register can we open the account.", "keys": ["not until", "commercial register", "can we open"] }
+      ],
+      "roleplay": {
+        "persona": "Bank clerk",
+        "personaTr": "Banka memuru",
+        "scene": "Bankadasın. Memur güler yüzlü ve hızlı konuşuyor; sen de rahat ve akıcı cevap veriyorsun.",
+        "turns": [
+          { "ai": "Morning! I take it you're here to open an account—is it personal or business?", "aiTr": "Günaydın! Anladığım kadarıyla hesap açmaya geldiniz; kişisel mi, ticari mi?", "hint": "Both, ideally, but I gather the business account will have to wait until my company is registered.", "keys": ["both", "business account", "registered"] },
+          { "ai": "That's right, I'm afraid. Have you got your registration certificate handy?", "aiTr": "Maalesef doğru. Adres kayıt belgeniz yanınızda mı?", "hint": "I have—I sorted it out at the citizens' office last week, and here's my passport and residence permit too.", "keys": ["sorted it out", "citizens' office", "residence permit"] },
+          { "ai": "Lovely. Do you intend to bank mostly online, or would you rather come into the branch?", "aiTr": "Çok iyi. Bankacılık işlerinizi çoğunlukla internetten mi yapmayı düşünüyorsunuz, yoksa şubeye gelmeyi mi tercih edersiniz?", "hint": "Online, without a doubt—with the hours I keep, branch opening times are rather a luxury.", "keys": ["online", "without a doubt", "app"] },
+          { "ai": "In that case, you'll get a temporary password by text message to log into the app. Is there anything else I can help with?", "aiTr": "O halde uygulamaya girmek için kısa mesajla geçici bir şifre alacaksınız. Yardımcı olabileceğim başka bir şey var mı?", "hint": "That's everything for now, thank you—I'll be back next week once the company is on the register.", "keys": ["that's everything", "be back", "thank you"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Berlin'de bankada hesap açıyorsun; Alman bürokrasisine dair esprili ama kibar yorumlarla tüm detayları akıcı biçimde konuşuyorsun.",
+      "text": [
+        { "who": "Clerk", "en": "Good morning—what can we do for you?", "tr": "Günaydın, sizin için ne yapabiliriz?" },
+        { "who": "Me", "en": "I've recently moved to Berlin to open my company's European office, so I'm hoping to leave today with a personal account and, if the gods are kind, a business one too.", "tr": "Şirketimin Avrupa ofisini açmak için kısa süre önce Berlin'e taşındım; bugün buradan kişisel bir hesapla ve şansım yaver giderse bir de ticari hesapla çıkmayı umuyorum." },
+        { "who": "Clerk", "en": "I'll do what I can, though I'm bound to ask first whether you've registered your address, since without that there's very little I'm able to do.", "tr": "Elimden geleni yaparım, ama önce adresinizi kaydettirip kaydettirmediğinizi sormak zorundayım, çünkü o olmadan yapabileceğim çok az şey var." },
+        { "who": "Me", "en": "I braved the citizens' office last week, so I have the certificate here, along with my passport and residence permit.", "tr": "Geçen hafta cesaretimi toplayıp Bürgeramt'a gittim; belge burada, pasaportum ve oturma iznimle birlikte." },
+        { "who": "Clerk", "en": "Then the personal account is straightforward, and it's free of charge, provided at least €1,000 finds its way in each month.", "tr": "O halde kişisel hesap kolay; her ay en az 1.000 avro hesaba girdiği sürece de ücretsiz." },
+        { "who": "Clerk", "en": "Failing that, we'd charge a nominal €5 a month.", "tr": "O olmazsa aylık sembolik bir 5 avro alırız." },
+        { "who": "Me", "en": "And the business account—is it merely a pricier version of the same thing, or is there more to it?", "tr": "Peki ticari hesap aynı şeyin sadece daha pahalı bir versiyonu mu, yoksa işin içinde başka bir şey de var mı?" },
+        { "who": "Clerk", "en": "It's built for company transactions, which keeps them neatly walled off from your personal finances, and at €15 a month it does come at something of a premium.", "tr": "Şirket işlemleri için tasarlanmış, bu da onları kişisel paranızdan düzgünce ayırıyor; aylık 15 avroyla da biraz daha pahalıya geliyor." },
+        { "who": "Clerk", "en": "The snag, I'm afraid, is that we can't open it until your company has been entered in the commercial register.", "tr": "Korkarım pürüz şu: şirketiniz ticaret siciline kaydedilene kadar onu açamıyoruz." },
+        { "who": "Me", "en": "I'm assured that's imminent, so I'll come back next week, German bureaucracy permitting.", "tr": "Bunun an meselesi olduğu konusunda bana güvence verildi; Alman bürokrasisi izin verirse gelecek hafta tekrar gelirim." },
+        { "who": "Clerk", "en": "In the meantime, your debit card will arrive by post, and the PIN will follow under separate cover, purely as a precaution.", "tr": "Bu arada banka kartınız postayla gelecek, şifreniz de tamamen önlem amacıyla ayrı bir zarfla ardından gelecek." },
+        { "who": "Me", "en": "Two letters for one card—I can see I'll be getting to know the postman rather well.", "tr": "Bir kart için iki mektup; anlaşılan postacıyla epey yakından tanışacağım." }
+      ],
+      "vocab": [
+        { "en": "if the gods are kind", "tr": "şansım yaver giderse", "ex": "I'll leave with both accounts, if the gods are kind.", "def": "if luck is on my side" },
+        { "en": "be bound to", "tr": "...mek zorunda olmak", "ex": "I'm bound to ask about your address.", "def": "to be required or obliged to do something" },
+        { "en": "brave", "tr": "cesaretle göğüs germek", "ex": "I braved the citizens' office last week.", "def": "to face something unpleasant with courage" },
+        { "en": "find its way", "tr": "yolunu bulmak, bir şekilde gelmek", "ex": "At least €1,000 finds its way in each month.", "def": "to arrive somewhere, often gradually" },
+        { "en": "failing that", "tr": "o olmazsa", "ex": "Failing that, we'd charge a small fee.", "def": "if that does not happen" },
+        { "en": "nominal", "tr": "sembolik", "ex": "We charge a nominal fee of €5.", "def": "very small compared with the real value" },
+        { "en": "walled off", "tr": "kesin çizgilerle ayrılmış", "ex": "Company money is walled off from personal funds.", "def": "completely separated from something else" },
+        { "en": "at a premium", "tr": "daha pahalıya, ek ücretle", "ex": "It comes at something of a premium.", "def": "at a higher price than usual" },
+        { "en": "the snag", "tr": "pürüz, sorun", "ex": "The snag is the commercial register.", "def": "a small problem or difficulty" },
+        { "en": "under separate cover", "tr": "ayrı zarfla", "ex": "The PIN will follow under separate cover.", "def": "in a different envelope or letter" }
+      ],
+      "grammar": {
+        "title": "Elegant conditions: provided, failing that, permitting",
+        "tr": "'If' yerine 'provided (that)', 'failing that' ve '… permitting' gibi kalıplar koşulu daha zarif ve ölçülü ifade eder. Resmi konuşmada ve hafif ironide sık kullanılır.",
+        "examples": ["It's free of charge, provided at least €1,000 comes in each month.", "Failing that, we'd charge €5 a month.", "I'll be back next week, German bureaucracy permitting."]
+      },
+      "questions": [
+        { "q": "What does 'if the gods are kind' suggest about the speaker's expectations?", "options": ["They doubt the business account will be easy", "They expect no problems at all", "They are very religious"], "a": 0 },
+        { "q": "How does the clerk describe the €5 fee?", "options": ["Excessive", "Nominal", "Hidden"], "a": 1 },
+        { "q": "What is 'the snag' with the business account?", "options": ["Its high price", "The PIN", "The company isn't in the commercial register yet"], "a": 2 },
+        { "q": "What tone does 'German bureaucracy permitting' have?", "options": ["Openly hostile", "Wryly sceptical", "Completely neutral", "Deeply anxious"], "a": 1 },
+        { "q": "What does the speaker's final remark imply?", "options": ["They expect plenty of post from German institutions", "They dislike the postman", "The card has been lost"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "I ___ the citizens' office last week.", "a": "braved", "hint": "cesaret edip gitmek" },
+        { "s": "___ that, we'd charge a nominal €5 a month.", "a": "Failing", "hint": "o olmazsa" },
+        { "s": "At €15 a month, it does come at something of a ___.", "a": "premium", "hint": "daha yüksek fiyat" },
+        { "s": "The PIN will follow under separate ___.", "a": "cover", "hint": "zarf" }
+      ],
+      "order": [
+        { "a": "The snag is that we can't open it yet." },
+        { "a": "I'll be getting to know the postman rather well." }
+      ],
+      "translate": [
+        { "tr": "Adresinizi kaydettirip kaydettirmediğinizi sormak zorundayım.", "en": "I'm bound to ask whether you've registered your address.", "keys": ["bound to ask", "registered your address"] },
+        { "tr": "Her ay en az 1.000 avro gelmesi şartıyla hesap ücretsiz.", "en": "The account is free, provided at least €1,000 comes in each month.", "keys": ["provided", "comes in"] },
+        { "tr": "Ticari hesap biraz daha pahalıya geliyor.", "en": "The business account comes at something of a premium.", "keys": ["at something of a premium", "business account"] }
+      ],
+      "roleplay": {
+        "persona": "Bank clerk",
+        "personaTr": "Banka memuru",
+        "scene": "Bankadasın. Memur esprili ve rahat biri; sen de ona aynı incelikli tonda cevap veriyorsun.",
+        "turns": [
+          { "ai": "Good morning—personal or business, or are you one of those ambitious souls after both?", "aiTr": "Günaydın; kişisel mi, ticari mi, yoksa ikisinin de peşinde olan o hırslı insanlardan biri misiniz?", "hint": "Guilty as charged—I'd like both, though I gather the business account may have to wait.", "keys": ["guilty as charged", "both", "business account"] },
+          { "ai": "It may, I'm afraid. In the meantime, I'll need proof that you've registered your address.", "aiTr": "Maalesef bekleyebilir. Bu arada adresinizi kaydettirdiğinize dair bir belgeye ihtiyacım olacak.", "hint": "Here's the certificate—I braved the citizens' office last week, and I've brought my passport and residence permit for good measure.", "keys": ["certificate", "braved", "residence permit"] },
+          { "ai": "Splendid. Will you be a branch person or an app person?", "aiTr": "Harika. Şubeci mi olacaksınız, uygulamacı mı?", "hint": "Firmly an app person—my working hours and your opening hours are unlikely ever to overlap.", "keys": ["app person", "opening hours", "app"] },
+          { "ai": "Then you'll receive a temporary password by text to log in, which you'll change at first use. Anything else I can do?", "aiTr": "O halde giriş için kısa mesajla geçici bir şifre alacaksınız, ilk kullanımda onu değiştireceksiniz. Yapabileceğim başka bir şey var mı?", "hint": "Nothing more for now, thank you—I'll be back next week, assuming the commercial register cooperates.", "keys": ["nothing more", "be back", "commercial register"] }
+        ]
+      }
+    }
+  }
+}

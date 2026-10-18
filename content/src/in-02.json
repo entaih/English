@@ -1,0 +1,373 @@
+{
+  "id": "in-02",
+  "topic": "invest",
+  "title": "Explaining Revenue and Business Models",
+  "titleTr": "Gelir ve İş Modellerini Açıklamak",
+  "levels": {
+    "A1": {
+      "intro": "Şirketinin nasıl para kazandığını basit rakamlarla anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Investors often ask: how do you make money?", "tr": "Yatırımcılar sık sık sorar: Nasıl para kazanıyorsunuz?" },
+        { "who": "Me", "en": "We make money in two ways.", "tr": "İki yoldan para kazanıyoruz." },
+        { "who": "Me", "en": "First, we sell the device for 4,000 euros.", "tr": "Birincisi, cihazı 4.000 euroya satıyoruz." },
+        { "who": "Me", "en": "It costs us 1,500 euros to make.", "tr": "Cihazı üretmek bize 1.500 euroya mal oluyor." },
+        { "who": "Me", "en": "Second, each clinic pays 99 euros every month.", "tr": "İkincisi, her klinik her ay 99 euro ödüyor." },
+        { "who": "Me", "en": "This money comes every month, and investors like that.", "tr": "Bu para her ay geliyor ve yatırımcılar bunu seviyor." },
+        { "who": "Me", "en": "Our big costs are salaries, certification and marketing.", "tr": "Büyük maliyetlerimiz maaşlar, sertifikasyon ve pazarlama." },
+        { "who": "Me", "en": "We expect a profit in our third year.", "tr": "Üçüncü yılımızda kâr etmeyi bekliyoruz." }
+      ],
+      "vocab": [
+        { "en": "make money", "tr": "para kazanmak", "ex": "How do you make money?" },
+        { "en": "sell", "tr": "satmak", "ex": "We sell the device for 4,000 euros." },
+        { "en": "cost", "tr": "mal olmak; maliyet", "ex": "It costs us 1,500 euros to make." },
+        { "en": "every month", "tr": "her ay", "ex": "Each clinic pays every month." },
+        { "en": "salary", "tr": "maaş", "ex": "Salaries are a big cost." },
+        { "en": "profit", "tr": "kâr", "ex": "We expect a profit in our third year." }
+      ],
+      "grammar": {
+        "title": "Questions with do / does",
+        "tr": "Geniş zamanda soru sormak için I, you, we, they ile 'do', he, she, it ile 'does' kullanılır. Fiil yalın kalır: 'How do you make money?'",
+        "examples": ["How do you make money?", "How much does the device cost?", "Does each clinic pay every month?"]
+      },
+      "questions": [
+        { "q": "How much is the device?", "options": ["4,000 euros", "1,500 euros", "99 euros"], "a": 0 },
+        { "q": "How much does a clinic pay every month?", "options": ["4,000 euros", "1,500 euros", "99 euros"], "a": 2 },
+        { "q": "When do they expect a profit?", "options": ["In year one", "In year three", "In year ten"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We ___ the device for 4,000 euros.", "a": "sell", "hint": "satıyoruz" },
+        { "s": "Each clinic pays 99 euros every ___.", "a": "month", "hint": "ay" },
+        { "s": "We expect a ___ in our third year.", "a": "profit", "hint": "kâr" }
+      ],
+      "order": [
+        { "a": "We make money in two ways." },
+        { "a": "We expect a profit in our third year." }
+      ],
+      "translate": [
+        { "tr": "Nasıl para kazanıyorsunuz?", "en": "How do you make money?", "keys": ["make money"] },
+        { "tr": "Her klinik her ay ödüyor.", "en": "Each clinic pays every month.", "keys": ["pays", "every month"] }
+      ],
+      "roleplay": {
+        "persona": "Angel investor",
+        "personaTr": "Melek yatırımcı",
+        "scene": "Bir yatırımcı nasıl para kazandığınızı soruyor. Kısa cevaplar ver.",
+        "turns": [
+          { "ai": "How do you make money?", "aiTr": "Nasıl para kazanıyorsunuz?", "hint": "We sell the device, and each clinic pays every month.", "keys": ["sell the device", "every month", "pays"] },
+          { "ai": "How much is the device?", "aiTr": "Cihaz ne kadar?", "hint": "It is 4,000 euros.", "keys": ["4,000", "euros"] },
+          { "ai": "When do you expect a profit?", "aiTr": "Ne zaman kâr bekliyorsunuz?", "hint": "In our third year.", "keys": ["third year", "three"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir yatırımcıya gelir kaynaklarınızı ve maliyetlerinizi anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Investors always ask the same question: how do you make money?", "tr": "Yatırımcılar hep aynı soruyu sorar: Nasıl para kazanıyorsunuz?" },
+        { "who": "Me", "en": "We have two sources of income: the device and the software.", "tr": "İki gelir kaynağımız var: cihaz ve yazılım." },
+        { "who": "Me", "en": "The device sells for 4,000 euros and costs 1,500 to make.", "tr": "Cihaz 4.000 euroya satılıyor ve üretimi 1.500 euroya mal oluyor." },
+        { "who": "Me", "en": "So we keep about 60 percent of every sale.", "tr": "Yani her satışın yaklaşık yüzde 60'ı bize kalıyor." },
+        { "who": "Me", "en": "Clinics also pay 99 euros a month to use our software.", "tr": "Klinikler ayrıca yazılımımızı kullanmak için ayda 99 euro ödüyor." },
+        { "who": "Me", "en": "This money comes in every month, so it's easier to plan.", "tr": "Bu para her ay geliyor, bu yüzden plan yapmak daha kolay." },
+        { "who": "Me", "en": "With 1,000 clinics, that's about 1.2 million euros a year.", "tr": "1.000 klinikle bu, yılda yaklaşık 1,2 milyon euro eder." },
+        { "who": "Me", "en": "Our biggest costs are salaries, certification and marketing.", "tr": "En büyük maliyetlerimiz maaşlar, sertifikasyon ve pazarlama." },
+        { "who": "Me", "en": "We think we're going to make a profit in our third year.", "tr": "Üçüncü yılımızda kâr edeceğimizi düşünüyoruz." }
+      ],
+      "vocab": [
+        { "en": "make money", "tr": "para kazanmak", "ex": "How do you make money?" },
+        { "en": "income", "tr": "gelir", "ex": "We have two sources of income." },
+        { "en": "cost (to make)", "tr": "üretimi ... mal olmak", "ex": "It costs 1,500 euros to make." },
+        { "en": "a month", "tr": "ayda", "ex": "Clinics pay 99 euros a month." },
+        { "en": "come in", "tr": "(para) gelmek", "ex": "This money comes in every month." },
+        { "en": "biggest cost", "tr": "en büyük maliyet", "ex": "Salaries are our biggest cost." },
+        { "en": "make a profit", "tr": "kâr etmek", "ex": "We're going to make a profit in our third year." }
+      ],
+      "grammar": {
+        "title": "Going to: plans and predictions",
+        "tr": "'be going to + fiil' gelecekle ilgili planlar ve elimizdeki bilgilere dayanan tahminler için kullanılır.",
+        "examples": ["We're going to make a profit in our third year.", "We're going to sell more devices next year.", "Are you going to raise money?"]
+      },
+      "questions": [
+        { "q": "How many sources of income are there?", "options": ["One", "Two", "Three"], "a": 1 },
+        { "q": "How much does it cost to make the device?", "options": ["1,500 euros", "4,000 euros", "99 euros"], "a": 0 },
+        { "q": "Why is monthly money good?", "options": ["It is tax-free", "It comes from investors", "It is easier to plan"], "a": 2 },
+        { "q": "When do they think they will make a profit?", "options": ["In the first year", "In the third year", "Never"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We have two sources of ___.", "a": "income", "hint": "gelir" },
+        { "s": "Clinics pay 99 euros a ___ to use our software.", "a": "month", "hint": "ay" },
+        { "s": "Our biggest ___ are salaries, certification and marketing.", "a": "costs", "hint": "maliyetler" }
+      ],
+      "order": [
+        { "a": "We keep about 60 percent of every sale." },
+        { "a": "Clinics pay 99 euros a month." }
+      ],
+      "translate": [
+        { "tr": "İki gelir kaynağımız var.", "en": "We have two sources of income.", "keys": ["two sources", "income"] },
+        { "tr": "Üçüncü yılımızda kâr edeceğiz.", "en": "We're going to make a profit in our third year.", "keys": ["make a profit", "third year"] }
+      ],
+      "roleplay": {
+        "persona": "Angel investor",
+        "personaTr": "Melek yatırımcı",
+        "scene": "Bir melek yatırımcı rakamlarınızı soruyor.",
+        "turns": [
+          { "ai": "So, how do you make money?", "aiTr": "Peki, nasıl para kazanıyorsunuz?", "hint": "We have two sources of income: the device and a monthly software fee.", "keys": ["two sources", "device", "software"] },
+          { "ai": "How much does the device cost to make?", "aiTr": "Cihazın üretim maliyeti ne kadar?", "hint": "It costs 1,500 euros to make, and we sell it for 4,000.", "keys": ["1,500", "4,000", "costs"] },
+          { "ai": "When are you going to make a profit?", "aiTr": "Ne zaman kâr edeceksiniz?", "hint": "We think we're going to make a profit in our third year.", "keys": ["third year", "make a profit"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Gelir, maliyet, kâr marjı ve tekrarlayan gelir kavramlarını kullanarak iş modelini anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Investors always ask the same question: how do you make money?", "tr": "Yatırımcılar hep aynı soruyu sorar: Nasıl para kazanıyorsunuz?" },
+        { "who": "Me", "en": "We have two sources of revenue: the device and the software.", "tr": "İki gelir kaynağımız var: cihaz ve yazılım." },
+        { "who": "Me", "en": "We sell the device for 4,000 euros, and it costs us 1,500 euros to produce.", "tr": "Cihazı 4.000 euroya satıyoruz ve üretmesi bize 1.500 euroya mal oluyor." },
+        { "who": "Me", "en": "That means our gross margin on each device is about 60 percent.", "tr": "Bu, her cihazdaki brüt kâr marjımızın yaklaşık yüzde 60 olduğu anlamına geliyor." },
+        { "who": "Me", "en": "On top of that, every clinic pays a software fee of 99 euros a month.", "tr": "Bunun yanında her klinik ayda 99 euro yazılım ücreti ödüyor." },
+        { "who": "Me", "en": "This is recurring revenue, and investors love it because it comes in every month.", "tr": "Bu tekrarlayan gelir ve yatırımcılar buna bayılır, çünkü her ay düzenli olarak gelir." },
+        { "who": "Me", "en": "If we reach 1,000 clinics, the software alone will bring in about 1.2 million euros a year.", "tr": "1.000 kliniğe ulaşırsak yalnızca yazılım yılda yaklaşık 1,2 milyon euro getirecek." },
+        { "who": "Me", "en": "So far, we've signed five paying customers, so there's still a long way to go.", "tr": "Şimdiye kadar beş ödeme yapan müşteriyle anlaştık, yani daha gidecek uzun bir yolumuz var." },
+        { "who": "Me", "en": "Our biggest costs are salaries, certification and marketing.", "tr": "En büyük maliyetlerimiz maaşlar, sertifikasyon ve pazarlama." },
+        { "who": "Me", "en": "However, we expect to be profitable in our third year.", "tr": "Yine de üçüncü yılımızda kârlı olmayı bekliyoruz." }
+      ],
+      "vocab": [
+        { "en": "make money", "tr": "para kazanmak", "ex": "How do you make money?", "def": "to earn money from a business" },
+        { "en": "revenue", "tr": "gelir, ciro", "ex": "We have two sources of revenue.", "def": "the money a company receives from sales" },
+        { "en": "cost (to produce)", "tr": "üretim maliyeti", "ex": "It costs us 1,500 euros to produce.", "def": "the money needed to make one product" },
+        { "en": "gross margin", "tr": "brüt kâr marjı", "ex": "The gross margin is about 60 percent.", "def": "the part of the price left after production costs" },
+        { "en": "recurring revenue", "tr": "tekrarlayan gelir", "ex": "Software gives us recurring revenue.", "def": "money that comes in regularly, for example every month" },
+        { "en": "bring in", "tr": "getirmek, kazandırmak", "ex": "The software will bring in 1.2 million euros a year.", "def": "to earn money" },
+        { "en": "a long way to go", "tr": "gidilecek uzun bir yol", "ex": "We still have a long way to go.", "def": "a lot of work still to do" },
+        { "en": "profitable", "tr": "kârlı", "ex": "We expect to be profitable in our third year.", "def": "making more money than you spend" }
+      ],
+      "grammar": {
+        "title": "First conditional: if + present, will",
+        "tr": "Gerçekleşmesi olası bir durumun sonucunu anlatmak için first conditional kullanılır: If + present simple, will + fiil. Yatırımcıya hedefleri ve sonuçlarını göstermek için idealdir.",
+        "examples": ["If we reach 1,000 clinics, the software will bring in 1.2 million euros a year.", "If we sell more devices, our revenue will grow.", "What will happen if certification takes longer?"]
+      },
+      "questions": [
+        { "q": "What are the two sources of revenue?", "options": ["Advertising and grants", "The device and the software", "Training and repairs"], "a": 1 },
+        { "q": "What is the gross margin on the device?", "options": ["About 60 percent", "About 10 percent", "About 90 percent"], "a": 0 },
+        { "q": "Why do investors love recurring revenue?", "options": ["It is very large", "It is tax-free", "It comes in every month"], "a": 2 },
+        { "q": "When do they expect to be profitable?", "options": ["In the first year", "In the third year", "In the tenth year"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We have two sources of ___.", "a": "revenue", "hint": "gelir" },
+        { "s": "This is ___ revenue, and investors love it.", "a": "recurring", "hint": "tekrarlayan" },
+        { "s": "We expect to be ___ in our third year.", "a": "profitable", "hint": "kârlı" }
+      ],
+      "order": [
+        { "a": "Every clinic pays a software fee of 99 euros a month." },
+        { "a": "Our biggest costs are salaries and marketing." }
+      ],
+      "translate": [
+        { "tr": "Nasıl para kazanıyorsunuz?", "en": "How do you make money?", "keys": ["make money"] },
+        { "tr": "En büyük maliyetlerimiz maaşlar ve pazarlama.", "en": "Our biggest costs are salaries and marketing.", "keys": ["biggest costs", "salaries"] }
+      ],
+      "roleplay": {
+        "persona": "Angel investor",
+        "personaTr": "Melek yatırımcı",
+        "scene": "Bir melek yatırımcı rakamları ayrıntılı olarak soruyor.",
+        "turns": [
+          { "ai": "Let's talk numbers. How do you make money?", "aiTr": "Rakamları konuşalım. Nasıl para kazanıyorsunuz?", "hint": "We have two sources of revenue: the device and a monthly software fee.", "keys": ["revenue", "device", "software fee"] },
+          { "ai": "What's your margin on the device?", "aiTr": "Cihazdaki marjınız ne?", "hint": "We sell it for 4,000 euros and it costs 1,500 to produce, so the gross margin is about 60 percent.", "keys": ["gross margin", "60 percent", "costs"] },
+          { "ai": "What happens if you reach 1,000 clinics?", "aiTr": "1.000 kliniğe ulaşırsanız ne olur?", "hint": "If we reach 1,000 clinics, the software alone will bring in about 1.2 million euros a year.", "keys": ["1.2 million", "bring in", "software alone"] },
+          { "ai": "When will you be profitable?", "aiTr": "Ne zaman kârlı olacaksınız?", "hint": "We expect to be profitable in our third year. Our biggest costs are salaries and certification.", "keys": ["profitable", "third year", "costs"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Gelir modelini ve rakamlarını bir yatırımcıya profesyonel bir dille açıklıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Whenever I meet investors, the conversation sooner or later comes down to one question: how does the business actually make money?", "tr": "Yatırımcılarla ne zaman görüşsem, konuşma er ya da geç tek bir soruya geliyor: Bu iş aslında nasıl para kazanıyor?" },
+        { "who": "Me", "en": "Our revenue is generated in two ways: through device sales and through a monthly software subscription.", "tr": "Gelirimiz iki şekilde elde ediliyor: cihaz satışları ve aylık yazılım aboneliği." },
+        { "who": "Me", "en": "Each device is sold for €4,000, while it costs us around €1,500 to produce.", "tr": "Her cihaz 4.000 €'ya satılıyor, üretimi ise bize yaklaşık 1.500 €'ya mal oluyor." },
+        { "who": "Me", "en": "That leaves us with a gross margin of roughly 60 percent, which is healthy for a hardware product.", "tr": "Bu da bize yaklaşık yüzde 60'lık bir brüt kâr marjı bırakıyor; bu, bir donanım ürünü için sağlıklı bir oran." },
+        { "who": "Me", "en": "The second stream is a software fee of €99 a month that every clinic pays to keep using the system.", "tr": "İkinci gelir akışı, her kliniğin sistemi kullanmaya devam etmek için ödediği aylık 99 €'luk yazılım ücreti." },
+        { "who": "Me", "en": "It may look small, but it's recurring revenue, and that's what investors tend to value most.", "tr": "Küçük görünebilir, ama bu tekrarlayan gelir ve yatırımcıların genellikle en çok değer verdiği şey de bu." },
+        { "who": "Me", "en": "If we were working with 1,000 clinics, the subscriptions alone would bring in about €1.2 million a year.", "tr": "1.000 klinikle çalışıyor olsaydık, yalnızca abonelikler yılda yaklaşık 1,2 milyon € getirirdi." },
+        { "who": "Me", "en": "At the moment, we have five paying customers, so most of that growth is still ahead of us.", "tr": "Şu anda beş ödeme yapan müşterimiz var, yani bu büyümenin büyük kısmı hâlâ önümüzde." },
+        { "who": "Me", "en": "Our main costs are salaries, certification and marketing, and certification in particular is expected to be expensive.", "tr": "Ana maliyetlerimiz maaşlar, sertifikasyon ve pazarlama; özellikle sertifikasyonun pahalı olması bekleniyor." },
+        { "who": "Me", "en": "Based on our current plan, we expect to break even and become profitable in our third year.", "tr": "Mevcut planımıza göre üçüncü yılımızda başa baş noktasına ulaşıp kârlı hale gelmeyi bekliyoruz." }
+      ],
+      "vocab": [
+        { "en": "come down to", "tr": "özünde ...e varmak", "ex": "It all comes down to one question.", "def": "to be mainly about one thing" },
+        { "en": "generate revenue", "tr": "gelir elde etmek", "ex": "Our revenue is generated in two ways.", "def": "to produce income" },
+        { "en": "subscription", "tr": "abonelik", "ex": "Clinics pay a monthly software subscription.", "def": "a regular payment to keep using a service" },
+        { "en": "leave someone with", "tr": "birine ... bırakmak", "ex": "That leaves us with a gross margin of 60 percent.", "def": "to result in something remaining" },
+        { "en": "revenue stream", "tr": "gelir akışı", "ex": "The software fee is our second revenue stream.", "def": "one source of income for a business" },
+        { "en": "tend to", "tr": "-me eğiliminde olmak", "ex": "Investors tend to value recurring revenue.", "def": "to usually do something" },
+        { "en": "ahead of us", "tr": "önümüzde", "ex": "Most of our growth is still ahead of us.", "def": "in the future" },
+        { "en": "in particular", "tr": "özellikle", "ex": "Certification in particular is expensive.", "def": "especially" },
+        { "en": "break even", "tr": "başa baş noktasına ulaşmak", "ex": "We expect to break even in our third year.", "def": "to earn exactly as much as you spend" }
+      ],
+      "grammar": {
+        "title": "The passive in business explanations",
+        "tr": "Odak işi kimin yaptığında değil, işin kendisinde olduğunda passive kullanılır (be + V3). Finansal açıklamalarda daha profesyonel ve nesnel bir ton verir.",
+        "examples": ["Our revenue is generated in two ways.", "Each device is sold for €4,000.", "Certification is expected to be expensive."]
+      },
+      "questions": [
+        { "q": "How is the company's revenue generated?", "options": ["Through grants and donations", "Through device sales and a monthly subscription", "Through advertising"], "a": 1 },
+        { "q": "Why does the speaker call a 60% gross margin 'healthy'?", "options": ["It is good for a hardware product", "It is higher than any software company's", "It covers all the salaries"], "a": 0 },
+        { "q": "Why does the speaker say the €99 fee 'may look small'?", "options": ["To admit it is not important", "To complain about low prices", "To point out that its real value is that it recurs"], "a": 2 },
+        { "q": "What would 1,000 clinics bring in from subscriptions alone?", "options": ["About €120,000 a year", "About €1.2 million a year", "About €12 million a year"], "a": 1 },
+        { "q": "What does 'most of that growth is still ahead of us' suggest?", "options": ["The company is still at an early stage", "Growth has already peaked", "Customers are leaving"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "The conversation sooner or later comes ___ to one question.", "a": "down", "hint": "özünde ...e varmak (come down to)" },
+        { "s": "That leaves us with a gross ___ of roughly 60 percent.", "a": "margin", "hint": "marj" },
+        { "s": "We expect to break ___ in our third year.", "a": "even", "hint": "başa baş (break even)" }
+      ],
+      "order": [
+        { "a": "Investors tend to value recurring revenue most." },
+        { "a": "Most of that growth is still ahead of us." }
+      ],
+      "translate": [
+        { "tr": "Gelirimiz iki şekilde elde ediliyor.", "en": "Our revenue is generated in two ways.", "keys": ["revenue is generated", "two ways"] },
+        { "tr": "1.000 klinikle çalışıyor olsaydık, abonelikler yılda 1,2 milyon € getirirdi.", "en": "If we were working with 1,000 clinics, the subscriptions would bring in €1.2 million a year.", "keys": ["if we were working", "would bring in"] }
+      ],
+      "roleplay": {
+        "persona": "Angel investor",
+        "personaTr": "Melek yatırımcı",
+        "scene": "Deneyimli bir melek yatırımcı gelir modelinizi ve rakamlarınızı sorguluyor.",
+        "turns": [
+          { "ai": "Walk me through your revenue model, if you would.", "aiTr": "Gelir modelinizi bana bir anlatır mısınız?", "hint": "Revenue is generated in two ways: device sales and a monthly software subscription.", "keys": ["device sales", "subscription", "two ways"] },
+          { "ai": "And what kind of margin are we talking about on the hardware?", "aiTr": "Donanımda nasıl bir marjdan bahsediyoruz?", "hint": "Each device is sold for €4,000 and costs about €1,500 to produce, which leaves us with roughly 60 percent.", "keys": ["60 percent", "leaves us with", "4,000"] },
+          { "ai": "€99 a month doesn't sound like much, does it?", "aiTr": "Ayda 99 € pek fazla gibi görünmüyor, değil mi?", "hint": "It may look small, but if we had 1,000 clinics, it would bring in about €1.2 million a year.", "keys": ["1.2 million", "would bring in", "may look small"] },
+          { "ai": "When do you expect to stop burning cash?", "aiTr": "Nakit yakmayı ne zaman bırakmayı bekliyorsunuz?", "hint": "We expect to break even and become profitable in our third year.", "keys": ["break even", "third year", "profitable"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Birim ekonomisini ve gelir akışlarını bir VC'ye ikna edici ve akıcı biçimde anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Sooner or later, every investor conversation I have comes down to the same deceptively simple question: how does this business actually make money?", "tr": "Er ya da geç, yaptığım her yatırımcı görüşmesi göründüğünden daha zor olan aynı soruya varıyor: Bu iş aslında nasıl para kazanıyor?" },
+        { "who": "Me", "en": "The short answer is that we have two revenue streams, and they do very different jobs.", "tr": "Kısa cevap şu: iki gelir akışımız var ve bunlar çok farklı işlevler görüyor." },
+        { "who": "Me", "en": "The first is the device itself, which we sell for €4,000 and which costs us around €1,500 to build.", "tr": "Birincisi cihazın kendisi; onu 4.000 €'ya satıyoruz ve üretimi bize yaklaşık 1.500 €'ya mal oluyor." },
+        { "who": "Me", "en": "That gives us a gross margin of roughly 60 percent — comfortably healthy by hardware standards.", "tr": "Bu bize yaklaşık yüzde 60'lık bir brüt marj sağlıyor — donanım standartlarına göre rahatlıkla sağlıklı bir oran." },
+        { "who": "Me", "en": "What really interests investors, though, is the second stream: a €99 monthly software fee paid by every clinic.", "tr": "Yine de yatırımcıları asıl ilgilendiren ikinci akış: her kliniğin ödediği aylık 99 €'luk yazılım ücreti." },
+        { "who": "Me", "en": "Modest as it looks, that fee is recurring, predictable and sticky, which is precisely what makes the business fundable.", "tr": "Göründüğü kadar mütevazı olsa da bu ücret düzenli, öngörülebilir ve kalıcı; işi yatırım alabilir kılan da tam olarak bu." },
+        { "who": "Me", "en": "Scale it to 1,000 clinics, and the subscriptions alone would generate roughly €1.2 million a year.", "tr": "Bunu 1.000 kliniğe ölçeklendirin, yalnızca abonelikler yılda yaklaşık 1,2 milyon € gelir yaratır." },
+        { "who": "Me", "en": "We're not there yet, of course: we currently have five paying customers, so the bulk of that growth lies ahead.", "tr": "Elbette henüz orada değiliz: şu anda beş ödeme yapan müşterimiz var, yani bu büyümenin büyük bölümü önümüzde." },
+        { "who": "Me", "en": "On the cost side, salaries, certification and marketing account for the lion's share of our spending.", "tr": "Maliyet tarafında harcamalarımızın aslan payını maaşlar, sertifikasyon ve pazarlama oluşturuyor." },
+        { "who": "Me", "en": "Certification in particular is front-loaded, which is why our early years are the most cash-hungry.", "tr": "Özellikle sertifikasyon maliyetleri en başta yoğunlaşıyor; ilk yıllarımızın en çok nakit tüketen dönem olmasının nedeni de bu." },
+        { "who": "Me", "en": "Even so, our model shows us turning profitable in year three.", "tr": "Yine de modelimiz üçüncü yılda kâra geçeceğimizi gösteriyor." }
+      ],
+      "vocab": [
+        { "en": "deceptively simple", "tr": "göründüğünden daha zor", "ex": "It's a deceptively simple question.", "def": "seeming easy but actually more difficult" },
+        { "en": "revenue stream", "tr": "gelir akışı", "ex": "We have two revenue streams.", "def": "one source of income for a business" },
+        { "en": "by ... standards", "tr": "...standartlarına göre", "ex": "Sixty percent is healthy by hardware standards.", "def": "compared with what is normal in that area" },
+        { "en": "sticky", "tr": "kalıcı (müşteri ya da gelir)", "ex": "Software fees are sticky because clinics rarely cancel.", "def": "describing customers or revenue that rarely leave" },
+        { "en": "fundable", "tr": "yatırım alabilir", "ex": "Recurring revenue is what makes the business fundable.", "def": "attractive enough for investors to fund" },
+        { "en": "the bulk of", "tr": "...nin büyük kısmı", "ex": "The bulk of our growth lies ahead.", "def": "most of something" },
+        { "en": "account for", "tr": "...yi oluşturmak", "ex": "Salaries account for much of our spending.", "def": "to form a part or amount of something" },
+        { "en": "the lion's share", "tr": "aslan payı", "ex": "Salaries take the lion's share of our budget.", "def": "the largest part" },
+        { "en": "front-loaded", "tr": "en başta yoğunlaşan (maliyet)", "ex": "Certification costs are front-loaded.", "def": "happening mostly at the beginning" },
+        { "en": "turn profitable", "tr": "kâra geçmek", "ex": "We expect to turn profitable in year three.", "def": "to start making more money than you spend" }
+      ],
+      "grammar": {
+        "title": "Concession with 'as': Modest as it looks…",
+        "tr": "'Sıfat + as + özne + fiil' yapısı 'although' anlamı taşır ama daha akıcı ve etkileyicidir: 'Modest as it looks' = 'Mütevazı görünse de'.",
+        "examples": ["Modest as it looks, that fee is recurring and predictable.", "Small as we are, we already have paying customers.", "Expensive as certification is, it is unavoidable."]
+      },
+      "questions": [
+        { "q": "What does 'deceptively simple' suggest about the investors' question?", "options": ["It can be answered in one word", "It is a polite way to end a meeting", "It sounds easy but requires a careful answer"], "a": 2 },
+        { "q": "According to the speaker, what makes the business fundable?", "options": ["The high device price", "Recurring, predictable and sticky software revenue", "The number of employees"], "a": 1 },
+        { "q": "What is the speaker's attitude to the 60% margin?", "options": ["Satisfied, but not treating it as the main selling point", "Embarrassed by it", "Unsure whether it is accurate"], "a": 0 },
+        { "q": "Why are the early years described as 'cash-hungry'?", "options": ["Salaries will fall later", "Certification costs come mostly at the beginning", "Customers pay late"], "a": 1 },
+        { "q": "What does 'We're not there yet, of course' signal?", "options": ["Frustration with the team", "Doubt about the product", "Honesty about the company's current stage"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Modest ___ it looks, that fee is recurring and predictable.", "a": "as", "hint": "-se de (as)" },
+        { "s": "Salaries, certification and marketing account for the lion's ___ of our spending.", "a": "share", "hint": "pay" },
+        { "s": "Certification in particular is front-___.", "a": "loaded", "hint": "en başta yoğunlaşan" },
+        { "s": "Our model shows us turning ___ in year three.", "a": "profitable", "hint": "kârlı" }
+      ],
+      "order": [
+        { "a": "We have two revenue streams that do very different jobs." },
+        { "a": "The bulk of that growth lies ahead." }
+      ],
+      "translate": [
+        { "tr": "Mütevazı görünse de bu ücret tekrarlayan bir gelir.", "en": "Modest as it looks, that fee is recurring revenue.", "keys": ["modest as it looks", "recurring revenue"] },
+        { "tr": "Harcamalarımızın aslan payını maaşlar oluşturuyor.", "en": "Salaries account for the lion's share of our spending.", "keys": ["account for", "lion's share"] },
+        { "tr": "Üçüncü yılda kâra geçmeyi bekliyoruz.", "en": "We expect to turn profitable in year three.", "keys": ["turn profitable", "year three"] }
+      ],
+      "roleplay": {
+        "persona": "VC associate doing due diligence",
+        "personaTr": "Ön inceleme yapan VC analisti",
+        "scene": "Bir VC analisti finansal modelini ayrıntılı olarak sorguluyor; rakamları akıcı ve güvenle savun.",
+        "turns": [
+          { "ai": "Let's get into the unit economics — what does a single device actually earn you?", "aiTr": "Birim ekonomisine girelim — tek bir cihaz size aslında ne kazandırıyor?", "hint": "We sell it for €4,000 and it costs around €1,500 to build, which gives us a gross margin of roughly 60 percent.", "keys": ["gross margin", "60 percent", "1,500"] },
+          { "ai": "Hardware margins don't usually excite investors — why should they here?", "aiTr": "Donanım marjları genelde yatırımcıları heyecanlandırmaz — burada neden heyecanlandırsın?", "hint": "What really matters is the €99 monthly fee, which is recurring, predictable and sticky.", "keys": ["what really matters", "recurring", "sticky"] },
+          { "ai": "Where is most of the money going right now?", "aiTr": "Şu anda paranın çoğu nereye gidiyor?", "hint": "Salaries, certification and marketing account for the lion's share, and certification is front-loaded.", "keys": ["lion's share", "front-loaded", "account for"] },
+          { "ai": "So when do you see the business turning a profit?", "aiTr": "Peki işin ne zaman kâra geçeceğini öngörüyorsunuz?", "hint": "Our model shows us turning profitable in year three.", "keys": ["year three", "turning profitable", "third year"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "İş modelini deneyimli bir yatırımcıya hem kesin hem ihtiyatlı, ustalıklı bir dille savunuyorsun.",
+      "text": [
+        { "who": "Me", "en": "However the conversation with an investor begins, it invariably circles back to one question: where, exactly, does the money come from?", "tr": "Bir yatırımcıyla konuşma nasıl başlarsa başlasın, kaçınılmaz olarak tek bir soruya döner: Para tam olarak nereden geliyor?" },
+        { "who": "Me", "en": "Our answer has two parts, and the interesting part isn't the one people expect.", "tr": "Cevabımız iki kısımdan oluşuyor ve ilginç olan kısım, insanların beklediği kısım değil." },
+        { "who": "Me", "en": "We sell each device for €4,000 against a production cost of around €1,500, which leaves a gross margin in the region of 60 percent.", "tr": "Her cihazı yaklaşık 1.500 €'luk üretim maliyetine karşılık 4.000 €'ya satıyoruz; bu da yüzde 60 civarında bir brüt marj bırakıyor." },
+        { "who": "Me", "en": "Respectable, certainly, but hardware margins on their own have never made anyone's pulse race.", "tr": "Saygın bir oran, kuşkusuz, ama donanım marjları tek başına hiç kimsenin nabzını hızlandırmamıştır." },
+        { "who": "Me", "en": "Where the model really earns its keep is the €99 a month that every clinic pays for the software.", "tr": "Modelin asıl hakkını verdiği yer, her kliniğin yazılım için ödediği ayda 99 €." },
+        { "who": "Me", "en": "It's a modest sum, admittedly, yet it recurs, it compounds, and once a clinic has built its workflow around us, it has little reason to walk away.", "tr": "Mütevazı bir meblağ, kabul; ama tekrarlanıyor, katlanarak büyüyor ve bir klinik iş akışını bizim etrafımızda kurduktan sonra ayrılmak için pek bir nedeni kalmıyor." },
+        { "who": "Me", "en": "Extrapolate to 1,000 clinics, and the subscriptions alone would come to roughly €1.2 million a year.", "tr": "Bunu 1.000 kliniğe yansıtın, yalnızca abonelikler yılda yaklaşık 1,2 milyon €'ya ulaşır." },
+        { "who": "Me", "en": "That said, with five paying customers today, I'm acutely aware that this is a projection, not a promise.", "tr": "Bununla birlikte, bugün beş ödeme yapan müşterimiz varken bunun bir söz değil, bir projeksiyon olduğunun fazlasıyla farkındayım." },
+        { "who": "Me", "en": "Our costs are, unsurprisingly, dominated by salaries, certification and marketing — the last two being heavily front-loaded.", "tr": "Maliyetlerimizde, şaşırtıcı olmayan şekilde, maaşlar, sertifikasyon ve pazarlama ağır basıyor — son ikisi büyük ölçüde en başta yoğunlaşıyor." },
+        { "who": "Me", "en": "Put differently, the years in which we spend most are precisely the years in which we build the recurring base we'll later live off.", "tr": "Başka bir deyişle, en çok harcadığımız yıllar, ileride geçimimizi sağlayacak tekrarlayan gelir tabanını kurduğumuz yıllarla tam olarak aynı." },
+        { "who": "Me", "en": "On our current numbers, we expect to cross into profitability in year three — no sooner, and, barring regulatory surprises, no later.", "tr": "Mevcut rakamlarımıza göre üçüncü yılda kâra geçmeyi bekliyoruz — daha erken değil ve düzenleyici bir sürpriz olmazsa daha geç de değil." }
+      ],
+      "vocab": [
+        { "en": "circle back to", "tr": "...e geri dönmek", "ex": "Every conversation circles back to revenue.", "def": "to return to a topic discussed before" },
+        { "en": "in the region of", "tr": "civarında, yaklaşık", "ex": "The margin is in the region of 60 percent.", "def": "approximately" },
+        { "en": "make someone's pulse race", "tr": "birinin nabzını hızlandırmak, heyecanlandırmak", "ex": "Hardware margins rarely make anyone's pulse race.", "def": "to excite someone" },
+        { "en": "earn its keep", "tr": "hakkını vermek, maliyetini çıkarmak", "ex": "The software fee is where the model earns its keep.", "def": "to be worth the money or effort spent on it" },
+        { "en": "walk away", "tr": "bırakıp gitmek, vazgeçmek", "ex": "A clinic has little reason to walk away.", "def": "to leave or end a relationship" },
+        { "en": "extrapolate", "tr": "mevcut veriden ileriye yansıtmak", "ex": "Extrapolate to 1,000 clinics, and the numbers look very different.", "def": "to estimate future figures from current ones" },
+        { "en": "acutely aware", "tr": "fazlasıyla farkında", "ex": "I'm acutely aware that this is a projection.", "def": "very conscious of something" },
+        { "en": "projection", "tr": "projeksiyon, öngörü", "ex": "This is a projection, not a promise.", "def": "an estimate of future results" },
+        { "en": "be dominated by", "tr": "...nin ağırlığında olmak", "ex": "Our costs are dominated by salaries.", "def": "to be mostly made up of something" },
+        { "en": "barring", "tr": "...olmazsa, ...hariç", "ex": "Barring regulatory surprises, we'll be profitable in year three.", "def": "unless something happens" }
+      ],
+      "grammar": {
+        "title": "Hedging with precision: in the region of, barring, admittedly",
+        "tr": "C2 düzeyinde rakamları ve tahminleri hem kesin hem ihtiyatlı sunmak gerekir: 'in the region of' yaklaşıklığı, 'barring' bir koşulu, 'admittedly' bir kabulü zarifçe ifade eder.",
+        "examples": ["The gross margin is in the region of 60 percent.", "Barring regulatory surprises, we'll be profitable in year three.", "It's a modest sum, admittedly, yet it recurs."]
+      },
+      "questions": [
+        { "q": "What does the speaker mean by 'the interesting part isn't the one people expect'?", "options": ["The device price is surprisingly high", "The software fee matters more than the hardware sale", "The company has a secret third revenue stream"], "a": 1 },
+        { "q": "How does the speaker regard the 60% hardware margin?", "options": ["Respectable but not exciting", "Exceptional and unique", "Worryingly low"], "a": 0 },
+        { "q": "Why would a clinic have 'little reason to walk away'?", "options": ["It signs a ten-year contract", "It gets the software for free", "Its workflow is built around the system"], "a": 2 },
+        { "q": "What is the tone of 'this is a projection, not a promise'?", "options": ["Defensive and evasive", "Candid and measured", "Overconfident"], "a": 1 },
+        { "q": "What does 'barring regulatory surprises, no later' imply?", "options": ["Certification delays are the main risk to the timeline", "The company has already been certified", "Regulators have promised quick approval"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "It invariably circles ___ to one question.", "a": "back", "hint": "geri dönmek (circle back)" },
+        { "s": "That leaves a gross margin in the ___ of 60 percent.", "a": "region", "hint": "civarında (in the region of)" },
+        { "s": "Where the model really earns its ___ is the monthly fee.", "a": "keep", "hint": "hakkını vermek (earn its keep)" },
+        { "s": "___ regulatory surprises, we'll be profitable in year three.", "a": "Barring", "hint": "...olmazsa" }
+      ],
+      "order": [
+        { "a": "I'm acutely aware that this is a projection." },
+        { "a": "The interesting part isn't the one people expect." }
+      ],
+      "translate": [
+        { "tr": "Bu bir söz değil, bir projeksiyon.", "en": "This is a projection, not a promise.", "keys": ["projection", "not a promise"] },
+        { "tr": "Düzenleyici sürprizler olmazsa üçüncü yılda kâra geçeceğiz.", "en": "Barring regulatory surprises, we'll turn profitable in year three.", "keys": ["barring", "year three"] },
+        { "tr": "Bir kliniğin ayrılmak için pek bir nedeni yok.", "en": "A clinic has little reason to walk away.", "keys": ["little reason", "walk away"] }
+      ],
+      "roleplay": {
+        "persona": "Partner at a health-tech VC fund",
+        "personaTr": "Sağlık teknolojisi odaklı bir VC fonunun ortağı",
+        "scene": "Deneyimli bir yatırımcı iş modelini sorgulayarak zayıf noktaları arıyor; ölçülü, net ve ikna edici ol.",
+        "turns": [
+          { "ai": "Hardware is notoriously hard to scale — why shouldn't I simply pass on this?", "aiTr": "Donanımı ölçeklemek bilindiği üzere zordur — neden bu fırsatı doğrudan geri çevirmeyeyim?", "hint": "Because the hardware isn't where the model earns its keep; it's the €99 a month every clinic pays for the software.", "keys": ["earns its keep", "99 a month", "software"] },
+          { "ai": "Ninety-nine euros is hardly going to move the needle.", "aiTr": "Doksan dokuz euro pek bir fark yaratmaz.", "hint": "It's a modest sum, admittedly, but at 1,000 clinics the subscriptions alone would come to roughly €1.2 million a year.", "keys": ["admittedly", "1.2 million", "subscriptions alone"] },
+          { "ai": "And what's to stop clinics cancelling the moment budgets tighten?", "aiTr": "Bütçeler daraldığı anda kliniklerin aboneliği iptal etmesini ne engelliyor?", "hint": "Once a clinic has built its workflow around us, it has little reason to walk away.", "keys": ["workflow", "walk away", "little reason"] },
+          { "ai": "Be honest with me — how confident are you in year-three profitability?", "aiTr": "Bana dürüst olun — üçüncü yıl kârlılığından ne kadar eminsiniz?", "hint": "Reasonably confident, though it's a projection, not a promise, and it holds barring regulatory surprises.", "keys": ["projection", "barring", "not a promise"] }
+        ]
+      }
+    }
+  }
+}

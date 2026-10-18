@@ -1,0 +1,373 @@
+{
+  "id": "ai-03",
+  "topic": "aihear",
+  "title": "Presenting a Prototype to an Investor",
+  "titleTr": "Bir Yatırımcıya Prototip Sunmak",
+  "levels": {
+    "A1": {
+      "intro": "Bir yatırımcıya prototipini çok basit cümlelerle tanıtıyorsun.",
+      "text": [
+        { "en": "Thank you for your time.", "tr": "Zamanınız için teşekkür ederim." },
+        { "en": "This is our prototype: a hearing test device with AI.", "tr": "Bu bizim prototipimiz: yapay zekâlı bir işitme testi cihazı." },
+        { "en": "This is the third version.", "tr": "Bu, üçüncü versiyon." },
+        { "en": "The first version was a laptop and headphones.", "tr": "İlk versiyon bir dizüstü bilgisayar ve kulaklıktı." },
+        { "en": "We have test results from 200 people.", "tr": "200 kişiden test sonuçlarımız var." },
+        { "en": "The results match an expert in 94% of tests.", "tr": "Sonuçlar, testlerin %94'ünde bir uzmanınkiyle eşleşiyor." },
+        { "en": "We need €500,000 to finish certification.", "tr": "Sertifikasyonu bitirmek için 500.000 €'ya ihtiyacımız var." },
+        { "en": "Then we can sell in Europe.", "tr": "Sonra Avrupa'da satış yapabiliriz." }
+      ],
+      "vocab": [
+        { "en": "prototype", "tr": "prototip", "ex": "This is our prototype." },
+        { "en": "version", "tr": "versiyon, sürüm", "ex": "This is the third version." },
+        { "en": "laptop", "tr": "dizüstü bilgisayar", "ex": "The first version was a laptop." },
+        { "en": "results", "tr": "sonuçlar", "ex": "We have good results." },
+        { "en": "match", "tr": "eşleşmek, uyuşmak", "ex": "The results match an expert." },
+        { "en": "certification", "tr": "sertifikasyon", "ex": "We need money for certification." }
+      ],
+      "grammar": {
+        "title": "To be: is / are / was",
+        "tr": "'To be' fiili: şimdiki zaman için am / is / are, geçmiş için was / were kullanılır. Bir şeyi tanıtırken çok işe yarar: This is our prototype.",
+        "examples": ["This is our prototype.", "This is the third version.", "The first version was a laptop and headphones."]
+      },
+      "questions": [
+        { "q": "Which version is the prototype?", "options": ["The first", "The second", "The third"], "a": 2 },
+        { "q": "What was the first version?", "options": ["A laptop and headphones", "A phone", "A big machine"], "a": 0 },
+        { "q": "How much money do they need?", "options": ["€50,000", "€500,000", "€5 million"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "This is the third ___.", "a": "version", "hint": "versiyon" },
+        { "s": "The first version was a ___ and headphones.", "a": "laptop", "hint": "dizüstü bilgisayar" },
+        { "s": "The results ___ an expert in 94% of tests.", "a": "match", "hint": "eşleşmek" }
+      ],
+      "order": [
+        { "a": "This is the third version." },
+        { "a": "We have test results from 200 people." }
+      ],
+      "translate": [
+        { "tr": "Bu bizim prototipimiz.", "en": "This is our prototype.", "keys": ["our prototype"] },
+        { "tr": "500.000 €'ya ihtiyacımız var.", "en": "We need €500,000.", "keys": ["need", "500"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Londra'da bir sağlık teknolojisi yatırımcısı prototipini görmek istiyor.",
+        "turns": [
+          { "ai": "Hello. What is this?", "aiTr": "Merhaba. Bu ne?", "hint": "This is our prototype. It is a hearing test device with AI.", "keys": ["prototype", "hearing test"] },
+          { "ai": "Is it the first version?", "aiTr": "Bu ilk versiyon mu?", "hint": "No, it is the third version.", "keys": ["third", "version"] },
+          { "ai": "How much money do you need?", "aiTr": "Ne kadar paraya ihtiyacınız var?", "hint": "We need €500,000 to finish certification.", "keys": ["500", "certification"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Prototipini, geçmiş adımları ve sonraki planı basit cümlelerle sunuyorsun.",
+      "text": [
+        { "en": "Thank you for your time; let me show you our prototype.", "tr": "Zamanınız için teşekkürler; size prototipimizi göstereyim." },
+        { "en": "We are building an AI-assisted audiometer that makes hearing tests faster and easier.", "tr": "İşitme testlerini daha hızlı ve daha kolay hâle getiren, yapay zekâ destekli bir odyometre geliştiriyoruz." },
+        { "en": "This is the third version of the prototype.", "tr": "Bu, prototipin üçüncü versiyonu." },
+        { "en": "The first one was just a laptop and a pair of headphones.", "tr": "İlki sadece bir dizüstü bilgisayar ve bir kulaklıktı." },
+        { "en": "The main development work is now finished.", "tr": "Ana geliştirme çalışması artık bitti." },
+        { "en": "Last spring, we published a study with 200 people at two university hospitals.", "tr": "Geçen bahar iki üniversite hastanesinde 200 kişiyle yapılan bir çalışma yayımladık." },
+        { "en": "Our results matched a trained audiologist in 94% of cases.", "tr": "Sonuçlarımız, vakaların %94'ünde eğitimli bir odyologla eşleşti." },
+        { "en": "Now we need to get the CE mark so we can sell in Europe.", "tr": "Şimdi Avrupa'da satış yapabilmek için CE işaretini almamız gerekiyor." },
+        { "en": "We are raising €500,000 to finish certification by the end of next year.", "tr": "Sertifikasyonu gelecek yılın sonuna kadar bitirmek için 500.000 € yatırım topluyoruz." }
+      ],
+      "vocab": [
+        { "en": "prototype", "tr": "prototip", "ex": "Let me show you our prototype." },
+        { "en": "AI-assisted", "tr": "yapay zekâ destekli", "ex": "We are building an AI-assisted audiometer." },
+        { "en": "version", "tr": "versiyon, sürüm", "ex": "This is the third version." },
+        { "en": "a pair of headphones", "tr": "bir kulaklık", "ex": "The first one was a laptop and a pair of headphones." },
+        { "en": "publish a study", "tr": "bir çalışma yayımlamak", "ex": "We published a study last spring." },
+        { "en": "match", "tr": "eşleşmek, uyuşmak", "ex": "Our results matched a trained audiologist." },
+        { "en": "CE mark", "tr": "CE işareti", "ex": "We need the CE mark to sell in Europe." },
+        { "en": "raise money", "tr": "yatırım toplamak", "ex": "We are raising €500,000." }
+      ],
+      "grammar": {
+        "title": "Past simple: what we did",
+        "tr": "Geçmişte bitmiş olaylar için past simple kullanılır: was, published, matched. Sunumda geçmiş başarıları anlatmak için çok kullanışlıdır.",
+        "examples": ["The first one was just a laptop.", "We published a study last spring.", "Our results matched a trained audiologist."]
+      },
+      "questions": [
+        { "q": "Which version of the prototype is this?", "options": ["The first", "The second", "The third"], "a": 2 },
+        { "q": "What was the first prototype?", "options": ["A laptop and headphones", "A phone app", "A big machine"], "a": 0 },
+        { "q": "How many people were in the study?", "options": ["20", "200", "2,000"], "a": 1 },
+        { "q": "Why does the company need the CE mark?", "options": ["To sell in Europe", "To open a factory", "To hire engineers"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Let me show you our ___.", "a": "prototype", "hint": "prototip" },
+        { "s": "The first one was just a laptop and a ___ of headphones.", "a": "pair", "hint": "çift" },
+        { "s": "We are ___ €500,000 to finish certification.", "a": "raising", "hint": "toplamak" }
+      ],
+      "order": [
+        { "a": "This is the third version of the prototype." },
+        { "a": "We need to get the CE mark." }
+      ],
+      "translate": [
+        { "tr": "Sonuçlarımız bir odyologla eşleşti.", "en": "Our results matched an audiologist.", "keys": ["results", "matched"] },
+        { "tr": "Avrupa'da satış yapmak istiyoruz.", "en": "We want to sell in Europe.", "keys": ["sell", "Europe"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Londra'da bir sağlık teknolojisi yatırımcısı prototipini görmek istiyor.",
+        "turns": [
+          { "ai": "Thanks for coming. What are you building?", "aiTr": "Geldiğiniz için teşekkürler. Ne geliştiriyorsunuz?", "hint": "We are building an AI-assisted audiometer that makes hearing tests faster and easier.", "keys": ["audiometer", "faster", "easier"] },
+          { "ai": "Do you have any results from real people?", "aiTr": "Gerçek insanlardan sonuçlarınız var mı?", "hint": "Yes, we tested 200 people, and our results matched an audiologist in 94% of cases.", "keys": ["200", "94", "matched"] },
+          { "ai": "And what do you need the money for?", "aiTr": "Peki paraya ne için ihtiyacınız var?", "hint": "We need to get the CE mark so we can sell in Europe.", "keys": ["CE mark", "sell in Europe", "certification"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Prototip, geliştirme aşamaları ve sonraki adımlar için sunum dili.",
+      "text": [
+        { "en": "Thank you for your time; let me show you our prototype.", "tr": "Zamanınız için teşekkürler; size prototipimizi göstereyim." },
+        { "en": "We are developing an AI-assisted audiometer that aims to make hearing tests more accessible and efficient.", "tr": "İşitme testlerini daha erişilebilir ve verimli hâle getirmeyi amaçlayan, yapay zekâ destekli bir odyometre geliştiriyoruz." },
+        { "en": "Our goal is to simplify the testing process while maintaining reliable results.", "tr": "Amacımız, güvenilir sonuçları korurken test sürecini basitleştirmek." },
+        { "en": "This is the third version of the prototype, and the first one was just a laptop and headphones.", "tr": "Bu prototipin üçüncü versiyonu; ilki sadece bir dizüstü bilgisayar ve kulaklıktı." },
+        { "en": "We have completed the main development phase.", "tr": "Ana geliştirme aşamasını tamamladık." },
+        { "en": "We have also tested the device in a clinical study with 200 participants at two university hospitals.", "tr": "Ayrıca cihazı iki üniversite hastanesinde 200 katılımcıyla yapılan bir klinik çalışmada test ettik." },
+        { "en": "Its results matched those of a trained audiologist in 94% of cases.", "tr": "Sonuçları, vakaların %94'ünde eğitimli bir odyoloğun sonuçlarıyla eşleşti." },
+        { "en": "Now we are focusing on certification and the final product design.", "tr": "Şimdi sertifikasyona ve nihai ürün tasarımına odaklanıyoruz." },
+        { "en": "We are raising €500,000 to get the CE mark and enter the European market.", "tr": "CE işaretini almak ve Avrupa pazarına girmek için 500.000 € yatırım topluyoruz." },
+        { "en": "If everything goes to plan, we should have the CE mark by the end of next year.", "tr": "Her şey plana göre giderse, gelecek yılın sonuna kadar CE işaretini almış olmalıyız." }
+      ],
+      "vocab": [
+        { "en": "aim to", "tr": "amaçlamak", "ex": "We aim to make hearing tests accessible.", "def": "to plan or try to achieve something" },
+        { "en": "simplify", "tr": "basitleştirmek", "ex": "We want to simplify the testing process.", "def": "to make something easier to do or understand" },
+        { "en": "maintain reliable results", "tr": "güvenilir sonuçları korumak", "ex": "We simplify the test while maintaining reliable results.", "def": "to keep results accurate and trustworthy" },
+        { "en": "development phase", "tr": "geliştirme aşaması", "ex": "We have completed the main development phase.", "def": "a stage in building a product" },
+        { "en": "clinical study", "tr": "klinik çalışma", "ex": "We ran a clinical study with 200 participants.", "def": "research that tests a medical product on people" },
+        { "en": "focus on", "tr": "...e odaklanmak", "ex": "Now we are focusing on certification.", "def": "to give most of your attention to something" },
+        { "en": "enter a market", "tr": "bir pazara girmek", "ex": "We want to enter the European market.", "def": "to start selling in a new region or area" },
+        { "en": "go to plan", "tr": "plana göre gitmek", "ex": "If everything goes to plan, we will have the CE mark next year.", "def": "to happen in the way that was intended" }
+      ],
+      "grammar": {
+        "title": "Present perfect: results so far",
+        "tr": "Sonucu bugün önemli olan tamamlanmış işler için present perfect (have + V3) kullanılır: We have completed... Belirli bir geçmiş zaman ya da bitmiş durum için past simple kullanılır: The first one was a laptop.",
+        "examples": ["We have completed the main development phase.", "We have tested the device in a clinical study.", "The first one was just a laptop and headphones."]
+      },
+      "questions": [
+        { "q": "What is the goal of the product?", "options": ["To replace doctors completely", "To simplify the test while keeping reliable results", "To make cheaper headphones"], "a": 1 },
+        { "q": "What was the first prototype?", "options": ["A laptop and headphones", "A phone app", "A big hospital machine"], "a": 0 },
+        { "q": "How often did the device's results match a trained audiologist?", "options": ["In 64% of cases", "In 84% of cases", "In 94% of cases"], "a": 2 },
+        { "q": "What will the €500,000 be used for?", "options": ["Buying a building", "Getting the CE mark and entering the European market", "Opening an office in London"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We have completed the main development ___.", "a": "phase", "hint": "aşama" },
+        { "s": "Now we are focusing ___ certification.", "a": "on", "hint": "focus ___ (odaklanmak)" },
+        { "s": "If everything goes to ___, we should have the CE mark by the end of next year.", "a": "plan", "hint": "plan" }
+      ],
+      "order": [
+        { "a": "Our goal is to simplify the testing process." },
+        { "a": "We have completed the main development phase." }
+      ],
+      "translate": [
+        { "tr": "Amacımız işitme testlerini daha erişilebilir hâle getirmek.", "en": "Our goal is to make hearing tests more accessible.", "keys": ["goal", "accessible"] },
+        { "tr": "Şimdi sertifikasyona odaklanıyoruz.", "en": "Now we are focusing on certification.", "keys": ["focusing on", "certification"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Londra'da bir sağlık teknolojisi yatırımcısı prototipini görmek istiyor.",
+        "turns": [
+          { "ai": "Thanks for coming. What exactly are you developing?", "aiTr": "Geldiğiniz için teşekkürler. Tam olarak ne geliştiriyorsunuz?", "hint": "We are developing an AI-assisted audiometer that aims to make hearing tests more accessible and efficient.", "keys": ["audiometer", "accessible", "efficient"] },
+          { "ai": "What stage are you at right now?", "aiTr": "Şu anda hangi aşamadasınız?", "hint": "We have completed the main development phase, and now we are focusing on certification.", "keys": ["completed", "development phase", "certification"] },
+          { "ai": "Do you have any data from real patients?", "aiTr": "Gerçek hastalardan veriniz var mı?", "hint": "Yes, in a clinical study with 200 participants, our results matched a trained audiologist in 94% of cases.", "keys": ["200", "94", "matched"] },
+          { "ai": "And what will you do with my money?", "aiTr": "Peki paramla ne yapacaksınız?", "hint": "We will use the €500,000 to get the CE mark and enter the European market.", "keys": ["CE mark", "European market", "500"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Prototipini, klinik verileri ve yatırım ihtiyacını bir yatırımcıya profesyonelce sunuyorsun.",
+      "text": [
+        { "en": "Thanks for making the time; I'd like to walk you through the prototype we've brought along today.", "tr": "Zaman ayırdığınız için teşekkürler; bugün yanımızda getirdiğimiz prototipi size adım adım anlatmak istiyorum." },
+        { "en": "In short, it's an AI-assisted audiometer designed to make hearing tests faster and more accessible without compromising on accuracy.", "tr": "Kısacası bu, doğruluktan ödün vermeden işitme testlerini daha hızlı ve erişilebilir kılmak için tasarlanmış, yapay zekâ destekli bir odyometre." },
+        { "en": "What you're looking at is the third version, and the first, believe it or not, was a laptop and a pair of headphones.", "tr": "Gördüğünüz üçüncü versiyon; ilki ise inanır mısınız, bir dizüstü bilgisayar ve bir kulaklıktı." },
+        { "en": "The main development phase has now been completed, so the core technology is essentially in place.", "tr": "Ana geliştirme aşaması artık tamamlandı, yani temel teknoloji büyük ölçüde hazır." },
+        { "en": "The device has also been validated in a blind study at two university hospitals, involving 200 participants aged 18 to 75.", "tr": "Cihaz ayrıca iki üniversite hastanesinde, 18-75 yaş arası 200 katılımcıyla yapılan kör bir çalışmada doğrulandı." },
+        { "en": "Its results matched those of a trained audiologist in 94% of cases, and the remaining 6% differed only slightly.", "tr": "Sonuçları vakaların %94'ünde eğitimli bir odyoloğunkilerle eşleşti; kalan %6 ise yalnızca hafifçe farklıydı." },
+        { "en": "Crucially, none of those differences changed the diagnosis.", "tr": "En önemlisi, bu farkların hiçbiri tanıyı değiştirmedi." },
+        { "en": "The study was published in a medical journal last spring.", "tr": "Çalışma geçen bahar bir tıp dergisinde yayımlandı." },
+        { "en": "Our focus now is on CE certification, which is required for a Class IIa device like ours.", "tr": "Şu anki odağımız, bizimki gibi Sınıf IIa bir cihaz için zorunlu olan CE sertifikasyonu." },
+        { "en": "We're raising €500,000 to get through certification and enter the European market.", "tr": "Sertifikasyonu tamamlamak ve Avrupa pazarına girmek için 500.000 € topluyoruz." },
+        { "en": "If we closed the round this quarter, I'd say the end of next year would be a realistic target for the CE mark.", "tr": "Turu bu çeyrekte kapatabilsek, CE işareti için gelecek yılın sonu bence gerçekçi bir hedef olurdu." }
+      ],
+      "vocab": [
+        { "en": "walk someone through", "tr": "birine adım adım anlatmak", "ex": "Let me walk you through the prototype.", "def": "to explain something to someone step by step" },
+        { "en": "without compromising on", "tr": "...den ödün vermeden", "ex": "We made the test faster without compromising on accuracy.", "def": "without making something worse in order to gain something else" },
+        { "en": "be in place", "tr": "hazır olmak, yerinde olmak", "ex": "The core technology is now in place.", "def": "to be ready and working" },
+        { "en": "blind study", "tr": "kör çalışma", "ex": "The device was tested in a blind study.", "def": "a study in which the people checking results don't know which method produced them" },
+        { "en": "differ slightly", "tr": "hafifçe farklı olmak", "ex": "The remaining 6% differed only slightly.", "def": "to be a little different" },
+        { "en": "be required for", "tr": "...için zorunlu olmak", "ex": "CE certification is required for a Class IIa device.", "def": "to be necessary because of a law or rule" },
+        { "en": "close a round", "tr": "yatırım turunu kapatmak", "ex": "We hope to close the round this quarter.", "def": "to finish raising a planned amount of investment" },
+        { "en": "realistic target", "tr": "gerçekçi hedef", "ex": "The end of next year is a realistic target.", "def": "a goal that can actually be achieved" }
+      ],
+      "grammar": {
+        "title": "Passive: present perfect and past",
+        "tr": "Kimin yaptığından çok sonucun önemli olduğu durumlarda passive kullanılır. Present perfect passive (has been + V3) bugüne uzanan sonuçları anlatır: The device has been validated. Past passive (was + V3) belirli bir geçmiş zamanı anlatır.",
+        "examples": ["The main development phase has now been completed.", "The device has been validated in a blind study.", "The study was published in a medical journal last spring."]
+      },
+      "questions": [
+        { "q": "What was special about the study design?", "options": ["It was a blind comparison with a trained audiologist", "Patients tested themselves at home", "It only included children"], "a": 0 },
+        { "q": "What happened in the 6% of cases that differed?", "options": ["The diagnosis changed", "The differences were slight and didn't change the diagnosis", "The device stopped working"], "a": 1 },
+        { "q": "Why does the company need CE certification?", "options": ["Investors asked for it", "It makes the device cheaper", "It is required for a Class IIa device"], "a": 2 },
+        { "q": "What does 'believe it or not' suggest about the first prototype?", "options": ["It was very expensive", "It was surprisingly basic", "It was kept secret"], "a": 1 },
+        { "q": "What does the speaker imply by 'I'd say' before the timeline?", "options": ["They are completely certain", "They don't know anything about certification", "They want the investor to decide", "They are giving a careful estimate, not a promise"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Let me walk you ___ the prototype.", "a": "through", "hint": "adım adım anlatmak" },
+        { "s": "The device has been ___ in a blind study at two university hospitals.", "a": "validated", "hint": "doğrulandı" },
+        { "s": "CE certification is ___ for a Class IIa device like ours.", "a": "required", "hint": "zorunlu" }
+      ],
+      "order": [
+        { "a": "The study was published in a medical journal." },
+        { "a": "The core technology is essentially in place." }
+      ],
+      "translate": [
+        { "tr": "Cihaz kör bir çalışmada doğrulandı.", "en": "The device was validated in a blind study.", "keys": ["validated", "blind study"] },
+        { "tr": "Ana geliştirme aşaması tamamlandı.", "en": "The main development phase has been completed.", "keys": ["development phase", "completed"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Londra'da deneyimli bir sağlık teknolojisi yatırımcısı prototipini ve verilerini sorguluyor.",
+        "turns": [
+          { "ai": "I've seen a lot of health-tech prototypes this year, so what makes yours different?", "aiTr": "Bu yıl bir sürü sağlık teknolojisi prototipi gördüm; sizinkini farklı kılan ne?", "hint": "It's an AI-assisted audiometer that makes hearing tests faster and more accessible without compromising on accuracy.", "keys": ["without compromising", "accuracy", "accessible"] },
+          { "ai": "Has it actually been tested on patients, or is it still a lab project?", "aiTr": "Gerçekten hastalar üzerinde test edildi mi, yoksa hâlâ bir laboratuvar projesi mi?", "hint": "It has been validated in a blind study with 200 participants, and the results matched a trained audiologist in 94% of cases.", "keys": ["blind study", "200", "94"] },
+          { "ai": "What about the other 6%? That's what a doctor would ask me.", "aiTr": "Peki ya kalan %6? Bir doktor bana bunu sorardı.", "hint": "They differed only slightly, and none of those differences changed the diagnosis.", "keys": ["differed", "slightly", "diagnosis"] },
+          { "ai": "Okay, so what would my money actually be used for?", "aiTr": "Tamam, peki param aslında ne için kullanılacak?", "hint": "The €500,000 would be used to get through CE certification and enter the European market.", "keys": ["CE certification", "European market", "500"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Prototipini, riskleri de açıkça kabul ederek ikna edici ve olgun bir dille sunuyorsun.",
+      "text": [
+        { "en": "Thanks for making the time, and what I'd like to do is show you the device rather than just talk about it.", "tr": "Zaman ayırdığınız için teşekkürler; yapmak istediğim, cihazdan sadece bahsetmek değil, size onu göstermek." },
+        { "en": "This is an AI-assisted audiometer, built to make hearing tests faster and far more accessible without sacrificing clinical accuracy.", "tr": "Bu, klinik doğruluktan ödün vermeden işitme testlerini daha hızlı ve çok daha erişilebilir kılmak için yapılmış, yapay zekâ destekli bir odyometre." },
+        { "en": "What you're holding is our third iteration, and the first was, quite literally, a laptop and a pair of headphones.", "tr": "Elinizde tuttuğunuz üçüncü sürümümüz; ilki ise kelimenin tam anlamıyla bir dizüstü bilgisayar ve bir kulaklıktı." },
+        { "en": "Having completed the core development phase, we're now de-risking the product rather than inventing it.", "tr": "Temel geliştirme aşamasını tamamladığımız için artık ürünü icat etmiyor, risklerini azaltıyoruz." },
+        { "en": "We validated it in a blind study across two university hospitals, comparing it head-to-head with trained audiologists on 200 participants aged 18 to 75.", "tr": "Cihazı iki üniversite hastanesinde, 18-75 yaş arası 200 katılımcı üzerinde eğitimli odyologlarla birebir karşılaştırarak kör bir çalışmada doğruladık." },
+        { "en": "The results matched in 94% of cases, and where they didn't, the discrepancies were minor and never altered the diagnosis.", "tr": "Sonuçlar vakaların %94'ünde eşleşti; eşleşmediği durumlarda ise farklar küçüktü ve tanıyı hiçbir zaman değiştirmedi." },
+        { "en": "Those findings were published in a medical journal last spring.", "tr": "Bu bulgular geçen bahar bir tıp dergisinde yayımlandı." },
+        { "en": "Our main focus now is securing the CE mark, which, as a Class IIa device, we can't sell in Europe without.", "tr": "Şu anki ana odağımız CE işaretini almak; Sınıf IIa bir cihaz olarak bu işaret olmadan Avrupa'da satış yapamayız." },
+        { "en": "We've brought in an experienced regulatory consultant, and the target is certification by the end of next year.", "tr": "Deneyimli bir mevzuat danışmanıyla çalışmaya başladık ve hedefimiz gelecek yılın sonuna kadar sertifika almak." },
+        { "en": "I won't pretend there's no risk, because certification timelines have a habit of slipping, and we've built that into our plans.", "tr": "Risk yokmuş gibi yapmayacağım; sertifikasyon takvimleri kaymaya meyillidir ve bunu planlarımıza dahil ettik." },
+        { "en": "Not only would the €500,000 carry us through certification, but it would also fund our entry into the European market.", "tr": "500.000 € bizi yalnızca sertifikasyonun sonuna kadar taşımakla kalmayacak, Avrupa pazarına girişimizi de finanse edecek." }
+      ],
+      "vocab": [
+        { "en": "iteration", "tr": "sürüm, yineleme", "ex": "This is our third iteration.", "def": "one version of a product in a series of improvements" },
+        { "en": "quite literally", "tr": "kelimenin tam anlamıyla", "ex": "The first prototype was, quite literally, a laptop.", "def": "used to stress that something is exactly true" },
+        { "en": "de-risk", "tr": "riskini azaltmak", "ex": "We are now de-risking the product.", "def": "to reduce the risks of a project or investment" },
+        { "en": "head-to-head", "tr": "birebir (karşılaştırma)", "ex": "We compared the device head-to-head with audiologists.", "def": "in direct comparison or competition" },
+        { "en": "discrepancy", "tr": "tutarsızlık, fark", "ex": "The discrepancies were minor.", "def": "a difference between things that should be the same" },
+        { "en": "alter the diagnosis", "tr": "tanıyı değiştirmek", "ex": "None of the differences altered the diagnosis.", "def": "to change what doctors decide is wrong with a patient" },
+        { "en": "secure the CE mark", "tr": "CE işaretini almak", "ex": "Our focus is securing the CE mark.", "def": "to succeed in getting something after a lot of effort" },
+        { "en": "bring in", "tr": "(dışarıdan) dahil etmek, işe almak", "ex": "We decided to bring in an experienced regulatory consultant.", "def": "to involve someone with special skills" },
+        { "en": "have a habit of", "tr": "...meyilli olmak", "ex": "Certification timelines have a habit of slipping.", "def": "to tend to happen often" },
+        { "en": "carry someone through", "tr": "birini ...sonuna kadar taşımak", "ex": "The round would carry us through certification.", "def": "to provide enough support to reach the end of something" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not only'",
+        "tr": "'Not only' cümle başında olunca yardımcı fiil özneden önce gelir: Not only would the money... Yatırımcı sunumunda iki faydayı güçlü biçimde vurgular. İkinci kısım genelde 'but ... also' ile gelir.",
+        "examples": ["Not only would the €500,000 carry us through certification, but it would also fund our entry into Europe.", "Not only did the results match in 94% of cases, but none of the differences altered the diagnosis.", "Not only is the device faster, but it is also more accessible."]
+      },
+      "questions": [
+        { "q": "What does the speaker mean by 'de-risking the product rather than inventing it'?", "options": ["The technology still needs to be invented", "The core technology works, and now they are reducing the remaining risks", "They are planning to sell the company"], "a": 1 },
+        { "q": "What happened in the cases where the results didn't match?", "options": ["The discrepancies were minor and never altered the diagnosis", "The device missed serious hearing loss", "The audiologists made mistakes"], "a": 0 },
+        { "q": "Why can't the company sell in Europe yet?", "options": ["It has no distributor", "The price is too high", "It doesn't have the CE mark yet"], "a": 2 },
+        { "q": "What is the speaker's attitude to the certification risk?", "options": ["They deny it exists", "They are openly realistic about it", "They blame the consultant"], "a": 1 },
+        { "q": "Why does the speaker say 'quite literally' about the first prototype?", "options": ["To apologise for the old design", "To suggest the laptop is still used", "To make a joke about headphones", "To stress how basic the first version really was"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "What you're holding is our third ___.", "a": "iteration", "hint": "sürüm" },
+        { "s": "The discrepancies were minor and never ___ the diagnosis.", "a": "altered", "hint": "değiştirdi" },
+        { "s": "Certification timelines have a ___ of slipping.", "a": "habit", "hint": "eğilim" },
+        { "s": "Not ___ would the money carry us through certification, but it would also fund our entry into Europe.", "a": "only", "hint": "sadece" }
+      ],
+      "order": [
+        { "a": "The first was quite literally a laptop and headphones." },
+        { "a": "We have brought in an experienced regulatory consultant." }
+      ],
+      "translate": [
+        { "tr": "Farklar küçüktü ve tanıyı hiç değiştirmedi.", "en": "The discrepancies were minor and never altered the diagnosis.", "keys": ["minor", "diagnosis"] },
+        { "tr": "Hedefimiz gelecek yılın sonuna kadar sertifika almak.", "en": "Our target is certification by the end of next year.", "keys": ["certification", "end of next year"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Londra'da seçici bir sağlık teknolojisi yatırımcısı, rakamlara geçmeden önce seni zorlayıcı sorularla sınıyor.",
+        "turns": [
+          { "ai": "Before we get into numbers, convince me this is more than a clever demo.", "aiTr": "Rakamlara geçmeden önce, bunun akıllıca bir demodan fazlası olduğuna beni ikna edin.", "hint": "Fair enough. We validated it in a blind study at two university hospitals, and it matched trained audiologists in 94% of cases.", "keys": ["blind study", "94", "matched"] },
+          { "ai": "And the remaining 6%, should that worry me?", "aiTr": "Peki ya kalan %6; bu beni endişelendirmeli mi?", "hint": "Not really: the discrepancies were minor and never altered the diagnosis, which is what clinicians care about.", "keys": ["discrepancies", "minor", "diagnosis"] },
+          { "ai": "Regulation is where most medtech start-ups come unstuck, so where are you on that?", "aiTr": "Medikal teknoloji girişimlerinin çoğu mevzuatta çuvallar; siz bu konuda neredesiniz?", "hint": "We've brought in an experienced regulatory consultant and we're targeting the CE mark by the end of next year, though timelines do have a habit of slipping.", "keys": ["regulatory consultant", "CE mark", "habit of slipping"] },
+          { "ai": "So what exactly does my €500,000 buy?", "aiTr": "Peki 500.000 €'m tam olarak neyi satın alıyor?", "hint": "Not only would it carry us through certification, but it would also fund our entry into the European market.", "keys": ["carry us through", "certification", "European market"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Prototipini, deneyimli bir yatırımcıya özgüvenli, esprili ve riskler konusunda açık sözlü bir dille sunuyorsun.",
+      "text": [
+        { "en": "I'll keep the slides to a minimum, because the device makes the case rather better than I do.", "tr": "Slaytları en aza indireceğim, çünkü cihaz derdini benden çok daha iyi anlatıyor." },
+        { "en": "What you're looking at is an AI-assisted audiometer, designed to make hearing tests quicker and far more accessible without trading away any clinical accuracy.", "tr": "Gördüğünüz şey, klinik doğruluktan hiç ödün vermeden işitme testlerini daha hızlı ve çok daha erişilebilir kılmak için tasarlanmış, yapay zekâ destekli bir odyometre." },
+        { "en": "It's our third iteration, and the first, I'm slightly embarrassed to admit, was a laptop and a pair of headphones held together by optimism.", "tr": "Bu üçüncü sürümümüz; ilki ise, itiraf etmesi biraz utandırıcı ama, iyimserlikle bir arada tutulan bir dizüstü bilgisayar ve bir kulaklıktı." },
+        { "en": "The core development is behind us, so the work now is less about invention than about removing every reason a cautious buyer might have to say no.", "tr": "Temel geliştirme geride kaldı; dolayısıyla artık iş icattan çok, temkinli bir alıcının 'hayır' demesi için olabilecek her gerekçeyi ortadan kaldırmakla ilgili." },
+        { "en": "To that end, we ran a blind study across two university hospitals, with 200 participants aged 18 to 75 tested by both the device and a trained audiologist.", "tr": "Bu amaçla iki üniversite hastanesinde, 18-75 yaş arası 200 katılımcının hem cihazla hem de eğitimli bir odyologla test edildiği kör bir çalışma yürüttük." },
+        { "en": "The two agreed in 94% of cases, and the handful of discrepancies were marginal enough that none of them altered a single diagnosis.", "tr": "İkisi vakaların %94'ünde uyuştu; birkaç farklılık ise o kadar küçüktü ki hiçbiri tek bir tanıyı bile değiştirmedi." },
+        { "en": "The results appeared in a medical journal last spring, which, for a company our size, carries more weight than any testimonial.", "tr": "Sonuçlar geçen bahar bir tıp dergisinde yayımlandı; bu da bizim ölçeğimizdeki bir şirket için herhangi bir müşteri referansından daha ağır basar." },
+        { "en": "As a Class IIa device, we live or die by the CE mark, and we're working with a seasoned regulatory consultant to get it by the end of next year.", "tr": "Sınıf IIa bir cihaz olarak varlığımız CE işaretine bağlı ve bunu gelecek yılın sonuna kadar almak için deneyimli bir mevzuat danışmanıyla çalışıyoruz." },
+        { "en": "That said, I'd be doing you a disservice if I implied certification timelines were anything other than prone to slippage.", "tr": "Bununla birlikte, sertifikasyon takvimlerinin kaymaya meyilli olmadığını ima edersem size haksızlık etmiş olurum." },
+        { "en": "It is, frankly, the biggest risk in the plan, and we've treated it as such.", "tr": "Açıkçası bu, plandaki en büyük risk ve ona da öyle davrandık." },
+        { "en": "The €500,000 we're raising is sized to see us through certification and into the European market, with a sensible margin for the unexpected.", "tr": "Topladığımız 500.000 €, beklenmedik durumlar için makul bir pay bırakarak bizi sertifikasyondan geçirip Avrupa pazarına taşıyacak şekilde hesaplandı." }
+      ],
+      "vocab": [
+        { "en": "make the case", "tr": "gerekçeyi ortaya koymak, savunmak", "ex": "The device makes the case better than I do.", "def": "to give good reasons for something" },
+        { "en": "trade away", "tr": "...den ödün vermek", "ex": "We didn't trade away any accuracy for speed.", "def": "to give up something valuable in exchange for something else" },
+        { "en": "behind us", "tr": "geride kaldı", "ex": "The core development is behind us.", "def": "finished and in the past" },
+        { "en": "to that end", "tr": "bu amaçla", "ex": "To that end, we ran a blind study.", "def": "in order to achieve that aim" },
+        { "en": "marginal", "tr": "önemsiz derecede küçük", "ex": "The discrepancies were marginal.", "def": "very small and not important" },
+        { "en": "carry weight", "tr": "ağırlığı olmak, etkili olmak", "ex": "A journal publication carries more weight than a testimonial.", "def": "to be important and influence people" },
+        { "en": "live or die by", "tr": "varlığı tamamen ...e bağlı olmak", "ex": "We live or die by the CE mark.", "def": "to depend completely on something for success" },
+        { "en": "seasoned", "tr": "deneyimli, kurt", "ex": "We work with a seasoned regulatory consultant.", "def": "having a lot of experience" },
+        { "en": "do someone a disservice", "tr": "birine haksızlık etmek", "ex": "I'd be doing you a disservice if I hid the risk.", "def": "to harm someone, often by not being fully honest" },
+        { "en": "prone to slippage", "tr": "kaymaya meyilli", "ex": "Certification timelines are prone to slippage.", "def": "likely to be delayed" }
+      ],
+      "grammar": {
+        "title": "Hedging with candour: that said, I'd be doing you a disservice, frankly",
+        "tr": "C2'de riskleri kabul ederken güvenilir görünmek için ölçülü ama dürüst ifadeler kullanılır. 'That said' önceki olumlu tabloyu dengeler, 'I'd be doing you a disservice if...' nazik bir uyarıdır, 'frankly' açık sözlülüğü işaret eder.",
+        "examples": ["That said, I'd be doing you a disservice if I implied the timeline was certain.", "It is, frankly, the biggest risk in the plan.", "The discrepancies were marginal enough that none of them altered a diagnosis."]
+      },
+      "questions": [
+        { "q": "What is the tone of 'held together by optimism'?", "options": ["Anger", "Self-deprecating humour", "A formal apology"], "a": 1 },
+        { "q": "According to the speaker, what is the main work now?", "options": ["Inventing the core technology", "Building a cheaper laptop version", "Removing every reason a cautious buyer might say no"], "a": 2 },
+        { "q": "Why does the speaker mention that the study was published in a journal?", "options": ["It gives the results more credibility than a testimonial", "Journals pay for studies", "To show the team writes well"], "a": 0 },
+        { "q": "What does 'we live or die by the CE mark' imply?", "options": ["The CE mark is optional", "Without the CE mark the business can't succeed in Europe", "The CE mark is easy to get"], "a": 1 },
+        { "q": "Why does the speaker openly admit the certification risk?", "options": ["To lower the valuation", "Because the consultant insisted", "To delay the deal", "To build trust by being candid with the investor"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "The core development is ___ us.", "a": "behind", "hint": "geride" },
+        { "s": "As a Class IIa device, we live or ___ by the CE mark.", "a": "die", "hint": "varlığımız ...e bağlı" },
+        { "s": "We work with a ___ regulatory consultant.", "a": "seasoned", "hint": "deneyimli" },
+        { "s": "Certification timelines are prone to ___.", "a": "slippage", "hint": "kayma" }
+      ],
+      "order": [
+        { "a": "The core development is behind us." },
+        { "a": "It is frankly the biggest risk in the plan." }
+      ],
+      "translate": [
+        { "tr": "Bu, plandaki en büyük risk.", "en": "This is the biggest risk in the plan.", "keys": ["biggest risk", "plan"] },
+        { "tr": "Deneyimli bir mevzuat danışmanıyla çalışıyoruz.", "en": "We are working with a seasoned regulatory consultant.", "keys": ["regulatory consultant"] },
+        { "tr": "Farklar o kadar küçüktü ki hiçbiri tanıyı değiştirmedi.", "en": "The differences were so small that none of them changed the diagnosis.", "keys": ["none of them", "diagnosis"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Londra'da çok sayıda sunum dinlemiş, alaycı ama adil bir yatırımcı prototipini görmek istiyor.",
+        "turns": [
+          { "ai": "I'll be candid: I've sat through a dozen 'AI diagnostics' pitches this quarter, and most were a slide deck in search of a product.", "aiTr": "Açık konuşacağım: bu çeyrekte bir düzine 'yapay zekâ teşhis' sunumu dinledim ve çoğu ürün arayan bir slayt destesiydi.", "hint": "Which is exactly why I'd rather let the device make the case: this is our third iteration, and it's been through a blind clinical study.", "keys": ["make the case", "third iteration", "blind"] },
+          { "ai": "Go on, then: how did it fare against a human audiologist?", "aiTr": "Devam edin o zaman: bir insan odyologa karşı nasıl bir performans gösterdi?", "hint": "The two agreed in 94% of cases, and the discrepancies were marginal enough that none altered a diagnosis.", "keys": ["94", "marginal", "diagnosis"] },
+          { "ai": "Regulation is where I've watched good companies bleed out, so talk me through yours.", "aiTr": "İyi şirketlerin mevzuat yüzünden kan kaybettiğini gördüm; sizinkini bana anlatın.", "hint": "As a Class IIa device, we live or die by the CE mark; we're working with a seasoned consultant and targeting the end of next year, though I won't pretend that date is immune to slippage.", "keys": ["live or die", "CE mark", "slippage"] },
+          { "ai": "And if I wrote the cheque, what does €500,000 actually get you?", "aiTr": "Peki çeki yazsam, 500.000 € size aslında ne kazandırır?", "hint": "It's sized to see us through certification and into the European market, with a sensible margin for the unexpected.", "keys": ["see us through", "certification", "European market"] }
+        ]
+      }
+    }
+  }
+}

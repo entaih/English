@@ -1,0 +1,369 @@
+{
+  "id": "sc-02",
+  "topic": "science",
+  "title": "Applying for an Innovation Grant",
+  "titleTr": "Bir İnovasyon Hibesine Başvurmak",
+  "levels": {
+    "A1": {
+      "intro": "Hibe nedir ve sizin hibeniz ne için? Çok basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "en": "Not all startup money comes from investors.", "tr": "Girişimlerin parasının hepsi yatırımcılardan gelmez." },
+        { "en": "Some money comes from grants.", "tr": "Paranın bir kısmı hibelerden gelir." },
+        { "en": "With a grant, you do not pay the money back.", "tr": "Hibede parayı geri ödemezsiniz." },
+        { "en": "We have a European grant for health technology.", "tr": "Sağlık teknolojisi için bir Avrupa hibemiz var." },
+        { "en": "It is 250,000 euros.", "tr": "Tutarı 250.000 euro." },
+        { "en": "The money is only for research and clinical tests.", "tr": "Para sadece araştırma ve klinik testler için." },
+        { "en": "The application is a lot of work.", "tr": "Başvuru çok emek istiyor." },
+        { "en": "But grants are a great way to pay for research.", "tr": "Ama hibeler araştırmayı finanse etmenin harika bir yolu." }
+      ],
+      "vocab": [
+        { "en": "grant", "tr": "hibe", "ex": "We have a European grant." },
+        { "en": "investor", "tr": "yatırımcı", "ex": "Not all money comes from investors." },
+        { "en": "pay back", "tr": "geri ödemek", "ex": "You do not pay a grant back." },
+        { "en": "research", "tr": "araştırma", "ex": "The money is for research." },
+        { "en": "application", "tr": "başvuru", "ex": "The application is a lot of work." },
+        { "en": "health technology", "tr": "sağlık teknolojisi", "ex": "We work in health technology." }
+      ],
+      "grammar": {
+        "title": "Present simple: do not / does not",
+        "tr": "Geniş zamanda olumsuz cümle için I/you/we/they ile 'do not', he/she/it ile 'does not' kullanılır. Ardından fiilin yalın hali gelir.",
+        "examples": ["You do not pay the money back.", "Not all money comes from investors.", "A grant does not cost you shares."]
+      },
+      "questions": [
+        { "q": "How much is the grant?", "options": ["25,000 euros", "250,000 euros", "2,500,000 euros"], "a": 1 },
+        { "q": "What is the money for?", "options": ["Research and clinical tests", "A new office", "Salaries"], "a": 0 },
+        { "q": "Do you pay a grant back?", "options": ["Yes, after one year", "Yes, every month", "No"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "With a ___, you do not pay the money back.", "a": "grant", "hint": "hibe" },
+        { "s": "The money is only for ___ and clinical tests.", "a": "research", "hint": "araştırma" },
+        { "s": "The ___ is a lot of work.", "a": "application", "hint": "başvuru" }
+      ],
+      "order": [
+        { "a": "Some money comes from grants." },
+        { "a": "We have a European grant for health technology." }
+      ],
+      "translate": [
+        { "tr": "Parayı geri ödemiyorsunuz.", "en": "You do not pay the money back.", "keys": ["pay", "back"] },
+        { "tr": "Para sadece araştırma için.", "en": "The money is only for research.", "keys": ["only", "research"] }
+      ],
+      "roleplay": {
+        "persona": "Grant jury member",
+        "personaTr": "Hibe jürisi üyesi",
+        "scene": "Hibe jürisinden biri sana basit sorular soruyor.",
+        "turns": [
+          { "ai": "Hello. What does your device do?", "aiTr": "Merhaba. Cihazınız ne yapıyor?", "hint": "Our device tests hearing in under ten minutes.", "keys": ["tests hearing", "ten minutes"] },
+          { "ai": "Who needs it?", "aiTr": "Kimin buna ihtiyacı var?", "hint": "People in small towns need it. There are not many audiologists.", "keys": ["small towns", "audiologists", "people"] },
+          { "ai": "What is the money for?", "aiTr": "Para ne için?", "hint": "The money is for research and clinical tests.", "keys": ["research", "clinical tests"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Geçen yıl bir hibeye nasıl başvurduğunuzu geçmiş zamanla anlatıyorsun.",
+      "text": [
+        { "en": "Not all money for a startup comes from investors.", "tr": "Bir girişimin parasının hepsi yatırımcılardan gelmez." },
+        { "en": "A grant is money that you don't have to pay back.", "tr": "Hibe, geri ödemek zorunda olmadığınız paradır." },
+        { "en": "Last year, we applied for a European innovation grant for health technology.", "tr": "Geçen yıl sağlık teknolojisi için bir Avrupa inovasyon hibesine başvurduk." },
+        { "en": "In the application, we described the problem, our solution, the team and the budget.", "tr": "Başvuruda sorunu, çözümümüzü, ekibi ve bütçeyi anlattık." },
+        { "en": "We also explained how many people our device can help.", "tr": "Ayrıca cihazımızın kaç kişiye yardım edebileceğini açıkladık." },
+        { "en": "The review took four months, and then we had an interview with a jury.", "tr": "Değerlendirme dört ay sürdü, sonra bir jüriyle mülakatımız oldu." },
+        { "en": "In the end, we won 250,000 euros.", "tr": "Sonunda 250.000 euro kazandık." },
+        { "en": "The money is only for research and clinical validation.", "tr": "Para yalnızca araştırma ve klinik doğrulama için." },
+        { "en": "Grants are slow, but they are great for early research.", "tr": "Hibeler yavaştır ama erken aşama araştırma için harikadır." }
+      ],
+      "vocab": [
+        { "en": "grant", "tr": "hibe", "ex": "We applied for a European grant." },
+        { "en": "pay back", "tr": "geri ödemek", "ex": "You don't have to pay back a grant." },
+        { "en": "apply for", "tr": "...e başvurmak", "ex": "Last year, we applied for a grant." },
+        { "en": "application", "tr": "başvuru", "ex": "The application was very long." },
+        { "en": "budget", "tr": "bütçe", "ex": "We described the budget in the application." },
+        { "en": "jury", "tr": "jüri", "ex": "We had an interview with a jury." },
+        { "en": "early research", "tr": "erken aşama araştırma", "ex": "Grants are great for early research." }
+      ],
+      "grammar": {
+        "title": "Past simple: applied, took, won",
+        "tr": "Geçmişte bitmiş olaylar için past simple kullanılır. Düzenli fiiller -ed alır (applied, described); düzensiz fiillerin özel hali vardır (take → took, win → won, have → had).",
+        "examples": ["Last year, we applied for a grant.", "The review took four months.", "In the end, we won 250,000 euros."]
+      },
+      "questions": [
+        { "q": "What is a grant?", "options": ["A loan from a bank", "Money you don't have to pay back", "Money from customers"], "a": 1 },
+        { "q": "What did they describe in the application?", "options": ["Only the price", "Their office and cars", "The problem, solution, team and budget"], "a": 2 },
+        { "q": "How long did the review take?", "options": ["Four months", "Four weeks", "One year"], "a": 0 },
+        { "q": "How much did they win?", "options": ["25,000 euros", "250,000 euros", "500,000 euros"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Last year, we ___ for a European innovation grant.", "a": "applied", "hint": "başvurduk" },
+        { "s": "The review ___ four months.", "a": "took", "hint": "sürdü" },
+        { "s": "Then we had an interview with a ___.", "a": "jury", "hint": "jüri" }
+      ],
+      "order": [
+        { "a": "The money is only for research and clinical validation." },
+        { "a": "Not all money for a startup comes from investors." }
+      ],
+      "translate": [
+        { "tr": "Geçen yıl bir hibeye başvurduk.", "en": "Last year, we applied for a grant.", "keys": ["applied for", "grant"] },
+        { "tr": "Hibeler yavaştır ama erken aşama araştırma için harikadır.", "en": "Grants are slow, but they are great for early research.", "keys": ["grants", "early research"] }
+      ],
+      "roleplay": {
+        "persona": "Grant jury member",
+        "personaTr": "Hibe jürisi üyesi",
+        "scene": "Hibe mülakatındasın. Jüri projenin önemini ve paranın kullanımını soruyor.",
+        "turns": [
+          { "ai": "Thank you for coming. Why is your project important?", "aiTr": "Geldiğiniz için teşekkürler. Projeniz neden önemli?", "hint": "One in five people has some hearing loss, but most people never do a test.", "keys": ["one in five", "hearing loss", "test"] },
+          { "ai": "How are you going to use the money?", "aiTr": "Parayı nasıl kullanacaksınız?", "hint": "We are going to use it for research and clinical validation.", "keys": ["going to", "research", "clinical validation"] },
+          { "ai": "Why should we choose your team?", "aiTr": "Neden sizin ekibinizi seçmeliyiz?", "hint": "We already have a working prototype, and our team has engineers and a doctor.", "keys": ["prototype", "engineers", "doctor"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Hibe programları, başvuru süreci ve hibe ile yatırım arasındaki fark.",
+      "text": [
+        { "en": "Not all the money for a startup comes from investors; some of it comes from grants.", "tr": "Bir girişimin parasının hepsi yatırımcılardan gelmez; bir kısmı hibelerden gelir." },
+        { "en": "A grant is money that you don't have to pay back, and you don't have to give away any equity.", "tr": "Hibe, geri ödemek zorunda olmadığınız paradır ve karşılığında hisse vermeniz de gerekmez." },
+        { "en": "Last year, we applied for a European innovation grant for health technology.", "tr": "Geçen yıl sağlık teknolojisi için bir Avrupa inovasyon hibesine başvurduk." },
+        { "en": "The application was long, and we had to describe the problem, our solution, the team and the budget.", "tr": "Başvuru uzundu; sorunu, çözümümüzü, ekibi ve bütçeyi anlatmak zorundaydık." },
+        { "en": "We also had to explain the impact: how many people will benefit from our device?", "tr": "Etkiyi de açıklamamız gerekiyordu: cihazımızdan kaç kişi fayda görecek?" },
+        { "en": "After a four-month review, we were invited to an interview with a jury.", "tr": "Dört aylık bir değerlendirmenin ardından bir jüriyle mülakata davet edildik." },
+        { "en": "In the end, we won 250,000 euros, which we can only use for research and clinical validation.", "tr": "Sonunda 250.000 euro kazandık; bu parayı yalnızca araştırma ve klinik doğrulama için kullanabiliyoruz." },
+        { "en": "Since then, the grant has paid for a large part of our research.", "tr": "O zamandan beri hibe, araştırmamızın büyük bir kısmını karşıladı." },
+        { "en": "Grants take a lot of time; however, they are a great way to fund early research.", "tr": "Hibeler çok zaman alır; ancak erken aşama araştırmayı finanse etmenin harika bir yoludur." }
+      ],
+      "vocab": [
+        { "en": "pay back", "tr": "geri ödemek", "ex": "You don't have to pay back a grant.", "def": "to return money that you borrowed" },
+        { "en": "give away equity", "tr": "hisse vermek", "ex": "With a grant, you don't give away any equity.", "def": "to give part of the ownership of your company to someone" },
+        { "en": "apply for", "tr": "...e başvurmak", "ex": "We applied for a European innovation grant.", "def": "to formally ask for something, usually in writing" },
+        { "en": "budget", "tr": "bütçe", "ex": "We had to describe the budget.", "def": "a plan of how much money you will spend and on what" },
+        { "en": "impact", "tr": "etki", "ex": "We had to explain the impact of our device.", "def": "the effect that something has on people or a situation" },
+        { "en": "benefit from", "tr": "...den fayda görmek", "ex": "Millions of people can benefit from the device.", "def": "to get something good or useful from something" },
+        { "en": "be invited to", "tr": "...e davet edilmek", "ex": "We were invited to an interview with a jury.", "def": "to be asked to come to an event or meeting" },
+        { "en": "fund", "tr": "finanse etmek", "ex": "Grants are a great way to fund early research.", "def": "to provide money for something" }
+      ],
+      "grammar": {
+        "title": "have to / don't have to",
+        "tr": "'have to' bir zorunluluğu anlatır (we had to describe). 'don't have to' ise yasak değil, gereklilik olmadığını anlatır: yapmana gerek yok.",
+        "examples": ["We had to describe the budget.", "You don't have to pay back a grant.", "You don't have to give away any equity."]
+      },
+      "questions": [
+        { "q": "How is a grant different from an investment?", "options": ["You don't pay it back or give equity", "A grant is always bigger", "A grant comes from customers"], "a": 0 },
+        { "q": "What did they have to explain about the impact?", "options": ["How much the office costs", "How many people will benefit from the device", "Who their competitors are"], "a": 1 },
+        { "q": "What happened after the review?", "options": ["They got the money immediately", "They had to apply again", "They were invited to an interview with a jury"], "a": 2 },
+        { "q": "What can the money be used for?", "options": ["Marketing", "Research and clinical validation", "Founders' salaries"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "A grant is money that you don't have to pay ___.", "a": "back", "hint": "geri" },
+        { "s": "How many people will ___ from our device?", "a": "benefit", "hint": "fayda görmek" },
+        { "s": "We ___ to an interview with a jury.", "a": "were invited", "hint": "davet edildik" }
+      ],
+      "order": [
+        { "a": "We were invited to an interview with a jury." },
+        { "a": "Last year we applied for a European innovation grant." }
+      ],
+      "translate": [
+        { "tr": "Hibeler çok zaman alır.", "en": "Grants take a lot of time.", "keys": ["grants", "a lot of time"] },
+        { "tr": "Hisse vermek zorunda değilsiniz.", "en": "You don't have to give away any equity.", "keys": ["don't have to", "equity"] }
+      ],
+      "roleplay": {
+        "persona": "Grant jury member",
+        "personaTr": "Hibe jürisi üyesi",
+        "scene": "Hibe mülakatındasın. Jüri etkiyi, bütçeyi ve ekibi soruyor.",
+        "turns": [
+          { "ai": "Thank you for your application. What impact will your project have?", "aiTr": "Başvurunuz için teşekkürler. Projenizin nasıl bir etkisi olacak?", "hint": "One in five people has some hearing loss, and in small towns people wait months for a test. Our device can help millions of them.", "keys": ["one in five", "small towns", "help"] },
+          { "ai": "How will you use the grant money?", "aiTr": "Hibe parasını nasıl kullanacaksınız?", "hint": "We'll use the budget for research and clinical validation, for example a clinical study with two university hospitals.", "keys": ["budget", "research", "clinical validation"] },
+          { "ai": "Why should we fund your team and not another one?", "aiTr": "Neden başka bir ekibi değil de sizi finanse edelim?", "hint": "We already have a working prototype, and our team has three engineers, a doctor and two business people.", "keys": ["prototype", "engineers", "doctor"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Hibe sürecini edilgen yapılarla anlatıyor, hibenin yatırımcı parasına göre avantajını tartışıyorsun.",
+      "text": [
+        { "en": "It's easy to forget that not all startup funding comes from investors; grants can play a major role too.", "tr": "Girişim finansmanının hepsinin yatırımcılardan gelmediğini unutmak kolay; hibeler de büyük rol oynayabilir." },
+        { "en": "Unlike an investment, a grant doesn't have to be paid back, and no equity is given away.", "tr": "Yatırımın aksine hibenin geri ödenmesi gerekmez ve hiç hisse verilmez." },
+        { "en": "Last year, we applied for a European innovation grant aimed at health technology projects.", "tr": "Geçen yıl sağlık teknolojisi projelerine yönelik bir Avrupa inovasyon hibesine başvurduk." },
+        { "en": "The application was demanding: we were asked to describe the problem, our solution, the team and a detailed budget.", "tr": "Başvuru zahmetliydi: sorunu, çözümümüzü, ekibi ve ayrıntılı bir bütçeyi anlatmamız istendi." },
+        { "en": "We also had to demonstrate the impact, in other words how many people would benefit from our device.", "tr": "Ayrıca etkiyi, yani cihazımızdan kaç kişinin fayda göreceğini kanıtlamamız gerekiyordu." },
+        { "en": "This was where our numbers helped, since roughly one in five people has some degree of hearing loss.", "tr": "Burada rakamlarımız işimize yaradı, çünkü yaklaşık her beş kişiden birinde bir derece işitme kaybı var." },
+        { "en": "The review process took four months, after which we were invited to present to a jury.", "tr": "Değerlendirme süreci dört ay sürdü; ardından bir jüriye sunum yapmaya davet edildik." },
+        { "en": "We were eventually awarded 250,000 euros, which can only be spent on research and clinical validation.", "tr": "Sonunda bize 250.000 euro verildi; bu para yalnızca araştırma ve klinik doğrulama için harcanabiliyor." },
+        { "en": "If we had relied on investors alone, we would have given away far more equity at a much earlier stage.", "tr": "Sadece yatırımcılara güvenseydik, çok daha erken bir aşamada çok daha fazla hisse vermiş olurduk." },
+        { "en": "Grants are slow and time-consuming, but I'd say they're one of the best ways to fund early-stage research.", "tr": "Hibeler yavaş ve zaman alıcıdır, ama bence erken aşama araştırmayı finanse etmenin en iyi yollarından biridir." }
+      ],
+      "vocab": [
+        { "en": "play a major role", "tr": "büyük rol oynamak", "ex": "Grants can play a major role in early funding.", "def": "to be very important in a situation" },
+        { "en": "give away equity", "tr": "hisse vermek", "ex": "With a grant, no equity is given away.", "def": "to give part of your company's ownership to someone" },
+        { "en": "aimed at", "tr": "...e yönelik", "ex": "The grant is aimed at health technology projects.", "def": "intended for a particular group or purpose" },
+        { "en": "demanding", "tr": "zahmetli, zorlu", "ex": "The application was demanding.", "def": "needing a lot of time, effort or skill" },
+        { "en": "demonstrate the impact", "tr": "etkiyi kanıtlamak", "ex": "We had to demonstrate the impact of our device.", "def": "to show clearly what effect something will have" },
+        { "en": "be awarded", "tr": "(hibe, ödül) verilmek", "ex": "We were awarded 250,000 euros.", "def": "to be officially given money or a prize" },
+        { "en": "rely on", "tr": "...e dayanmak, güvenmek", "ex": "We didn't want to rely on investors alone.", "def": "to depend on someone or something" },
+        { "en": "time-consuming", "tr": "zaman alıcı", "ex": "Grant applications are time-consuming.", "def": "taking a lot of time" },
+        { "en": "early-stage", "tr": "erken aşama", "ex": "Grants are ideal for early-stage research.", "def": "at the beginning of development" }
+      ],
+      "grammar": {
+        "title": "Passive voice with modals: doesn't have to be paid back, can be spent",
+        "tr": "Edilgen yapı modal fiillerle de kullanılır: modal + be + fiilin üçüncü hali (can be spent, has to be paid back). Kuralları ve koşulları resmi biçimde anlatmak için idealdir.",
+        "examples": ["A grant doesn't have to be paid back.", "The money can only be spent on research.", "We were asked to describe a detailed budget."]
+      },
+      "questions": [
+        { "q": "According to the text, how is a grant different from an investment?", "options": ["It must be repaid within a year", "It doesn't have to be paid back and no equity is given away", "It is only available to large companies"], "a": 1 },
+        { "q": "Why did the hearing-loss figure help the application?", "options": ["It showed the device's potential impact", "It reduced the budget", "It shortened the review"], "a": 0 },
+        { "q": "What happened after the four-month review?", "options": ["They received the money straight away", "They were asked to reapply", "They were invited to present to a jury"], "a": 2 },
+        { "q": "What can we infer about the founder's view of investor funding?", "options": ["They want to avoid investors entirely", "They think investors are too slow", "They want to sell the company", "They value grants because they protect equity early on"], "a": 3 },
+        { "q": "What can the 250,000 euros be spent on?", "options": ["Marketing", "Research and clinical validation", "Office rent"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Unlike an investment, a grant doesn't have to be paid ___.", "a": "back", "hint": "geri" },
+        { "s": "We also had to ___ the impact of our device.", "a": "demonstrate", "hint": "kanıtlamak" },
+        { "s": "We were eventually ___ 250,000 euros.", "a": "awarded", "hint": "verildi" }
+      ],
+      "order": [
+        { "a": "Grants can play a major role too." },
+        { "a": "We were invited to present to a jury." }
+      ],
+      "translate": [
+        { "tr": "Hiç hisse verilmez.", "en": "No equity is given away.", "keys": ["equity", "given away"] },
+        { "tr": "Değerlendirme süreci dört ay sürdü.", "en": "The review process took four months.", "keys": ["review process", "four months"] }
+      ],
+      "roleplay": {
+        "persona": "Grant jury member",
+        "personaTr": "Hibe jürisi üyesi",
+        "scene": "Jüri karşısındasın. Etkiyi, bütçeyi ve neden yatırımcı yerine hibe istediğini savunuyorsun.",
+        "turns": [
+          { "ai": "Thanks for coming in. In a nutshell, what impact would your project have?", "aiTr": "Geldiğiniz için teşekkürler. Kısaca projenizin etkisi ne olur?", "hint": "Roughly one in five people has some hearing loss, yet most are never tested, so our device could reach millions of people.", "keys": ["one in five", "never tested", "millions"] },
+          { "ai": "The budget is quite large. How exactly would the money be spent?", "aiTr": "Bütçe oldukça büyük. Para tam olarak nasıl harcanacak?", "hint": "It would be spent on research and clinical validation, which is exactly what's needed before certification.", "keys": ["research", "clinical validation", "certification"] },
+          { "ai": "Wouldn't it be easier to raise this money from investors?", "aiTr": "Bu parayı yatırımcılardan toplamak daha kolay olmaz mıydı?", "hint": "Possibly, but if we relied only on investors, we would have to give away a lot of equity at a very early stage.", "keys": ["give away", "equity", "early stage"] },
+          { "ai": "And why are you the right team to deliver this?", "aiTr": "Peki bu işi başaracak doğru ekip neden sizsiniz?", "hint": "We've already built a working prototype, and the team combines engineering, medical and business skills.", "keys": ["prototype", "engineering", "medical"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Hibe sürecini ve hibenin stratejik değerini ileri düzey yapılarla, ikna edici bir dille anlatıyorsun.",
+      "text": [
+        { "en": "Investors tend to dominate the conversation about startup funding, yet grants can be just as decisive in the early stages.", "tr": "Girişim finansmanı konuşulurken yatırımcılar genelde öne çıkar, oysa hibeler de erken aşamada aynı derecede belirleyici olabilir." },
+        { "en": "What makes them so attractive is that the money doesn't have to be repaid and no equity changes hands.", "tr": "Onları bu kadar cazip kılan, paranın geri ödenmek zorunda olmaması ve hiçbir hissenin el değiştirmemesidir." },
+        { "en": "Last year, we applied for a European innovation grant earmarked for health technology.", "tr": "Geçen yıl sağlık teknolojisine ayrılmış bir Avrupa inovasyon hibesine başvurduk." },
+        { "en": "The application was exhaustive, requiring us to set out the problem, our solution, the team and a fully costed budget.", "tr": "Başvuru son derece kapsamlıydı; sorunu, çözümümüzü, ekibi ve tüm kalemleri hesaplanmış bir bütçeyi ortaya koymamızı gerektiriyordu." },
+        { "en": "Above all, we had to make a compelling case for impact, quantifying how many people stood to benefit from our device.", "tr": "Her şeyden önce etki konusunda ikna edici bir gerekçe sunmamız ve cihazımızdan kaç kişinin fayda görebileceğini sayılarla göstermemiz gerekiyordu." },
+        { "en": "With roughly one in five people affected by some degree of hearing loss, that part of the argument largely made itself.", "tr": "Yaklaşık her beş kişiden biri bir derece işitme kaybı yaşadığı için argümanın o kısmı büyük ölçüde kendiliğinden ortaya çıktı." },
+        { "en": "Only after a four-month review were we invited to defend the proposal in front of a jury.", "tr": "Ancak dört aylık bir değerlendirmeden sonra teklifimizi bir jüri önünde savunmaya davet edildik." },
+        { "en": "We came away with 250,000 euros, ring-fenced for research and clinical validation.", "tr": "Yalnızca araştırma ve klinik doğrulama için ayrılmış 250.000 euroyla ayrıldık." },
+        { "en": "Had we relied solely on investors, we would have had to give away considerably more equity at a far lower valuation.", "tr": "Yalnızca yatırımcılara dayansaydık, çok daha düşük bir değerlemeyle çok daha fazla hisse vermek zorunda kalırdık." },
+        { "en": "Grants are undeniably a slog, but for de-risking early research, there are few better instruments.", "tr": "Hibeler inkâr edilemez biçimde meşakkatlidir, ama erken araştırmanın riskini azaltmak için bundan iyi araç azdır." }
+      ],
+      "vocab": [
+        { "en": "earmarked for", "tr": "...e ayrılmış", "ex": "The grant was earmarked for health technology.", "def": "officially kept for a particular purpose" },
+        { "en": "change hands", "tr": "el değiştirmek", "ex": "With a grant, no equity changes hands.", "def": "to pass from one owner to another" },
+        { "en": "exhaustive", "tr": "son derece kapsamlı", "ex": "The application was exhaustive.", "def": "very thorough and complete, covering every detail" },
+        { "en": "set out", "tr": "ortaya koymak, açıkça anlatmak", "ex": "We had to set out the problem and our solution.", "def": "to explain something clearly and in an organised way" },
+        { "en": "fully costed budget", "tr": "tüm kalemleri hesaplanmış bütçe", "ex": "The jury expects a fully costed budget.", "def": "a budget in which every cost has been calculated" },
+        { "en": "make a compelling case", "tr": "ikna edici bir gerekçe sunmak", "ex": "We had to make a compelling case for impact.", "def": "to give strong, convincing reasons for something" },
+        { "en": "stand to benefit", "tr": "fayda görecek konumda olmak", "ex": "Millions of people stand to benefit from the device.", "def": "to be likely to gain something" },
+        { "en": "ring-fenced", "tr": "yalnızca belirli bir amaca ayrılmış", "ex": "The money is ring-fenced for clinical validation.", "def": "kept for one purpose and not allowed to be spent on anything else" },
+        { "en": "a slog", "tr": "meşakkatli, uzun uğraş", "ex": "Writing the application was a real slog.", "def": "a long, tiring piece of work" },
+        { "en": "de-risk", "tr": "riskini azaltmak", "ex": "Grants help de-risk early research.", "def": "to make something less risky, especially for investors" }
+      ],
+      "grammar": {
+        "title": "Inversion: Only after... / Had we...",
+        "tr": "Resmi İngilizcede bazı ifadelerden sonra özne ile yardımcı fiil yer değiştirir: 'Only after ... were we invited'. 'If' atılarak 'Had we relied...' denince de üçüncü tip koşul daha resmi ve vurgulu olur.",
+        "examples": ["Only after a four-month review were we invited to meet the jury.", "Had we relied solely on investors, we would have given away more equity.", "Only then did we realise how demanding the process was."]
+      },
+      "questions": [
+        { "q": "According to the writer, what makes grants so attractive?", "options": ["They are quick to obtain", "The money isn't repaid and no equity changes hands", "They come with a board seat"], "a": 1 },
+        { "q": "Why did the impact section \"largely make itself\"?", "options": ["The jury already knew the company", "The budget was unusually small", "Hearing loss affects roughly one in five people"], "a": 2 },
+        { "q": "What does \"Only after a four-month review were we invited\" emphasise?", "options": ["The wait before the interview was long", "The interview came quickly", "The review was optional"], "a": 0 },
+        { "q": "What does the writer imply about relying only on investors?", "options": ["It would have been quicker and cheaper", "Investors would have refused", "It would have been impossible", "It would have diluted the founders far more"], "a": 3 },
+        { "q": "What is the writer's overall attitude towards grants?", "options": ["Entirely negative", "Positive but realistic about the effort", "Indifferent"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "The money is ___ for research and clinical validation.", "a": "ring-fenced", "hint": "yalnızca bu amaca ayrılmış" },
+        { "s": "We had to make a ___ case for impact.", "a": "compelling", "hint": "ikna edici" },
+        { "s": "___ we relied solely on investors, we would have given away more equity.", "a": "Had", "hint": "-seydik (if yerine)" },
+        { "s": "Grants are undeniably a ___.", "a": "slog", "hint": "meşakkatli iş" }
+      ],
+      "order": [
+        { "a": "Grants can be just as decisive in the early stages." },
+        { "a": "We were invited to defend the proposal in front of a jury." }
+      ],
+      "translate": [
+        { "tr": "Para geri ödenmek zorunda değil ve hiçbir hisse el değiştirmiyor.", "en": "The money doesn't have to be repaid and no equity changes hands.", "keys": ["repaid", "changes hands"] },
+        { "tr": "Ancak dört aylık bir değerlendirmeden sonra jüriye davet edildik.", "en": "Only after a four-month review were we invited to meet the jury.", "keys": ["only after", "were we invited"] },
+        { "tr": "Bu tutar yalnızca araştırma ve klinik doğrulamaya ayrılmış.", "en": "The amount is ring-fenced for research and clinical validation.", "keys": ["ring-fenced", "clinical validation"] }
+      ],
+      "roleplay": {
+        "persona": "Grant jury member",
+        "personaTr": "Hibe jürisi üyesi",
+        "scene": "Teklifini deneyimli bir jüri önünde savunuyorsun. Sorular zorlayıcı, cevapların net ve ikna edici olmalı.",
+        "turns": [
+          { "ai": "Let's start with the big picture: why should public money go into a hearing test?", "aiTr": "Büyük resimle başlayalım: neden kamu parası bir işitme testine gitsin?", "hint": "Because roughly one in five people has some hearing loss, yet most are never tested simply because there aren't enough audiologists.", "keys": ["one in five", "never tested", "audiologists"] },
+          { "ai": "Your budget is ambitious. Walk us through where the money would go.", "aiTr": "Bütçeniz iddialı. Paranın nereye gideceğini adım adım anlatın.", "hint": "The bulk of it would go into research and clinical validation, which is precisely what stands between us and certification.", "keys": ["bulk", "clinical validation", "certification"] },
+          { "ai": "What's to stop you raising this from investors instead?", "aiTr": "Bunu yatırımcılardan toplamanıza ne engel?", "hint": "Nothing, in principle, but had we gone down that route, we'd have given away far more equity before the technology was de-risked.", "keys": ["had we", "equity", "de-risked"] },
+          { "ai": "Finally, what makes your team credible?", "aiTr": "Son olarak, ekibinizi güvenilir kılan ne?", "hint": "What sets us apart is the mix: three engineers, a doctor and two business people, plus a working prototype already in its third version.", "keys": ["sets us apart", "prototype", "third version"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Hibe deneyimini deneyimli bir kurucu gibi anlatıyorsun: ince ironi, ölçülü vurgu ve doğal deyimler.",
+      "text": [
+        { "en": "There's a tendency to equate startup funding with venture capital, which rather overlooks the quiet power of a well-chosen grant.", "tr": "Girişim finansmanını girişim sermayesiyle bir tutma eğilimi var; bu da iyi seçilmiş bir hibenin sessiz gücünü epey göz ardı ediyor." },
+        { "en": "The appeal is obvious enough: nothing has to be repaid, and not a single share changes hands.", "tr": "Cazibesi yeterince açık: hiçbir şeyin geri ödenmesi gerekmiyor ve tek bir hisse bile el değiştirmiyor." },
+        { "en": "Last year, we threw our hat into the ring for a European innovation grant earmarked for health technology.", "tr": "Geçen yıl sağlık teknolojisine ayrılmış bir Avrupa inovasyon hibesi için biz de yarışa girdik." },
+        { "en": "The application was nothing if not exhaustive, demanding a forensic account of the problem, our solution, the team and every line of the budget.", "tr": "Başvuru son derece kapsamlıydı; sorunun, çözümümüzün, ekibin ve bütçenin her kaleminin en ince ayrıntısına kadar açıklanmasını istiyordu." },
+        { "en": "The impact section, which can sink otherwise strong bids, was arguably our easiest, since roughly one in five people lives with some degree of hearing loss.", "tr": "Aslında güçlü başvuruları bile batırabilen etki bölümü belki de en kolayımızdı, çünkü yaklaşık her beş kişiden biri bir derece işitme kaybıyla yaşıyor." },
+        { "en": "What followed was a four-month review, which tested our patience rather more than we let on.", "tr": "Ardından dört aylık bir değerlendirme geldi; bu süreç sabrımızı belli ettiğimizden çok daha fazla sınadı." },
+        { "en": "We were then invited to defend the proposal before a jury that was courteous but by no means a soft touch.", "tr": "Sonra teklifimizi nazik ama kesinlikle kolay ikna edilmeyen bir jüri önünde savunmaya davet edildik." },
+        { "en": "In the end, we secured 250,000 euros, ring-fenced for research and clinical validation, which is precisely where the risk lay.", "tr": "Sonunda araştırma ve klinik doğrulamaya ayrılmış 250.000 euroyu aldık; zaten risk de tam olarak oradaydı." },
+        { "en": "Had we raised that sum from investors at such an early stage, the dilution would have been painful, to put it mildly.", "tr": "O tutarı bu kadar erken bir aşamada yatırımcılardan toplasaydık, hisse sulanması en hafif deyimiyle acı verici olurdu." },
+        { "en": "Grants are, admittedly, a slog; by the same token, few instruments de-risk early science on such generous terms.", "tr": "Hibeler kabul etmek gerek ki meşakkatlidir; ama aynı mantıkla, erken aşama bilimin riskini bu kadar cömert koşullarla azaltan araç azdır." }
+      ],
+      "vocab": [
+        { "en": "equate X with Y", "tr": "X'i Y ile bir tutmak", "ex": "People often equate startup funding with venture capital.", "def": "to think that one thing is the same as another" },
+        { "en": "throw your hat into the ring", "tr": "yarışa girmek, aday olmak", "ex": "We threw our hat into the ring for a European grant.", "def": "to enter a competition or announce you want to be considered" },
+        { "en": "nothing if not", "tr": "son derece, tam anlamıyla", "ex": "The application was nothing if not exhaustive.", "def": "used to emphasise that someone or something has a quality to a great degree" },
+        { "en": "a forensic account", "tr": "en ince ayrıntısına kadar açıklama", "ex": "The jury wanted a forensic account of the budget.", "def": "an extremely detailed and careful explanation" },
+        { "en": "sink a bid", "tr": "bir başvuruyu batırmak", "ex": "A weak impact section can sink a bid.", "def": "to cause an application or offer to fail" },
+        { "en": "more than we let on", "tr": "belli ettiğimizden daha fazla", "ex": "The wait worried us more than we let on.", "def": "to a greater degree than we showed to other people" },
+        { "en": "no soft touch", "tr": "kolay ikna edilir biri değil", "ex": "The jury was polite but by no means a soft touch.", "def": "not someone who is easily persuaded or who gives things easily" },
+        { "en": "to put it mildly", "tr": "en hafif deyimiyle", "ex": "The dilution would have been painful, to put it mildly.", "def": "used to say the reality is much worse than your words suggest" },
+        { "en": "dilution", "tr": "hisse sulanması", "ex": "Early dilution can be very costly for founders.", "def": "the reduction in the owners' share when new shares are given to investors" },
+        { "en": "by the same token", "tr": "aynı mantıkla", "ex": "By the same token, few instruments are so generous.", "def": "for the same reason; in the same way" }
+      ],
+      "grammar": {
+        "title": "Understatement and emphasis",
+        "tr": "C2 düzeyinde vurgu çoğu zaman tersinden yapılır: 'nothing if not' (son derece), 'by no means' (asla), 'to put it mildly' (en hafif deyimiyle), 'rather more than' (çok daha fazla). Abartmadan güçlü bir izlenim bırakır.",
+        "examples": ["The application was nothing if not exhaustive.", "The jury was by no means a soft touch.", "The dilution would have been painful, to put it mildly."]
+      },
+      "questions": [
+        { "q": "What does the writer suggest people tend to overlook?", "options": ["The value of grants as a funding source", "The risks of venture capital", "The cost of audiologists"], "a": 0 },
+        { "q": "Why was the impact section \"arguably our easiest\"?", "options": ["The jury already knew the product", "The scale of hearing loss made the case compelling", "They reused another team's bid"], "a": 1 },
+        { "q": "What does \"tested our patience rather more than we let on\" imply?", "options": ["The team complained loudly", "The team forgot about the application", "The team was more anxious than it showed"], "a": 2 },
+        { "q": "How does the writer characterise the jury?", "options": ["Hostile and rude", "Friendly and easy to persuade", "Disorganised", "Polite but demanding"], "a": 3 },
+        { "q": "What is the tone of \"painful, to put it mildly\"?", "options": ["Enthusiastic about investors", "Understated, implying the cost would have been severe", "Purely technical"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We threw our hat into the ___ for a European innovation grant.", "a": "ring", "hint": "yarış (ringe şapka atmak)" },
+        { "s": "The application was nothing ___ not exhaustive.", "a": "if", "hint": "son derece (kalıp)" },
+        { "s": "The jury was by no means a soft ___.", "a": "touch", "hint": "kolay lokma" },
+        { "s": "The dilution would have been painful, to put it ___.", "a": "mildly", "hint": "en hafif deyimiyle" }
+      ],
+      "order": [
+        { "a": "Not a single share changes hands." },
+        { "a": "The application was nothing if not exhaustive." }
+      ],
+      "translate": [
+        { "tr": "Hiçbir şeyin geri ödenmesi gerekmiyor.", "en": "Nothing has to be repaid.", "keys": ["nothing", "repaid"] },
+        { "tr": "Jüri nazikti ama kesinlikle kolay ikna edilecek biri değildi.", "en": "The jury was courteous but by no means a soft touch.", "keys": ["courteous", "by no means", "soft touch"] },
+        { "tr": "Hisse sulanması, en hafif deyimiyle, acı verici olurdu.", "en": "The dilution would have been painful, to put it mildly.", "keys": ["dilution", "to put it mildly"] }
+      ],
+      "roleplay": {
+        "persona": "Grant jury member",
+        "personaTr": "Hibe jürisi üyesi",
+        "scene": "Şüpheci bir jüri üyesi teklifinin yenilikçiliğini ve gerekliliğini sorguluyor. Zarif ama sağlam cevaplar ver.",
+        "turns": [
+          { "ai": "Hearing screening is hardly a new idea. What, precisely, is innovative here?", "aiTr": "İşitme taraması pek yeni bir fikir sayılmaz. Burada tam olarak yenilikçi olan ne?", "hint": "The idea isn't new, granted, but an autonomous test that needs no expert in the room and runs its AI entirely on the device very much is.", "keys": ["granted", "no expert", "on the device"] },
+          { "ai": "Your impact claims are bold. Aren't you overstating the need?", "aiTr": "Etki iddialarınız cüretkâr. İhtiyacı abartmıyor musunuz?", "hint": "If anything, we're understating it: roughly one in five people has some hearing loss, and in small towns the wait for an audiologist runs to months.", "keys": ["if anything", "one in five", "months"] },
+          { "ai": "Two hundred and fifty thousand euros is no small sum. Why should it come from the public purse?", "aiTr": "İki yüz elli bin euro küçük bir para değil. Neden kamu kaynağından gelsin?", "hint": "Because it would de-risk the science at precisely the stage where private investors are most reluctant to step in.", "keys": ["de-risk", "precisely", "reluctant"] },
+          { "ai": "And if we said no, would the project survive?", "aiTr": "Peki hayır dersek proje ayakta kalır mı?", "hint": "It would survive, but more slowly and at the cost of considerable dilution, which, frankly, is a poor trade for something this close to the clinic.", "keys": ["survive", "dilution", "frankly"] }
+        ]
+      }
+    }
+  }
+}

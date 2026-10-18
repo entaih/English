@@ -1,0 +1,376 @@
+{
+  "id": "te-03",
+  "topic": "tech",
+  "title": "Solving a Difficult Technical Problem",
+  "titleTr": "Zor Bir Teknik Sorunu Çözmek",
+  "levels": {
+    "A1": {
+      "intro": "Cihazındaki bir sorunu ve çözümünü basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "We have a problem with our device.", "tr": "Cihazımızla ilgili bir sorunumuz var." },
+        { "who": "Me", "en": "In some clinics, the test results are wrong.", "tr": "Bazı kliniklerde test sonuçları yanlış." },
+        { "who": "Me", "en": "In other clinics, the results are fine.", "tr": "Diğer kliniklerde sonuçlar sorunsuz." },
+        { "who": "Me", "en": "We look at the data from all the devices.", "tr": "Tüm cihazlardan gelen verilere bakıyoruz." },
+        { "who": "Me", "en": "The problem is only in rooms with old air conditioners.", "tr": "Sorun yalnızca eski klimaların olduğu odalarda." },
+        { "who": "Me", "en": "They are very noisy, so patients cannot hear high sounds.", "tr": "Bu klimalar çok gürültülü, bu yüzden hastalar tiz sesleri duyamıyor." },
+        { "who": "Me", "en": "Now the device checks the noise before every test.", "tr": "Artık cihaz her testten önce gürültüyü kontrol ediyor." },
+        { "who": "Me", "en": "In a noisy room, the device shows a warning.", "tr": "Gürültülü bir odada cihaz bir uyarı gösteriyor." }
+      ],
+      "vocab": [
+        { "en": "test result", "tr": "test sonucu", "ex": "The test results are wrong." },
+        { "en": "wrong", "tr": "yanlış", "ex": "In some clinics, the results are wrong." },
+        { "en": "look at the data", "tr": "verilere bakmak", "ex": "We look at the data from all the devices." },
+        { "en": "air conditioner", "tr": "klima", "ex": "The room has an old air conditioner." },
+        { "en": "noisy", "tr": "gürültülü", "ex": "The room is too noisy." },
+        { "en": "warning", "tr": "uyarı", "ex": "The device shows a warning." }
+      ],
+      "grammar": {
+        "title": "Present simple: it + -s",
+        "tr": "Geniş zamanda he, she, it (ve 'the device' gibi tekil isimler) ile fiile -s eklenir: 'The device checks'. 'We' ve 'they' ile -s eklenmez: 'We look'.",
+        "examples": ["The device checks the noise.", "The device shows a warning.", "We look at the data."]
+      },
+      "questions": [
+        { "q": "Where are the results wrong?", "options": ["In all clinics", "In some clinics", "In no clinics"], "a": 1 },
+        { "q": "What do the problem rooms have?", "options": ["Old air conditioners", "New headphones", "Big windows"], "a": 0 },
+        { "q": "What does the device do now?", "options": ["It stops all tests", "It calls a doctor", "It checks the noise before the test"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "In some clinics, the test results are ___.", "a": "wrong", "hint": "yanlış" },
+        { "s": "The problem is only in rooms with old ___.", "a": "air conditioners", "hint": "klimalar" },
+        { "s": "In a ___ room, the device shows a warning.", "a": "noisy", "hint": "gürültülü" }
+      ],
+      "order": [
+        { "a": "We look at the data from all the devices." },
+        { "a": "Now the device checks the noise before every test." }
+      ],
+      "translate": [
+        { "tr": "Oda fazla gürültülü.", "en": "The room is too noisy.", "keys": ["room", "too noisy"] },
+        { "tr": "Sonuçlar yanlış.", "en": "The results are wrong.", "keys": ["results", "wrong"] }
+      ],
+      "roleplay": {
+        "persona": "Clinic manager",
+        "personaTr": "Klinik müdürü",
+        "scene": "Bir klinik müdürü bazı kliniklerdeki yanlış sonuçları soruyor. Kısa ve basit cevaplar ver.",
+        "turns": [
+          { "ai": "Hello. Some clinics have wrong results. Why?", "aiTr": "Merhaba. Bazı kliniklerde sonuçlar yanlış. Neden?", "hint": "The rooms have old air conditioners. They are very noisy.", "keys": ["air conditioners", "noisy", "noise"] },
+          { "ai": "What can you do?", "aiTr": "Ne yapabilirsiniz?", "hint": "Now the device checks the noise. If the room is too noisy, it shows a warning.", "keys": ["checks the noise", "warning", "too noisy"] },
+          { "ai": "Is the problem in every clinic?", "aiTr": "Sorun her klinikte var mı?", "hint": "No, only in some clinics. In other clinics, the results are fine.", "keys": ["some clinics", "fine", "only"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Geçen hafta yaşanan teknik bir sorunu ve onu nasıl çözdüğünüzü anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Last week, we had a strange problem with our device.", "tr": "Geçen hafta cihazımızla ilgili garip bir sorun yaşadık." },
+        { "who": "Me", "en": "Some clinics got wrong results at high frequencies, but others were fine.", "tr": "Bazı klinikler yüksek frekanslarda yanlış sonuç aldı, ama diğerlerinde sorun yoktu." },
+        { "who": "Me", "en": "At first, we thought it was the headphones, but we were wrong.", "tr": "İlk başta sorunun kulaklıklarda olduğunu düşündük, ama yanılmışız." },
+        { "who": "Me", "en": "So we collected data from all the devices and compared the clinics.", "tr": "Bu yüzden tüm cihazlardan veri topladık ve klinikleri karşılaştırdık." },
+        { "who": "Me", "en": "The problem only happened in rooms with old air conditioners.", "tr": "Sorun yalnızca eski klimaların olduğu odalarda ortaya çıkıyordu." },
+        { "who": "Me", "en": "Their noise was too loud at exactly those high frequencies.", "tr": "Klimaların gürültüsü tam da o yüksek frekanslarda çok fazlaydı." },
+        { "who": "Me", "en": "We added a noise check before every test.", "tr": "Her testten önce bir gürültü kontrolü ekledik." },
+        { "who": "Me", "en": "Now, if the room is too noisy, the device warns the user.", "tr": "Artık oda fazla gürültülüyse cihaz kullanıcıyı uyarıyor." },
+        { "who": "Me", "en": "Our lesson: look at the data before you guess.", "tr": "Çıkardığımız ders: tahmin etmeden önce verilere bak." }
+      ],
+      "vocab": [
+        { "en": "strange", "tr": "garip, tuhaf", "ex": "We had a strange problem with our device." },
+        { "en": "high frequency", "tr": "yüksek frekans", "ex": "The results were wrong at high frequencies." },
+        { "en": "at first", "tr": "ilk başta", "ex": "At first, we thought it was the headphones." },
+        { "en": "collect data", "tr": "veri toplamak", "ex": "We collected data from all the devices." },
+        { "en": "compare", "tr": "karşılaştırmak", "ex": "We compared the clinics." },
+        { "en": "happen", "tr": "olmak, meydana gelmek", "ex": "The problem only happened in some rooms." },
+        { "en": "warn", "tr": "uyarmak", "ex": "The device warns the user." },
+        { "en": "guess", "tr": "tahmin etmek", "ex": "Look at the data before you guess." }
+      ],
+      "grammar": {
+        "title": "Past simple: what happened",
+        "tr": "Geçmişte olup bitmiş olaylar için past simple kullanılır. Düzenli fiillere -ed eklenir (collected, compared); bazı fiiller düzensizdir (have → had, think → thought).",
+        "examples": ["We had a strange problem.", "We collected data from all the devices.", "At first, we thought it was the headphones."]
+      },
+      "questions": [
+        { "q": "Where were the results wrong?", "options": ["In every clinic", "In some clinics", "Only in the office"], "a": 1 },
+        { "q": "What did they think at first?", "options": ["The headphones were the problem", "The software was old", "The doctors made mistakes"], "a": 0 },
+        { "q": "What caused the problem?", "options": ["Bad headphones", "A slow computer", "Noise from old air conditioners"], "a": 2 },
+        { "q": "What does the device do now in a noisy room?", "options": ["It stops working", "It warns the user", "It calls the company"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We ___ data from all the devices.", "a": "collected", "hint": "topladık" },
+        { "s": "At ___, we thought it was the headphones.", "a": "first", "hint": "ilk başta" },
+        { "s": "Look at the data before you ___.", "a": "guess", "hint": "tahmin etmek" }
+      ],
+      "order": [
+        { "a": "The problem only happened in rooms with old air conditioners." },
+        { "a": "We added a noise check before every test." }
+      ],
+      "translate": [
+        { "tr": "Tüm cihazlardan veri topladık.", "en": "We collected data from all the devices.", "keys": ["collected data", "all the devices"] },
+        { "tr": "Sorun kulaklıklar değildi.", "en": "The problem was not the headphones.", "keys": ["problem", "headphones"] }
+      ],
+      "roleplay": {
+        "persona": "Clinic manager",
+        "personaTr": "Klinik müdürü",
+        "scene": "Bir klinik müdürü geçen haftaki sorunun ne olduğunu ve nasıl çözüldüğünü soruyor.",
+        "turns": [
+          { "ai": "We heard that some clinics had wrong results. What happened?", "aiTr": "Bazı kliniklerin yanlış sonuç aldığını duyduk. Ne oldu?", "hint": "The results were wrong at high frequencies, so we collected data from all the devices.", "keys": ["high frequencies", "collected data", "wrong"] },
+          { "ai": "Was it a problem with the headphones?", "aiTr": "Kulaklıklarla ilgili bir sorun muydu?", "hint": "No, it wasn't. The noise from old air conditioners was too loud.", "keys": ["air conditioners", "noise", "too loud"] },
+          { "ai": "How did you fix it?", "aiTr": "Nasıl düzelttiniz?", "hint": "We added a noise check. Now the device warns the user if the room is too noisy.", "keys": ["noise check", "warns", "too noisy"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Bir hatayı adım adım bulma ve çözme hikâyeni anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Last week we had a strange problem with our device.", "tr": "Geçen hafta cihazımızla ilgili garip bir sorun yaşadık." },
+        { "who": "Me", "en": "In some clinics, the test results were wrong at high frequencies, but in others everything worked perfectly.", "tr": "Bazı kliniklerde test sonuçları yüksek frekanslarda yanlış çıktı, ama diğerlerinde her şey kusursuz çalıştı." },
+        { "who": "Me", "en": "At first, we guessed it was the headphones, but we were wrong.", "tr": "İlk başta sorunun kulaklıklarda olduğunu tahmin ettik, ama yanılmışız." },
+        { "who": "Me", "en": "So we collected data from all the devices and compared the clinics with and without problems.", "tr": "Bu yüzden tüm cihazlardan veri topladık ve sorun yaşayan kliniklerle yaşamayanları karşılaştırdık." },
+        { "who": "Me", "en": "We found out that the problem happened only in rooms with old air conditioners.", "tr": "Sorunun yalnızca eski klimaların olduğu odalarda ortaya çıktığını öğrendik." },
+        { "who": "Me", "en": "Their noise was too loud at exactly those frequencies, so patients couldn't hear the test sounds.", "tr": "Klimaların gürültüsü tam da o frekanslarda çok yüksekti, bu yüzden hastalar test seslerini duyamıyordu." },
+        { "who": "Me", "en": "The solution was simple: we added a noise check before the test starts.", "tr": "Çözüm basitti: test başlamadan önce bir gürültü kontrolü ekledik." },
+        { "who": "Me", "en": "If the room is too noisy, the device warns the user.", "tr": "Oda fazla gürültülüyse cihaz kullanıcıyı uyarıyor." },
+        { "who": "Me", "en": "Since the update, the results have been correct in every clinic.", "tr": "Güncellemeden bu yana sonuçlar her klinikte doğru çıkıyor." },
+        { "who": "Me", "en": "We have learned an important lesson: look at the data before you guess.", "tr": "Önemli bir ders öğrendik: tahmin etmeden önce verilere bak." }
+      ],
+      "vocab": [
+        { "en": "at first", "tr": "ilk başta", "ex": "At first, we guessed it was the headphones.", "def": "at the beginning, before you know more" },
+        { "en": "collect data", "tr": "veri toplamak", "ex": "We collected data from all the devices.", "def": "to gather information so you can study it" },
+        { "en": "compare", "tr": "karşılaştırmak", "ex": "We compared the clinics with and without problems.", "def": "to look at two or more things to see how they are different" },
+        { "en": "find out", "tr": "öğrenmek, ortaya çıkarmak", "ex": "We found out that the problem happened only in some rooms.", "def": "to discover a fact" },
+        { "en": "solution", "tr": "çözüm", "ex": "The solution was simple.", "def": "a way to solve a problem" },
+        { "en": "warn", "tr": "uyarmak", "ex": "The device warns the user if the room is too noisy.", "def": "to tell someone about a possible problem" },
+        { "en": "guess", "tr": "tahmin etmek", "ex": "Look at the data before you guess.", "def": "to give an answer without being sure" },
+        { "en": "learn a lesson", "tr": "ders çıkarmak", "ex": "We have learned an important lesson.", "def": "to understand something useful from an experience" }
+      ],
+      "grammar": {
+        "title": "Past simple vs present perfect",
+        "tr": "Belirli bir geçmiş zamanda bitmiş olaylar için past simple kullanılır (Last week we had a problem). Geçmişte başlayıp bugüne uzanan durumlar ya da sonucu bugün önemli olan deneyimler için present perfect (have/has + V3) kullanılır.",
+        "examples": ["Last week we had a strange problem.", "Since the update, the results have been correct.", "We have learned an important lesson."]
+      },
+      "questions": [
+        { "q": "What was the problem?", "options": ["The device was too slow", "The screen was broken", "Results were wrong at high frequencies in some clinics"], "a": 2 },
+        { "q": "What did they guess at first?", "options": ["That the headphones were the problem", "That the doctors made mistakes", "That the software was old"], "a": 0 },
+        { "q": "What caused the problem?", "options": ["A software bug", "Noise from old air conditioners", "Bad headphones"], "a": 1 },
+        { "q": "What has happened since the update?", "options": ["The results have been correct in every clinic", "Some clinics have stopped using the device", "The team has changed all the headphones"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "So we ___ data from all the devices.", "a": "collected", "hint": "topladık" },
+        { "s": "The ___ was simple: we added a noise check.", "a": "solution", "hint": "çözüm" },
+        { "s": "If the room is too noisy, the device ___ the user.", "a": "warns", "hint": "uyarır" }
+      ],
+      "order": [
+        { "a": "Look at the data before you guess." },
+        { "a": "The problem happened only in rooms with old air conditioners." }
+      ],
+      "translate": [
+        { "tr": "Çözüm basitti.", "en": "The solution was simple.", "keys": ["solution", "simple"] },
+        { "tr": "Güncellemeden bu yana sonuçlar doğru çıkıyor.", "en": "Since the update, the results have been correct.", "keys": ["since the update", "have been correct"] }
+      ],
+      "roleplay": {
+        "persona": "Clinic manager",
+        "personaTr": "Klinik müdürü",
+        "scene": "Bir klinik müdürü geçen haftaki sorunun ne olduğunu ve nasıl çözüldüğünü soruyor.",
+        "turns": [
+          { "ai": "We heard some clinics had wrong results. What happened?", "aiTr": "Bazı kliniklerde yanlış sonuçlar çıktığını duyduk. Ne oldu?", "hint": "In some rooms, the results were wrong at high frequencies, so we collected data from all the devices.", "keys": ["wrong", "collected data", "frequencies"] },
+          { "ai": "And what was the cause?", "aiTr": "Peki sebebi neydi?", "hint": "The noise from old air conditioners was too loud at exactly those frequencies.", "keys": ["noise", "air conditioners", "loud"] },
+          { "ai": "How did you solve it?", "aiTr": "Nasıl çözdünüz?", "hint": "We added a noise check. If the room is too noisy, the device warns the user.", "keys": ["noise check", "warns", "added"] },
+          { "ai": "Have you had any problems since then?", "aiTr": "O zamandan beri herhangi bir sorun yaşadınız mı?", "hint": "No, we haven't. Since the update, the results have been correct in every clinic.", "keys": ["haven't", "correct", "since the update"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir hatanın kök nedenini verilerle nasıl bulduğunuzu anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Last week, a few clinics reported that our device was giving inaccurate results at high frequencies.", "tr": "Geçen hafta birkaç klinik, cihazımızın yüksek frekanslarda hatalı sonuçlar verdiğini bildirdi." },
+        { "who": "Me", "en": "Strangely, the same model worked perfectly in other clinics, so it didn't seem to be a hardware fault.", "tr": "İşin garibi, aynı model diğer kliniklerde kusursuz çalışıyordu, yani bir donanım arızası gibi görünmüyordu." },
+        { "who": "Me", "en": "Our first instinct was to blame the headphones, but replacing them didn't change anything.", "tr": "İlk refleksimiz suçu kulaklıklara atmak oldu, ama onları değiştirmek hiçbir şeyi değiştirmedi." },
+        { "who": "Me", "en": "Instead of guessing again, we collected data from every device and compared the clinics that had the issue with those that didn't.", "tr": "Yeniden tahmin yürütmek yerine her cihazdan veri topladık ve sorun yaşayan klinikleri yaşamayanlarla karşılaştırdık." },
+        { "who": "Me", "en": "The pattern was clear: the errors only occurred in rooms that were cooled by old air conditioners.", "tr": "Örüntü netti: hatalar yalnızca eski klimalarla soğutulan odalarda ortaya çıkıyordu." },
+        { "who": "Me", "en": "It turned out that these units gave off a high-pitched whine at exactly the frequencies we were testing, which masked the test tones.", "tr": "Meğer bu klimalar tam da test ettiğimiz frekanslarda tiz bir vızıltı çıkarıyormuş ve bu ses test tonlarını bastırıyormuş." },
+        { "who": "Me", "en": "In other words, patients simply couldn't hear some of the sounds, so the device recorded hearing loss that wasn't there.", "tr": "Başka bir deyişle hastalar bazı sesleri duyamıyordu, bu yüzden cihaz aslında olmayan bir işitme kaybı kaydediyordu." },
+        { "who": "Me", "en": "The fix was surprisingly simple: a short noise check is now run before every test.", "tr": "Çözüm şaşırtıcı derecede basitti: artık her testten önce kısa bir gürültü kontrolü yapılıyor." },
+        { "who": "Me", "en": "If the room is too noisy, the user is warned before the test begins.", "tr": "Oda fazla gürültülüyse kullanıcı test başlamadan önce uyarılıyor." },
+        { "who": "Me", "en": "We shipped the fix in our next monthly update, and since then the results have been consistent across all clinics.", "tr": "Düzeltmeyi bir sonraki aylık güncellemede yayınladık ve o zamandan beri sonuçlar tüm kliniklerde tutarlı." },
+        { "who": "Me", "en": "If I had to sum it up, I'd say the lesson is this: let the data guide you, not your assumptions.", "tr": "Özetlemem gerekse, dersin şu olduğunu söylerdim: varsayımların değil, veriler sana yol göstersin." }
+      ],
+      "vocab": [
+        { "en": "inaccurate", "tr": "hatalı, yanlış", "ex": "The device was giving inaccurate results.", "def": "not correct or exact" },
+        { "en": "first instinct", "tr": "ilk refleks, ilk tepki", "ex": "Our first instinct was to blame the headphones.", "def": "the first thing you feel you should do" },
+        { "en": "pattern", "tr": "örüntü", "ex": "The pattern was clear.", "def": "a regular way in which something happens" },
+        { "en": "occur", "tr": "meydana gelmek", "ex": "The errors only occurred in some rooms.", "def": "to happen" },
+        { "en": "it turned out that", "tr": "meğer, sonunda anlaşıldı ki", "ex": "It turned out that the air conditioners were the problem.", "def": "used to say what you discovered in the end" },
+        { "en": "mask (a sound)", "tr": "(bir sesi) bastırmak, örtmek", "ex": "The whine masked the test tones.", "def": "to stop a sound from being heard clearly" },
+        { "en": "ship a fix", "tr": "düzeltmeyi yayınlamak", "ex": "We shipped the fix in our next monthly update.", "def": "to release a correction to customers" },
+        { "en": "consistent", "tr": "tutarlı", "ex": "The results have been consistent since then.", "def": "the same and reliable every time" },
+        { "en": "assumption", "tr": "varsayım", "ex": "Let the data guide you, not your assumptions.", "def": "something you believe is true without proof" }
+      ],
+      "grammar": {
+        "title": "The passive: focus on the action",
+        "tr": "İşi kimin yaptığı önemli olmadığında ya da eylemin kendisi daha önemli olduğunda passive kullanılır: be + V3. Teknik anlatımlarda çok yaygındır.",
+        "examples": ["A short noise check is now run before every test.", "The user is warned before the test begins.", "The rooms were cooled by old air conditioners."]
+      },
+      "questions": [
+        { "q": "What did the clinics report?", "options": ["The device was too slow", "Inaccurate results at high frequencies", "Broken headphones"], "a": 1 },
+        { "q": "What happened when they replaced the headphones?", "options": ["The problem got worse", "The clinics complained more", "Nothing changed"], "a": 2 },
+        { "q": "Why did the device record hearing loss that wasn't there?", "options": ["Patients couldn't hear tones masked by the noise", "The software had a bug", "Patients pressed the button too late"], "a": 0 },
+        { "q": "What does the speaker suggest about guessing?", "options": ["It is faster than collecting data", "It is always the best first step", "It can waste time and point you in the wrong direction"], "a": 2 },
+        { "q": "How was the fix delivered to customers?", "options": ["Engineers visited every clinic", "In the next monthly software update", "New devices were sent out"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Our first ___ was to blame the headphones.", "a": "instinct", "hint": "refleks, ilk tepki" },
+        { "s": "The errors only ___ in rooms with old air conditioners.", "a": "occurred", "hint": "meydana geliyordu" },
+        { "s": "The whine ___ the test tones, so patients couldn't hear them.", "a": "masked", "hint": "bastırdı" }
+      ],
+      "order": [
+        { "a": "A short noise check is now run before every test." },
+        { "a": "Let the data guide you and not your assumptions." }
+      ],
+      "translate": [
+        { "tr": "Meğer sorun klimalarmış.", "en": "It turned out that the air conditioners were the problem.", "keys": ["it turned out", "air conditioners"] },
+        { "tr": "Oda fazla gürültülüyse kullanıcı uyarılıyor.", "en": "If the room is too noisy, the user is warned.", "keys": ["too noisy", "is warned"] }
+      ],
+      "roleplay": {
+        "persona": "Clinic manager",
+        "personaTr": "Klinik müdürü",
+        "scene": "Sorun yaşayan kliniklerden birinin müdürü ne olduğunu ve sorunun tekrar etmeyeceğinden nasıl emin olabileceğini soruyor.",
+        "turns": [
+          { "ai": "Our doctors told me the device was showing hearing loss in patients who seemed fine. What was going on?", "aiTr": "Doktorlarımız cihazın, sağlıklı görünen hastalarda işitme kaybı gösterdiğini söyledi. Neler oluyordu?", "hint": "It turned out that old air conditioners were making noise at high frequencies, which masked the test tones.", "keys": ["it turned out", "air conditioners", "masked", "noise"] },
+          { "ai": "How did you work that out?", "aiTr": "Bunu nasıl anladınız?", "hint": "We collected data from every device and compared the clinics that had the issue with those that didn't.", "keys": ["collected data", "compared", "every device"] },
+          { "ai": "What's been done to fix it?", "aiTr": "Düzeltmek için ne yapıldı?", "hint": "A short noise check is now run before every test, and the user is warned if the room is too noisy.", "keys": ["noise check", "is warned", "too noisy"] },
+          { "ai": "Would it help if we replaced our air conditioner?", "aiTr": "Klimamızı değiştirsek işe yarar mı?", "hint": "If you replaced it, the room would be quieter, but the noise check already protects your results.", "keys": ["would be quieter", "noise check", "protects"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Zorlu bir hatanın hikâyesini bir teknoloji etkinliğinde etkileyici bir dille anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Last week, a handful of clinics flagged something odd: our device was reporting hearing loss at high frequencies in patients who seemed perfectly fine.", "tr": "Geçen hafta birkaç klinik tuhaf bir şeye dikkat çekti: cihazımız, gayet sağlıklı görünen hastalarda yüksek frekanslarda işitme kaybı raporluyordu." },
+        { "who": "Me", "en": "What made it so puzzling was that identical units were working flawlessly in every other clinic.", "tr": "İşi bu kadar kafa karıştırıcı yapan, aynı cihazların diğer tüm kliniklerde kusursuz çalışmasıydı." },
+        { "who": "Me", "en": "Our first instinct was to blame the headphones, but swapping them out made no difference whatsoever.", "tr": "İlk refleksimiz suçu kulaklıklara atmaktı, ama onları değiştirmek hiçbir fark yaratmadı." },
+        { "who": "Me", "en": "Rather than chase another hunch, we pulled the logs from every device and compared the affected clinics with the unaffected ones.", "tr": "Bir başka önseziyi kovalamak yerine her cihazın kayıtlarını çektik ve sorun yaşayan klinikleri yaşamayanlarla karşılaştırdık." },
+        { "who": "Me", "en": "Only when we lined up the data side by side did the pattern emerge.", "tr": "Örüntü ancak verileri yan yana koyduğumuzda ortaya çıktı." },
+        { "who": "Me", "en": "Every faulty result had come from a room cooled by an ageing air conditioner.", "tr": "Hatalı sonuçların hepsi eski bir klimayla soğutulan odalardan gelmişti." },
+        { "who": "Me", "en": "As it turned out, these older units emit a high-pitched whine at precisely the frequencies we test, effectively masking the tones the patient is meant to hear.", "tr": "Meğer bu eski klimalar tam da test ettiğimiz frekanslarda tiz bir vızıltı çıkarıyormuş ve hastanın duyması gereken tonları fiilen bastırıyormuş." },
+        { "who": "Me", "en": "In other words, the device wasn't failing; it was faithfully recording what the patient could actually hear.", "tr": "Yani cihaz arızalı değildi; hastanın gerçekte ne duyabildiğini sadakatle kaydediyordu." },
+        { "who": "Me", "en": "The fix itself was almost anticlimactic: a brief ambient-noise check that runs before every test and warns the user if the room is too loud.", "tr": "Çözümün kendisi neredeyse hayal kırıklığı yaratacak kadar basitti: her testten önce çalışan ve oda fazla gürültülüyse kullanıcıyı uyaran kısa bir ortam gürültüsü kontrolü." },
+        { "who": "Me", "en": "We rolled it out in the next monthly update, and the results have been consistent across all sites ever since.", "tr": "Bunu bir sonraki aylık güncellemede kullanıma sunduk ve o günden beri sonuçlar tüm merkezlerde tutarlı." },
+        { "who": "Me", "en": "What this episode reinforced for me is that intuition is no substitute for data.", "tr": "Bu olayın bana bir kez daha gösterdiği şu: sezgi, verinin yerini tutmaz." }
+      ],
+      "vocab": [
+        { "en": "flag something", "tr": "bir şeye dikkat çekmek, işaretlemek", "ex": "A handful of clinics flagged something odd.", "def": "to point out a possible problem" },
+        { "en": "puzzling", "tr": "kafa karıştırıcı", "ex": "What made it so puzzling was that the other units worked.", "def": "difficult to understand or explain" },
+        { "en": "swap something out", "tr": "bir şeyi (yenisiyle) değiştirmek", "ex": "Swapping out the headphones made no difference.", "def": "to replace one part with another" },
+        { "en": "chase a hunch", "tr": "bir önsezinin peşinden gitmek", "ex": "Rather than chase a hunch, we pulled the logs.", "def": "to follow a feeling that has no evidence yet" },
+        { "en": "pull the logs", "tr": "kayıtları çekmek", "ex": "We pulled the logs from every device.", "def": "to download the records a system keeps" },
+        { "en": "emerge", "tr": "ortaya çıkmak", "ex": "The pattern only emerged when we compared the data.", "def": "to become clear or known" },
+        { "en": "high-pitched whine", "tr": "tiz vızıltı", "ex": "The old units emit a high-pitched whine.", "def": "a thin, high, continuous sound" },
+        { "en": "anticlimactic", "tr": "beklenenden sönük, sıradan", "ex": "The fix itself was almost anticlimactic.", "def": "less exciting than you expected" },
+        { "en": "roll something out", "tr": "kullanıma sunmak", "ex": "We rolled the fix out in the next monthly update.", "def": "to release something to all users" },
+        { "en": "no substitute for", "tr": "...nin yerini tutmamak", "ex": "Intuition is no substitute for data.", "def": "not as good as the real thing" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Only when'",
+        "tr": "'Only when', 'Only after', 'Not only' gibi ifadeler cümlenin başına gelince yardımcı fiil öznenin önüne geçer (did the pattern emerge). Vurgulu ve etkili bir anlatım için kullanılır.",
+        "examples": ["Only when we lined up the data side by side did the pattern emerge.", "Only after the update did the results become consistent.", "Not only did the fix work, but it took just one update."]
+      },
+      "questions": [
+        { "q": "Why was the problem initially so puzzling?", "options": ["The device had never been tested before", "Identical devices worked perfectly in other clinics", "The clinics refused to share data"], "a": 1 },
+        { "q": "What does the speaker imply by saying the device 'wasn't failing'?", "options": ["It was accurately recording what patients could hear in a noisy room", "The clinics had used it incorrectly", "The headphones were the real fault"], "a": 0 },
+        { "q": "How does the speaker seem to feel about the fix?", "options": ["Proud of how complex it was", "Worried it might not last", "Slightly amused at how simple it turned out to be"], "a": 2 },
+        { "q": "What led to the breakthrough?", "options": ["Comparing data from affected and unaffected clinics", "Replacing the headphones", "A complaint from a patient"], "a": 0 },
+        { "q": "What is the speaker's main takeaway?", "options": ["Hardware should be replaced every year", "Intuition is no substitute for data", "Clinics should not use air conditioners"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Rather than chase another ___, we pulled the logs from every device.", "a": "hunch", "hint": "önsezi" },
+        { "s": "Only when we lined up the data side by side did the pattern ___.", "a": "emerge", "hint": "ortaya çıkmak" },
+        { "s": "We ___ it out in the next monthly update.", "a": "rolled", "hint": "kullanıma sunduk" },
+        { "s": "Intuition is no ___ for data.", "a": "substitute", "hint": "yerini tutan şey" }
+      ],
+      "order": [
+        { "a": "Swapping out the headphones made no difference whatsoever." },
+        { "a": "Intuition is no substitute for looking at the data." }
+      ],
+      "translate": [
+        { "tr": "Örüntü ancak verileri karşılaştırdığımızda ortaya çıktı.", "en": "Only when we compared the data did the pattern emerge.", "keys": ["only when", "did the pattern emerge"] },
+        { "tr": "Kulaklıkları değiştirmek hiçbir fark yaratmadı.", "en": "Swapping out the headphones made no difference.", "keys": ["swapping out", "made no difference"] },
+        { "tr": "Sezgi, verinin yerini tutmaz.", "en": "Intuition is no substitute for data.", "keys": ["no substitute for"] }
+      ],
+      "roleplay": {
+        "persona": "Clinic director",
+        "personaTr": "Klinik direktörü",
+        "scene": "Sorun yaşayan bir kliniğin direktörü ne olduğunu ve bunun tekrar yaşanmayacağına nasıl güvenebileceğini sorguluyor.",
+        "turns": [
+          { "ai": "Frankly, it was unsettling to see hearing loss reported in patients who clearly didn't have it — what exactly went wrong?", "aiTr": "Açıkçası, belli ki işitme kaybı olmayan hastalarda işitme kaybı raporlandığını görmek huzursuz ediciydi — tam olarak ne ters gitti?", "hint": "I completely understand. As it turned out, older air conditioners emit a high-pitched whine that masked the test tones.", "keys": ["as it turned out", "masked", "air conditioners", "high-pitched"] },
+          { "ai": "Why didn't your team catch this sooner?", "aiTr": "Ekibiniz bunu neden daha önce fark etmedi?", "hint": "Our first instinct was to blame the headphones, and only when we compared data from every clinic did the real cause emerge.", "keys": ["first instinct", "only when", "emerge", "compared"] },
+          { "ai": "What safeguards have you put in place since then?", "aiTr": "O zamandan beri ne gibi önlemler aldınız?", "hint": "We rolled out an ambient-noise check that runs before every test and warns the user if the room is too loud.", "keys": ["rolled out", "noise check", "warns"] },
+          { "ai": "And what would you say your team learned from all this?", "aiTr": "Peki sizce ekibiniz tüm bunlardan ne öğrendi?", "hint": "What it reinforced for us is that intuition is no substitute for data.", "keys": ["no substitute", "intuition", "data"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Sahada ortaya çıkan zor bir hatayı ve çıkardığınız dersi ustaca, hafif bir ironiyle anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Last week we were confronted with the kind of bug every hardware team dreads: one that only shows up in the field.", "tr": "Geçen hafta her donanım ekibinin korktuğu türden bir hatayla karşılaştık: yalnızca sahada ortaya çıkan bir hata." },
+        { "who": "Me", "en": "A handful of clinics were seeing high-frequency hearing loss in patients who, by every other measure, had perfectly normal hearing.", "tr": "Birkaç klinik, başka her açıdan işitmesi tamamen normal olan hastalarda yüksek frekanslarda işitme kaybı görüyordu." },
+        { "who": "Me", "en": "Tellingly, the very same units were behaving impeccably everywhere else.", "tr": "Dikkat çekici olan, aynı cihazların başka her yerde kusursuz çalışmasıydı." },
+        { "who": "Me", "en": "Our knee-jerk reaction was to blame the headphones, yet swapping them out changed precisely nothing.", "tr": "İlk refleksimiz suçu kulaklıklara atmak oldu, ama onları değiştirmek kesinlikle hiçbir şeyi değiştirmedi." },
+        { "who": "Me", "en": "So we did what, in hindsight, we ought to have done from the outset: we stopped theorising and pulled the logs from every device.", "tr": "Böylece, geriye dönüp bakınca en başta yapmamız gereken şeyi yaptık: teori üretmeyi bıraktık ve her cihazın kayıtlarını çektik." },
+        { "who": "Me", "en": "Set side by side, the affected and unaffected clinics told a remarkably clear story.", "tr": "Yan yana konduğunda, sorun yaşayan ve yaşamayan klinikler son derece net bir hikâye anlatıyordu." },
+        { "who": "Me", "en": "Every anomalous result had come from a room cooled by an ageing air-conditioning unit.", "tr": "Her anormal sonuç, eskimiş bir klimayla soğutulan bir odadan gelmişti." },
+        { "who": "Me", "en": "These units, it transpired, emit a faint high-pitched whine at precisely the frequencies we test, so the device was diligently recording a hearing loss that was, quite literally, the room's and not the patient's.", "tr": "Meğer bu klimalar tam da test ettiğimiz frekanslarda hafif, tiz bir vızıltı çıkarıyormuş; yani cihaz, kelimenin tam anlamıyla hastaya değil odaya ait bir işitme kaybını özenle kaydediyormuş." },
+        { "who": "Me", "en": "The remedy was almost embarrassingly modest: a brief ambient-noise check before each test, which warns the user if the room is too loud to give a trustworthy result.", "tr": "Çözüm neredeyse utandıracak kadar mütevazıydı: her testten önce yapılan ve oda güvenilir bir sonuç için fazla gürültülüyse kullanıcıyı uyaran kısa bir ortam gürültüsü kontrolü." },
+        { "who": "Me", "en": "It went out with the next monthly update, and results have been consistent across every site since.", "tr": "Düzeltme bir sonraki aylık güncellemeyle gönderildi ve o günden beri sonuçlar tüm merkezlerde tutarlı." },
+        { "who": "Me", "en": "That said, the fix is not really the point.", "tr": "Bununla birlikte, asıl mesele düzeltmenin kendisi değil." },
+        { "who": "Me", "en": "What lingers is a rather humbling lesson: a confident hunch, however seasoned the engineer, is no match for half an hour spent with the data.", "tr": "Akılda kalan, insanı oldukça alçakgönüllü kılan bir ders: mühendis ne kadar deneyimli olursa olsun, kendinden emin bir önsezi verilerle geçirilen yarım saatin yerini tutmaz." }
+      ],
+      "vocab": [
+        { "en": "show up in the field", "tr": "sahada (gerçek kullanımda) ortaya çıkmak", "ex": "It was a bug that only showed up in the field.", "def": "to appear only when a product is used by real customers" },
+        { "en": "tellingly", "tr": "dikkat çekici biçimde, manidar şekilde", "ex": "Tellingly, the same units worked perfectly elsewhere.", "def": "in a way that reveals something important" },
+        { "en": "knee-jerk reaction", "tr": "düşünmeden verilen ilk tepki", "ex": "Our knee-jerk reaction was to blame the headphones.", "def": "a quick reaction without careful thought" },
+        { "en": "in hindsight", "tr": "geriye dönüp bakınca", "ex": "In hindsight, we should have checked the data first.", "def": "when you look back at a past event with what you know now" },
+        { "en": "from the outset", "tr": "en başından", "ex": "We ought to have pulled the logs from the outset.", "def": "from the very beginning" },
+        { "en": "anomalous", "tr": "anormal, olağan dışı", "ex": "Every anomalous result came from the same kind of room.", "def": "different from what is normal or expected" },
+        { "en": "it transpired that", "tr": "meğer, ...olduğu ortaya çıktı", "ex": "It transpired that the units emit a faint whine.", "def": "it became known that (formal)" },
+        { "en": "almost embarrassingly", "tr": "neredeyse utandıracak kadar", "ex": "The remedy was almost embarrassingly simple.", "def": "so much that it feels slightly awkward to admit" },
+        { "en": "that said", "tr": "bununla birlikte", "ex": "That said, the fix is not really the point.", "def": "used to add a point that contrasts with what came before" },
+        { "en": "be no match for", "tr": "...ile boy ölçüşememek", "ex": "A confident hunch is no match for the data.", "def": "to be much weaker or less effective than something" }
+      ],
+      "grammar": {
+        "title": "Ought to have / should have + past participle",
+        "tr": "'ought to have / should have + V3' geçmişte yapılması gerekip yapılmayan şeyleri anlatır; özeleştiriyi ölçülü ve zarif bir dille ifade eder. 'Ought to' biraz daha resmîdir.",
+        "examples": ["We did what we ought to have done from the outset.", "In hindsight, we should have pulled the logs first.", "We ought not to have blamed the headphones so quickly."]
+      },
+      "questions": [
+        { "q": "What makes this kind of bug especially frustrating for a hardware team?", "options": ["It only appears in real-world use, not in the lab", "It affects every device equally", "It was reported by investors"], "a": 0 },
+        { "q": "What is implied by 'we ought to have done from the outset'?", "options": ["The clinics delayed the investigation", "The team had no access to the logs earlier", "The team regrets not looking at the data sooner"], "a": 2 },
+        { "q": "What is the tone of 'a hearing loss that was, quite literally, the room's and not the patient's'?", "options": ["Angry and defensive", "Wry and ironic", "Anxious and apologetic"], "a": 1 },
+        { "q": "Why does the speaker call the remedy 'almost embarrassingly modest'?", "options": ["Because it was expensive to build", "Because customers complained about it", "Because a very simple fix solved a problem that had baffled the team"], "a": 2 },
+        { "q": "What does 'That said, the fix is not really the point' signal?", "options": ["The speaker is moving on to a broader lesson", "The fix did not work", "The speaker disagrees with the engineers"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Our ___ reaction was to blame the headphones.", "a": "knee-jerk", "hint": "düşünmeden verilen (tepki)" },
+        { "s": "In ___, we ought to have pulled the logs from the outset.", "a": "hindsight", "hint": "geriye dönüp bakınca" },
+        { "s": "These units, it ___, emit a faint high-pitched whine.", "a": "transpired", "hint": "ortaya çıktı (meğer)" },
+        { "s": "A confident hunch is no ___ for half an hour with the data.", "a": "match", "hint": "denk, rakip" }
+      ],
+      "order": [
+        { "a": "Tellingly the same units behaved impeccably everywhere else." },
+        { "a": "We stopped theorising and pulled the logs from every device." }
+      ],
+      "translate": [
+        { "tr": "Geriye dönüp bakınca, verilere en başından bakmalıydık.", "en": "In hindsight, we ought to have looked at the data from the outset.", "keys": ["in hindsight", "ought to have", "from the outset"] },
+        { "tr": "Bununla birlikte, asıl mesele düzeltme değil.", "en": "That said, the fix is not really the point.", "keys": ["that said", "not really the point"] },
+        { "tr": "İlk refleksimiz suçu kulaklıklara atmak oldu.", "en": "Our knee-jerk reaction was to blame the headphones.", "keys": ["knee-jerk reaction", "blame the headphones"] }
+      ],
+      "roleplay": {
+        "persona": "Head of audiology at a hospital",
+        "personaTr": "Bir hastanenin odyoloji bölüm başkanı",
+        "scene": "Bir hastanenin odyoloji bölüm başkanı olayı sorguluyor; güven kaybını önlemek için açık ve ölçülü konuşmalısın.",
+        "turns": [
+          { "ai": "I'll be candid — when a device starts diagnosing hearing loss in people with perfectly good hearing, my confidence takes a knock. What on earth happened?", "aiTr": "Açık konuşacağım — bir cihaz işitmesi gayet iyi olan insanlarda işitme kaybı teşhis etmeye başlayınca güvenim sarsılıyor. Ne oldu böyle?", "hint": "That's entirely fair. It transpired that ageing air conditioners emit a faint whine at precisely the frequencies we test, so the device was recording the room rather than the patient.", "keys": ["it transpired", "air conditioners", "whine", "the room"] },
+          { "ai": "Surely that should have been caught during validation?", "aiTr": "Bunun doğrulama aşamasında yakalanması gerekmez miydi?", "hint": "In hindsight, yes, it ought to have been; our validation rooms were simply too quiet to reveal it.", "keys": ["in hindsight", "ought to have", "too quiet"] },
+          { "ai": "So what's stopping it from happening again?", "aiTr": "Peki bunun tekrar olmasını ne engelliyor?", "hint": "Every test now begins with a brief ambient-noise check, and if the room is too loud to give a trustworthy result, the user is warned before anything is recorded.", "keys": ["ambient-noise check", "warned", "too loud"] },
+          { "ai": "And beyond the fix itself, has this changed how your team works?", "aiTr": "Düzeltmenin ötesinde, bu olay ekibinizin çalışma şeklini değiştirdi mi?", "hint": "It has; we now treat every confident hunch with suspicion until the data backs it up.", "keys": ["hunch", "data backs it up", "suspicion"] }
+        ]
+      }
+    }
+  }
+}

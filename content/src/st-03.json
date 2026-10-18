@@ -1,0 +1,374 @@
+{
+  "id": "st-03",
+  "topic": "startup",
+  "title": "Making a Difficult Business Decision",
+  "titleTr": "Zor Bir İş Kararı Vermek",
+  "levels": {
+    "A1": {
+      "intro": "İki seçenek arasında nasıl karar verdiğini çok basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "en": "This is a difficult decision for our startup.", "tr": "Bu, girişimimiz için zor bir karar." },
+        { "en": "We have two options.", "tr": "İki seçeneğimiz var." },
+        { "en": "Option A: we sell our device to hospitals.", "tr": "A seçeneği: cihazımızı hastanelere biz satıyoruz." },
+        { "en": "Option B: a distributor sells it for us.", "tr": "B seçeneği: bir distribütör onu bizim için satıyor." },
+        { "en": "Option A is slow, but we get more money.", "tr": "A seçeneği yavaş ama daha çok para kazanıyoruz." },
+        { "en": "Option B is fast, but we get less money.", "tr": "B seçeneği hızlı ama daha az para kazanıyoruz." },
+        { "en": "Our choice is option B, because time is very important.", "tr": "Seçimimiz B seçeneği, çünkü zaman çok önemli." },
+        { "en": "It is not easy, but I think it is right.", "tr": "Kolay değil ama bence doğru." }
+      ],
+      "vocab": [
+        { "en": "decision", "tr": "karar", "ex": "This is a difficult decision.", "def": "a choice you make after thinking" },
+        { "en": "option", "tr": "seçenek", "ex": "We have two options.", "def": "one of the things you can choose" },
+        { "en": "sell", "tr": "satmak", "ex": "We sell our device to hospitals.", "def": "to give something for money" },
+        { "en": "distributor", "tr": "distribütör, dağıtıcı", "ex": "A distributor sells it for us.", "def": "a company that sells other companies' products" },
+        { "en": "fast", "tr": "hızlı", "ex": "Option B is fast.", "def": "quick, not slow" },
+        { "en": "choice", "tr": "seçim", "ex": "Our choice is option B.", "def": "the thing you choose" }
+      ],
+      "grammar": {
+        "title": "To be + adjective: Option A is slow",
+        "tr": "Bir şeyi tarif etmek için 'is/are' + sıfat kullanırız: 'Option B is fast.' Olumsuz cümlede 'not' ekleriz: 'It is not easy.'",
+        "examples": ["Option A is slow.", "Option B is fast.", "It is not easy."]
+      },
+      "questions": [
+        { "q": "What is option A?", "options": ["We sell the device to hospitals", "A distributor sells it", "We close the company"], "a": 0 },
+        { "q": "Which option is fast?", "options": ["Option A", "Option B", "Both options"], "a": 1 },
+        { "q": "What is their choice?", "options": ["Option A", "No option", "Option B"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "We have two ___.", "a": "options", "hint": "seçenekler" },
+        { "s": "Option B: a ___ sells it for us.", "a": "distributor", "hint": "distribütör" },
+        { "s": "Our choice is option B, because time is very ___.", "a": "important", "hint": "önemli" }
+      ],
+      "order": [
+        { "a": "This is a difficult decision for our startup." },
+        { "a": "It is not easy but I think it is right." }
+      ],
+      "translate": [
+        { "tr": "İki seçeneğimiz var.", "en": "We have two options.", "keys": ["two options"] },
+        { "tr": "Zaman çok önemli.", "en": "Time is very important.", "keys": ["time", "important"] }
+      ],
+      "roleplay": {
+        "persona": "Co-founder",
+        "personaTr": "Kurucu ortak",
+        "scene": "Kurucu ortağın, cihazı kendiniz mi satacaksınız yoksa bir distribütörle mi çalışacaksınız diye soruyor.",
+        "turns": [
+          { "ai": "Option A or option B?", "aiTr": "A seçeneği mi, B seçeneği mi?", "hint": "Option B. A distributor sells it for us.", "keys": ["option B", "distributor"] },
+          { "ai": "Why option B?", "aiTr": "Neden B seçeneği?", "hint": "Option B is fast, and time is very important.", "keys": ["fast", "time", "important"] },
+          { "ai": "But we get less money. Is that OK?", "aiTr": "Ama daha az para kazanıyoruz. Bu sorun değil mi?", "hint": "It is not easy, but I think it is right.", "keys": ["right", "not easy"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Geçen ay verdiğiniz zor kararı ve nedenini anlatıyorsun.",
+      "text": [
+        { "en": "Last month, we had to make a difficult decision.", "tr": "Geçen ay zor bir karar vermek zorunda kaldık." },
+        { "en": "We had two options for selling our device.", "tr": "Cihazımızı satmak için iki seçeneğimiz vardı." },
+        { "en": "Option A was to sell it directly to hospitals.", "tr": "A seçeneği onu doğrudan hastanelere satmaktı." },
+        { "en": "Option B was to work with a distributor who already knows the market.", "tr": "B seçeneği pazarı zaten bilen bir distribütörle çalışmaktı." },
+        { "en": "Selling directly gives us more profit, but it takes a lot of time.", "tr": "Doğrudan satmak bize daha çok kâr sağlıyor ama çok zaman alıyor." },
+        { "en": "A distributor takes a percentage, but they can reach customers much faster.", "tr": "Distribütör bir yüzde alıyor ama müşterilere çok daha hızlı ulaşabiliyor." },
+        { "en": "We talked about the pros and cons for two weeks.", "tr": "İki hafta boyunca artıları ve eksileri konuştuk." },
+        { "en": "In the end, we chose the distributor because speed is very important.", "tr": "Sonunda distribütörü seçtik çünkü hız çok önemli." },
+        { "en": "It wasn't an easy choice, but I think it was the right one.", "tr": "Kolay bir seçim değildi ama bence doğru olandı." }
+      ],
+      "vocab": [
+        { "en": "make a decision", "tr": "karar vermek", "ex": "We had to make a difficult decision.", "def": "to choose after thinking" },
+        { "en": "option", "tr": "seçenek", "ex": "We had two options.", "def": "something you can choose" },
+        { "en": "directly", "tr": "doğrudan", "ex": "We could sell directly to hospitals.", "def": "without anyone in the middle" },
+        { "en": "distributor", "tr": "distribütör, dağıtıcı", "ex": "A distributor already knows the market.", "def": "a company that sells another company's products" },
+        { "en": "profit", "tr": "kâr", "ex": "Selling directly gives us more profit.", "def": "the money you keep after paying costs" },
+        { "en": "take a percentage", "tr": "yüzde almak, pay almak", "ex": "A distributor takes a percentage.", "def": "to keep a part of the money from each sale" },
+        { "en": "reach customers", "tr": "müşterilere ulaşmak", "ex": "They can reach customers much faster.", "def": "to find and talk to people who might buy" },
+        { "en": "pros and cons", "tr": "artılar ve eksiler", "ex": "We talked about the pros and cons.", "def": "the good and bad sides of something" }
+      ],
+      "grammar": {
+        "title": "Past simple: what we did",
+        "tr": "Geçmişte bitmiş olaylar için past simple kullanırız. Düzenli fiiller -ed alır (talked), düzensiz fiiller değişir (have → had, choose → chose).",
+        "examples": ["We had two options.", "We talked about the pros and cons for two weeks.", "In the end, we chose the distributor."]
+      },
+      "questions": [
+        { "q": "When did they make the decision?", "options": ["Last year", "Last month", "Last week"], "a": 1 },
+        { "q": "What was option A?", "options": ["Work with a distributor", "Close the company", "Sell directly to hospitals"], "a": 2 },
+        { "q": "How long did they talk about it?", "options": ["Two weeks", "Two days", "Two months"], "a": 0 },
+        { "q": "Why did they choose the distributor?", "options": ["It was cheaper", "Speed is very important", "The doctor wanted it"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We had to make a difficult ___.", "a": "decision", "hint": "karar" },
+        { "s": "We talked about the pros and ___ for two weeks.", "a": "cons", "hint": "eksiler" },
+        { "s": "A distributor takes a ___, but they can reach customers faster.", "a": "percentage", "hint": "yüzde" }
+      ],
+      "order": [
+        { "a": "We had two options for selling our device." },
+        { "a": "In the end we chose the distributor." }
+      ],
+      "translate": [
+        { "tr": "İki seçeneğimiz vardı.", "en": "We had two options.", "keys": ["had two options"] },
+        { "tr": "Kolay bir seçim değildi.", "en": "It wasn't an easy choice.", "keys": ["easy choice"] }
+      ],
+      "roleplay": {
+        "persona": "Co-founder",
+        "personaTr": "Kurucu ortak",
+        "scene": "Kurucu ortağın, distribütör mü yoksa doğrudan satış mı sorusunu seninle konuşmak istiyor.",
+        "turns": [
+          { "ai": "I think we should sell directly to hospitals. What do you think?", "aiTr": "Bence doğrudan hastanelere satmalıyız. Sen ne düşünüyorsun?", "hint": "Selling directly gives us more profit, but it takes a lot of time.", "keys": ["profit", "time", "but"] },
+          { "ai": "But a distributor takes a percentage. Is that a problem?", "aiTr": "Ama distribütör bir yüzde alıyor. Bu bir sorun mu?", "hint": "Not really. They can reach customers much faster than us.", "keys": ["faster", "reach", "customers"] },
+          { "ai": "So what's your decision?", "aiTr": "Peki kararın ne?", "hint": "I want to go with the distributor because speed is very important.", "keys": ["distributor", "speed", "because"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "İki seçenek arasında nasıl karar verdiğinizi, artıları ve eksileri tartarak anlatıyorsun.",
+      "text": [
+        { "en": "Last month, we had to make one of the most difficult decisions since we started the company.", "tr": "Geçen ay, şirketi kurduğumuzdan beri verdiğimiz en zor kararlardan birini vermek zorunda kaldık." },
+        { "en": "We had two options: sell our device directly to hospitals, or work with a distributor who already knows the market.", "tr": "İki seçeneğimiz vardı: cihazımızı doğrudan hastanelere satmak ya da pazarı zaten bilen bir distribütörle çalışmak." },
+        { "en": "Selling directly means higher profit, but it takes a lot of time and a big sales team.", "tr": "Doğrudan satmak daha yüksek kâr demek ama çok zaman ve büyük bir satış ekibi gerektiriyor." },
+        { "en": "A distributor takes a percentage of every sale; however, they can reach many customers quickly.", "tr": "Distribütör her satıştan bir yüzde alıyor; ancak birçok müşteriye hızla ulaşabiliyor." },
+        { "en": "We discussed the pros and cons for two weeks, and the whole team gave their opinion.", "tr": "İki hafta boyunca artıları ve eksileri tartıştık ve tüm ekip fikrini söyledi." },
+        { "en": "Our engineers wanted to focus on the product, not on sales calls.", "tr": "Mühendislerimiz satış görüşmelerine değil, ürüne odaklanmak istiyordu." },
+        { "en": "In the end, we decided to go with the distributor.", "tr": "Sonunda distribütörle ilerlemeye karar verdik." },
+        { "en": "The main reason was speed, because for a startup, time is the most important resource.", "tr": "Ana sebep hızdı, çünkü bir girişim için zaman en önemli kaynaktır." },
+        { "en": "If we wait too long, a bigger company might enter the market before us.", "tr": "Çok beklersek daha büyük bir şirket pazara bizden önce girebilir." },
+        { "en": "It wasn't an easy choice, but I still think it was the right one.", "tr": "Kolay bir seçim değildi ama hâlâ doğru olduğunu düşünüyorum." }
+      ],
+      "vocab": [
+        { "en": "make a decision", "tr": "karar vermek", "ex": "We had to make a difficult decision.", "def": "to choose something after thinking about it" },
+        { "en": "directly", "tr": "doğrudan", "ex": "We could sell our device directly to hospitals.", "def": "without another company in the middle" },
+        { "en": "distributor", "tr": "distribütör, dağıtıcı", "ex": "A distributor already knows the market.", "def": "a company that buys and sells another company's products" },
+        { "en": "take a percentage", "tr": "yüzde almak, pay almak", "ex": "A distributor takes a percentage of every sale.", "def": "to keep part of the money from each sale" },
+        { "en": "pros and cons", "tr": "artılar ve eksiler", "ex": "We discussed the pros and cons for two weeks.", "def": "the advantages and disadvantages of something" },
+        { "en": "go with", "tr": "...i seçmek, ...le ilerlemek", "ex": "We decided to go with the distributor.", "def": "to choose one option" },
+        { "en": "in the end", "tr": "sonunda", "ex": "In the end, we chose the distributor.", "def": "finally, after a long time or discussion" },
+        { "en": "resource", "tr": "kaynak", "ex": "Time is our most important resource.", "def": "something useful that you have, like money, people or time" }
+      ],
+      "grammar": {
+        "title": "Linking words: however / in the end",
+        "tr": "'However' iki fikir arasında zıtlık kurar ve genelde noktalı virgül ya da noktadan sonra gelir. 'In the end' uzun bir süreçten sonra varılan sonucu anlatır.",
+        "examples": ["A distributor takes a percentage; however, they can reach many customers quickly.", "In the end, we decided to go with the distributor."]
+      },
+      "questions": [
+        { "q": "What were the two options?", "options": ["Hire more engineers or build a new device", "Sell directly or work with a distributor", "Raise money or close the company"], "a": 1 },
+        { "q": "What is the main disadvantage of selling directly?", "options": ["It takes a lot of time", "It gives lower profit", "Hospitals don't like it"], "a": 0 },
+        { "q": "What did the engineers want?", "options": ["Higher salaries", "More sales calls", "To focus on the product"], "a": 2 },
+        { "q": "What could happen if they wait too long?", "options": ["The device might stop working", "A bigger company might enter the market first", "The distributor might lower its percentage"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We discussed the pros and ___ for two weeks.", "a": "cons", "hint": "eksiler" },
+        { "s": "For a startup, time is the most important ___.", "a": "resource", "hint": "kaynak" },
+        { "s": "In the end, we decided to ___ with the distributor.", "a": "go", "hint": "ilerlemek, seçmek" }
+      ],
+      "order": [
+        { "a": "In the end we decided to go with the distributor." },
+        { "a": "Time is our most important resource." }
+      ],
+      "translate": [
+        { "tr": "Kolay bir seçim değildi ama bence doğru olandı.", "en": "It wasn't an easy choice, but I think it was the right one.", "keys": ["easy choice", "right one"] },
+        { "tr": "Çok beklersek daha büyük bir şirket pazara bizden önce girebilir.", "en": "If we wait too long, a bigger company might enter the market first.", "keys": ["wait too long", "enter the market"] }
+      ],
+      "roleplay": {
+        "persona": "Co-founder",
+        "personaTr": "Kurucu ortak",
+        "scene": "Kurucu ortağın, distribütör mü yoksa doğrudan satış mı sorusunu seninle bir kez daha tartışmak istiyor.",
+        "turns": [
+          { "ai": "I think we should sell directly to hospitals. What do you think?", "aiTr": "Bence doğrudan hastanelere satmalıyız. Sen ne düşünüyorsun?", "hint": "Selling directly means higher profit, but it takes a lot of time and a big sales team.", "keys": ["profit", "time", "sales team"] },
+          { "ai": "OK, but a distributor takes a percentage of every sale. Isn't that a problem?", "aiTr": "Tamam ama distribütör her satıştan yüzde alıyor. Bu bir sorun değil mi?", "hint": "Yes, they take a percentage; however, they can reach many customers quickly.", "keys": ["however", "quickly", "reach"] },
+          { "ai": "What if we just wait a few more months and decide later?", "aiTr": "Birkaç ay daha bekleyip sonra karar versek?", "hint": "If we wait too long, a bigger company might enter the market before us.", "keys": ["wait too long", "bigger company", "market"] },
+          { "ai": "So what's your final decision?", "aiTr": "Peki son kararın ne?", "hint": "In the end, I think we should go with the distributor, and the main reason is speed.", "keys": ["go with", "distributor", "speed"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Doğrudan satış ile distribütör arasındaki kararı, gerekçeleri ve ekibin görüşleriyle birlikte anlatıyorsun.",
+      "text": [
+        { "en": "Last month, we were faced with one of the toughest calls we've had to make so far.", "tr": "Geçen ay şimdiye kadar vermek zorunda kaldığımız en zor kararlardan biriyle karşı karşıya kaldık." },
+        { "en": "The question was whether to sell our device directly to hospitals or to hand sales over to a distributor that already knows the market.", "tr": "Soru, cihazımızı doğrudan hastanelere mi satacağımız, yoksa satışı pazarı zaten bilen bir distribütöre mi devredeceğimizdi." },
+        { "en": "Selling directly would have given us better margins, but it would also have meant building a sales team from scratch.", "tr": "Doğrudan satış bize daha iyi kâr marjları sağlardı ama aynı zamanda sıfırdan bir satış ekibi kurmak anlamına gelirdi." },
+        { "en": "The distributor, on the other hand, would take a 20% commission, which seemed like a lot at first.", "tr": "Öte yandan distribütör yüzde 20 komisyon alacaktı ve bu ilk başta fazla gibi görünüyordu." },
+        { "en": "What they offered in return was something we couldn't build ourselves: established relationships with hospitals and clinics.", "tr": "Karşılığında sundukları şey kendi başımıza kuramayacağımız bir şeydi: hastaneler ve kliniklerle oturmuş ilişkiler." },
+        { "en": "The pros and cons were debated for two weeks, and everyone on the team was asked for their view.", "tr": "Artılar ve eksiler iki hafta boyunca tartışıldı ve ekipteki herkesin görüşü soruldu." },
+        { "en": "Our engineers said they would rather focus on the product than spend their days on sales calls.", "tr": "Mühendislerimiz günlerini satış görüşmeleriyle geçirmektense ürüne odaklanmayı tercih ettiklerini söylediler." },
+        { "en": "I'd say that was what tipped the balance in the end.", "tr": "Bence sonunda dengeyi değiştiren de bu oldu." },
+        { "en": "If we had unlimited time and money, I'd probably sell directly, but we simply don't.", "tr": "Sınırsız zamanımız ve paramız olsaydı muhtemelen doğrudan satardım ama ne yazık ki yok." },
+        { "en": "For a startup, speed matters more than margin, and a bigger player could easily get there first.", "tr": "Bir girişim için hız kâr marjından daha önemli ve daha büyük bir oyuncu kolayca bizden önce davranabilir." },
+        { "en": "It wasn't an easy decision, but I'm fairly confident it was the right one.", "tr": "Kolay bir karar değildi ama doğru olduğundan oldukça eminim." }
+      ],
+      "vocab": [
+        { "en": "a tough call", "tr": "zor bir karar", "ex": "It was one of the toughest calls we've had to make.", "def": "a difficult decision" },
+        { "en": "hand over", "tr": "devretmek", "ex": "We decided to hand sales over to a distributor.", "def": "to give responsibility for something to someone else" },
+        { "en": "margin", "tr": "kâr marjı", "ex": "Selling directly would give us better margins.", "def": "the difference between what something costs and what you sell it for" },
+        { "en": "from scratch", "tr": "sıfırdan", "ex": "We'd have to build a sales team from scratch.", "def": "from the very beginning, with nothing" },
+        { "en": "commission", "tr": "komisyon", "ex": "The distributor takes a 20% commission.", "def": "a percentage of each sale paid to the seller" },
+        { "en": "established relationships", "tr": "oturmuş ilişkiler", "ex": "They have established relationships with hospitals.", "def": "business connections that have existed for a long time" },
+        { "en": "would rather", "tr": "-meyi tercih etmek", "ex": "Our engineers would rather focus on the product.", "def": "would prefer to" },
+        { "en": "tip the balance", "tr": "dengeyi değiştirmek, belirleyici olmak", "ex": "That was what tipped the balance.", "def": "to be the factor that decides the result" },
+        { "en": "get there first", "tr": "önce davranmak, ilk varmak", "ex": "A bigger player could get there first.", "def": "to do or reach something before your competitors" }
+      ],
+      "grammar": {
+        "title": "Second conditional: imagining a different situation",
+        "tr": "'If + past simple, would + fiil' ile gerçek olmayan ya da düşük ihtimalli durumları hayal ederiz. Burada aslında olmayan bir durumu anlatıyor: sınırsız zaman ve para.",
+        "examples": ["If we had unlimited time and money, I'd probably sell directly.", "If we sold directly, we'd need a big sales team."]
+      },
+      "questions": [
+        { "q": "What was the main disadvantage of selling directly?", "options": ["Lower margins", "Building a sales team from scratch", "Losing the engineers"], "a": 1 },
+        { "q": "What did the distributor offer in return for the commission?", "options": ["Established relationships with hospitals and clinics", "A lower price for the device", "Free marketing"], "a": 0 },
+        { "q": "What did the engineers say?", "options": ["They wanted to make sales calls", "They wanted higher salaries", "They'd rather focus on the product"], "a": 2 },
+        { "q": "Why does the speaker add 'but we simply don't'?", "options": ["To show that direct sales are illegal", "To admit the company lacks the time and money to sell directly", "To complain about the distributor"], "a": 1 },
+        { "q": "How does the speaker feel about the decision now?", "options": ["Fairly confident it was right", "Sure it was a mistake", "Completely indifferent"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "It would have meant building a sales team from ___.", "a": "scratch", "hint": "sıfırdan" },
+        { "s": "The distributor would take a 20% ___.", "a": "commission", "hint": "komisyon" },
+        { "s": "I'd say that was what tipped the ___ in the end.", "a": "balance", "hint": "denge" }
+      ],
+      "order": [
+        { "a": "For a startup speed matters more than margin." },
+        { "a": "The pros and cons were debated for two weeks." }
+      ],
+      "translate": [
+        { "tr": "Sınırsız zamanımız ve paramız olsaydı muhtemelen doğrudan satardım.", "en": "If we had unlimited time and money, I'd probably sell directly.", "keys": ["unlimited time and money", "sell directly"] },
+        { "tr": "Mühendislerimiz ürüne odaklanmayı tercih ettiklerini söylediler.", "en": "Our engineers said they would rather focus on the product.", "keys": ["would rather", "focus on the product"] }
+      ],
+      "roleplay": {
+        "persona": "Co-founder",
+        "personaTr": "Kurucu ortak",
+        "scene": "Kurucu ortağın kararı hâlâ sorguluyor ve neden distribütörü seçtiğinizi tekrar konuşmak istiyor.",
+        "turns": [
+          { "ai": "Honestly, I still think we'd make more money selling directly.", "aiTr": "Açıkçası, doğrudan satarak daha çok para kazanacağımızı hâlâ düşünüyorum.", "hint": "You're right about the margins, but it would mean building a sales team from scratch.", "keys": ["margins", "from scratch", "sales team"] },
+          { "ai": "A 20% commission is a lot, though, isn't it?", "aiTr": "Ama yüzde 20 komisyon çok fazla, değil mi?", "hint": "It seemed like a lot at first, but what they offer in return is established relationships with hospitals and clinics.", "keys": ["established relationships", "in return", "hospitals"] },
+          { "ai": "What did the rest of the team think?", "aiTr": "Ekibin geri kalanı ne düşündü?", "hint": "Our engineers said they would rather focus on the product than spend their days on sales calls.", "keys": ["engineers said", "would rather", "product"] },
+          { "ai": "So, if you had to sum it up, why the distributor?", "aiTr": "Peki özetlemen gerekse, neden distribütör?", "hint": "For a startup, speed matters more than margin, and a bigger player could easily get there first.", "keys": ["speed", "margin", "get there first"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Şirketin geleceğini etkileyen bir kararı, ödünleşimleri ve kendi bakış açını net ve olgun bir dille anlatıyorsun.",
+      "text": [
+        { "en": "Last month, we faced what was probably the most consequential decision since we founded AIHEAR.", "tr": "Geçen ay, AIHEAR'ı kurduğumuzdan beri muhtemelen sonuçları en büyük olan kararla yüz yüze geldik." },
+        { "en": "On the table were two options: build our own sales operation and sell directly to hospitals, or partner with a distributor who already knew the market.", "tr": "Masada iki seçenek vardı: kendi satış yapımızı kurup doğrudan hastanelere satmak ya da pazarı zaten bilen bir distribütörle ortaklık kurmak." },
+        { "en": "Going direct was undeniably attractive, since we'd keep the full margin and stay close to our customers.", "tr": "Doğrudan satış inkâr edilemez biçimde cazipti, çünkü kâr marjının tamamı bizde kalacak ve müşterilerimize yakın olacaktık." },
+        { "en": "The catch was that it would have taken us months, if not years, to build the relationships a distributor already has.", "tr": "İşin kötü yanı, bir distribütörün zaten sahip olduğu ilişkileri kurmamızın aylar, hatta yıllar sürecek olmasıydı." },
+        { "en": "The distributor's terms, a 20% commission for the first year, felt steep at first glance.", "tr": "Distribütörün şartları, yani ilk yıl için yüzde 20 komisyon, ilk bakışta fahiş geldi." },
+        { "en": "We spent two weeks weighing the trade-offs, with every member of the team having their say.", "tr": "İki hafta boyunca artıları ve eksileri tarttık ve ekipteki herkes fikrini söyledi." },
+        { "en": "Our engineers were adamant that they didn't want to be pulled away from the product to chase sales.", "tr": "Mühendislerimiz satış peşinde koşmak için üründen uzaklaştırılmak istemediklerinde kesinlikle ısrarcıydı." },
+        { "en": "What ultimately tipped the balance, though, was speed.", "tr": "Yine de sonunda dengeyi değiştiren şey hız oldu." },
+        { "en": "For a startup like ours, time is the one resource you can't buy more of, and a better-funded competitor could easily beat us to market.", "tr": "Bizim gibi bir girişim için zaman, fazlasını satın alamayacağın tek kaynak ve daha çok fonu olan bir rakip pazara bizden önce kolayca girebilir." },
+        { "en": "Had we gone direct, we'd still be hiring salespeople instead of shipping devices.", "tr": "Doğrudan satışa geçseydik, şu an cihaz göndermek yerine hâlâ satış elemanı işe alıyor olurduk." },
+        { "en": "It was a genuinely hard call, but I'm convinced it was the right one.", "tr": "Gerçekten zor bir karardı ama doğru olduğuna inanıyorum." }
+      ],
+      "vocab": [
+        { "en": "consequential", "tr": "sonuçları büyük olan, önemli", "ex": "It was the most consequential decision since we founded AIHEAR.", "def": "having important results or effects" },
+        { "en": "go direct", "tr": "doğrudan satışa geçmek", "ex": "Going direct was undeniably attractive.", "def": "to sell to customers yourself, without a middleman" },
+        { "en": "the catch", "tr": "işin kötü yanı, püf noktası", "ex": "The catch was that it would take months.", "def": "a hidden problem or disadvantage" },
+        { "en": "steep", "tr": "fahiş, çok yüksek", "ex": "A 20% commission felt steep at first.", "def": "(of a price or cost) very high" },
+        { "en": "weigh the trade-offs", "tr": "artıları ve eksileri tartmak", "ex": "We spent two weeks weighing the trade-offs.", "def": "to compare what you gain and lose with each option" },
+        { "en": "have your say", "tr": "fikrini söyleme fırsatı bulmak", "ex": "Every member of the team had their say.", "def": "to get the chance to give your opinion" },
+        { "en": "adamant", "tr": "kararlı, ısrarcı", "ex": "Our engineers were adamant.", "def": "completely sure and not willing to change your mind" },
+        { "en": "tip the balance", "tr": "dengeyi değiştirmek, belirleyici olmak", "ex": "What tipped the balance was speed.", "def": "to be the factor that decides the result" },
+        { "en": "beat someone to market", "tr": "pazara birinden önce girmek", "ex": "A better-funded competitor could beat us to market.", "def": "to launch a product before a competitor does" },
+        { "en": "a hard call", "tr": "zor bir karar", "ex": "It was a genuinely hard call.", "def": "a difficult decision" }
+      ],
+      "grammar": {
+        "title": "Inversion: 'Had we gone direct…'",
+        "tr": "Üçüncü tip şart cümlesinde 'if' düşer ve 'had' başa gelir: 'Had we gone direct' = 'If we had gone direct'. Daha resmî ve vurgulu duyulur. Benzer şekilde yer ifadesiyle de devrik yapı kurulabilir: 'On the table were two options.'",
+        "examples": ["Had we gone direct, we'd still be hiring salespeople.", "Had we waited, a competitor could have beaten us to market.", "On the table were two options."]
+      },
+      "questions": [
+        { "q": "What was the main appeal of going direct?", "options": ["Keeping the full margin and staying close to customers", "Avoiding certification", "Hiring fewer engineers"], "a": 0 },
+        { "q": "What does 'the catch' refer to?", "options": ["The distributor's commission", "How long it would take to build relationships", "The engineers' salaries"], "a": 1 },
+        { "q": "What was the engineers' attitude toward selling?", "options": ["Enthusiastic", "Indifferent", "Firmly against being pulled into it"], "a": 2 },
+        { "q": "What does the speaker imply with 'Had we gone direct, we'd still be hiring salespeople'?", "options": ["They regret not hiring more salespeople", "The direct route would have slowed them down considerably", "Salespeople are easy to find"], "a": 1 },
+        { "q": "How would you describe the speaker's attitude to the decision?", "options": ["Uncertain and regretful", "Defensive and angry", "Convinced, while admitting it was difficult"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "The ___ was that it would have taken us months.", "a": "catch", "hint": "işin kötü yanı" },
+        { "s": "We spent two weeks weighing the ___.", "a": "trade-offs", "hint": "artılar ve eksiler" },
+        { "s": "Our engineers were ___ that they didn't want to chase sales.", "a": "adamant", "hint": "kesinlikle ısrarcı" },
+        { "s": "A better-funded competitor could beat us to ___.", "a": "market", "hint": "pazar" }
+      ],
+      "order": [
+        { "a": "What ultimately tipped the balance was speed." },
+        { "a": "It was a genuinely hard call." }
+      ],
+      "translate": [
+        { "tr": "Doğrudan satışa geçseydik hâlâ satış elemanı işe alıyor olurduk.", "en": "Had we gone direct, we'd still be hiring salespeople.", "keys": ["gone direct", "hiring salespeople"] },
+        { "tr": "Sonunda dengeyi değiştiren şey hızdı.", "en": "What ultimately tipped the balance was speed.", "keys": ["tipped the balance", "speed"] }
+      ],
+      "roleplay": {
+        "persona": "Co-founder",
+        "personaTr": "Kurucu ortak",
+        "scene": "Kurucu ortağın, distribütör kararının tüm zayıf noktalarını seninle son bir kez masaya yatırmak istiyor.",
+        "turns": [
+          { "ai": "I keep coming back to the margins; aren't we leaving money on the table with a distributor?", "aiTr": "Aklım hep kâr marjlarında; distribütörle masada para bırakmıyor muyuz?", "hint": "Going direct is attractive, but the catch is that it would take us months, if not years, to build the relationships a distributor already has.", "keys": ["catch", "relationships", "months"] },
+          { "ai": "Twenty percent still feels steep to me.", "aiTr": "Yüzde yirmi bana hâlâ fahiş geliyor.", "hint": "It felt steep at first glance, but it's only for the first year, and time is the one resource we can't buy more of.", "keys": ["first year", "steep", "resource"] },
+          { "ai": "Shouldn't the engineers help with sales, at least in the beginning?", "aiTr": "En azından başta mühendisler satışa yardım etmemeli mi?", "hint": "They were adamant that they didn't want to be pulled away from the product, and frankly, I agree with them.", "keys": ["adamant", "product", "pulled away"] },
+          { "ai": "Be honest: do you have any doubts about it?", "aiTr": "Dürüst ol: bu konuda hiç şüphen var mı?", "hint": "It was a genuinely hard call, but had we gone direct, we'd still be hiring salespeople instead of shipping devices.", "keys": ["hard call", "gone direct", "shipping devices"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Kusursuz bir cevabı olmayan bir kararı, ironi ve incelikli bir dille savunuyorsun.",
+      "text": [
+        { "en": "Last month we had to make the kind of decision that doesn't so much have a right answer as a least-wrong one.", "tr": "Geçen ay, doğru bir cevabı olmaktan çok 'en az yanlış' bir cevabı olan türden bir karar vermek zorunda kaldık." },
+        { "en": "The choice was between building our own sales arm to sell directly to hospitals and handing distribution to a partner who already knew the market inside out.", "tr": "Seçim, doğrudan hastanelere satmak için kendi satış kolumuzu kurmakla, dağıtımı pazarı avucunun içi gibi bilen bir ortağa devretmek arasındaydı." },
+        { "en": "On paper, going direct was the obvious winner: full margin, a direct line to our customers and nobody else's priorities to contend with.", "tr": "Kâğıt üzerinde doğrudan satış açık ara kazanandı: tam kâr marjı, müşterilerle doğrudan bağlantı ve uğraşmamız gereken başka kimsenin öncelikleri yok." },
+        { "en": "In practice, it would have meant two business people trying to do the work of a twenty-strong sales team.", "tr": "Pratikte ise bu, iki iş insanının yirmi kişilik bir satış ekibinin işini yapmaya çalışması anlamına gelirdi." },
+        { "en": "The distributor's 20% commission stuck in my throat at first, I'll admit.", "tr": "Kabul ediyorum, distribütörün yüzde 20 komisyonu ilk başta içime sinmedi." },
+        { "en": "That said, it buys us relationships it would take years to build ourselves, and it's up for review after twelve months anyway.", "tr": "Yine de bu, kendi başımıza kurmamızın yıllar alacağı ilişkileri bize kazandırıyor ve zaten on iki ay sonra yeniden gözden geçirilecek." },
+        { "en": "We went back and forth for a fortnight, and to their credit, nobody on the team held back.", "tr": "İki hafta boyunca bir o yana bir bu yana gidip geldik ve hakkını vermek gerekirse ekipte kimse fikrini saklamadı." },
+        { "en": "The engineers made it clear they had no appetite for being dragged into sales calls, and frankly, I couldn't blame them.", "tr": "Mühendisler satış görüşmelerine sürüklenmeye hiç hevesleri olmadığını açıkça belirttiler ve açıkçası onları suçlayamazdım." },
+        { "en": "In the end, it came down to time: it's the one thing we can't raise more of, and a deeper-pocketed competitor would happily eat our lunch while we were still hiring.", "tr": "Sonunda her şey zamana dayandı: fonunu bulup artıramayacağımız tek şey o ve biz hâlâ işe alım yaparken parası bol bir rakip pastamızı seve seve kapardı." },
+        { "en": "It's hardly a perfect arrangement, but perfect wasn't on the menu.", "tr": "Pek kusursuz bir düzenleme sayılmaz ama kusursuz zaten seçenekler arasında yoktu." },
+        { "en": "Put another way, I'd rather keep 80% of something than 100% of nothing.", "tr": "Başka bir deyişle, hiçbir şeyin yüzde 100'ündense bir şeyin yüzde 80'ini tutmayı tercih ederim." }
+      ],
+      "vocab": [
+        { "en": "on paper", "tr": "kâğıt üzerinde, teoride", "ex": "On paper, going direct was the obvious winner.", "def": "in theory, but maybe not in reality" },
+        { "en": "know something inside out", "tr": "bir şeyi avucunun içi gibi bilmek", "ex": "The partner knew the market inside out.", "def": "to know something extremely well" },
+        { "en": "contend with", "tr": "uğraşmak zorunda kalmak", "ex": "There were no other priorities to contend with.", "def": "to have to deal with a difficulty" },
+        { "en": "stick in your throat", "tr": "içine sinmemek, kabullenmesi zor olmak", "ex": "The commission stuck in my throat at first.", "def": "to be hard to accept" },
+        { "en": "go back and forth", "tr": "bir o yana bir bu yana gidip gelmek", "ex": "We went back and forth for a fortnight.", "def": "to keep arguing both sides without deciding" },
+        { "en": "to their credit", "tr": "hakkını vermek gerekirse", "ex": "To their credit, nobody on the team held back.", "def": "used to praise someone for something they did" },
+        { "en": "have no appetite for", "tr": "...e hiç hevesi olmamak", "ex": "The engineers had no appetite for sales calls.", "def": "to have no wish to do something" },
+        { "en": "come down to", "tr": "...e dayanmak, sonuçta ...e bağlı olmak", "ex": "In the end, it came down to time.", "def": "to depend mainly on one thing" },
+        { "en": "eat someone's lunch", "tr": "birinin pastasını kapmak", "ex": "A bigger competitor would happily eat our lunch.", "def": "(informal) to beat a competitor and take their business" },
+        { "en": "deep-pocketed", "tr": "parası bol", "ex": "A deeper-pocketed competitor could get there first.", "def": "having a lot of money to spend" }
+      ],
+      "grammar": {
+        "title": "Conceding a point: I'll admit / That said / hardly",
+        "tr": "Akıcı konuşanlar karşı tarafın itirazını önce kabul edip sonra kendi görüşünü öne çıkarır: 'I'll admit' (kabul ediyorum), 'That said' (yine de), 'hardly' (pek değil). Bu, savunmacı değil, olgun bir ton verir.",
+        "examples": ["The commission stuck in my throat at first, I'll admit.", "That said, it buys us relationships it would take years to build.", "It's hardly a perfect arrangement, but perfect wasn't on the menu."]
+      },
+      "questions": [
+        { "q": "Why was going direct unrealistic in practice?", "options": ["Hospitals refused to buy directly", "Two business people would have had to do the work of a large sales team", "The engineers wanted to sell instead"], "a": 1 },
+        { "q": "What makes the 20% commission easier to accept?", "options": ["It buys valuable relationships and is reviewed after twelve months", "It's lower than the market average", "The distributor pays it back later"], "a": 0 },
+        { "q": "What does the speaker imply by 'it's the one thing we can't raise more of'?", "options": ["They've given up on raising investment", "The team works too few hours", "Unlike money, lost time can't be won back from investors"], "a": 2 },
+        { "q": "What is the tone of 'perfect wasn't on the menu'?", "options": ["Bitter and regretful", "Pragmatic and slightly wry", "Excited and optimistic"], "a": 1 },
+        { "q": "What does 'I'd rather keep 80% of something than 100% of nothing' suggest?", "options": ["They would prefer not to pay any commission", "They think the distributor is overcharging", "Giving up some margin is worth it to actually reach the market"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "On ___, going direct was the obvious winner.", "a": "paper", "hint": "kâğıt üzerinde" },
+        { "s": "We went back and ___ for a fortnight.", "a": "forth", "hint": "gidip gelmek" },
+        { "s": "In the end, it came ___ to time.", "a": "down", "hint": "...e dayanmak" },
+        { "s": "A deeper-pocketed competitor would happily eat our ___.", "a": "lunch", "hint": "pastamızı kapmak" }
+      ],
+      "order": [
+        { "a": "The engineers had no appetite for sales calls." },
+        { "a": "In the end it came down to time." }
+      ],
+      "translate": [
+        { "tr": "Kâğıt üzerinde doğrudan satış açık ara kazanandı.", "en": "On paper, going direct was the obvious winner.", "keys": ["on paper", "going direct"] },
+        { "tr": "Komisyon başta içime sinmedi, kabul ediyorum.", "en": "The commission stuck in my throat at first, I'll admit.", "keys": ["stuck in my throat", "I'll admit"] },
+        { "tr": "Sonuçta her şey zamana dayandı.", "en": "In the end, it all came down to time.", "keys": ["came down to time"] }
+      ],
+      "roleplay": {
+        "persona": "Co-founder",
+        "personaTr": "Kurucu ortak",
+        "scene": "Kurucu ortağın bilerek şeytanın avukatlığını yapıyor ve kararını her açıdan sınıyor.",
+        "turns": [
+          { "ai": "Play devil's advocate with me: why not just go direct and keep the whole margin?", "aiTr": "Benimle şeytanın avukatlığını yap: neden doğrudan satıp tüm marjı kendimize saklamıyoruz?", "hint": "On paper it's the obvious winner, but in practice it would mean two business people trying to do the work of a twenty-strong sales team.", "keys": ["on paper", "in practice", "sales team"] },
+          { "ai": "Still, handing over 20% sticks in my throat.", "aiTr": "Yine de yüzde 20'yi vermek içime sinmiyor.", "hint": "I'll admit it stuck in mine too; that said, it buys us relationships it would take years to build, and it's up for review after twelve months.", "keys": ["that said", "relationships", "review"] },
+          { "ai": "Couldn't the engineers pitch in on sales for a few months?", "aiTr": "Mühendisler birkaç ay satışa el atamaz mı?", "hint": "They've made it clear they have no appetite for sales calls, and frankly, I can't blame them.", "keys": ["no appetite", "can't blame", "sales calls"] },
+          { "ai": "So, bottom line, what's the real reason?", "aiTr": "Peki özetle, asıl sebep ne?", "hint": "It comes down to time: it's the one thing we can't raise more of, and I'd rather keep 80% of something than 100% of nothing.", "keys": ["comes down to time", "raise more of", "of nothing"] }
+        ]
+      }
+    }
+  }
+}

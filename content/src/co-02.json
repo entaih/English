@@ -1,0 +1,369 @@
+{
+  "id": "co-02",
+  "topic": "comms",
+  "title": "Writing a Professional Follow-up Email",
+  "titleTr": "Profesyonel Bir Takip E-postası Yazmak",
+  "levels": {
+    "A1": {
+      "intro": "Konferansta tanıştığın Sarah'ya kısa ve basit bir e-posta yazıyorsun.",
+      "text": [
+        { "en": "Subject: Nice to meet you", "tr": "Konu: Tanıştığımıza memnun oldum" },
+        { "en": "Hi Sarah,", "tr": "Merhaba Sarah," },
+        { "en": "It was nice to meet you yesterday.", "tr": "Dün seninle tanışmak çok güzeldi." },
+        { "en": "Here is a short presentation about our device.", "tr": "Cihazımız hakkında kısa bir sunumu ekte bulabilirsin." },
+        { "en": "Can I show the device to your team online?", "tr": "Cihazı ekibine çevrimiçi gösterebilir miyim?" },
+        { "en": "Are you free on Tuesday or Wednesday afternoon?", "tr": "Salı veya çarşamba öğleden sonra müsait misin?" },
+        { "en": "Please write to me if you have questions.", "tr": "Soruların olursa lütfen bana yaz." },
+        { "en": "Best wishes, {name}", "tr": "Sevgiler, {name}" }
+      ],
+      "vocab": [
+        { "en": "It was nice to meet you.", "tr": "Tanışmak güzeldi.", "ex": "It was nice to meet you yesterday." },
+        { "en": "presentation", "tr": "sunum", "ex": "Here is a short presentation." },
+        { "en": "online", "tr": "çevrimiçi", "ex": "Can I show the device online?" },
+        { "en": "be free", "tr": "müsait olmak", "ex": "Are you free on Tuesday?" },
+        { "en": "have questions", "tr": "sorusu olmak", "ex": "Please write to me if you have questions." },
+        { "en": "Best wishes", "tr": "Sevgiler, iyi dileklerimle", "ex": "Best wishes, Sarah" }
+      ],
+      "grammar": {
+        "title": "Can: asking and offering",
+        "tr": "'Can I...?' ile bir şey yapmayı teklif eder veya izin isteriz. Soru yaparken 'can' başa gelir: Can I show...?",
+        "examples": ["Can I show the device to your team?", "Can we talk on Tuesday?", "You can write to me."]
+      },
+      "questions": [
+        { "q": "Who is the email for?", "options": ["Emma", "Sarah", "The team"], "a": 1 },
+        { "q": "What is in the email?", "options": ["A short presentation", "A contract", "A photo"], "a": 0 },
+        { "q": "Which days are in the email?", "options": ["Monday or Friday", "Saturday or Sunday", "Tuesday or Wednesday"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "It was nice to ___ you yesterday.", "a": "meet", "hint": "tanışmak" },
+        { "s": "Here is a short ___ about our device.", "a": "presentation", "hint": "sunum" },
+        { "s": "Are you ___ on Tuesday or Wednesday afternoon?", "a": "free", "hint": "müsait" }
+      ],
+      "order": [
+        { "a": "Can I show the device to your team online?" },
+        { "a": "Are you free on Tuesday or Wednesday afternoon?" }
+      ],
+      "translate": [
+        { "tr": "Dün seninle tanışmak güzeldi.", "en": "It was nice to meet you yesterday.", "keys": ["nice to meet you", "yesterday"] },
+        { "tr": "Soruların olursa lütfen bana yaz.", "en": "Please write to me if you have questions.", "keys": ["write to me", "questions"] }
+      ],
+      "roleplay": {
+        "persona": "Sarah (by email)",
+        "personaTr": "Sarah (e-posta ile)",
+        "scene": "Sarah e-postana cevap veriyor. Kısa ve basit cevaplar yaz.",
+        "turns": [
+          { "ai": "Hi {name}, thank you for the presentation. When are you free?", "aiTr": "Merhaba {name}, sunum için teşekkürler. Ne zaman müsaitsin?", "hint": "I am free on Tuesday or Wednesday afternoon.", "keys": ["Tuesday", "Wednesday", "afternoon", "free"] },
+          { "ai": "Wednesday at 2 pm is good. Who can come from my team?", "aiTr": "Çarşamba 14:00 iyi. Ekibimden kim gelebilir?", "hint": "Your clinic manager and an audiologist can come.", "keys": ["clinic manager", "audiologist"] },
+          { "ai": "Great, see you on Wednesday!", "aiTr": "Harika, çarşamba görüşürüz!", "hint": "Thank you, see you on Wednesday. Best wishes, {name}", "keys": ["thank you", "see you", "Wednesday"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Konferanstan sonra Sarah'ya kısa ve kibar bir takip e-postası yazıyorsun.",
+      "text": [
+        { "en": "Subject: Nice to meet you at MedTech Europe", "tr": "Konu: MedTech Europe'ta tanıştığımıza memnun oldum" },
+        { "en": "Dear Sarah,", "tr": "Sevgili Sarah," },
+        { "en": "Thank you for the nice talk at the conference yesterday.", "tr": "Dün konferanstaki keyifli sohbet için teşekkür ederim." },
+        { "en": "It was interesting to hear about the long waiting lists in your hospitals.", "tr": "Hastanelerinizdeki uzun bekleme listelerini dinlemek ilginçti." },
+        { "en": "As I promised, I attached a short presentation about our audiometer.", "tr": "Söz verdiğim gibi, odyometremiz hakkında kısa bir sunum ekledim." },
+        { "en": "I'd like to give your team a short online demo.", "tr": "Ekibinize kısa bir çevrimiçi demo yapmak isterim." },
+        { "en": "Are you free next Tuesday or Wednesday afternoon?", "tr": "Gelecek salı veya çarşamba öğleden sonra müsait misiniz?" },
+        { "en": "Please let me know if you have any questions.", "tr": "Herhangi bir sorunuz olursa lütfen bana bildirin." },
+        { "en": "Best regards, {name}", "tr": "Saygılarımla, {name}" }
+      ],
+      "vocab": [
+        { "en": "talk", "tr": "sohbet, konuşma", "ex": "Thank you for the nice talk yesterday." },
+        { "en": "waiting list", "tr": "bekleme listesi", "ex": "The waiting lists in her hospitals are long." },
+        { "en": "as I promised", "tr": "söz verdiğim gibi", "ex": "As I promised, I attached the presentation." },
+        { "en": "attach", "tr": "eklemek (dosya)", "ex": "I attached a short presentation." },
+        { "en": "online demo", "tr": "çevrimiçi demo", "ex": "I'd like to give your team an online demo." },
+        { "en": "I'd like to", "tr": "...mak isterim", "ex": "I'd like to show you the device." },
+        { "en": "be free", "tr": "müsait olmak", "ex": "Are you free next Tuesday?" },
+        { "en": "let me know", "tr": "bana haber verin", "ex": "Please let me know if you have any questions." }
+      ],
+      "grammar": {
+        "title": "Past simple: what happened",
+        "tr": "Geçmişte olup bitmiş olaylar için past simple kullanılır. Düzenli fiillere -ed eklenir: attach → attached, promise → promised.",
+        "examples": ["As I promised, I attached a short presentation.", "We talked about waiting lists.", "It was interesting to hear about your hospitals."]
+      },
+      "questions": [
+        { "q": "When did they meet?", "options": ["Last week", "Yesterday", "Last month"], "a": 1 },
+        { "q": "What did they talk about?", "options": ["Waiting lists in Sarah's hospitals", "Prices of hearing aids", "The weather in the UK"], "a": 0 },
+        { "q": "What is attached to the email?", "options": ["A contract", "A photo of the team", "A short presentation"], "a": 2 },
+        { "q": "What does the writer want to do next?", "options": ["Visit Sarah's hospital", "Give Sarah's team an online demo", "Sell the device today"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "As I promised, I ___ a short presentation about our audiometer.", "a": "attached", "hint": "ekledim" },
+        { "s": "I'd like to give your team a short online ___.", "a": "demo", "hint": "demo, tanıtım" },
+        { "s": "Please ___ me know if you have any questions.", "a": "let", "hint": "izin vermek (haber vermek)" }
+      ],
+      "order": [
+        { "a": "Are you free next Tuesday or Wednesday afternoon?" },
+        { "a": "Please let me know if you have any questions." }
+      ],
+      "translate": [
+        { "tr": "Söz verdiğim gibi kısa bir sunum ekledim.", "en": "As I promised, I attached a short presentation.", "keys": ["as I promised", "attached"] },
+        { "tr": "Ekibinize kısa bir çevrimiçi demo yapmak isterim.", "en": "I'd like to give your team a short online demo.", "keys": ["online demo", "your team"] }
+      ],
+      "roleplay": {
+        "persona": "Sarah (by email)",
+        "personaTr": "Sarah (e-posta ile)",
+        "scene": "Sarah e-postana cevap veriyor. Sen de kısa ve kibar cevaplar yazıyorsun.",
+        "turns": [
+          { "ai": "Hi {name}, thanks for the presentation. A demo sounds good. When are you free?", "aiTr": "Merhaba {name}, sunum için teşekkürler. Demo iyi fikir. Ne zaman müsaitsiniz?", "hint": "Thank you, Sarah. Are you free next Tuesday or Wednesday afternoon?", "keys": ["Tuesday", "Wednesday", "afternoon"] },
+          { "ai": "Wednesday at 2 pm is good for me. Who should come from my team?", "aiTr": "Çarşamba 14:00 bana uyar. Ekibimden kim gelmeli?", "hint": "I think your clinic manager and an audiologist should come. I'm going to send an invitation.", "keys": ["clinic manager", "audiologist", "invitation"] },
+          { "ai": "Perfect. See you on Wednesday!", "aiTr": "Mükemmel. Çarşamba görüşürüz!", "hint": "Great, see you then. Please let me know if you have any questions. Best regards, {name}", "keys": ["let me know", "questions", "see you"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Toplantıdan sonra kısa, net ve nazik bir takip e-postası yazıyorsun.",
+      "text": [
+        { "en": "Subject: Great to meet you at MedTech Europe", "tr": "Konu: MedTech Europe'ta tanıştığımıza çok sevindim" },
+        { "en": "Dear Sarah,", "tr": "Sevgili Sarah," },
+        { "en": "It was great to meet you at the conference yesterday.", "tr": "Dün konferansta sizinle tanışmak harikaydı." },
+        { "en": "Thank you for your time and for the interesting conversation about waiting lists.", "tr": "Zamanınız ve bekleme listeleri hakkındaki ilginç sohbet için teşekkür ederim." },
+        { "en": "As promised, I'm attaching a short presentation about our autonomous audiometer.", "tr": "Söz verdiğim gibi, otonom odyometremiz hakkında kısa bir sunum ekliyorum." },
+        { "en": "I would be happy to arrange a short online demo for your team.", "tr": "Ekibiniz için kısa bir çevrimiçi demo ayarlamaktan mutluluk duyarım." },
+        { "en": "Would next Tuesday or Wednesday afternoon work for you?", "tr": "Gelecek salı veya çarşamba öğleden sonra size uyar mı?" },
+        { "en": "Please let me know if you have any questions.", "tr": "Herhangi bir sorunuz olursa lütfen bana bildirin." },
+        { "en": "I look forward to hearing from you.", "tr": "Sizden haber almayı dört gözle bekliyorum." },
+        { "en": "Best regards, {name}", "tr": "Saygılarımla, {name}" }
+      ],
+      "vocab": [
+        { "en": "It was great to meet you.", "tr": "Sizinle tanışmak harikaydı.", "ex": "It was great to meet you yesterday.", "def": "a friendly way to start an email after meeting someone" },
+        { "en": "as promised", "tr": "söz verildiği gibi", "ex": "As promised, I'm attaching the file.", "def": "in the way that you said you would" },
+        { "en": "attach", "tr": "eklemek (dosya)", "ex": "I'm attaching a short presentation.", "def": "to add a file to an email" },
+        { "en": "I would be happy to", "tr": "...maktan mutluluk duyarım", "ex": "I would be happy to arrange a demo.", "def": "a polite way to offer to do something" },
+        { "en": "arrange", "tr": "ayarlamak, düzenlemek", "ex": "Let's arrange a meeting for next week.", "def": "to plan and organise something" },
+        { "en": "Would ... work for you?", "tr": "... size uyar mı?", "ex": "Would Tuesday afternoon work for you?", "def": "a polite way to suggest a time" },
+        { "en": "let me know", "tr": "bana bildirin", "ex": "Please let me know if you have any questions.", "def": "tell me" },
+        { "en": "look forward to hearing from you", "tr": "sizden haber almayı dört gözle beklemek", "ex": "I look forward to hearing from you soon.", "def": "a polite way to end an email when you expect a reply" }
+      ],
+      "grammar": {
+        "title": "Polite forms with would",
+        "tr": "E-postada doğrudan istemek yerine 'would' kullanmak daha kibar durur: 'I would be happy to…', 'Would … work for you?'. Böylece teklifin ve sorun nazik görünür.",
+        "examples": ["I would be happy to arrange a short online demo.", "Would next Tuesday work for you?", "Would you like to see the device?"]
+      },
+      "questions": [
+        { "q": "Why is the writer sending this email?", "options": ["To complain about the conference", "To ask for money", "To follow up after meeting at the conference"], "a": 2 },
+        { "q": "What is attached to the email?", "options": ["A short presentation", "A contract", "A price list"], "a": 0 },
+        { "q": "What does the writer offer?", "options": ["A free device", "A short online demo", "Dinner in London"], "a": 1 },
+        { "q": "Which days does the writer suggest?", "options": ["Saturday morning", "Monday or Friday", "Next Tuesday or Wednesday afternoon"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "As ___, I'm attaching a short presentation.", "a": "promised", "hint": "söz verildiği gibi" },
+        { "s": "I would be happy to ___ a short online demo.", "a": "arrange", "hint": "ayarlamak" },
+        { "s": "I look forward to ___ from you.", "a": "hearing", "hint": "haber almak" }
+      ],
+      "order": [
+        { "a": "It was great to meet you at the conference." },
+        { "a": "Would next Tuesday work for you?" }
+      ],
+      "translate": [
+        { "tr": "Zamanınız için teşekkür ederim.", "en": "Thank you for your time.", "keys": ["thank", "time"] },
+        { "tr": "Herhangi bir sorunuz olursa lütfen bana bildirin.", "en": "Please let me know if you have any questions.", "keys": ["let me know", "questions"] }
+      ],
+      "roleplay": {
+        "persona": "Sarah (by email)",
+        "personaTr": "Sarah (e-posta ile)",
+        "scene": "Sarah e-postana cevap veriyor. Sen de kısa ve kibar cevaplar yazıyorsun.",
+        "turns": [
+          { "ai": "Hi {name}, thanks for your email and the presentation. A demo sounds good. When are you free?", "aiTr": "Merhaba {name}, e-postanız ve sunum için teşekkürler. Demo iyi fikir. Ne zaman müsaitsiniz?", "hint": "Thank you, Sarah. Would next Tuesday or Wednesday afternoon work for you?", "keys": ["would", "work for you", "Tuesday", "afternoon"] },
+          { "ai": "Wednesday at 2 pm works. Who should join from our side?", "aiTr": "Çarşamba 14:00 uygun. Bizim taraftan kim katılmalı?", "hint": "Great. I would suggest your clinic manager and an audiologist. I will send a calendar invitation.", "keys": ["suggest", "send", "invitation", "great"] },
+          { "ai": "Perfect, see you then.", "aiTr": "Mükemmel, görüşmek üzere.", "hint": "Perfect. Please let me know if you have any questions before the demo. Best regards, {name}", "keys": ["let me know", "questions", "best regards", "look forward"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Konferanstan sonra Sarah'ya profesyonel, akıcı ve somut bir sonraki adım öneren bir e-posta yazıyorsun.",
+      "text": [
+        { "en": "Subject: Following up from MedTech Europe", "tr": "Konu: MedTech Europe sonrası takip" },
+        { "en": "Dear Sarah,", "tr": "Sevgili Sarah," },
+        { "en": "It was a pleasure meeting you at MedTech Europe yesterday.", "tr": "Dün MedTech Europe'ta sizinle tanışmak bir zevkti." },
+        { "en": "I really enjoyed our conversation about the waiting lists your hospitals are facing, which is exactly the problem we're working on.", "tr": "Hastanelerinizin karşı karşıya olduğu bekleme listeleri hakkındaki sohbetimizden çok keyif aldım; bu tam da üzerinde çalıştığımız sorun." },
+        { "en": "As promised, I've attached a short presentation that explains how our autonomous audiometer works.", "tr": "Söz verdiğim gibi, otonom odyometremizin nasıl çalıştığını anlatan kısa bir sunum ekledim." },
+        { "en": "If it would be useful, I'd be happy to arrange a short online demo for you and your team.", "tr": "Faydalı olacaksa, size ve ekibinize kısa bir çevrimiçi demo ayarlamaktan memnuniyet duyarım." },
+        { "en": "Would next Tuesday or Wednesday afternoon suit you, or is there another time that would work better?", "tr": "Gelecek salı veya çarşamba öğleden sonra size uyar mı, yoksa daha uygun olacak başka bir zaman var mı?" },
+        { "en": "In the meantime, please don't hesitate to get in touch if you have any questions.", "tr": "Bu arada herhangi bir sorunuz olursa lütfen benimle iletişime geçmekten çekinmeyin." },
+        { "en": "I look forward to hearing from you.", "tr": "Sizden haber almayı dört gözle bekliyorum." },
+        { "en": "Best regards, {name}", "tr": "Saygılarımla, {name}" }
+      ],
+      "vocab": [
+        { "en": "It was a pleasure meeting you.", "tr": "Sizinle tanışmak bir zevkti.", "ex": "It was a pleasure meeting you yesterday.", "def": "a polite, slightly formal way to say you enjoyed meeting someone" },
+        { "en": "face a problem", "tr": "bir sorunla karşı karşıya olmak", "ex": "Many hospitals are facing long waiting lists.", "def": "to have to deal with a difficult situation" },
+        { "en": "as promised", "tr": "söz verildiği gibi", "ex": "As promised, I've attached the slides.", "def": "in the way that you said you would" },
+        { "en": "arrange a demo", "tr": "demo ayarlamak", "ex": "I'd be happy to arrange a demo for your team.", "def": "to organise a meeting where you show how a product works" },
+        { "en": "suit", "tr": "uymak, uygun olmak", "ex": "Would Wednesday afternoon suit you?", "def": "to be convenient for someone" },
+        { "en": "in the meantime", "tr": "bu arada", "ex": "In the meantime, feel free to read the presentation.", "def": "in the period before something planned happens" },
+        { "en": "don't hesitate to", "tr": "...mekten çekinmeyin", "ex": "Please don't hesitate to contact me.", "def": "a polite way of encouraging someone to do something" },
+        { "en": "get in touch", "tr": "iletişime geçmek", "ex": "Get in touch if you have any questions.", "def": "to contact someone" }
+      ],
+      "grammar": {
+        "title": "Relative clauses: that / which",
+        "tr": "Bir şeyi daha ayrıntılı tanımlamak için 'that' veya 'which' ile yan cümle kurulur. Virgülden sonra gelen 'which', önceki fikrin tamamına da gönderme yapabilir.",
+        "examples": ["I've attached a presentation that explains how our audiometer works.", "We talked about waiting lists, which is exactly the problem we're working on.", "Is there another time that would work better?"]
+      },
+      "questions": [
+        { "q": "How does the writer connect the conversation to the company?", "options": ["Sarah's waiting lists are the problem the company is working on", "Sarah wants to invest in the company", "Sarah works for a competitor"], "a": 0 },
+        { "q": "What does the presentation explain?", "options": ["The company's prices", "How the autonomous audiometer works", "The programme of the conference"], "a": 1 },
+        { "q": "What does the writer suggest as the next step?", "options": ["A visit to Turkey", "A phone call tonight", "A short online demo"], "a": 2 },
+        { "q": "What can you infer about the writer's attitude to Sarah's time?", "options": ["They are impatient and demanding", "They are flexible and want to make it easy for her", "They don't mind if the demo never happens"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "It was a ___ meeting you at MedTech Europe yesterday.", "a": "pleasure", "hint": "zevk, memnuniyet" },
+        { "s": "Would next Tuesday or Wednesday afternoon ___ you?", "a": "suit", "hint": "uymak" },
+        { "s": "Please don't ___ to get in touch if you have any questions.", "a": "hesitate", "hint": "çekinmek" }
+      ],
+      "order": [
+        { "a": "I'd be happy to arrange a short online demo." },
+        { "a": "Is there another time that would work better?" }
+      ],
+      "translate": [
+        { "tr": "Bu arada herhangi bir sorunuz olursa benimle iletişime geçmekten çekinmeyin.", "en": "In the meantime, don't hesitate to get in touch if you have any questions.", "keys": ["in the meantime", "don't hesitate", "get in touch"] },
+        { "tr": "Size uygun başka bir zaman var mı?", "en": "Is there another time that would suit you?", "keys": ["another time", "suit you"] }
+      ],
+      "roleplay": {
+        "persona": "Sarah (by email)",
+        "personaTr": "Sarah (e-posta ile)",
+        "scene": "Sarah e-postana olumlu cevap veriyor; demo için ayrıntıları profesyonel bir dille netleştiriyorsun.",
+        "turns": [
+          { "ai": "Hi {name}, thanks for following up so quickly. The presentation was really helpful, and a demo would be great.", "aiTr": "Merhaba {name}, bu kadar hızlı dönüş yaptığınız için teşekkürler. Sunum çok faydalıydı, bir demo harika olur.", "hint": "I'm glad it was helpful. Would next Tuesday or Wednesday afternoon suit you, or is there another time that works better?", "keys": ["suit you", "Tuesday", "Wednesday", "another time"] },
+          { "ai": "Wednesday at 2 pm works for me. Who do you think should join from our side?", "aiTr": "Çarşamba 14:00 bana uyar. Sizce bizim taraftan kim katılmalı?", "hint": "I'd suggest your clinic manager and an audiologist, since they're the people who would use the device.", "keys": ["clinic manager", "audiologist", "suggest"] },
+          { "ai": "Makes sense. Could you send me something to put in the calendar?", "aiTr": "Mantıklı. Takvime ekleyebileceğim bir şey gönderebilir misiniz?", "hint": "Of course, I'll send you a calendar invitation with the meeting link today.", "keys": ["calendar invitation", "meeting link", "send"] },
+          { "ai": "Perfect, see you on Wednesday.", "aiTr": "Mükemmel, çarşamba görüşürüz.", "hint": "Great, see you then. In the meantime, don't hesitate to get in touch if you have any questions.", "keys": ["in the meantime", "get in touch", "see you"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Konferanstaki sohbeti, resmî ama sıcak ve ikna edici bir takip e-postasıyla somut bir demoya dönüştürüyorsun.",
+      "text": [
+        { "en": "Subject: Following up from MedTech Europe: AIHEAR demo", "tr": "Konu: MedTech Europe sonrası takip: AIHEAR demosu" },
+        { "en": "Dear Sarah,", "tr": "Sevgili Sarah," },
+        { "en": "It was a real pleasure meeting you at MedTech Europe yesterday, and thank you for such a candid conversation about the pressure on your waiting lists.", "tr": "Dün MedTech Europe'ta sizinle tanışmak gerçekten büyük bir zevkti; bekleme listeleriniz üzerindeki baskı hakkındaki bu kadar açık sohbet için de teşekkür ederim." },
+        { "en": "Having heard how long some of your patients wait for a basic hearing test, I came away convinced that this is exactly where our autonomous audiometer can make a difference.", "tr": "Bazı hastalarınızın basit bir işitme testi için ne kadar beklediğini duyunca, otonom odyometremizin tam da burada fark yaratabileceğine ikna oldum." },
+        { "en": "As promised, I've attached a short presentation outlining how the system works and what our clinical study showed.", "tr": "Söz verdiğim gibi, sistemin nasıl çalıştığını ve klinik çalışmamızın neler gösterdiğini özetleyen kısa bir sunum ekledim." },
+        { "en": "Rather than take up more of your time over email, I'd be glad to walk you and your team through a short online demo.", "tr": "E-postayla daha fazla vaktinizi almak yerine, size ve ekibinize kısa bir çevrimiçi demoyla sistemi adım adım göstermekten memnuniyet duyarım." },
+        { "en": "Would next Tuesday or Wednesday afternoon suit you, or feel free to suggest a time that fits around your schedule.", "tr": "Gelecek salı veya çarşamba öğleden sonra size uyar mı; değilse programınıza uyan bir zaman önermekten çekinmeyin." },
+        { "en": "Should you have any questions in the meantime, I'd be happy to answer them.", "tr": "Bu arada herhangi bir sorunuz olursa, yanıtlamaktan memnuniyet duyarım." },
+        { "en": "I look forward to continuing the conversation.", "tr": "Sohbetimizi sürdürmeyi dört gözle bekliyorum." },
+        { "en": "Kind regards, {name}", "tr": "Saygılarımla, {name}" }
+      ],
+      "vocab": [
+        { "en": "candid", "tr": "açık sözlü, samimi", "ex": "Thank you for such a candid conversation.", "def": "honest and direct, even about difficult things" },
+        { "en": "come away convinced", "tr": "ikna olmuş olarak ayrılmak", "ex": "I came away convinced that we can help.", "def": "to leave a meeting or event feeling sure about something" },
+        { "en": "make a difference", "tr": "fark yaratmak", "ex": "Our audiometer can make a difference in busy clinics.", "def": "to have a real, positive effect" },
+        { "en": "outline", "tr": "ana hatlarıyla anlatmak", "ex": "The presentation outlines how the system works.", "def": "to describe the main points of something" },
+        { "en": "take up someone's time", "tr": "birinin vaktini almak", "ex": "I don't want to take up more of your time.", "def": "to use some of someone's time" },
+        { "en": "walk someone through", "tr": "birine bir şeyi adım adım göstermek", "ex": "I'd be glad to walk you through a demo.", "def": "to explain or show something step by step" },
+        { "en": "fit around", "tr": "...e göre ayarlanmak, ...e uymak", "ex": "Suggest a time that fits around your schedule.", "def": "to be arranged so that it does not clash with other plans" },
+        { "en": "in the meantime", "tr": "bu arada", "ex": "In the meantime, feel free to read the presentation.", "def": "in the period before something planned happens" },
+        { "en": "continue the conversation", "tr": "sohbeti sürdürmek", "ex": "I look forward to continuing the conversation.", "def": "to talk more about a topic you started discussing" },
+        { "en": "Kind regards", "tr": "Saygılarımla, sevgiyle", "ex": "Kind regards, Sarah", "def": "a polite and slightly warm way to end a formal email" }
+      ],
+      "grammar": {
+        "title": "Formal conditional inversion: Should you …",
+        "tr": "'If you have any questions' yerine 'Should you have any questions' demek, resmî yazışmalarda daha zarif ve profesyonel durur. 'If' düşer ve 'should' cümlenin başına gelir.",
+        "examples": ["Should you have any questions, I'd be happy to answer them.", "Should Tuesday not suit you, feel free to suggest another time.", "Should your team be interested, we can arrange a trial."]
+      },
+      "questions": [
+        { "q": "What is the overall tone of the email?", "options": ["Formal but warm", "Cold and distant", "Overly casual", "Pushy"], "a": 0 },
+        { "q": "Why does the writer mention what they 'came away convinced' of?", "options": ["To complain about the conference", "To show the device answers a problem Sarah actually described", "To ask Sarah for an investment"], "a": 1 },
+        { "q": "Besides how the system works, what does the presentation cover?", "options": ["Prices for the UK market", "A list of competitors", "What the clinical study showed"], "a": 2 },
+        { "q": "Why does the writer propose a demo 'rather than take up more of your time over email'?", "options": ["To respect Sarah's time and show the product live", "Because the presentation is incomplete", "Because email is not secure"], "a": 0 },
+        { "q": "What does 'feel free to suggest a time that fits around your schedule' imply?", "options": ["Sarah must cancel other meetings", "The writer is flexible about the timing", "The writer is only free on Tuesday"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I came ___ convinced that this is exactly where we can help.", "a": "away", "hint": "...den ayrılmak" },
+        { "s": "I've attached a short presentation ___ how the system works.", "a": "outlining", "hint": "ana hatlarıyla anlatan" },
+        { "s": "I'd be glad to walk you ___ a short online demo.", "a": "through", "hint": "adım adım göstermek" },
+        { "s": "___ you have any questions in the meantime, I'd be happy to answer them.", "a": "Should", "hint": "...olursa (resmî)" }
+      ],
+      "order": [
+        { "a": "I look forward to continuing the conversation." },
+        { "a": "Feel free to suggest a time that fits around your schedule." }
+      ],
+      "translate": [
+        { "tr": "Herhangi bir sorunuz olursa, yanıtlamaktan memnuniyet duyarım.", "en": "Should you have any questions, I'd be happy to answer them.", "keys": ["should you have", "happy to answer"] },
+        { "tr": "Size sistemi kısa bir demoyla adım adım göstermek isterim.", "en": "I'd be glad to walk you through the system in a short demo.", "keys": ["walk you through", "short demo"] }
+      ],
+      "roleplay": {
+        "persona": "Sarah (by email)",
+        "personaTr": "Sarah (e-posta ile)",
+        "scene": "Sarah ilgiyle cevap veriyor; demo ayrıntılarını resmî ama sıcak bir dille netleştiriyorsun.",
+        "turns": [
+          { "ai": "Hi {name}, thanks for the follow-up and the slides. The study results were particularly interesting.", "aiTr": "Merhaba {name}, takip e-postası ve slaytlar için teşekkürler. Çalışma sonuçları özellikle ilginçti.", "hint": "I'm glad you found them useful; I'd be happy to walk you and your team through a short online demo.", "keys": ["walk you", "through", "demo"] },
+          { "ai": "That would be great. What timing did you have in mind?", "aiTr": "Harika olur. Nasıl bir zaman düşünüyordunuz?", "hint": "Would next Tuesday or Wednesday afternoon suit you, or feel free to suggest a time that fits around your schedule.", "keys": ["suit you", "fits around", "Tuesday", "Wednesday"] },
+          { "ai": "Wednesday at 2 pm works. Who would you recommend we bring in from our side?", "aiTr": "Çarşamba 14:00 uygun. Bizim taraftan kimi dahil etmemizi önerirsiniz?", "hint": "I'd recommend your clinic manager and one of your audiologists, as they'd get the most out of seeing it in action.", "keys": ["clinic manager", "audiologists", "in action"] },
+          { "ai": "Perfect, I'll keep the slot free.", "aiTr": "Mükemmel, o saati boş tutacağım.", "hint": "Thank you; I'll send a calendar invitation shortly, and should you have any questions before then, just let me know.", "keys": ["calendar invitation", "should you have", "let me know"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Kısa, zarif ve kendinden emin bir takip e-postasıyla konferanstaki sohbeti bir demo randevusuna dönüştürüyorsun.",
+      "text": [
+        { "en": "Subject: Waiting lists, and a possible demo", "tr": "Konu: Bekleme listeleri ve olası bir demo" },
+        { "en": "Dear Sarah,", "tr": "Sevgili Sarah," },
+        { "en": "Many thanks for your time at MedTech Europe yesterday; it was a genuine pleasure.", "tr": "Dün MedTech Europe'ta ayırdığınız zaman için çok teşekkürler; gerçekten büyük bir zevkti." },
+        { "en": "Your account of the waiting lists in your hospitals has stayed with me, not least because it is precisely the problem we set out to solve.", "tr": "Hastanelerinizdeki bekleme listeleri hakkında anlattıklarınız aklımdan çıkmadı; özellikle de tam olarak çözmek için yola çıktığımız sorun bu olduğu için." },
+        { "en": "As promised, I've attached a short overview of our autonomous audiometer, including the headline results from our clinical study.", "tr": "Söz verdiğim gibi, klinik çalışmamızın öne çıkan sonuçlarını da içeren, otonom odyometremize dair kısa bir özet ekledim." },
+        { "en": "That said, a device like ours is far better seen than described, so I'd welcome the chance to show it to you and your team in a brief online demo.", "tr": "Bununla birlikte, bizimki gibi bir cihaz anlatılmaktan çok görülmeyi hak ediyor; bu yüzden onu size ve ekibinize kısa bir çevrimiçi demoyla gösterme fırsatını memnuniyetle karşılarım." },
+        { "en": "Thirty minutes should be ample, with plenty of time left for your team's questions.", "tr": "Otuz dakika fazlasıyla yeterli olur; ekibinizin soruları için de bolca zaman kalır." },
+        { "en": "Next Tuesday or Wednesday afternoon would suit me, though I'm happy to work around your diary if neither is convenient.", "tr": "Gelecek salı veya çarşamba öğleden sonra bana uyar; ikisi de size uygun değilse takviminize göre ayarlayabilirim." },
+        { "en": "Should any questions arise in the meantime, I'm only an email away.", "tr": "Bu arada aklınıza bir soru gelirse, bir e-posta uzaklığındayım." },
+        { "en": "I look forward to picking up where we left off.", "tr": "Kaldığımız yerden devam etmeyi dört gözle bekliyorum." },
+        { "en": "Best wishes, {name}", "tr": "En iyi dileklerimle, {name}" }
+      ],
+      "vocab": [
+        { "en": "stay with someone", "tr": "birinin aklından çıkmamak", "ex": "Your account of the waiting lists has stayed with me.", "def": "to be remembered for a long time because it made an impression" },
+        { "en": "not least because", "tr": "özellikle de ... olduğu için", "ex": "It stayed with me, not least because it's the problem we solve.", "def": "partly, and importantly, because" },
+        { "en": "set out to", "tr": "...mek için yola çıkmak", "ex": "It's precisely the problem we set out to solve.", "def": "to start doing something with a clear aim" },
+        { "en": "headline results", "tr": "öne çıkan sonuçlar", "ex": "The overview includes the headline results from our study.", "def": "the most important findings, in short form" },
+        { "en": "better seen than described", "tr": "anlatılmaktansa görülmesi daha iyi", "ex": "A device like ours is far better seen than described.", "def": "easier to understand by watching it than by reading about it" },
+        { "en": "welcome the chance to", "tr": "...me fırsatını memnuniyetle karşılamak", "ex": "I'd welcome the chance to show you the device.", "def": "to be very happy to have an opportunity" },
+        { "en": "ample", "tr": "fazlasıyla yeterli", "ex": "Thirty minutes should be ample.", "def": "more than enough" },
+        { "en": "work around someone's diary", "tr": "birinin takvimine göre ayarlamak", "ex": "I'm happy to work around your diary.", "def": "to fit your plans to the times another person is free" },
+        { "en": "be only an email away", "tr": "bir e-posta uzaklıkta olmak, kolayca ulaşılabilir olmak", "ex": "If anything comes up, I'm only an email away.", "def": "to be very easy to contact" },
+        { "en": "pick up where we left off", "tr": "kaldığımız yerden devam etmek", "ex": "I look forward to picking up where we left off.", "def": "to continue something from the point where it stopped" }
+      ],
+      "grammar": {
+        "title": "Subtle emphasis: not least, precisely, far better",
+        "tr": "C2'de vurgu bağırarak değil, ince ifadelerle yapılır: 'not least because' (özellikle de … çünkü), 'precisely' (tam da), 'far better' (çok daha iyi). Bunlar e-postaya kibar ama kendinden emin bir ton verir.",
+        "examples": ["It has stayed with me, not least because it is precisely the problem we set out to solve.", "A device like ours is far better seen than described.", "Thirty minutes should be ample."]
+      },
+      "questions": [
+        { "q": "What does 'Your account of the waiting lists has stayed with me' suggest?", "options": ["The writer forgot most of the conversation", "The conversation made a lasting impression on the writer", "Sarah sent a written report"], "a": 1 },
+        { "q": "Why does the writer say the device is 'far better seen than described'?", "options": ["To justify asking for a live demo", "To admit the overview is poor", "To avoid sharing the study data"], "a": 0 },
+        { "q": "What is attached to the email?", "options": ["A contract and a price list", "A recording of the conference", "A short overview, including headline clinical results"], "a": 2 },
+        { "q": "How would you describe the tone of the email?", "options": ["Urgent and pushy", "Casual and chatty", "Stiff and bureaucratic", "Polished, warm and unhurried"], "a": 3 },
+        { "q": "What does 'I'm happy to work around your diary' imply?", "options": ["The writer will adapt to Sarah's availability", "The writer wants to see Sarah's diary", "Sarah must choose Tuesday"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "It has stayed with me, not ___ because it is precisely the problem we set out to solve.", "a": "least", "hint": "özellikle de" },
+        { "s": "A device like ours is far better seen than ___.", "a": "described", "hint": "anlatılmak" },
+        { "s": "I'm happy to work around your ___ if neither is convenient.", "a": "diary", "hint": "takvim, ajanda" },
+        { "s": "Should any questions ___ in the meantime, I'm only an email away.", "a": "arise", "hint": "ortaya çıkmak" }
+      ],
+      "order": [
+        { "a": "I look forward to picking up where we left off." },
+        { "a": "Thirty minutes should be ample." }
+      ],
+      "translate": [
+        { "tr": "Sohbetimiz aklımdan çıkmadı.", "en": "Our conversation has stayed with me.", "keys": ["stayed with me"] },
+        { "tr": "Takviminize göre ayarlamaktan memnuniyet duyarım.", "en": "I'm happy to work around your diary.", "keys": ["work around", "diary"] },
+        { "tr": "Bana her zaman e-postayla ulaşabilirsiniz.", "en": "I'm only an email away.", "keys": ["only an email away"] }
+      ],
+      "roleplay": {
+        "persona": "Sarah (by email)",
+        "personaTr": "Sarah (e-posta ile)",
+        "scene": "Sarah ilgiyle yanıt veriyor; demo ayrıntılarını kısa, zarif ve net cümlelerle karara bağlıyorsun.",
+        "turns": [
+          { "ai": "Dear {name}, thank you for the overview. The headline results are impressive, and I'd certainly be interested in a demo.", "aiTr": "Sevgili {name}, özet için teşekkürler. Öne çıkan sonuçlar etkileyici ve bir demoyla kesinlikle ilgilenirim.", "hint": "That's very kind. Tuesday or Wednesday afternoon would suit me, though I'm happy to work around your diary.", "keys": ["work around", "diary", "Tuesday", "Wednesday"] },
+          { "ai": "Wednesday at 2 pm would be ideal. Who would you suggest we bring along?", "aiTr": "Çarşamba 14:00 ideal olur. Kimi de getirmemizi önerirsiniz?", "hint": "I'd suggest your clinic manager and one of your audiologists, since they'd be the ones using it day to day.", "keys": ["clinic manager", "audiologists", "day to day"] },
+          { "ai": "And how long should we set aside?", "aiTr": "Peki ne kadar zaman ayırmalıyız?", "hint": "Thirty minutes should be ample, with plenty of time left for your team's questions.", "keys": ["thirty minutes", "ample", "questions"] },
+          { "ai": "Perfect. Please send over an invitation when you have a moment.", "aiTr": "Mükemmel. Fırsat bulduğunuzda bir davet gönderin lütfen.", "hint": "Of course; I'll send a calendar invitation shortly, and should any questions arise before then, I'm only an email away.", "keys": ["calendar invitation", "only an email away", "should any questions arise"] }
+        ]
+      }
+    }
+  }
+}

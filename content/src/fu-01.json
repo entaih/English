@@ -1,0 +1,373 @@
+{
+  "id": "fu-01",
+  "topic": "future",
+  "title": "Will AI Replace Doctors?",
+  "titleTr": "Yapay Zekâ Doktorların Yerini Alacak mı?",
+  "levels": {
+    "A1": {
+      "intro": "Bir sağlık teknolojisi konferansında paneldesin. Bir doktor, yapay zekânın doktorların yerini alıp almayacağını soruyor.",
+      "text": [
+        { "who": "Dr. Weber", "en": "Will AI take my job as a doctor?", "tr": "Yapay zekâ doktorluk işimi elimden alacak mı?" },
+        { "who": "Me", "en": "No, AI can help doctors, but the doctor decides.", "tr": "Hayır, yapay zekâ doktorlara yardım edebilir ama kararı doktor verir." },
+        { "who": "Me", "en": "AI is fast, and it is never tired.", "tr": "Yapay zekâ hızlıdır ve hiç yorulmaz." },
+        { "who": "Me", "en": "But AI can make mistakes too.", "tr": "Ama yapay zekâ da hata yapabilir." },
+        { "who": "Me", "en": "It needs good data to work well.", "tr": "İyi çalışmak için iyi veriye ihtiyacı var." },
+        { "who": "Me", "en": "Patients trust people, not machines.", "tr": "Hastalar makinelere değil, insanlara güvenir." },
+        { "who": "Me", "en": "Our device can do a hearing test without an expert.", "tr": "Cihazımız bir uzman olmadan işitme testi yapabilir." },
+        { "who": "Me", "en": "Then the audiologist has time for difficult cases.", "tr": "Böylece odyoloğun zor vakalara ayıracak zamanı olur." }
+      ],
+      "vocab": [
+        { "en": "decide", "tr": "karar vermek", "ex": "The doctor decides." },
+        { "en": "fast", "tr": "hızlı", "ex": "AI is fast." },
+        { "en": "make a mistake", "tr": "hata yapmak", "ex": "AI can make mistakes too." },
+        { "en": "data", "tr": "veri", "ex": "It needs good data." },
+        { "en": "trust", "tr": "güvenmek", "ex": "Patients trust people." },
+        { "en": "difficult case", "tr": "zor vaka", "ex": "The audiologist has time for difficult cases." }
+      ],
+      "grammar": {
+        "title": "can: ability and possibility",
+        "tr": "'Can' bir şeyi yapabilmeyi ya da bir olasılığı anlatır: AI can help, AI can make mistakes. 'Can'den sonra fiil yalın gelir, 'to' kullanılmaz.",
+        "examples": ["AI can help doctors.", "AI can make mistakes too.", "Our device can do a hearing test without an expert."]
+      },
+      "questions": [
+        { "q": "Who asks the question?", "options": ["A patient", "A doctor", "An investor"], "a": 1 },
+        { "q": "What does AI need to work well?", "options": ["Good data", "A big office", "More doctors"], "a": 0 },
+        { "q": "Who do patients trust?", "options": ["Machines", "Computers", "People"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "AI is fast, and it is never ___.", "a": "tired", "hint": "yorgun" },
+        { "s": "It needs good ___ to work well.", "a": "data", "hint": "veri" },
+        { "s": "Patients ___ people, not machines.", "a": "trust", "hint": "güvenmek" }
+      ],
+      "order": [
+        { "a": "AI can make mistakes too." },
+        { "a": "Patients trust people not machines." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekâ doktorlara yardım edebilir.", "en": "AI can help doctors.", "keys": ["help doctors"] },
+        { "tr": "Kararı doktor verir.", "en": "The doctor decides.", "keys": ["doctor decides"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor",
+        "personaTr": "Şüpheci doktor",
+        "scene": "Paneldeki şüpheci bir doktor yapay zekâ hakkında sorular soruyor. Kısa ve net cevap ver.",
+        "turns": [
+          { "ai": "Will AI take my job?", "aiTr": "Yapay zekâ işimi elimden alacak mı?", "hint": "No. AI can help you, but you decide.", "keys": ["help", "decide", "no"] },
+          { "ai": "But AI can make mistakes, right?", "aiTr": "Ama yapay zekâ hata yapabilir, değil mi?", "hint": "Yes, it can. That is why the doctor checks the result.", "keys": ["doctor", "checks", "yes"] },
+          { "ai": "What does your device do?", "aiTr": "Cihazınız ne yapıyor?", "hint": "It does a hearing test without an expert. Then you have time for difficult cases.", "keys": ["hearing test", "difficult cases", "time"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir sağlık teknolojisi konferansındaki panelde, bir doktorun 'Yapay zekâ doktorların yerini alacak mı?' sorusuna cevap veriyorsun.",
+      "text": [
+        { "who": "Dr. Weber", "en": "Many people say AI is going to replace doctors like me.", "tr": "Birçok kişi yapay zekânın benim gibi doktorların yerini alacağını söylüyor." },
+        { "who": "Me", "en": "I don't agree, because AI should help doctors, not replace them.", "tr": "Katılmıyorum, çünkü yapay zekâ doktorların yerini almamalı, onlara yardım etmeli." },
+        { "who": "Me", "en": "AI is faster than a person, and it never gets tired.", "tr": "Yapay zekâ bir insandan daha hızlıdır ve hiç yorulmaz." },
+        { "who": "Me", "en": "But it makes mistakes, and it needs good data to learn.", "tr": "Ama hata yapar ve öğrenmek için iyi veriye ihtiyaç duyar." },
+        { "who": "Me", "en": "When something goes wrong, a person needs to take responsibility.", "tr": "Bir şey ters gittiğinde, bir insanın sorumluluk alması gerekir." },
+        { "who": "Me", "en": "Patients also want to talk to a person they trust.", "tr": "Hastalar ayrıca güvendikleri bir insanla konuşmak ister." },
+        { "who": "Me", "en": "For example, our audiometer does a hearing test in under ten minutes.", "tr": "Örneğin odyometremiz işitme testini on dakikadan kısa sürede yapıyor." },
+        { "who": "Me", "en": "There is no expert in the room, so audiologists have more time.", "tr": "Odada uzman olması gerekmiyor, bu yüzden odyologların daha çok zamanı oluyor." },
+        { "who": "Me", "en": "They can use that time for the difficult cases.", "tr": "Bu zamanı zor vakalar için kullanabilirler." }
+      ],
+      "vocab": [
+        { "en": "replace", "tr": "yerini almak", "ex": "AI is not going to replace doctors." },
+        { "en": "faster than", "tr": "...den daha hızlı", "ex": "AI is faster than a person." },
+        { "en": "get tired", "tr": "yorulmak", "ex": "AI never gets tired." },
+        { "en": "make a mistake", "tr": "hata yapmak", "ex": "AI sometimes makes mistakes." },
+        { "en": "go wrong", "tr": "ters gitmek", "ex": "When something goes wrong, a person is responsible." },
+        { "en": "take responsibility", "tr": "sorumluluk almak", "ex": "A person needs to take responsibility." },
+        { "en": "expert", "tr": "uzman", "ex": "There is no expert in the room." },
+        { "en": "in under ten minutes", "tr": "on dakikadan kısa sürede", "ex": "Our audiometer does a test in under ten minutes." }
+      ],
+      "grammar": {
+        "title": "Comparatives: faster than, more time",
+        "tr": "İki şeyi karşılaştırırken kısa sıfatlara -er eklenir ve ardından 'than' gelir: fast → faster than. Uzun sıfatlarda ve isimlerde 'more' kullanılır: more time, more difficult.",
+        "examples": ["AI is faster than a person.", "Audiologists have more time.", "Difficult cases need more time than simple tests."]
+      },
+      "questions": [
+        { "q": "What does Dr. Weber talk about?", "options": ["The price of devices", "AI replacing doctors", "A new hospital"], "a": 1 },
+        { "q": "What does AI need to learn?", "options": ["Good data", "More doctors", "A bigger room"], "a": 0 },
+        { "q": "How long does the hearing test take?", "options": ["About an hour", "Two days", "Under ten minutes"], "a": 2 },
+        { "q": "What can audiologists do with their extra time?", "options": ["Go home early", "Work on difficult cases", "Sell more devices"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "AI is faster than a person, and it never gets ___.", "a": "tired", "hint": "yorgun" },
+        { "s": "When something goes wrong, a person needs to take ___.", "a": "responsibility", "hint": "sorumluluk" },
+        { "s": "Our audiometer does a hearing test in under ten ___.", "a": "minutes", "hint": "dakika" }
+      ],
+      "order": [
+        { "a": "AI should help doctors not replace them." },
+        { "a": "Patients want to talk to a person they trust." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekâ doktorların yerini almamalı.", "en": "AI should not replace doctors.", "keys": ["should not", "replace doctors"] },
+        { "tr": "Yapay zekâ bir insandan daha hızlıdır.", "en": "AI is faster than a person.", "keys": ["faster than"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor",
+        "personaTr": "Şüpheci doktor",
+        "scene": "Paneldeki şüpheci doktor yapay zekâya güvenmiyor. Ona sakin ve net cevaplar veriyorsun.",
+        "turns": [
+          { "ai": "Is AI going to take my job?", "aiTr": "Yapay zekâ işimi elimden mi alacak?", "hint": "No, I don't think so. AI should help doctors, not replace them.", "keys": ["help doctors", "not replace", "don't think so"] },
+          { "ai": "But what happens when the AI makes a mistake?", "aiTr": "Ama yapay zekâ hata yaptığında ne olacak?", "hint": "That's why a person needs to check the result and take responsibility.", "keys": ["take responsibility", "check", "person"] },
+          { "ai": "So what does your device do for audiologists?", "aiTr": "Peki cihazınız odyologlar için ne yapıyor?", "hint": "It does simple hearing tests, so they have more time for difficult cases.", "keys": ["more time", "difficult cases", "hearing tests"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Bir sağlık teknolojisi konferansında panelistsin; şüpheci bir doktor, yapay zekânın doktorların yerini alıp almayacağını soruyor.",
+      "text": [
+        { "who": "Dr. Weber", "en": "I've heard many times that AI will replace doctors, so should I start looking for a new job?", "tr": "Yapay zekânın doktorların yerini alacağını defalarca duydum; yeni bir iş aramaya başlamalı mıyım?" },
+        { "who": "Me", "en": "I don't think you should, because AI should support doctors, not replace them.", "tr": "Bence gerek yok, çünkü yapay zekâ doktorların yerini almamalı, onları desteklemeli." },
+        { "who": "Me", "en": "It's true that AI is very fast, and it never gets tired, even at three in the morning.", "tr": "Yapay zekânın çok hızlı olduğu ve gece üçte bile yorulmadığı doğru." },
+        { "who": "Me", "en": "However, it still makes mistakes, and it's only as good as the data it learns from.", "tr": "Ancak yine de hata yapıyor ve ancak öğrendiği veri kadar iyi." },
+        { "who": "Me", "en": "If the data is poor, the results will be poor too.", "tr": "Veri kötüyse sonuçlar da kötü olur." },
+        { "who": "Me", "en": "That's why responsibility has to stay with humans, not with software.", "tr": "Bu yüzden sorumluluk yazılımda değil, insanlarda kalmak zorunda." },
+        { "who": "Me", "en": "Patients also need someone they can trust, someone who can explain the result and answer their questions.", "tr": "Hastaların ayrıca güvenebilecekleri, sonucu açıklayıp sorularını cevaplayabilecek birine ihtiyacı var." },
+        { "who": "Me", "en": "Our audiometer runs a hearing test in under ten minutes, with no expert in the room.", "tr": "Odyometremiz, odada uzman olmadan on dakikadan kısa sürede bir işitme testi yapıyor." },
+        { "who": "Me", "en": "This frees audiologists to spend their time on the complex cases that really need them.", "tr": "Bu da odyologlara, gerçekten onlara ihtiyaç duyan karmaşık vakalara zaman ayırma imkânı veriyor." },
+        { "who": "Me", "en": "In the end, the doctor still makes the decision, and AI just does the routine work faster.", "tr": "Sonuçta kararı yine doktor veriyor; yapay zekâ sadece rutin işi daha hızlı yapıyor." }
+      ],
+      "vocab": [
+        { "en": "replace", "tr": "yerini almak", "ex": "AI will not replace doctors.", "def": "to take the place of someone or something" },
+        { "en": "support", "tr": "desteklemek", "ex": "AI should support doctors in their work.", "def": "to help someone do their work" },
+        { "en": "make mistakes", "tr": "hata yapmak", "ex": "AI still makes mistakes.", "def": "to do something wrong without meaning to" },
+        { "en": "only as good as", "tr": "ancak ... kadar iyi", "ex": "AI is only as good as its data.", "def": "no better than the thing it depends on" },
+        { "en": "responsibility", "tr": "sorumluluk", "ex": "Responsibility has to stay with humans.", "def": "the duty to deal with something and to be blamed if it goes wrong" },
+        { "en": "free someone to", "tr": "birine ... için zaman açmak", "ex": "The device frees audiologists to focus on complex cases.", "def": "to give someone time to do something else" },
+        { "en": "complex case", "tr": "karmaşık vaka", "ex": "Audiologists spend more time on complex cases.", "def": "a medical situation that is difficult to understand or treat" },
+        { "en": "routine work", "tr": "rutin iş", "ex": "AI does the routine work faster.", "def": "simple work that is done the same way every time" }
+      ],
+      "grammar": {
+        "title": "should / have to: advice and obligation",
+        "tr": "'Should' tavsiye ve görüş bildirir: AI should support doctors. 'Have to' zorunluluk anlatır: responsibility has to stay with humans. Soru biçimi: 'Should I…?'",
+        "examples": ["AI should support doctors, not replace them.", "Responsibility has to stay with humans.", "Should I start looking for a new job?"]
+      },
+      "questions": [
+        { "q": "What is the speaker's main opinion?", "options": ["AI will replace doctors soon", "AI should support doctors, not replace them", "AI is too dangerous for hospitals"], "a": 1 },
+        { "q": "What happens if the data is poor?", "options": ["The AI gets tired", "The test takes longer", "The results will be poor"], "a": 2 },
+        { "q": "Why do patients need a human?", "options": ["To explain the result and answer questions", "To press the button", "To repair the device"], "a": 0 },
+        { "q": "How does the audiometer help audiologists?", "options": ["It replaces them", "It writes their reports", "It sells their services", "It frees them for complex cases"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "AI is only as good as the ___ it learns from.", "a": "data", "hint": "veri" },
+        { "s": "Responsibility has to ___ with humans.", "a": "stay", "hint": "kalmak" },
+        { "s": "This frees audiologists to spend time on ___ cases.", "a": "complex", "hint": "karmaşık" }
+      ],
+      "order": [
+        { "a": "AI should support doctors not replace them." },
+        { "a": "The doctor still makes the decision." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekâ ancak öğrendiği veri kadar iyidir.", "en": "AI is only as good as the data it learns from.", "keys": ["only as good as", "data"] },
+        { "tr": "Sorumluluk insanlarda kalmak zorunda.", "en": "Responsibility has to stay with humans.", "keys": ["responsibility", "has to stay"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor on the panel",
+        "personaTr": "Paneldeki şüpheci doktor",
+        "scene": "Panelde şüpheci bir doktor yapay zekâyı sorguluyor. Görüşünü örneklerle savunuyorsun.",
+        "turns": [
+          { "ai": "Be honest: will AI replace doctors like me?", "aiTr": "Dürüst olun: yapay zekâ benim gibi doktorların yerini alacak mı?", "hint": "I don't think so. AI should support doctors, not replace them.", "keys": ["support doctors", "not replace", "don't think so"] },
+          { "ai": "But AI makes mistakes. Who is responsible then?", "aiTr": "Ama yapay zekâ hata yapıyor. O zaman kim sorumlu?", "hint": "That's exactly why responsibility has to stay with humans, with the doctor.", "keys": ["responsibility", "stay with humans", "doctor"] },
+          { "ai": "Then why should a clinic use AI at all?", "aiTr": "O zaman bir klinik neden yapay zekâ kullansın ki?", "hint": "Because it's fast and never gets tired, so it can do the routine work.", "keys": ["fast", "never gets tired", "routine work"] },
+          { "ai": "Give me a real example.", "aiTr": "Bana gerçek bir örnek verin.", "hint": "Our audiometer runs a hearing test in under ten minutes, so audiologists have more time for complex cases.", "keys": ["under ten minutes", "complex cases", "more time"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir sağlık teknolojisi konferansındaki panelde, şüpheci bir doktora yapay zekânın klinisyenlerin yerini almaması, onları desteklemesi gerektiğini savunuyorsun.",
+      "text": [
+        { "who": "Dr. Weber", "en": "Every conference I go to, someone claims that AI will make doctors like me redundant within ten years.", "tr": "Gittiğim her konferansta biri, yapay zekânın on yıl içinde benim gibi doktorları gereksiz kılacağını iddia ediyor." },
+        { "who": "Me", "en": "I'd say that's the wrong question, because AI should be designed to support clinicians, not replace them.", "tr": "Bence soru yanlış, çünkü yapay zekâ klinisyenlerin yerini almak için değil, onları desteklemek için tasarlanmalı." },
+        { "who": "Me", "en": "Admittedly, it has real strengths: it's fast, it's consistent, and it doesn't get tired at the end of a long shift.", "tr": "Kabul etmek gerekir ki gerçek güçlü yanları var: hızlı, tutarlı ve uzun bir vardiyanın sonunda yorulmuyor." },
+        { "who": "Me", "en": "But it still makes mistakes, and a model is only as good as the data it was trained on.", "tr": "Ama yine de hata yapıyor ve bir model ancak eğitildiği veri kadar iyi." },
+        { "who": "Me", "en": "If it were trained on biased or incomplete data, it would make biased decisions without anyone noticing.", "tr": "Taraflı ya da eksik verilerle eğitilseydi, kimse fark etmeden taraflı kararlar verirdi." },
+        { "who": "Me", "en": "That's why the final decision, and the responsibility that comes with it, should stay with a human.", "tr": "Bu yüzden nihai karar ve beraberinde gelen sorumluluk bir insanda kalmalı." },
+        { "who": "Me", "en": "Trust matters too, since patients want to be treated by someone who can explain what's happening and why.", "tr": "Güven de önemli, çünkü hastalar neler olduğunu ve nedenini açıklayabilen biri tarafından tedavi edilmek ister." },
+        { "who": "Me", "en": "Take our device as an example: it's an audiometer that runs a full hearing test in under ten minutes, with no expert in the room.", "tr": "Cihazımızı örnek alalım: odada uzman olmadan, tam bir işitme testini on dakikadan kısa sürede yapan bir odyometre." },
+        { "who": "Me", "en": "The audiologist isn't replaced; instead, they're freed up to focus on the complex cases that genuinely need their expertise.", "tr": "Odyoloğun yerine kimse geçmiyor; aksine, uzmanlığına gerçekten ihtiyaç duyan karmaşık vakalara odaklanması için zamanı açılıyor." },
+        { "who": "Me", "en": "So, in my view, AI won't replace doctors, but it will change how they spend their time.", "tr": "Yani bence yapay zekâ doktorların yerini almayacak, ama zamanlarını nasıl kullandıklarını değiştirecek." }
+      ],
+      "vocab": [
+        { "en": "make someone redundant", "tr": "birini gereksiz kılmak, işsiz bırakmak", "ex": "Will AI make doctors redundant?", "def": "to cause someone to lose their job because they are no longer needed" },
+        { "en": "clinician", "tr": "klinisyen", "ex": "AI should support clinicians.", "def": "a doctor, nurse or other professional who treats patients" },
+        { "en": "consistent", "tr": "tutarlı", "ex": "AI is fast and consistent.", "def": "always behaving or performing in the same way" },
+        { "en": "long shift", "tr": "uzun vardiya", "ex": "Doctors get tired at the end of a long shift.", "def": "a long period of work, often in a hospital" },
+        { "en": "be trained on", "tr": "... ile eğitilmek", "ex": "The model was trained on clinical data.", "def": "(of an AI model) to learn from a particular set of data" },
+        { "en": "biased", "tr": "taraflı, önyargılı", "ex": "Biased data leads to biased decisions.", "def": "unfairly favouring some people or results over others" },
+        { "en": "come with", "tr": "beraberinde gelmek", "ex": "Responsibility comes with the final decision.", "def": "to be a natural part of something" },
+        { "en": "free someone up", "tr": "birine zaman açmak", "ex": "The device frees audiologists up for complex cases.", "def": "to give someone time for other things" },
+        { "en": "expertise", "tr": "uzmanlık", "ex": "Complex cases need an audiologist's expertise.", "def": "special skill or knowledge in a particular area" }
+      ],
+      "grammar": {
+        "title": "The passive, including with modal verbs",
+        "tr": "Passive (be + V3), işi kimin yaptığından çok ne yapılması gerektiğine odaklanır. Modal fiillerle: modal + be + V3 (should be designed). Tartışmalarda tarafsız ve profesyonel bir ton verir.",
+        "examples": ["AI should be designed to support clinicians.", "A model is only as good as the data it was trained on.", "The audiologist isn't replaced; they're freed up to focus on complex cases."]
+      },
+      "questions": [
+        { "q": "What is Dr. Weber worried about?", "options": ["That AI devices are too expensive", "That AI will make doctors redundant", "That conferences are too long"], "a": 1 },
+        { "q": "Which strength of AI does the speaker mention?", "options": ["It never needs data", "It is always right", "It doesn't get tired"], "a": 2 },
+        { "q": "What could happen if an AI were trained on biased data?", "options": ["It would make biased decisions", "It would stop working", "It would become faster"], "a": 0 },
+        { "q": "Why does the speaker mention their own audiometer?", "options": ["To sell it to Dr. Weber", "To show that AI can take over routine work and leave complex cases to experts", "To prove that AI never makes mistakes"], "a": 1 },
+        { "q": "What does the speaker predict at the end?", "options": ["AI will replace doctors within ten years", "Doctors will stop using AI", "AI will change how doctors spend their time"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "AI should be designed to support ___, not replace them.", "a": "clinicians", "hint": "klinisyenler" },
+        { "s": "A model is only as good as the data it was ___ on.", "a": "trained", "hint": "eğitildi" },
+        { "s": "They're freed up to focus on the complex cases that need their ___.", "a": "expertise", "hint": "uzmanlık" }
+      ],
+      "order": [
+        { "a": "AI should be designed to support clinicians." },
+        { "a": "The final decision should stay with a human." }
+      ],
+      "translate": [
+        { "tr": "Taraflı verilerle eğitilseydi, taraflı kararlar verirdi.", "en": "If it were trained on biased data, it would make biased decisions.", "keys": ["were trained", "biased data", "would make"] },
+        { "tr": "Odyolog devre dışı kalmıyor; aksine karmaşık vakalara odaklanması için zamanı açılıyor.", "en": "The audiologist isn't replaced; they're freed up to focus on complex cases.", "keys": ["isn't replaced", "freed up", "complex cases"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor on the panel",
+        "personaTr": "Paneldeki şüpheci doktor",
+        "scene": "Panelde şüpheci bir doktor, girişimlerin doktorları devre dışı bırakmaya çalıştığını düşünüyor. Görüşünü kanıtlarla savunuyorsun.",
+        "turns": [
+          { "ai": "With all due respect, aren't start-ups like yours simply trying to cut doctors out of the process?", "aiTr": "Kusura bakmayın ama sizin gibi girişimler doktorları süreçten çıkarmaya çalışmıyor mu?", "hint": "Not at all. I'd say AI should be designed to support clinicians, not replace them.", "keys": ["support clinicians", "not replace", "not at all"] },
+          { "ai": "But if the algorithm gets it wrong, who takes the blame?", "aiTr": "Ama algoritma yanılırsa suçu kim üstlenecek?", "hint": "The final decision, and the responsibility that comes with it, should stay with a human.", "keys": ["final decision", "responsibility", "stay with a human"] },
+          { "ai": "And how do you know your system isn't biased?", "aiTr": "Sisteminizin taraflı olmadığını nereden biliyorsunuz?", "hint": "A model is only as good as its data, so we test it carefully; in our clinical study it matched a trained audiologist in 94% of cases.", "keys": ["only as good as", "94", "clinical study"] },
+          { "ai": "So what's actually in it for audiologists?", "aiTr": "Peki odyologlar bundan aslında ne kazanıyor?", "hint": "The device takes over the routine tests, which frees them up to focus on complex cases.", "keys": ["routine tests", "frees them up", "complex cases"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir sağlık teknolojisi konferansındaki panelde, şüpheci bir doktorun sorusunu, yapay zekânın klinisyenleri güçlendirmesi gerektiğini savunarak incelikli bir dille yanıtlıyorsun.",
+      "text": [
+        { "who": "Dr. Weber", "en": "Let me play devil's advocate: if an algorithm can read a scan faster than I can, what exactly is left for doctors to do?", "tr": "Şeytanın avukatlığını yapayım: bir algoritma bir taramayı benden hızlı okuyabiliyorsa, doktorlara tam olarak ne kalıyor?" },
+        { "who": "Me", "en": "It's a fair challenge, but I think it rests on a false choice between humans and machines.", "tr": "Haklı bir itiraz, ama bence insanlar ile makineler arasında yanlış bir ikileme dayanıyor." },
+        { "who": "Me", "en": "What AI should do is support clinicians, not stand in for them.", "tr": "Yapay zekânın yapması gereken şey klinisyenleri desteklemek, onların yerine geçmek değil." },
+        { "who": "Me", "en": "Granted, its strengths are hard to argue with: it's fast, it's consistent, and it doesn't flag at three in the morning the way we all do.", "tr": "Kabul, güçlü yanlarına itiraz etmek zor: hızlı, tutarlı ve hepimizin yaptığı gibi gece üçte gücü tükenmiyor." },
+        { "who": "Me", "en": "Yet it still makes mistakes, and it's only ever as good as the data it's been trained on.", "tr": "Yine de hata yapıyor ve her zaman ancak eğitildiği veri kadar iyi." },
+        { "who": "Me", "en": "Feed it skewed or incomplete data, and it will reproduce those blind spots at scale, often without anyone noticing.", "tr": "Ona çarpık ya da eksik veri verirseniz, bu kör noktaları geniş ölçekte, çoğu zaman kimse fark etmeden çoğaltır." },
+        { "who": "Me", "en": "Not only does that make human oversight essential, but it also means accountability can't simply be handed over to software.", "tr": "Bu yalnızca insan denetimini zorunlu kılmakla kalmıyor, hesap verebilirliğin öylece yazılıma devredilemeyeceği anlamına da geliyor." },
+        { "who": "Me", "en": "There's also the question of trust: patients want someone who can weigh up the evidence, explain the trade-offs and stand behind the decision.", "tr": "Bir de güven meselesi var: hastalar kanıtları tartabilen, artıları ve eksileri açıklayabilen ve kararın arkasında durabilen birini ister." },
+        { "who": "Me", "en": "Our own audiometer is a case in point: it runs a full hearing test in under ten minutes, with no expert in the room.", "tr": "Kendi odyometremiz buna iyi bir örnek: odada uzman olmadan, tam bir işitme testini on dakikadan kısa sürede yapıyor." },
+        { "who": "Me", "en": "Far from sidelining audiologists, it frees them to focus on the complex cases where their expertise genuinely makes a difference.", "tr": "Odyologları kenara itmek bir yana, uzmanlıklarının gerçekten fark yarattığı karmaşık vakalara odaklanmalarını sağlıyor." },
+        { "who": "Me", "en": "So no, I don't think AI will replace doctors, though doctors who embrace it may end up replacing those who don't.", "tr": "Yani hayır, yapay zekânın doktorların yerini alacağını düşünmüyorum; ama onu benimseyen doktorlar, benimsemeyenlerin yerini alabilir." }
+      ],
+      "vocab": [
+        { "en": "play devil's advocate", "tr": "şeytanın avukatlığını yapmak", "ex": "Let me play devil's advocate for a moment.", "def": "to argue the opposite view in order to test an idea" },
+        { "en": "a false choice", "tr": "yanlış ikilem", "ex": "Humans versus machines is a false choice.", "def": "a situation presented as having only two options when there are more" },
+        { "en": "stand in for", "tr": "yerine geçmek", "ex": "AI shouldn't stand in for clinicians.", "def": "to take someone's place" },
+        { "en": "flag", "tr": "gücü tükenmek, yorulmak", "ex": "Unlike us, AI doesn't flag at night.", "def": "to become tired or less energetic" },
+        { "en": "skewed", "tr": "çarpık", "ex": "Skewed data leads to skewed results.", "def": "not accurate because it favours one side" },
+        { "en": "blind spot", "tr": "kör nokta", "ex": "Every dataset has blind spots.", "def": "an area where you fail to see problems" },
+        { "en": "at scale", "tr": "geniş ölçekte", "ex": "AI can repeat an error at scale.", "def": "in large numbers or across a large system" },
+        { "en": "human oversight", "tr": "insan denetimi", "ex": "Human oversight is essential in medicine.", "def": "people checking and controlling a process" },
+        { "en": "accountability", "tr": "hesap verebilirlik", "ex": "Accountability can't be handed over to software.", "def": "being responsible for decisions and their consequences" },
+        { "en": "a case in point", "tr": "tam bir örnek", "ex": "Our audiometer is a case in point.", "def": "a clear example of what you are talking about" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences: 'What AI should do is…'",
+        "tr": "'What … is …' yapısı cümlenin bir bölümünü öne çıkarır ve konuşmacının asıl vurgusunu netleştirir. Panellerde karşı görüşe cevap verirken çok doğal duyulur.",
+        "examples": ["What AI should do is support clinicians, not stand in for them.", "What patients want is someone who can stand behind the decision.", "What worries me is skewed data, not fast algorithms."]
+      },
+      "questions": [
+        { "q": "Why does Dr. Weber say 'Let me play devil's advocate'?", "options": ["To signal a deliberately provocative question", "To admit defeat", "To change the topic"], "a": 0 },
+        { "q": "What does the speaker mean by 'a false choice'?", "options": ["Doctors must choose between two devices", "It is wrong to frame the issue as humans versus machines", "AI always chooses badly"], "a": 1 },
+        { "q": "What risk does the speaker associate with skewed data?", "options": ["The device becomes slower", "Patients stop coming", "Errors are repeated at scale, often unnoticed", "The test costs more"], "a": 2 },
+        { "q": "What is the speaker's overall attitude towards AI?", "options": ["Dismissive", "Uncritically enthusiastic", "Fearful", "Optimistic but cautious"], "a": 3 },
+        { "q": "What does the final sentence imply?", "options": ["Doctors who use AI well will have an advantage", "AI will eventually replace all doctors", "Doctors should avoid AI"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Let me play devil's ___.", "a": "advocate", "hint": "avukat" },
+        { "s": "Feed it skewed data, and it will reproduce those blind ___ at scale.", "a": "spots", "hint": "noktalar" },
+        { "s": "Our own audiometer is a case in ___.", "a": "point", "hint": "tam bir örnek (deyim)" },
+        { "s": "Accountability can't simply be handed ___ to software.", "a": "over", "hint": "devretmek" }
+      ],
+      "order": [
+        { "a": "What AI should do is support clinicians." },
+        { "a": "Patients want someone who can explain the trade-offs." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekânın yapması gereken şey klinisyenleri desteklemek, onların yerine geçmek değil.", "en": "What AI should do is support clinicians, not stand in for them.", "keys": ["what ai should do", "support clinicians"] },
+        { "tr": "Bu yalnızca insan denetimini zorunlu kılmakla kalmıyor, hesap verebilirliğin yazılıma devredilemeyeceği anlamına da geliyor.", "en": "Not only does that make human oversight essential, but it also means accountability can't be handed over to software.", "keys": ["not only does", "human oversight", "accountability"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor on the panel",
+        "personaTr": "Paneldeki şüpheci doktor",
+        "scene": "Panelde deneyimli ve şüpheci bir doktor, iddialarını tek tek sorguluyor. Dengeli ama kararlı bir şekilde yanıt veriyorsun.",
+        "turns": [
+          { "ai": "Let's be candid: isn't 'AI will support doctors' just a polite way of saying 'AI will replace them eventually'?", "aiTr": "Açık konuşalım: 'Yapay zekâ doktorları destekleyecek' demek, 'eninde sonunda yerlerini alacak' demenin kibar bir yolu değil mi?", "hint": "I'd push back on that: what AI should do is support clinicians, not stand in for them.", "keys": ["push back", "support clinicians", "stand in for"] },
+          { "ai": "Fine, but algorithms don't get tired, they don't take holidays, and they're cheaper than I am.", "aiTr": "Peki ama algoritmalar yorulmaz, tatile çıkmaz ve benden daha ucuzdur.", "hint": "Granted, but they still make mistakes, and they're only ever as good as the data they've been trained on.", "keys": ["granted", "make mistakes", "only ever as good as", "data"] },
+          { "ai": "So when something goes wrong, who's accountable?", "aiTr": "Peki bir şey ters gittiğinde hesabını kim verecek?", "hint": "A human, always; accountability can't simply be handed over to software, which is why human oversight is essential.", "keys": ["accountability", "human oversight", "handed over"] },
+          { "ai": "What does that look like in practice, with your own device?", "aiTr": "Kendi cihazınızda bu pratikte nasıl görünüyor?", "hint": "Our audiometer handles the routine tests in under ten minutes, which frees audiologists to focus on the complex cases.", "keys": ["routine tests", "under ten minutes", "complex cases"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Bir sağlık teknolojisi konferansındaki panelde, şüpheci bir doktorla yapay zekânın tıptaki yerini deneyimli bir panelistin incelikli ve dengeli diliyle tartışıyorsun.",
+      "text": [
+        { "who": "Dr. Weber", "en": "I'll ask the question everyone in this room is too polite to ask: are we, the doctors, training our own replacements?", "tr": "Bu salondaki herkesin sormaya çekindiği soruyu ben sorayım: biz doktorlar, kendi yerimize geçecek olanı mı yetiştiriyoruz?" },
+        { "who": "Me", "en": "It's a fair question, though I'd gently suggest it's the wrong one.", "tr": "Haklı bir soru, ama nazikçe belirtmek isterim ki yanlış soru." },
+        { "who": "Me", "en": "The more useful question isn't whether AI replaces clinicians but how it can make them better at the parts of the job only they can do.", "tr": "Daha faydalı soru, yapay zekânın klinisyenlerin yerini alıp almayacağı değil; onları işin yalnızca kendilerinin yapabildiği kısımlarında nasıl daha iyi kılabileceği." },
+        { "who": "Me", "en": "To be fair to the machines, they have undeniable strengths: they're fast, they're tirelessly consistent, and they don't lose concentration at the end of a twelve-hour shift.", "tr": "Makinelere hakkını vermek gerekirse, inkâr edilemez güçlü yanları var: hızlılar, yorulmadan tutarlılar ve on iki saatlik bir vardiyanın sonunda dikkatleri dağılmıyor." },
+        { "who": "Me", "en": "By the same token, they make mistakes, sometimes confidently, and they are only ever as good as the data they've been fed.", "tr": "Aynı şekilde hata da yapıyorlar, bazen kendinden emin bir şekilde, ve her zaman ancak kendilerine verilen veri kadar iyiler." },
+        { "who": "Me", "en": "Train a model on a skewed dataset and it won't merely inherit those blind spots; it will scale them up, quietly and with impeccable confidence.", "tr": "Bir modeli çarpık bir veri setiyle eğitirseniz, o kör noktaları devralmakla kalmaz; onları sessizce ve kusursuz bir özgüvenle büyütür." },
+        { "who": "Me", "en": "Which is precisely why responsibility can't be outsourced to an algorithm: someone has to own the decision, and that someone should have a name and a licence.", "tr": "İşte tam da bu yüzden sorumluluk bir algoritmaya devredilemez: birinin kararın sahibi olması gerekir ve o kişinin bir adı ve bir lisansı olmalı." },
+        { "who": "Me", "en": "Trust, moreover, isn't something a patient extends to a probability score; it's something they extend to a person who can look them in the eye and explain.", "tr": "Üstelik güven, bir hastanın bir olasılık skoruna duyduğu bir şey değildir; gözünün içine bakıp açıklama yapabilen bir insana duyduğu bir şeydir." },
+        { "who": "Me", "en": "Our own audiometer is, I hope, a modest illustration: it runs a complete hearing test in under ten minutes, with no expert in the room.", "tr": "Kendi odyometremiz, umarım, mütevazı bir örnek: odada uzman olmadan, eksiksiz bir işitme testini on dakikadan kısa sürede yapıyor." },
+        { "who": "Me", "en": "Far from making audiologists obsolete, it hands them back the hours they'd otherwise spend on routine tests, so they can devote themselves to the genuinely complex cases.", "tr": "Odyologları gereksiz kılmak bir yana, rutin testlere harcayacakları saatleri onlara geri veriyor; böylece kendilerini gerçekten karmaşık vakalara adayabiliyorlar." },
+        { "who": "Me", "en": "So, if I may hedge my bets, AI is unlikely to replace doctors, although doctors who learn to work with it may well outpace those who don't.", "tr": "Yani temkinli konuşmama izin verirseniz, yapay zekânın doktorların yerini alması pek olası değil; ama onunla çalışmayı öğrenen doktorlar, öğrenmeyenleri pekâlâ geride bırakabilir." }
+      ],
+      "vocab": [
+        { "en": "train one's replacement", "tr": "kendi yerine geçecek olanı yetiştirmek", "ex": "Are doctors training their own replacements?", "def": "to teach the person or thing that will take your job" },
+        { "en": "by the same token", "tr": "aynı şekilde, aynı mantıkla", "ex": "By the same token, AI can make confident mistakes.", "def": "for the same reason; in a similar way" },
+        { "en": "inherit", "tr": "devralmak", "ex": "A model inherits the blind spots in its data.", "def": "to receive qualities or problems from something that came before" },
+        { "en": "impeccable", "tr": "kusursuz", "ex": "It can be wrong with impeccable confidence.", "def": "perfect, without any faults" },
+        { "en": "outsource", "tr": "dışarıya devretmek", "ex": "Responsibility can't be outsourced to an algorithm.", "def": "to give a task to an outside company or system" },
+        { "en": "own the decision", "tr": "kararın sahibi olmak", "ex": "A clinician has to own the decision.", "def": "to accept full personal responsibility for a choice" },
+        { "en": "obsolete", "tr": "işlevsiz, modası geçmiş", "ex": "AI won't make audiologists obsolete.", "def": "no longer needed or used" },
+        { "en": "devote oneself to", "tr": "kendini ...e adamak", "ex": "Audiologists can devote themselves to complex cases.", "def": "to give all your time and energy to something" },
+        { "en": "hedge one's bets", "tr": "temkinli davranmak, riski bölmek", "ex": "If I may hedge my bets, the answer is probably no.", "def": "to avoid committing fully to one position" },
+        { "en": "outpace", "tr": "geride bırakmak", "ex": "Doctors who use AI may outpace those who don't.", "def": "to go faster or do better than someone else" }
+      ],
+      "grammar": {
+        "title": "Hedging and concession in debate",
+        "tr": "Usta konuşmacılar görüşlerini yumuşatarak daha ikna edici olur: 'I'd gently suggest', 'is unlikely to', 'may well', 'if I may hedge my bets'. 'To be fair to…' ve 'By the same token' ise karşı tarafın haklı olduğu noktayı kabul edip dengeli bir argüman kurar.",
+        "examples": ["I'd gently suggest it's the wrong question.", "AI is unlikely to replace doctors, although doctors who work with it may well outpace those who don't.", "By the same token, they make mistakes, sometimes confidently."]
+      },
+      "questions": [
+        { "q": "How does the speaker first respond to Dr. Weber's question?", "options": ["By rejecting it angrily", "By accepting it as fair but reframing it", "By avoiding it completely", "By agreeing that doctors will be replaced"], "a": 1 },
+        { "q": "What danger of skewed data does the speaker highlight?", "options": ["The model scales up its blind spots, confidently and quietly", "The model refuses to work", "The test takes more than ten minutes"], "a": 0 },
+        { "q": "Why does the speaker say the responsible person 'should have a name and a licence'?", "options": ["Because software companies need licences", "Because patients like to know names", "Because a specific, qualified person must be accountable"], "a": 2 },
+        { "q": "What is the tone of 'with impeccable confidence'?", "options": ["Admiring", "Neutral", "Fearful", "Ironic"], "a": 3 },
+        { "q": "What does 'if I may hedge my bets' suggest about the speaker?", "options": ["They are avoiding an overconfident prediction", "They are about to place a bet", "They doubt their own device"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Are we, the doctors, training our own ___?", "a": "replacements", "hint": "yerimize geçecek olanlar" },
+        { "s": "By the same ___, they make mistakes.", "a": "token", "hint": "aynı şekilde (deyim)" },
+        { "s": "Responsibility can't be ___ to an algorithm.", "a": "outsourced", "hint": "dışarıya devredilmek" },
+        { "s": "Far from making audiologists ___, it hands them back their hours.", "a": "obsolete", "hint": "gereksiz, işlevsiz" }
+      ],
+      "order": [
+        { "a": "Someone has to own the decision." },
+        { "a": "Trust is something patients extend to a person." }
+      ],
+      "translate": [
+        { "tr": "Nazikçe belirtmek isterim ki bu yanlış soru.", "en": "I'd gently suggest it's the wrong question.", "keys": ["gently suggest", "wrong question"] },
+        { "tr": "Sorumluluk bir algoritmaya devredilemez.", "en": "Responsibility can't be outsourced to an algorithm.", "keys": ["responsibility", "outsourced", "algorithm"] },
+        { "tr": "Yapay zekânın doktorların yerini alması pek olası değil.", "en": "AI is unlikely to replace doctors.", "keys": ["unlikely to replace"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor on the panel",
+        "personaTr": "Paneldeki şüpheci doktor",
+        "scene": "Panelde keskin zekâlı ve şüpheci bir doktor seni köşeye sıkıştırmaya çalışıyor. Esprili ama ölçülü, ikna edici yanıtlar veriyorsun.",
+        "turns": [
+          { "ai": "Forgive the bluntness, but isn't 'augmenting clinicians' just a euphemism investors find easier to swallow?", "aiTr": "Açık sözlülüğümü bağışlayın ama 'klinisyenleri güçlendirmek', yatırımcıların daha kolay yuttuğu bir örtmece değil mi?", "hint": "I'd gently push back: the real question isn't whether AI replaces clinicians, but how it makes them better at what only they can do.", "keys": ["push back", "replaces clinicians", "only they can do"] },
+          { "ai": "And yet the algorithm never tires, never has an off day, and doesn't ask for a pay rise.", "aiTr": "Yine de algoritma hiç yorulmuyor, kötü günü olmuyor ve zam istemiyor.", "hint": "True, but by the same token it makes mistakes, sometimes confidently, and it's only ever as good as the data it's been fed.", "keys": ["by the same token", "makes mistakes", "data"] },
+          { "ai": "Then who carries the can when it gets a diagnosis wrong?", "aiTr": "Peki bir teşhisi yanlış koyduğunda faturayı kim ödeyecek?", "hint": "A clinician, always; responsibility can't be outsourced to an algorithm, and someone with a name and a licence has to own the decision.", "keys": ["outsourced", "own the decision", "responsibility"] },
+          { "ai": "Convince me your device isn't simply the thin end of the wedge.", "aiTr": "Cihazınızın daha büyük bir değişimin ilk adımı olmadığına beni ikna edin.", "hint": "Far from making audiologists obsolete, it takes over the routine tests so they can devote themselves to the genuinely complex cases.", "keys": ["obsolete", "routine tests", "complex cases"] }
+        ]
+      }
+    }
+  }
+}

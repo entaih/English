@@ -1,0 +1,371 @@
+{
+  "id": "sc-01",
+  "topic": "science",
+  "title": "How We Designed Our Clinical Study",
+  "titleTr": "Klinik Çalışmamızı Nasıl Tasarladık",
+  "levels": {
+    "A1": {
+      "intro": "Klinik çalışmanı çok basit cümlelerle anlatıyorsun: kim, kaç kişi, sonuç ne?",
+      "text": [
+        { "en": "Our device must work like a hearing expert.", "tr": "Cihazımız bir işitme uzmanı gibi çalışmalı." },
+        { "en": "So we do a study in two university hospitals.", "tr": "Bu yüzden iki üniversite hastanesinde bir çalışma yapıyoruz." },
+        { "en": "There are 200 people in the study.", "tr": "Çalışmada 200 kişi var." },
+        { "en": "Each person does a test with our device.", "tr": "Her kişi cihazımızla bir test yapıyor." },
+        { "en": "On the same day, an audiologist tests them too.", "tr": "Aynı gün bir odyolog da onları test ediyor." },
+        { "en": "The audiologist does not see our result.", "tr": "Odyolog bizim sonucumuzu görmüyor." },
+        { "en": "The results are the same in 94 percent of cases.", "tr": "Sonuçlar vakaların yüzde 94'ünde aynı." },
+        { "en": "The study is now in a medical journal.", "tr": "Çalışma artık bir tıp dergisinde." }
+      ],
+      "vocab": [
+        { "en": "study", "tr": "çalışma, araştırma", "ex": "There are 200 people in the study." },
+        { "en": "hospital", "tr": "hastane", "ex": "We work with two university hospitals." },
+        { "en": "audiologist", "tr": "odyolog (işitme uzmanı)", "ex": "An audiologist tests the same person." },
+        { "en": "result", "tr": "sonuç", "ex": "The audiologist does not see our result." },
+        { "en": "the same", "tr": "aynı", "ex": "The results are the same." },
+        { "en": "journal", "tr": "dergi (bilimsel)", "ex": "The study is in a medical journal." }
+      ],
+      "grammar": {
+        "title": "Present simple: does / does not",
+        "tr": "Geniş zamanda he/she/it ile fiile -s eklenir (does, tests, sees). Olumsuz cümlede 'does not' + fiilin yalın hali gelir.",
+        "examples": ["Each person does a test with our device.", "The audiologist does not see our result.", "Our device works like an expert."]
+      },
+      "questions": [
+        { "q": "How many hospitals are in the study?", "options": ["One", "Two", "Three"], "a": 1 },
+        { "q": "How many people are in the study?", "options": ["200", "20", "2,000"], "a": 0 },
+        { "q": "Where is the study now?", "options": ["On TV", "In a newspaper", "In a medical journal"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "There are 200 people in the ___.", "a": "study", "hint": "çalışma" },
+        { "s": "The audiologist does not see our ___.", "a": "result", "hint": "sonuç" },
+        { "s": "The results are the ___ in 94 percent of cases.", "a": "same", "hint": "aynı" }
+      ],
+      "order": [
+        { "a": "The audiologist does not see our result." },
+        { "a": "The study is now in a medical journal." }
+      ],
+      "translate": [
+        { "tr": "Çalışmada 200 kişi var.", "en": "There are 200 people in the study.", "keys": ["200 people", "study"] },
+        { "tr": "Sonuçlar yüzde 94 oranında aynı.", "en": "The results are the same in 94 percent of cases.", "keys": ["results", "94 percent"] }
+      ],
+      "roleplay": {
+        "persona": "Researcher",
+        "personaTr": "Araştırmacı",
+        "scene": "Bir araştırmacı çalışmanızı soruyor. Kısa cevaplar ver.",
+        "turns": [
+          { "ai": "Hello! Tell me about your study. How many people are in it?", "aiTr": "Merhaba! Bana çalışmanızı anlatın. Kaç kişi var?", "hint": "There are 200 people in our study.", "keys": ["200", "people"] },
+          { "ai": "What do they do?", "aiTr": "Ne yapıyorlar?", "hint": "Each person does a test with our device and a test with an audiologist.", "keys": ["test", "device", "audiologist"] },
+          { "ai": "And what are the results?", "aiTr": "Peki sonuçlar ne?", "hint": "The results are the same in 94 percent of cases.", "keys": ["94 percent", "same"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Klinik çalışmanı geçmiş zamanla anlatıyorsun: ne yaptınız, kaç kişi katıldı, sonuç ne oldu?",
+      "text": [
+        { "en": "We needed to show that our device works as well as an audiologist.", "tr": "Cihazımızın bir odyolog kadar iyi çalıştığını göstermemiz gerekiyordu." },
+        { "en": "So we did a clinical study with two university hospitals.", "tr": "Bu yüzden iki üniversite hastanesiyle bir klinik çalışma yaptık." },
+        { "en": "Our goal was the same result in at least 90 percent of patients.", "tr": "Hedefimiz hastaların en az yüzde 90'ında aynı sonuçtu." },
+        { "en": "We found 200 people between 18 and 75 years old.", "tr": "18 ile 75 yaş arasında 200 kişi bulduk." },
+        { "en": "Each person did one test with our device and one with an audiologist.", "tr": "Her kişi bir testi cihazımızla, bir testi de bir odyologla yaptı." },
+        { "en": "The audiologist didn't see our results, so the comparison was blind.", "tr": "Odyolog bizim sonuçlarımızı görmedi, yani karşılaştırma kördü." },
+        { "en": "The results were the same in 94 percent of cases.", "tr": "Sonuçlar vakaların yüzde 94'ünde aynıydı." },
+        { "en": "In the other 6 percent, the difference was very small.", "tr": "Diğer yüzde 6'da fark çok küçüktü." },
+        { "en": "We published the study in a medical journal last spring.", "tr": "Çalışmayı geçen bahar bir tıp dergisinde yayımladık." }
+      ],
+      "vocab": [
+        { "en": "clinical study", "tr": "klinik çalışma", "ex": "We did a clinical study with two hospitals." },
+        { "en": "at least", "tr": "en az", "ex": "We wanted the same result in at least 90 percent of patients." },
+        { "en": "patient", "tr": "hasta", "ex": "The study had patients between 18 and 75." },
+        { "en": "blind", "tr": "kör (sonucu bilmeden)", "ex": "The audiologist didn't see our results, so the comparison was blind." },
+        { "en": "difference", "tr": "fark", "ex": "The difference was very small." },
+        { "en": "publish", "tr": "yayımlamak", "ex": "We published the study last spring." },
+        { "en": "medical journal", "tr": "tıp dergisi", "ex": "The study is in a medical journal." }
+      ],
+      "grammar": {
+        "title": "Past simple: regular and irregular verbs",
+        "tr": "Geçmişte bitmiş olaylar için past simple kullanılır. Düzenli fiiller -ed alır (needed, published); düzensiz fiillerin özel hali vardır (do → did, find → found, be → was/were).",
+        "examples": ["We needed to show that our device works.", "We found 200 people.", "The results were the same in 94 percent of cases."]
+      },
+      "questions": [
+        { "q": "Who did they work with?", "options": ["Two university hospitals", "One private clinic", "A hearing aid shop"], "a": 0 },
+        { "q": "How old were the participants?", "options": ["Under 18", "Between 18 and 75", "Over 75"], "a": 1 },
+        { "q": "Why was the comparison blind?", "options": ["The patients closed their eyes", "The tests were in the dark", "The audiologist didn't see the device results"], "a": 2 },
+        { "q": "What happened last spring?", "options": ["They started the study", "They published the study", "They found 200 people"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We did a clinical study with two university ___.", "a": "hospitals", "hint": "hastaneler" },
+        { "s": "Our goal was the same result in at ___ 90 percent of patients.", "a": "least", "hint": "en az" },
+        { "s": "We ___ the study in a medical journal last spring.", "a": "published", "hint": "yayımladık" }
+      ],
+      "order": [
+        { "a": "The results were the same in 94 percent of cases." },
+        { "a": "Each person did one test with our device." }
+      ],
+      "translate": [
+        { "tr": "Fark çok küçüktü.", "en": "The difference was very small.", "keys": ["difference", "small"] },
+        { "tr": "Çalışmayı bir tıp dergisinde yayımladık.", "en": "We published the study in a medical journal.", "keys": ["published", "medical journal"] }
+      ],
+      "roleplay": {
+        "persona": "University researcher",
+        "personaTr": "Üniversite araştırmacısı",
+        "scene": "Bir konferansta bir araştırmacı klinik çalışmanızı soruyor.",
+        "turns": [
+          { "ai": "Hi! I read about your clinical study. Why did you do it?", "aiTr": "Merhaba! Klinik çalışmanızı okudum. Neden yaptınız?", "hint": "We needed to show that our device works as well as an audiologist.", "keys": ["needed to show", "works as well", "audiologist"] },
+          { "ai": "How many people took part?", "aiTr": "Kaç kişi katıldı?", "hint": "200 people between 18 and 75 years old took part.", "keys": ["200", "18 and 75", "took part"] },
+          { "ai": "And what were the results?", "aiTr": "Peki sonuçlar neydi?", "hint": "The results were the same in 94 percent of cases.", "keys": ["94 percent", "the same"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Hipotez, yöntem, katılımcılar ve sonuç: bir çalışmayı basit ama doğru terimlerle anlatmak.",
+      "text": [
+        { "en": "To get certification, we needed to prove that our device gives the same results as a trained audiologist.", "tr": "Sertifika almak için cihazımızın eğitimli bir odyologla aynı sonuçları verdiğini kanıtlamamız gerekiyordu." },
+        { "en": "That's why we designed a clinical study with two university hospitals.", "tr": "Bu yüzden iki üniversite hastanesiyle bir klinik çalışma tasarladık." },
+        { "en": "Our hypothesis was simple: the device and the audiologist would agree in at least 90 percent of patients.", "tr": "Hipotezimiz basitti: cihaz ve odyolog hastaların en az yüzde 90'ında aynı sonuca varacaktı." },
+        { "en": "We recruited 200 participants between the ages of 18 and 75.", "tr": "18 ile 75 yaş arasında 200 katılımcı topladık." },
+        { "en": "Each participant had two tests on the same day: one with our device and one with an audiologist.", "tr": "Her katılımcı aynı gün iki test yaptı: biri cihazımızla, biri bir odyologla." },
+        { "en": "The audiologist never saw our device's results, so it was a blind comparison.", "tr": "Odyolog cihazımızın sonuçlarını hiç görmedi, yani bu bir kör karşılaştırmaydı." },
+        { "en": "In the end, the results matched in 94 percent of cases.", "tr": "Sonunda sonuçlar vakaların yüzde 94'ünde eşleşti." },
+        { "en": "In the other 6 percent, the difference was small and didn't change the diagnosis.", "tr": "Kalan yüzde 6'da fark küçüktü ve teşhisi değiştirmedi." },
+        { "en": "We published the results in a medical journal last spring.", "tr": "Sonuçları geçen bahar bir tıp dergisinde yayımladık." },
+        { "en": "The study has become one of the most important parts of our certification file.", "tr": "Çalışma, sertifikasyon dosyamızın en önemli parçalarından biri haline geldi." }
+      ],
+      "vocab": [
+        { "en": "certification", "tr": "sertifikasyon, belgelendirme", "ex": "To get certification, we needed a clinical study.", "def": "official approval that a product meets the rules" },
+        { "en": "clinical study", "tr": "klinik çalışma", "ex": "We designed a clinical study with two hospitals.", "def": "a scientific test of a medical product with real patients" },
+        { "en": "hypothesis", "tr": "hipotez", "ex": "Our hypothesis was simple.", "def": "an idea that you test in a study to see if it is true" },
+        { "en": "recruit participants", "tr": "katılımcı toplamak", "ex": "We recruited 200 participants.", "def": "to find people who agree to take part in a study" },
+        { "en": "blind comparison", "tr": "kör karşılaştırma", "ex": "The audiologist didn't see our results, so it was a blind comparison.", "def": "a comparison where the tester does not know the other result" },
+        { "en": "match", "tr": "eşleşmek, uyuşmak", "ex": "The results matched in 94 percent of cases.", "def": "to be the same as something else" },
+        { "en": "diagnosis", "tr": "teşhis", "ex": "The difference didn't change the diagnosis.", "def": "what a doctor decides is the patient's medical problem" },
+        { "en": "publish", "tr": "yayımlamak", "ex": "We published the results in a medical journal.", "def": "to make something available for people to read" }
+      ],
+      "grammar": {
+        "title": "Present perfect vs past simple",
+        "tr": "Geçmişte belirli bir zamanda bitmiş olaylar için past simple kullanılır (last spring). Zamanı belirtilmeyen ve sonucu bugün de önemli olan olaylar için present perfect kullanılır (has become).",
+        "examples": ["We published the results last spring.", "The study has become an important part of our file.", "We recruited 200 participants."]
+      },
+      "questions": [
+        { "q": "Why did they need the study?", "options": ["For a marketing campaign", "To prove the device gives the same results as an audiologist", "To find new investors"], "a": 1 },
+        { "q": "What was the hypothesis?", "options": ["The results would match in at least 90 percent of patients", "The device would be faster", "The device would be cheaper"], "a": 0 },
+        { "q": "What does \"blind comparison\" mean here?", "options": ["The patients could not see", "The test was done in the dark", "The audiologist did not see the device's results"], "a": 2 },
+        { "q": "What happened in the other 6 percent of cases?", "options": ["The device failed completely", "There was a small difference that didn't change the diagnosis", "The patients left the study"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Our ___ was simple.", "a": "hypothesis", "hint": "hipotez" },
+        { "s": "We ___ 200 participants between the ages of 18 and 75.", "a": "recruited", "hint": "topladık" },
+        { "s": "The difference didn't change the ___.", "a": "diagnosis", "hint": "teşhis" }
+      ],
+      "order": [
+        { "a": "The results matched in 94 percent of cases." },
+        { "a": "We published the results in a medical journal last spring." }
+      ],
+      "translate": [
+        { "tr": "Her katılımcı aynı gün iki test yaptı.", "en": "Each participant had two tests on the same day.", "keys": ["participant", "two tests", "same day"] },
+        { "tr": "Fark küçüktü ve teşhisi değiştirmedi.", "en": "The difference was small and didn't change the diagnosis.", "keys": ["difference", "diagnosis"] }
+      ],
+      "roleplay": {
+        "persona": "University researcher",
+        "personaTr": "Üniversite araştırmacısı",
+        "scene": "Bir araştırmacı çalışmanızın hipotezini, yöntemini ve sonuçlarını soruyor.",
+        "turns": [
+          { "ai": "Tell me about your clinical study. What was the hypothesis?", "aiTr": "Klinik çalışmanızı anlatın. Hipotez neydi?", "hint": "Our hypothesis was that the device and the audiologist would agree in at least 90 percent of patients.", "keys": ["hypothesis", "90 percent", "agree"] },
+          { "ai": "How many participants did you have, and what was the method?", "aiTr": "Kaç katılımcınız vardı ve yöntem neydi?", "hint": "We recruited 200 participants. Each one had two tests on the same day, and it was a blind comparison.", "keys": ["recruited", "200", "blind comparison", "same day"] },
+          { "ai": "And what were the results?", "aiTr": "Peki sonuçlar neydi?", "hint": "The results matched in 94 percent of cases, and we published them in a medical journal last spring.", "keys": ["matched", "94 percent", "published"] },
+          { "ai": "What about the other 6 percent?", "aiTr": "Peki ya kalan yüzde 6?", "hint": "The difference was small, and it didn't change the diagnosis.", "keys": ["small", "diagnosis"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Klinik çalışmanın tasarımını edilgen yapılarla, bilimsel ama anlaşılır bir dille anlatıyorsun.",
+      "text": [
+        { "en": "Before we could apply for certification, we had to show that our device performs as reliably as a trained audiologist.", "tr": "Sertifikaya başvurabilmek için cihazımızın eğitimli bir odyolog kadar güvenilir çalıştığını göstermemiz gerekiyordu." },
+        { "en": "To do this, a clinical study was designed together with two university hospitals.", "tr": "Bunun için iki üniversite hastanesiyle birlikte bir klinik çalışma tasarlandı." },
+        { "en": "Our hypothesis was that the two methods would agree in at least 90 percent of cases.", "tr": "Hipotezimiz, iki yöntemin vakaların en az yüzde 90'ında aynı sonucu vereceğiydi." },
+        { "en": "A total of 200 participants, aged between 18 and 75, were recruited for the study.", "tr": "Çalışmaya 18 ile 75 yaş arasında toplam 200 katılımcı dahil edildi." },
+        { "en": "Each of them was tested twice on the same day, once by our device and once by an audiologist.", "tr": "Her biri aynı gün iki kez test edildi: bir kez cihazımızla, bir kez de bir odyolog tarafından." },
+        { "en": "Crucially, the audiologist was not shown the device's results, which made it a blind comparison.", "tr": "En önemlisi, odyoloğa cihazın sonuçları gösterilmedi; bu da karşılaştırmayı kör hale getirdi." },
+        { "en": "This mattered because it meant the expert's judgement couldn't be influenced by our data.", "tr": "Bu önemliydi, çünkü uzmanın değerlendirmesinin bizim verilerimizden etkilenemeyeceği anlamına geliyordu." },
+        { "en": "As it turned out, the results matched in 94 percent of cases, which comfortably exceeded our target.", "tr": "Sonuçta sonuçlar vakaların yüzde 94'ünde eşleşti ve bu, hedefimizi rahatça aştı." },
+        { "en": "In the remaining 6 percent, the differences were minor and none of them changed the diagnosis.", "tr": "Kalan yüzde 6'daki farklar küçüktü ve hiçbiri teşhisi değiştirmedi." },
+        { "en": "The findings were published in a medical journal last spring.", "tr": "Bulgular geçen bahar bir tıp dergisinde yayımlandı." }
+      ],
+      "vocab": [
+        { "en": "perform reliably", "tr": "güvenilir şekilde çalışmak", "ex": "The device performs as reliably as an expert.", "def": "to work well and give the same good results every time" },
+        { "en": "design a study", "tr": "bir çalışma tasarlamak", "ex": "The study was designed with two university hospitals.", "def": "to plan how a study will be done" },
+        { "en": "recruit", "tr": "(katılımcı) toplamak, dahil etmek", "ex": "200 participants were recruited for the study.", "def": "to find people to take part in something" },
+        { "en": "blind comparison", "tr": "kör karşılaştırma", "ex": "Because the audiologist didn't see our data, it was a blind comparison.", "def": "a comparison where one side does not know the other side's result" },
+        { "en": "be influenced by", "tr": "...den etkilenmek", "ex": "The expert's judgement couldn't be influenced by our data.", "def": "to be changed or affected by something" },
+        { "en": "as it turned out", "tr": "sonuçta, meğerse", "ex": "As it turned out, the results matched in 94 percent of cases.", "def": "used to say what finally happened" },
+        { "en": "exceed a target", "tr": "hedefi aşmak", "ex": "The results comfortably exceeded our target.", "def": "to do better than the goal you set" },
+        { "en": "the remaining", "tr": "geri kalan", "ex": "In the remaining 6 percent, the differences were minor.", "def": "the part that is left" },
+        { "en": "findings", "tr": "bulgular", "ex": "The findings were published last spring.", "def": "the results or information discovered by a study" }
+      ],
+      "grammar": {
+        "title": "Passive voice: was designed, were recruited",
+        "tr": "Bilimsel metinlerde işi kimin yaptığından çok yapılan iş önemlidir; bu yüzden edilgen yapı kullanılır: be + fiilin üçüncü hali (was designed, were published).",
+        "examples": ["A clinical study was designed with two hospitals.", "200 participants were recruited.", "The audiologist was not shown the device's results."]
+      },
+      "questions": [
+        { "q": "What did the company have to show before applying for certification?", "options": ["That the device is cheaper than an audiologist", "That the device performs as reliably as an audiologist", "That patients prefer the device"], "a": 1 },
+        { "q": "How many participants were recruited?", "options": ["100", "150", "200", "250"], "a": 2 },
+        { "q": "Why was it important that the audiologist didn't see the device's results?", "options": ["So that the expert's judgement couldn't be influenced", "To save time", "Because the results were secret"], "a": 0 },
+        { "q": "What can we infer about the 94 percent result?", "options": ["It was below the hypothesis", "It was higher than the team needed", "It was exactly what they expected"], "a": 1 },
+        { "q": "What was true of the remaining 6 percent?", "options": ["The device gave no result", "Patients had to be retested", "The differences were minor and didn't change the diagnosis"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "A total of 200 participants were ___ for the study.", "a": "recruited", "hint": "dahil edildi" },
+        { "s": "The results comfortably ___ our target.", "a": "exceeded", "hint": "aştı" },
+        { "s": "The ___ were published in a medical journal last spring.", "a": "findings", "hint": "bulgular" }
+      ],
+      "order": [
+        { "a": "Each of them was tested twice on the same day." },
+        { "a": "The findings were published in a medical journal." }
+      ],
+      "translate": [
+        { "tr": "Çalışma iki üniversite hastanesiyle birlikte tasarlandı.", "en": "The study was designed together with two university hospitals.", "keys": ["was designed", "university hospitals"] },
+        { "tr": "Odyoloğa cihazın sonuçları gösterilmedi.", "en": "The audiologist was not shown the device's results.", "keys": ["was not shown", "results"] }
+      ],
+      "roleplay": {
+        "persona": "University researcher",
+        "personaTr": "Üniversite araştırmacısı",
+        "scene": "Makalenizi okuyan bir araştırmacı çalışmanın tasarımını ve güvenilirliğini sorguluyor.",
+        "turns": [
+          { "ai": "I've read your paper with interest. Could you summarise how the study was designed?", "aiTr": "Makalenizi ilgiyle okudum. Çalışmanın nasıl tasarlandığını özetleyebilir misiniz?", "hint": "Sure. It was designed with two university hospitals, and 200 participants aged 18 to 75 were recruited.", "keys": ["designed", "two university hospitals", "200 participants"] },
+          { "ai": "How did you make sure the audiologists weren't biased?", "aiTr": "Odyologların taraflı olmadığından nasıl emin oldunuz?", "hint": "It was a blind comparison, so the audiologist was never shown the device's results.", "keys": ["blind comparison", "never shown", "results"] },
+          { "ai": "And how did the results compare with your hypothesis?", "aiTr": "Peki sonuçlar hipotezinizle nasıl karşılaştırılıyor?", "hint": "We expected at least 90 percent agreement, and the results matched in 94 percent of cases.", "keys": ["90 percent", "94 percent", "matched"] },
+          { "ai": "What happened in the cases where they didn't match?", "aiTr": "Eşleşmeyen vakalarda ne oldu?", "hint": "The differences were minor, and none of them changed the diagnosis.", "keys": ["minor", "diagnosis"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Çalışmanın tasarımını bilimsel bir üslupla, vurgulu yapılar ve kesin terimlerle sunuyorsun.",
+      "text": [
+        { "en": "Certification hinged on a single question: could our device deliver the same results as a trained audiologist?", "tr": "Sertifikasyon tek bir soruya bağlıydı: cihazımız eğitimli bir odyologla aynı sonuçları verebilir miydi?" },
+        { "en": "To answer it rigorously, we partnered with two university hospitals to design a clinical study.", "tr": "Bu soruyu titizlikle yanıtlamak için iki üniversite hastanesiyle ortaklık kurup bir klinik çalışma tasarladık." },
+        { "en": "Our hypothesis was that the autonomous test and the expert assessment would agree in at least 90 percent of cases.", "tr": "Hipotezimiz, otonom test ile uzman değerlendirmesinin vakaların en az yüzde 90'ında uyuşacağıydı." },
+        { "en": "We recruited 200 participants aged 18 to 75, deliberately spanning a wide age range.", "tr": "Bilinçli olarak geniş bir yaş aralığını kapsayacak şekilde 18-75 yaş arası 200 katılımcı topladık." },
+        { "en": "Each participant underwent two tests on the same day, one administered by our device and the other by an audiologist.", "tr": "Her katılımcı aynı gün iki testten geçti: birini cihazımız, diğerini bir odyolog uyguladı." },
+        { "en": "Crucially, the audiologist was blinded to the device's output, which ruled out any risk of confirmation bias.", "tr": "En önemlisi, odyolog cihazın çıktısını bilmiyordu; bu da her türlü doğrulama yanlılığı riskini ortadan kaldırdı." },
+        { "en": "Not only did the results match in 94 percent of cases, but they also comfortably exceeded our pre-defined threshold.", "tr": "Sonuçlar vakaların yüzde 94'ünde eşleşmekle kalmadı, önceden belirlediğimiz eşiği de rahatça aştı." },
+        { "en": "Where discrepancies did occur, they were marginal and in no instance altered the diagnosis.", "tr": "Tutarsızlık görülen yerlerde farklar çok küçüktü ve hiçbir vakada teşhisi değiştirmedi." },
+        { "en": "What gave the findings real weight, though, was their publication in a medical journal last spring.", "tr": "Yine de bulgulara asıl ağırlık kazandıran, geçen bahar bir tıp dergisinde yayımlanmalarıydı." },
+        { "en": "Having passed independent scrutiny, the study now forms the backbone of our certification file.", "tr": "Bağımsız bir incelemeden geçen çalışma, artık sertifikasyon dosyamızın bel kemiğini oluşturuyor." }
+      ],
+      "vocab": [
+        { "en": "hinge on", "tr": "...e bağlı olmak", "ex": "Certification hinged on a single question.", "def": "to depend completely on something" },
+        { "en": "rigorously", "tr": "titizlikle", "ex": "We wanted to answer the question rigorously.", "def": "carefully and thoroughly, following strict rules" },
+        { "en": "undergo a test", "tr": "bir testten geçmek", "ex": "Each participant underwent two tests on the same day.", "def": "to have a medical test or procedure done to you" },
+        { "en": "administer a test", "tr": "bir test uygulamak", "ex": "One test was administered by our device.", "def": "to give or carry out a test" },
+        { "en": "be blinded to", "tr": "...den habersiz tutulmak", "ex": "The audiologist was blinded to the device's output.", "def": "in research, to be kept from knowing information that could affect your judgement" },
+        { "en": "rule out", "tr": "olasılığını ortadan kaldırmak", "ex": "Blinding ruled out the risk of bias.", "def": "to remove the possibility of something" },
+        { "en": "confirmation bias", "tr": "doğrulama yanlılığı", "ex": "Blinding protects against confirmation bias.", "def": "the tendency to see what you already expect to see" },
+        { "en": "pre-defined threshold", "tr": "önceden belirlenmiş eşik", "ex": "The results exceeded our pre-defined threshold of 90 percent.", "def": "a minimum level of success decided before a study starts" },
+        { "en": "discrepancy", "tr": "tutarsızlık, uyuşmazlık", "ex": "The discrepancies were marginal.", "def": "a difference between two things that should be the same" },
+        { "en": "form the backbone of", "tr": "...in bel kemiğini oluşturmak", "ex": "The study forms the backbone of our certification file.", "def": "to be the most important part that supports something" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences: What... was...",
+        "tr": "Cleft (bölünmüş) cümleler bir bilgiyi öne çıkarmak için kullanılır: 'What ... was ...' ya da 'It was ... that ...'. Bilimsel sunumlarda en önemli noktayı zarifçe vurgulamanı sağlar.",
+        "examples": ["What gave the findings real weight was their publication in a medical journal.", "What we needed to prove was that the device matches an audiologist.", "It was the blind design that made the comparison credible."]
+      },
+      "questions": [
+        { "q": "What did certification depend on?", "options": ["Whether the device could match a trained audiologist", "Whether the device was cheaper", "Whether hospitals would buy it"], "a": 0 },
+        { "q": "Why was the audiologist blinded to the device's output?", "options": ["To speed up the testing", "To protect patient privacy", "To rule out confirmation bias"], "a": 2 },
+        { "q": "What does \"comfortably exceeded our pre-defined threshold\" imply?", "options": ["The team lowered its target", "The result was well above the 90 percent target", "The result was barely acceptable"], "a": 1 },
+        { "q": "What does the writer suggest gave the findings credibility?", "options": ["The size of the team", "Positive customer reviews", "Support from investors", "Publication in a medical journal"], "a": 3 },
+        { "q": "What is the overall tone of the text?", "options": ["Measured and confident", "Anxious and defensive", "Casual and humorous"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Certification ___ on a single question.", "a": "hinged", "hint": "bağlıydı" },
+        { "s": "The audiologist was ___ to the device's output.", "a": "blinded", "hint": "habersiz tutuldu" },
+        { "s": "The discrepancies were ___ and in no instance altered the diagnosis.", "a": "marginal", "hint": "çok küçük" },
+        { "s": "The study now forms the ___ of our certification file.", "a": "backbone", "hint": "bel kemiği" }
+      ],
+      "order": [
+        { "a": "Each participant underwent two tests on the same day." },
+        { "a": "The study now forms the backbone of our certification file." }
+      ],
+      "translate": [
+        { "tr": "Odyolog cihazın çıktısından habersiz tutuldu.", "en": "The audiologist was blinded to the device's output.", "keys": ["blinded to", "output"] },
+        { "tr": "Farklar hiçbir vakada teşhisi değiştirmedi.", "en": "In no instance did the differences alter the diagnosis.", "keys": ["in no instance", "diagnosis"] },
+        { "tr": "Bulgulara asıl ağırlık kazandıran şey yayımlanmalarıydı.", "en": "What gave the findings real weight was their publication.", "keys": ["real weight", "publication"] }
+      ],
+      "roleplay": {
+        "persona": "Professor of audiology",
+        "personaTr": "Odyoloji profesörü",
+        "scene": "Bir konferansta bir profesör çalışmanızın yöntemini ve sınırlılıklarını sorguluyor.",
+        "turns": [
+          { "ai": "Your paper caught my eye. What exactly were you setting out to demonstrate?", "aiTr": "Makaleniz dikkatimi çekti. Tam olarak neyi göstermeyi amaçlıyordunuz?", "hint": "We set out to show that our autonomous test agrees with a trained audiologist in at least 90 percent of cases.", "keys": ["set out to", "at least 90 percent", "agrees"] },
+          { "ai": "How did you guard against bias in the expert assessments?", "aiTr": "Uzman değerlendirmelerinde yanlılığa karşı nasıl önlem aldınız?", "hint": "The audiologists were blinded to the device's output, which ruled out confirmation bias.", "keys": ["blinded", "ruled out", "bias"] },
+          { "ai": "Ninety-four percent is impressive, but what about the cases that didn't match?", "aiTr": "Yüzde doksan dört etkileyici, ama eşleşmeyen vakalar ne olacak?", "hint": "Where discrepancies occurred, they were marginal and never altered the diagnosis.", "keys": ["discrepancies", "marginal", "diagnosis"] },
+          { "ai": "What would you say are the study's main limitations?", "aiTr": "Sizce çalışmanın başlıca sınırlılıkları neler?", "hint": "One limitation is that our sample only covered adults aged 18 to 75, so we can't yet generalise to children or older patients.", "keys": ["limitation", "18 to 75", "generalise"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Çalışmanı deneyimli bir araştırmacı gibi anlatıyorsun: ölçülü iddialar, ince ironi ve dikkatli yumuşatmalar.",
+      "text": [
+        { "en": "Everything rested on one deceptively simple question: does our device reach the same conclusions as a trained audiologist?", "tr": "Her şey göründüğünden çok daha zor tek bir soruya dayanıyordu: cihazımız eğitimli bir odyologla aynı sonuçlara ulaşıyor mu?" },
+        { "en": "To answer it in a way regulators would accept, we designed a clinical study in partnership with two university hospitals.", "tr": "Bu soruyu düzenleyici kurumların kabul edeceği şekilde yanıtlamak için iki üniversite hastanesiyle ortaklaşa bir klinik çalışma tasarladık." },
+        { "en": "We set ourselves a fairly demanding bar, hypothesising that the two methods would agree in at least 90 percent of cases.", "tr": "Kendimize oldukça yüksek bir çıta koyduk ve iki yöntemin vakaların en az yüzde 90'ında uyuşacağını varsaydık." },
+        { "en": "Two hundred participants aged 18 to 75 were recruited, each of whom was tested twice on the same day, once by the device and once by an audiologist.", "tr": "18-75 yaş arası iki yüz katılımcı alındı; her biri aynı gün iki kez, bir kez cihazla, bir kez de bir odyolog tarafından test edildi." },
+        { "en": "The audiologists were kept blind to the device's output, so whatever bias they might have brought into the room could not have flattered our results.", "tr": "Odyologlar cihazın çıktısından habersiz tutuldu; böylece odaya getirmiş olabilecekleri herhangi bir yanlılık sonuçlarımızı olduğundan iyi gösteremezdi." },
+        { "en": "In the event, agreement reached 94 percent, a figure that left us rather more relieved than we cared to admit at the time.", "tr": "Sonuçta uyum yüzde 94'e ulaştı; bu rakam bizi o zamanlar itiraf etmek istediğimizden çok daha fazla rahatlattı." },
+        { "en": "The remaining 6 percent showed only marginal discrepancies, none of which would have altered the diagnosis.", "tr": "Kalan yüzde 6'da yalnızca çok küçük farklar vardı ve hiçbiri teşhisi değiştirecek nitelikte değildi." },
+        { "en": "That said, we have been careful not to overstate the case, since a sample of adults aged 18 to 75 says little about children or the very elderly.", "tr": "Bununla birlikte durumu abartmamaya özen gösterdik, çünkü 18-75 yaş arası yetişkinlerden oluşan bir örneklem çocuklar ya da çok yaşlılar hakkında pek bir şey söylemez." },
+        { "en": "Publication in a medical journal last spring lent the findings a credibility that no amount of marketing could have bought.", "tr": "Geçen bahar bir tıp dergisinde yayımlanması, bulgulara hiçbir pazarlama bütçesinin satın alamayacağı bir güvenilirlik kazandırdı." },
+        { "en": "The study has since become the cornerstone of our certification file and, arguably, the most persuasive page in our pitch deck.", "tr": "Çalışma o zamandan beri sertifikasyon dosyamızın temel taşı ve belki de sunum dosyamızın en ikna edici sayfası haline geldi." }
+      ],
+      "vocab": [
+        { "en": "deceptively simple", "tr": "göründüğünden zor, aldatıcı derecede basit", "ex": "It was a deceptively simple question.", "def": "appearing easy but actually difficult" },
+        { "en": "set a demanding bar", "tr": "yüksek bir çıta koymak", "ex": "We set ourselves a fairly demanding bar.", "def": "to choose a high standard to reach" },
+        { "en": "keep someone blind to", "tr": "birini ...den habersiz tutmak", "ex": "The audiologists were kept blind to the device's output.", "def": "to deliberately not let someone know certain information" },
+        { "en": "flatter the results", "tr": "sonuçları olduğundan iyi göstermek", "ex": "Bias could easily flatter the results.", "def": "to make results look better than they really are" },
+        { "en": "in the event", "tr": "sonuçta, iş olduğunda", "ex": "In the event, agreement reached 94 percent.", "def": "as things actually happened" },
+        { "en": "more than we cared to admit", "tr": "itiraf etmek istediğimizden daha fazla", "ex": "We were more nervous than we cared to admit.", "def": "to a greater degree than we wanted others to know" },
+        { "en": "overstate the case", "tr": "durumu abartmak", "ex": "We have been careful not to overstate the case.", "def": "to claim more than the evidence really shows" },
+        { "en": "lend credibility to", "tr": "...e güvenilirlik kazandırmak", "ex": "Publication lent the findings real credibility.", "def": "to make something more believable" },
+        { "en": "cornerstone", "tr": "temel taşı", "ex": "The study is the cornerstone of our certification file.", "def": "the most important part on which everything else depends" },
+        { "en": "arguably", "tr": "tartışmaya açık olsa da, belki de", "ex": "It is arguably the most persuasive page in our deck.", "def": "used to say something can reasonably be claimed, though others may disagree" }
+      ],
+      "grammar": {
+        "title": "Hedging and understatement in scientific writing",
+        "tr": "İleri düzey bilimsel dilde iddialar ölçülü tutulur: 'fairly', 'rather', 'arguably', 'says little about' gibi ifadeler, abartmadan güven verir. Yumuşatma, zayıflık değil, dürüstlük işaretidir.",
+        "examples": ["We set ourselves a fairly demanding bar.", "It left us rather more relieved than we cared to admit.", "It is, arguably, the most persuasive page in our deck."]
+      },
+      "questions": [
+        { "q": "Why does the writer call the central question \"deceptively simple\"?", "options": ["It was easy to answer", "It sounded simple but was hard to prove", "Nobody understood it"], "a": 1 },
+        { "q": "What was the purpose of keeping the audiologists blind?", "options": ["To stop bias from making the results look better", "To reduce costs", "To shorten the tests"], "a": 0 },
+        { "q": "What does \"rather more relieved than we cared to admit\" reveal?", "options": ["The team was disappointed with 94 percent", "The team had expected 100 percent", "The team had privately worried about the outcome"], "a": 2 },
+        { "q": "Why is the writer careful not to overstate the case?", "options": ["The journal asked them to", "The results were below target", "Investors were sceptical", "The sample covered only adults aged 18 to 75"], "a": 3 },
+        { "q": "What is the tone of the final sentence?", "options": ["Boastful and exaggerated", "Confident but carefully hedged", "Bitter and ironic"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Everything rested on one ___ simple question.", "a": "deceptively", "hint": "aldatıcı derecede" },
+        { "s": "We have been careful not to ___ the case.", "a": "overstate", "hint": "abartmak" },
+        { "s": "Publication ___ the findings a credibility that no marketing could have bought.", "a": "lent", "hint": "kazandırdı" },
+        { "s": "The study has become the ___ of our certification file.", "a": "cornerstone", "hint": "temel taşı" }
+      ],
+      "order": [
+        { "a": "The study has become the cornerstone of our certification file." },
+        { "a": "We set ourselves a fairly demanding bar." }
+      ],
+      "translate": [
+        { "tr": "Durumu abartmamaya özen gösterdik.", "en": "We have been careful not to overstate the case.", "keys": ["careful", "overstate the case"] },
+        { "tr": "Odyologlar cihazın çıktısından habersiz tutuldu.", "en": "The audiologists were kept blind to the device's output.", "keys": ["kept blind", "output"] },
+        { "tr": "Belki de sunum dosyamızın en ikna edici sayfası bu.", "en": "It is arguably the most persuasive page in our pitch deck.", "keys": ["arguably", "most persuasive"] }
+      ],
+      "roleplay": {
+        "persona": "Senior clinical researcher",
+        "personaTr": "Kıdemli klinik araştırmacı",
+        "scene": "Bir panelde deneyimli bir araştırmacı çalışmanızı sert ama nazik sorularla sınıyor.",
+        "turns": [
+          { "ai": "Agreement studies are often accused of flattering the device under test. Why should I trust yours?", "aiTr": "Uyum çalışmaları sık sık test edilen cihazı olduğundan iyi göstermekle suçlanır. Sizinkine neden güveneyim?", "hint": "That's a fair challenge; the audiologists were kept blind to the device's output, so their judgement couldn't have been nudged in our favour.", "keys": ["kept blind", "in our favour", "fair challenge"] },
+          { "ai": "Ninety-four percent sounds almost too good. Was the threshold set after the fact?", "aiTr": "Yüzde doksan dört neredeyse fazla iyi görünüyor. Eşik sonradan mı belirlendi?", "hint": "Not at all; we set the 90 percent bar before recruiting a single participant, and the result cleared it with room to spare.", "keys": ["before recruiting", "90 percent", "room to spare"] },
+          { "ai": "And the discordant six percent: anything clinically worrying there?", "aiTr": "Peki uyuşmayan yüzde altı: klinik açıdan endişe verici bir şey var mı?", "hint": "Reassuringly little; the discrepancies were marginal, and none of them would have altered the diagnosis.", "keys": ["marginal", "altered the diagnosis", "reassuringly"] },
+          { "ai": "Where would you be the first to admit the evidence is thin?", "aiTr": "Kanıtların zayıf olduğunu ilk kabul edeceğiniz nokta neresi?", "hint": "I'd readily concede that a sample of adults aged 18 to 75 tells us little about children or the very elderly.", "keys": ["concede", "18 to 75", "children"] }
+        ]
+      }
+    }
+  }
+}

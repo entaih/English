@@ -1,0 +1,376 @@
+{
+  "id": "te-01",
+  "topic": "tech",
+  "title": "How AI Can Improve Healthcare",
+  "titleTr": "Yapay Zekâ Sağlık Hizmetlerini Nasıl İyileştirebilir",
+  "levels": {
+    "A1": {
+      "intro": "Yapay zekânın sağlıkta ne işe yaradığını çok basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "en": "AI is changing healthcare.", "tr": "Yapay zekâ sağlık hizmetlerini değiştiriyor." },
+        { "en": "AI can look at thousands of images very fast.", "tr": "Yapay zekâ binlerce görüntüye çok hızlı bakabilir." },
+        { "en": "It can help doctors find problems in X-rays.", "tr": "Doktorların röntgenlerdeki sorunları bulmasına yardım edebilir." },
+        { "en": "AI does not get tired.", "tr": "Yapay zekâ yorulmaz." },
+        { "en": "But AI is not perfect, and it can make mistakes.", "tr": "Ama yapay zekâ mükemmel değil ve hata yapabilir." },
+        { "en": "So a doctor always checks the result.", "tr": "Bu yüzden sonucu her zaman bir doktor kontrol eder." },
+        { "en": "In our company, AI makes hearing tests fast and easy.", "tr": "Şirketimizde yapay zekâ işitme testlerini hızlı ve kolay hale getiriyor." },
+        { "en": "A hearing test with our device takes under ten minutes.", "tr": "Cihazımızla bir işitme testi on dakikadan kısa sürüyor." }
+      ],
+      "vocab": [
+        { "en": "healthcare", "tr": "sağlık hizmetleri", "ex": "AI is changing healthcare." },
+        { "en": "image", "tr": "görüntü", "ex": "AI can look at thousands of images." },
+        { "en": "get tired", "tr": "yorulmak", "ex": "AI does not get tired." },
+        { "en": "make a mistake", "tr": "hata yapmak", "ex": "AI can make mistakes." },
+        { "en": "check", "tr": "kontrol etmek", "ex": "A doctor checks the result." },
+        { "en": "result", "tr": "sonuç", "ex": "The result is ready in ten minutes." }
+      ],
+      "grammar": {
+        "title": "Present simple: it + -s",
+        "tr": "He, she, it ile present simple'da fiile -s eklenir: it makes, it takes, a doctor checks. Olumsuzda 'does not' + yalın fiil kullanılır: It does not get tired.",
+        "examples": ["A doctor always checks the result.", "AI makes hearing tests fast.", "AI does not get tired."]
+      },
+      "questions": [
+        { "q": "What can AI look at very fast?", "options": ["Emails", "Thousands of images", "Hospital bills"], "a": 1 },
+        { "q": "Who checks the result?", "options": ["The patient", "A computer", "A doctor"], "a": 2 },
+        { "q": "How long does a hearing test with the device take?", "options": ["Under ten minutes", "One hour", "One day"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "AI does not get ___.", "a": "tired", "hint": "yorgun" },
+        { "s": "But AI is not perfect, and it can make ___.", "a": "mistakes", "hint": "hatalar" },
+        { "s": "So a doctor always ___ the result.", "a": "checks", "hint": "kontrol eder" }
+      ],
+      "order": [
+        { "a": "AI is changing healthcare." },
+        { "a": "It can help doctors find problems in X-rays." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekâ yorulmaz.", "en": "AI does not get tired.", "keys": ["tired"] },
+        { "tr": "Sonucu bir doktor kontrol eder.", "en": "A doctor checks the result.", "keys": ["doctor", "checks", "result"] }
+      ],
+      "roleplay": {
+        "persona": "Doctor",
+        "personaTr": "Doktor",
+        "scene": "Bir doktor yapay zekânın hastanede ne işe yaradığını soruyor.",
+        "turns": [
+          { "ai": "Why do we need AI? We have doctors.", "aiTr": "Neden yapay zekâya ihtiyacımız var? Doktorlarımız var.", "hint": "AI is very fast, and it does not get tired.", "keys": ["fast", "tired"] },
+          { "ai": "Does AI make mistakes?", "aiTr": "Yapay zekâ hata yapar mı?", "hint": "Yes, it can make mistakes, so a doctor always checks the result.", "keys": ["mistakes", "checks", "doctor"] },
+          { "ai": "What does AI do in your device?", "aiTr": "Cihazınızda yapay zekâ ne yapıyor?", "hint": "It makes hearing tests fast and easy.", "keys": ["hearing tests", "fast", "easy"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Yapay zekânın sağlıktaki rolünü, artılarını ve eksilerini basit örneklerle anlatıyorsun.",
+      "text": [
+        { "en": "Artificial intelligence, or AI, is changing healthcare in many ways.", "tr": "Yapay zekâ, yani AI, sağlık hizmetlerini pek çok açıdan değiştiriyor." },
+        { "en": "AI can check thousands of images faster than any human.", "tr": "Yapay zekâ binlerce görüntüyü herhangi bir insandan daha hızlı inceleyebilir." },
+        { "en": "For example, it can help doctors find cancer in an X-ray.", "tr": "Örneğin doktorların röntgende kanseri bulmasına yardım edebilir." },
+        { "en": "AI doesn't get tired, so it can work twenty-four hours a day.", "tr": "Yapay zekâ yorulmaz, bu yüzden günde yirmi dört saat çalışabilir." },
+        { "en": "But AI isn't perfect: it can make mistakes, and it needs good data.", "tr": "Ama yapay zekâ mükemmel değil: Hata yapabilir ve iyi veriye ihtiyacı var." },
+        { "en": "That's why a doctor should always check the result.", "tr": "Bu yüzden sonucu her zaman bir doktor kontrol etmeli." },
+        { "en": "In our company, we use AI to make hearing tests faster and more accurate.", "tr": "Şirketimizde işitme testlerini daha hızlı ve daha doğru yapmak için yapay zekâ kullanıyoruz." },
+        { "en": "The AI chooses the next sound based on the patient's answers.", "tr": "Yapay zekâ, hastanın cevaplarına göre bir sonraki sesi seçiyor." },
+        { "en": "We improve the system every month, so it gets better over time.", "tr": "Sistemi her ay geliştiriyoruz, böylece zamanla daha iyi hale geliyor." }
+      ],
+      "vocab": [
+        { "en": "artificial intelligence", "tr": "yapay zekâ", "ex": "Artificial intelligence is changing healthcare." },
+        { "en": "image", "tr": "görüntü", "ex": "AI can check thousands of images." },
+        { "en": "get tired", "tr": "yorulmak", "ex": "AI doesn't get tired." },
+        { "en": "make a mistake", "tr": "hata yapmak", "ex": "AI can make mistakes." },
+        { "en": "data", "tr": "veri", "ex": "AI needs good data." },
+        { "en": "check the result", "tr": "sonucu kontrol etmek", "ex": "A doctor should always check the result." },
+        { "en": "accurate", "tr": "doğru, isabetli", "ex": "The test is faster and more accurate." },
+        { "en": "over time", "tr": "zamanla", "ex": "The system gets better over time." }
+      ],
+      "grammar": {
+        "title": "Comparatives: faster, more accurate, better",
+        "tr": "Kısa sıfatlara -er ekleriz (fast → faster), uzun sıfatlarda 'more' kullanırız (more accurate). 'Good' düzensizdir: better. Karşılaştırılan şeyden önce 'than' gelir.",
+        "examples": ["AI can check images faster than any human.", "We make hearing tests more accurate.", "The system gets better over time."]
+      },
+      "questions": [
+        { "q": "What can AI do with images?", "options": ["Delete them", "Check them faster than a human", "Print them"], "a": 1 },
+        { "q": "Why is AI not perfect?", "options": ["It is too slow", "It is too expensive", "It can make mistakes and needs good data"], "a": 2 },
+        { "q": "Who should always check the result?", "options": ["A doctor", "The patient", "Nobody"], "a": 0 },
+        { "q": "Why does the system get better over time?", "options": ["It gets older", "Patients pay more", "The company improves it every month"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "AI doesn't get ___, so it can work twenty-four hours a day.", "a": "tired", "hint": "yorgun" },
+        { "s": "It can make mistakes, and it needs good ___.", "a": "data", "hint": "veri" },
+        { "s": "The system gets better over ___.", "a": "time", "hint": "zamanla" }
+      ],
+      "order": [
+        { "a": "A doctor should always check the result." },
+        { "a": "AI can check thousands of images faster than any human." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekâ sağlık hizmetlerini değiştiriyor.", "en": "AI is changing healthcare.", "keys": ["changing", "healthcare"] },
+        { "tr": "Sistemi her ay geliştiriyoruz.", "en": "We improve the system every month.", "keys": ["improve", "every month"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor",
+        "personaTr": "Şüpheci doktor",
+        "scene": "Yaşlı bir doktor yapay zekânın hastanede neden gerekli olduğunu soruyor.",
+        "turns": [
+          { "ai": "Why do we need AI in a hospital? We have doctors.", "aiTr": "Hastanede neden yapay zekâya ihtiyacımız var? Doktorlarımız var.", "hint": "AI can check thousands of images faster than a human, and it doesn't get tired.", "keys": ["faster", "tired", "images", "thousands"] },
+          { "ai": "But AI makes mistakes, doesn't it?", "aiTr": "Ama yapay zekâ hata yapıyor, değil mi?", "hint": "Yes, AI isn't perfect. That's why a doctor should always check the result.", "keys": ["mistake", "perfect", "check", "doctor"] },
+          { "ai": "How do you use AI in your device?", "aiTr": "Cihazınızda yapay zekâyı nasıl kullanıyorsunuz?", "hint": "We use AI to make hearing tests faster and more accurate.", "keys": ["accurate", "faster", "hearing tests"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Yapay zekânın sağlıkta getirdiği fırsatları ve riskleri, özellikle teste erişim konusunu anlatıyorsun.",
+      "text": [
+        { "en": "AI has already changed the way many hospitals work, and I think this is only the beginning.", "tr": "Yapay zekâ pek çok hastanenin çalışma şeklini zaten değiştirdi ve bence bu daha başlangıç." },
+        { "en": "For example, AI can check thousands of X-rays and help doctors find cancer earlier.", "tr": "Örneğin yapay zekâ binlerce röntgeni inceleyip doktorların kanseri daha erken bulmasına yardım edebiliyor." },
+        { "en": "Unlike a human, it doesn't get tired, so it can work twenty-four hours a day.", "tr": "İnsanın aksine yorulmuyor, bu yüzden günde yirmi dört saat çalışabiliyor." },
+        { "en": "However, AI isn't perfect, because it can make mistakes, especially when the data is poor.", "tr": "Ancak yapay zekâ mükemmel değil, çünkü özellikle veri kötü olduğunda hata yapabiliyor." },
+        { "en": "That's why a doctor should always check the final result.", "tr": "Bu yüzden nihai sonucu her zaman bir doktor kontrol etmeli." },
+        { "en": "For me, the biggest opportunity is access, because many people never see a specialist.", "tr": "Bana göre en büyük fırsat erişim, çünkü pek çok insan hiçbir zaman bir uzmana görünmüyor." },
+        { "en": "About one in five people has some hearing loss, but most have never been tested.", "tr": "Yaklaşık her beş kişiden birinde bir miktar işitme kaybı var ama çoğu hiç test edilmedi." },
+        { "en": "In small towns, there aren't enough audiologists, so people often wait months for an appointment.", "tr": "Küçük kasabalarda yeterli odyolog yok, bu yüzden insanlar randevu için çoğu zaman aylarca bekliyor." },
+        { "en": "At our company, we use AI so that a hearing test can be done without an expert in the room.", "tr": "Şirketimizde yapay zekâyı, işitme testi odada bir uzman olmadan yapılabilsin diye kullanıyoruz." },
+        { "en": "If we can bring tests closer to patients, more people will get help in time.", "tr": "Testleri hastalara yaklaştırabilirsek daha çok insan zamanında yardım alacak." }
+      ],
+      "vocab": [
+        { "en": "make a mistake", "tr": "hata yapmak", "ex": "AI can make mistakes when the data is poor.", "def": "to do something wrong without wanting to" },
+        { "en": "poor data", "tr": "kötü / yetersiz veri", "ex": "Poor data leads to poor results.", "def": "information that is incomplete or not correct" },
+        { "en": "final result", "tr": "nihai sonuç", "ex": "A doctor should check the final result.", "def": "the last and official outcome of something" },
+        { "en": "opportunity", "tr": "fırsat", "ex": "The biggest opportunity is access.", "def": "a chance to do something good or useful" },
+        { "en": "access", "tr": "erişim", "ex": "Many people don't have access to a hearing test.", "def": "the chance or right to use or get something" },
+        { "en": "hearing loss", "tr": "işitme kaybı", "ex": "About one in five people has some hearing loss.", "def": "a condition in which a person cannot hear well" },
+        { "en": "wait months for", "tr": "...için aylarca beklemek", "ex": "People often wait months for an appointment.", "def": "to wait a very long time for something" },
+        { "en": "in time", "tr": "zamanında", "ex": "More people will get help in time.", "def": "early enough to make a difference" }
+      ],
+      "grammar": {
+        "title": "Present perfect: already, never",
+        "tr": "Present perfect (have/has + V3), geçmişte başlayıp bugünü etkileyen durumlar için kullanılır. 'already' (zaten) ve 'never' (hiç) ile sık görülür. Pasif hâli: have been + V3 (have never been tested).",
+        "examples": ["AI has already changed the way many hospitals work.", "Most people have never been tested.", "Have you ever had a hearing test?"]
+      },
+      "questions": [
+        { "q": "What can AI help doctors find in X-rays?", "options": ["Broken equipment", "Cancer", "Hearing loss"], "a": 1 },
+        { "q": "When is AI more likely to make mistakes?", "options": ["When the data is poor", "At night", "When it gets tired"], "a": 0 },
+        { "q": "What does the speaker see as the biggest opportunity?", "options": ["Lower prices", "Faster computers", "Better access to tests"], "a": 2 },
+        { "q": "Why do people in small towns wait months?", "options": ["Tests are too expensive", "They don't want a test", "The devices are broken", "There aren't enough audiologists"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "AI has already ___ the way many hospitals work.", "a": "changed", "hint": "değiştirdi" },
+        { "s": "Most people with hearing loss have never been ___.", "a": "tested", "hint": "test edilmek" },
+        { "s": "If we can bring tests closer to patients, more people will get help in ___.", "a": "time", "hint": "zamanında (in …)" }
+      ],
+      "order": [
+        { "a": "A doctor should always check the final result." },
+        { "a": "Many people never see a specialist." }
+      ],
+      "translate": [
+        { "tr": "Çoğu insan hiç test edilmedi.", "en": "Most people have never been tested.", "keys": ["have never been tested"] },
+        { "tr": "Bu yüzden sonucu her zaman bir doktor kontrol etmeli.", "en": "That's why a doctor should always check the result.", "keys": ["that's why", "should always check"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor",
+        "personaTr": "Şüpheci doktor",
+        "scene": "Deneyimli bir doktor yapay zekânın hastalara gerçekten ne kazandırdığını soruyor.",
+        "turns": [
+          { "ai": "Why do we need AI in a hospital? We have good doctors.", "aiTr": "Hastanede neden yapay zekâya ihtiyacımız var? İyi doktorlarımız var.", "hint": "AI can check thousands of X-rays, and it doesn't get tired, so it helps doctors find problems earlier.", "keys": ["thousands", "tired", "earlier"] },
+          { "ai": "But AI makes mistakes, doesn't it?", "aiTr": "Ama yapay zekâ hata yapıyor, değil mi?", "hint": "Yes, it can make mistakes, especially when the data is poor. That's why a doctor should always check the final result.", "keys": ["mistakes", "data", "check"] },
+          { "ai": "So what's the real benefit for patients?", "aiTr": "Peki hastalar için asıl fayda ne?", "hint": "Access. About one in five people has some hearing loss, but most have never been tested.", "keys": ["access", "one in five", "never been tested"] },
+          { "ai": "How does your device help with that?", "aiTr": "Cihazınız bu konuda nasıl yardımcı oluyor?", "hint": "A hearing test can be done without an expert in the room, so more people will get help in time.", "keys": ["without an expert", "in time", "in the room"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir konferansta yapay zekânın sağlıktaki yerini, veri yanlılığı riskini ve erişim fırsatını tartışıyorsun.",
+      "text": [
+        { "en": "It's often said that AI will replace doctors, but I'd argue that's the wrong way to look at it.", "tr": "Yapay zekânın doktorların yerini alacağı sıkça söyleniyor ama bence bu, konuya yanlış bir bakış." },
+        { "en": "AI is best at repetitive tasks, which require speed and consistency rather than judgment.", "tr": "Yapay zekâ en çok, muhakemeden çok hız ve tutarlılık gerektiren tekrarlı işlerde başarılı." },
+        { "en": "In radiology, for instance, algorithms are being used to flag suspicious areas on scans so that radiologists can review them first.", "tr": "Örneğin radyolojide algoritmalar, radyologlar önce onlara baksın diye taramalardaki şüpheli alanları işaretlemek için kullanılıyor." },
+        { "en": "Such systems don't get tired, and they can process thousands of images in the time it takes a person to read a few.", "tr": "Bu tür sistemler yorulmuyor ve bir insanın birkaç görüntüyü okuduğu sürede binlercesini işleyebiliyor." },
+        { "en": "That said, they're only as good as the data they were trained on.", "tr": "Bununla birlikte, ancak eğitildikleri veri kadar iyiler." },
+        { "en": "If the training data didn't include enough patients from a certain group, the results for that group would be less reliable.", "tr": "Eğitim verisi belirli bir gruptan yeterince hasta içermeseydi, o grup için sonuçlar daha az güvenilir olurdu." },
+        { "en": "That's why the final decision should always be made by a clinician.", "tr": "Bu yüzden nihai karar her zaman bir klinisyen tarafından verilmeli." },
+        { "en": "In my view, the biggest impact will be on access rather than on diagnosis itself.", "tr": "Bana göre en büyük etki, teşhisin kendisinden çok erişim üzerinde olacak." },
+        { "en": "Around one in five people has some degree of hearing loss, yet most are never tested because there aren't enough audiologists.", "tr": "Yaklaşık her beş kişiden birinde bir derece işitme kaybı var, ancak yeterli odyolog olmadığı için çoğu hiç test edilmiyor." },
+        { "en": "Our device, which runs the test without an expert in the room, is designed to close exactly that gap.", "tr": "Testi odada bir uzman olmadan yapan cihazımız, tam olarak bu açığı kapatmak için tasarlandı." },
+        { "en": "The AI adjusts the test in real time, and it's improved through software updates that are sent about once a month.", "tr": "Yapay zekâ testi gerçek zamanlı olarak ayarlıyor ve yaklaşık ayda bir gönderilen yazılım güncellemeleriyle geliştiriliyor." }
+      ],
+      "vocab": [
+        { "en": "replace", "tr": "yerini almak", "ex": "AI won't replace doctors.", "def": "to take the place of someone or something" },
+        { "en": "flag", "tr": "işaretlemek, dikkat çekmek", "ex": "The algorithm flags suspicious areas on scans.", "def": "to mark something so that people notice it" },
+        { "en": "process images", "tr": "görüntüleri işlemek", "ex": "These systems can process thousands of images an hour.", "def": "to analyze a large amount of visual information" },
+        { "en": "only as good as", "tr": "ancak … kadar iyi", "ex": "AI is only as good as its data.", "def": "limited by the quality of something" },
+        { "en": "training data", "tr": "eğitim verisi", "ex": "The training data must include many different patients.", "def": "the information an AI system learns from" },
+        { "en": "reliable", "tr": "güvenilir", "ex": "The results would be less reliable.", "def": "able to be trusted to be accurate" },
+        { "en": "clinician", "tr": "klinisyen", "ex": "The final decision should be made by a clinician.", "def": "a doctor or other health professional who treats patients" },
+        { "en": "close the gap", "tr": "açığı kapatmak", "ex": "Our device is designed to close the gap in hearing care.", "def": "to reduce the difference between what is needed and what exists" },
+        { "en": "in real time", "tr": "gerçek zamanlı", "ex": "The AI adjusts the test in real time.", "def": "immediately, while something is happening" }
+      ],
+      "grammar": {
+        "title": "The passive: continuous and modal forms",
+        "tr": "Passive her zamanda kullanılabilir: 'are being used' (şu anda yapılıyor), 'should be made' (yapılmalı), 'is designed' (tasarlandı). Odak işi yapanda değil, işin kendisinde olduğunda tercih edilir.",
+        "examples": ["Algorithms are being used to flag suspicious areas.", "The final decision should always be made by a clinician.", "Our device is designed to close exactly that gap."]
+      },
+      "questions": [
+        { "q": "What is the speaker's opinion about AI replacing doctors?", "options": ["It will happen soon", "It's the wrong way to see AI", "It has already happened"], "a": 1 },
+        { "q": "How is AI used in radiology, according to the text?", "options": ["It flags suspicious areas for radiologists to review", "It makes the final diagnosis", "It replaces radiologists at night"], "a": 0 },
+        { "q": "What would happen if the training data didn't include enough patients from a group?", "options": ["The system would stop working", "Results for that group would be less reliable", "The system would become faster", "Nothing would change"], "a": 1 },
+        { "q": "Why does the speaker mention the shortage of audiologists?", "options": ["To criticize audiologists", "To explain why tests are expensive", "To show the problem their device is designed to solve"], "a": 2 },
+        { "q": "How is the AI in the device improved?", "options": ["By a technician every week", "By the patients themselves", "Through software updates about once a month"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Algorithms are being used to ___ suspicious areas on scans.", "a": "flag", "hint": "işaretlemek" },
+        { "s": "They're only as good as the data they were ___ on.", "a": "trained", "hint": "eğitilmek" },
+        { "s": "The final decision should always be made by a ___.", "a": "clinician", "hint": "klinisyen" }
+      ],
+      "order": [
+        { "a": "AI is best at repetitive tasks." },
+        { "a": "The final decision should be made by a clinician." }
+      ],
+      "translate": [
+        { "tr": "Yapay zekâ sistemleri ancak eğitildikleri veri kadar iyidir.", "en": "AI systems are only as good as the data they were trained on.", "keys": ["only as good as", "trained on"] },
+        { "tr": "Cihazımız tam olarak bu açığı kapatmak için tasarlandı.", "en": "Our device is designed to close exactly that gap.", "keys": ["is designed", "close", "gap"] }
+      ],
+      "roleplay": {
+        "persona": "Skeptical doctor",
+        "personaTr": "Şüpheci doktor",
+        "scene": "Bir konferansta kıdemli ve şüpheci bir doktor yapay zekânın riskleri hakkında seni sorguluyor.",
+        "turns": [
+          { "ai": "Be honest: isn't AI going to replace doctors like me?", "aiTr": "Dürüst olun: Yapay zekâ benim gibi doktorların yerini almayacak mı?", "hint": "I'd argue that's the wrong way to look at it. AI is best at repetitive tasks, and the final decision should always be made by a clinician.", "keys": ["repetitive tasks", "final decision", "clinician"] },
+          { "ai": "What worries me is bias. What if the data is bad?", "aiTr": "Beni endişelendiren önyargı. Ya veri kötüyse?", "hint": "That's a fair point. AI is only as good as the data it was trained on, so if a group were missing, the results would be less reliable.", "keys": ["only as good as", "less reliable", "trained"] },
+          { "ai": "So where does AI really make a difference?", "aiTr": "Peki yapay zekâ asıl nerede fark yaratıyor?", "hint": "In my view, it's access. One in five people has some hearing loss, but most are never tested because there aren't enough audiologists.", "keys": ["access", "one in five", "audiologists"] },
+          { "ai": "And your device?", "aiTr": "Peki sizin cihazınız?", "hint": "It runs the test without an expert in the room, and it's improved through monthly software updates.", "keys": ["without an expert", "software updates", "in the room"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir sağlık teknolojisi panelinde yapay zekânın gerçek değerini, risklerini ve erişim üzerindeki etkisini nüanslı bir dille tartışıyorsun.",
+      "text": [
+        { "en": "Much of the public debate about AI in medicine fixates on whether algorithms will replace doctors, which, to my mind, misses the point.", "tr": "Tıpta yapay zekâ üzerine kamusal tartışmanın büyük kısmı algoritmaların doktorların yerini alıp almayacağına takılıp kalıyor; bence bu, asıl meseleyi kaçırmak." },
+        { "en": "Where AI genuinely excels is in high-volume, repetitive work, where fatigue tends to creep in.", "tr": "Yapay zekânın gerçekten öne çıktığı yer, yorgunluğun sinsice devreye girdiği yüksek hacimli ve tekrarlı işler." },
+        { "en": "Screening thousands of scans overnight, a well-trained model can flag suspicious findings for a radiologist to prioritize the following morning.", "tr": "İyi eğitilmiş bir model, bir gecede binlerce taramayı inceleyerek radyoloğun ertesi sabah öncelik vermesi için şüpheli bulguları işaretleyebilir." },
+        { "en": "Not only does this speed up diagnosis, but it also frees up specialists for the cases that demand their judgment.", "tr": "Bu yalnızca teşhisi hızlandırmakla kalmıyor, uzmanları da muhakemelerini gerektiren vakalar için serbest bırakıyor." },
+        { "en": "That said, a model is only ever as good as the data it was trained on.", "tr": "Bununla birlikte bir model, her zaman ancak eğitildiği veri kadar iyidir." },
+        { "en": "Should certain patient groups be underrepresented in that data, its performance for them may quietly deteriorate.", "tr": "Bazı hasta grupları bu veride yeterince temsil edilmiyorsa, modelin onlar için performansı sessizce kötüleşebilir." },
+        { "en": "It is precisely for this reason that a clinician must remain accountable for the final decision.", "tr": "Tam da bu nedenle nihai karardan bir klinisyen sorumlu olmaya devam etmeli." },
+        { "en": "To my mind, though, the real prize lies less in diagnosis than in access.", "tr": "Yine de bana göre asıl kazanç teşhisten çok erişimde yatıyor." },
+        { "en": "Roughly one in five people lives with some degree of hearing loss, yet the vast majority are never tested, largely because audiologists are in short supply.", "tr": "Yaklaşık her beş kişiden biri bir derece işitme kaybıyla yaşıyor, ancak büyük çoğunluğu hiç test edilmiyor; bunun başlıca nedeni odyologların az olması." },
+        { "en": "In smaller towns, that bottleneck translates into waiting lists that stretch for months.", "tr": "Küçük kasabalarda bu darboğaz, aylarca süren bekleme listelerine dönüşüyor." },
+        { "en": "By running the test autonomously, adjusting it in real time and producing an audiogram in under ten minutes, our device takes the specialist out of the routine part of the process.", "tr": "Cihazımız testi otonom olarak yürütüp gerçek zamanlı ayarlayarak ve on dakikadan kısa sürede odyogram üreterek, uzmanı sürecin rutin kısmından çıkarıyor." },
+        { "en": "The audiologist's expertise isn't sidelined; it's redeployed where it matters most.", "tr": "Odyoloğun uzmanlığı kenara itilmiyor; en çok önem taşıdığı yere yönlendiriliyor." }
+      ],
+      "vocab": [
+        { "en": "fixate on", "tr": "...e takılıp kalmak", "ex": "The debate fixates on whether AI will replace doctors.", "def": "to give too much attention to one thing" },
+        { "en": "miss the point", "tr": "asıl meseleyi kaçırmak", "ex": "Asking whether AI will replace doctors misses the point.", "def": "to fail to understand the most important part" },
+        { "en": "excel", "tr": "çok başarılı olmak, öne çıkmak", "ex": "AI excels at high-volume, repetitive work.", "def": "to be extremely good at something" },
+        { "en": "creep in", "tr": "sinsice ortaya çıkmak", "ex": "After hours of screening, fatigue starts to creep in.", "def": "to start to appear gradually, often without being noticed" },
+        { "en": "free up", "tr": "serbest bırakmak, zaman açmak", "ex": "AI frees up specialists for complex cases.", "def": "to make time or people available for something else" },
+        { "en": "underrepresented", "tr": "yeterince temsil edilmemiş", "ex": "Some patient groups are underrepresented in the data.", "def": "present in smaller numbers than they should be" },
+        { "en": "deteriorate", "tr": "kötüleşmek", "ex": "Performance may deteriorate for some groups.", "def": "to become worse" },
+        { "en": "accountable for", "tr": "...den sorumlu, hesap verebilir", "ex": "A clinician must remain accountable for the final decision.", "def": "responsible for something and expected to explain it" },
+        { "en": "in short supply", "tr": "kıt, az bulunan", "ex": "Audiologists are in short supply in small towns.", "def": "not available in large enough amounts" },
+        { "en": "sideline", "tr": "kenara itmek", "ex": "AI doesn't sideline the audiologist.", "def": "to make someone less important or active" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences for emphasis",
+        "tr": "Cümlenin bir kısmını vurgulamak için 'It is … that …' ya da 'Where/What … is …' yapısı kullanılır. Konuşmacının asıl söylemek istediği şey öne çıkar.",
+        "examples": ["It is precisely for this reason that a clinician must remain accountable.", "Where AI genuinely excels is in high-volume, repetitive work.", "What really matters is access."]
+      },
+      "questions": [
+        { "q": "What does the speaker think about the 'AI will replace doctors' debate?", "options": ["It is the most important question", "It misses the point", "It has been settled", "It only matters in radiology"], "a": 1 },
+        { "q": "What is the main risk when some patient groups are underrepresented in training data?", "options": ["The model becomes slower", "The model refuses to work", "Its performance for those groups may decline without anyone noticing"], "a": 2 },
+        { "q": "Why must a clinician remain accountable for the final decision?", "options": ["Because a model's reliability depends on its training data", "Because AI is too expensive", "Because patients prefer human doctors"], "a": 0 },
+        { "q": "What does the word 'quietly' in 'may quietly deteriorate' imply?", "options": ["The decline will be small", "The problem is easy to fix", "The model will warn the user", "The problem may go unnoticed"], "a": 3 },
+        { "q": "What is the speaker's attitude toward audiologists?", "options": ["They will soon be unnecessary", "Their expertise should be focused where it matters most", "They cause the long waiting lists", "They oppose AI"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Where AI genuinely ___ is in high-volume, repetitive work.", "a": "excels", "hint": "öne çıkmak" },
+        { "s": "___ certain patient groups be underrepresented, its performance may deteriorate.", "a": "Should", "hint": "eğer (devrik koşul)" },
+        { "s": "Audiologists are in short ___.", "a": "supply", "hint": "kıt (in short …)" },
+        { "s": "The audiologist's expertise isn't ___; it's redeployed.", "a": "sidelined", "hint": "kenara itilmek" }
+      ],
+      "order": [
+        { "a": "A model is only as good as its training data." },
+        { "a": "The real prize lies less in diagnosis than in access." }
+      ],
+      "translate": [
+        { "tr": "Tam da bu nedenle nihai karardan bir klinisyen sorumlu olmalı.", "en": "It is precisely for this reason that a clinician must remain accountable for the final decision.", "keys": ["precisely for this reason", "accountable"] },
+        { "tr": "Bu yalnızca teşhisi hızlandırmakla kalmıyor, uzmanlara da zaman açıyor.", "en": "Not only does this speed up diagnosis, but it also frees up specialists.", "keys": ["not only does", "frees up"] }
+      ],
+      "roleplay": {
+        "persona": "Panel moderator",
+        "personaTr": "Panel moderatörü",
+        "scene": "Bir sağlık teknolojisi konferansında panel moderatörü sana zor sorular soruyor.",
+        "turns": [
+          { "ai": "Many clinicians fear AI will make them redundant. Are they right to worry?", "aiTr": "Pek çok klinisyen yapay zekânın onları gereksiz kılacağından korkuyor. Endişelenmekte haklılar mı?", "hint": "To my mind, that misses the point. AI excels at high-volume, repetitive work, which frees up specialists for the cases that demand their judgment.", "keys": ["misses the point", "frees up", "repetitive"] },
+          { "ai": "What about bias? Training data is rarely as diverse as the real world.", "aiTr": "Peki önyargı? Eğitim verisi nadiren gerçek dünya kadar çeşitlidir.", "hint": "It's a real risk. Should certain groups be underrepresented, performance may quietly deteriorate, which is why a clinician must remain accountable.", "keys": ["underrepresented", "accountable", "deteriorate"] },
+          { "ai": "Where do you see the biggest impact over the next few years?", "aiTr": "Önümüzdeki birkaç yılda en büyük etkiyi nerede görüyorsunuz?", "hint": "Less in diagnosis than in access: one in five people has some hearing loss, yet most are never tested because audiologists are in short supply.", "keys": ["access", "in short supply", "one in five"] },
+          { "ai": "And how does your own device fit into that picture?", "aiTr": "Peki sizin cihazınız bu tabloya nasıl oturuyor?", "hint": "It runs the test autonomously and produces an audiogram in under ten minutes, so the audiologist's expertise is redeployed where it matters most.", "keys": ["autonomously", "audiogram", "under ten minutes", "redeployed"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Şüpheci bir sağlık muhabirine, abartıya kaçmadan, ironi ve ince ayrımlarla yapay zekânın sağlıktaki gerçek değerini anlatıyorsun.",
+      "text": [
+        { "en": "Every few months, someone announces that AI is about to make doctors obsolete, and every few months, the doctors, rather inconveniently, turn up for work.", "tr": "Birkaç ayda bir biri yapay zekânın doktorları gereksiz kılmak üzere olduğunu ilan ediyor ve birkaç ayda bir doktorlar, bu iddiayı biraz da utandırırcasına, işe gelmeye devam ediyor." },
+        { "en": "The more interesting story, I'd suggest, is a quieter one: machines absorbing the high-volume, low-judgment work that wears clinicians down.", "tr": "Bence daha ilginç olan hikâye daha sessiz bir hikâye: Makinelerin, klinisyenleri yıpratan yüksek hacimli ve az muhakeme gerektiren işi üstlenmesi." },
+        { "en": "A model can triage thousands of scans overnight without its attention flagging at three in the morning, which is more than can be said for any of us.", "tr": "Bir model, sabahın üçünde dikkati dağılmadan bir gecede binlerce taramayı önceliklendirebilir; aynısını hiçbirimiz için söyleyemeyiz." },
+        { "en": "That said, a model inherits every blind spot in its training data, and it does so with unnerving confidence.", "tr": "Bununla birlikte bir model, eğitim verisindeki her kör noktayı devralır ve bunu tedirgin edici bir özgüvenle yapar." },
+        { "en": "If a population is thinly represented in the data, the system's performance there tends to degrade quietly, with no alarm bells to warn anyone.", "tr": "Bir nüfus grubu veride zayıf temsil ediliyorsa, sistemin o gruptaki performansı kimseyi uyaracak bir alarm çalmadan sessizce düşme eğiliminde olur." },
+        { "en": "Hence the insistence, which I share wholeheartedly, that accountability for the final call rests with a clinician.", "tr": "Son kararın sorumluluğunun bir klinisyende olması gerektiği konusundaki ısrar da buradan geliyor ve ben de bu görüşe yürekten katılıyorum." },
+        { "en": "Where I think the real dividend lies, though, is not in sharper diagnosis but in wider access.", "tr": "Ancak bence asıl kazanç daha keskin teşhiste değil, daha geniş erişimde yatıyor." },
+        { "en": "Roughly one in five people has some degree of hearing loss, and yet the overwhelming majority are never tested, for the unglamorous reason that there simply aren't enough audiologists to go round.", "tr": "Yaklaşık her beş kişiden birinde bir derece işitme kaybı var, ama ezici çoğunluğu hiç test edilmiyor; nedeni pek de çarpıcı değil: Herkese yetecek kadar odyolog yok." },
+        { "en": "In smaller towns, the wait for an appointment is measured in months rather than weeks.", "tr": "Küçük kasabalarda randevu beklemesi haftalarla değil, aylarla ölçülüyor." },
+        { "en": "Our audiometer is a modest attempt to chip away at that: the patient presses a button, the AI adapts the test as it goes, and an audiogram emerges in under ten minutes.", "tr": "Odyometremiz bu sorunu yavaş yavaş aşındırmaya yönelik mütevazı bir girişim: Hasta bir düğmeye basıyor, yapay zekâ testi ilerledikçe uyarlıyor ve on dakikadan kısa sürede bir odyogram ortaya çıkıyor." },
+        { "en": "Because the model runs on the device itself, it works offline and patient data stays put, while updates go out roughly once a month.", "tr": "Model cihazın kendi üzerinde çalıştığı için internetsiz çalışıyor ve hasta verileri yerinde kalıyor; güncellemeler ise yaklaşık ayda bir gönderiliyor." },
+        { "en": "None of this sidelines the audiologist; if anything, it frees them to do the work that only they can do.", "tr": "Bunların hiçbiri odyoloğu kenara itmiyor; aksine, yalnızca onların yapabileceği işe zaman ayırmalarını sağlıyor." }
+      ],
+      "vocab": [
+        { "en": "obsolete", "tr": "gereksiz, modası geçmiş", "ex": "AI won't make doctors obsolete any time soon.", "def": "no longer needed or used" },
+        { "en": "wear someone down", "tr": "birini yıpratmak", "ex": "Repetitive screening wears clinicians down.", "def": "to make someone tired or weak gradually" },
+        { "en": "triage", "tr": "önceliklendirmek, triyaj yapmak", "ex": "The model can triage thousands of scans overnight.", "def": "to sort cases by how urgently they need attention" },
+        { "en": "blind spot", "tr": "kör nokta", "ex": "A model inherits every blind spot in its data.", "def": "an area where someone or something lacks knowledge or awareness" },
+        { "en": "unnerving", "tr": "tedirgin edici", "ex": "It makes mistakes with unnerving confidence.", "def": "making you feel nervous or uneasy" },
+        { "en": "the final call", "tr": "son karar", "ex": "The final call rests with a clinician.", "def": "the last and deciding judgment" },
+        { "en": "dividend", "tr": "getiri, kazanç (mecazi)", "ex": "The real dividend of AI is wider access.", "def": "a benefit that results from an action" },
+        { "en": "go round", "tr": "herkese yetmek", "ex": "There aren't enough audiologists to go round.", "def": "to be enough for everyone" },
+        { "en": "chip away at", "tr": "yavaş yavaş azaltmak, aşındırmak", "ex": "Our device chips away at the waiting lists.", "def": "to reduce something gradually, little by little" },
+        { "en": "stay put", "tr": "yerinde kalmak", "ex": "Patient data stays put on the device.", "def": "to remain in the same place" }
+      ],
+      "grammar": {
+        "title": "Discourse markers for nuance",
+        "tr": "'That said' (bununla birlikte), 'Hence' (bu yüzden), 'if anything' (aksine, hatta) gibi bağlaçlar fikirler arasındaki ince ilişkiyi kurar. Konuşmayı akıcı ve ölçülü kılar.",
+        "examples": ["That said, a model inherits every blind spot in its training data.", "Hence the insistence that accountability rests with a clinician.", "If anything, it frees them to do the work that only they can do."]
+      },
+      "questions": [
+        { "q": "What is the tone of the opening sentence?", "options": ["Alarmed", "Dryly ironic", "Apologetic", "Neutral and technical"], "a": 1 },
+        { "q": "According to the speaker, what makes biased AI particularly dangerous?", "options": ["It is expensive to fix", "It fails loudly", "Its errors come with high confidence and no warning", "It can't process scans"], "a": 2 },
+        { "q": "What does the speaker imply by 'the unglamorous reason'?", "options": ["The cause of the problem is mundane, not technological", "Audiologists are badly paid", "Hearing tests are boring", "The reason is kept secret"], "a": 0 },
+        { "q": "Why does the speaker mention that the model runs on the device?", "options": ["To explain why it is cheap", "To show it never needs updates", "To prove it's faster than cloud AI", "To highlight that it works offline and keeps data local"], "a": 3 },
+        { "q": "What does 'a modest attempt to chip away at that' suggest about the speaker?", "options": ["They are overselling the device", "They present the device as a partial solution, not a cure-all", "They think the problem cannot be solved", "They doubt their own product"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Every few months, someone announces that AI is about to make doctors ___.", "a": "obsolete", "hint": "gereksiz" },
+        { "s": "A model inherits every blind ___ in its training data.", "a": "spot", "hint": "nokta (kör nokta)" },
+        { "s": "There simply aren't enough audiologists to go ___.", "a": "round", "hint": "yetmek (go …)" },
+        { "s": "Our audiometer is a modest attempt to chip ___ at that.", "a": "away", "hint": "yavaş yavaş azaltmak (chip … at)" }
+      ],
+      "order": [
+        { "a": "Accountability for the final call rests with a clinician." },
+        { "a": "None of this sidelines the audiologist." }
+      ],
+      "translate": [
+        { "tr": "Bununla birlikte bir model, eğitim verisindeki her kör noktayı devralır.", "en": "That said, a model inherits every blind spot in its training data.", "keys": ["that said", "blind spot"] },
+        { "tr": "Randevu beklemesi haftalarla değil, aylarla ölçülüyor.", "en": "The wait for an appointment is measured in months rather than weeks.", "keys": ["measured in months", "rather than weeks"] },
+        { "tr": "Hasta verileri yerinde kalıyor.", "en": "Patient data stays put.", "keys": ["stays put"] }
+      ],
+      "roleplay": {
+        "persona": "Health journalist",
+        "personaTr": "Sağlık muhabiri",
+        "scene": "Abartılı iddialardan hoşlanmayan şüpheci bir sağlık muhabiri, yapay zekâ ve sağlık üzerine seninle röportaj yapıyor.",
+        "turns": [
+          { "ai": "You must be tired of hearing that AI will make doctors obsolete. Is there anything to it?", "aiTr": "Yapay zekânın doktorları gereksiz kılacağını duymaktan bıkmışsınızdır. Bunda bir gerçeklik payı var mı?", "hint": "Not much, I'd suggest. The more interesting story is machines absorbing the high-volume work that wears clinicians down.", "keys": ["wears clinicians down", "high-volume", "I'd suggest"] },
+          { "ai": "Critics say these systems simply bake in existing biases. Fair?", "aiTr": "Eleştirmenler bu sistemlerin mevcut önyargıları kalıcı hale getirdiğini söylüyor. Haklılar mı?", "hint": "Fair enough. A model inherits every blind spot in its training data, which is why the final call has to rest with a clinician.", "keys": ["blind spot", "final call", "clinician"] },
+          { "ai": "So where's the real payoff, if not in diagnosis?", "aiTr": "Teşhiste değilse asıl getiri nerede?", "hint": "In access. One in five people has some hearing loss, yet most are never tested because there aren't enough audiologists to go round.", "keys": ["access", "go round", "one in five"] },
+          { "ai": "And what about privacy? Where does all that patient data end up?", "aiTr": "Peki ya mahremiyet? Bütün o hasta verileri nereye gidiyor?", "hint": "Nowhere, in fact: the model runs on the device itself, so it works offline and patient data stays put.", "keys": ["stays put", "on the device", "offline"] }
+        ]
+      }
+    }
+  }
+}

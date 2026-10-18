@@ -4,15 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>AIHEAR English</title>
-<meta name="description" content="Girişimciler için kişisel İngilizce öğrenme uygulaması: AIHEAR, yatırımcı sunumları ve medikal teknoloji odaklı A2-B1 dersler.">
-<meta name="theme-color" content="#3b5bfd">
+<meta name="description" content="Girişimciler için İngilizce: yatırımcı sunumu, ürün demosu ve yurt dışında hayat. Her ders A1'den C2'ye altı seviyede, disleksi dostu.">
+<meta name="theme-color" content="#f2f4f8">
+<meta name="color-scheme" content="light dark">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="default">
 <meta name="apple-mobile-web-app-title" content="AIHEAR English">
+<meta property="og:title" content="AIHEAR English">
+<meta property="og:description" content="İngilizceyi kendi işinle öğren. A1'den C2'ye, disleksi dostu.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="icons/og.png">
 <link rel="manifest" href="manifest.json">
 <link rel="icon" href="icons/icon-192.png" type="image/png">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">
@@ -21,33 +26,31 @@
 <body>
 <div id="app">
   <header class="topbar">
-    <button id="back" class="iconbtn" aria-label="Derslere dön" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
-    <div class="brand">
-      <svg class="brand-mark" viewBox="0 0 64 64" fill="none" aria-hidden="true"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b5bfd"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><rect width="64" height="64" rx="16" fill="url(#g)"/><g stroke="#fff" stroke-width="5" stroke-linecap="round"><path d="M22 26v12"/><path d="M30 18v28"/><path d="M38 23v18"/><path d="M46 28v8"/></g></svg>
-      <h1 id="title">AIHEAR English</h1>
+    <div class="topbar-in">
+      <button id="back" class="iconbtn plain" aria-label="Geri" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <div class="brand">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><defs><linearGradient id="bg-g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#3b5bfd"/><stop offset="1" stop-color="#7c3aed"/></linearGradient></defs><rect width="64" height="64" rx="18" fill="url(#bg-g)"/><g stroke="#fff" stroke-width="5" stroke-linecap="round"><path d="M16 27v10"/><path d="M24 19v26"/><path d="M32 24v16"/><path d="M40 29v6"/><path d="M48 26v12"/></g></svg>
+        <h1 id="title">AIHEAR English</h1>
+      </div>
+      <button id="goalchip" class="chipbtn" aria-label="Seri ve günlük hedef"></button>
+      <button id="levelchip" class="chipbtn" aria-label="Seviye">B1</button>
     </div>
   </header>
-  <main id="main"></main>
+  <main id="main" tabindex="-1"><noscript><p>AIHEAR English JavaScript gerektirir.</p></noscript></main>
   <nav class="bottomnav" aria-label="Ana menü">
-    <button data-route="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"/></svg>Ana sayfa</button>
-    <button data-route="lessons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/></svg>Dersler</button>
-    <button data-route="review"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 6V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/></svg>Kelimeler</button>
-    <button data-route="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>Ayarlar</button>
+    <div class="bottomnav-in">
+      <button data-route="home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 11l9-8 9 8v9a2 2 0 0 1-2 2h-4v-6H9v6H5a2 2 0 0 1-2-2z"/></svg>Ana sayfa</button>
+      <button data-route="lessons"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h6a3 3 0 0 1 3 3v13a2 2 0 0 0-2-2H4z"/><path d="M20 4h-6a3 3 0 0 0-3 3v13a2 2 0 0 1 2-2h7z"/></svg>Dersler</button>
+      <button data-route="words"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6" width="14" height="14" rx="2"/><path d="M7 6V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2h-1"/></svg>Kelimeler</button>
+      <button data-route="progress"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10"/><path d="M10 20V4"/><path d="M16 20v-7"/><path d="M22 20H2"/></svg>İlerleme</button>
+      <button data-route="settings"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3"/><path d="M12 19v3"/><path d="M4.9 4.9l2.1 2.1"/><path d="M17 17l2.1 2.1"/><path d="M2 12h3"/><path d="M19 12h3"/><path d="M4.9 19.1L7 17"/><path d="M17 7l2.1-2.1"/></svg>Ayarlar</button>
+    </div>
   </nav>
 </div>
-<script src="js/data/topics.js"></script>
-<script src="js/data/01-startup.js"></script>
-<script src="js/data/02-aihear.js"></script>
-<script src="js/data/03-tech.js"></script>
-<script src="js/data/04-invest.js"></script>
-<script src="js/data/05-comms.js"></script>
-<script src="js/data/06-science.js"></script>
-<script src="js/data/07-life.js"></script>
+<!-- build:inline -->
+<script src="content/catalog.js"></script>
+<script src="content/placement.js"></script>
 <script src="js/app.js"></script>
-<script>
-if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
-  window.addEventListener("load", function () { navigator.serviceWorker.register("sw.js").catch(function () {}); });
-}
-</script>
+<!-- /build:inline -->
 </body>
 </html>

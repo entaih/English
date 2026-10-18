@@ -1,0 +1,373 @@
+{
+  "id": "st-04",
+  "topic": "startup",
+  "title": "Negotiating with a Business Partner",
+  "titleTr": "Bir İş Ortağıyla Müzakere Etmek",
+  "levels": {
+    "A1": {
+      "intro": "Bir distribütörle komisyon oranı için çok basit cümlelerle pazarlık yapıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "We want 25 percent of every sale.", "tr": "Her satışın yüzde 25'ini istiyoruz." },
+        { "who": "Me", "en": "That is too much for us.", "tr": "Bu bizim için çok fazla." },
+        { "who": "Me", "en": "We can give you 15 percent.", "tr": "Size yüzde 15 verebiliriz." },
+        { "who": "Partner", "en": "That is too little for us.", "tr": "Bu bizim için çok az." },
+        { "who": "Me", "en": "Can we start with 20 percent for one year?", "tr": "Bir yıl için yüzde 20 ile başlayabilir miyiz?" },
+        { "who": "Partner", "en": "OK, but only we can sell in Germany.", "tr": "Tamam, ama Almanya'da sadece biz satabiliriz." },
+        { "who": "Me", "en": "Yes, if you sell enough devices.", "tr": "Evet, yeterince cihaz satarsanız." },
+        { "who": "Partner", "en": "Good, we can sign next week.", "tr": "Güzel, gelecek hafta imzalayabiliriz." }
+      ],
+      "vocab": [
+        { "en": "percent", "tr": "yüzde", "ex": "We can give you 15 percent.", "def": "a part of 100" },
+        { "en": "sale", "tr": "satış", "ex": "We want 25 percent of every sale.", "def": "the act of selling something" },
+        { "en": "too much", "tr": "çok fazla", "ex": "That is too much for us.", "def": "more than is good or possible" },
+        { "en": "start with", "tr": "...ile başlamak", "ex": "Can we start with 20 percent?", "def": "to begin with something" },
+        { "en": "sell", "tr": "satmak", "ex": "Only we can sell in Germany.", "def": "to give something for money" },
+        { "en": "sign", "tr": "imzalamak", "ex": "We can sign next week.", "def": "to write your name on a paper to agree" }
+      ],
+      "grammar": {
+        "title": "Can: offers and questions",
+        "tr": "'Can' ile bir şeyi yapabileceğimizi ya da teklif ettiğimizi söyleriz: 'We can give you 15 percent.' Soru sormak için 'can' başa gelir: 'Can we start with 20 percent?'",
+        "examples": ["We can give you 15 percent.", "Can we start with 20 percent for one year?", "We can sign next week."]
+      },
+      "questions": [
+        { "q": "What does the partner want first?", "options": ["15 percent", "25 percent", "20 percent"], "a": 1 },
+        { "q": "What number do they start with?", "options": ["20 percent", "15 percent", "25 percent"], "a": 0 },
+        { "q": "When can they sign?", "options": ["Today", "Next month", "Next week"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "That is too ___ for us.", "a": "much", "hint": "fazla" },
+        { "s": "Can we start with 20 ___ for one year?", "a": "percent", "hint": "yüzde" },
+        { "s": "Good, we can ___ next week.", "a": "sign", "hint": "imzalamak" }
+      ],
+      "order": [
+        { "a": "Can we start with 20 percent for one year?" },
+        { "a": "That is too much for us." }
+      ],
+      "translate": [
+        { "tr": "Bu bizim için çok fazla.", "en": "That is too much for us.", "keys": ["too much"] },
+        { "tr": "Gelecek hafta imzalayabiliriz.", "en": "We can sign next week.", "keys": ["sign", "next week"] }
+      ],
+      "roleplay": {
+        "persona": "Distributor",
+        "personaTr": "Distribütör",
+        "scene": "Almanya'da satış yapmak isteyen Hollandalı bir distribütörle komisyon oranı için pazarlık yapıyorsun.",
+        "turns": [
+          { "ai": "We want 25 percent. Is that OK?", "aiTr": "Yüzde 25 istiyoruz. Uygun mu?", "hint": "That is too much for us. We can give you 15 percent.", "keys": ["too much", "15", "percent"] },
+          { "ai": "15 is too little. What can you do?", "aiTr": "15 çok az. Ne yapabilirsiniz?", "hint": "Can we start with 20 percent for one year?", "keys": ["20", "start with", "one year"] },
+          { "ai": "OK. And only we sell in Germany?", "aiTr": "Tamam. Ve Almanya'da sadece biz mi satıyoruz?", "hint": "Yes, if you sell enough devices.", "keys": ["yes", "if you sell", "enough"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir distribütörle komisyon ve Almanya'daki satış hakları üzerine nazik ama net pazarlık yapıyorsun.",
+      "text": [
+        { "who": "Partner", "en": "Our usual commission is 25 percent of every device we sell.", "tr": "Her zamanki komisyonumuz sattığımız her cihazın yüzde 25'i." },
+        { "who": "Me", "en": "Thank you for the offer, but 25 percent is too high for us.", "tr": "Teklif için teşekkürler ama yüzde 25 bizim için çok yüksek." },
+        { "who": "Me", "en": "Our production costs are high, so we can offer 15 percent.", "tr": "Üretim maliyetlerimiz yüksek, bu yüzden yüzde 15 teklif edebiliriz." },
+        { "who": "Partner", "en": "That's too low, because we also have marketing costs.", "tr": "Bu çok düşük, çünkü bizim de pazarlama masraflarımız var." },
+        { "who": "Me", "en": "I understand, so what if we start with 20 percent for the first year?", "tr": "Anlıyorum, peki ilk yıl için yüzde 20 ile başlasak nasıl olur?" },
+        { "who": "Me", "en": "We can look at the agreement again after twelve months.", "tr": "On iki ay sonra anlaşmaya tekrar bakabiliriz." },
+        { "who": "Partner", "en": "That sounds fair, but we want exclusive rights in Germany.", "tr": "Bu adil görünüyor ama Almanya'da münhasır haklar istiyoruz." },
+        { "who": "Me", "en": "That's possible if you reach a minimum sales target.", "tr": "Minimum bir satış hedefine ulaşırsanız bu mümkün." },
+        { "who": "Partner", "en": "Great, let's put it in writing and sign next week.", "tr": "Harika, bunu yazıya dökelim ve gelecek hafta imzalayalım." }
+      ],
+      "vocab": [
+        { "en": "commission", "tr": "komisyon", "ex": "Their usual commission is 25 percent.", "def": "a part of the money from each sale that the seller keeps" },
+        { "en": "offer", "tr": "teklif, teklif etmek", "ex": "Thank you for the offer.", "def": "something someone says they will give or do" },
+        { "en": "too high", "tr": "çok yüksek", "ex": "25 percent is too high for us.", "def": "higher than is OK" },
+        { "en": "production costs", "tr": "üretim maliyetleri", "ex": "Our production costs are high.", "def": "the money you spend to make a product" },
+        { "en": "what if we...?", "tr": "...sak nasıl olur?", "ex": "What if we start with 20 percent?", "def": "a polite way to suggest something" },
+        { "en": "exclusive rights", "tr": "münhasır haklar (tek satıcılık)", "ex": "They want exclusive rights in Germany.", "def": "the right to be the only seller in a place" },
+        { "en": "sales target", "tr": "satış hedefi", "ex": "You need to reach a minimum sales target.", "def": "the number of products you plan to sell" },
+        { "en": "put it in writing", "tr": "yazıya dökmek", "ex": "Let's put it in writing.", "def": "to write an agreement down on paper" }
+      ],
+      "grammar": {
+        "title": "Too + adjective",
+        "tr": "'Too' bir şeyin gereğinden fazla olduğunu ve sorun yarattığını gösterir: 'too high' (fazla yüksek), 'too low' (fazla düşük). Daha nazik olmak için 'a bit too high' diyebilirsin.",
+        "examples": ["25 percent is too high for us.", "That's too low."]
+      },
+      "questions": [
+        { "q": "What commission does the distributor want first?", "options": ["15 percent", "20 percent", "25 percent"], "a": 2 },
+        { "q": "Why can the speaker only offer 15 percent?", "options": ["Production costs are high", "They don't like the distributor", "The device is cheap"], "a": 0 },
+        { "q": "What does the speaker suggest for the first year?", "options": ["15 percent", "20 percent", "25 percent"], "a": 1 },
+        { "q": "What must the distributor do to get exclusive rights?", "options": ["Pay more money", "Open an office", "Reach a minimum sales target"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Thank you for the ___, but 25 percent is too high.", "a": "offer", "hint": "teklif" },
+        { "s": "That's possible if you reach a minimum sales ___.", "a": "target", "hint": "hedef" },
+        { "s": "Let's put it in ___ and sign next week.", "a": "writing", "hint": "yazı" }
+      ],
+      "order": [
+        { "a": "What if we start with 20 percent?" },
+        { "a": "We can look at the agreement again." }
+      ],
+      "translate": [
+        { "tr": "Teklif için teşekkürler.", "en": "Thank you for the offer.", "keys": ["thank you", "offer"] },
+        { "tr": "Bu kulağa adil geliyor.", "en": "That sounds fair.", "keys": ["sounds fair"] }
+      ],
+      "roleplay": {
+        "persona": "Distributor",
+        "personaTr": "Distribütör",
+        "scene": "Almanya'da satış yapmak isteyen Hollandalı bir distribütörle komisyon oranı ve münhasırlık konusunda pazarlık yapıyorsun.",
+        "turns": [
+          { "ai": "Our usual commission is 25 percent. Is that OK for you?", "aiTr": "Her zamanki komisyonumuz yüzde 25. Sizin için uygun mu?", "hint": "Thank you for the offer, but 25 percent is too high. We can offer 15 percent.", "keys": ["too high", "offer", "15"] },
+          { "ai": "Fifteen is too low. We also have marketing costs.", "aiTr": "On beş çok düşük. Bizim de pazarlama masraflarımız var.", "hint": "I understand. What if we start with 20 percent for the first year?", "keys": ["what if", "20", "first year"] },
+          { "ai": "OK, that sounds fair. We also want exclusive rights in Germany.", "aiTr": "Tamam, adil görünüyor. Almanya'da münhasır haklar da istiyoruz.", "hint": "That's possible if you reach a minimum sales target.", "keys": ["possible", "sales target", "if you reach"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Komisyon, süre ve münhasırlık şartları üzerinde pazarlık yaparken nazik ama net oluyorsun.",
+      "text": [
+        { "who": "Partner", "en": "Our standard commission is 25 percent on every device we sell.", "tr": "Standart komisyonumuz sattığımız her cihaz için yüzde 25." },
+        { "who": "Me", "en": "Thank you for the offer, but 25 percent is a bit high for us.", "tr": "Teklif için teşekkürler ama yüzde 25 bizim için biraz yüksek." },
+        { "who": "Me", "en": "Our production costs are quite high, so we can't go above 15 percent.", "tr": "Üretim maliyetlerimiz oldukça yüksek, bu yüzden yüzde 15'in üstüne çıkamayız." },
+        { "who": "Partner", "en": "I'm afraid fifteen won't work for us, because we also have to cover our marketing costs.", "tr": "Korkarım on beş bizim için olmaz, çünkü bizim de pazarlama masraflarımızı karşılamamız gerekiyor." },
+        { "who": "Me", "en": "I understand, so what if we meet in the middle at 20 percent for the first year?", "tr": "Anlıyorum, peki ilk yıl için yüzde 20'de ortada buluşsak nasıl olur?" },
+        { "who": "Me", "en": "We can review the agreement after twelve months and adjust it if we need to.", "tr": "On iki ay sonra anlaşmayı gözden geçirip gerekirse değiştirebiliriz." },
+        { "who": "Partner", "en": "That sounds fair, but we'd also like exclusive rights in Germany.", "tr": "Bu adil görünüyor ama Almanya'da münhasır haklar da istiyoruz." },
+        { "who": "Me", "en": "We can agree to exclusive rights, as long as you reach a minimum sales target.", "tr": "Minimum bir satış hedefine ulaştığınız sürece münhasır hakları kabul edebiliriz." },
+        { "who": "Partner", "en": "OK, let's put everything in writing and sign next week.", "tr": "Tamam, her şeyi yazıya dökelim ve gelecek hafta imzalayalım." },
+        { "who": "Me", "en": "Perfect, I think we've reached an agreement.", "tr": "Mükemmel, sanırım bir anlaşmaya vardık." }
+      ],
+      "vocab": [
+        { "en": "a bit high", "tr": "biraz yüksek", "ex": "25 percent is a bit high for us.", "def": "slightly more than you want to pay" },
+        { "en": "I'm afraid", "tr": "korkarım, maalesef", "ex": "I'm afraid fifteen won't work for us.", "def": "a polite way to say something negative" },
+        { "en": "cover costs", "tr": "masrafları karşılamak", "ex": "We have to cover our marketing costs.", "def": "to have enough money to pay for something" },
+        { "en": "meet in the middle", "tr": "ortada buluşmak", "ex": "What if we meet in the middle at 20 percent?", "def": "to agree on something between two positions" },
+        { "en": "review the agreement", "tr": "anlaşmayı gözden geçirmek", "ex": "We can review the agreement after twelve months.", "def": "to look at a deal again and maybe change it" },
+        { "en": "exclusive rights", "tr": "münhasır haklar (tek satıcılık)", "ex": "They'd like exclusive rights in Germany.", "def": "the right to be the only company that sells something in a place" },
+        { "en": "as long as", "tr": "...dığı sürece", "ex": "We agree, as long as you reach the target.", "def": "only if" },
+        { "en": "reach an agreement", "tr": "anlaşmaya varmak", "ex": "I think we've reached an agreement.", "def": "to finally agree after discussing" }
+      ],
+      "grammar": {
+        "title": "Polite suggestions and conditions: what if / as long as",
+        "tr": "'What if we…?' ile nazikçe yeni bir öneri sunarız. 'As long as' (…dığı sürece) ile bir koşul koyarız; anlaşmayı kabul ederken sınırını belirlemiş olursun.",
+        "examples": ["What if we meet in the middle at 20 percent?", "We can agree to exclusive rights, as long as you reach a minimum sales target."]
+      },
+      "questions": [
+        { "q": "What was the distributor's first offer?", "options": ["15 percent", "25 percent", "20 percent"], "a": 1 },
+        { "q": "Why does the distributor say no to 15 percent?", "options": ["They have to cover their marketing costs", "They don't trust the startup", "They want to sell in Turkey"], "a": 0 },
+        { "q": "When will they review the agreement?", "options": ["After six months", "After two years", "After twelve months"], "a": 2 },
+        { "q": "What is the condition for exclusive rights in Germany?", "options": ["A higher commission", "Reaching a minimum sales target", "Opening an office in Berlin"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Twenty-five percent is a bit ___ for us.", "a": "high", "hint": "yüksek" },
+        { "s": "What if we meet in the ___ at 20 percent?", "a": "middle", "hint": "orta" },
+        { "s": "I think we've reached an ___.", "a": "agreement", "hint": "anlaşma" }
+      ],
+      "order": [
+        { "a": "We can review the agreement after twelve months." },
+        { "a": "Let's put everything in writing and sign next week." }
+      ],
+      "translate": [
+        { "tr": "Teklif için teşekkürler ama bu bizim için biraz yüksek.", "en": "Thank you for the offer, but it's a bit high for us.", "keys": ["offer", "a bit high"] },
+        { "tr": "Sanırım bir anlaşmaya vardık.", "en": "I think we've reached an agreement.", "keys": ["reached an agreement"] }
+      ],
+      "roleplay": {
+        "persona": "Distributor",
+        "personaTr": "Distribütör",
+        "scene": "Almanya'da satış yapmak isteyen Hollandalı bir distribütör, komisyon oranı ve münhasırlık konusunda pazarlık yapıyor.",
+        "turns": [
+          { "ai": "Our standard commission is 25 percent. Can you accept that?", "aiTr": "Standart komisyonumuz yüzde 25. Bunu kabul edebilir misiniz?", "hint": "Thank you for the offer, but 25 percent is a bit high for us. We can't go above 15 percent.", "keys": ["a bit high", "offer", "15 percent"] },
+          { "ai": "I'm afraid that won't work for us; we have marketing costs too.", "aiTr": "Korkarım bu bizim için olmaz; bizim de pazarlama masraflarımız var.", "hint": "I understand, so what if we meet in the middle at 20 percent for the first year?", "keys": ["meet in the middle", "what if", "20 percent"] },
+          { "ai": "And what happens after the first year?", "aiTr": "Peki ilk yıldan sonra ne olacak?", "hint": "We can review the agreement after twelve months and adjust it if we need to.", "keys": ["review", "twelve months", "adjust"] },
+          { "ai": "That sounds fair. We'd also like exclusive rights in Germany.", "aiTr": "Bu adil görünüyor. Almanya'da münhasır haklar da istiyoruz.", "hint": "We can agree to that, as long as you reach a minimum sales target.", "keys": ["as long as", "sales target", "minimum"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir distribütörle komisyon ve münhasırlık üzerine kararlı ama işbirlikçi bir pazarlık yürütüyorsun.",
+      "text": [
+        { "who": "Partner", "en": "Our standard commission is 25%, which reflects what it costs us to market a new product.", "tr": "Standart komisyonumuz yüzde 25; bu, yeni bir ürünü pazarlamanın bize maliyetini yansıtıyor." },
+        { "who": "Me", "en": "I appreciate that, but with our production costs, 25% would eat too far into our margin.", "tr": "Bunu anlıyorum ama üretim maliyetlerimizle yüzde 25 kâr marjımızı fazlasıyla eritir." },
+        { "who": "Me", "en": "Realistically, we'd struggle to justify anything above 15%.", "tr": "Gerçekçi olmak gerekirse, yüzde 15'in üzerindeki bir oranı gerekçelendirmekte zorlanırız." },
+        { "who": "Partner", "en": "If we went down to 15%, I'm not sure we could cover our marketing costs.", "tr": "Yüzde 15'e insek pazarlama masraflarımızı karşılayabileceğimizden emin değilim." },
+        { "who": "Me", "en": "Then how about meeting in the middle: 20% for the first year, with a review after twelve months?", "tr": "O zaman ortada buluşmaya ne dersiniz: ilk yıl yüzde 20, on iki ay sonra da bir değerlendirme?" },
+        { "who": "Me", "en": "That way, if the volumes are there, the terms can be adjusted to reflect it.", "tr": "Böylece satış hacmi beklendiği gibi olursa şartlar buna göre ayarlanabilir." },
+        { "who": "Partner", "en": "That seems reasonable, although we'd want exclusive rights in Germany in return.", "tr": "Bu makul görünüyor, ama karşılığında Almanya'da münhasır haklar isteriz." },
+        { "who": "Me", "en": "Exclusivity is something we'd be open to, provided a minimum sales target is agreed and met.", "tr": "Minimum bir satış hedefi üzerinde anlaşılması ve bu hedefe ulaşılması şartıyla münhasırlığa açığız." },
+        { "who": "Me", "en": "It seems only fair that exclusive rights should be earned rather than simply given.", "tr": "Münhasır hakların öylece verilmek yerine hak edilmesi gayet adil görünüyor." },
+        { "who": "Partner", "en": "Fine, let's have the lawyers draw it up and aim to sign next week.", "tr": "Peki, avukatlara hazırlatalım ve gelecek hafta imzalamayı hedefleyelim." }
+      ],
+      "vocab": [
+        { "en": "eat into", "tr": "(kârı) eritmek, azaltmak", "ex": "25% would eat too far into our margin.", "def": "to use up part of something valuable" },
+        { "en": "justify", "tr": "gerekçelendirmek", "ex": "We'd struggle to justify anything above 15%.", "def": "to give a good reason for something" },
+        { "en": "cover costs", "tr": "masrafları karşılamak", "ex": "We need to cover our marketing costs.", "def": "to have enough money to pay for expenses" },
+        { "en": "meet in the middle", "tr": "ortada buluşmak", "ex": "How about meeting in the middle?", "def": "to compromise by accepting something between two positions" },
+        { "en": "volume", "tr": "hacim, satış miktarı", "ex": "If the volumes are there, the terms can change.", "def": "the amount of products sold" },
+        { "en": "be open to", "tr": "...e açık olmak", "ex": "Exclusivity is something we'd be open to.", "def": "to be willing to consider something" },
+        { "en": "provided (that)", "tr": "...mesi şartıyla", "ex": "Provided the target is met, you'll get exclusivity.", "def": "only if" },
+        { "en": "in return", "tr": "karşılığında", "ex": "They want exclusive rights in return.", "def": "as an exchange for something" },
+        { "en": "draw up", "tr": "(sözleşme) hazırlamak", "ex": "Let's have the lawyers draw it up.", "def": "to write a formal document such as a contract" }
+      ],
+      "grammar": {
+        "title": "Passive with modals: can be adjusted, should be earned",
+        "tr": "'Modal + be + V3' yapısıyla kimin yapacağını vurgulamadan neyin yapılabileceğini ya da yapılması gerektiğini söyleriz. Müzakerede daha nesnel ve daha az kişisel duyulur.",
+        "examples": ["The terms can be adjusted to reflect it.", "Exclusive rights should be earned rather than simply given.", "A minimum sales target must be agreed and met."]
+      },
+      "questions": [
+        { "q": "Why does the speaker reject 25%?", "options": ["It would eat too far into their margin", "The distributor is too small", "They want to sell directly"], "a": 0 },
+        { "q": "What does the speaker propose for the first year?", "options": ["15%", "25%", "20%"], "a": 2 },
+        { "q": "What will happen after twelve months?", "options": ["The agreement will end", "The terms will be reviewed", "The commission will go up automatically"], "a": 1 },
+        { "q": "Why does the speaker link exclusivity to a sales target?", "options": ["Because German law requires it", "To make the distributor pay more commission", "To protect the startup if the distributor doesn't sell enough"], "a": 2 },
+        { "q": "What can we infer about the tone of the negotiation?", "options": ["Hostile and tense", "Firm but cooperative", "Very casual and unprofessional"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "25% would eat too far into our ___.", "a": "margin", "hint": "kâr marjı" },
+        { "s": "How about meeting in the ___?", "a": "middle", "hint": "orta" },
+        { "s": "Exclusivity is something we'd be ___ to.", "a": "open", "hint": "açık" }
+      ],
+      "order": [
+        { "a": "Exclusive rights should be earned rather than given." },
+        { "a": "Let's have the lawyers draw it up." }
+      ],
+      "translate": [
+        { "tr": "Karşılığında Almanya'da münhasır haklar isteriz.", "en": "We'd want exclusive rights in Germany in return.", "keys": ["exclusive rights", "in return"] },
+        { "tr": "Ortada buluşmaya ne dersiniz?", "en": "How about meeting in the middle?", "keys": ["meeting in the middle"] }
+      ],
+      "roleplay": {
+        "persona": "Distributor",
+        "personaTr": "Distribütör",
+        "scene": "Almanya pazarına girmek isteyen deneyimli bir Hollandalı distribütörle komisyon ve münhasırlık şartlarını görüşüyorsun.",
+        "turns": [
+          { "ai": "Our standard commission is 25%, which is pretty normal in this market.", "aiTr": "Standart komisyonumuz yüzde 25, bu pazarda oldukça normal.", "hint": "I appreciate that, but with our production costs, 25% would eat too far into our margin.", "keys": ["margin", "production costs", "eat"] },
+          { "ai": "If we went down to 15%, we couldn't cover our marketing costs.", "aiTr": "Yüzde 15'e insek pazarlama masraflarımızı karşılayamayız.", "hint": "Then how about meeting in the middle: 20% for the first year, with a review after twelve months?", "keys": ["meeting in the middle", "20%", "review"] },
+          { "ai": "That seems reasonable, but we'd want exclusive rights in Germany in return.", "aiTr": "Bu makul görünüyor ama karşılığında Almanya'da münhasır haklar isteriz.", "hint": "Exclusivity is something we'd be open to, provided a minimum sales target is agreed and met.", "keys": ["open to", "provided", "sales target"] },
+          { "ai": "Why tie it to a target? Don't you trust us?", "aiTr": "Neden bir hedefe bağlıyorsunuz? Bize güvenmiyor musunuz?", "hint": "Of course we do; it just seems fair that exclusive rights should be earned rather than simply given.", "keys": ["earned", "fair", "rather than"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Açık sözlü bir distribütörle, ilişkiyi zedelemeden sınırlarını koruyarak müzakere ediyorsun.",
+      "text": [
+        { "who": "Partner", "en": "To be upfront with you, our standard commission is 25%, and that's what we'd normally expect.", "tr": "Açık konuşayım, standart komisyonumuz yüzde 25 ve normalde beklediğimiz de bu." },
+        { "who": "Me", "en": "I appreciate your candour, and I'll be equally direct: at 25%, the numbers simply don't work for us.", "tr": "Açık sözlülüğünüz için teşekkürler, ben de aynı şekilde net olayım: yüzde 25'te rakamlar bizim için tutmuyor." },
+        { "who": "Me", "en": "Given what each device costs us to build, anything above 15% would leave us too thin a margin to reinvest.", "tr": "Her cihazın bize üretim maliyeti düşünüldüğünde, yüzde 15'in üzerindeki her oran yeniden yatırım yapmak için bize çok ince bir marj bırakır." },
+        { "who": "Partner", "en": "Fifteen barely covers our marketing spend, let alone the cost of building a sales network in a new category.", "tr": "On beş, yeni bir kategoride satış ağı kurmanın maliyeti şöyle dursun, pazarlama harcamamızı bile zor karşılar." },
+        { "who": "Me", "en": "Then let me suggest a middle ground: 20% for the first year, with a formal review after twelve months.", "tr": "O zaman bir orta yol önereyim: ilk yıl yüzde 20, on iki ay sonra da resmî bir değerlendirme." },
+        { "who": "Me", "en": "Should the volumes justify it, we'd be more than willing to revisit the terms.", "tr": "Satış hacimleri bunu haklı çıkarırsa şartları yeniden ele almaya fazlasıyla hazırız." },
+        { "who": "Partner", "en": "That's workable, though only if we're granted exclusive rights in Germany.", "tr": "Bu uygulanabilir, ama ancak bize Almanya'da münhasır haklar verilirse." },
+        { "who": "Me", "en": "Exclusivity is very much on the table, but it would need to be tied to a minimum sales target.", "tr": "Münhasırlık kesinlikle masada, ama bir minimum satış hedefine bağlanması gerekir." },
+        { "who": "Me", "en": "What we can't do is lock up a market as important as Germany with a partner who isn't moving units.", "tr": "Yapamayacağımız şey, Almanya kadar önemli bir pazarı ürün satamayan bir ortağa bağlamak." },
+        { "who": "Partner", "en": "Fair enough; let's have our lawyers draft the terms and aim to sign next week.", "tr": "Makul; avukatlarımız şartları taslak haline getirsin ve gelecek hafta imzalamayı hedefleyelim." },
+        { "who": "Me", "en": "Sounds good, and I'm glad we've found an arrangement that works for both sides.", "tr": "Kulağa iyi geliyor; iki taraf için de işe yarayan bir düzenleme bulduğumuza sevindim." }
+      ],
+      "vocab": [
+        { "en": "be upfront", "tr": "baştan açık sözlü olmak", "ex": "To be upfront with you, our commission is 25%.", "def": "to be honest and clear from the start" },
+        { "en": "candour", "tr": "açık sözlülük", "ex": "I appreciate your candour.", "def": "honesty in what you say, even when it is uncomfortable" },
+        { "en": "thin margin", "tr": "ince (düşük) kâr marjı", "ex": "That would leave us too thin a margin.", "def": "a very small profit on each sale" },
+        { "en": "let alone", "tr": "...şöyle dursun", "ex": "It barely covers marketing, let alone a sales network.", "def": "used to say the second thing is even less possible than the first" },
+        { "en": "middle ground", "tr": "orta yol", "ex": "Let me suggest a middle ground.", "def": "a compromise between two positions" },
+        { "en": "revisit the terms", "tr": "şartları yeniden ele almak", "ex": "We'd be willing to revisit the terms.", "def": "to discuss the conditions of a deal again" },
+        { "en": "on the table", "tr": "masada, görüşülebilir", "ex": "Exclusivity is very much on the table.", "def": "available to be discussed or offered" },
+        { "en": "be tied to", "tr": "...e bağlı olmak", "ex": "It would need to be tied to a sales target.", "def": "to depend on a particular condition" },
+        { "en": "move units", "tr": "ürün satmak", "ex": "We need a partner who is moving units.", "def": "(informal) to sell products in good numbers" },
+        { "en": "lock up a market", "tr": "bir pazarı tek bir tarafa bağlamak", "ex": "We can't lock up Germany with the wrong partner.", "def": "to give one partner control of a market so nobody else can sell there" }
+      ],
+      "grammar": {
+        "title": "Inversion with 'Should': Should the volumes justify it…",
+        "tr": "'If' yerine 'Should' ile başlayan devrik yapı koşulu daha resmî ve nazik kılar: 'Should the volumes justify it' = 'If the volumes justify it'. Müzakerede esnek ama kontrollü görünmeni sağlar.",
+        "examples": ["Should the volumes justify it, we'd be more than willing to revisit the terms.", "Should you reach the target, exclusivity is yours.", "Should anything change, we can talk again."]
+      },
+      "questions": [
+        { "q": "How does the speaker respond to the distributor's frankness?", "options": ["By matching it with equal directness", "By ending the meeting", "By ignoring the offer"], "a": 0 },
+        { "q": "According to the speaker, why is anything above 15% a problem?", "options": ["The distributor is new", "The margin would be too thin to reinvest", "They have a better offer elsewhere"], "a": 1 },
+        { "q": "What does 'let alone' imply in the distributor's reply?", "options": ["Building a sales network is cheap", "Marketing costs are falling", "If 15% doesn't even cover marketing, a sales network is out of the question"], "a": 2 },
+        { "q": "What attitude does the speaker show toward exclusivity?", "options": ["Flatly opposed to it", "Open to it, but only on performance-based terms", "Indifferent to it"], "a": 1 },
+        { "q": "What does the speaker imply with 'a partner who isn't moving units'?", "options": ["They don't want to give a key market to an underperforming partner", "They think the distributor is lazy", "They want to sell in Germany themselves right now"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "I appreciate your ___.", "a": "candour", "hint": "açık sözlülük" },
+        { "s": "It barely covers our marketing spend, let ___ a sales network.", "a": "alone", "hint": "...şöyle dursun" },
+        { "s": "Exclusivity is very much on the ___.", "a": "table", "hint": "masa (görüşülebilir)" },
+        { "s": "Let me suggest a middle ___.", "a": "ground", "hint": "orta yol" }
+      ],
+      "order": [
+        { "a": "Let me suggest a middle ground." },
+        { "a": "Exclusivity is very much on the table." }
+      ],
+      "translate": [
+        { "tr": "Satış hacimleri bunu haklı çıkarırsa şartları yeniden ele almaya fazlasıyla hazırız.", "en": "Should the volumes justify it, we'd be more than willing to revisit the terms.", "keys": ["revisit the terms", "volumes"] },
+        { "tr": "Münhasırlığın bir minimum satış hedefine bağlanması gerekir.", "en": "Exclusivity would need to be tied to a minimum sales target.", "keys": ["tied to", "minimum sales target"] }
+      ],
+      "roleplay": {
+        "persona": "Distributor",
+        "personaTr": "Distribütör",
+        "scene": "Almanya pazarını iyi tanıyan, açık sözlü bir Hollandalı distribütörle şartları masaya yatırıyorsun.",
+        "turns": [
+          { "ai": "To be upfront with you, our standard commission is 25%.", "aiTr": "Açık konuşayım, standart komisyonumuz yüzde 25.", "hint": "I appreciate your candour, and I'll be equally direct: at 25%, the numbers simply don't work for us.", "keys": ["candour", "direct", "don't work"] },
+          { "ai": "Fifteen barely covers our marketing spend, let alone building a sales network.", "aiTr": "On beş, satış ağı kurmak şöyle dursun, pazarlama harcamamızı bile zor karşılar.", "hint": "Then let me suggest a middle ground: 20% for the first year, with a formal review after twelve months.", "keys": ["middle ground", "20%", "review"] },
+          { "ai": "And if sales turn out better than expected?", "aiTr": "Peki satışlar beklenenden iyi giderse?", "hint": "Should the volumes justify it, we'd be more than willing to revisit the terms.", "keys": ["should the volumes", "revisit", "willing"] },
+          { "ai": "We'd need exclusive rights in Germany to make the investment worthwhile.", "aiTr": "Yatırımı değerli kılmak için Almanya'da münhasır haklara ihtiyacımız olur.", "hint": "Exclusivity is very much on the table, but it would need to be tied to a minimum sales target.", "keys": ["on the table", "tied to", "sales target"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Sert bir açılış yapan deneyimli bir distribütörle, ince ironi ve kendinden emin bir dille anlaşmayı şekillendiriyorsun.",
+      "text": [
+        { "who": "Partner", "en": "I'll cut to the chase: we work on 25%, and frankly, that's already generous for a product nobody in Germany has heard of yet.", "tr": "Sadede geleyim: yüzde 25 ile çalışıyoruz ve açıkçası, Almanya'da henüz kimsenin duymadığı bir ürün için bu zaten cömert bir oran." },
+        { "who": "Me", "en": "I appreciate the candour, and I'll return the favour: at 25%, the unit economics simply don't stack up for us.", "tr": "Açık sözlülüğünüz için teşekkürler, ben de aynısını yapayım: yüzde 25'te birim ekonomisi bizim için kesinlikle tutmuyor." },
+        { "who": "Me", "en": "Each unit carries real hardware costs, and beyond 15% we'd be buying growth at the expense of the R&D that keeps us ahead.", "tr": "Her cihazın ciddi bir donanım maliyeti var ve yüzde 15'in ötesinde, bizi önde tutan Ar-Ge'den feragat ederek büyüme satın almış oluruz." },
+        { "who": "Partner", "en": "Fifteen wouldn't even cover our launch marketing, never mind building a sales channel from the ground up.", "tr": "On beş, sıfırdan bir satış kanalı kurmak şöyle dursun, lansman pazarlamamızı bile karşılamaz." },
+        { "who": "Me", "en": "Then perhaps the answer is to split the difference: 20% for year one, with a proper review at the twelve-month mark.", "tr": "O zaman belki de çözüm farkı paylaşmak: ilk yıl yüzde 20, on ikinci ayda da esaslı bir değerlendirme." },
+        { "who": "Me", "en": "If the volumes are there, you'll find us more than reasonable when we revisit the terms.", "tr": "Satış hacmi gelirse, şartları yeniden ele aldığımızda bizi fazlasıyla makul bulacaksınız." },
+        { "who": "Partner", "en": "I could work with that, on the understanding that Germany is ours exclusively.", "tr": "Almanya'nın yalnızca bize ait olması şartıyla bununla çalışabilirim." },
+        { "who": "Me", "en": "In principle, yes, though I'd want exclusivity to be earned rather than simply granted, so it would hinge on a minimum sales target.", "tr": "Prensipte evet, ama münhasırlığın öylece verilmesini değil hak edilmesini isterim; yani bu bir minimum satış hedefine bağlı olur." },
+        { "who": "Me", "en": "Handing over a market like Germany on the strength of a handshake would be, shall we say, a bold move for a company our size.", "tr": "Almanya gibi bir pazarı sadece bir el sıkışmaya dayanarak devretmek, bizim büyüklüğümüzde bir şirket için, nasıl desem, cesur bir hamle olurdu." },
+        { "who": "Partner", "en": "Point taken; let's get the lawyers to paper it and aim to sign next week.", "tr": "Anlaşıldı; avukatlara yazıya döktürelim ve gelecek hafta imzalamayı hedefleyelim." },
+        { "who": "Me", "en": "Sounds good, and for what it's worth, I think this is a deal both sides can genuinely live with.", "tr": "Kulağa iyi geliyor ve bence, ne kadar önemi varsa, bu iki tarafın da gönül rahatlığıyla kabul edebileceği bir anlaşma." }
+      ],
+      "vocab": [
+        { "en": "cut to the chase", "tr": "sadede gelmek", "ex": "I'll cut to the chase.", "def": "to get to the point immediately" },
+        { "en": "return the favour", "tr": "aynı şekilde karşılık vermek", "ex": "I appreciate the candour, and I'll return the favour.", "def": "to do the same kind thing for someone that they did for you" },
+        { "en": "unit economics", "tr": "birim ekonomisi", "ex": "At 25%, the unit economics don't work.", "def": "the revenue and cost of selling one single unit" },
+        { "en": "stack up", "tr": "mantıklı olmak, tutmak", "ex": "The numbers simply don't stack up.", "def": "(of numbers or arguments) to make sense" },
+        { "en": "never mind", "tr": "...şöyle dursun", "ex": "It wouldn't cover marketing, never mind a sales channel.", "def": "used to say the second thing is even less possible" },
+        { "en": "split the difference", "tr": "farkı paylaşmak, ortada buluşmak", "ex": "Perhaps we should split the difference at 20%.", "def": "to agree on an amount halfway between two offers" },
+        { "en": "on the understanding that", "tr": "...şartıyla", "ex": "I could work with that, on the understanding that Germany is ours.", "def": "on the condition that" },
+        { "en": "hinge on", "tr": "tamamen ...e bağlı olmak", "ex": "Exclusivity would hinge on a minimum sales target.", "def": "to depend completely on something" },
+        { "en": "on the strength of", "tr": "...e dayanarak", "ex": "We can't hand over Germany on the strength of a handshake.", "def": "because of or based on something" },
+        { "en": "paper a deal", "tr": "anlaşmayı yazıya dökmek", "ex": "Let's get the lawyers to paper it.", "def": "(informal) to turn an agreement into formal documents" }
+      ],
+      "grammar": {
+        "title": "Softening and understatement",
+        "tr": "Sert bir 'hayır' demek yerine ince ifadelerle sınır çizilir: 'shall we say' ironik bir yumuşatma katar, 'perhaps' öneriyi dayatmadan sunar, 'for what it's worth' kendi görüşünü alçakgönüllüce ekler.",
+        "examples": ["It would be, shall we say, a bold move for a company our size.", "Then perhaps the answer is to split the difference.", "For what it's worth, I think this is a deal both sides can live with."]
+      },
+      "questions": [
+        { "q": "How does the distributor justify asking for 25%?", "options": ["The product is still unknown in Germany", "Their lawyers are expensive", "The device is too heavy to ship"], "a": 0 },
+        { "q": "What does the speaker mean by 'the unit economics don't stack up'?", "options": ["The device is too cheap to make", "At that commission, each sale wouldn't make enough financial sense", "The distributor's maths is wrong"], "a": 1 },
+        { "q": "What is the tone of 'a bold move for a company our size'?", "options": ["Openly aggressive", "Enthusiastic", "Ironic understatement meaning it would be unwise"], "a": 2 },
+        { "q": "What does the speaker imply by wanting exclusivity 'earned rather than simply granted'?", "options": ["Exclusivity is out of the question", "The distributor must prove itself through sales first", "The distributor should pay an upfront fee"], "a": 1 },
+        { "q": "What is the overall tone of the negotiation?", "options": ["Tense, with both sides close to walking away", "Polite but distant", "Frank and firm, but constructive on both sides"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I'll cut to the ___.", "a": "chase", "hint": "sadede gelmek" },
+        { "s": "At 25%, the unit economics don't ___ up.", "a": "stack", "hint": "tutmak, mantıklı olmak" },
+        { "s": "Perhaps the answer is to split the ___.", "a": "difference", "hint": "fark" },
+        { "s": "Exclusivity would ___ on a minimum sales target.", "a": "hinge", "hint": "bağlı olmak" }
+      ],
+      "order": [
+        { "a": "Let's get the lawyers to paper it." },
+        { "a": "Perhaps the answer is to split the difference." }
+      ],
+      "translate": [
+        { "tr": "Sadede geleyim: yüzde 25 ile çalışıyoruz.", "en": "I'll cut to the chase: we work on 25%.", "keys": ["cut to the chase", "we work on"] },
+        { "tr": "Münhasırlık bir minimum satış hedefine bağlı olur.", "en": "Exclusivity would hinge on a minimum sales target.", "keys": ["hinge on", "minimum sales target"] },
+        { "tr": "Bu, iki tarafın da gerçekten kabul edebileceği bir anlaşma.", "en": "This is a deal both sides can genuinely live with.", "keys": ["both sides", "live with"] }
+      ],
+      "roleplay": {
+        "persona": "Distributor",
+        "personaTr": "Distribütör",
+        "scene": "Sert bir açılış yapmaktan çekinmeyen deneyimli bir Hollandalı distribütörle Almanya anlaşmasını pazarlık ediyorsun.",
+        "turns": [
+          { "ai": "I'll cut to the chase: we work on 25%, and that's generous for a product nobody here has heard of.", "aiTr": "Sadede geleyim: yüzde 25 ile çalışıyoruz ve burada kimsenin duymadığı bir ürün için bu cömert bile.", "hint": "I appreciate the candour, and I'll return the favour: at 25%, the unit economics simply don't stack up for us.", "keys": ["return the favour", "unit economics", "stack up"] },
+          { "ai": "Fifteen wouldn't even cover our launch marketing, never mind a sales channel.", "aiTr": "On beş, satış kanalı şöyle dursun, lansman pazarlamamızı bile karşılamaz.", "hint": "Then perhaps the answer is to split the difference: 20% for year one, with a proper review at the twelve-month mark.", "keys": ["split the difference", "year one", "review"] },
+          { "ai": "I could work with that, on the understanding that Germany is ours exclusively.", "aiTr": "Almanya'nın yalnızca bize ait olması şartıyla bununla çalışabilirim.", "hint": "In principle, yes, though exclusivity would have to be earned, so it would hinge on a minimum sales target.", "keys": ["in principle", "hinge on", "earned"] },
+          { "ai": "You don't think a handshake and a bit of trust would do?", "aiTr": "Bir el sıkışma ve biraz güvenin yeteceğini düşünmüyor musunuz?", "hint": "Handing over a market like Germany on the strength of a handshake would be, shall we say, a bold move for a company our size.", "keys": ["on the strength of", "bold move", "shall we say"] }
+        ]
+      }
+    }
+  }
+}

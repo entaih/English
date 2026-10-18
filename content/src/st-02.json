@@ -1,0 +1,373 @@
+{
+  "id": "st-02",
+  "topic": "startup",
+  "title": "How I Manage a Small Team",
+  "titleTr": "Küçük Bir Ekibi Nasıl Yönetiyorum",
+  "levels": {
+    "A1": {
+      "intro": "Ekibini nasıl yönettiğini çok basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "en": "I have a small team of six people.", "tr": "Altı kişilik küçük bir ekibim var." },
+        { "en": "We have a short meeting every Monday morning.", "tr": "Her pazartesi sabahı kısa bir toplantı yaparız." },
+        { "en": "Everyone talks about their work and their problems.", "tr": "Herkes kendi işinden ve sorunlarından bahseder." },
+        { "en": "I give clear tasks with a deadline.", "tr": "Son tarihi olan net görevler veririm." },
+        { "en": "When there is a problem, we fix it together.", "tr": "Bir sorun olduğunda onu birlikte çözeriz." },
+        { "en": "I do not blame my team.", "tr": "Ekibimi suçlamam." },
+        { "en": "I listen more than I talk.", "tr": "Konuştuğumdan daha çok dinlerim." },
+        { "en": "I trust my team because they are experts.", "tr": "Ekibime güvenirim çünkü onlar uzman." }
+      ],
+      "vocab": [
+        { "en": "team", "tr": "ekip", "ex": "I have a small team of six people.", "def": "a group of people who work together" },
+        { "en": "meeting", "tr": "toplantı", "ex": "We have a short meeting every Monday.", "def": "a time when people meet to talk about work" },
+        { "en": "task", "tr": "görev", "ex": "I give clear tasks.", "def": "a piece of work to do" },
+        { "en": "deadline", "tr": "son tarih", "ex": "Every task has a deadline.", "def": "the day when work must be finished" },
+        { "en": "listen", "tr": "dinlemek", "ex": "I listen more than I talk.", "def": "to pay attention to what someone says" },
+        { "en": "trust", "tr": "güvenmek", "ex": "I trust my team.", "def": "to believe that someone is good and honest" }
+      ],
+      "grammar": {
+        "title": "Present simple: things I do every week",
+        "tr": "Düzenli yaptığımız şeyler için present simple kullanırız: I give, we have. He, she, it ve 'everyone' ile fiile -s ekleriz: everyone talks.",
+        "examples": ["We have a short meeting every Monday morning.", "Everyone talks about their work.", "I give clear tasks with a deadline."]
+      },
+      "questions": [
+        { "q": "When is the team meeting?", "options": ["Every Friday evening", "Every Monday morning", "Every day"], "a": 1 },
+        { "q": "How many people are in the team?", "options": ["Six", "Two", "Twelve"], "a": 0 },
+        { "q": "What do they do when there is a problem?", "options": ["They stop working", "They call a doctor", "They fix it together"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I give clear tasks with a ___.", "a": "deadline", "hint": "son tarih" },
+        { "s": "We have a short ___ every Monday morning.", "a": "meeting", "hint": "toplantı" },
+        { "s": "I ___ my team because they are experts.", "a": "trust", "hint": "güvenmek" }
+      ],
+      "order": [
+        { "a": "We have a short meeting every Monday morning." },
+        { "a": "I listen more than I talk." }
+      ],
+      "translate": [
+        { "tr": "Ekibime güvenirim.", "en": "I trust my team.", "keys": ["trust", "my team"] },
+        { "tr": "Her pazartesi sabahı bir toplantı yaparız.", "en": "We have a meeting every Monday morning.", "keys": ["meeting", "Monday morning"] }
+      ],
+      "roleplay": {
+        "persona": "New engineer",
+        "personaTr": "Yeni mühendis",
+        "scene": "Ekibe bu hafta katılan yeni mühendis, nasıl çalıştığınızı soruyor.",
+        "turns": [
+          { "ai": "Hi! How does the team work?", "aiTr": "Merhaba! Ekip nasıl çalışıyor?", "hint": "We have a short meeting every Monday morning.", "keys": ["meeting", "Monday"] },
+          { "ai": "I have a problem with my task. What do I do?", "aiTr": "Görevimle ilgili bir sorunum var. Ne yapayım?", "hint": "Tell me, and we fix it together.", "keys": ["together", "fix", "tell"] },
+          { "ai": "What is my first task?", "aiTr": "İlk görevim ne?", "hint": "Please finish the test report by Friday.", "keys": ["report", "Friday", "finish"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Haftalık toplantıyı, görev dağılımını ve ekibe nasıl davrandığını anlatıyorsun.",
+      "text": [
+        { "en": "I manage a small team, so communication is very important.", "tr": "Küçük bir ekibi yönetiyorum, bu yüzden iletişim çok önemli." },
+        { "en": "Every Monday morning, we have a short team meeting.", "tr": "Her pazartesi sabahı kısa bir ekip toplantısı yaparız." },
+        { "en": "Everyone says what they did, what they will do and what is blocking them.", "tr": "Herkes ne yaptığını, ne yapacağını ve onu neyin engellediğini söyler." },
+        { "en": "I try to give clear tasks with a deadline.", "tr": "Son tarihi olan net görevler vermeye çalışırım." },
+        { "en": "For example, I might say: 'Please finish the test report by Friday.'", "tr": "Örneğin şöyle diyebilirim: 'Lütfen test raporunu cumaya kadar bitir.'" },
+        { "en": "When there's a problem, we solve it together and I don't blame anyone.", "tr": "Bir sorun olduğunda birlikte çözeriz ve kimseyi suçlamam." },
+        { "en": "I also give feedback often, both positive and negative.", "tr": "Ayrıca hem olumlu hem olumsuz, sık sık geri bildirim veririm." },
+        { "en": "I think a good leader listens more than they talk.", "tr": "Bence iyi bir lider konuştuğundan daha çok dinler." },
+        { "en": "In the end, I trust my team because they're experts in their work.", "tr": "Sonuçta ekibime güveniyorum çünkü onlar kendi işlerinde uzman." }
+      ],
+      "vocab": [
+        { "en": "manage a team", "tr": "bir ekibi yönetmek", "ex": "I manage a small team of six people.", "def": "to lead and organise a group of people" },
+        { "en": "communication", "tr": "iletişim", "ex": "In a small team, communication is very important.", "def": "sharing information with other people" },
+        { "en": "team meeting", "tr": "ekip toplantısı", "ex": "We have a short team meeting on Mondays.", "def": "a meeting for everyone in the team" },
+        { "en": "task", "tr": "görev", "ex": "I give clear tasks.", "def": "a piece of work someone must do" },
+        { "en": "deadline", "tr": "son teslim tarihi", "ex": "The deadline is Friday.", "def": "the time when work must be finished" },
+        { "en": "blame", "tr": "suçlamak", "ex": "I don't blame anyone.", "def": "to say a problem is someone's fault" },
+        { "en": "give feedback", "tr": "geri bildirim vermek", "ex": "I give feedback often.", "def": "to tell someone what is good or bad about their work" },
+        { "en": "trust", "tr": "güvenmek", "ex": "I trust my team.", "def": "to believe someone will do the right thing" }
+      ],
+      "grammar": {
+        "title": "So and because: result and reason",
+        "tr": "'Because' bir şeyin nedenini, 'so' ise sonucunu verir. 'Because' nedenin önüne, 'so' sonucun önüne gelir.",
+        "examples": ["I manage a small team, so communication is very important.", "I trust my team because they're experts in their work."]
+      },
+      "questions": [
+        { "q": "When is the team meeting?", "options": ["Every Friday", "Every day", "Every Monday morning"], "a": 2 },
+        { "q": "What does everyone talk about in the meeting?", "options": ["Their salary", "Their work and what is blocking them", "Their holiday plans"], "a": 1 },
+        { "q": "What does the speaker do when there is a problem?", "options": ["Solves it with the team", "Finds someone to blame", "Ignores it"], "a": 0 },
+        { "q": "Why does the speaker trust the team?", "options": ["They are friends", "They work at night", "They are experts in their work"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I try to give clear tasks with a ___.", "a": "deadline", "hint": "son tarih" },
+        { "s": "We solve it together and I don't ___ anyone.", "a": "blame", "hint": "suçlamak" },
+        { "s": "I give ___ often, both positive and negative.", "a": "feedback", "hint": "geri bildirim" }
+      ],
+      "order": [
+        { "a": "Every Monday we have a short team meeting." },
+        { "a": "A good leader listens more than they talk." }
+      ],
+      "translate": [
+        { "tr": "Ekibime güveniyorum çünkü onlar uzman.", "en": "I trust my team because they're experts.", "keys": ["trust my team", "because"] },
+        { "tr": "Lütfen raporu cumaya kadar bitir.", "en": "Please finish the report by Friday.", "keys": ["finish", "report", "by Friday"] }
+      ],
+      "roleplay": {
+        "persona": "New engineer",
+        "personaTr": "Yeni işe başlayan mühendis",
+        "scene": "Ekibe bu hafta katılan yeni yazılım mühendisi, nasıl çalıştığınızı soruyor.",
+        "turns": [
+          { "ai": "Hi! It's my first week here. How does the team work?", "aiTr": "Merhaba! Burada ilk haftam. Ekip nasıl çalışıyor?", "hint": "Every Monday morning we have a short team meeting, and everyone says what they did.", "keys": ["meeting", "Monday", "everyone"] },
+          { "ai": "What should I do if I have a problem with my task?", "aiTr": "Görevimle ilgili bir sorunum olursa ne yapmalıyım?", "hint": "Tell me early, and we'll solve it together. I don't blame anyone.", "keys": ["together", "solve", "blame", "tell"] },
+          { "ai": "Great. So what's my first task?", "aiTr": "Harika. Peki ilk görevim ne?", "hint": "Please finish the test report by Friday. That's your deadline.", "keys": ["deadline", "report", "Friday"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Küçük bir ekibi yönetirken öğrendiklerini ve günlük çalışma düzenini anlatıyorsun.",
+      "text": [
+        { "en": "Managing a small team of six isn't easy, but I've learned a lot since we started.", "tr": "Altı kişilik küçük bir ekibi yönetmek kolay değil ama başladığımızdan beri çok şey öğrendim." },
+        { "en": "Every Monday morning, we have a short meeting where everyone shares three things.", "tr": "Her pazartesi sabahı herkesin üç şey paylaştığı kısa bir toplantı yaparız." },
+        { "en": "They say what they did last week, what they're going to do this week and what's blocking them.", "tr": "Geçen hafta ne yaptıklarını, bu hafta ne yapacaklarını ve onları neyin engellediğini söylerler." },
+        { "en": "I've found that clear tasks with clear deadlines save everyone a lot of time.", "tr": "Net son tarihleri olan net görevlerin herkese çok zaman kazandırdığını gördüm." },
+        { "en": "Instead of 'Can you look at the report?', I say 'Please finish the test report by Friday.'", "tr": "'Rapora bakabilir misin?' yerine 'Lütfen test raporunu cumaya kadar bitir.' derim." },
+        { "en": "When something goes wrong, we try to solve it together instead of looking for someone to blame.", "tr": "Bir şeyler ters gittiğinde suçlayacak birini aramak yerine birlikte çözmeye çalışırız." },
+        { "en": "I also give feedback often, and I try to make it honest but kind.", "tr": "Ayrıca sık sık geri bildirim veririm ve bunu dürüst ama nazik bir şekilde yapmaya çalışırım." },
+        { "en": "However, the most important thing I've learned is that a good leader should listen more than they talk.", "tr": "Ancak öğrendiğim en önemli şey, iyi bir liderin konuştuğundan daha çok dinlemesi gerektiği." },
+        { "en": "In the end, I have to trust my team, because they know their work better than I do.", "tr": "Sonuçta ekibime güvenmek zorundayım, çünkü kendi işlerini benden daha iyi biliyorlar." }
+      ],
+      "vocab": [
+        { "en": "what's blocking you", "tr": "seni engelleyen şey", "ex": "Everyone shares what's blocking them.", "def": "the problem that stops you from moving forward" },
+        { "en": "save time", "tr": "zaman kazandırmak", "ex": "Clear deadlines save everyone a lot of time.", "def": "to make something take less time" },
+        { "en": "meet a deadline", "tr": "son tarihe yetiştirmek", "ex": "Clear tasks help people meet their deadlines.", "def": "to finish work by the time it is due" },
+        { "en": "go wrong", "tr": "ters gitmek", "ex": "When something goes wrong, we solve it together.", "def": "to stop working well or have a bad result" },
+        { "en": "instead of", "tr": "...yerine", "ex": "I say 'Please finish it by Friday' instead of 'Can you look at it?'", "def": "in place of something else" },
+        { "en": "look for someone to blame", "tr": "suçlayacak birini aramak", "ex": "We don't look for someone to blame.", "def": "to try to find a person whose fault a problem is" },
+        { "en": "honest but kind", "tr": "dürüst ama nazik", "ex": "I try to make my feedback honest but kind.", "def": "telling the truth in a gentle way" },
+        { "en": "give feedback", "tr": "geri bildirim vermek", "ex": "I give feedback often.", "def": "to tell someone what is good or bad about their work" }
+      ],
+      "grammar": {
+        "title": "Present perfect: what I've learned",
+        "tr": "'have/has + V3' ile geçmişten bugüne uzanan deneyimleri anlatırız: I've learned, I've found. Ne zaman olduğu değil, bugünkü sonucu önemlidir.",
+        "examples": ["I've learned a lot since we started.", "I've found that clear tasks save everyone a lot of time.", "The most important thing I've learned is to listen."]
+      },
+      "questions": [
+        { "q": "What three things does everyone share on Monday?", "options": ["Their goals, their salary and their holidays", "What they did, what they will do and what's blocking them", "Their best idea, their worst idea and a question"], "a": 1 },
+        { "q": "Why does the speaker give tasks with clear deadlines?", "options": ["Because they save everyone time", "Because the team is lazy", "Because investors ask for it"], "a": 0 },
+        { "q": "What happens when something goes wrong?", "options": ["The speaker blames the engineer", "The task is cancelled", "The team solves it together"], "a": 2 },
+        { "q": "What is the most important thing the speaker has learned?", "options": ["A leader should talk a lot", "A leader should listen more than they talk", "A leader should work alone"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Clear deadlines save everyone a lot of ___.", "a": "time", "hint": "zaman" },
+        { "s": "When something goes ___, we solve it together.", "a": "wrong", "hint": "ters gitmek" },
+        { "s": "I try to make my feedback honest but ___.", "a": "kind", "hint": "nazik" }
+      ],
+      "order": [
+        { "a": "We have a short meeting every Monday morning." },
+        { "a": "A good leader should listen more than they talk." }
+      ],
+      "translate": [
+        { "tr": "Bir şeyler ters gittiğinde birlikte çözeriz.", "en": "When something goes wrong, we solve it together.", "keys": ["goes wrong", "together"] },
+        { "tr": "Başladığımızdan beri çok şey öğrendim.", "en": "I've learned a lot since we started.", "keys": ["learned a lot", "since we started"] }
+      ],
+      "roleplay": {
+        "persona": "New engineer",
+        "personaTr": "Yeni işe başlayan mühendis",
+        "scene": "Ekibe bu hafta katılan yeni yazılım mühendisi, nasıl çalıştığınızı ve ondan ne beklediğini soruyor.",
+        "turns": [
+          { "ai": "Hi, it's my first week. How does the team usually work?", "aiTr": "Merhaba, ilk haftam. Ekip genelde nasıl çalışıyor?", "hint": "Every Monday morning we have a short meeting where everyone shares what they did, what they're going to do and what's blocking them.", "keys": ["Monday", "meeting", "blocking"] },
+          { "ai": "What should I do if something goes wrong with my task?", "aiTr": "Görevimde bir şeyler ters giderse ne yapmalıyım?", "hint": "Tell me early, and we'll solve it together. We don't look for someone to blame.", "keys": ["together", "blame", "solve"] },
+          { "ai": "How will I know if I'm doing a good job?", "aiTr": "İyi iş çıkarıp çıkarmadığımı nasıl anlayacağım?", "hint": "I give feedback often, and I try to make it honest but kind.", "keys": ["feedback", "honest", "kind"] },
+          { "ai": "OK, so what's my first task?", "aiTr": "Tamam, peki ilk görevim ne?", "hint": "Please finish the test report by Friday. That's your deadline.", "keys": ["report", "Friday", "deadline"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Küçük bir ekipte iletişimi, sorumlulukları ve suçlama kültüründen kaçınmayı nasıl yönettiğini anlatıyorsun.",
+      "text": [
+        { "en": "Running a team of six means there's nowhere to hide, so communication has to be good.", "tr": "Altı kişilik bir ekibi yönetmek saklanacak hiçbir yer olmadığı anlamına gelir, bu yüzden iletişimin iyi olması şart." },
+        { "en": "Our week starts with a Monday stand-up, which we try to keep short and focused.", "tr": "Haftamız, kısa ve odaklı tutmaya çalıştığımız bir pazartesi toplantısıyla başlar." },
+        { "en": "Each person is asked to cover three things: what they've done, what they're doing next and what's blocking them.", "tr": "Herkesten üç şeyi anlatması istenir: ne yaptığı, sırada ne yapacağı ve onu neyin engellediği." },
+        { "en": "I've learned that vague requests tend to get vague results, so every task is given a clear owner and a deadline.", "tr": "Belirsiz isteklerin belirsiz sonuçlar doğurduğunu öğrendim, bu yüzden her göreve net bir sorumlu ve bir son tarih verilir." },
+        { "en": "Rather than 'Could you look at the report?', I'd say 'Please finish the test report by Friday.'", "tr": "'Rapora bir bakabilir misin?' yerine 'Lütfen test raporunu cumaya kadar bitir.' derim." },
+        { "en": "When something goes wrong, the question isn't who caused it, but how we fix it and stop it happening again.", "tr": "Bir şeyler ters gittiğinde soru kimin neden olduğu değil, nasıl düzelteceğimiz ve tekrarlanmasını nasıl önleyeceğimizdir." },
+        { "en": "If people were afraid of being blamed, they'd simply stop telling me about problems.", "tr": "İnsanlar suçlanmaktan korksaydı, bana sorunları anlatmayı bırakırlardı." },
+        { "en": "I give feedback often, both positive and negative, and I ask the team to do the same for me.", "tr": "Hem olumlu hem olumsuz, sık sık geri bildirim veririm ve ekipten de bana aynısını yapmasını isterim." },
+        { "en": "One of our engineers once told me that I talked too much in meetings, and she was right.", "tr": "Mühendislerimizden biri bir keresinde toplantılarda çok fazla konuştuğumu söyledi ve haklıydı." },
+        { "en": "Since then, I've tried to listen more than I talk.", "tr": "O zamandan beri konuştuğumdan daha çok dinlemeye çalışıyorum." },
+        { "en": "At the end of the day, they're the experts, and my job is mostly to trust them and clear the way.", "tr": "Sonuçta uzman olan onlar; benim işim de çoğunlukla onlara güvenmek ve önlerini açmak." }
+      ],
+      "vocab": [
+        { "en": "nowhere to hide", "tr": "saklanacak yer olmaması", "ex": "In a team of six, there's nowhere to hide.", "def": "a situation where everyone can see your work and mistakes" },
+        { "en": "stand-up", "tr": "kısa durum toplantısı", "ex": "Our week starts with a Monday stand-up.", "def": "a short meeting where everyone gives a quick update" },
+        { "en": "vague request", "tr": "belirsiz istek", "ex": "I try not to send vague requests.", "def": "a request that is not clear or exact" },
+        { "en": "a clear owner", "tr": "net bir sorumlu", "ex": "Every task is given a clear owner.", "def": "one person who is responsible for a task" },
+        { "en": "tend to", "tr": "-me eğiliminde olmak", "ex": "Vague requests tend to get vague results.", "def": "to usually do or be something" },
+        { "en": "stop something happening again", "tr": "bir şeyin tekrarlanmasını önlemek", "ex": "We fix it and stop it happening again.", "def": "to make sure a problem does not happen a second time" },
+        { "en": "be afraid of being blamed", "tr": "suçlanmaktan korkmak", "ex": "If people were afraid of being blamed, they'd hide problems.", "def": "to worry that people will say something is your fault" },
+        { "en": "at the end of the day", "tr": "sonuçta, nihayetinde", "ex": "At the end of the day, they're the experts.", "def": "when everything is considered" },
+        { "en": "clear the way", "tr": "önünü açmak", "ex": "My job is to trust them and clear the way.", "def": "to remove problems so that others can move forward" }
+      ],
+      "grammar": {
+        "title": "Passive voice: describing how things work",
+        "tr": "Bir süreci anlatırken kimin yaptığı değil, ne yapıldığı önemliyse 'be + V3' kullanırız. Ekip kurallarını anlatırken daha nesnel ve kurumsal duyulur.",
+        "examples": ["Each person is asked to cover three things.", "Every task is given a clear owner and a deadline.", "If people were afraid of being blamed, they'd stop telling me about problems."]
+      },
+      "questions": [
+        { "q": "What is each person asked to cover at the Monday stand-up?", "options": ["Their budget for the month", "What they've done, what's next and what's blocking them", "Their opinion of the manager"], "a": 1 },
+        { "q": "According to the speaker, what happens when requests are vague?", "options": ["The results are vague too", "People work faster", "Deadlines become shorter"], "a": 0 },
+        { "q": "Why doesn't the speaker look for someone to blame?", "options": ["Because the company has a legal rule about it", "Because mistakes never happen", "Because people would stop reporting problems"], "a": 2 },
+        { "q": "What did one of the engineers tell the speaker?", "options": ["That the deadlines were too short", "That the speaker talked too much in meetings", "That she wanted a new task"], "a": 1 },
+        { "q": "What can we infer about how the speaker sees their own role?", "options": ["They see their job as supporting the team rather than controlling it", "They see themselves as the main expert on every task", "They think meetings are a waste of time"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "In a team of six, there's nowhere to ___.", "a": "hide", "hint": "saklanmak" },
+        { "s": "Vague requests ___ to get vague results.", "a": "tend", "hint": "eğiliminde olmak" },
+        { "s": "My job is mostly to trust them and clear the ___.", "a": "way", "hint": "yol (önünü açmak)" }
+      ],
+      "order": [
+        { "a": "Our week starts with a short Monday stand-up." },
+        { "a": "I've tried to listen more than I talk." }
+      ],
+      "translate": [
+        { "tr": "İnsanlar suçlanmaktan korksaydı, bana sorunları anlatmayı bırakırlardı.", "en": "If people were afraid of being blamed, they'd stop telling me about problems.", "keys": ["afraid of being blamed", "stop telling me"] },
+        { "tr": "Her göreve net bir sorumlu ve bir son tarih verilir.", "en": "Every task is given a clear owner and a deadline.", "keys": ["clear owner", "deadline"] }
+      ],
+      "roleplay": {
+        "persona": "New engineer",
+        "personaTr": "Yeni işe başlayan mühendis",
+        "scene": "Ekibe bu hafta katılan yeni yazılım mühendisi, ekip kültürünü ve senden ne bekleyeceğini öğrenmek istiyor.",
+        "turns": [
+          { "ai": "So how do things usually work around here?", "aiTr": "Peki burada işler genelde nasıl yürüyor?", "hint": "Our week starts with a short Monday stand-up, where everyone covers what they've done, what's next and what's blocking them.", "keys": ["stand-up", "blocking", "Monday"] },
+          { "ai": "What happens if I make a mistake? Will I get in trouble?", "aiTr": "Bir hata yaparsam ne olur? Başım derde girer mi?", "hint": "No, the question isn't who caused it, but how we fix it and stop it happening again.", "keys": ["fix it", "who caused", "happening again"] },
+          { "ai": "How will I know what's expected of me?", "aiTr": "Benden ne beklendiğini nasıl bileceğim?", "hint": "Every task is given a clear owner and a deadline, and I give feedback often, both positive and negative.", "keys": ["clear owner", "deadline", "feedback"] },
+          { "ai": "And if I think you're doing something wrong, can I tell you?", "aiTr": "Peki senin yanlış bir şey yaptığını düşünürsem sana söyleyebilir miyim?", "hint": "Of course. One of our engineers once told me I talked too much in meetings, and she was right.", "keys": ["of course", "told me", "she was right"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Küçük bir ekibi yönetme felsefeni; net sorumluluklar, suçlamasız bir kültür ve dinlemeyi öğrenmek üzerinden anlatıyorsun.",
+      "text": [
+        { "en": "With only six of us, there's no room for the kind of miscommunication that bigger companies can absorb.", "tr": "Sadece altı kişi olduğumuz için, büyük şirketlerin kaldırabileceği türden yanlış anlaşılmalara yerimiz yok." },
+        { "en": "The one ritual we never skip is the Monday morning stand-up.", "tr": "Asla atlamadığımız tek ritüel, pazartesi sabahı yaptığımız kısa toplantı." },
+        { "en": "Everyone covers three things, namely what they've delivered, what's coming next and what's blocking them, and we keep it brisk.", "tr": "Herkes üç şeyi anlatır, yani neyi teslim ettiğini, sırada ne olduğunu ve onu neyin engellediğini; toplantıyı da kısa ve tempolu tutarız." },
+        { "en": "What I've learned the hard way is that a vague request almost always produces a vague result.", "tr": "Acı tecrübeyle öğrendiğim şey, belirsiz bir isteğin neredeyse her zaman belirsiz bir sonuç doğurduğu." },
+        { "en": "So every task now comes with a single owner and a hard deadline: not 'have a look at the report', but 'finish the test report by Friday'.", "tr": "Bu yüzden artık her görevin tek bir sorumlusu ve kesin bir son tarihi var: 'rapora bir göz at' değil, 'test raporunu cumaya kadar bitir'." },
+        { "en": "When something goes wrong, the focus is on fixing the process rather than finding a culprit.", "tr": "Bir şeyler ters gittiğinde odak, bir suçlu bulmak değil süreci düzeltmektir." },
+        { "en": "Were people to feel they'd be blamed for mistakes, they'd simply stop flagging problems early, which is the last thing a startup can afford.", "tr": "İnsanlar hatalar yüzünden suçlanacaklarını hissetseydi, sorunları erkenden dile getirmeyi bırakırlardı; bu da bir girişimin kaldırabileceği en son şey." },
+        { "en": "I give feedback often, positive and negative alike, and I actively ask for it in return.", "tr": "Olumlu olsun olumsuz olsun sık sık geri bildirim veririm ve karşılığında da bunu aktif olarak isterim." },
+        { "en": "Not long ago, one of our engineers pointed out that I tended to dominate meetings, which stung, if I'm honest.", "tr": "Kısa süre önce mühendislerimizden biri toplantılarda konuşmayı tekeline alma eğiliminde olduğumu söyledi; dürüst olmak gerekirse bu biraz canımı yaktı." },
+        { "en": "She was right, though, and since then I've made a point of listening more than I talk.", "tr": "Yine de haklıydı ve o zamandan beri konuştuğumdan daha çok dinlemeye özen gösteriyorum." },
+        { "en": "Having hired people who know their craft far better than I do, I see my job as trusting them and clearing obstacles out of their way.", "tr": "İşini benden çok daha iyi bilen insanları işe aldığım için, görevimi onlara güvenmek ve önlerindeki engelleri kaldırmak olarak görüyorum." }
+      ],
+      "vocab": [
+        { "en": "absorb", "tr": "kaldırmak, sindirmek", "ex": "Bigger companies can absorb a bit of miscommunication.", "def": "to deal with a cost or problem without serious damage" },
+        { "en": "keep it brisk", "tr": "kısa ve tempolu tutmak", "ex": "We keep the stand-up brisk.", "def": "to keep something quick and energetic" },
+        { "en": "learn the hard way", "tr": "acı tecrübeyle öğrenmek", "ex": "I've learned the hard way that vague requests produce vague results.", "def": "to learn something through a bad experience" },
+        { "en": "hard deadline", "tr": "kesin son tarih", "ex": "Every task comes with a hard deadline.", "def": "a deadline that cannot be moved" },
+        { "en": "culprit", "tr": "suçlu, sorumlu", "ex": "We fix the process rather than finding a culprit.", "def": "the person or thing responsible for a problem" },
+        { "en": "flag a problem", "tr": "bir sorunu dile getirmek", "ex": "People stop flagging problems early if they fear blame.", "def": "to point out a problem so that others notice it" },
+        { "en": "the last thing you can afford", "tr": "kaldırabileceğin en son şey", "ex": "Hidden problems are the last thing a startup can afford.", "def": "something that would be very harmful for you" },
+        { "en": "dominate a meeting", "tr": "toplantıda konuşmayı tekeline almak", "ex": "I tended to dominate meetings.", "def": "to talk so much that others cannot contribute" },
+        { "en": "make a point of", "tr": "özellikle özen göstermek", "ex": "I've made a point of listening more than I talk.", "def": "to deliberately make sure you always do something" },
+        { "en": "know your craft", "tr": "işini iyi bilmek", "ex": "I've hired people who know their craft.", "def": "to be highly skilled at your work" }
+      ],
+      "grammar": {
+        "title": "Inverted conditionals: 'Were people to…'",
+        "tr": "Resmî ve vurgulu bir şart cümlesi için 'if' düşer ve 'were' özneden önce gelir: 'Were people to feel…' = 'If people felt…'. Ciddi konuşmalarda ve yazıda kullanılır.",
+        "examples": ["Were people to feel they'd be blamed, they'd stop flagging problems.", "Were we to skip the stand-up, things would slip.", "Were I to dominate every meeting, nobody would speak up."]
+      },
+      "questions": [
+        { "q": "What is the one ritual the team never skips?", "options": ["The Friday review", "The Monday morning stand-up", "A monthly team dinner"], "a": 1 },
+        { "q": "Why does the speaker insist on a single owner and a hard deadline?", "options": ["Because vague requests tend to produce vague results", "Because investors require it", "Because the engineers asked for it"], "a": 0 },
+        { "q": "What does the speaker imply about blaming people for mistakes?", "options": ["It makes people work harder", "It is necessary in a small team", "It would make people hide problems until it is too late"], "a": 2 },
+        { "q": "How did the speaker react to the engineer's criticism?", "options": ["Angrily and defensively", "It hurt a little, but they accepted she was right", "With complete indifference"], "a": 1 },
+        { "q": "What is the speaker's overall attitude to leadership?", "options": ["Leaders should control every detail", "Leaders should avoid giving feedback", "Leaders should trust skilled people and remove obstacles"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I've learned the ___ way that vague requests produce vague results.", "a": "hard", "hint": "acı tecrübeyle" },
+        { "s": "The focus is on fixing the process rather than finding a ___.", "a": "culprit", "hint": "suçlu" },
+        { "s": "People would simply stop ___ problems early.", "a": "flagging", "hint": "dile getirmek" },
+        { "s": "I've made a ___ of listening more than I talk.", "a": "point", "hint": "özen göstermek" }
+      ],
+      "order": [
+        { "a": "The one ritual we never skip is the Monday stand-up." },
+        { "a": "I've made a point of listening more than I talk." }
+      ],
+      "translate": [
+        { "tr": "Belirsiz bir istek neredeyse her zaman belirsiz bir sonuç doğurur.", "en": "A vague request almost always produces a vague result.", "keys": ["vague request", "vague result"] },
+        { "tr": "Suçlu aramak yerine süreci düzeltmeye odaklanırız.", "en": "We focus on fixing the process rather than finding a culprit.", "keys": ["fixing the process", "culprit"] }
+      ],
+      "roleplay": {
+        "persona": "New engineer",
+        "personaTr": "Yeni işe başlayan mühendis",
+        "scene": "Önceki işinde katı bir yönetim görmüş yeni mühendis, burada işlerin nasıl yürüdüğünü anlamaya çalışıyor.",
+        "turns": [
+          { "ai": "I'm still finding my feet here; how do you like to run things?", "aiTr": "Hâlâ buraya alışmaya çalışıyorum; işleri nasıl yürütmeyi seviyorsun?", "hint": "The one ritual we never skip is the Monday stand-up, where everyone covers what they've delivered, what's next and what's blocking them.", "keys": ["stand-up", "ritual", "blocking"] },
+          { "ai": "How specific should I expect tasks to be?", "aiTr": "Görevlerin ne kadar net olmasını beklemeliyim?", "hint": "Very specific: every task comes with a single owner and a hard deadline, because I've learned the hard way that vague requests produce vague results.", "keys": ["single owner", "hard deadline", "vague"] },
+          { "ai": "Honestly, at my last job, mistakes got people into real trouble.", "aiTr": "Açıkçası, önceki işimde hatalar insanların başını ciddi derde sokuyordu.", "hint": "Here the focus is on fixing the process rather than finding a culprit, so please flag problems early.", "keys": ["culprit", "fixing the process", "flag"] },
+          { "ai": "Would you actually want to hear it if I disagreed with how you run meetings?", "aiTr": "Toplantıları yönetme biçimine katılmasam bunu gerçekten duymak ister misin?", "hint": "Absolutely; one of our engineers pointed out that I tended to dominate meetings, and since then I've made a point of listening more.", "keys": ["absolutely", "dominate", "made a point"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Küçük bir ekibi yönetmekten çıkardığın dersleri, ince bir öz eleştiri ve doğal bir akıcılıkla anlatıyorsun.",
+      "text": [
+        { "en": "In a team of six, every misunderstanding is expensive, because nobody has the bandwidth to clean up after anyone else.", "tr": "Altı kişilik bir ekipte her yanlış anlaşılma pahalıya patlar, çünkü kimsenin başkasının arkasını toplayacak vakti yok." },
+        { "en": "Hence the Monday stand-up, which is about the only meeting I'd defend to the hilt.", "tr": "Pazartesi toplantısı da bu yüzden var; sonuna kadar savunacağım neredeyse tek toplantı o." },
+        { "en": "Each of us runs through what we've delivered, what's next and what's in the way, and it's over before anyone's coffee has gone cold.", "tr": "Her birimiz neyi teslim ettiğimizi, sırada ne olduğunu ve önümüzde ne engel olduğunu hızlıca anlatırız; kimsenin kahvesi soğumadan da biter." },
+        { "en": "If there's one thing I've learned, it's that ambiguity is contagious: a fuzzy brief gets you fuzzy work.", "tr": "Öğrendiğim bir şey varsa o da belirsizliğin bulaşıcı olduğu: muğlak bir talimat muğlak bir iş getirir." },
+        { "en": "So 'could someone take a look at the report?' has given way to one name, one task and one date: the test report, by Friday.", "tr": "Bu yüzden 'biri rapora bir bakabilir mi?' yerini tek bir isme, tek bir göreve ve tek bir tarihe bıraktı: test raporu, cumaya kadar." },
+        { "en": "When things go sideways, which they inevitably do, the post-mortem is about the process, not the person.", "tr": "İşler ters gittiğinde, ki kaçınılmaz olarak gider, değerlendirme kişiyle değil süreçle ilgilidir." },
+        { "en": "The moment people start covering their backs, problems go underground, and by the time they resurface they've usually doubled in size.", "tr": "İnsanlar kendilerini sağlama almaya başladığı anda sorunlar gizlenir ve yeniden ortaya çıktıklarında genellikle iki katına çıkmış olurlar." },
+        { "en": "Feedback is frequent, positive and negative alike, and very much a two-way street.", "tr": "Geri bildirim, olumlu olsun olumsuz olsun sıktır ve kesinlikle karşılıklıdır." },
+        { "en": "That last part was driven home when one of our engineers told me, quite gently, that I had a habit of hijacking meetings.", "tr": "Bu son kısım, mühendislerimizden biri bana oldukça nazik bir şekilde toplantıları ele geçirme alışkanlığım olduğunu söylediğinde iyice kafama dank etti." },
+        { "en": "It wasn't what I wanted to hear, but she had a point, and I've been making a conscious effort to listen more than I talk ever since.", "tr": "Duymak istediğim şey değildi ama haklılık payı vardı ve o günden beri konuştuğumdan daha çok dinlemek için bilinçli bir çaba gösteriyorum." },
+        { "en": "That said, the real lesson is humbling: the people I've hired are far better at their jobs than I'd ever be, so my job is mostly to trust them and keep the path clear.", "tr": "Yine de asıl ders insanı alçakgönüllü kılıyor: işe aldığım insanlar kendi işlerinde benim hiçbir zaman olamayacağım kadar iyi, bu yüzden benim işim çoğunlukla onlara güvenmek ve yollarını açık tutmak." }
+      ],
+      "vocab": [
+        { "en": "bandwidth", "tr": "kapasite (zaman ve zihinsel enerji)", "ex": "Nobody has the bandwidth to clean up after anyone else.", "def": "the time and mental energy someone has available" },
+        { "en": "defend to the hilt", "tr": "sonuna kadar savunmak", "ex": "It's the only meeting I'd defend to the hilt.", "def": "to support something completely" },
+        { "en": "fuzzy brief", "tr": "muğlak talimat", "ex": "A fuzzy brief gets you fuzzy work.", "def": "instructions for a task that are unclear" },
+        { "en": "give way to", "tr": "yerini ...e bırakmak", "ex": "Vague requests have given way to clear deadlines.", "def": "to be replaced by something" },
+        { "en": "go sideways", "tr": "ters gitmek, rayından çıkmak", "ex": "When things go sideways, we look at the process.", "def": "(informal) to go wrong unexpectedly" },
+        { "en": "post-mortem", "tr": "olay sonrası değerlendirme", "ex": "The post-mortem is about the process, not the person.", "def": "a meeting to analyse what went wrong after a problem" },
+        { "en": "cover your back", "tr": "kendini sağlama almak", "ex": "People start covering their backs when they fear blame.", "def": "to protect yourself from being blamed" },
+        { "en": "a two-way street", "tr": "karşılıklı bir süreç", "ex": "Feedback is very much a two-way street.", "def": "something that both sides must contribute to" },
+        { "en": "drive home", "tr": "iyice kafasına dank ettirmek", "ex": "That lesson was driven home by one of our engineers.", "def": "to make someone understand something very clearly" },
+        { "en": "hijack a meeting", "tr": "toplantıyı ele geçirmek", "ex": "I had a habit of hijacking meetings.", "def": "to take control of a meeting so that it is all about you" }
+      ],
+      "grammar": {
+        "title": "Hedging and understatement",
+        "tr": "Akıcı konuşanlar fikirlerini abartmadan vurgulamak için küçük kelimelerle oynar: 'about the only meeting' (neredeyse tek toplantı), 'quite gently' (oldukça nazikçe), 'she had a point' (haklılık payı vardı). Bu, kendinden emin ama alçakgönüllü bir ton yaratır.",
+        "examples": ["It's about the only meeting I'd defend to the hilt.", "She told me, quite gently, that I had a habit of hijacking meetings.", "It wasn't what I wanted to hear, but she had a point."]
+      },
+      "questions": [
+        { "q": "What does the speaker mean by 'ambiguity is contagious'?", "options": ["Unclear instructions lead to unclear work", "Illness spreads quickly in small offices", "Meetings should be cancelled"], "a": 0 },
+        { "q": "Why is the Monday stand-up the one meeting the speaker would defend?", "options": ["It's the longest meeting of the week", "Investors require it", "It keeps everyone aligned without wasting anyone's time"], "a": 2 },
+        { "q": "What does 'problems go underground' imply?", "options": ["Problems are solved faster", "Problems get hidden and grow worse", "Problems are passed to another team"], "a": 1 },
+        { "q": "What is the tone of 'It wasn't what I wanted to hear, but she had a point'?", "options": ["Bitter and resentful", "Sarcastic", "Candid and self-aware"], "a": 2 },
+        { "q": "What does the speaker imply by saying the team are 'far better at their jobs than I'd ever be'?", "options": ["They regret hiring experts", "They see humility and trust as central to leading the team", "They plan to replace the team"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Nobody has the ___ to clean up after anyone else.", "a": "bandwidth", "hint": "kapasite (zaman/enerji)" },
+        { "s": "When things go ___, the post-mortem is about the process.", "a": "sideways", "hint": "ters gitmek" },
+        { "s": "Feedback is very much a two-way ___.", "a": "street", "hint": "karşılıklı süreç" },
+        { "s": "She told me I had a habit of ___ meetings.", "a": "hijacking", "hint": "ele geçirmek" }
+      ],
+      "order": [
+        { "a": "The post-mortem is about the process not the person." },
+        { "a": "Feedback is very much a two-way street." }
+      ],
+      "translate": [
+        { "tr": "Kimsenin başkasının arkasını toplayacak vakti yok.", "en": "Nobody has the bandwidth to clean up after anyone else.", "keys": ["bandwidth", "clean up after"] },
+        { "tr": "Duymak istediğim şey değildi ama haklılık payı vardı.", "en": "It wasn't what I wanted to hear, but she had a point.", "keys": ["wanted to hear", "had a point"] },
+        { "tr": "Değerlendirme kişiyle değil süreçle ilgili.", "en": "The post-mortem is about the process, not the person.", "keys": ["post-mortem", "process", "not the person"] }
+      ],
+      "roleplay": {
+        "persona": "New engineer",
+        "personaTr": "Yeni işe başlayan mühendis",
+        "scene": "Deneyimli ve biraz şüpheci yeni mühendis, ekip kültürünün gerçekte nasıl işlediğini anlamak istiyor.",
+        "turns": [
+          { "ai": "I'm still getting the lay of the land; what's the one thing I really shouldn't miss?", "aiTr": "Hâlâ ortamı tanımaya çalışıyorum; asla kaçırmamam gereken tek şey ne?", "hint": "The Monday stand-up: it's about the only meeting I'd defend to the hilt, and it's over before anyone's coffee has gone cold.", "keys": ["stand-up", "defend", "Monday"] },
+          { "ai": "And how do you like tasks to be handed over?", "aiTr": "Peki görevlerin nasıl devredilmesini seversin?", "hint": "One name, one task, one date, because if there's one thing I've learned, it's that a fuzzy brief gets you fuzzy work.", "keys": ["one name", "fuzzy", "one date"] },
+          { "ai": "What happens when something I own goes sideways?", "aiTr": "Sorumlu olduğum bir şey ters giderse ne olur?", "hint": "Tell me early; the post-mortem is about the process, not the person, so there's no need to cover your back.", "keys": ["post-mortem", "process", "cover your back"] },
+          { "ai": "Fair enough, but is feedback here really a two-way street?", "aiTr": "Anlaşıldı, ama burada geri bildirim gerçekten karşılıklı mı?", "hint": "Very much so; one of our engineers once told me I had a habit of hijacking meetings, and she had a point.", "keys": ["two-way", "hijacking", "had a point"] }
+        ]
+      }
+    }
+  }
+}

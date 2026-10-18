@@ -1,0 +1,371 @@
+{
+  "id": "li-03",
+  "topic": "life",
+  "title": "Managing Energy as a Founder",
+  "titleTr": "Bir Kurucu Olarak Enerjiyi Yönetmek",
+  "levels": {
+    "A1": {
+      "intro": "Bir kurucu olarak enerjini nasıl koruduğunu basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "In my first year, I was always tired.", "tr": "İlk yılımda hep yorgundum." },
+        { "who": "Me", "en": "A tired brain is a slow brain.", "tr": "Yorgun bir beyin yavaş bir beyindir." },
+        { "who": "Me", "en": "Now I have three simple rules.", "tr": "Şimdi üç basit kuralım var." },
+        { "who": "Me", "en": "First, I sleep at least seven hours.", "tr": "Birincisi, en az yedi saat uyuyorum." },
+        { "who": "Me", "en": "I do not read emails after ten at night.", "tr": "Gece ondan sonra e-posta okumuyorum." },
+        { "who": "Me", "en": "Second, I do my most important work in the morning.", "tr": "İkincisi, en önemli işimi sabah yapıyorum." },
+        { "who": "Me", "en": "Third, I walk for thirty minutes every day.", "tr": "Üçüncüsü, her gün otuz dakika yürüyorum." },
+        { "who": "Me", "en": "A startup is a long race, not a short one.", "tr": "Girişim kısa değil, uzun bir yarıştır." }
+      ],
+      "vocab": [
+        { "en": "tired", "tr": "yorgun", "ex": "In my first year, I was always tired." },
+        { "en": "rule", "tr": "kural", "ex": "Now I have three simple rules." },
+        { "en": "at least", "tr": "en az", "ex": "I sleep at least seven hours." },
+        { "en": "important", "tr": "önemli", "ex": "I do my most important work in the morning." },
+        { "en": "every day", "tr": "her gün", "ex": "I walk every day." },
+        { "en": "race", "tr": "yarış", "ex": "A startup is a long race." }
+      ],
+      "grammar": {
+        "title": "Present simple for habits",
+        "tr": "Her gün yaptığımız alışkanlıkları anlatmak için present simple kullanılır: I sleep, I walk, I do. 'Every day' ve 'in the morning' gibi zaman ifadeleri genelde cümlenin sonuna gelir.",
+        "examples": ["I sleep at least seven hours.", "I walk for thirty minutes every day.", "I do my most important work in the morning."]
+      },
+      "questions": [
+        { "q": "How many rules does the founder have?", "options": ["Two", "Five", "Three"], "a": 2 },
+        { "q": "When does the founder do the most important work?", "options": ["In the morning", "At night", "After lunch"], "a": 0 },
+        { "q": "How long does the founder walk every day?", "options": ["Ten minutes", "Thirty minutes", "Two hours"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "A ___ brain is a slow brain.", "a": "tired", "hint": "yorgun" },
+        { "s": "I sleep at ___ seven hours.", "a": "least", "hint": "en az" },
+        { "s": "I walk for thirty minutes every ___.", "a": "day", "hint": "gün" }
+      ],
+      "order": [
+        { "a": "Now I have three simple rules." },
+        { "a": "I walk for thirty minutes every day." }
+      ],
+      "translate": [
+        { "tr": "En az yedi saat uyuyorum.", "en": "I sleep at least seven hours.", "keys": ["sleep", "at least"] },
+        { "tr": "Gece ondan sonra e-posta okumuyorum.", "en": "I do not read emails after ten at night.", "keys": ["emails", "after ten"] }
+      ],
+      "roleplay": {
+        "persona": "Young founder",
+        "personaTr": "Genç kurucu",
+        "scene": "Genç bir girişimci çok yorgun. Ona kendi kurallarını anlatıyorsun.",
+        "turns": [
+          { "ai": "I am always tired. What can I do?", "aiTr": "Hep yorgunum. Ne yapabilirim?", "hint": "Sleep at least seven hours every night.", "keys": ["sleep", "seven hours", "at least"] },
+          { "ai": "When can I do my important work?", "aiTr": "Önemli işlerimi ne zaman yapabilirim?", "hint": "Do it in the morning, before meetings.", "keys": ["morning", "before meetings"] },
+          { "ai": "Anything else?", "aiTr": "Başka bir şey var mı?", "hint": "Walk for thirty minutes every day.", "keys": ["walk", "thirty minutes", "every day"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "İlk yılda yaptığın hatayı ve şimdi enerjini korumak için uyguladığın üç kuralı anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "In my first year as a founder, I worked fourteen hours a day.", "tr": "Kurucu olarak ilk yılımda günde on dört saat çalıştım." },
+        { "who": "Me", "en": "I only slept five hours, and I thought it was normal.", "tr": "Sadece beş saat uyuyordum ve bunun normal olduğunu düşünüyordum." },
+        { "who": "Me", "en": "Then I started to make bad decisions because I was so tired.", "tr": "Sonra çok yorgun olduğum için kötü kararlar vermeye başladım." },
+        { "who": "Me", "en": "A tired brain chooses the easy answer, not the right one.", "tr": "Yorgun bir beyin doğru cevabı değil, kolay cevabı seçer." },
+        { "who": "Me", "en": "Now I have three simple rules.", "tr": "Şimdi üç basit kuralım var." },
+        { "who": "Me", "en": "First, I sleep at least seven hours, with no emails after 10 pm.", "tr": "Birincisi, en az yedi saat uyuyorum ve gece 10'dan sonra e-postaya bakmıyorum." },
+        { "who": "Me", "en": "Second, I do my most important task in the morning, before meetings.", "tr": "İkincisi, en önemli işimi sabah, toplantılardan önce yapıyorum." },
+        { "who": "Me", "en": "Third, I walk thirty minutes a day, and that's when my best ideas come.", "tr": "Üçüncüsü, günde otuz dakika yürüyorum ve en iyi fikirlerim o zaman geliyor." },
+        { "who": "Me", "en": "A startup is a marathon, not a sprint, so I need energy for years.", "tr": "Girişim bir sprint değil, maratondur; bu yüzden yıllarca enerjiye ihtiyacım var." }
+      ],
+      "vocab": [
+        { "en": "founder", "tr": "kurucu", "ex": "In my first year as a founder, I worked a lot." },
+        { "en": "make a bad decision", "tr": "kötü karar vermek", "ex": "I started to make bad decisions." },
+        { "en": "tired", "tr": "yorgun", "ex": "A tired brain chooses the easy answer." },
+        { "en": "at least", "tr": "en az", "ex": "I sleep at least seven hours." },
+        { "en": "task", "tr": "görev, iş", "ex": "I do my most important task in the morning." },
+        { "en": "energy", "tr": "enerji", "ex": "I need energy for years." },
+        { "en": "a marathon, not a sprint", "tr": "sprint değil, maraton", "ex": "A startup is a marathon, not a sprint." }
+      ],
+      "grammar": {
+        "title": "Past simple vs present simple: then and now",
+        "tr": "Geçmişte olup bitmiş durumlar için past simple (worked, slept, thought), bugünkü alışkanlıklar için present simple (sleep, walk) kullanılır. 'Then' ve 'now' iki zamanı karşılaştırmaya yardım eder.",
+        "examples": ["In my first year, I worked fourteen hours a day.", "I only slept five hours.", "Now I sleep at least seven hours."]
+      },
+      "questions": [
+        { "q": "How many hours did the founder sleep in the first year?", "options": ["Seven", "Five", "Fourteen"], "a": 1 },
+        { "q": "What was the problem in the first year?", "options": ["The founder was very tired and made bad decisions", "The team was too small", "There was no money"], "a": 0 },
+        { "q": "What does the founder not do after 10 pm?", "options": ["Walk", "Sleep", "Read emails"], "a": 2 },
+        { "q": "When do the founder's best ideas come?", "options": ["In meetings", "During a walk", "At night"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I started to make bad ___.", "a": "decisions", "hint": "kararlar" },
+        { "s": "I do my most important ___ in the morning.", "a": "task", "hint": "görev, iş" },
+        { "s": "A startup is a marathon, not a ___.", "a": "sprint", "hint": "kısa mesafe koşusu" }
+      ],
+      "order": [
+        { "a": "A tired brain chooses the easy answer." },
+        { "a": "Now I have three simple rules." }
+      ],
+      "translate": [
+        { "tr": "Kurucu olarak ilk yılımda günde on dört saat çalıştım.", "en": "In my first year as a founder, I worked fourteen hours a day.", "keys": ["first year", "fourteen hours"] },
+        { "tr": "Yorgun olduğum için kötü kararlar verdim.", "en": "I made bad decisions because I was tired.", "keys": ["bad decisions", "because", "tired"] }
+      ],
+      "roleplay": {
+        "persona": "Young founder",
+        "personaTr": "Genç kurucu",
+        "scene": "Genç bir girişimci sürekli çalışıyor ve çok yorgun. Ona deneyimini ve kurallarını anlatıyorsun.",
+        "turns": [
+          { "ai": "I work all the time and I am so tired. Is that normal?", "aiTr": "Sürekli çalışıyorum ve çok yorgunum. Bu normal mi?", "hint": "I thought it was normal too, but a tired brain makes bad decisions.", "keys": ["tired brain", "bad decisions", "normal"] },
+          { "ai": "So what did you change?", "aiTr": "Peki sen neyi değiştirdin?", "hint": "Now I sleep at least seven hours, and I don't read emails after 10 pm.", "keys": ["at least seven hours", "emails", "10 pm"] },
+          { "ai": "But when do I do all my work?", "aiTr": "Ama bütün işlerimi ne zaman yapacağım?", "hint": "Do your most important task in the morning, before your meetings.", "keys": ["most important task", "morning", "before"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Uyku, odak ve alışkanlıklar üzerinden yoğun girişim temposunu nasıl sürdürülebilir hale getirdiğini anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "In my first year as a founder, I worked fourteen hours a day and slept only five.", "tr": "Kurucu olarak ilk yılımda günde on dört saat çalıştım ve sadece beş saat uyudum." },
+        { "who": "Me", "en": "I thought this was normal, but then I started making bad decisions.", "tr": "Bunun normal olduğunu düşünüyordum ama sonra kötü kararlar vermeye başladım." },
+        { "who": "Me", "en": "A tired brain is a slow brain, and it chooses the easy answer, not the right one.", "tr": "Yorgun bir beyin yavaş bir beyindir ve doğru cevabı değil, kolay cevabı seçer." },
+        { "who": "Me", "en": "Since then, I have changed my routine, and now I have three simple rules.", "tr": "O zamandan beri günlük düzenimi değiştirdim ve artık üç basit kuralım var." },
+        { "who": "Me", "en": "First, I sleep at least seven hours, and I don't answer emails after ten at night.", "tr": "Birincisi, en az yedi saat uyuyorum ve gece ondan sonra e-postalara cevap vermiyorum." },
+        { "who": "Me", "en": "Second, I do my most important task in the morning, before meetings, when my mind is fresh.", "tr": "İkincisi, en önemli işimi sabah, toplantılardan önce, zihnim dinçken yapıyorum." },
+        { "who": "Me", "en": "Third, I walk for thirty minutes every day, and many of my best ideas have come during a walk.", "tr": "Üçüncüsü, her gün otuz dakika yürüyorum ve en iyi fikirlerimin çoğu yürüyüş sırasında aklıma geldi." },
+        { "who": "Me", "en": "A startup is a marathon, not a sprint.", "tr": "Girişim bir sprint değil, maratondur." },
+        { "who": "Me", "en": "If the founder burns out, the company will burn out too.", "tr": "Kurucu tükenirse şirket de tükenir." }
+      ],
+      "vocab": [
+        { "en": "make a bad decision", "tr": "kötü karar vermek", "ex": "I started making bad decisions.", "def": "to choose something that turns out to be wrong" },
+        { "en": "since then", "tr": "o zamandan beri", "ex": "Since then, I have changed my routine.", "def": "from that time until now" },
+        { "en": "routine", "tr": "günlük düzen, rutin", "ex": "I have changed my routine.", "def": "the usual order in which you do things" },
+        { "en": "at least", "tr": "en az", "ex": "I sleep at least seven hours.", "def": "not less than" },
+        { "en": "most important task", "tr": "en önemli iş", "ex": "I do my most important task first.", "def": "the job that matters most on a given day" },
+        { "en": "fresh", "tr": "dinç, zinde", "ex": "My mind is fresh in the morning.", "def": "full of energy, not tired" },
+        { "en": "a marathon, not a sprint", "tr": "sprint değil, maraton", "ex": "A startup is a marathon, not a sprint.", "def": "something that needs long, steady effort, not a quick burst" },
+        { "en": "burn out", "tr": "tükenmek", "ex": "If the founder burns out, the company burns out too.", "def": "to become ill or exhausted from working too hard" }
+      ],
+      "grammar": {
+        "title": "Present perfect vs past simple",
+        "tr": "Belirli bir geçmiş zaman varsa (in my first year) past simple kullanılır: I worked, I slept. Geçmişten bugüne uzanan değişim ya da deneyim için present perfect kullanılır: I have changed my routine.",
+        "examples": ["In my first year, I worked fourteen hours a day.", "Since then, I have changed my routine.", "Many of my best ideas have come during a walk."]
+      },
+      "questions": [
+        { "q": "What happened in the founder's first year?", "options": ["They slept a lot", "They worked 14 hours a day and slept 5", "They took a long holiday"], "a": 1 },
+        { "q": "What does a tired brain do?", "options": ["It chooses the easy answer", "It works faster", "It finds the right answer"], "a": 0 },
+        { "q": "When does the founder do the most important task?", "options": ["At night", "After lunch", "In the morning, before meetings"], "a": 2 },
+        { "q": "What happens if the founder burns out?", "options": ["Nothing changes", "The company burns out too", "The company grows faster"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "A ___ brain is a slow brain.", "a": "tired", "hint": "yorgun" },
+        { "s": "Since then, I have changed my ___.", "a": "routine", "hint": "günlük düzen" },
+        { "s": "If the founder burns ___, the company will burn out too.", "a": "out", "hint": "tükenmek" }
+      ],
+      "order": [
+        { "a": "Now I have three simple rules." },
+        { "a": "A startup is a marathon not a sprint." }
+      ],
+      "translate": [
+        { "tr": "Her gün otuz dakika yürüyorum.", "en": "I walk for thirty minutes every day.", "keys": ["walk", "thirty minutes", "every day"] },
+        { "tr": "Kötü kararlar vermeye başladım.", "en": "I started making bad decisions.", "keys": ["started", "bad decisions"] }
+      ],
+      "roleplay": {
+        "persona": "Young founder",
+        "personaTr": "Genç kurucu",
+        "scene": "Genç bir girişimci, yoğun tempoyla nasıl baş ettiğini soruyor.",
+        "turns": [
+          { "ai": "I work all the time and I'm so tired. How do you manage?", "aiTr": "Sürekli çalışıyorum ve çok yorgunum. Sen nasıl idare ediyorsun?", "hint": "I had the same problem. A tired brain makes bad decisions, so now I sleep at least seven hours.", "keys": ["tired brain", "bad decisions", "at least seven hours"] },
+          { "ai": "But I have too many tasks. When should I do them?", "aiTr": "Ama çok fazla işim var. Onları ne zaman yapmalıyım?", "hint": "Do your most important task in the morning, before meetings, when your mind is fresh.", "keys": ["most important task", "morning", "fresh"] },
+          { "ai": "I feel guilty when I stop working, though.", "aiTr": "Ama çalışmayı bırakınca kendimi suçlu hissediyorum.", "hint": "I understand, but if you burn out, your company will burn out too.", "keys": ["burn out", "company", "understand"] },
+          { "ai": "Do you have any other advice?", "aiTr": "Başka bir tavsiyen var mı?", "hint": "Walk for thirty minutes every day. A startup is a marathon, not a sprint.", "keys": ["walk", "marathon", "sprint", "every day"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "İlk yıldaki tükenmişlik deneyimini ve enerjini korumak için koyduğun üç kuralı anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "During my first year as a founder, I was working fourteen-hour days and getting by on five hours' sleep.", "tr": "Kurucu olarak ilk yılımda günde on dört saat çalışıyor ve beş saatlik uykuyla idare ediyordum." },
+        { "who": "Me", "en": "At the time, it seemed perfectly normal, which is probably why I didn't notice the quality of my decisions slipping.", "tr": "O zamanlar bu bana gayet normal geliyordu; muhtemelen kararlarımın kalitesinin düştüğünü bu yüzden fark etmedim." },
+        { "who": "Me", "en": "It turns out that a tired brain isn't just slower; it also tends to pick the easy answer rather than the right one.", "tr": "Anlaşılan o ki yorgun bir beyin sadece yavaşlamıyor; doğru cevap yerine kolay cevabı seçme eğiliminde de oluyor." },
+        { "who": "Me", "en": "Eventually I realised that energy, not time, was the resource that needed managing.", "tr": "Sonunda yönetilmesi gereken kaynağın zaman değil, enerji olduğunu fark ettim." },
+        { "who": "Me", "en": "These days I stick to three simple rules.", "tr": "Bugünlerde üç basit kurala bağlı kalıyorum." },
+        { "who": "Me", "en": "The first is that I sleep at least seven hours, and no emails are answered after 10 pm.", "tr": "Birincisi, en az yedi saat uyuyorum ve gece 10'dan sonra hiçbir e-postaya cevap verilmiyor." },
+        { "who": "Me", "en": "The second is that my most important task is done in the morning, before meetings, while my mind is still fresh.", "tr": "İkincisi, en önemli işim sabah, toplantılardan önce, zihnim hâlâ dinçken yapılıyor." },
+        { "who": "Me", "en": "The third is a thirty-minute walk every day, which is when many of my best ideas tend to come.", "tr": "Üçüncüsü, her gün otuz dakikalık bir yürüyüş; en iyi fikirlerimin çoğu genellikle o sırada geliyor." },
+        { "who": "Me", "en": "If I went back to my old habits, I'd probably burn out within months.", "tr": "Eski alışkanlıklarıma dönsem muhtemelen birkaç ay içinde tükenirdim." },
+        { "who": "Me", "en": "A startup is a marathon, not a sprint, and a founder who burns out takes the company down with them.", "tr": "Girişim bir sprint değil, maratondur; tükenen bir kurucu şirketi de kendisiyle birlikte batırır." }
+      ],
+      "vocab": [
+        { "en": "get by on", "tr": "... ile idare etmek", "ex": "I was getting by on five hours' sleep.", "def": "to manage with only a small amount of something" },
+        { "en": "slip", "tr": "düşmek, kötüleşmek", "ex": "The quality of my decisions was slipping.", "def": "to become gradually worse" },
+        { "en": "it turns out that", "tr": "anlaşılan o ki", "ex": "It turns out that tired people choose the easy answer.", "def": "used to say that something is true, often surprisingly" },
+        { "en": "resource", "tr": "kaynak", "ex": "Energy is a resource that needs managing.", "def": "something valuable you can use, like money, time or energy" },
+        { "en": "stick to", "tr": "...e bağlı kalmak", "ex": "I stick to three simple rules.", "def": "to keep doing what you planned or decided" },
+        { "en": "tend to", "tr": "...me eğiliminde olmak", "ex": "My best ideas tend to come during a walk.", "def": "to usually do something or usually happen" },
+        { "en": "burn out", "tr": "tükenmek", "ex": "I'd probably burn out within months.", "def": "to become exhausted or ill from working too hard" },
+        { "en": "take something down with you", "tr": "birlikte batırmak", "ex": "A founder who burns out takes the company down with them.", "def": "to cause something to fail together with you" },
+        { "en": "a marathon, not a sprint", "tr": "sprint değil, maraton", "ex": "Building a company is a marathon, not a sprint.", "def": "something that needs long, steady effort, not a quick burst" }
+      ],
+      "grammar": {
+        "title": "The passive in everyday routines",
+        "tr": "Eylemi yapanın değil eylemin önemli olduğu durumlarda passive (be + V3) kullanılır: 'no emails are answered', 'my most important task is done'. Bu, kuralları kişisel bir tercih değil, sistemli bir düzen gibi gösterir.",
+        "examples": ["No emails are answered after 10 pm.", "My most important task is done in the morning.", "Energy has to be managed like any other resource."]
+      },
+      "questions": [
+        { "q": "How much did the founder sleep in the first year?", "options": ["About seven hours", "About five hours", "About ten hours"], "a": 1 },
+        { "q": "According to the text, what does a tired brain tend to do?", "options": ["Avoid all decisions", "Work faster than usual", "Choose the easy answer over the right one"], "a": 2 },
+        { "q": "What did the founder eventually realise?", "options": ["Energy, not time, needed managing", "More hours meant more success", "Meetings were the main problem"], "a": 0 },
+        { "q": "Why didn't the founder notice the problem at first?", "options": ["The team hid it", "Long hours seemed normal at the time", "The decisions were actually good"], "a": 1 },
+        { "q": "What does 'takes the company down with them' mean?", "options": ["The company suffers if the founder burns out", "The founder sells the company", "The founder moves the company abroad"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "I was getting ___ on five hours' sleep.", "a": "by", "hint": "idare etmek" },
+        { "s": "These days I ___ to three simple rules.", "a": "stick", "hint": "bağlı kalmak" },
+        { "s": "Many of my best ideas ___ to come during a walk.", "a": "tend", "hint": "eğiliminde olmak" }
+      ],
+      "order": [
+        { "a": "These days I stick to three simple rules." },
+        { "a": "My most important task is done in the morning." }
+      ],
+      "translate": [
+        { "tr": "Eski alışkanlıklarıma dönsem muhtemelen tükenirdim.", "en": "If I went back to my old habits, I would probably burn out.", "keys": ["went back", "old habits", "burn out"] },
+        { "tr": "Gece 10'dan sonra hiçbir e-postaya cevap verilmez.", "en": "No emails are answered after 10 pm.", "keys": ["no emails", "are answered"] }
+      ],
+      "roleplay": {
+        "persona": "Young founder",
+        "personaTr": "Genç kurucu",
+        "scene": "Genç bir girişimci tükenmenin eşiğinde ve senden tavsiye istiyor. Deneyimini paylaşıp uygulanabilir öneriler veriyorsun.",
+        "turns": [
+          { "ai": "I'm working around the clock and I feel exhausted, but everyone says that's just startup life.", "aiTr": "Gece gündüz çalışıyorum ve bitkin hissediyorum, ama herkes bunun girişim hayatı olduğunu söylüyor.", "hint": "I used to think the same, but it turns out a tired brain tends to make worse decisions.", "keys": ["used to", "tired brain", "worse decisions", "turns out"] },
+          { "ai": "So what would you do if you were in my position?", "aiTr": "Benim yerimde olsan ne yapardın?", "hint": "If I were you, I'd protect your sleep first: at least seven hours, and no emails after 10 pm.", "keys": ["if i were you", "at least seven hours", "no emails"] },
+          { "ai": "But my calendar is full of meetings from nine to six.", "aiTr": "Ama takvimim dokuzdan altıya kadar toplantılarla dolu.", "hint": "Then block the first hours of the morning for your most important task, before any meetings start.", "keys": ["block", "morning", "most important task"] },
+          { "ai": "And how do I switch off after work?", "aiTr": "Peki işten sonra kafamı nasıl boşaltırım?", "hint": "I'd recommend a thirty-minute walk every day; that's when many of my best ideas come.", "keys": ["walk", "thirty minute", "every day", "best ideas"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Enerjiyi bir kaynak gibi yönetmeyi, ilk yılda yaşadığın tükenmişliği ve bugün uyguladığın kuralları incelikli bir dille anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "In my first year as a founder, I was routinely working fourteen-hour days and running on five hours' sleep.", "tr": "Kurucu olarak ilk yılımda günde on dört saat çalışmak ve beş saatlik uykuyla ayakta kalmak benim için olağandı." },
+        { "who": "Me", "en": "What I failed to notice, at least at first, was how quietly my judgement was deteriorating.", "tr": "En azından başta fark edemediğim şey, muhakememin ne kadar sessizce kötüleştiğiydi." },
+        { "who": "Me", "en": "A tired brain isn't merely slower; it defaults to the easy answer rather than the right one.", "tr": "Yorgun bir beyin sadece yavaşlamakla kalmaz; doğru cevap yerine otomatik olarak kolay cevaba yönelir." },
+        { "who": "Me", "en": "Only after a string of poor calls did I realise that energy, not time, was the real bottleneck.", "tr": "Ancak bir dizi kötü karardan sonra asıl darboğazın zaman değil, enerji olduğunu fark ettim." },
+        { "who": "Me", "en": "Since then, I've built my week around three non-negotiable rules.", "tr": "O zamandan beri haftamı pazarlığa kapalı üç kural etrafında kurdum." },
+        { "who": "Me", "en": "First, I protect at least seven hours of sleep, which means my inbox goes dark at 10 pm.", "tr": "Birincisi, en az yedi saatlik uykumu koruyorum; bu da gelen kutumun gece 10'da kapanması demek." },
+        { "who": "Me", "en": "Second, I tackle my most important task first thing in the morning, before meetings start eating into the day.", "tr": "İkincisi, en önemli işimi sabah ilk iş olarak, toplantılar günümü yemeye başlamadan hallediyorum." },
+        { "who": "Me", "en": "Third, I walk for thirty minutes every day, and it's on those walks that many of my best ideas surface.", "tr": "Üçüncüsü, her gün otuz dakika yürüyorum ve en iyi fikirlerimin çoğu tam da bu yürüyüşlerde ortaya çıkıyor." },
+        { "who": "Me", "en": "Having seen what chronic exhaustion did to my decision-making, I no longer treat rest as a reward to be earned.", "tr": "Kronik yorgunluğun karar verme becerime neler yaptığını gördükten sonra, dinlenmeyi artık hak edilmesi gereken bir ödül olarak görmüyorum." },
+        { "who": "Me", "en": "Not only does sleep sharpen my thinking, but it also makes me far easier to work with.", "tr": "Uyku sadece düşüncemi keskinleştirmekle kalmıyor, benimle çalışmayı da çok daha kolay hale getiriyor." },
+        { "who": "Me", "en": "A startup is a marathon, not a sprint, and a founder who burns out tends to take the company down with them.", "tr": "Girişim bir sprint değil, maratondur ve tükenen bir kurucu genellikle şirketi de kendisiyle birlikte batırır." }
+      ],
+      "vocab": [
+        { "en": "run on little sleep", "tr": "az uykuyla ayakta kalmak", "ex": "I was running on five hours' sleep.", "def": "to keep going with very little rest" },
+        { "en": "deteriorate", "tr": "kötüleşmek", "ex": "My judgement was deteriorating.", "def": "to become gradually worse" },
+        { "en": "default to", "tr": "otomatik olarak ...e yönelmek", "ex": "A tired brain defaults to the easy answer.", "def": "to choose something automatically, without thinking" },
+        { "en": "poor call", "tr": "kötü karar", "ex": "I made some poor calls that year.", "def": "a bad decision, especially one made quickly" },
+        { "en": "bottleneck", "tr": "darboğaz", "ex": "Energy, not time, was the real bottleneck.", "def": "the one thing that slows down a whole process" },
+        { "en": "non-negotiable", "tr": "pazarlığa kapalı", "ex": "Seven hours of sleep is non-negotiable for me.", "def": "fixed and not open to discussion or change" },
+        { "en": "eat into", "tr": "...den yemek, azaltmak", "ex": "Meetings start eating into the day.", "def": "to use up part of something valuable, such as time" },
+        { "en": "surface", "tr": "ortaya çıkmak", "ex": "My best ideas surface on long walks.", "def": "to appear or become noticeable" },
+        { "en": "burn out", "tr": "tükenmek", "ex": "A founder who burns out can sink the company.", "def": "to become exhausted or ill from working too hard" },
+        { "en": "a reward to be earned", "tr": "hak edilmesi gereken bir ödül", "ex": "Rest is not a reward to be earned.", "def": "something you only get after you have worked hard enough" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Only after' and 'Not only'",
+        "tr": "Vurgu için sınırlayıcı ya da olumsuz bir ifadeyle (Only after, Not only) başlayan cümlelerde yardımcı fiil özneden önce gelir: 'Only after … did I realise', 'Not only does sleep …'.",
+        "examples": ["Only after a string of poor calls did I realise that energy was the real bottleneck.", "Not only does sleep sharpen my thinking, but it also makes me easier to work with.", "Only then did I change my routine."]
+      },
+      "questions": [
+        { "q": "What did the founder fail to notice at first?", "options": ["That the team was unhappy", "That their judgement was slowly getting worse", "That the market was changing"], "a": 1 },
+        { "q": "What does the founder now see as the real bottleneck?", "options": ["Time", "Money", "Energy", "Meetings"], "a": 2 },
+        { "q": "What is implied by 'my inbox goes dark at 10 pm'?", "options": ["The founder stops dealing with email at 10 pm", "The founder's laptop breaks every night", "The founder reads emails in the dark"], "a": 0 },
+        { "q": "How has the founder's attitude to rest changed?", "options": ["Rest is now a reward to be earned", "Rest is still a waste of time", "Rest is now treated as essential, not as a reward"], "a": 2 },
+        { "q": "What is the tone of the final sentence?", "options": ["Light-hearted and joking", "Cautionary", "Sarcastic", "Indifferent"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "A tired brain ___ to the easy answer rather than the right one.", "a": "defaults", "hint": "otomatik olarak yönelir" },
+        { "s": "Energy, not time, was the real ___.", "a": "bottleneck", "hint": "darboğaz" },
+        { "s": "Meetings start eating ___ the day.", "a": "into", "hint": "...den yemek" },
+        { "s": "It's on those walks that many of my best ideas ___.", "a": "surface", "hint": "ortaya çıkar" }
+      ],
+      "order": [
+        { "a": "A tired brain isn't merely slower." },
+        { "a": "My inbox goes dark at 10 pm." }
+      ],
+      "translate": [
+        { "tr": "Ancak bir dizi kötü karardan sonra enerjinin asıl darboğaz olduğunu fark ettim.", "en": "Only after a string of poor calls did I realise that energy was the real bottleneck.", "keys": ["only after", "did i realise", "bottleneck"] },
+        { "tr": "Artık dinlenmeyi hak edilmesi gereken bir ödül olarak görmüyorum.", "en": "I no longer treat rest as a reward to be earned.", "keys": ["no longer", "reward"] }
+      ],
+      "roleplay": {
+        "persona": "Young founder",
+        "personaTr": "Genç kurucu",
+        "scene": "Tükenmenin eşiğindeki genç bir kurucu, geri adım atmanın ekibi hayal kırıklığına uğratacağından korkuyor. Deneyiminden yola çıkarak onu ikna ediyorsun.",
+        "turns": [
+          { "ai": "Honestly, I'm running on fumes, but stepping back feels like letting the team down.", "aiTr": "Açıkçası son damla benzinle gidiyorum ama geri çekilmek ekibi yüzüstü bırakmak gibi geliyor.", "hint": "I know that feeling, but what really lets the team down is a founder whose judgement is deteriorating.", "keys": ["lets the team down", "judgement", "deteriorating"] },
+          { "ai": "Fair point. Where would you even start?", "aiTr": "Haklısın. Nereden başlardın ki?", "hint": "With sleep: at least seven hours is non-negotiable for me, and my inbox goes dark at 10 pm.", "keys": ["non-negotiable", "seven hours", "inbox", "10 pm"] },
+          { "ai": "My days just get swallowed by meetings, though.", "aiTr": "Ama günlerim toplantıların içinde kaybolup gidiyor.", "hint": "Then ring-fence the first hours of the morning for your most important task, before meetings start eating into the day.", "keys": ["ring-fence", "most important task", "eating into"] },
+          { "ai": "And how do you actually switch off?", "aiTr": "Peki sen gerçekten nasıl kafanı boşaltıyorsun?", "hint": "I walk for thirty minutes every day, and it's often on those walks that my best ideas surface.", "keys": ["walk", "thirty minutes", "best ideas", "surface"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Kuruculuğun en sinsi riski olan tükenmişliği ve enerjiyi stratejik bir kaynak olarak yönetmeyi olgun, incelikli bir dille anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "My first year as a founder was, in hindsight, an exercise in self-sabotage: fourteen-hour days, five hours' sleep, and a quiet pride in both.", "tr": "Geriye dönüp bakınca, kurucu olarak ilk yılım kendi kendimi baltalamaktan ibaretti: on dört saatlik günler, beş saatlik uyku ve ikisiyle de gizliden gizliye övünmek." },
+        { "who": "Me", "en": "The irony, of course, is that the exhaustion I wore as a badge of honour was steadily eroding the very judgement the company depended on.", "tr": "İşin ironisi elbette şu: gurur nişanı gibi taşıdığım yorgunluk, şirketin tam da dayandığı muhakememi yavaş yavaş aşındırıyordu." },
+        { "who": "Me", "en": "A tired brain doesn't simply slow down; it quietly trades the right answer for the easy one, and it rarely tells you it's doing so.", "tr": "Yorgun bir beyin sadece yavaşlamaz; doğru cevabı sessizce kolay olanla takas eder ve bunu yaptığını size nadiren belli eder." },
+        { "who": "Me", "en": "It took a run of poor decisions for the penny to drop: energy, not time, was the scarce resource.", "tr": "Jetonun düşmesi için art arda birkaç kötü karar gerekti: kıt olan kaynak zaman değil, enerjiydi." },
+        { "who": "Me", "en": "These days, I live by three rules that I'd be loath to give up.", "tr": "Bugünlerde, bırakmaya hiç gönlümün olmayacağı üç kurala göre yaşıyorum." },
+        { "who": "Me", "en": "Sleep comes first, and I guard at least seven hours of it jealously, which means nothing in my inbox gets a reply after 10 pm.", "tr": "Önce uyku gelir ve en az yedi saatini kıskançlıkla korurum; bu da gece 10'dan sonra gelen kutumdaki hiçbir şeye cevap verilmemesi demek." },
+        { "who": "Me", "en": "My most important task gets the best of me, first thing in the morning, before meetings have a chance to fragment the day.", "tr": "En önemli işim, toplantılar günü paramparça etme fırsatı bulmadan, sabah ilk iş olarak en iyi halimi alır." },
+        { "who": "Me", "en": "And every day, come rain or shine, I walk for thirty minutes, which, rather unglamorously, is where many of my best ideas tend to turn up.", "tr": "Ve her gün, yağmur çamur demeden otuz dakika yürürüm; pek de göz alıcı olmasa da en iyi fikirlerimin çoğu genellikle orada ortaya çıkar." },
+        { "who": "Me", "en": "None of this is revolutionary, admittedly; the hard part is sticking to it when a deadline is breathing down your neck.", "tr": "Kabul etmek gerekir ki bunların hiçbiri devrim niteliğinde değil; zor olan, bir teslim tarihi ensenizdeyken bunlara sadık kalmak." },
+        { "who": "Me", "en": "That said, I've come to see rest less as an indulgence than as part of the job.", "tr": "Bununla birlikte, dinlenmeyi bir keyiften çok işin bir parçası olarak görmeye başladım." },
+        { "who": "Me", "en": "A startup is a marathon, not a sprint, and a founder who burns out rarely goes down alone; the company tends to follow.", "tr": "Girişim bir sprint değil, maratondur ve tükenen bir kurucu nadiren tek başına batar; şirket de genellikle peşinden gider." }
+      ],
+      "vocab": [
+        { "en": "in hindsight", "tr": "geriye dönüp bakınca", "ex": "In hindsight, I should have slept more.", "def": "when looking back at the past with the knowledge you have now" },
+        { "en": "self-sabotage", "tr": "kendi kendini baltalama", "ex": "Working without sleep was a form of self-sabotage.", "def": "behaviour that damages your own success" },
+        { "en": "a badge of honour", "tr": "gurur nişanı", "ex": "I wore exhaustion as a badge of honour.", "def": "something people are proud of, even if it is not good for them" },
+        { "en": "erode", "tr": "aşındırmak", "ex": "Lack of sleep was eroding my judgement.", "def": "to slowly weaken or destroy something" },
+        { "en": "the penny drops", "tr": "jeton düşmek", "ex": "It took months for the penny to drop.", "def": "someone finally understands something" },
+        { "en": "be loath to", "tr": "...e hiç gönlü olmamak", "ex": "I'd be loath to give up my morning routine.", "def": "to be very unwilling to do something" },
+        { "en": "guard jealously", "tr": "kıskançlıkla korumak", "ex": "I guard my sleep jealously.", "def": "to protect something very carefully and not let others take it" },
+        { "en": "fragment", "tr": "parçalamak, bölmek", "ex": "Too many meetings fragment the day.", "def": "to break something into small, separate parts" },
+        { "en": "breathe down your neck", "tr": "ensende olmak", "ex": "A deadline is breathing down my neck.", "def": "to be very close and put you under pressure" },
+        { "en": "indulgence", "tr": "keyif, kendini şımartma", "ex": "Rest is not an indulgence.", "def": "something you allow yourself for pleasure rather than need" }
+      ],
+      "grammar": {
+        "title": "Concessive hedging: admittedly, of course, that said",
+        "tr": "C2 düzeyinde konuşmacı karşı görüşü kabul ederek ikna eder: 'admittedly', 'of course', 'that said' bir noktayı teslim edip ardından asıl fikri öne çıkarır. 'Less as X than as Y' yapısı ise bir şeyi zarifçe yeniden tanımlar.",
+        "examples": ["None of this is revolutionary, admittedly.", "The irony, of course, is that the exhaustion was eroding my judgement.", "That said, I've come to see rest less as an indulgence than as part of the job."]
+      },
+      "questions": [
+        { "q": "How did the founder feel about the long hours at the time?", "options": ["Secretly ashamed", "Quietly proud", "Openly angry", "Completely indifferent"], "a": 1 },
+        { "q": "What is 'the irony' the founder refers to?", "options": ["The exhaustion they were proud of was damaging the judgement the company needed", "Working less made the company grow faster", "Investors preferred tired founders"], "a": 0 },
+        { "q": "What does 'for the penny to drop' suggest about the realisation?", "options": ["It came on the very first day", "It was suggested by an investor", "It came only after repeated mistakes"], "a": 2 },
+        { "q": "What is the effect of 'rather unglamorously'?", "options": ["It criticises other founders", "It shows the founder dislikes walking", "It suggests the walks are a secret", "It adds a self-deprecating touch by admitting the habit is ordinary"], "a": 3 },
+        { "q": "What does the founder imply with 'the hard part is sticking to it'?", "options": ["The rules are easy to understand but hard to keep under pressure", "The rules are too complicated", "Deadlines should be ignored"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "In ___, my first year was an exercise in self-sabotage.", "a": "hindsight", "hint": "geriye dönüp bakınca" },
+        { "s": "I wore exhaustion as a badge of ___.", "a": "honour", "hint": "onur" },
+        { "s": "It took a run of poor decisions for the ___ to drop.", "a": "penny", "hint": "jeton (deyim)" },
+        { "s": "These are rules I'd be ___ to give up.", "a": "loath", "hint": "gönülsüz" }
+      ],
+      "order": [
+        { "a": "Sleep comes first and I guard it jealously." },
+        { "a": "The hard part is sticking to it." }
+      ],
+      "translate": [
+        { "tr": "Geriye dönüp bakınca, ilk yılım kendi kendimi baltalamaktan ibaretti.", "en": "In hindsight, my first year was an exercise in self-sabotage.", "keys": ["in hindsight", "self-sabotage"] },
+        { "tr": "Bununla birlikte, dinlenmeyi bir keyiften çok işin bir parçası olarak görmeye başladım.", "en": "That said, I've come to see rest less as an indulgence than as part of the job.", "keys": ["that said", "indulgence", "part of the job"] },
+        { "tr": "Zor olan, bir teslim tarihi ensendeyken buna sadık kalmak.", "en": "The hard part is sticking to it when a deadline is breathing down your neck.", "keys": ["sticking to it", "breathing down your neck"] }
+      ],
+      "roleplay": {
+        "persona": "Young founder",
+        "personaTr": "Genç kurucu",
+        "scene": "Yatırım turu kapatmaya çalışan, tükenmiş ama yavaşlamayı yenilgi sayan genç bir kurucuyla konuşuyorsun. Deneyiminle onu ikna etmelisin.",
+        "turns": [
+          { "ai": "I'll be honest, I'm running on empty, but easing off feels like an admission of defeat.", "aiTr": "Dürüst olayım, takatim kalmadı ama yavaşlamak yenilgiyi kabul etmek gibi geliyor.", "hint": "I wore exhaustion as a badge of honour too, but in hindsight it was quietly eroding my judgement.", "keys": ["badge of honour", "in hindsight", "eroding", "judgement"] },
+          { "ai": "Fine, but with a round to close, sleep feels like a luxury I can't afford.", "aiTr": "Peki, ama kapatmam gereken bir yatırım turu varken uyku, karşılayamayacağım bir lüks gibi geliyor.", "hint": "I'd argue it's the opposite: seven hours is precisely what keeps you from making poor calls in the negotiation.", "keys": ["seven hours", "poor calls", "the opposite"] },
+          { "ai": "And when the calendar is wall-to-wall meetings?", "aiTr": "Peki takvim baştan sona toplantılarla doluyken?", "hint": "Then ring-fence the first hours of the morning for whatever matters most, before the meetings fragment the day.", "keys": ["ring-fence", "morning", "matters most", "fragment"] },
+          { "ai": "Is there any habit you'd be loath to give up?", "aiTr": "Bırakmaya hiç gönlün olmayacak bir alışkanlık var mı?", "hint": "My thirty-minute walk, come rain or shine; rather unglamorously, that's where many of my best ideas turn up.", "keys": ["walk", "come rain or shine", "best ideas"] }
+        ]
+      }
+    }
+  }
+}

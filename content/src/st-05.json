@@ -1,0 +1,373 @@
+{
+  "id": "st-05",
+  "topic": "startup",
+  "title": "Solving a Problem with a Customer",
+  "titleTr": "Bir Müşteriyle Sorun Çözmek",
+  "levels": {
+    "A1": {
+      "intro": "Bir doktor cihazın çalışmadığını söylüyor; özür diliyor ve sorunu çözüyorsun.",
+      "text": [
+        { "en": "A doctor from a hospital in Izmir calls me.", "tr": "İzmir'deki bir hastaneden bir doktor beni arıyor." },
+        { "en": "Our device stops in the middle of a test.", "tr": "Cihazımız bir testin ortasında duruyor." },
+        { "en": "She is angry because many patients are waiting.", "tr": "Kızgın, çünkü bekleyen çok hasta var." },
+        { "en": "I say sorry and thank her for the call.", "tr": "Özür diliyorum ve aradığı için ona teşekkür ediyorum." },
+        { "en": "Then I ask her some questions.", "tr": "Sonra ona birkaç soru soruyorum." },
+        { "en": "It is a software problem, not a hardware problem.", "tr": "Bu bir yazılım sorunu, donanım sorunu değil." },
+        { "en": "Our engineer sends an update in two hours.", "tr": "Mühendisimiz iki saat içinde bir güncelleme gönderiyor." },
+        { "en": "The device works again, and I call the doctor back.", "tr": "Cihaz yeniden çalışıyor ve doktoru geri arıyorum." }
+      ],
+      "vocab": [
+        { "en": "say sorry", "tr": "özür dilemek", "ex": "I say sorry to the doctor." },
+        { "en": "in the middle of", "tr": "...in ortasında", "ex": "The device stops in the middle of a test." },
+        { "en": "software", "tr": "yazılım", "ex": "It is a software problem." },
+        { "en": "hardware", "tr": "donanım", "ex": "The hardware is fine." },
+        { "en": "update", "tr": "güncelleme", "ex": "Our engineer sends an update." },
+        { "en": "call back", "tr": "geri aramak", "ex": "I call the doctor back." }
+      ],
+      "grammar": {
+        "title": "Present simple: telling a story step by step",
+        "tr": "Bir olayı adım adım anlatırken present simple kullanabilirsin. he / she / it ile fiile -s eklenir: she calls, it stops.",
+        "examples": ["The doctor calls me.", "The device stops.", "I ask some questions."]
+      },
+      "questions": [
+        { "q": "Where is the hospital?", "options": ["In Ankara", "In Izmir", "In Istanbul"], "a": 1 },
+        { "q": "How does the doctor feel?", "options": ["Happy", "Tired", "Angry"], "a": 2 },
+        { "q": "What is the problem?", "options": ["A software problem", "A hardware problem", "A battery problem"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Our device stops in the ___ of a test.", "a": "middle", "hint": "ortasında" },
+        { "s": "I say ___ and thank her for the call.", "a": "sorry", "hint": "özür dilerim" },
+        { "s": "Our engineer sends an ___ in two hours.", "a": "update", "hint": "güncelleme" }
+      ],
+      "order": [
+        { "a": "Then I ask her some questions." },
+        { "a": "Our engineer sends an update in two hours." }
+      ],
+      "translate": [
+        { "tr": "Çok özür dilerim.", "en": "I am very sorry.", "keys": ["very sorry"] },
+        { "tr": "Cihaz yeniden çalışıyor.", "en": "The device is working again.", "keys": ["device", "working again"] }
+      ],
+      "roleplay": {
+        "persona": "Angry doctor",
+        "personaTr": "Kızgın doktor",
+        "scene": "İzmir'deki bir hastaneden bir doktor arıyor: cihaz bir testin ortasında durdu.",
+        "turns": [
+          { "ai": "Your device is not working!", "aiTr": "Cihazınız çalışmıyor!", "hint": "I am very sorry. Can I ask some questions?", "keys": ["sorry", "questions"] },
+          { "ai": "The screen is black. I have ten patients here.", "aiTr": "Ekran siyah. Burada on hastam var.", "hint": "It is a software problem. Our engineer can send an update.", "keys": ["software", "update", "engineer"] },
+          { "ai": "When can I use it again?", "aiTr": "Onu ne zaman tekrar kullanabilirim?", "hint": "In two hours. I can call you back.", "keys": ["two hours", "call you back"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir hastane şikayetle arıyor; özür diliyor, sorunu anlıyor ve çözüyorsun.",
+      "text": [
+        { "en": "Yesterday, a hospital in Izmir called us with a problem.", "tr": "Dün İzmir'deki bir hastane bizi bir sorunla aradı." },
+        { "en": "Our device stopped working in the middle of a hearing test.", "tr": "Cihazımız bir işitme testinin ortasında çalışmayı durdurdu." },
+        { "en": "The doctor was angry because she had a lot of patients waiting.", "tr": "Doktor kızgındı çünkü bekleyen çok hastası vardı." },
+        { "en": "First, I said sorry and thanked her for calling so quickly.", "tr": "Önce özür diledim ve bu kadar hızlı aradığı için ona teşekkür ettim." },
+        { "en": "Then I asked some questions to understand the problem.", "tr": "Sonra sorunu anlamak için birkaç soru sordum." },
+        { "en": "It was a software bug, not a problem with the hardware.", "tr": "Bu bir yazılım hatasıydı, donanımla ilgili bir sorun değildi." },
+        { "en": "Our engineer sent an update, and two hours later the device worked again.", "tr": "Mühendisimiz bir güncelleme gönderdi ve iki saat sonra cihaz yeniden çalıştı." },
+        { "en": "After that, I called the doctor back to check that everything was fine.", "tr": "Ardından her şeyin yolunda olup olmadığını kontrol etmek için doktoru geri aradım." },
+        { "en": "A good answer to a problem can make a customer trust you more.", "tr": "Bir soruna iyi bir yanıt vermek, müşterinin size daha çok güvenmesini sağlayabilir." }
+      ],
+      "vocab": [
+        { "en": "stop working", "tr": "çalışmayı durdurmak, bozulmak", "ex": "Our device stopped working during a test." },
+        { "en": "say sorry", "tr": "özür dilemek", "ex": "First, I said sorry to the doctor." },
+        { "en": "software bug", "tr": "yazılım hatası", "ex": "It was a software bug." },
+        { "en": "hardware", "tr": "donanım", "ex": "There was no problem with the hardware." },
+        { "en": "send an update", "tr": "güncelleme göndermek", "ex": "Our engineer sent an update." },
+        { "en": "call someone back", "tr": "birini geri aramak", "ex": "I called the doctor back." },
+        { "en": "trust", "tr": "güvenmek", "ex": "Good service makes customers trust you." }
+      ],
+      "grammar": {
+        "title": "Past simple: what happened yesterday",
+        "tr": "Dün olan bir olayı anlatırken past simple kullanılır. Düzenli fiillere -ed eklenir (called, stopped); bazı fiiller düzensizdir (send → sent, say → said).",
+        "examples": ["A hospital called us.", "The device stopped working.", "Our engineer sent an update."]
+      },
+      "questions": [
+        { "q": "Why was the doctor angry?", "options": ["The device was too expensive", "She had a lot of patients waiting", "Nobody answered the phone"], "a": 1 },
+        { "q": "What did the speaker do first?", "options": ["Said sorry and thanked her", "Sent an engineer to Izmir", "Asked for money"], "a": 0 },
+        { "q": "What kind of problem was it?", "options": ["A hardware problem", "A problem with the headphones", "A software bug"], "a": 2 },
+        { "q": "What happened two hours later?", "options": ["The doctor called again", "The device worked again", "The hospital sent the device back"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Our device stopped ___ in the middle of a test.", "a": "working", "hint": "çalışmak" },
+        { "s": "It was a software ___, not a problem with the hardware.", "a": "bug", "hint": "hata" },
+        { "s": "I called the doctor ___ to check that everything was fine.", "a": "back", "hint": "geri" }
+      ],
+      "order": [
+        { "a": "Then I asked some questions to understand the problem." },
+        { "a": "Our engineer sent an update." }
+      ],
+      "translate": [
+        { "tr": "Sorun için özür dilerim.", "en": "I'm sorry about the problem.", "keys": ["sorry", "problem"] },
+        { "tr": "Sizi iki saat içinde geri arayacağım.", "en": "I will call you back in two hours.", "keys": ["call you back", "two hours"] }
+      ],
+      "roleplay": {
+        "persona": "Angry doctor",
+        "personaTr": "Kızgın doktor",
+        "scene": "İzmir'deki bir hastanenin doktoru arıyor: cihaz testin ortasında durdu ve bekleyen hastalar var.",
+        "turns": [
+          { "ai": "Hello? Your device stopped in the middle of a test!", "aiTr": "Alo? Cihazınız bir testin ortasında durdu!", "hint": "I'm really sorry about that. Thank you for calling so quickly.", "keys": ["sorry", "thank you"] },
+          { "ai": "The screen is black and it doesn't start again.", "aiTr": "Ekran siyah ve tekrar açılmıyor.", "hint": "I think it's a software bug. Our engineer can send an update.", "keys": ["software", "bug", "update"] },
+          { "ai": "How long will it take? I have ten patients waiting.", "aiTr": "Ne kadar sürecek? Bekleyen on hastam var.", "hint": "About two hours. I'll call you back to check that everything is fine.", "keys": ["two hours", "call you back", "check"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Bir hastane şikayet ediyor. Özür dilemek, çözüm sunmak ve güveni korumak.",
+      "text": [
+        { "en": "Yesterday, a hospital in Izmir called us with a complaint.", "tr": "Dün İzmir'deki bir hastane bizi bir şikayetle aradı." },
+        { "en": "Their device stopped working in the middle of a hearing test.", "tr": "Cihazları bir işitme testinin ortasında çalışmayı durdurdu." },
+        { "en": "The doctor was angry, and that's understandable, because she had a lot of patients waiting.", "tr": "Doktor kızgındı; bu anlaşılır bir şey, çünkü bekleyen çok hastası vardı." },
+        { "en": "First, I apologised and thanked her for letting us know so quickly.", "tr": "Önce özür diledim ve bize bu kadar çabuk haber verdiği için teşekkür ettim." },
+        { "en": "Then I asked a few questions to understand exactly what had happened.", "tr": "Sonra tam olarak ne olduğunu anlamak için birkaç soru sordum." },
+        { "en": "In the end, it turned out to be a software bug, not a hardware problem.", "tr": "Sonunda bunun bir donanım sorunu değil, bir yazılım hatası olduğu ortaya çıktı." },
+        { "en": "Our engineer sent an update within two hours, and the device started working again.", "tr": "Mühendisimiz iki saat içinde bir güncelleme gönderdi ve cihaz yeniden çalışmaya başladı." },
+        { "en": "I called the doctor back to make sure everything was fine.", "tr": "Her şeyin yolunda olduğundan emin olmak için doktoru geri aradım." },
+        { "en": "I've learned that a complaint doesn't have to be the end of a relationship.", "tr": "Bir şikayetin bir ilişkinin sonu olmak zorunda olmadığını öğrendim." },
+        { "en": "If you handle it well, it can actually make the relationship stronger.", "tr": "İyi yönetirseniz, aslında ilişkiyi daha da güçlendirebilir." }
+      ],
+      "vocab": [
+        { "en": "complaint", "tr": "şikayet", "ex": "A hospital called us with a complaint.", "def": "a statement that something is wrong or not good enough" },
+        { "en": "apologise", "tr": "özür dilemek", "ex": "First, I apologised to the doctor.", "def": "to say that you are sorry" },
+        { "en": "let someone know", "tr": "birine haber vermek", "ex": "Thank you for letting us know so quickly.", "def": "to tell someone about something" },
+        { "en": "turn out to be", "tr": "...olduğu ortaya çıkmak", "ex": "It turned out to be a software bug.", "def": "to be discovered to be something in the end" },
+        { "en": "software bug", "tr": "yazılım hatası", "ex": "Our engineer found the software bug.", "def": "a mistake in a computer program" },
+        { "en": "within two hours", "tr": "iki saat içinde", "ex": "The update arrived within two hours.", "def": "in less than two hours" },
+        { "en": "make sure", "tr": "emin olmak", "ex": "I called back to make sure everything was fine.", "def": "to check that something is true or has been done" },
+        { "en": "handle a complaint", "tr": "bir şikayeti yönetmek", "ex": "If you handle a complaint well, customers trust you more.", "def": "to deal with a customer's problem" }
+      ],
+      "grammar": {
+        "title": "Present perfect vs past simple",
+        "tr": "Belirli bir geçmiş zamandaki olay için past simple kullanılır (Yesterday a hospital called us). Bugüne etkisi olan deneyim ya da ders için present perfect kullanılır (I've learned that...).",
+        "examples": ["Yesterday, a hospital called us with a complaint.", "I've learned that a complaint is not the end.", "Our engineer sent an update within two hours."]
+      },
+      "questions": [
+        { "q": "Why was the doctor angry?", "options": ["The engineer was late", "The device was too expensive", "She had a lot of patients waiting"], "a": 2 },
+        { "q": "What did the speaker do first?", "options": ["Apologised and thanked her", "Sent an engineer to Izmir", "Asked for a new contract"], "a": 0 },
+        { "q": "What was the cause of the problem?", "options": ["A broken cable", "A software bug", "A mistake by the doctor"], "a": 1 },
+        { "q": "What has the speaker learned?", "options": ["Complaints always end a relationship", "Customers should not call so quickly", "A complaint handled well can make a relationship stronger"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "First, I ___ and thanked her for letting us know.", "a": "apologised", "hint": "özür diledim" },
+        { "s": "It turned ___ to be a software bug.", "a": "out", "hint": "ortaya çıktı" },
+        { "s": "I called the doctor back to make ___ everything was fine.", "a": "sure", "hint": "emin olmak" }
+      ],
+      "order": [
+        { "a": "Our engineer sent an update within two hours." },
+        { "a": "A complaint doesn't have to be the end." }
+      ],
+      "translate": [
+        { "tr": "Bize haber verdiğiniz için teşekkürler.", "en": "Thank you for letting us know.", "keys": ["letting us know"] },
+        { "tr": "Bir yazılım hatası olduğu ortaya çıktı.", "en": "It turned out to be a software bug.", "keys": ["turned out", "software bug"] }
+      ],
+      "roleplay": {
+        "persona": "Angry doctor",
+        "personaTr": "Kızgın doktor",
+        "scene": "İzmir'deki bir hastanenin doktoru, cihazın test sırasında durduğunu söylüyor.",
+        "turns": [
+          { "ai": "Your device stopped in the middle of a test, and I have ten patients waiting!", "aiTr": "Cihazınız bir testin ortasında durdu ve bekleyen on hastam var!", "hint": "I'm really sorry about this. Thank you for letting us know so quickly. Can I ask you a few questions?", "keys": ["sorry", "thank you", "questions"] },
+          { "ai": "The screen is black and it won't restart.", "aiTr": "Ekran siyah ve yeniden başlamıyor.", "hint": "I understand. It sounds like a software bug, so our engineer will send an update.", "keys": ["software bug", "update", "engineer"] },
+          { "ai": "How long will that take? I can't wait all day.", "aiTr": "Bu ne kadar sürer? Bütün gün bekleyemem.", "hint": "It should be working again within two hours, and I'll call you back to make sure everything is fine.", "keys": ["two hours", "call you back", "make sure"] },
+          { "ai": "Okay, but how do I know this won't happen again?", "aiTr": "Tamam, ama bunun tekrar olmayacağını nereden bileceğim?", "hint": "That's a fair question. We will find out why it happened, and I'll keep you updated.", "keys": ["find out", "keep you updated", "why"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Ödeme yapan bir hastane müşterisinin şikayetini sakin ve profesyonelce çözüyorsun.",
+      "text": [
+        { "en": "Yesterday we got a call from a hospital in Izmir, one of our paying customers.", "tr": "Dün, ücret ödeyen müşterilerimizden biri olan İzmir'deki bir hastaneden bir telefon aldık." },
+        { "en": "Their audiometer had frozen in the middle of a test, and the screen had gone completely black.", "tr": "Odyometreleri bir testin ortasında donmuş ve ekran tamamen kararmıştı." },
+        { "en": "The doctor told me she had a waiting room full of patients, so understandably she was furious.", "tr": "Doktor bana bekleme salonunun hastalarla dolu olduğunu söyledi; bu yüzden haklı olarak çok öfkeliydi." },
+        { "en": "The first thing I did was apologise and thank her for flagging it so quickly.", "tr": "Yaptığım ilk şey özür dilemek ve sorunu bu kadar hızlı bildirdiği için ona teşekkür etmek oldu." },
+        { "en": "Rather than guessing, I asked her a few questions to work out exactly what had happened.", "tr": "Tahmin yürütmek yerine, tam olarak ne olduğunu anlamak için ona birkaç soru sordum." },
+        { "en": "It turned out the problem was caused by a software bug rather than faulty hardware.", "tr": "Sorunun arızalı donanımdan değil, bir yazılım hatasından kaynaklandığı ortaya çıktı." },
+        { "en": "Our engineer sent an update remotely, and the device was up and running again within two hours.", "tr": "Mühendisimiz uzaktan bir güncelleme gönderdi ve cihaz iki saat içinde yeniden çalışır hâle geldi." },
+        { "en": "Later that day, I called her back to make sure everything was working as it should.", "tr": "Aynı gün daha sonra, her şeyin olması gerektiği gibi çalıştığından emin olmak için onu geri aradım." },
+        { "en": "If a customer had to wait days for a fix, I'd say we would lose their trust.", "tr": "Bir müşteri bir çözüm için günlerce beklemek zorunda kalsa, bence güvenini kaybederdik." },
+        { "en": "In my experience, a complaint that is handled well can actually make a relationship stronger.", "tr": "Deneyimlerime göre, iyi yönetilen bir şikayet aslında bir ilişkiyi daha da güçlendirebilir." }
+      ],
+      "vocab": [
+        { "en": "flag something", "tr": "(bir sorunu) bildirmek", "ex": "Thanks for flagging the problem so quickly.", "def": "to point out a problem so that people notice it" },
+        { "en": "work out", "tr": "anlamak, çözmek", "ex": "I asked questions to work out what had happened.", "def": "to understand or find the answer to something" },
+        { "en": "be caused by", "tr": "...den kaynaklanmak", "ex": "The problem was caused by a software bug.", "def": "to happen because of something" },
+        { "en": "faulty hardware", "tr": "arızalı donanım", "ex": "The engineer checked for faulty hardware first.", "def": "physical parts of a device that do not work correctly" },
+        { "en": "remotely", "tr": "uzaktan", "ex": "Our engineer fixed the device remotely.", "def": "from a different place, without being there" },
+        { "en": "up and running", "tr": "yeniden çalışır hâlde", "ex": "The device was up and running within two hours.", "def": "working normally again" },
+        { "en": "understandably", "tr": "haklı olarak, anlaşılır şekilde", "ex": "Understandably, the doctor was furious.", "def": "in a way that is easy to understand or accept" },
+        { "en": "lose someone's trust", "tr": "birinin güvenini kaybetmek", "ex": "If we ignored complaints, we would lose our customers' trust.", "def": "to make someone stop believing in you" },
+        { "en": "handle a complaint", "tr": "bir şikayeti yönetmek", "ex": "A complaint that is handled well can build trust.", "def": "to deal with a customer's problem" }
+      ],
+      "grammar": {
+        "title": "Passive: focusing on what happened",
+        "tr": "Eylemi kimin yaptığı değil, ne olduğu önemliyse passive kullanılır: be + V3. Şikayetlerde kimseyi suçlamadan olayı tarafsız anlatmaya yardımcı olur.",
+        "examples": ["The problem was caused by a software bug.", "A complaint that is handled well can make a relationship stronger.", "The update was sent remotely."]
+      },
+      "questions": [
+        { "q": "What was wrong with the device?", "options": ["It had frozen during a test", "It had been dropped", "Its headphones were broken"], "a": 0 },
+        { "q": "Why was the doctor so angry?", "options": ["She had paid too much", "Her waiting room was full of patients", "The engineer was rude"], "a": 1 },
+        { "q": "How was the problem fixed?", "options": ["An engineer travelled to Izmir", "The hospital got a new device", "An update was sent remotely"], "a": 2 },
+        { "q": "What can we infer about the speaker's approach?", "options": ["They usually blame the customer", "They try to understand the facts before acting", "They prefer to avoid difficult calls"], "a": 1 },
+        { "q": "According to the speaker, what would happen if a customer had to wait days for a fix?", "options": ["The customer would buy a second device", "Nothing would change", "The doctor would fix it herself", "The company would lose their trust"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "It turned out the problem was ___ by a software bug.", "a": "caused", "hint": "kaynaklanmak" },
+        { "s": "The device was up and ___ again within two hours.", "a": "running", "hint": "çalışır hâlde" },
+        { "s": "Thank you for ___ the problem so quickly.", "a": "flagging", "hint": "bildirmek" }
+      ],
+      "order": [
+        { "a": "The problem was caused by a software bug." },
+        { "a": "Our engineer sent an update remotely." }
+      ],
+      "translate": [
+        { "tr": "Sorun bir yazılım hatasından kaynaklandı.", "en": "The problem was caused by a software bug.", "keys": ["was caused by", "software bug"] },
+        { "tr": "Cihaz iki saat içinde yeniden çalışır hâle geldi.", "en": "The device was up and running again within two hours.", "keys": ["up and running", "within two hours"] }
+      ],
+      "roleplay": {
+        "persona": "Angry doctor",
+        "personaTr": "Kızgın doktor",
+        "scene": "İzmir'deki bir hastanenin doktoru yoğun bir gününde arıyor: cihaz test sırasında dondu.",
+        "turns": [
+          { "ai": "I'm in the middle of a busy clinic and your device has just frozen on me.", "aiTr": "Yoğun bir kliniğin ortasındayım ve cihazınız az önce dondu.", "hint": "I'm really sorry, and thank you for flagging it so quickly. Could you tell me exactly what's on the screen?", "keys": ["sorry", "flagging", "screen"] },
+          { "ai": "Nothing, it's completely black, and it won't restart.", "aiTr": "Hiçbir şey, ekran tamamen siyah ve yeniden başlamıyor.", "hint": "It sounds like a software issue rather than faulty hardware, so our engineer can send an update remotely.", "keys": ["software", "remotely", "faulty hardware"] },
+          { "ai": "Fine, but I've got a waiting room full of patients, so how long are we talking?", "aiTr": "Peki, ama bekleme salonum hasta dolu; ne kadar süreden bahsediyoruz?", "hint": "We should have it up and running within two hours, and I'll call you back to make sure it's working properly.", "keys": ["up and running", "two hours", "call you back"] },
+          { "ai": "And what if this happens again next week?", "aiTr": "Peki ya bu gelecek hafta yine olursa?", "hint": "We're looking into the cause, but if it happened again, you'd get the same remote support straight away.", "keys": ["looking into", "remote support", "cause"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir şikayeti nasıl ele aldığını, nüanslı ve profesyonel bir dille anlatıyorsun.",
+      "text": [
+        { "en": "Yesterday we had a call from a hospital in Izmir, one of our paying customers, and it wasn't a happy one.", "tr": "Dün, ücret ödeyen müşterilerimizden biri olan İzmir'deki bir hastaneden bir telefon aldık ve pek hoş bir konuşma değildi." },
+        { "en": "Halfway through a hearing test, their audiometer had frozen, leaving the screen completely black and a patient sitting there with headphones on.", "tr": "Odyometreleri bir işitme testinin ortasında donmuş, ekran tamamen kararmış ve hasta kulaklıklar başında öylece kalmıştı." },
+        { "en": "The doctor, with a waiting room full of patients, was understandably furious.", "tr": "Bekleme salonu hasta dolu olan doktor, haklı olarak çok öfkeliydi." },
+        { "en": "What I did first was simply apologise and thank her for raising it straight away instead of quietly losing faith in us.", "tr": "İlk yaptığım şey sadece özür dilemek ve bize sessizce güvenini kaybetmek yerine sorunu hemen dile getirdiği için ona teşekkür etmek oldu." },
+        { "en": "Rather than jumping to conclusions, I asked a few targeted questions to pin down exactly what had gone wrong.", "tr": "Aceleyle sonuca varmak yerine, tam olarak neyin yanlış gittiğini saptamak için birkaç hedefli soru sordum." },
+        { "en": "It quickly became clear that we were dealing with a software bug, not a hardware fault.", "tr": "Kısa sürede bir donanım arızasıyla değil, bir yazılım hatasıyla karşı karşıya olduğumuz netleşti." },
+        { "en": "Our engineer pushed an update remotely, and within two hours the device was back up and running.", "tr": "Mühendisimiz uzaktan bir güncelleme gönderdi ve iki saat içinde cihaz yeniden çalışır hâle geldi." },
+        { "en": "I then made a point of calling the doctor back myself to make sure everything was working properly.", "tr": "Ardından her şeyin düzgün çalıştığından emin olmak için doktoru bizzat geri aramaya özen gösterdim." },
+        { "en": "Not only does a follow-up call close the loop, but it also shows the customer that someone is genuinely accountable.", "tr": "Takip araması yalnızca süreci kapatmakla kalmaz, müşteriye birinin gerçekten sorumluluğu üstlendiğini de gösterir." },
+        { "en": "Handled badly, a complaint like this can quietly end a relationship.", "tr": "Kötü yönetilen böyle bir şikayet, bir ilişkiyi sessizce bitirebilir." },
+        { "en": "Handled well, it can actually leave the relationship stronger than it was before.", "tr": "İyi yönetildiğinde ise ilişkiyi eskisinden bile güçlü bırakabilir." }
+      ],
+      "vocab": [
+        { "en": "raise an issue", "tr": "(bir sorunu) dile getirmek", "ex": "Thank you for raising it straight away.", "def": "to mention a problem so that it can be dealt with" },
+        { "en": "lose faith in", "tr": "...e güvenini kaybetmek", "ex": "Customers quietly lose faith in suppliers who don't respond.", "def": "to stop trusting or believing in someone" },
+        { "en": "jump to conclusions", "tr": "aceleyle sonuca varmak", "ex": "Don't jump to conclusions before you have the facts.", "def": "to decide something too quickly without knowing all the facts" },
+        { "en": "pin down", "tr": "kesin olarak saptamak", "ex": "We asked targeted questions to pin down the cause.", "def": "to find out exactly what something is" },
+        { "en": "hardware fault", "tr": "donanım arızası", "ex": "It wasn't a hardware fault after all.", "def": "a problem with the physical parts of a device" },
+        { "en": "push an update", "tr": "(uzaktan) güncelleme göndermek", "ex": "Our engineer pushed an update remotely.", "def": "to send new software to a device from a distance" },
+        { "en": "back up and running", "tr": "yeniden çalışır hâlde", "ex": "Within two hours, the device was back up and running.", "def": "working normally again after a problem" },
+        { "en": "make a point of", "tr": "...e özen göstermek", "ex": "I made a point of calling her back myself.", "def": "to make a special effort to do something" },
+        { "en": "close the loop", "tr": "süreci tamamlamak, geri dönüş yapmak", "ex": "A follow-up call closes the loop with the customer.", "def": "to finish a process by confirming the result with the people involved" },
+        { "en": "accountable", "tr": "hesap verebilir, sorumlu", "ex": "Customers want to know that someone is accountable.", "def": "responsible for something and ready to explain it" }
+      ],
+      "grammar": {
+        "title": "Participle clauses: Handled well, ...",
+        "tr": "Participle clause (V3 ya da -ing ile başlayan yan cümle) cümleyi kısaltır ve daha akıcı yapar. 'Handled well' = 'If it is handled well'. Yan cümlenin öznesi ana cümleninkiyle aynı olmalı.",
+        "examples": ["Handled badly, a complaint can quietly end a relationship.", "Handled well, it can leave the relationship stronger.", "The audiometer froze, leaving the screen completely black."]
+      },
+      "questions": [
+        { "q": "What does 'it wasn't a happy one' suggest about the call?", "options": ["The doctor was calling to complain", "The doctor wanted to order more devices", "The phone line was bad"], "a": 0 },
+        { "q": "Why does the speaker thank the doctor?", "options": ["For paying on time", "For raising the problem instead of quietly losing faith", "For fixing the device herself"], "a": 1 },
+        { "q": "What does 'rather than jumping to conclusions' imply about the speaker?", "options": ["They were in a hurry", "They blamed the engineer", "They prefer to get the facts before acting"], "a": 2 },
+        { "q": "According to the speaker, what is the main value of a follow-up call?", "options": ["It lets you sell more products", "It shows that someone is accountable", "It replaces the need for an update"], "a": 1 },
+        { "q": "What is the speaker's overall attitude to complaints?", "options": ["They should be avoided at all costs", "They are a sign the product has failed", "They are mainly the engineers' problem", "They can be a chance to strengthen a relationship"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Rather than jumping to ___, I asked a few targeted questions.", "a": "conclusions", "hint": "aceleyle sonuca varmak" },
+        { "s": "I asked questions to pin ___ exactly what had gone wrong.", "a": "down", "hint": "saptamak" },
+        { "s": "I made a ___ of calling the doctor back myself.", "a": "point", "hint": "özen göstermek" },
+        { "s": "___ well, a complaint can leave the relationship stronger.", "a": "Handled", "hint": "yönetildiğinde" }
+      ],
+      "order": [
+        { "a": "We were dealing with a software bug." },
+        { "a": "Within two hours the device was back up and running." }
+      ],
+      "translate": [
+        { "tr": "Sorunu hemen dile getirdiğiniz için teşekkürler.", "en": "Thank you for raising it straight away.", "keys": ["raising it", "straight away"] },
+        { "tr": "Kötü yönetilirse, bir şikayet bir ilişkiyi bitirebilir.", "en": "Handled badly, a complaint can end a relationship.", "keys": ["handled badly", "end a relationship"] }
+      ],
+      "roleplay": {
+        "persona": "Angry doctor",
+        "personaTr": "Kızgın doktor",
+        "scene": "İzmir'deki bir hastanenin doktoru, cihazı geri göndermeyi düşündüğünü söylüyor.",
+        "turns": [
+          { "ai": "I'll be honest, I'm close to sending the whole thing back, because it froze mid-test with a patient sitting right there.", "aiTr": "Açık konuşayım, her şeyi geri göndermeye çok yakınım; tam bir hasta oradayken test ortasında dondu.", "hint": "I completely understand, and I'm sorry you've been put in that position. Thank you for raising it straight away.", "keys": ["sorry", "raising it", "understand"] },
+          { "ai": "The screen's gone black and it won't reboot, so is this a hardware problem?", "aiTr": "Ekran karardı ve yeniden başlamıyor; bu bir donanım sorunu mu?", "hint": "From what you're describing, it sounds more like a software bug than a hardware fault, which means we can fix it remotely.", "keys": ["software bug", "hardware fault", "remotely"] },
+          { "ai": "Remotely is all very well, but I've got a full waiting room, so what's the realistic timeline?", "aiTr": "Uzaktan güzel de, bekleme salonum dolu; gerçekçi süre ne?", "hint": "Our engineer can push an update within two hours, and I'll call you myself once it's back up and running.", "keys": ["within two hours", "push an update", "back up and running"] },
+          { "ai": "And how do I know this isn't going to keep happening?", "aiTr": "Peki bunun sürekli tekrarlanmayacağını nereden bileceğim?", "hint": "That's a fair concern. We're getting to the bottom of what caused it, and I'll personally keep you in the loop.", "keys": ["bottom of", "in the loop", "caused"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Zor bir müşteri şikayetini nasıl güvene dönüştürdüğünü, ince bir dil ve hafif ironiyle anlatıyorsun.",
+      "text": [
+        { "en": "Yesterday's call from a hospital in Izmir, one of our paying customers, was, to put it mildly, not a social one.", "tr": "Ücret ödeyen müşterilerimizden biri olan İzmir'deki bir hastaneden dün gelen telefon, en hafif deyimiyle, bir hal hatır sohbeti değildi." },
+        { "en": "Their audiometer had frozen halfway through a test, leaving a blank screen, a bemused patient in headphones and a doctor with a waiting room full of people.", "tr": "Odyometreleri bir testin ortasında donmuştu; ortada boş bir ekran, kulaklıklarıyla şaşkın bir hasta ve bekleme salonu dolu bir doktor vardı." },
+        { "en": "Her frustration was entirely justified, and the last thing she needed was a supplier getting defensive.", "tr": "Hayal kırıklığı tamamen haklıydı ve ihtiyacı olan son şey savunmaya geçen bir tedarikçiydi." },
+        { "en": "So I apologised without caveats and thanked her for telling us straight away, which is far more than many customers bother to do.", "tr": "Bu yüzden hiçbir 'ama' eklemeden özür diledim ve bize hemen haber verdiği için teşekkür ettim; birçok müşteri bu zahmete bile girmez." },
+        { "en": "That said, an apology only buys you so much goodwill, and what she really wanted was her device back.", "tr": "Yine de bir özür ancak bir yere kadar iyi niyet kazandırır; onun asıl istediği cihazına yeniden kavuşmaktı." },
+        { "en": "A handful of pointed questions was enough to establish that the culprit was a software bug rather than anything physical.", "tr": "Birkaç yerinde soru, sorunun kaynağının fiziksel bir şey değil, bir yazılım hatası olduğunu saptamaya yetti." },
+        { "en": "Our engineer pushed a fix remotely, and within two hours the device was back up and running.", "tr": "Mühendisimiz uzaktan bir düzeltme gönderdi ve iki saat içinde cihaz yeniden çalışır hâle geldi." },
+        { "en": "I then called her back myself, partly to confirm everything was in order and partly because a follow-up says more than any apology.", "tr": "Sonra onu bizzat geri aradım; kısmen her şeyin yolunda olduğunu teyit etmek, kısmen de bir takip araması her özürden daha çok şey söylediği için." },
+        { "en": "It's tempting to treat a complaint as a verdict on the relationship.", "tr": "Bir şikayeti ilişki hakkında verilmiş bir hüküm gibi görmek cazip gelir." },
+        { "en": "In my experience, it is more of a stress test.", "tr": "Benim deneyimime göre, daha çok bir stres testidir." },
+        { "en": "Handled with candour and speed, it can leave a customer trusting you rather more than if nothing had gone wrong at all.", "tr": "Açık sözlülük ve hızla ele alındığında, müşterinin size hiçbir şey ters gitmemiş olmasından bile daha fazla güvenmesini sağlayabilir." },
+        { "en": "By the same token, a complaint brushed aside rarely stays a single complaint for long.", "tr": "Aynı şekilde, geçiştirilen bir şikayet nadiren uzun süre tek bir şikayet olarak kalır." }
+      ],
+      "vocab": [
+        { "en": "to put it mildly", "tr": "en hafif deyimiyle", "ex": "The call was, to put it mildly, not a social one.", "def": "used to say that the reality is much stronger or worse than your words" },
+        { "en": "get defensive", "tr": "savunmaya geçmek", "ex": "The worst thing a supplier can do is get defensive.", "def": "to react to criticism by protecting yourself instead of listening" },
+        { "en": "without caveats", "tr": "çekince koymadan, 'ama' demeden", "ex": "I apologised without caveats.", "def": "with no conditions or excuses added" },
+        { "en": "buy goodwill", "tr": "iyi niyet kazandırmak", "ex": "An apology only buys you so much goodwill.", "def": "to create positive feeling and trust" },
+        { "en": "pointed question", "tr": "yerinde, nokta atışı soru", "ex": "A few pointed questions were enough.", "def": "a direct question aimed at a specific point" },
+        { "en": "the culprit", "tr": "suçlu, sorunun kaynağı", "ex": "The culprit turned out to be a software bug.", "def": "the thing responsible for a problem" },
+        { "en": "push a fix", "tr": "(uzaktan) düzeltme göndermek", "ex": "Our engineer pushed a fix remotely.", "def": "to send corrected software to a device from a distance" },
+        { "en": "a verdict on", "tr": "...hakkında hüküm", "ex": "A complaint is not a verdict on the relationship.", "def": "a final judgement about something" },
+        { "en": "with candour", "tr": "açık sözlülükle", "ex": "Handle complaints with candour and speed.", "def": "in an honest and open way" },
+        { "en": "brush aside", "tr": "geçiştirmek", "ex": "A complaint brushed aside rarely stays small.", "def": "to ignore something or treat it as unimportant" }
+      ],
+      "grammar": {
+        "title": "Nuanced hedging: that said, in my experience, rather more",
+        "tr": "C2'de görüşünü kesin hükümler yerine incelikli ifadelerle verirsin. 'That said' önceki fikri dengeler, 'in my experience' iddiayı kişisel deneyime bağlar, 'rather more' vurguyu ölçülü tutar.",
+        "examples": ["That said, an apology only buys you so much goodwill.", "In my experience, it is more of a stress test.", "It can leave a customer trusting you rather more than before."]
+      },
+      "questions": [
+        { "q": "What does 'not a social one' tell us about the call?", "options": ["It was a sales call", "It was very short", "It was a complaint, not a friendly chat"], "a": 2 },
+        { "q": "Why does the speaker mention that many customers don't bother to report problems?", "options": ["To criticise the doctor", "To show that her call was actually valuable", "To explain why the bug was missed"], "a": 1 },
+        { "q": "What does 'an apology only buys you so much goodwill' imply?", "options": ["Words help, but the customer mainly needs the problem fixed", "Apologies are useless", "The company should offer a discount"], "a": 0 },
+        { "q": "How was the problem solved?", "options": ["A new device was delivered", "An engineer visited the hospital", "A fix was pushed remotely", "The doctor restarted it herself"], "a": 2 },
+        { "q": "What is the speaker's view of complaints?", "options": ["They are a final verdict on the relationship", "They should always go to the engineers", "They are rare in medical technology", "They are a stress test that can build trust"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "The call was, to put it ___, not a social one.", "a": "mildly", "hint": "en hafif deyimiyle" },
+        { "s": "I apologised without ___ and thanked her.", "a": "caveats", "hint": "çekince" },
+        { "s": "The ___ turned out to be a software bug.", "a": "culprit", "hint": "sorunun kaynağı" },
+        { "s": "A complaint ___ aside rarely stays a single complaint.", "a": "brushed", "hint": "geçiştirilen" }
+      ],
+      "order": [
+        { "a": "An apology only buys you so much goodwill." },
+        { "a": "In my experience it is more of a stress test." }
+      ],
+      "translate": [
+        { "tr": "Bir özür ancak bir yere kadar iyi niyet kazandırır.", "en": "An apology only buys you so much goodwill.", "keys": ["apology", "so much goodwill"] },
+        { "tr": "Sorunun kaynağı bir yazılım hatasıydı.", "en": "The culprit was a software bug.", "keys": ["culprit", "software bug"] },
+        { "tr": "Şikayet, ilişki hakkında bir hüküm değildir.", "en": "A complaint is not a verdict on the relationship.", "keys": ["verdict on", "relationship"] }
+      ],
+      "roleplay": {
+        "persona": "Angry doctor",
+        "personaTr": "Kızgın doktor",
+        "scene": "İzmir'deki bir hastanenin deneyimli doktoru, test ortasında donan cihaz yüzünden sert ve alaycı bir dille arıyor.",
+        "turns": [
+          { "ai": "Frankly, I'm beginning to wonder why we didn't just stick with our old audiometer, because yours has just died on me mid-test.", "aiTr": "Açıkçası eski odyometremizle neden devam etmediğimizi sorgulamaya başladım; sizinki test ortasında öylece kapandı.", "hint": "That's entirely fair, and I'm sorry, no caveats. I'm grateful you called us straight away rather than quietly giving up on us.", "keys": ["sorry", "grateful", "straight away"] },
+          { "ai": "Black screen, won't reboot, patient still sitting there in headphones, so what are we looking at?", "aiTr": "Siyah ekran, yeniden açılmıyor, hasta hâlâ kulaklıklarla oturuyor; neyle karşı karşıyayız?", "hint": "Let me ask a couple of quick questions, but from what you're describing, the culprit is almost certainly software rather than hardware.", "keys": ["culprit", "software", "hardware"] },
+          { "ai": "And that helps me how, exactly, with a waiting room full of people?", "aiTr": "Bekleme salonu dolu biriyken bu bana tam olarak nasıl yardımcı oluyor?", "hint": "It means we don't need to collect anything: our engineer can push a fix remotely, and you should be back up and running within two hours.", "keys": ["push a fix", "remotely", "within two hours"] },
+          { "ai": "I'll hold you to that, but I'd rather not be having this conversation again next month.", "aiTr": "Sözünüzü tutmanızı bekleyeceğim; ama bu konuşmayı gelecek ay tekrar yapmak istemem.", "hint": "Nor would I. Once we've got to the bottom of it, I'll walk you through what went wrong and what we've changed.", "keys": ["bottom of it", "walk you through", "went wrong"] }
+        ]
+      }
+    }
+  }
+}

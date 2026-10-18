@@ -1,0 +1,374 @@
+{
+  "id": "li-01",
+  "topic": "life",
+  "title": "At the Airport and the Hotel",
+  "titleTr": "Havalimanında ve Otelde",
+  "levels": {
+    "A1": {
+      "intro": "İş seyahatindesin: pasaport kontrolünde ve otel resepsiyonunda çok basit cümleler kuruyorsun.",
+      "text": [
+        { "who": "Officer", "en": "Hello, why are you here?", "tr": "Merhaba, neden buradasınız?" },
+        { "who": "Me", "en": "I am here for a business conference.", "tr": "Bir iş konferansı için buradayım." },
+        { "who": "Officer", "en": "How long are you here for?", "tr": "Ne kadar süre buradasınız?" },
+        { "who": "Me", "en": "I am here for four days.", "tr": "Dört gün buradayım." },
+        { "who": "Me", "en": "Hello, I have a reservation under the name {name}.", "tr": "Merhaba, {name} adına bir rezervasyonum var." },
+        { "who": "Receptionist", "en": "Can I see your passport, please?", "tr": "Pasaportunuzu görebilir miyim, lütfen?" },
+        { "who": "Me", "en": "Yes, of course, and is breakfast included?", "tr": "Evet, tabii; kahvaltı dahil mi?" },
+        { "who": "Receptionist", "en": "Yes, and your room is on the fifth floor.", "tr": "Evet, odanız da beşinci katta." }
+      ],
+      "vocab": [
+        { "en": "business conference", "tr": "iş konferansı", "ex": "I am here for a business conference." },
+        { "en": "reservation", "tr": "rezervasyon", "ex": "I have a reservation under the name {name}." },
+        { "en": "passport", "tr": "pasaport", "ex": "Can I see your passport, please?" },
+        { "en": "breakfast", "tr": "kahvaltı", "ex": "Breakfast is in the morning." },
+        { "en": "included", "tr": "dahil", "ex": "Is breakfast included?" },
+        { "en": "floor", "tr": "kat", "ex": "Your room is on the fifth floor." }
+      ],
+      "grammar": {
+        "title": "To be: I am / Is it...? / It is",
+        "tr": "'To be' fiili 'olmak' demektir: I am, you are, it is. Soru sorarken fiil başa gelir: Is breakfast included? Are you here for work?",
+        "examples": ["I am here for a business conference.", "Is breakfast included?", "Your room is on the fifth floor."]
+      },
+      "questions": [
+        { "q": "Why is the speaker here?", "options": ["For a holiday", "For a business conference", "For a family visit"], "a": 1 },
+        { "q": "How many days is the visit?", "options": ["Four days", "Two days", "Ten days"], "a": 0 },
+        { "q": "Where is the room?", "options": ["On the first floor", "On the third floor", "On the fifth floor"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I am here for a business ___.", "a": "conference", "hint": "konferans" },
+        { "s": "I have a ___ under the name {name}.", "a": "reservation", "hint": "rezervasyon" },
+        { "s": "Can I see your ___, please?", "a": "passport", "hint": "pasaport" }
+      ],
+      "order": [
+        { "a": "I am here for four days." },
+        { "a": "Your room is on the fifth floor." }
+      ],
+      "translate": [
+        { "tr": "Bir iş konferansı için buradayım.", "en": "I am here for a business conference.", "keys": ["here for", "business conference"] },
+        { "tr": "Kahvaltı dahil mi?", "en": "Is breakfast included?", "keys": ["breakfast", "included"] }
+      ],
+      "roleplay": {
+        "persona": "Hotel receptionist",
+        "personaTr": "Otel resepsiyonisti",
+        "scene": "Berlin'de akşam otele giriş yapıyorsun.",
+        "turns": [
+          { "ai": "Good evening! Can I help you?", "aiTr": "İyi akşamlar! Yardımcı olabilir miyim?", "hint": "Good evening. I have a reservation under the name {name}.", "keys": ["reservation", "under the name"] },
+          { "ai": "Thank you. Can I see your passport, please?", "aiTr": "Teşekkürler. Pasaportunuzu görebilir miyim, lütfen?", "hint": "Yes, here you are.", "keys": ["here you are", "yes"] },
+          { "ai": "Your room is 512. Do you have a question?", "aiTr": "Odanız 512. Bir sorunuz var mı?", "hint": "Yes. Is breakfast included?", "keys": ["breakfast", "included"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "İş seyahatinde pasaport kontrolü ve otel check-in konuşmaları.",
+      "text": [
+        { "who": "Officer", "en": "Good morning, what is the purpose of your visit?", "tr": "Günaydın, ziyaretinizin amacı nedir?" },
+        { "who": "Me", "en": "I'm here for a business conference about medical technology.", "tr": "Medikal teknoloji üzerine bir iş konferansı için buradayım." },
+        { "who": "Officer", "en": "How long are you going to stay?", "tr": "Ne kadar kalacaksınız?" },
+        { "who": "Me", "en": "I'm staying for four days and flying back on Friday.", "tr": "Dört gün kalıyorum ve cuma günü dönüyorum." },
+        { "who": "Officer", "en": "Thank you, and enjoy your stay.", "tr": "Teşekkürler, iyi konaklamalar." },
+        { "who": "Me", "en": "Hello, I have a reservation under the name {name}.", "tr": "Merhaba, {name} adına bir rezervasyonum var." },
+        { "who": "Receptionist", "en": "Welcome, could I see your passport, please?", "tr": "Hoş geldiniz, pasaportunuzu görebilir miyim, lütfen?" },
+        { "who": "Me", "en": "Here you are, and is breakfast included?", "tr": "Buyurun; kahvaltı dahil mi?" },
+        { "who": "Receptionist", "en": "Yes, from 7 to 10, and your room is on the fifth floor.", "tr": "Evet, 7'den 10'a kadar; odanız da beşinci katta." }
+      ],
+      "vocab": [
+        { "en": "purpose of your visit", "tr": "ziyaretinizin amacı", "ex": "What is the purpose of your visit?" },
+        { "en": "business conference", "tr": "iş konferansı", "ex": "I'm here for a business conference." },
+        { "en": "fly back", "tr": "uçakla dönmek", "ex": "I'm flying back on Friday." },
+        { "en": "Enjoy your stay.", "tr": "İyi konaklamalar.", "ex": "Thank you, and enjoy your stay." },
+        { "en": "reservation under the name", "tr": "... adına rezervasyon", "ex": "I have a reservation under the name {name}." },
+        { "en": "Could I see...?", "tr": "...görebilir miyim?", "ex": "Could I see your passport, please?" },
+        { "en": "Here you are.", "tr": "Buyurun.", "ex": "Here you are, this is my passport." },
+        { "en": "included", "tr": "dahil", "ex": "Is breakfast included?" }
+      ],
+      "grammar": {
+        "title": "Future plans: going to and present continuous",
+        "tr": "Gelecek planları için 'going to' ya da şimdiki zaman (present continuous) kullanılır. Özellikle bilet, tarih gibi kesinleşmiş planlarda present continuous çok doğaldır.",
+        "examples": ["How long are you going to stay?", "I'm staying for four days.", "I'm flying back on Friday."]
+      },
+      "questions": [
+        { "q": "Why is the speaker travelling?", "options": ["For a holiday", "For a business conference", "To visit family"], "a": 1 },
+        { "q": "When does the speaker fly back?", "options": ["On Friday", "On Monday", "On Sunday"], "a": 0 },
+        { "q": "What does the receptionist ask for?", "options": ["A credit card", "A phone number", "A passport"], "a": 2 },
+        { "q": "When is breakfast?", "options": ["From 6 to 9", "From 7 to 10", "From 8 to 11"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "What is the ___ of your visit?", "a": "purpose", "hint": "amaç" },
+        { "s": "I have a ___ under the name {name}.", "a": "reservation", "hint": "rezervasyon" },
+        { "s": "Is breakfast ___?", "a": "included", "hint": "dahil" }
+      ],
+      "order": [
+        { "a": "How long are you going to stay?" },
+        { "a": "Your room is on the fifth floor." }
+      ],
+      "translate": [
+        { "tr": "Bir iş konferansı için buradayım.", "en": "I'm here for a business conference.", "keys": ["here for", "business conference"] },
+        { "tr": "Pasaportunuzu görebilir miyim?", "en": "Could I see your passport?", "keys": ["could I see", "passport"] }
+      ],
+      "roleplay": {
+        "persona": "Hotel receptionist",
+        "personaTr": "Otel resepsiyonisti",
+        "scene": "Berlin'de otele geç saatte giriş yapıyorsun.",
+        "turns": [
+          { "ai": "Good evening! How can I help you?", "aiTr": "İyi akşamlar! Nasıl yardımcı olabilirim?", "hint": "Hello, I have a reservation under the name {name}.", "keys": ["reservation", "under the name", "hello"] },
+          { "ai": "Welcome! Could I see your passport, please?", "aiTr": "Hoş geldiniz! Pasaportunuzu görebilir miyim, lütfen?", "hint": "Here you are. Is breakfast included?", "keys": ["here you are", "breakfast", "included"] },
+          { "ai": "Yes, from 7 to 10. Your room is 512. Anything else?", "aiTr": "Evet, 7'den 10'a kadar. Odanız 512. Başka bir şey?", "hint": "Could you tell me the wifi password? And what time is check-out?", "keys": ["could you", "wifi", "check-out"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "İş seyahatinde pasaport kontrolünden geçiyor, otele giriş yapıyor ve kibar ricalarda bulunuyorsun.",
+      "text": [
+        { "who": "Officer", "en": "Good morning, what's the purpose of your visit?", "tr": "Günaydın, ziyaretinizin amacı nedir?" },
+        { "who": "Me", "en": "I'm here on business: I'm attending a medical technology conference.", "tr": "İş için buradayım: bir medikal teknoloji konferansına katılıyorum." },
+        { "who": "Officer", "en": "How long are you planning to stay?", "tr": "Ne kadar kalmayı planlıyorsunuz?" },
+        { "who": "Me", "en": "Four days, and I've already booked my flight back on Friday.", "tr": "Dört gün; cuma günkü dönüş uçuşumu da zaten ayırttım." },
+        { "who": "Officer", "en": "That's fine, enjoy your stay.", "tr": "Tamamdır, iyi konaklamalar." },
+        { "who": "Me", "en": "Hi, I've got a reservation under the name {name}.", "tr": "Merhaba, {name} adına bir rezervasyonum var." },
+        { "who": "Receptionist", "en": "Welcome to the hotel; could I see your passport, please?", "tr": "Otelimize hoş geldiniz; pasaportunuzu görebilir miyim, lütfen?" },
+        { "who": "Me", "en": "Of course, here you are, and is breakfast included in the price?", "tr": "Tabii, buyurun; kahvaltı fiyata dahil mi?" },
+        { "who": "Receptionist", "en": "Yes, breakfast is served from 7 to 10, and here's your key card for room 512 on the fifth floor.", "tr": "Evet, kahvaltı 7'den 10'a kadar servis ediliyor; işte beşinci kattaki 512 numaralı odanızın anahtar kartı." },
+        { "who": "Me", "en": "Thanks, and could you tell me the wifi password, please?", "tr": "Teşekkürler; wifi şifresini söyleyebilir misiniz, lütfen?" }
+      ],
+      "vocab": [
+        { "en": "purpose of your visit", "tr": "ziyaretinizin amacı", "ex": "What's the purpose of your visit?", "def": "the reason why you are travelling to a place" },
+        { "en": "on business", "tr": "iş için", "ex": "I'm here on business.", "def": "travelling for work, not for a holiday" },
+        { "en": "attend a conference", "tr": "konferansa katılmak", "ex": "I'm attending a medical technology conference.", "def": "to go to and take part in a conference" },
+        { "en": "book a flight", "tr": "uçuş ayırtmak", "ex": "I've already booked my flight back.", "def": "to reserve a seat on a plane" },
+        { "en": "reservation under the name", "tr": "... adına rezervasyon", "ex": "I've got a reservation under the name {name}.", "def": "a booking that is saved with a person's name" },
+        { "en": "included in the price", "tr": "fiyata dahil", "ex": "Is breakfast included in the price?", "def": "part of what you pay, with no extra cost" },
+        { "en": "key card", "tr": "anahtar kart", "ex": "Here's your key card for room 512.", "def": "a plastic card that opens a hotel room door" },
+        { "en": "Could you tell me...?", "tr": "...söyleyebilir misiniz?", "ex": "Could you tell me the wifi password?", "def": "a polite way to ask for information" }
+      ],
+      "grammar": {
+        "title": "Polite requests: Could I...? / Could you...?",
+        "tr": "Kibar rica için 'Could I...?' (bir şey yapmak için izin) ve 'Could you...?' (birinden bir şey yapmasını rica) kullanılır. Sonuna 'please' eklemek daha da kibar yapar.",
+        "examples": ["Could I see your passport, please?", "Could you tell me the wifi password?", "Could you order a taxi for me?"]
+      },
+      "questions": [
+        { "q": "Why is the speaker visiting?", "options": ["On holiday", "On business, for a conference", "To study"], "a": 1 },
+        { "q": "How long is the speaker planning to stay?", "options": ["Four days", "A week", "Two days"], "a": 0 },
+        { "q": "What does the receptionist give the speaker?", "options": ["A map", "A breakfast voucher", "A key card for room 512"], "a": 2 },
+        { "q": "What does the speaker ask at the end?", "options": ["The check-out time", "The wifi password", "The way to the conference"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I'm here on ___.", "a": "business", "hint": "iş (için)" },
+        { "s": "Is breakfast ___ in the price?", "a": "included", "hint": "dahil" },
+        { "s": "Could you tell me the wifi ___, please?", "a": "password", "hint": "şifre" }
+      ],
+      "order": [
+        { "a": "How long are you planning to stay?" },
+        { "a": "I've already booked my flight back on Friday." }
+      ],
+      "translate": [
+        { "tr": "Dönüş uçuşumu zaten ayırttım.", "en": "I've already booked my flight back.", "keys": ["already booked", "flight back"] },
+        { "tr": "Kahvaltı fiyata dahil mi?", "en": "Is breakfast included in the price?", "keys": ["breakfast", "included in the price"] }
+      ],
+      "roleplay": {
+        "persona": "Hotel receptionist",
+        "personaTr": "Otel resepsiyonisti",
+        "scene": "Berlin'de otele akşam geç saatte giriş yapıyorsun ve ertesi gün için yardım istiyorsun.",
+        "turns": [
+          { "ai": "Good evening and welcome! Do you have a booking with us?", "aiTr": "İyi akşamlar, hoş geldiniz! Bizde rezervasyonunuz var mı?", "hint": "Yes, I have a reservation under the name {name} for four days.", "keys": ["reservation", "under the name", "four days"] },
+          { "ai": "Lovely. Could I see your passport, please?", "aiTr": "Harika. Pasaportunuzu görebilir miyim, lütfen?", "hint": "Of course, here you are. Is breakfast included in the price?", "keys": ["here you are", "breakfast", "included"] },
+          { "ai": "Yes, from 7 to 10. Your room is 512, on the fifth floor. Is there anything else?", "aiTr": "Evet, 7'den 10'a kadar. Odanız beşinci katta, 512. Başka bir şey var mı?", "hint": "Could you tell me the wifi password, please? I have to work tonight.", "keys": ["could you tell me", "wifi password", "work"] },
+          { "ai": "Sure, it's on this card. Do you need anything for tomorrow?", "aiTr": "Tabii, bu kartta yazıyor. Yarın için bir şeye ihtiyacınız var mı?", "hint": "Could you order a taxi to the conference centre for 8 o'clock?", "keys": ["taxi", "order", "conference"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Pasaport kontrolünde ve otelde dolaylı sorularla, daha akıcı ve kibar konuşuyorsun.",
+      "text": [
+        { "who": "Officer", "en": "Good morning, could you tell me the purpose of your visit?", "tr": "Günaydın, ziyaretinizin amacını söyleyebilir misiniz?" },
+        { "who": "Me", "en": "I'm here on business, attending a conference on medical technology.", "tr": "İş için buradayım; medikal teknoloji üzerine bir konferansa katılıyorum." },
+        { "who": "Officer", "en": "And how long do you intend to stay in the country?", "tr": "Peki ülkede ne kadar kalmayı düşünüyorsunuz?" },
+        { "who": "Me", "en": "Only four days, as I'm flying back on Friday.", "tr": "Sadece dört gün, çünkü cuma günü dönüyorum." },
+        { "who": "Officer", "en": "Everything seems to be in order, so enjoy your stay.", "tr": "Her şey yolunda görünüyor; iyi konaklamalar." },
+        { "who": "Me", "en": "Hi, I believe there's a reservation under the name {name}.", "tr": "Merhaba, sanırım {name} adına bir rezervasyon var." },
+        { "who": "Receptionist", "en": "Yes, I've found it, so could I just see your passport, please?", "tr": "Evet, buldum; pasaportunuzu bir görebilir miyim, lütfen?" },
+        { "who": "Me", "en": "Here you are, and could you tell me whether breakfast is included?", "tr": "Buyurun; kahvaltının dahil olup olmadığını söyleyebilir misiniz?" },
+        { "who": "Receptionist", "en": "It is, and it's served from 7 to 10 every morning.", "tr": "Dahil; her sabah 7'den 10'a kadar servis ediliyor." },
+        { "who": "Receptionist", "en": "You're in room 512 on the fifth floor, and this is your key card.", "tr": "Beşinci kattaki 512 numaralı odadasınız, bu da anahtar kartınız." },
+        { "who": "Me", "en": "Great, and would you mind telling me the wifi password?", "tr": "Harika; wifi şifresini söyler misiniz, rica etsem?" }
+      ],
+      "vocab": [
+        { "en": "be here on business", "tr": "iş için burada olmak", "ex": "I'm here on business this week.", "def": "to be visiting a place for work" },
+        { "en": "intend to", "tr": "...mayı düşünmek, niyetinde olmak", "ex": "How long do you intend to stay?", "def": "to plan to do something" },
+        { "en": "be in order", "tr": "usulüne uygun olmak, yolunda olmak", "ex": "Everything seems to be in order.", "def": "to be correct and as it should be" },
+        { "en": "I believe there's...", "tr": "sanırım ... var", "ex": "I believe there's a reservation under my name.", "def": "a polite, slightly careful way to say that something exists" },
+        { "en": "reservation under the name", "tr": "... adına rezervasyon", "ex": "There's a reservation under the name {name}.", "def": "a booking saved with a person's name" },
+        { "en": "whether", "tr": "-ip -mediğini", "ex": "Could you tell me whether breakfast is included?", "def": "used to talk about a choice between two possibilities, like 'if'" },
+        { "en": "be served", "tr": "servis edilmek", "ex": "Breakfast is served from 7 to 10.", "def": "to be given to guests to eat or drink" },
+        { "en": "key card", "tr": "anahtar kart", "ex": "This is your key card for room 512.", "def": "a plastic card used to open a hotel room" },
+        { "en": "Would you mind + -ing?", "tr": "...ebilir misiniz, rica etsem?", "ex": "Would you mind telling me the wifi password?", "def": "a very polite way to ask someone to do something" }
+      ],
+      "grammar": {
+        "title": "Indirect questions: Could you tell me whether...?",
+        "tr": "Dolaylı sorular daha kibardır. 'Could you tell me...' ya da 'Would you mind telling me...' ile başlar; ardından gelen kısımda soru düzeni bozulur ve normal cümle sırası kullanılır (whether breakfast is included).",
+        "examples": ["Could you tell me whether breakfast is included?", "Could you tell me the purpose of your visit?", "Would you mind telling me the wifi password?"]
+      },
+      "questions": [
+        { "q": "What is the purpose of the speaker's trip?", "options": ["Tourism", "A medical technology conference", "A job interview"], "a": 1 },
+        { "q": "Why is the speaker staying only four days?", "options": ["The hotel is full", "The conference is cancelled", "They are flying back on Friday"], "a": 2 },
+        { "q": "What does \"Everything seems to be in order\" suggest?", "options": ["The officer is satisfied with the answers", "There is a problem with the passport", "The speaker must wait for a second check"], "a": 0 },
+        { "q": "Where is room 512?", "options": ["On the ground floor", "On the fifth floor", "Next to the restaurant"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Could you tell me ___ breakfast is included?", "a": "whether", "hint": "-ip -mediğini" },
+        { "s": "Breakfast is ___ from 7 to 10.", "a": "served", "hint": "servis ediliyor" },
+        { "s": "Would you mind ___ me the wifi password?", "a": "telling", "hint": "söylemek" }
+      ],
+      "order": [
+        { "a": "Everything seems to be in order." },
+        { "a": "I'm flying back on Friday." }
+      ],
+      "translate": [
+        { "tr": "Kahvaltının dahil olup olmadığını söyleyebilir misiniz?", "en": "Could you tell me whether breakfast is included?", "keys": ["whether", "breakfast", "included"] },
+        { "tr": "Sanırım {name} adına bir rezervasyon var.", "en": "I believe there's a reservation under the name {name}.", "keys": ["I believe", "reservation"] }
+      ],
+      "roleplay": {
+        "persona": "Hotel receptionist",
+        "personaTr": "Otel resepsiyonisti",
+        "scene": "Berlin'de uzun bir günün sonunda otele giriş yapıyorsun; kibar ve dolaylı sorular soruyorsun.",
+        "turns": [
+          { "ai": "Good evening! You must have had a long day. Are you checking in?", "aiTr": "İyi akşamlar! Uzun bir gün geçirmiş olmalısınız. Giriş mi yapıyorsunuz?", "hint": "Yes, I believe there's a reservation under the name {name}.", "keys": ["reservation", "under the name", "believe"] },
+          { "ai": "Here it is. Could I take a quick copy of your passport?", "aiTr": "İşte burada. Pasaportunuzun hızlıca bir kopyasını alabilir miyim?", "hint": "Of course, here you are. Could you tell me whether breakfast is included?", "keys": ["here you are", "whether", "breakfast"] },
+          { "ai": "It is, from 7 to 10. You're in 512, on the fifth floor. Anything else I can help with?", "aiTr": "Dahil, 7'den 10'a kadar. Beşinci kattaki 512'desiniz. Yardımcı olabileceğim başka bir şey var mı?", "hint": "Would you mind telling me the wifi password? I still have some work to finish tonight.", "keys": ["would you mind", "wifi", "work"] },
+          { "ai": "Not at all, it's on the back of your key card. Will you need a taxi in the morning?", "aiTr": "Ne demek, anahtar kartınızın arkasında yazıyor. Sabah taksiye ihtiyacınız olacak mı?", "hint": "Yes, please. Could you book one to the conference centre for 8 o'clock?", "keys": ["book", "conference", "8 o'clock"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Pasaport kontrolünde ve otelde doğal, rahat ve ince bir kibarlıkla konuşuyorsun.",
+      "text": [
+        { "who": "Officer", "en": "Good morning, and what brings you here?", "tr": "Günaydın, sizi buraya ne getirdi?" },
+        { "who": "Me", "en": "I'm attending a medical technology conference, so it's strictly a business trip this time.", "tr": "Bir medikal teknoloji konferansına katılıyorum, yani bu sefer tamamen iş amaçlı bir seyahat." },
+        { "who": "Officer", "en": "And how long are you planning on staying?", "tr": "Peki ne kadar kalmayı planlıyorsunuz?" },
+        { "who": "Me", "en": "Just four days, with my return flight booked for Friday.", "tr": "Sadece dört gün; dönüş uçuşum cumaya ayırtılmış durumda." },
+        { "who": "Officer", "en": "That all seems to be in order, so enjoy your stay.", "tr": "Her şey yolunda görünüyor; iyi konaklamalar." },
+        { "who": "Me", "en": "Good evening, I should have a reservation under the name {name}.", "tr": "İyi akşamlar, {name} adına bir rezervasyonum olması gerekiyor." },
+        { "who": "Receptionist", "en": "Yes, here we are, and if I could just take a quick look at your passport, that would be great.", "tr": "Evet, işte burada; pasaportunuza kısaca bir göz atabilirsem harika olur." },
+        { "who": "Me", "en": "Of course, and while you're doing that, would you happen to know whether breakfast is included?", "tr": "Tabii; siz o arada bakarken, kahvaltının dahil olup olmadığını acaba biliyor musunuz?" },
+        { "who": "Receptionist", "en": "It is, served between 7 and 10, and should you need anything earlier, just give reception a call.", "tr": "Dahil, 7 ile 10 arası servis ediliyor; daha erken bir şeye ihtiyacınız olursa resepsiyonu aramanız yeterli." },
+        { "who": "Receptionist", "en": "You're in 512 on the fifth floor, and your key card is all set.", "tr": "Beşinci kattaki 512'desiniz, anahtar kartınız da hazır." },
+        { "who": "Me", "en": "Perfect, and before I head up, could I trouble you for the wifi password?", "tr": "Mükemmel; yukarı çıkmadan önce wifi şifresini rica edebilir miyim?" }
+      ],
+      "vocab": [
+        { "en": "What brings you here?", "tr": "Sizi buraya ne getirdi?", "ex": "Good morning, and what brings you here?", "def": "a friendly way to ask why someone is visiting" },
+        { "en": "strictly business", "tr": "tamamen iş amaçlı", "ex": "It's strictly a business trip this time.", "def": "only for work, with no holiday part" },
+        { "en": "plan on doing", "tr": "...yapmayı planlamak", "ex": "How long are you planning on staying?", "def": "to intend to do something" },
+        { "en": "be in order", "tr": "usulüne uygun olmak", "ex": "That all seems to be in order.", "def": "to be correct and acceptable" },
+        { "en": "I should have a reservation", "tr": "bir rezervasyonum olması gerek", "ex": "I should have a reservation under the name {name}.", "def": "a polite way to say you expect a booking to exist" },
+        { "en": "would you happen to know", "tr": "acaba biliyor musunuz", "ex": "Would you happen to know whether breakfast is included?", "def": "a very polite way to ask a question" },
+        { "en": "should you need", "tr": "ihtiyaç duyarsanız", "ex": "Should you need anything, just call reception.", "def": "a formal way to say 'if you need'" },
+        { "en": "all set", "tr": "hazır", "ex": "Your key card is all set.", "def": "ready to use" },
+        { "en": "head up", "tr": "yukarı çıkmak", "ex": "Before I head up, I need the wifi password.", "def": "to go up, for example to your room" },
+        { "en": "Could I trouble you for...?", "tr": "...rica edebilir miyim?", "ex": "Could I trouble you for the wifi password?", "def": "a very polite way to ask for something" }
+      ],
+      "grammar": {
+        "title": "Formal inversion: Should you need...",
+        "tr": "Resmi ve kibar İngilizcede 'If you need...' yerine 'Should you need...' denir: 'if' düşer, 'should' başa gelir. Otel, havalimanı ve iş yazışmalarında sık duyulur.",
+        "examples": ["Should you need anything earlier, just give reception a call.", "Should the flight be delayed, I'll let you know.", "Should you have any questions, the front desk is open all night."]
+      },
+      "questions": [
+        { "q": "What does \"it's strictly a business trip this time\" imply?", "options": ["The speaker never travels for fun", "The speaker may have visited for pleasure before", "The speaker dislikes business trips"], "a": 1 },
+        { "q": "How long will the speaker stay?", "options": ["Four days", "Two days", "A week"], "a": 0 },
+        { "q": "What does the officer's comment \"That all seems to be in order\" convey?", "options": ["Suspicion about the speaker", "Confusion about the dates", "Satisfaction with the answers"], "a": 2 },
+        { "q": "Why does the speaker say \"I should have a reservation\"?", "options": ["They are sure the booking failed", "They want to change hotels", "They want to cancel the booking", "To signal politely that they expect a booking to exist"], "a": 3 },
+        { "q": "What is the overall tone of the hotel exchange?", "options": ["Courteous and relaxed", "Tense and impatient", "Cold and bureaucratic"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Good morning, and what ___ you here?", "a": "brings", "hint": "getiriyor" },
+        { "s": "___ you need anything earlier, just give reception a call.", "a": "Should", "hint": "-ırsa (if yerine)" },
+        { "s": "Could I ___ you for the wifi password?", "a": "trouble", "hint": "rahatsız etmek" },
+        { "s": "Would you ___ to know whether breakfast is included?", "a": "happen", "hint": "acaba (kalıp)" }
+      ],
+      "order": [
+        { "a": "And how long are you planning on staying?" },
+        { "a": "Your key card is all set." }
+      ],
+      "translate": [
+        { "tr": "Bu sefer tamamen iş amaçlı bir seyahat.", "en": "It's strictly a business trip this time.", "keys": ["strictly", "business trip"] },
+        { "tr": "Kahvaltının dahil olup olmadığını acaba biliyor musunuz?", "en": "Would you happen to know whether breakfast is included?", "keys": ["happen to know", "whether"] },
+        { "tr": "Daha erken bir şeye ihtiyacınız olursa resepsiyonu aramanız yeterli.", "en": "Should you need anything earlier, just give reception a call.", "keys": ["should you need", "reception"] }
+      ],
+      "roleplay": {
+        "persona": "Hotel receptionist",
+        "personaTr": "Otel resepsiyonisti",
+        "scene": "Berlin'de gece geç saatte otele varıyorsun. Resepsiyonist samimi ve kibar; sen de öyle.",
+        "turns": [
+          { "ai": "Good evening and welcome. You've cut it fine, our restaurant's just closed. Are you checking in?", "aiTr": "İyi akşamlar, hoş geldiniz. Kıl payı yetiştiniz, restoranımız az önce kapandı. Giriş mi yapıyorsunuz?", "hint": "I am, yes; I should have a reservation under the name {name}.", "keys": ["should have", "reservation", "under the name"] },
+          { "ai": "Ah yes, there you are. If I could just see your passport?", "aiTr": "Ah evet, buldum. Pasaportunuzu bir görebilir miyim?", "hint": "Of course, here you are; and would you happen to know whether breakfast is included?", "keys": ["here you are", "happen to know", "breakfast"] },
+          { "ai": "It is, from 7 till 10. You're in 512 on the fifth floor. Is there anything else I can do for you?", "aiTr": "Dahil, 7'den 10'a kadar. Beşinci kattaki 512'desiniz. Sizin için yapabileceğim başka bir şey var mı?", "hint": "Could I trouble you for the wifi password? I've got a presentation to polish before tomorrow.", "keys": ["trouble you", "wifi password", "presentation"] },
+          { "ai": "It's on the back of your key card. Should you need a taxi tomorrow, just let us know.", "aiTr": "Anahtar kartınızın arkasında yazıyor. Yarın taksiye ihtiyacınız olursa bize haber vermeniz yeterli.", "hint": "That's very kind; could you book one to the conference centre for 8 o'clock?", "keys": ["book", "conference", "8 o'clock"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Havalimanında ve otelde, ana dili İngilizce olan biri gibi esprili, rahat ve son derece kibar konuşuyorsun.",
+      "text": [
+        { "who": "Officer", "en": "Morning, and what brings you here today?", "tr": "Günaydın, bugün sizi buraya ne getirdi?" },
+        { "who": "Me", "en": "A medical technology conference, so I'm afraid it's all work and no play this time.", "tr": "Bir medikal teknoloji konferansı; korkarım bu sefer hep iş var, eğlence yok." },
+        { "who": "Officer", "en": "And how long do you expect to be with us?", "tr": "Peki ne kadar süre bizimle olmayı düşünüyorsunuz?" },
+        { "who": "Me", "en": "Four days, with a return flight on Friday that I'd rather not miss.", "tr": "Dört gün; cuma günü de kaçırmamayı tercih edeceğim bir dönüş uçuşum var." },
+        { "who": "Officer", "en": "Well, that all looks in order, so enjoy your stay, conference permitting.", "tr": "Peki, her şey yolunda görünüyor; konferans izin verirse iyi konaklamalar." },
+        { "who": "Me", "en": "Evening, there ought to be a reservation under the name {name}, though after the day I've had, I wouldn't bet on it.", "tr": "İyi akşamlar, {name} adına bir rezervasyon olması lazım, gerçi bugün yaşadıklarımdan sonra pek iddiaya girmezdim." },
+        { "who": "Receptionist", "en": "No need to worry, it's right here, and if I might just see your passport, we'll have you sorted in no time.", "tr": "Merak etmeyin, burada; pasaportunuzu bir görebilirsem işinizi hemencecik hallederiz." },
+        { "who": "Me", "en": "By all means, and while you're at it, I don't suppose breakfast is included?", "tr": "Elbette; hazır elinizdeyken, kahvaltı dahil değildir herhalde?" },
+        { "who": "Receptionist", "en": "It is indeed, served from 7 until 10, which should give you ample time before your first session.", "tr": "Dahil tabii, 7'den 10'a kadar servis ediliyor; bu da ilk oturumunuzdan önce size bolca zaman tanır." },
+        { "who": "Receptionist", "en": "You're in 512 on the fifth floor, and your key card's good to go.", "tr": "Beşinci kattaki 512'desiniz, anahtar kartınız da kullanıma hazır." },
+        { "who": "Me", "en": "Wonderful, and before I disappear upstairs, might I trouble you for the wifi password?", "tr": "Harika; yukarı kaybolmadan önce wifi şifresini rica edebilir miyim?" }
+      ],
+      "vocab": [
+        { "en": "all work and no play", "tr": "hep iş, hiç eğlence yok", "ex": "I'm afraid it's all work and no play this trip.", "def": "only working, with no time for fun" },
+        { "en": "conference permitting", "tr": "konferans izin verirse", "ex": "Enjoy your stay, conference permitting.", "def": "if the conference allows it (like 'weather permitting')" },
+        { "en": "there ought to be", "tr": "...olması gerekir", "ex": "There ought to be a reservation under my name.", "def": "there should be; used for something you expect" },
+        { "en": "I wouldn't bet on it", "tr": "pek iddiaya girmezdim", "ex": "The flight might be on time, but I wouldn't bet on it.", "def": "I doubt it; it may well not happen" },
+        { "en": "have someone sorted", "tr": "birinin işini halletmek", "ex": "We'll have you sorted in no time.", "def": "to solve or arrange something for someone" },
+        { "en": "in no time", "tr": "hemencecik, çabucak", "ex": "Check-in was done in no time.", "def": "very quickly" },
+        { "en": "by all means", "tr": "elbette, buyurun", "ex": "By all means, here's my passport.", "def": "certainly; of course you may" },
+        { "en": "I don't suppose...?", "tr": "...değildir herhalde?", "ex": "I don't suppose breakfast is included?", "def": "a very polite, indirect way to ask a question" },
+        { "en": "ample time", "tr": "bolca zaman", "ex": "Breakfast gives you ample time before the first session.", "def": "more than enough time" },
+        { "en": "Might I trouble you for...?", "tr": "...rica edebilir miyim?", "ex": "Might I trouble you for the wifi password?", "def": "an extremely polite way to ask for something" }
+      ],
+      "grammar": {
+        "title": "Tentative politeness: I don't suppose... / Might I...?",
+        "tr": "Ana dili İngilizce olanlar rica ederken çoğu zaman çekingen yapılar kullanır: 'I don't suppose...?', 'Might I...?', 'there ought to be'. Bu ifadeler talebi yumuşatır ve karşı tarafa 'hayır' deme alanı bırakır.",
+        "examples": ["I don't suppose breakfast is included?", "Might I trouble you for the wifi password?", "There ought to be a reservation under my name."]
+      },
+      "questions": [
+        { "q": "What does \"all work and no play\" tell the officer?", "options": ["The trip is purely for business", "The speaker dislikes their job", "The speaker plans to go sightseeing"], "a": 0 },
+        { "q": "What is implied by \"a return flight on Friday that I'd rather not miss\"?", "options": ["The flight is already cancelled", "The speaker is keen to get home on time", "The speaker has no ticket"], "a": 1 },
+        { "q": "How should \"conference permitting\" be understood?", "options": ["The officer needs to see a conference permit", "The conference has been cancelled", "The conference may leave little time for enjoyment"], "a": 2 },
+        { "q": "What tone does the speaker take with \"I wouldn't bet on it\"?", "options": ["Angry and accusatory", "Formal and cold", "Anxious and panicked", "Wry and self-deprecating"], "a": 3 },
+        { "q": "What does the receptionist imply by mentioning \"your first session\"?", "options": ["Breakfast ends before the conference starts", "There is enough time for breakfast before the conference", "The speaker will have to skip breakfast"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I'm afraid it's all work and no ___ this time.", "a": "play", "hint": "eğlence, oyun" },
+        { "s": "There ought to be a reservation, though I wouldn't ___ on it.", "a": "bet", "hint": "iddiaya girmek" },
+        { "s": "We'll have you sorted in no ___.", "a": "time", "hint": "(hemencecik) zaman" },
+        { "s": "Might I ___ you for the wifi password?", "a": "trouble", "hint": "rahatsız etmek" }
+      ],
+      "order": [
+        { "a": "We'll have you sorted in no time." },
+        { "a": "I'd rather not miss my return flight on Friday." }
+      ],
+      "translate": [
+        { "tr": "Korkarım bu sefer hep iş var, eğlence yok.", "en": "I'm afraid it's all work and no play this time.", "keys": ["all work and no play"] },
+        { "tr": "Kahvaltı dahil değildir herhalde?", "en": "I don't suppose breakfast is included?", "keys": ["don't suppose", "breakfast"] },
+        { "tr": "Wifi şifresini rica edebilir miyim?", "en": "Might I trouble you for the wifi password?", "keys": ["trouble you", "wifi password"] }
+      ],
+      "roleplay": {
+        "persona": "Hotel receptionist",
+        "personaTr": "Otel resepsiyonisti",
+        "scene": "Berlin'de yorucu bir günün ardından gece otele varıyorsun. Resepsiyonist esprili; sen de rahat ve kibar bir dille karşılık veriyorsun.",
+        "turns": [
+          { "ai": "Good evening! You look like you've had quite a day. Checking in?", "aiTr": "İyi akşamlar! Epey yoğun bir gün geçirmişe benziyorsunuz. Giriş mi yapacaksınız?", "hint": "You could say that; there ought to be a reservation under the name {name}.", "keys": ["ought to be", "reservation", "under the name"] },
+          { "ai": "Let me see... yes, there we are. If I might just see your passport?", "aiTr": "Bir bakayım... evet, buldum. Pasaportunuzu bir görebilir miyim?", "hint": "By all means, here you are; I don't suppose breakfast is included?", "keys": ["by all means", "don't suppose", "breakfast"] },
+          { "ai": "It is, seven till ten. You're in 512, fifth floor. Anything else I can do for you this evening?", "aiTr": "Dahil, yediden ona kadar. Beşinci kat, 512'desiniz. Bu akşam sizin için yapabileceğim başka bir şey var mı?", "hint": "Might I trouble you for the wifi password? I've a presentation that still needs some polish.", "keys": ["trouble you", "wifi password", "presentation"] },
+          { "ai": "It's on your key card. Shall I arrange a taxi for the morning, or are you braving public transport?", "aiTr": "Anahtar kartınızda yazıyor. Sabah için taksi ayarlayayım mı, yoksa toplu taşımayı mı göze alıyorsunuz?", "hint": "A taxi at 8 would be a godsend, thank you; I'd rather not arrive at the conference flustered.", "keys": ["taxi", "godsend", "conference"] }
+        ]
+      }
+    }
+  }
+}

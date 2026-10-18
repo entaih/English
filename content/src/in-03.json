@@ -1,0 +1,375 @@
+{
+  "id": "in-03",
+  "topic": "invest",
+  "title": "Discussing Equity and Valuation",
+  "titleTr": "Hisse ve Değerleme Konuşmak",
+  "levels": {
+    "A1": {
+      "intro": "Bir yatırımcı şirketine para yatırmak istiyor; sen şirketinin değeri hakkında konuşuyorsun.",
+      "text": [
+        { "who": "Investor", "en": "We want to invest 500,000 euros.", "tr": "500.000 euro yatırım yapmak istiyoruz." },
+        { "who": "Investor", "en": "For this, we want 25 percent of your company.", "tr": "Bunun karşılığında şirketinizin yüzde 25'ini istiyoruz." },
+        { "who": "Me", "en": "Thank you, but our company is worth more.", "tr": "Teşekkürler ama şirketimiz daha değerli." },
+        { "who": "Me", "en": "We have a good product and paying customers.", "tr": "İyi bir ürünümüz ve ödeme yapan müşterilerimiz var." },
+        { "who": "Me", "en": "What about 20 percent?", "tr": "Yüzde 20'ye ne dersiniz?" },
+        { "who": "Investor", "en": "Yes, but then we want a seat on the board.", "tr": "Olur ama o zaman yönetim kurulunda bir koltuk istiyoruz." },
+        { "who": "Me", "en": "OK, you can have a seat on the board.", "tr": "Tamam, yönetim kurulunda bir koltuk alabilirsiniz." },
+        { "who": "Me", "en": "We want an active investor, not just money.", "tr": "Sadece para değil, aktif bir yatırımcı istiyoruz." }
+      ],
+      "vocab": [
+        { "en": "invest", "tr": "yatırım yapmak", "ex": "We want to invest 500,000 euros." },
+        { "en": "percent", "tr": "yüzde", "ex": "They want 25 percent of the company." },
+        { "en": "be worth more", "tr": "daha değerli olmak", "ex": "Our company is worth more." },
+        { "en": "paying customer", "tr": "ödeme yapan müşteri", "ex": "We have five paying customers." },
+        { "en": "What about...?", "tr": "...'e ne dersiniz?", "ex": "What about 20 percent?" },
+        { "en": "a seat on the board", "tr": "yönetim kurulunda koltuk", "ex": "The investor wants a seat on the board." }
+      ],
+      "grammar": {
+        "title": "want / want to",
+        "tr": "Bir şey istediğimizde 'want + isim' kullanırız. Bir eylem yapmak istediğimizde 'want to + fiil' kullanırız.",
+        "examples": ["We want to invest 500,000 euros.", "We want a seat on the board.", "We want an active investor."]
+      },
+      "questions": [
+        { "q": "How much money does the investor want to invest?", "options": ["250,000 euros", "500,000 euros", "5 million euros"], "a": 1 },
+        { "q": "What percent do they agree on?", "options": ["10 percent", "25 percent", "20 percent"], "a": 2 },
+        { "q": "What does the investor want at the end?", "options": ["A seat on the board", "A new office", "A new product"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "We want to ___ 500,000 euros.", "a": "invest", "hint": "yatırım yapmak" },
+        { "s": "Our company is ___ more.", "a": "worth", "hint": "değerinde" },
+        { "s": "We want a seat on the ___.", "a": "board", "hint": "yönetim kurulu" }
+      ],
+      "order": [
+        { "a": "We have a good product and paying customers." },
+        { "a": "You can have a seat on the board." }
+      ],
+      "translate": [
+        { "tr": "Şirketimiz daha değerli.", "en": "Our company is worth more.", "keys": ["worth more"] },
+        { "tr": "Yüzde 20'ye ne dersiniz?", "en": "What about 20 percent?", "keys": ["what about", "20 percent"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Bir yatırımcı şirketine para yatırmak istiyor. Kısa ve net cevaplar ver.",
+        "turns": [
+          { "ai": "We want to invest 500,000 euros for 25 percent.", "aiTr": "Yüzde 25 karşılığında 500.000 euro yatırmak istiyoruz.", "hint": "Thank you, but our company is worth more.", "keys": ["worth more", "thank you", "company"] },
+          { "ai": "Why is your company worth more?", "aiTr": "Şirketiniz neden daha değerli?", "hint": "We have a good product and paying customers.", "keys": ["product", "paying customers", "customers"] },
+          { "ai": "OK, 20 percent, but we want a seat on the board.", "aiTr": "Tamam, yüzde 20, ama yönetim kurulunda bir koltuk istiyoruz.", "hint": "That is fine. We want an active investor, not just money.", "keys": ["fine", "active investor", "board"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir yatırım fonu teklif yaptı; sen değerleme üzerine pazarlık ediyorsun.",
+      "text": [
+        { "who": "Investor", "en": "We liked your pitch last week, so we want to make an offer.", "tr": "Geçen haftaki sunumunuzu beğendik, bu yüzden bir teklif yapmak istiyoruz." },
+        { "who": "Investor", "en": "We can invest 500,000 euros for 25 percent of the company.", "tr": "Şirketin yüzde 25'i karşılığında 500.000 euro yatırım yapabiliriz." },
+        { "who": "Me", "en": "Thank you, but that gives a valuation of only two million euros.", "tr": "Teşekkürler ama bu sadece iki milyon euroluk bir değerleme demek." },
+        { "who": "Me", "en": "We think the company is worth more because we have paying customers.", "tr": "Ödeme yapan müşterilerimiz olduğu için şirketin daha değerli olduğunu düşünüyoruz." },
+        { "who": "Me", "en": "Our product already works, and our clinical study was very successful.", "tr": "Ürünümüz zaten çalışıyor ve klinik çalışmamız çok başarılı oldu." },
+        { "who": "Investor", "en": "Yes, but you don't have the CE mark yet, so the risk is higher.", "tr": "Evet ama henüz CE işaretiniz yok, bu yüzden risk daha yüksek." },
+        { "who": "Me", "en": "I understand, so what about 2.5 million euros for 20 percent?", "tr": "Anlıyorum, o zaman yüzde 20 için 2,5 milyon euroya ne dersiniz?" },
+        { "who": "Investor", "en": "That is OK for us, but we need a seat on the board.", "tr": "Bu bizim için uygun ama yönetim kurulunda bir koltuğa ihtiyacımız var." },
+        { "who": "Me", "en": "No problem, because we want an active investor, not just money.", "tr": "Sorun değil, çünkü sadece para değil, aktif bir yatırımcı istiyoruz." }
+      ],
+      "vocab": [
+        { "en": "make an offer", "tr": "teklif yapmak", "ex": "The fund wants to make an offer." },
+        { "en": "valuation", "tr": "değerleme", "ex": "That gives a valuation of two million euros." },
+        { "en": "be worth more", "tr": "daha değerli olmak", "ex": "We think the company is worth more." },
+        { "en": "paying customer", "tr": "ödeme yapan müşteri", "ex": "We have five paying customers." },
+        { "en": "clinical study", "tr": "klinik çalışma", "ex": "Our clinical study was very successful." },
+        { "en": "the risk is higher", "tr": "risk daha yüksek", "ex": "Without the CE mark, the risk is higher." },
+        { "en": "a seat on the board", "tr": "yönetim kurulunda koltuk", "ex": "They need a seat on the board." },
+        { "en": "active investor", "tr": "aktif yatırımcı", "ex": "We want an active investor, not just money." }
+      ],
+      "grammar": {
+        "title": "Linking ideas: because, so, but",
+        "tr": "'because' bir sebep verir, 'so' bir sonuç verir, 'but' ise zıt bir fikir ekler. Pazarlıkta fikirlerini bağlamak için çok kullanışlıdır.",
+        "examples": ["We liked your pitch, so we want to make an offer.", "The company is worth more because we have paying customers.", "That is OK for us, but we need a seat on the board."]
+      },
+      "questions": [
+        { "q": "What was the first offer?", "options": ["500,000 euros for 20 percent", "500,000 euros for 25 percent", "2 million euros for 25 percent"], "a": 1 },
+        { "q": "Why does the founder want a higher valuation?", "options": ["The team is very big", "The office is new", "They have paying customers and good study results"], "a": 2 },
+        { "q": "Why does the investor think the risk is high?", "options": ["There is no CE mark yet", "There are no customers", "The price is too low"], "a": 0 },
+        { "q": "What does the investor need at the end?", "options": ["More equity", "A seat on the board", "A lower price"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We think the company is ___ more.", "a": "worth", "hint": "değerinde" },
+        { "s": "That gives a ___ of only two million euros.", "a": "valuation", "hint": "değerleme" },
+        { "s": "We need a ___ on the board.", "a": "seat", "hint": "koltuk" }
+      ],
+      "order": [
+        { "a": "We think the company is worth more because we have paying customers." },
+        { "a": "We need a seat on the board." }
+      ],
+      "translate": [
+        { "tr": "Riski anlıyorum.", "en": "I understand the risk.", "keys": ["understand", "risk"] },
+        { "tr": "Sadece para değil, aktif bir yatırımcı istiyoruz.", "en": "We want an active investor, not just money.", "keys": ["active investor", "not just money"] }
+      ],
+      "roleplay": {
+        "persona": "Venture capital investor",
+        "personaTr": "Risk sermayesi yatırımcısı",
+        "scene": "Bir VC fonu teklif yapıyor; değerleme üzerine pazarlık ediyorsun.",
+        "turns": [
+          { "ai": "We can invest 500,000 euros for 25 percent of your company.", "aiTr": "Şirketinizin yüzde 25'i için 500.000 euro yatırım yapabiliriz.", "hint": "Thank you, but that is a valuation of only two million. We think we are worth more.", "keys": ["valuation", "worth more", "two million"] },
+          { "ai": "Why do you think your company is worth more?", "aiTr": "Şirketinizin neden daha değerli olduğunu düşünüyorsunuz?", "hint": "Because we have paying customers and our clinical study was very successful.", "keys": ["paying customers", "study", "product"] },
+          { "ai": "OK, 20 percent is possible, but we need a seat on the board.", "aiTr": "Tamam, yüzde 20 olabilir ama yönetim kurulunda bir koltuğa ihtiyacımız var.", "hint": "No problem, because we want an active investor, not just money.", "keys": ["no problem", "active investor", "board"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Hisse oranı, şirket değerlemesi ve yatırım sonrası değer gibi temel kavramlarla bir teklif üzerine pazarlık ediyorsun.",
+      "text": [
+        { "who": "Investor", "en": "We really like what you're building, and we'd like to make you an offer.", "tr": "Geliştirdiğiniz şeyi gerçekten beğeniyoruz ve size bir teklif yapmak istiyoruz." },
+        { "who": "Investor", "en": "We can invest €500,000 for 25 percent equity.", "tr": "Yüzde 25 hisse karşılığında 500.000 euro yatırım yapabiliriz." },
+        { "who": "Me", "en": "Thank you, so that means a post-money valuation of two million euros, right?", "tr": "Teşekkürler, yani bu yatırım sonrası iki milyon euroluk bir değerleme demek, değil mi?" },
+        { "who": "Me", "en": "To be honest, we think the company is worth more than that.", "tr": "Açıkçası şirketin bundan daha değerli olduğunu düşünüyoruz." },
+        { "who": "Me", "en": "We have a working product, five paying customers and strong results from our clinical study.", "tr": "Çalışan bir ürünümüz, ödeme yapan beş müşterimiz ve klinik çalışmamızdan güçlü sonuçlarımız var." },
+        { "who": "Me", "en": "That's why we're looking for a valuation of around three million.", "tr": "Bu yüzden üç milyon civarında bir değerleme arıyoruz." },
+        { "who": "Investor", "en": "Three million is high for a company that hasn't received its CE mark yet.", "tr": "Henüz CE işaretini almamış bir şirket için üç milyon yüksek." },
+        { "who": "Me", "en": "I understand the risk, so what about 2.5 million post-money, with 20 percent equity?", "tr": "Riski anlıyorum; o zaman yüzde 20 hisseyle, yatırım sonrası 2,5 milyona ne dersiniz?" },
+        { "who": "Investor", "en": "We can accept that if we get a seat on the board.", "tr": "Yönetim kurulunda bir koltuk alırsak bunu kabul edebiliriz." },
+        { "who": "Me", "en": "A board seat is fine, because we want an active investor, not just money.", "tr": "Yönetim kurulu koltuğu uygun, çünkü sadece para değil, aktif bir yatırımcı istiyoruz." }
+      ],
+      "vocab": [
+        { "en": "make an offer", "tr": "teklif yapmak", "ex": "We'd like to make you an offer.", "def": "to say what you are ready to pay or give" },
+        { "en": "equity", "tr": "hisse, öz sermaye payı", "ex": "They want 25 percent equity.", "def": "a share of ownership in a company" },
+        { "en": "post-money valuation", "tr": "yatırım sonrası değerleme", "ex": "That means a post-money valuation of two million euros.", "def": "what a company is worth just after new investment comes in" },
+        { "en": "be worth more", "tr": "daha değerli olmak", "ex": "We think the company is worth more than that.", "def": "to have a higher value" },
+        { "en": "paying customer", "tr": "ödeme yapan müşteri", "ex": "We have five paying customers.", "def": "a customer who already buys your product" },
+        { "en": "look for", "tr": "aramak, hedeflemek", "ex": "We're looking for a valuation of around three million.", "def": "to try to find or get something" },
+        { "en": "a seat on the board", "tr": "yönetim kurulunda koltuk", "ex": "The investor wants a seat on the board.", "def": "a place in the group that makes the big decisions in a company" },
+        { "en": "active investor", "tr": "aktif yatırımcı", "ex": "We want an active investor, not just money.", "def": "an investor who helps the company, not only gives money" }
+      ],
+      "grammar": {
+        "title": "First conditional: if + present, can/will",
+        "tr": "Gerçekleşmesi olası bir koşulu anlatmak için 'if + geniş zaman' ve ana cümlede 'will' veya 'can' kullanılır. Pazarlıkta şart koymak için idealdir.",
+        "examples": ["We can accept that if we get a seat on the board.", "If you invest €500,000, you will own 20 percent.", "If certification takes longer, we will need more time."]
+      },
+      "questions": [
+        { "q": "What is the investor's first offer?", "options": ["€500,000 for 10 percent equity", "€1 million for 50 percent equity", "€500,000 for 25 percent equity"], "a": 2 },
+        { "q": "What valuation does the founder ask for first?", "options": ["Two million", "Around three million", "Five million"], "a": 1 },
+        { "q": "Why does the investor think three million is high?", "options": ["The company doesn't have its CE mark yet", "The team is too small", "The company has no customers"], "a": 0 },
+        { "q": "What do they agree on in the end?", "options": ["€2 million post-money for 25 percent", "€2.5 million post-money for 20 percent", "€3 million post-money for 15 percent"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "We can invest €500,000 for 25 percent ___.", "a": "equity", "hint": "hisse" },
+        { "s": "That means a post-money ___ of two million euros.", "a": "valuation", "hint": "değerleme" },
+        { "s": "We think the company is ___ more than that.", "a": "worth", "hint": "değerinde" }
+      ],
+      "order": [
+        { "a": "We are looking for a valuation of around three million." },
+        { "a": "We can accept that if we get a seat on the board." }
+      ],
+      "translate": [
+        { "tr": "Riski anlıyorum.", "en": "I understand the risk.", "keys": ["understand", "risk"] },
+        { "tr": "Bunu kabul edebiliriz.", "en": "We can accept that.", "keys": ["accept"] }
+      ],
+      "roleplay": {
+        "persona": "Venture capital investor",
+        "personaTr": "Risk sermayesi yatırımcısı",
+        "scene": "Bir VC fonu teklif yapıyor; değerleme üzerine pazarlık ediyorsun.",
+        "turns": [
+          { "ai": "We can offer €500,000 for 25 percent of the company.", "aiTr": "Şirketin yüzde 25'i için 500.000 euro teklif edebiliriz.", "hint": "Thank you. That means a post-money valuation of two million, but we think the company is worth more.", "keys": ["valuation", "worth more", "two million"] },
+          { "ai": "Why do you think it's worth more?", "aiTr": "Neden daha değerli olduğunu düşünüyorsunuz?", "hint": "We have a working product, five paying customers and strong clinical results.", "keys": ["working product", "paying customers", "clinical"] },
+          { "ai": "So what valuation are you looking for?", "aiTr": "Peki nasıl bir değerleme arıyorsunuz?", "hint": "We're looking for around three million, but we could accept 2.5 million for 20 percent.", "keys": ["looking for", "2.5 million", "20 percent"] },
+          { "ai": "We can do that if we get a seat on the board.", "aiTr": "Yönetim kurulunda bir koltuk alırsak bunu yapabiliriz.", "hint": "A board seat is fine. We want an active investor, not just money.", "keys": ["board seat", "fine", "active investor"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Yatırımcının teklifini değerlendiriyor, değerlemeyi somut gerekçelerle yukarı çekmeye çalışıyorsun.",
+      "text": [
+        { "who": "Investor", "en": "We've been really impressed by the progress you've made, so we'd like to put an offer on the table.", "tr": "Kaydettiğiniz ilerlemeden gerçekten etkilendik, bu yüzden masaya bir teklif koymak istiyoruz." },
+        { "who": "Investor", "en": "We're prepared to invest €500,000 in exchange for a 25 percent stake.", "tr": "Yüzde 25'lik bir hisse karşılığında 500.000 euro yatırım yapmaya hazırız." },
+        { "who": "Me", "en": "Thank you, I appreciate that, although it would put our post-money valuation at only two million euros.", "tr": "Teşekkür ederim, bunu takdir ediyorum; ancak bu, yatırım sonrası değerlememizi sadece iki milyon euroya indirir." },
+        { "who": "Me", "en": "I'd say that undervalues what we've already achieved.", "tr": "Bence bu, şimdiye kadar başardıklarımızın değerini düşük gösteriyor." },
+        { "who": "Me", "en": "Our third prototype is being used by five paying customers, and our clinical study has been published in a medical journal.", "tr": "Üçüncü prototipimiz ödeme yapan beş müşteri tarafından kullanılıyor ve klinik çalışmamız bir tıp dergisinde yayımlandı." },
+        { "who": "Investor", "en": "Those are good signs, but the device still hasn't been certified, which is where most of the risk lies.", "tr": "Bunlar iyi işaretler ama cihaz hâlâ sertifikalandırılmadı ve riskin büyük kısmı da tam orada." },
+        { "who": "Me", "en": "That's fair, and it's exactly why we're raising this round: to finish certification and enter the European market.", "tr": "Haklısınız; zaten bu turu tam da bu yüzden topluyoruz: sertifikasyonu tamamlamak ve Avrupa pazarına girmek için." },
+        { "who": "Me", "en": "If we were to meet you halfway, would €2.5 million post-money for a 20 percent stake work for you?", "tr": "Sizinle ortada buluşsak, yüzde 20 hisse için yatırım sonrası 2,5 milyon euro size uyar mı?" },
+        { "who": "Investor", "en": "We could live with that, provided that we get a seat on the board.", "tr": "Yönetim kurulunda bir koltuk almamız şartıyla buna razı olabiliriz." },
+        { "who": "Me", "en": "That's fine with us, since we're looking for a partner who will be actively involved, not just a cheque.", "tr": "Bu bizim için uygun, çünkü sadece bir çek değil, işin içinde aktif olarak yer alacak bir ortak arıyoruz." },
+        { "who": "Investor", "en": "Then I think we have a deal, subject to due diligence.", "tr": "O zaman sanırım anlaştık, tabii durum tespiti sürecine bağlı olarak." }
+      ],
+      "vocab": [
+        { "en": "put an offer on the table", "tr": "masaya bir teklif koymak", "ex": "The fund put an offer on the table last week.", "def": "to make a formal offer that the other side can discuss" },
+        { "en": "stake", "tr": "hisse payı", "ex": "They want a 25 percent stake in the company.", "def": "a share of a company that someone owns" },
+        { "en": "undervalue", "tr": "değerini düşük biçmek", "ex": "I'd say that undervalues what we've achieved.", "def": "to say something is worth less than it really is" },
+        { "en": "raise a round", "tr": "yatırım turu toplamak", "ex": "We're raising this round to finish certification.", "def": "to collect money from investors in one funding stage" },
+        { "en": "meet someone halfway", "tr": "ortada buluşmak, orta yolu bulmak", "ex": "We're ready to meet you halfway on the valuation.", "def": "to accept a compromise between two positions" },
+        { "en": "live with something", "tr": "bir şeye razı olmak", "ex": "We could live with that valuation.", "def": "to accept something even if it is not perfect" },
+        { "en": "provided that", "tr": "...şartıyla", "ex": "We'll invest, provided that we get a board seat.", "def": "only if; on the condition that" },
+        { "en": "actively involved", "tr": "aktif olarak işin içinde", "ex": "We want a partner who is actively involved.", "def": "taking part in something and helping, not only watching" },
+        { "en": "due diligence", "tr": "durum tespiti, ayrıntılı inceleme", "ex": "The deal is subject to due diligence.", "def": "a careful check of a company before an investment is final" }
+      ],
+      "grammar": {
+        "title": "The passive: focus on the result",
+        "tr": "Kimin yaptığı önemli olmadığında edilgen yapı kullanılır: 'be + V3'. Zamanı 'be' fiili gösterir: is being used, has been published, hasn't been certified.",
+        "examples": ["Our third prototype is being used by five paying customers.", "Our clinical study has been published in a medical journal.", "The device still hasn't been certified."]
+      },
+      "questions": [
+        { "q": "What post-money valuation does the first offer imply?", "options": ["€2 million", "€2.5 million", "€3 million"], "a": 0 },
+        { "q": "According to the investor, where does most of the risk lie?", "options": ["In the price of the device", "In the missing certification", "In the size of the team", "In the competition"], "a": 1 },
+        { "q": "What is the money from this round mainly for?", "options": ["Hiring a sales team in the US", "Building a fourth prototype", "Finishing certification and entering the European market"], "a": 2 },
+        { "q": "Why is the founder happy to give a board seat?", "options": ["It is required by law", "They want a partner who is actively involved", "The investor offered more money for it"], "a": 1 },
+        { "q": "What can we infer from 'subject to due diligence'?", "options": ["The deal is already signed", "The investor wants to lower the price again", "The investor will still check the company before the deal is final"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "We're prepared to invest €500,000 in exchange for a 25 percent ___.", "a": "stake", "hint": "hisse payı" },
+        { "s": "I'd say that ___ what we've already achieved.", "a": "undervalues", "hint": "değerini düşük göstermek" },
+        { "s": "We could live with that, ___ that we get a seat on the board.", "a": "provided", "hint": "...şartıyla" }
+      ],
+      "order": [
+        { "a": "Our clinical study has been published in a medical journal." },
+        { "a": "We are looking for a partner who will be actively involved." }
+      ],
+      "translate": [
+        { "tr": "Sizinle ortada buluşmaya hazırız.", "en": "We are ready to meet you halfway.", "keys": ["meet you halfway"] },
+        { "tr": "Cihaz henüz sertifikalandırılmadı.", "en": "The device hasn't been certified yet.", "keys": ["hasn't been certified"] }
+      ],
+      "roleplay": {
+        "persona": "VC fund partner",
+        "personaTr": "Risk sermayesi fonu ortağı",
+        "scene": "Fon ortağı resmî teklifini sunuyor; değerlemeyi gerekçelerle yükseltmeye çalışıyorsun.",
+        "turns": [
+          { "ai": "We're prepared to invest €500,000 for a 25 percent stake. What do you think?", "aiTr": "Yüzde 25'lik hisse için 500.000 euro yatırım yapmaya hazırız. Ne düşünüyorsunuz?", "hint": "Thank you, but that would put our post-money valuation at only two million, which I'd say undervalues the company.", "keys": ["valuation", "undervalues", "two million"] },
+          { "ai": "What makes you think the company is worth more?", "aiTr": "Şirketin daha değerli olduğunu size düşündüren ne?", "hint": "Our product is already being used by five paying customers, and our clinical study has been published.", "keys": ["paying customers", "published", "clinical study"] },
+          { "ai": "But the device still hasn't been certified. That's a big risk for us.", "aiTr": "Ama cihaz hâlâ sertifikalandırılmadı. Bu bizim için büyük bir risk.", "hint": "That's fair, and that's exactly why we're raising this round: to finish certification and enter Europe.", "keys": ["certification", "raising", "fair"] },
+          { "ai": "So where would you like to land?", "aiTr": "Peki nerede anlaşmak istersiniz?", "hint": "If we met you halfway, would €2.5 million post-money for 20 percent work for you?", "keys": ["halfway", "2.5 million", "20 percent"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Yatırımcının ilk teklifini nazik ama kararlı biçimde geri çeviriyor, seyrelme ve değerleme üzerine ince bir pazarlık yürütüyorsun.",
+      "text": [
+        { "who": "Investor", "en": "Having followed your progress closely, we're keen to come in with €500,000 for a 25 percent stake.", "tr": "İlerlemenizi yakından takip ettikten sonra, yüzde 25'lik bir hisse için 500.000 euroyla girmeye hevesliyiz." },
+        { "who": "Me", "en": "I appreciate the confidence, but that would value the business at just two million post-money, which doesn't reflect where we are today.", "tr": "Güveninizi takdir ediyorum ama bu, şirketi yatırım sonrası sadece iki milyon olarak değerler ve bugün geldiğimiz noktayı yansıtmaz." },
+        { "who": "Me", "en": "Not only do we have a working third-generation prototype, but five clinics are already paying for it.", "tr": "Hem çalışan üçüncü nesil bir prototipimiz var hem de beş klinik şimdiden bunun için ödeme yapıyor." },
+        { "who": "Me", "en": "What really sets us apart, though, is a peer-reviewed study showing 94 percent agreement with trained audiologists.", "tr": "Ama bizi asıl farklı kılan, eğitimli odyologlarla yüzde 94 uyum gösteren hakemli bir çalışma." },
+        { "who": "Me", "en": "We've also secured a €250,000 European innovation grant, which means our clinical validation was funded without giving away any equity.", "tr": "Ayrıca 250.000 euroluk bir Avrupa inovasyon hibesi aldık; yani klinik doğrulamamız hiç hisse vermeden finanse edildi." },
+        { "who": "Investor", "en": "All fair points, but until you have the CE mark, we're essentially pricing in regulatory risk.", "tr": "Hepsi yerinde noktalar ama CE işaretini alana kadar esasen düzenleyici riski fiyata yansıtıyoruz." },
+        { "who": "Me", "en": "That's precisely what this round is for: closing out certification and laying the groundwork for our European launch.", "tr": "Bu tur tam da bunun için: sertifikasyonu tamamlamak ve Avrupa lansmanımızın zeminini hazırlamak." },
+        { "who": "Me", "en": "Given that, I'd propose €2.5 million post-money for 20 percent, which keeps dilution manageable while still giving you meaningful upside.", "tr": "Bunu göz önüne alarak yüzde 20 için yatırım sonrası 2,5 milyon öneriyorum; bu, seyrelmeyi makul tutarken size de anlamlı bir getiri potansiyeli sağlar." },
+        { "who": "Investor", "en": "We could get comfortable with that, provided we take a board seat.", "tr": "Yönetim kurulunda bir koltuk almamız şartıyla buna ısınabiliriz." },
+        { "who": "Me", "en": "I'd actually welcome that, since what we need is a hands-on partner rather than just capital.", "tr": "Aslında bunu memnuniyetle karşılarım, çünkü ihtiyacımız olan şey sadece sermaye değil, işin içinde olan bir ortak." },
+        { "who": "Investor", "en": "Then let's get a term sheet over to you this week.", "tr": "O zaman bu hafta size bir ön anlaşma metni gönderelim." }
+      ],
+      "vocab": [
+        { "en": "come in with", "tr": "(bir miktarla) yatırıma girmek", "ex": "The fund is keen to come in with €500,000.", "def": "to invest a particular amount in a funding round" },
+        { "en": "set apart", "tr": "farklı kılmak, ayırt etmek", "ex": "Our clinical data sets us apart.", "def": "to make someone or something different from and better than others" },
+        { "en": "peer-reviewed", "tr": "hakemli", "ex": "The results appeared in a peer-reviewed journal.", "def": "checked by other experts before being published" },
+        { "en": "give away equity", "tr": "hisse vermek", "ex": "The grant let us fund research without giving away equity.", "def": "to hand over part of the ownership of a company" },
+        { "en": "price in", "tr": "fiyata yansıtmak", "ex": "Investors price in regulatory risk.", "def": "to include a possible risk or event in the price you pay" },
+        { "en": "lay the groundwork", "tr": "zemin hazırlamak", "ex": "This round lays the groundwork for our European launch.", "def": "to do the early work that makes later success possible" },
+        { "en": "dilution", "tr": "(hisse) seyrelme", "ex": "We want to keep dilution manageable.", "def": "the drop in existing owners' share when new shares are issued" },
+        { "en": "upside", "tr": "getiri potansiyeli", "ex": "The deal still gives investors meaningful upside.", "def": "the possible gain or benefit from a decision" },
+        { "en": "hands-on", "tr": "işin içinde olan, uygulamada aktif", "ex": "We need a hands-on partner rather than just capital.", "def": "actively involved in the work, not only watching" },
+        { "en": "term sheet", "tr": "ön anlaşma metni (yatırım şartları belgesi)", "ex": "They will send a term sheet this week.", "def": "a short document listing the main terms of an investment" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences for emphasis: What … is …",
+        "tr": "'What + cümle + is …' yapısı, vurgulamak istediğin bilgiyi cümlenin sonuna taşır. Müzakerede en güçlü argümanını öne çıkarmak için kullanılır.",
+        "examples": ["What really sets us apart is a peer-reviewed study.", "What we need is a hands-on partner rather than just capital.", "What worries investors most is regulatory risk."]
+      },
+      "questions": [
+        { "q": "How does the founder respond to the first offer?", "options": ["Accepts it gratefully", "Politely pushes back, arguing it undervalues the company", "Rejects it angrily and walks away", "Asks for a week to think"], "a": 1 },
+        { "q": "Why does the founder mention the European grant?", "options": ["To ask the investor to repay it", "To complain about bureaucracy", "To show that key work was funded without dilution"], "a": 2 },
+        { "q": "What does the investor imply by 'pricing in regulatory risk'?", "options": ["The lower offer reflects uncertainty around certification", "They want a higher price for the device", "They will pay the regulator directly"], "a": 0 },
+        { "q": "What is the founder's attitude to giving the investor a board seat?", "options": ["Reluctant but resigned", "Strongly against it", "Indifferent", "Genuinely positive"], "a": 3 },
+        { "q": "What does 'let's get a term sheet over to you' suggest?", "options": ["The negotiation has failed", "The investor is ready to formalise the deal", "The founder must send more data first"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "What really sets us ___ is a peer-reviewed study.", "a": "apart", "hint": "farklı kılmak" },
+        { "s": "Until you have the CE mark, we're essentially pricing ___ regulatory risk.", "a": "in", "hint": "fiyata yansıtmak" },
+        { "s": "This keeps ___ manageable while still giving you meaningful upside.", "a": "dilution", "hint": "seyrelme" },
+        { "s": "What we need is a ___ partner rather than just capital.", "a": "hands-on", "hint": "işin içinde olan" }
+      ],
+      "order": [
+        { "a": "What we need is a hands-on partner rather than just capital." },
+        { "a": "That is precisely what this round is for." }
+      ],
+      "translate": [
+        { "tr": "Bu teklif şirketin bugünkü durumunu yansıtmıyor.", "en": "This offer doesn't reflect where the company is today.", "keys": ["doesn't reflect", "today"] },
+        { "tr": "Bu, seyrelmeyi makul bir seviyede tutar.", "en": "This keeps dilution manageable.", "keys": ["dilution", "manageable"] },
+        { "tr": "Sadece sermaye değil, işin içinde olan bir ortak istiyoruz.", "en": "We want a hands-on partner, not just capital.", "keys": ["hands-on partner", "capital"] }
+      ],
+      "roleplay": {
+        "persona": "Lead investor at a VC fund",
+        "personaTr": "Bir VC fonunun lider yatırımcısı",
+        "scene": "Fon turu yönetmek istiyor ama düşük bir değerleme öneriyor; kararlı ama yapıcı bir şekilde pazarlık ediyorsun.",
+        "turns": [
+          { "ai": "We'd like to come in with €500,000 for a 25 percent stake. How does that sound?", "aiTr": "Yüzde 25'lik hisse için 500.000 euroyla girmek istiyoruz. Kulağa nasıl geliyor?", "hint": "I appreciate the confidence, but that values us at just two million post-money, which doesn't reflect where we are today.", "keys": ["doesn't reflect", "two million", "post-money"] },
+          { "ai": "Convince me. What justifies a higher number?", "aiTr": "İkna edin beni. Daha yüksek bir rakamı ne haklı çıkarıyor?", "hint": "Not only do five clinics already pay for our device, but our peer-reviewed study shows 94 percent agreement with audiologists.", "keys": ["not only", "peer-reviewed", "94 percent"] },
+          { "ai": "Even so, without the CE mark we're carrying most of the regulatory risk.", "aiTr": "Yine de CE işareti olmadan düzenleyici riskin çoğunu biz taşıyoruz.", "hint": "That's precisely what this round is for: closing out certification and laying the groundwork for our European launch.", "keys": ["precisely", "certification", "groundwork"] },
+          { "ai": "So what would you propose, and what's in it for us?", "aiTr": "Peki ne önerirsiniz ve bizim için bunun getirisi ne?", "hint": "I'd propose 2.5 million post-money for 20 percent, with a board seat for you, since what we need is a hands-on partner.", "keys": ["2.5 million", "20 percent", "board seat", "hands-on"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Deneyimli bir yatırımcıyla değerleme pazarlığını zarif, ölçülü ve ikna edici bir dille yürütüyorsun.",
+      "text": [
+        { "who": "Investor", "en": "We've liked what we've seen, so let me cut to the chase: €500,000 for a quarter of the company.", "tr": "Gördüklerimizi beğendik, o yüzden lafı dolandırmayayım: şirketin dörtte biri için 500.000 euro." },
+        { "who": "Me", "en": "That's a generous vote of confidence, and I don't want to sound ungrateful, but it implies a two-million post-money valuation, which frankly leaves a fair amount on the table.", "tr": "Bu cömert bir güven oyu ve nankör görünmek istemem ama bu, yatırım sonrası iki milyonluk bir değerleme anlamına geliyor ki açıkçası masada epey değer bırakıyor." },
+        { "who": "Me", "en": "We're not pitching a slide deck here; we're pitching a third-generation device that five clinics already pay for every month.", "tr": "Burada bir sunum dosyası satmıyoruz; beş kliniğin şimdiden her ay ödeme yaptığı üçüncü nesil bir cihazı anlatıyoruz." },
+        { "who": "Me", "en": "Add to that a peer-reviewed study showing 94 percent agreement with trained audiologists, and the technical risk looks rather smaller than your offer assumes.", "tr": "Buna eğitimli odyologlarla yüzde 94 uyum gösteren hakemli bir çalışmayı da ekleyin; teknik risk, teklifinizin varsaydığından epey küçük görünüyor." },
+        { "who": "Me", "en": "Our clinical validation, incidentally, was funded by a €250,000 European grant rather than by anyone's equity.", "tr": "Bu arada klinik doğrulamamız kimsenin hissesiyle değil, 250.000 euroluk bir Avrupa hibesiyle finanse edildi." },
+        { "who": "Investor", "en": "I don't dispute any of that, but you're still pre-CE mark, and regulators are not known for keeping to founders' timelines.", "tr": "Bunların hiçbirine itirazım yok ama hâlâ CE işareti öncesindesiniz ve düzenleyiciler kurucuların takvimlerine uymalarıyla pek tanınmaz." },
+        { "who": "Me", "en": "Point taken, which is precisely why this round exists: to see certification through and get us into Europe on the front foot.", "tr": "Haklısınız; bu tur zaten tam da bu yüzden var: sertifikasyonu sonuna kadar götürmek ve Avrupa'ya güçlü bir başlangıçla girmek." },
+        { "who": "Me", "en": "That said, I'm not going to pretend the risk is zero, so let's meet in the middle at €2.5 million post-money for 20 percent.", "tr": "Bununla birlikte riskin sıfır olduğunu iddia edecek değilim; o yüzden yüzde 20 için yatırım sonrası 2,5 milyonda ortada buluşalım." },
+        { "who": "Investor", "en": "I could probably sell that to my partners, on the condition that we take a board seat.", "tr": "Yönetim kurulunda bir koltuk almamız koşuluyla bunu muhtemelen ortaklarıma kabul ettirebilirim." },
+        { "who": "Me", "en": "By all means, and frankly I'd rather have you in the room arguing with me than writing a cheque and disappearing.", "tr": "Elbette; açıkçası çeki yazıp ortadan kaybolmanızdansa odada benimle tartışmanızı tercih ederim." },
+        { "who": "Investor", "en": "Fair enough; we'll have a term sheet with you by Friday.", "tr": "Makul; cumaya kadar ön anlaşma metni elinizde olur." }
+      ],
+      "vocab": [
+        { "en": "cut to the chase", "tr": "lafı dolandırmadan sadede gelmek", "ex": "Let me cut to the chase: we're offering €500,000.", "def": "to get straight to the most important point" },
+        { "en": "vote of confidence", "tr": "güven oyu", "ex": "The offer is a generous vote of confidence.", "def": "an action that shows you trust someone's ability" },
+        { "en": "leave something on the table", "tr": "masada (alınabilecek) değer bırakmak", "ex": "A two-million valuation leaves money on the table.", "def": "to accept less than you could have got in a deal" },
+        { "en": "add to that", "tr": "buna bir de ... ekleyin", "ex": "Add to that our clinical data, and the risk looks smaller.", "def": "used to introduce one more point that strengthens an argument" },
+        { "en": "point taken", "tr": "haklısınız, anlaşıldı", "ex": "Point taken, the timeline could slip.", "def": "used to accept that someone has made a fair argument" },
+        { "en": "see something through", "tr": "bir şeyi sonuna kadar götürmek", "ex": "This round will let us see certification through.", "def": "to continue with a difficult task until it is finished" },
+        { "en": "on the front foot", "tr": "güçlü ve inisiyatif sahibi bir konumda", "ex": "We want to enter Europe on the front foot.", "def": "in a strong, confident position, acting before others do" },
+        { "en": "meet in the middle", "tr": "ortada buluşmak", "ex": "Let's meet in the middle at 2.5 million.", "def": "to agree on a compromise between two positions" },
+        { "en": "sell something to someone", "tr": "birini bir şeye ikna etmek", "ex": "I could probably sell that to my partners.", "def": "to persuade someone to accept an idea or plan" },
+        { "en": "by all means", "tr": "elbette, buyurun", "ex": "By all means, take a board seat.", "def": "a polite and strong way of saying yes" }
+      ],
+      "grammar": {
+        "title": "Softening a firm position",
+        "tr": "Kesin bir itirazı kibar kılmak için yumuşatıcılar kullanılır: 'I don't want to sound…, but', 'rather', 'probably', 'frankly'. Mesaj net kalır ama ton kırıcı olmaz.",
+        "examples": ["I don't want to sound ungrateful, but it leaves a fair amount on the table.", "The technical risk looks rather smaller than your offer assumes.", "I could probably sell that to my partners."]
+      },
+      "questions": [
+        { "q": "What does the founder imply by saying 'we're not pitching a slide deck'?", "options": ["The founder forgot the presentation", "The company is past the idea stage and has real traction", "The investor should not look at the slides"], "a": 1 },
+        { "q": "What is the tone of the investor's remark about regulators and founders' timelines?", "options": ["Dryly ironic", "Angry", "Apologetic", "Enthusiastic"], "a": 0 },
+        { "q": "Why does the founder mention the European grant?", "options": ["To show they don't need investors", "To ask for a bigger grant", "To show the clinical work was funded without giving away equity"], "a": 2 },
+        { "q": "What final terms are agreed?", "options": ["€2 million post-money for 25 percent", "€3 million post-money for 20 percent, with no board seat", "€2.5 million post-money for 20 percent, plus a board seat"], "a": 2 },
+        { "q": "What does the founder's comment about 'writing a cheque and disappearing' suggest?", "options": ["They want an investor engaged enough to challenge them", "They want a passive investor who stays out of the way", "They are worried the investor won't pay"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Let me cut to the ___: €500,000 for a quarter of the company.", "a": "chase", "hint": "sadede gelmek" },
+        { "s": "Frankly, it leaves a fair amount on the ___.", "a": "table", "hint": "masa" },
+        { "s": "This round exists to see certification ___.", "a": "through", "hint": "sonuna kadar götürmek" },
+        { "s": "Let's meet in the ___ at €2.5 million post-money.", "a": "middle", "hint": "orta" }
+      ],
+      "order": [
+        { "a": "I could probably sell that to my partners." },
+        { "a": "Regulators are not known for keeping to founders' timelines." }
+      ],
+      "translate": [
+        { "tr": "Nankör görünmek istemem ama bu, masada para bırakıyor.", "en": "I don't want to sound ungrateful, but this leaves money on the table.", "keys": ["sound ungrateful", "on the table"] },
+        { "tr": "Riskin sıfır olduğunu iddia edecek değilim.", "en": "I'm not going to pretend the risk is zero.", "keys": ["pretend", "risk is zero"] },
+        { "tr": "Ortada buluşalım.", "en": "Let's meet in the middle.", "keys": ["meet in the middle"] }
+      ],
+      "roleplay": {
+        "persona": "Senior partner at a VC fund",
+        "personaTr": "Bir VC fonunun kıdemli ortağı",
+        "scene": "Kıdemli bir ortak doğrudan rakam veriyor; değerlemeyi zarafetle ama net bir şekilde yukarı çekiyorsun.",
+        "turns": [
+          { "ai": "I'll cut to the chase: €500,000 for a quarter of the company. Can you live with that?", "aiTr": "Sadede geleyim: şirketin dörtte biri için 500.000 euro. Buna razı olabilir misiniz?", "hint": "It's a generous vote of confidence, but a two-million post-money valuation leaves a fair amount on the table.", "keys": ["vote of confidence", "on the table", "two-million"] },
+          { "ai": "Go on, then. What am I missing?", "aiTr": "Buyurun o zaman. Neyi gözden kaçırıyorum?", "hint": "We're not pitching a slide deck: five clinics already pay for the device, and a peer-reviewed study shows 94 percent agreement with audiologists.", "keys": ["slide deck", "five clinics", "peer-reviewed", "94 percent"] },
+          { "ai": "Be that as it may, you're still pre-CE mark, and regulators rarely keep to founders' timelines.", "aiTr": "Öyle olsa bile hâlâ CE işareti öncesindesiniz ve düzenleyiciler kurucuların takvimine nadiren uyar.", "hint": "Point taken, which is precisely why this round exists: to see certification through and get us into Europe.", "keys": ["point taken", "see certification through", "precisely"] },
+          { "ai": "So where does that leave us?", "aiTr": "Peki bu bizi nereye getiriyor?", "hint": "I won't pretend the risk is zero, so let's meet in the middle: €2.5 million post-money for 20 percent, with a board seat for you.", "keys": ["meet in the middle", "2.5 million", "20 percent", "board seat"] }
+        ]
+      }
+    }
+  }
+}

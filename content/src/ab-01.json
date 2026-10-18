@@ -1,0 +1,373 @@
+{
+  "id": "ab-01",
+  "topic": "abroad",
+  "title": "Renting an Apartment",
+  "titleTr": "Ev Kiralamak",
+  "levels": {
+    "A1": {
+      "intro": "Berlin'de bir daireye bakıyorsun ve ev sahibine kira, depozito ve tarih hakkında basit sorular soruyorsun.",
+      "text": [
+        { "who": "Landlord", "en": "Hello, please come in and look around.", "tr": "Merhaba, buyurun girin, etrafa bakın." },
+        { "who": "Me", "en": "Thank you, the flat is very nice and bright.", "tr": "Teşekkürler, daire çok güzel ve aydınlık." },
+        { "who": "Me", "en": "How much is the rent per month?", "tr": "Aylık kira ne kadar?" },
+        { "who": "Landlord", "en": "It is €1,200, with heating and water included.", "tr": "1.200 avro; ısınma ve su dahil." },
+        { "who": "Me", "en": "Is the internet included too?", "tr": "İnternet de dahil mi?" },
+        { "who": "Landlord", "en": "No, and the deposit is three months' rent.", "tr": "Hayır; depozito da üç aylık kira." },
+        { "who": "Me", "en": "Can I pay the deposit in three parts?", "tr": "Depozitoyu üç taksitte ödeyebilir miyim?" },
+        { "who": "Landlord", "en": "Yes, and the flat is free from 1 November.", "tr": "Evet; daire de 1 Kasım'dan itibaren boş." }
+      ],
+      "vocab": [
+        { "en": "flat", "tr": "daire", "ex": "The flat is very nice and bright." },
+        { "en": "rent", "tr": "kira", "ex": "The rent is €1,200 per month." },
+        { "en": "per month", "tr": "aylık, ayda", "ex": "How much is it per month?" },
+        { "en": "included", "tr": "dahil", "ex": "Heating and water are included." },
+        { "en": "deposit", "tr": "depozito", "ex": "The deposit is three months' rent." },
+        { "en": "proof of income", "tr": "gelir belgesi", "ex": "Please bring your passport and proof of income." }
+      ],
+      "grammar": {
+        "title": "Questions with 'to be': Is it…? How much is…?",
+        "tr": "'To be' ile soru sorarken 'is/are' fiilini öne alırız: 'The internet is included' → 'Is the internet included?' Soru kelimesi varsa en başa gelir: 'How much is the rent?'",
+        "examples": ["Is the internet included?", "How much is the rent per month?", "Is the flat free in November?"]
+      },
+      "questions": [
+        { "q": "How much is the rent per month?", "options": ["€1,000", "€1,200", "€3,600"], "a": 1 },
+        { "q": "Is the internet included?", "options": ["No", "Yes", "Only in November"], "a": 0 },
+        { "q": "When is the flat free?", "options": ["In October", "In December", "From 1 November"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "How much is the ___ per month?", "a": "rent", "hint": "kira" },
+        { "s": "Heating and water are ___.", "a": "included", "hint": "dahil" },
+        { "s": "Can I pay the ___ in three parts?", "a": "deposit", "hint": "depozito" }
+      ],
+      "order": [
+        { "a": "How much is the rent per month?" },
+        { "a": "Can I pay the deposit in three parts?" }
+      ],
+      "translate": [
+        { "tr": "İnternet dahil mi?", "en": "Is the internet included?", "keys": ["internet", "included"] },
+        { "tr": "Daire kasımdan itibaren boş.", "en": "The flat is free from November.", "keys": ["flat", "free", "November"] }
+      ],
+      "roleplay": {
+        "persona": "Landlord",
+        "personaTr": "Ev sahibi",
+        "scene": "Berlin'de bir daireye bakıyorsun. Ev sahibi Bayan Becker sana birkaç soru soruyor.",
+        "turns": [
+          { "ai": "Hello! Do you like the flat?", "aiTr": "Merhaba! Daireyi beğendiniz mi?", "hint": "Yes, I like it, and it is very bright.", "keys": ["like", "bright", "nice"] },
+          { "ai": "Do you have a passport and proof of income?", "aiTr": "Pasaportunuz ve gelir belgeniz var mı?", "hint": "Yes, I have my passport and my company papers.", "keys": ["passport", "company papers", "yes"] },
+          { "ai": "Do you have pets?", "aiTr": "Evcil hayvanınız var mı?", "hint": "No, I don't have pets.", "keys": ["no", "pets"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Berlin'de bir daire görmeye gidiyorsun; kira, faturalar, depozito, sözleşme ve gereken belgeleri soruyorsun.",
+      "text": [
+        { "who": "Landlord", "en": "Hello, I'm Mrs Becker, and this is the flat I told you about.", "tr": "Merhaba, ben Bayan Becker; size bahsettiğim daire bu." },
+        { "who": "Me", "en": "It's bigger and brighter than the photos, and I really like the balcony.", "tr": "Fotoğraflardakinden daha büyük ve daha aydınlık; balkonu da çok sevdim." },
+        { "who": "Me", "en": "How much is the rent, and are the bills included?", "tr": "Kira ne kadar, faturalar dahil mi?" },
+        { "who": "Landlord", "en": "It's €1,200 a month with heating and water, but internet isn't included.", "tr": "Isınma ve su dahil ayda 1.200 avro, ama internet dahil değil." },
+        { "who": "Landlord", "en": "I need a deposit of three months' rent, so that's €3,600.", "tr": "Üç aylık kira tutarında depozito istiyorum, yani 3.600 avro." },
+        { "who": "Me", "en": "That's a lot at once, so can I pay it in three instalments?", "tr": "Bir seferde bu çok fazla; üç taksitte ödeyebilir miyim?" },
+        { "who": "Landlord", "en": "Yes, that's fine, but the contract is for at least two years.", "tr": "Evet, olur, ama sözleşme en az iki yıllık." },
+        { "who": "Me", "en": "No problem, because I'm going to stay in Berlin for a long time.", "tr": "Sorun değil, çünkü uzun süre Berlin'de kalacağım." },
+        { "who": "Landlord", "en": "It's free from 1 November, and I need your passport and proof of income.", "tr": "Daire 1 Kasım'dan itibaren boş; pasaportunuza ve gelir belgenize ihtiyacım var." }
+      ],
+      "vocab": [
+        { "en": "bills", "tr": "faturalar", "ex": "Are the bills included in the rent?" },
+        { "en": "deposit", "tr": "depozito", "ex": "I need a deposit of three months' rent." },
+        { "en": "pay in instalments", "tr": "taksitle ödemek", "ex": "Can I pay the deposit in three instalments?" },
+        { "en": "contract", "tr": "sözleşme", "ex": "The contract is for two years." },
+        { "en": "at least", "tr": "en az", "ex": "I want to stay for at least two years." },
+        { "en": "proof of income", "tr": "gelir belgesi", "ex": "I need your passport and proof of income." },
+        { "en": "move in", "tr": "taşınmak", "ex": "When can I move in?" }
+      ],
+      "grammar": {
+        "title": "Comparatives: bigger than, brighter than",
+        "tr": "İki şeyi karşılaştırırken kısa sıfatlara -er ekleyip 'than' kullanırız: big → bigger than. Uzun sıfatlarda 'more' kullanırız: more expensive than.",
+        "examples": ["It's bigger than the photos.", "This flat is brighter than my hotel room.", "Berlin is more expensive than I thought."]
+      },
+      "questions": [
+        { "q": "What is NOT included in the rent?", "options": ["Heating", "Water", "Internet"], "a": 2 },
+        { "q": "How much is the deposit?", "options": ["€1,200", "€3,600", "€2,400"], "a": 1 },
+        { "q": "How long is the contract?", "options": ["At least two years", "One year", "Six months"], "a": 0 },
+        { "q": "Why is a long contract OK for the speaker?", "options": ["The rent is cheap", "They are going to stay in Berlin for a long time", "The flat has a balcony"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "How much is the rent, and are the ___ included?", "a": "bills", "hint": "faturalar" },
+        { "s": "It's bigger and brighter ___ the photos.", "a": "than", "hint": "-den/-dan (karşılaştırma)" },
+        { "s": "The contract is for at ___ two years.", "a": "least", "hint": "en az" }
+      ],
+      "order": [
+        { "a": "I need your passport and proof of income." },
+        { "a": "The contract is for at least two years." }
+      ],
+      "translate": [
+        { "tr": "Depozitoyu üç taksitte ödeyebilir miyim?", "en": "Can I pay the deposit in three instalments?", "keys": ["deposit", "instalments"] },
+        { "tr": "Uzun süre Berlin'de kalacağım.", "en": "I'm going to stay in Berlin for a long time.", "keys": ["going to stay", "long time"] }
+      ],
+      "roleplay": {
+        "persona": "Landlord",
+        "personaTr": "Ev sahibi",
+        "scene": "Daireyi gezdin. Ev sahibi Bayan Becker ne düşündüğünü ve birkaç detayı soruyor.",
+        "turns": [
+          { "ai": "So, what do you think of the flat?", "aiTr": "Eee, daire hakkında ne düşünüyorsunuz?", "hint": "I really like it, and it's bigger than the photos.", "keys": ["like", "bigger", "nice"] },
+          { "ai": "Do you have any pets? Cats are OK, but no dogs.", "aiTr": "Evcil hayvanınız var mı? Kedi olur ama köpek olmaz.", "hint": "No, I don't have any pets, but is the building quiet?", "keys": ["don't have", "pets", "quiet"] },
+          { "ai": "Yes, the bedroom is at the back, so it's quiet. Can you send me your documents?", "aiTr": "Evet, yatak odası arka tarafta, o yüzden sessiz. Belgelerinizi bana gönderebilir misiniz?", "hint": "Sure, I'm going to send my passport and my company papers today.", "keys": ["passport", "company papers", "send"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Berlin'de bir daireyi geziyorsun; kira, faturalar, depozito, sözleşme ve gerekli belgeler hakkında konuşuyorsun.",
+      "text": [
+        { "who": "Landlord", "en": "Welcome, I'm Mrs Becker, and I've just renovated the kitchen and the bathroom.", "tr": "Hoş geldiniz, ben Bayan Becker; mutfağı ve banyoyu yeni yeniledim." },
+        { "who": "Me", "en": "It looks great, and I've never seen such a bright flat in Berlin.", "tr": "Harika görünüyor; Berlin'de bu kadar aydınlık bir daire hiç görmedim." },
+        { "who": "Me", "en": "Could you tell me what the rent includes?", "tr": "Kiraya nelerin dahil olduğunu söyleyebilir misiniz?" },
+        { "who": "Landlord", "en": "The rent is €1,200 a month, including heating and water, but you'll have to set up the internet yourself.", "tr": "Kira ısınma ve su dahil ayda 1.200 avro, ama interneti kendiniz bağlatmanız gerekecek." },
+        { "who": "Landlord", "en": "I ask for a deposit of three months' rent, which is €3,600.", "tr": "Üç aylık kira tutarında depozito istiyorum, yani 3.600 avro." },
+        { "who": "Me", "en": "That's quite a lot, so would it be possible to pay it in three monthly instalments?", "tr": "Bu epey fazla; üç aylık taksitte ödemem mümkün olur mu?" },
+        { "who": "Landlord", "en": "That's fine, and in fact, it's quite common here.", "tr": "Olur; aslında burada bu oldukça yaygın." },
+        { "who": "Me", "en": "How long is the contract, and when is the flat available?", "tr": "Sözleşme ne kadar süreli ve daire ne zaman boş?" },
+        { "who": "Landlord", "en": "It's a two-year contract, and if you sign this week, you can move in on 1 November.", "tr": "İki yıllık bir sözleşme; bu hafta imzalarsanız 1 Kasım'da taşınabilirsiniz." },
+        { "who": "Landlord", "en": "I'll need your passport, proof of income and, since you run a company, your company registration papers.", "tr": "Pasaportunuza, gelir belgenize ve bir şirket yönettiğiniz için şirket tescil belgelerinize ihtiyacım olacak." }
+      ],
+      "vocab": [
+        { "en": "renovate", "tr": "yenilemek, tadilat yapmak", "ex": "I've just renovated the kitchen.", "def": "to repair and improve a building or room" },
+        { "en": "set up the internet", "tr": "interneti bağlatmak", "ex": "You'll have to set up the internet yourself.", "def": "to arrange an internet connection for your home" },
+        { "en": "deposit", "tr": "depozito", "ex": "I ask for a deposit of three months' rent.", "def": "money you pay before you move in and get back when you leave" },
+        { "en": "monthly instalments", "tr": "aylık taksitler", "ex": "Can I pay it in three monthly instalments?", "def": "equal parts of a payment that you pay once a month" },
+        { "en": "available", "tr": "boş, müsait", "ex": "When is the flat available?", "def": "free to be used or rented" },
+        { "en": "move in", "tr": "taşınmak", "ex": "You can move in on 1 November.", "def": "to start living in a new home" },
+        { "en": "proof of income", "tr": "gelir belgesi", "ex": "I'll need your passport and proof of income.", "def": "a document that shows how much money you earn" },
+        { "en": "company registration papers", "tr": "şirket tescil belgeleri", "ex": "I can send you my company registration papers.", "def": "official documents that show a company legally exists" }
+      ],
+      "grammar": {
+        "title": "First conditional: if + present, will/can",
+        "tr": "Gerçek ve olası bir durumu anlatırken 'if + present simple', ardından 'will/can + fiil' kullanırız. 'If' cümlesinde 'will' kullanılmaz.",
+        "examples": ["If you sign this week, you can move in on 1 November.", "If I pay in instalments, it will be easier for me.", "If the street is noisy, I'll close the window."]
+      },
+      "questions": [
+        { "q": "How does the landlord react to the instalment request?", "options": ["She refuses", "She agrees and says it is common", "She asks for a higher deposit"], "a": 1 },
+        { "q": "What does the new tenant have to arrange alone?", "options": ["Heating", "Water", "The internet", "The deposit"], "a": 2 },
+        { "q": "When can the tenant move in if they sign this week?", "options": ["1 November", "1 October", "1 December"], "a": 0 },
+        { "q": "Why does the landlord ask for company papers?", "options": ["Because the rent is high", "Because the flat is new", "Because the tenant runs a company"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "You'll have to ___ the internet yourself.", "a": "set up", "hint": "bağlatmak, kurmak" },
+        { "s": "Would it be possible to pay it in three monthly ___?", "a": "instalments", "hint": "taksitler" },
+        { "s": "If you sign this week, you can ___ on 1 November.", "a": "move in", "hint": "taşınmak" }
+      ],
+      "order": [
+        { "a": "I've never seen such a bright flat in Berlin." },
+        { "a": "It's quite common to pay in instalments here." }
+      ],
+      "translate": [
+        { "tr": "Isınma ve su kiraya dahil, ama interneti kendiniz bağlatmanız gerekecek.", "en": "Heating and water are included in the rent, but you'll have to set up the internet yourself.", "keys": ["included", "have to set up", "internet"] },
+        { "tr": "Bu hafta imzalarsanız 1 Kasım'da taşınabilirsiniz.", "en": "If you sign this week, you can move in on 1 November.", "keys": ["if you sign", "move in"] }
+      ],
+      "roleplay": {
+        "persona": "Landlord",
+        "personaTr": "Ev sahibi",
+        "scene": "Daireyi gezdikten sonra ev sahibi Bayan Becker'le koridorda konuşuyorsun.",
+        "turns": [
+          { "ai": "So, have you looked around? What do you think?", "aiTr": "Eee, etrafa baktınız mı? Ne düşünüyorsunuz?", "hint": "Yes, I have, and I really like it because it's so bright.", "keys": ["like", "bright", "really"] },
+          { "ai": "Do you have any pets? Cats are fine, but I'm afraid dogs aren't allowed.", "aiTr": "Evcil hayvanınız var mı? Kedi sorun değil ama maalesef köpeğe izin yok.", "hint": "No, I don't have any pets, so that's not a problem.", "keys": ["no", "pets", "not a problem"] },
+          { "ai": "Do you have any other questions?", "aiTr": "Başka sorunuz var mı?", "hint": "Yes, is it noisy here at night?", "keys": ["noisy", "quiet", "at night"] },
+          { "ai": "The bedroom faces the courtyard, so it's quiet, but the bar on the corner can be loud on Fridays. Is that OK?", "aiTr": "Yatak odası avluya bakıyor, o yüzden sessiz; ama köşedeki bar cuma günleri gürültülü olabiliyor. Sizin için sorun olur mu?", "hint": "That's fine, and if I take the flat, I'll send you my documents tomorrow.", "keys": ["fine", "documents", "send"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Berlin'de daire görüyorsun: kira, faturalar, depozito, sözleşme süresi, belgeler, evcil hayvan ve gürültü konusunu konuşuyorsun.",
+      "text": [
+        { "who": "Landlord", "en": "Come on in—the kitchen and bathroom were completely renovated last spring, so everything is practically new.", "tr": "Buyurun girin; mutfak ve banyo geçen bahar baştan sona yenilendi, yani her şey neredeyse yeni." },
+        { "who": "Me", "en": "I have to say, it's a lot brighter than it looked in the listing.", "tr": "Söylemeliyim ki ilanda göründüğünden çok daha aydınlık." },
+        { "who": "Me", "en": "Could I just check what's included in the €1,200?", "tr": "1.200 avroya nelerin dahil olduğunu bir teyit edebilir miyim?" },
+        { "who": "Landlord", "en": "Heating and water are covered, but the internet isn't, so you'd need to sign up with a provider yourself.", "tr": "Isınma ve su dahil, internet değil; yani bir sağlayıcıya kendiniz abone olmanız gerekir." },
+        { "who": "Landlord", "en": "As for the deposit, I usually ask for three months' rent, which comes to €3,600.", "tr": "Depozitoya gelince, genelde üç aylık kira istiyorum; bu da 3.600 avro ediyor." },
+        { "who": "Me", "en": "Would you be open to splitting that into three monthly instalments, since the move has already cost me quite a bit?", "tr": "Taşınma bana zaten epey pahalıya patladığı için bunu üç aylık taksite bölmeye açık olur musunuz?" },
+        { "who": "Landlord", "en": "That's perfectly reasonable—most of my tenants do it that way, actually.", "tr": "Gayet makul; aslında kiracılarımın çoğu böyle yapıyor." },
+        { "who": "Me", "en": "And is there a minimum period on the contract?", "tr": "Peki sözleşmede asgari bir süre var mı?" },
+        { "who": "Landlord", "en": "There's a two-year minimum, and the flat will be available from 1 November.", "tr": "En az iki yıl; daire de 1 Kasım'dan itibaren boş olacak." },
+        { "who": "Landlord", "en": "I'd need to see your passport and proof of income, although company papers would be accepted instead of payslips.", "tr": "Pasaportunuzu ve gelir belgenizi görmem gerekir, ama maaş bordrosu yerine şirket belgeleri de kabul edilir." },
+        { "who": "Me", "en": "That's a relief, because as a founder I don't actually get regular payslips yet.", "tr": "İçim rahatladı, çünkü kurucu olarak henüz düzenli maaş bordrosu almıyorum." }
+      ],
+      "vocab": [
+        { "en": "listing", "tr": "ilan", "ex": "It's brighter than it looked in the listing.", "def": "an advert for a flat or house that is for rent or sale" },
+        { "en": "be covered", "tr": "dahil olmak, karşılanmak", "ex": "Heating and water are covered by the rent.", "def": "to be paid for or included" },
+        { "en": "sign up with a provider", "tr": "bir sağlayıcıya abone olmak", "ex": "You'd need to sign up with an internet provider.", "def": "to become a customer of a company that supplies a service" },
+        { "en": "come to", "tr": "(toplam) etmek, tutmak", "ex": "Three months' rent comes to €3,600.", "def": "to add up to a total amount" },
+        { "en": "be open to", "tr": "...e açık olmak", "ex": "Would you be open to splitting the deposit?", "def": "to be willing to consider something" },
+        { "en": "split into instalments", "tr": "taksitlere bölmek", "ex": "Could we split the deposit into three instalments?", "def": "to divide a payment into smaller parts paid over time" },
+        { "en": "minimum period", "tr": "asgari süre", "ex": "There's a minimum period of two years.", "def": "the shortest time you must stay or keep an agreement" },
+        { "en": "payslip", "tr": "maaş bordrosu", "ex": "I don't get regular payslips yet.", "def": "a document from your employer that shows how much you were paid" },
+        { "en": "that's a relief", "tr": "içim rahatladı", "ex": "Company papers are fine? That's a relief.", "def": "used when you stop worrying about something" }
+      ],
+      "grammar": {
+        "title": "The passive: be + past participle",
+        "tr": "Eylemi kimin yaptığı önemli olmadığında edilgen yapı kullanırız: be + V3. Ev ilanlarında ve resmi konuşmalarda çok yaygındır.",
+        "examples": ["The kitchen was renovated last spring.", "Heating and water are covered.", "Company papers would be accepted instead of payslips."]
+      },
+      "questions": [
+        { "q": "What was renovated last spring?", "options": ["The whole building", "The kitchen and bathroom", "Only the balcony", "The bedroom"], "a": 1 },
+        { "q": "How does the landlord react to the instalment request?", "options": ["She says most of her tenants do it", "She asks for a higher rent", "She refuses politely"], "a": 0 },
+        { "q": "What will the tenant have to arrange themselves?", "options": ["Heating", "Water", "An internet provider"], "a": 2 },
+        { "q": "Why is the speaker relieved at the end?", "options": ["The rent is lower than expected", "They can't show payslips, but company papers are accepted", "The flat is available immediately"], "a": 1 },
+        { "q": "Why does the speaker probably ask to split the deposit?", "options": ["Moving has already been expensive", "They don't trust the landlord", "The flat needs repairs"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "The kitchen and bathroom ___ completely renovated last spring.", "a": "were", "hint": "-di (edilgen, geçmiş)" },
+        { "s": "Three months' rent ___ €3,600.", "a": "comes to", "hint": "ediyor, tutuyor" },
+        { "s": "Would you be ___ to splitting that into three instalments?", "a": "open", "hint": "açık, istekli" }
+      ],
+      "order": [
+        { "a": "There's a two-year minimum on the contract." },
+        { "a": "Company papers would be accepted instead of payslips." }
+      ],
+      "translate": [
+        { "tr": "Depozitoyu üç aylık taksite bölmeye açık olur musunuz?", "en": "Would you be open to splitting the deposit into three monthly instalments?", "keys": ["open to", "splitting", "instalments"] },
+        { "tr": "Isınma ve su kiraya dahil, ama internet değil.", "en": "Heating and water are covered by the rent, but the internet isn't.", "keys": ["covered", "internet isn't"] }
+      ],
+      "roleplay": {
+        "persona": "Landlord",
+        "personaTr": "Ev sahibi",
+        "scene": "Daire turunun sonundasın. Ev sahibi Bayan Becker karar vermeden önce seninle konuşmak istiyor.",
+        "turns": [
+          { "ai": "So, now that you've seen the place, what's your impression?", "aiTr": "Evet, daireyi gördünüz; izleniminiz nedir?", "hint": "I'd say it's brighter than it looked in the listing, and I love the renovated kitchen.", "keys": ["brighter", "listing", "kitchen", "love"] },
+          { "ai": "Just so you know, I don't allow dogs, although a cat would be fine. Is that an issue?", "aiTr": "Bilginiz olsun, köpeğe izin vermiyorum ama kedi olabilir. Bu sorun olur mu?", "hint": "Not at all, I don't have any pets, so it wouldn't be an issue.", "keys": ["not at all", "don't have any pets", "no pets"] },
+          { "ai": "Is there anything else you'd like to know before you decide?", "aiTr": "Karar vermeden önce bilmek istediğiniz başka bir şey var mı?", "hint": "Yes, how noisy does it get, especially at night?", "keys": ["noisy", "noise", "at night"] },
+          { "ai": "The bedroom faces the courtyard, though the bar on the corner can get loud on Fridays. Would that put you off?", "aiTr": "Yatak odası avluya bakıyor, ama köşedeki bar cuma günleri gürültülü olabiliyor. Bu sizi caydırır mı?", "hint": "If it were only on Fridays, I don't think it would bother me much.", "keys": ["bother", "only on Fridays", "fine"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Berlin'de bir daireyi görüyorsun ve ev sahibiyle kira, depozito ve sözleşme koşullarını kibarca pazarlık ederek konuşuyorsun.",
+      "text": [
+        { "who": "Landlord", "en": "Do come in—having renovated the kitchen and bathroom last spring, I'm rather proud of how the place has turned out.", "tr": "Buyurun girin; geçen bahar mutfakla banyoyu yeniledikten sonra dairenin aldığı halden epey gururluyum." },
+        { "who": "Me", "en": "I can see why; it's far brighter than the photos suggested.", "tr": "Nedenini anlıyorum; fotoğrafların gösterdiğinden çok daha aydınlık." },
+        { "who": "Me", "en": "Before I get carried away, though, could you walk me through what the €1,200 actually covers?", "tr": "Ama kendimi kaptırmadan önce, 1.200 avronun tam olarak neleri kapsadığını adım adım anlatır mısınız?" },
+        { "who": "Landlord", "en": "Heating and water are included, whereas the internet is down to you, so you'd have to sort out a provider yourself.", "tr": "Isınma ve su dahil; internet ise size kalmış, yani bir sağlayıcıyı kendiniz ayarlamanız gerekir." },
+        { "who": "Landlord", "en": "As for the deposit, it's the standard three months' rent, so €3,600 in total.", "tr": "Depozitoya gelince, standart üç aylık kira; toplamda 3.600 avro." },
+        { "who": "Me", "en": "That's entirely fair, although, having just shipped my life over from Istanbul, I'd find it much easier to pay it in three monthly instalments.", "tr": "Gayet adil, ama hayatımı daha yeni İstanbul'dan buraya taşımışken, üç aylık taksitte ödemek benim için çok daha kolay olur." },
+        { "who": "Landlord", "en": "Not only is that fine, it's actually what most of my tenants opt for.", "tr": "Bu sadece olur değil, aslında kiracılarımın çoğu da bunu tercih ediyor." },
+        { "who": "Me", "en": "Brilliant—and is the two-year minimum set in stone, or is there any flexibility?", "tr": "Harika; peki iki yıllık asgari süre kesin mi, yoksa biraz esneklik var mı?" },
+        { "who": "Landlord", "en": "The two years aren't negotiable, I'm afraid, but the flat is yours from 1 November if you want it.", "tr": "Korkarım iki yıl pazarlığa açık değil, ama isterseniz daire 1 Kasım'dan itibaren sizin." },
+        { "who": "Landlord", "en": "What I'll need from you is your passport and some proof of income—company papers will do if you don't have payslips.", "tr": "Sizden ihtiyacım olan şey pasaportunuz ve bir gelir belgesi; maaş bordronuz yoksa şirket belgeleri de yeterli olur." },
+        { "who": "Me", "en": "That's a weight off my mind, since as a founder I've yet to pay myself a proper salary.", "tr": "İçim rahatladı, çünkü kurucu olarak kendime henüz doğru dürüst bir maaş ödemedim." }
+      ],
+      "vocab": [
+        { "en": "turn out", "tr": "sonuçlanmak, ortaya çıkmak", "ex": "I'm proud of how the place has turned out.", "def": "to develop or end in a particular way" },
+        { "en": "get carried away", "tr": "kendini kaptırmak", "ex": "Before I get carried away, could you explain the costs?", "def": "to become so excited that you stop thinking clearly" },
+        { "en": "walk someone through", "tr": "adım adım anlatmak", "ex": "Could you walk me through what the rent covers?", "def": "to explain something to someone slowly, step by step" },
+        { "en": "be down to someone", "tr": "birinin sorumluluğunda olmak", "ex": "The internet is down to you.", "def": "to be someone's responsibility" },
+        { "en": "sort out", "tr": "halletmek, ayarlamak", "ex": "You'd have to sort out a provider yourself.", "def": "to organise or deal with something" },
+        { "en": "opt for", "tr": "tercih etmek", "ex": "Most tenants opt for monthly instalments.", "def": "to choose one thing from several possibilities" },
+        { "en": "set in stone", "tr": "kesin, değiştirilemez", "ex": "Is the two-year minimum set in stone?", "def": "fixed and impossible to change" },
+        { "en": "negotiable", "tr": "pazarlığa açık", "ex": "The two years aren't negotiable.", "def": "able to be changed through discussion" },
+        { "en": "will do", "tr": "yeterli olmak, iş görmek", "ex": "Company papers will do if you don't have payslips.", "def": "to be good enough or acceptable" },
+        { "en": "a weight off my mind", "tr": "içimin rahatlaması", "ex": "Knowing that is a weight off my mind.", "def": "a great relief from worry" }
+      ],
+      "grammar": {
+        "title": "Inversion after 'Not only'",
+        "tr": "Vurgu için 'Not only' cümle başına gelince yardımcı fiil özneden önce gelir: 'Not only is that fine…'. Kibar ama güçlü bir onay ya da vurgu yaratır.",
+        "examples": ["Not only is that fine, it's what most of my tenants opt for.", "Not only is the flat bright, it's also quiet at the back.", "Not only have I renovated the kitchen, I've also redone the bathroom."]
+      },
+      "questions": [
+        { "q": "What is the landlord's attitude towards the flat?", "options": ["Indifferent", "Proud of the renovation", "Apologetic about its condition", "Worried about its price"], "a": 1 },
+        { "q": "How does the speaker make the instalment request sound reasonable?", "options": ["By mentioning the cost of moving from Istanbul", "By threatening to look elsewhere", "By offering a higher rent"], "a": 0 },
+        { "q": "What does 'the internet is down to you' imply?", "options": ["It is very slow", "It is broken", "The tenant must arrange it"], "a": 2 },
+        { "q": "Which point does the landlord refuse to negotiate?", "options": ["The deposit", "The two-year minimum", "The documents", "The move-in date"], "a": 1 },
+        { "q": "Why is the speaker relieved at the end?", "options": ["Dogs are allowed after all", "The internet is free", "Company papers will be accepted instead of payslips"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Could you walk me ___ what the €1,200 actually covers?", "a": "through", "hint": "baştan sona (anlatmak)" },
+        { "s": "Not only ___ that fine, it's actually what most of my tenants opt for.", "a": "is", "hint": "devrik yapı: yardımcı fiil önce" },
+        { "s": "Is the two-year minimum set in ___?", "a": "stone", "hint": "taş (kesin, değişmez)" },
+        { "s": "That's a weight off my ___.", "a": "mind", "hint": "akıl (içim rahatladı)" }
+      ],
+      "order": [
+        { "a": "I'm afraid the two years aren't negotiable." },
+        { "a": "Most of my tenants opt for monthly instalments." }
+      ],
+      "translate": [
+        { "tr": "İnternet size kalmış, yani bir sağlayıcıyı kendiniz ayarlamanız gerekir.", "en": "The internet is down to you, so you'd have to sort out a provider yourself.", "keys": ["down to you", "sort out", "provider"] },
+        { "tr": "Maaş bordronuz yoksa şirket belgeleri de yeterli olur.", "en": "Company papers will do if you don't have payslips.", "keys": ["will do", "payslips"] }
+      ],
+      "roleplay": {
+        "persona": "Landlord",
+        "personaTr": "Ev sahibi",
+        "scene": "Daireyi gezdin ve çok beğendin. Ev sahibi Bayan Becker son kez sorularını soruyor; sen de kibar ama net konuşuyorsun.",
+        "turns": [
+          { "ai": "So, now that you've had a proper look round, how does it compare with the other places you've seen?", "aiTr": "Evet, doğru dürüst bir göz attınız; gördüğünüz diğer yerlerle karşılaştırınca nasıl?", "hint": "Honestly, it's in a different league—it's far brighter, and the renovated kitchen is a real selling point.", "keys": ["different league", "brighter", "selling point"] },
+          { "ai": "I should mention I'm not keen on dogs, though cats are fine. Would that be a problem?", "aiTr": "Belirtmeliyim, köpeklere pek sıcak bakmıyorum ama kedi olur. Bu bir sorun olur mu?", "hint": "Not in the slightest—I don't have any pets, and with my working hours, I couldn't look after one anyway.", "keys": ["not in the slightest", "don't have any pets", "no pets"] },
+          { "ai": "Is there anything that's giving you second thoughts?", "aiTr": "Sizi tereddüde düşüren bir şey var mı?", "hint": "Only the noise, really—how lively does it get at night, especially at weekends?", "keys": ["noise", "at night", "lively"] },
+          { "ai": "The bedroom faces the courtyard, so it's pretty quiet, but the bar on the corner does get rowdy on Fridays. Can you live with that?", "aiTr": "Yatak odası avluya bakıyor, o yüzden oldukça sessiz; ama köşedeki bar cuma günleri gerçekten gürültülü oluyor. Buna katlanabilir misiniz?", "hint": "Given that it's only on Fridays and the bedroom is at the back, I'm sure I can live with it.", "keys": ["live with", "only on Fridays", "at the back"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Berlin'de bir daireyi görüyorsun; ev sahibiyle depozito, sözleşme ve belgeler konusunda incelikli ve esprili bir şekilde pazarlık ediyorsun.",
+      "text": [
+        { "who": "Landlord", "en": "Do come in—I had the kitchen and bathroom gutted last spring, so you're very nearly the first person to see them in their new glory.", "tr": "Buyurun girin; geçen bahar mutfağı ve banyoyu baştan sona söktürdüm, yani onları yeni halleriyle gören neredeyse ilk kişisiniz." },
+        { "who": "Me", "en": "Well, the photos certainly didn't do it justice; it's flooded with light in a way Berlin flats in winter rarely are.", "tr": "Fotoğraflar kesinlikle hakkını vermemiş; kışın Berlin dairelerinde nadiren görülecek kadar ışıl ışıl." },
+        { "who": "Me", "en": "Before I fall head over heels for it, though, perhaps you could talk me through what the €1,200 actually covers.", "tr": "Ama daireye sırılsıklam âşık olmadan önce, belki 1.200 avronun tam olarak neleri kapsadığını bana anlatırsınız." },
+        { "who": "Landlord", "en": "Heating and water are included, but the internet is very much your own affair—and German providers, I'm sorry to say, are not famed for their speed.", "tr": "Isınma ve su dahil, ama internet tamamen sizin işiniz; üstelik söylemesi üzücü ama Alman sağlayıcılar hızlarıyla ün salmış değildir." },
+        { "who": "Me", "en": "So I gather; I've heard it can be quicker to register a company here than to get connected.", "tr": "Öyle duydum; burada şirket kurmanın internete bağlanmaktan daha hızlı olabildiğini söylüyorlar." },
+        { "who": "Landlord", "en": "Quite—as for the deposit, it's the customary three months' rent, which brings us to €3,600.", "tr": "Aynen öyle; depozitoya gelince, alışılageldiği gibi üç aylık kira, bu da bizi 3.600 avroya getiriyor." },
+        { "who": "Me", "en": "That's perfectly fair, though having just transplanted my whole life from Istanbul, I'd be grateful if we could spread it over three monthly instalments.", "tr": "Gayet adil; yine de bütün hayatımı daha yeni İstanbul'dan buraya taşımışken, bunu üç aylık taksite yayabilirsek minnettar olurum." },
+        { "who": "Landlord", "en": "By all means—it's what most tenants do, and frankly, it's their right under German law anyway.", "tr": "Elbette; kiracıların çoğu böyle yapıyor ve açıkçası bu, Alman hukukuna göre zaten onların hakkı." },
+        { "who": "Landlord", "en": "The one thing I won't budge on is the two-year minimum, but the flat is yours from 1 November, should you want it.", "tr": "Taviz vermeyeceğim tek şey iki yıllık asgari süre; ama isterseniz daire 1 Kasım'dan itibaren sizin." },
+        { "who": "Landlord", "en": "Paperwork-wise, I'll need your passport and proof of income, though as you run your own company, your company documents will do just as well.", "tr": "Evrak açısından pasaportunuza ve gelir belgenize ihtiyacım var; ama kendi şirketinizi yönettiğiniz için şirket belgeleriniz de aynı işi görür." },
+        { "who": "Me", "en": "That's a relief, given that founders are notoriously the last people in the company to get a payslip.", "tr": "Bu içimi rahatlattı; ne de olsa kurucuların şirkette maaş bordrosu alan son kişiler olduğu herkesçe bilinir." }
+      ],
+      "vocab": [
+        { "en": "do something justice", "tr": "hakkını vermek", "ex": "The photos didn't do the flat justice.", "def": "to show how good something really is" },
+        { "en": "flooded with light", "tr": "ışıl ışıl, gün ışığıyla dolu", "ex": "The living room is flooded with light.", "def": "full of bright natural light" },
+        { "en": "fall head over heels for", "tr": "sırılsıklam âşık olmak, vurulmak", "ex": "I fell head over heels for the flat.", "def": "to fall completely in love with someone or something" },
+        { "en": "your own affair", "tr": "sizin kendi işiniz", "ex": "The internet is your own affair.", "def": "something only you are responsible for" },
+        { "en": "so I gather", "tr": "öyle duydum, öyle anlıyorum", "ex": "Providers are slow here, so I gather.", "def": "used to say you have heard or understood something" },
+        { "en": "spread over", "tr": "(ödemeyi) zamana yaymak", "ex": "Could we spread the deposit over three months?", "def": "to divide a payment across a period of time" },
+        { "en": "by all means", "tr": "elbette, tabii ki", "ex": "By all means, pay it in instalments.", "def": "a polite way of saying yes, certainly" },
+        { "en": "budge on", "tr": "taviz vermek, geri adım atmak", "ex": "I won't budge on the two-year minimum.", "def": "to change your position or opinion, even a little" },
+        { "en": "should you want it", "tr": "eğer isterseniz", "ex": "The flat is yours, should you want it.", "def": "a formal way of saying 'if you want it'" },
+        { "en": "notoriously", "tr": "(kötü anlamda) herkesçe bilindiği üzere", "ex": "Founders are notoriously badly paid.", "def": "in a way that is well known, usually for something bad" }
+      ],
+      "grammar": {
+        "title": "Inverted conditionals: 'should you want it'",
+        "tr": "'If you want it' yerine 'should you want it' demek koşulu daha kibar ve zarif kılar. Teklif yaparken ve resmi konuşmada sık kullanılır.",
+        "examples": ["The flat is yours from 1 November, should you want it.", "Should you need more time, just let me know.", "Should the internet take weeks, you could use a mobile hotspot."]
+      },
+      "questions": [
+        { "q": "What does the landlord imply about German internet providers?", "options": ["They are cheap", "They tend to be slow", "They are included in most rents", "They are hard to cancel"], "a": 1 },
+        { "q": "What is the tone of the speaker's remark about registering a company?", "options": ["Ironic and light-hearted", "Angry", "Formal and neutral"], "a": 0 },
+        { "q": "Why does the landlord add that instalments are 'their right under German law anyway'?", "options": ["To refuse the request", "To suggest a higher rent", "To show the request was hardly a favour"], "a": 2 },
+        { "q": "What is the only point the landlord is firm about?", "options": ["The deposit", "The move-in date", "Pets", "The two-year minimum"], "a": 3 },
+        { "q": "What does the final remark suggest about the speaker?", "options": ["They pay themselves little or no regular salary", "They earn a large salary", "They dislike paperwork"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "The photos certainly didn't do it ___.", "a": "justice", "hint": "hakkını vermek" },
+        { "s": "The one thing I won't ___ on is the two-year minimum.", "a": "budge", "hint": "taviz vermek" },
+        { "s": "The flat is yours from 1 November, ___ you want it.", "a": "should", "hint": "eğer (resmi)" },
+        { "s": "Founders are ___ the last people in the company to get a payslip.", "a": "notoriously", "hint": "herkesçe bilindiği üzere" }
+      ],
+      "order": [
+        { "a": "The internet is very much your own affair." },
+        { "a": "It's what most tenants do anyway." }
+      ],
+      "translate": [
+        { "tr": "Depozitoyu üç aylık taksite yayabilirsek minnettar olurum.", "en": "I'd be grateful if we could spread the deposit over three monthly instalments.", "keys": ["grateful", "spread", "instalments"] },
+        { "tr": "Fotoğraflar dairenin hakkını hiç vermemiş.", "en": "The photos didn't do the flat justice.", "keys": ["do the flat justice"] },
+        { "tr": "Taviz vermeyeceğim tek şey iki yıllık asgari süre.", "en": "The one thing I won't budge on is the two-year minimum.", "keys": ["won't budge", "two-year minimum"] }
+      ],
+      "roleplay": {
+        "persona": "Landlord",
+        "personaTr": "Ev sahibi",
+        "scene": "Daire turu bitti. Ev sahibi Bayan Becker esprili ve doğrudan biri; son detayları konuşurken sen de aynı tonda cevap veriyorsun.",
+        "turns": [
+          { "ai": "So, has it passed inspection, or are you just being polite?", "aiTr": "Eee, denetimi geçti mi, yoksa sadece kibarlık mı ediyorsunuz?", "hint": "Genuinely, it's passed with flying colours—I haven't seen a flat this bright since I arrived.", "keys": ["flying colours", "genuinely", "bright"] },
+          { "ai": "I'd better confess now that I draw the line at dogs, although I've nothing against cats. Does that rule you out?", "aiTr": "Şimdiden itiraf edeyim, köpekte çizgiyi çekiyorum ama kedilere bir itirazım yok. Bu sizi eler mi?", "hint": "Not remotely—I'm pet-free, and given my hours, any animal of mine would be shamefully neglected.", "keys": ["not remotely", "pet-free", "no pets"] },
+          { "ai": "Is there anything nagging at you before you commit?", "aiTr": "Karar vermeden önce aklınızı kurcalayan bir şey var mı?", "hint": "Only the noise, if I'm honest—how lively does the street get once the sun goes down?", "keys": ["noise", "lively", "honest"] },
+          { "ai": "The bedroom looks onto the courtyard, so it's blissfully quiet, but the bar on the corner does get rather boisterous on Fridays. Deal-breaker?", "aiTr": "Yatak odası avluya bakıyor, o yüzden mis gibi sessiz; ama köşedeki bar cuma günleri epey şamatalı oluyor. Anlaşmayı bozar mı?", "hint": "Hardly—one boisterous night a week at the front of the building is a price I'm more than willing to pay.", "keys": ["hardly", "willing to pay", "not a deal-breaker"] }
+        ]
+      }
+    }
+  }
+}

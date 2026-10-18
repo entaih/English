@@ -1,0 +1,374 @@
+{
+  "id": "in-04",
+  "topic": "invest",
+  "title": "Answering Hard Investor Questions",
+  "titleTr": "Zor Yatırımcı Sorularını Yanıtlamak",
+  "levels": {
+    "A1": {
+      "intro": "Bir yatırımcı zor sorular soruyor; sen sakin ve kısa cevaplar veriyorsun.",
+      "text": [
+        { "who": "Investor", "en": "Who are your competitors?", "tr": "Rakipleriniz kimler?" },
+        { "who": "Me", "en": "Big companies make audiometers, but their devices need an expert.", "tr": "Büyük şirketler odyometre yapıyor ama onların cihazları bir uzman gerektiriyor." },
+        { "who": "Investor", "en": "Can a big company copy you?", "tr": "Büyük bir şirket sizi kopyalayabilir mi?" },
+        { "who": "Me", "en": "Our AI learns from thousands of real tests.", "tr": "Yapay zekâmız binlerce gerçek testten öğreniyor." },
+        { "who": "Me", "en": "This data is very hard to get.", "tr": "Bu veriyi elde etmek çok zor." },
+        { "who": "Investor", "en": "What is your biggest risk?", "tr": "En büyük riskiniz ne?" },
+        { "who": "Me", "en": "Honestly, our biggest risk is certification.", "tr": "Açıkçası en büyük riskimiz sertifikasyon." },
+        { "who": "Me", "en": "We started early and we work with a good consultant.", "tr": "Erken başladık ve iyi bir danışmanla çalışıyoruz." }
+      ],
+      "vocab": [
+        { "en": "competitor", "tr": "rakip", "ex": "Who are your competitors?" },
+        { "en": "copy", "tr": "kopyalamak", "ex": "A big company can copy a small one." },
+        { "en": "data", "tr": "veri", "ex": "Our AI learns from real data." },
+        { "en": "hard to get", "tr": "elde etmesi zor", "ex": "This data is very hard to get." },
+        { "en": "risk", "tr": "risk", "ex": "Our biggest risk is certification." },
+        { "en": "consultant", "tr": "danışman", "ex": "We work with a good consultant." }
+      ],
+      "grammar": {
+        "title": "Present simple: facts about a company",
+        "tr": "Şirket hakkındaki genel gerçekleri anlatmak için geniş zaman kullanılır. He, she, it ile fiile -s eklenir: it learns, it makes.",
+        "examples": ["Big companies make audiometers.", "Our AI learns from real tests.", "We work with a good consultant."]
+      },
+      "questions": [
+        { "q": "What do big companies make?", "options": ["Apps", "Audiometers", "Hearing aids"], "a": 1 },
+        { "q": "What is very hard to get?", "options": ["The data", "The money", "The device"], "a": 0 },
+        { "q": "What is the biggest risk?", "options": ["The price", "The team", "Certification"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Who are your ___?", "a": "competitors", "hint": "rakipler" },
+        { "s": "This data is very hard to ___.", "a": "get", "hint": "elde etmek" },
+        { "s": "Our biggest ___ is certification.", "a": "risk", "hint": "risk" }
+      ],
+      "order": [
+        { "a": "Our AI learns from thousands of real tests." },
+        { "a": "We started early and we work with a good consultant." }
+      ],
+      "translate": [
+        { "tr": "Büyük bir şirket sizi kopyalayabilir mi?", "en": "Can a big company copy you?", "keys": ["big company", "copy"] },
+        { "tr": "Bu veriyi elde etmek çok zor.", "en": "This data is very hard to get.", "keys": ["data", "hard to get"] }
+      ],
+      "roleplay": {
+        "persona": "Investor",
+        "personaTr": "Yatırımcı",
+        "scene": "Bir yatırımcı rakipleri ve riskleri soruyor. Kısa ve sakin cevap ver.",
+        "turns": [
+          { "ai": "Who are your competitors?", "aiTr": "Rakipleriniz kimler?", "hint": "Big companies make audiometers, but their devices need an expert.", "keys": ["audiometers", "expert", "big companies"] },
+          { "ai": "Can a big company copy you?", "aiTr": "Büyük bir şirket sizi kopyalayabilir mi?", "hint": "Our AI learns from real tests. This data is hard to get.", "keys": ["data", "hard to get", "real tests"] },
+          { "ai": "What is your biggest risk?", "aiTr": "En büyük riskiniz ne?", "hint": "Our biggest risk is certification. We started early.", "keys": ["certification", "started early", "risk"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Yatırımcının rakipler, kopyalanma ve risk sorularına net cevaplar veriyorsun.",
+      "text": [
+        { "who": "Investor", "en": "Who are your competitors, and why are you better?", "tr": "Rakipleriniz kimler ve neden daha iyisiniz?" },
+        { "who": "Me", "en": "Big companies make classic audiometers, but you need an expert to use them.", "tr": "Büyük şirketler klasik odyometreler yapıyor ama onları kullanmak için bir uzmana ihtiyacınız var." },
+        { "who": "Me", "en": "There are some hearing apps too, but they aren't certified medical devices.", "tr": "Bazı işitme uygulamaları da var ama bunlar sertifikalı tıbbi cihazlar değil." },
+        { "who": "Investor", "en": "What stops a big company from copying you?", "tr": "Büyük bir şirketin sizi kopyalamasını ne engelliyor?" },
+        { "who": "Me", "en": "We trained our AI on thousands of real tests, so it's hard to copy.", "tr": "Yapay zekâmızı binlerce gerçek testle eğittik, bu yüzden onu kopyalamak zor." },
+        { "who": "Me", "en": "Also, big companies are slower than small teams like ours.", "tr": "Ayrıca büyük şirketler bizimki gibi küçük ekiplerden daha yavaş." },
+        { "who": "Investor", "en": "What is the biggest risk for your company?", "tr": "Şirketiniz için en büyük risk ne?" },
+        { "who": "Me", "en": "Honestly, certification can take longer than we planned.", "tr": "Açıkçası sertifikasyon planladığımızdan uzun sürebilir." },
+        { "who": "Me", "en": "So we started the process early, and we're working with an experienced consultant.", "tr": "Bu yüzden sürece erken başladık ve deneyimli bir danışmanla çalışıyoruz." }
+      ],
+      "vocab": [
+        { "en": "competitor", "tr": "rakip", "ex": "Who are your main competitors?" },
+        { "en": "certified", "tr": "sertifikalı", "ex": "The apps aren't certified medical devices." },
+        { "en": "copy", "tr": "kopyalamak", "ex": "It is hard to copy our AI." },
+        { "en": "train an AI on", "tr": "yapay zekâyı ... ile eğitmek", "ex": "We trained our AI on thousands of real tests." },
+        { "en": "slower than", "tr": "...den daha yavaş", "ex": "Big companies are slower than small teams." },
+        { "en": "take longer than", "tr": "...den daha uzun sürmek", "ex": "Certification can take longer than we planned." },
+        { "en": "honestly", "tr": "açıkçası, dürüst olmak gerekirse", "ex": "Honestly, certification is our biggest risk." },
+        { "en": "experienced consultant", "tr": "deneyimli danışman", "ex": "We're working with an experienced consultant." }
+      ],
+      "grammar": {
+        "title": "Comparatives: slower, longer, better",
+        "tr": "İki şeyi karşılaştırmak için kısa sıfatlara -er eklenir ve ardından 'than' gelir: slow → slower than. Bazı sıfatlar düzensizdir: good → better.",
+        "examples": ["Big companies are slower than small teams.", "Certification can take longer than we planned.", "Why are you better?"]
+      },
+      "questions": [
+        { "q": "What is the problem with classic audiometers?", "options": ["They are too small", "You need an expert to use them", "They are not for sale"], "a": 1 },
+        { "q": "Why are the apps not real competitors?", "options": ["They aren't certified medical devices", "They are too expensive", "They only work in Turkey"], "a": 0 },
+        { "q": "Why is the company hard to copy?", "options": ["It has a big office", "It has a lot of money", "Its AI learned from thousands of real tests"], "a": 2 },
+        { "q": "What did the company do about the certification risk?", "options": ["It stopped the process", "It started early and works with a consultant", "It moved to the US"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "There are some apps too, but they aren't ___ medical devices.", "a": "certified", "hint": "sertifikalı" },
+        { "s": "Big companies are ___ than small teams like ours.", "a": "slower", "hint": "daha yavaş" },
+        { "s": "Certification can take ___ than we planned.", "a": "longer", "hint": "daha uzun" }
+      ],
+      "order": [
+        { "a": "What stops a big company from copying you?" },
+        { "a": "Certification can take longer than we planned." }
+      ],
+      "translate": [
+        { "tr": "Biz büyük şirketlerden daha hızlıyız.", "en": "We are faster than big companies.", "keys": ["faster than", "big companies"] },
+        { "tr": "Deneyimli bir danışmanla çalışıyoruz.", "en": "We're working with an experienced consultant.", "keys": ["experienced consultant"] }
+      ],
+      "roleplay": {
+        "persona": "Tough investor",
+        "personaTr": "Sert yatırımcı",
+        "scene": "Deneyimli bir yatırımcı zor sorular soruyor; sakin ve net cevap ver.",
+        "turns": [
+          { "ai": "Who are your competitors?", "aiTr": "Rakipleriniz kimler?", "hint": "Big companies make classic audiometers, but you need an expert to use them.", "keys": ["audiometers", "expert", "big companies"] },
+          { "ai": "A big company can copy you. What then?", "aiTr": "Büyük bir şirket sizi kopyalayabilir. O zaman ne olacak?", "hint": "We trained our AI on thousands of real tests, so it is hard to copy. And we are faster.", "keys": ["trained", "real tests", "hard to copy", "faster"] },
+          { "ai": "What is your biggest risk?", "aiTr": "En büyük riskiniz ne?", "hint": "Honestly, certification can take longer than we planned, so we started early.", "keys": ["honestly", "certification", "longer", "started early"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Rakipler, riskler ve 'neden siz?' sorularına sakin ve dürüst cevaplar veriyorsun.",
+      "text": [
+        { "who": "Investor", "en": "Who are your main competitors?", "tr": "Başlıca rakipleriniz kimler?" },
+        { "who": "Me", "en": "There are big companies that make classic audiometers, but their devices still need an expert to run the test.", "tr": "Klasik odyometre yapan büyük şirketler var ama onların cihazları testi yapmak için hâlâ bir uzmana ihtiyaç duyuyor." },
+        { "who": "Me", "en": "There are also some apps, but they aren't medical devices and they aren't certified.", "tr": "Bazı uygulamalar da var ama bunlar tıbbi cihaz değil ve sertifikalı da değil." },
+        { "who": "Investor", "en": "So what stops a big company from simply copying you?", "tr": "Peki büyük bir şirketin sizi basitçe kopyalamasını ne engelliyor?" },
+        { "who": "Me", "en": "We've trained our AI model on thousands of real tests, and that kind of data is hard to get.", "tr": "Yapay zekâ modelimizi binlerce gerçek testle eğittik ve bu tür verileri elde etmek zor." },
+        { "who": "Me", "en": "On top of that, big companies move slowly, while we can move much faster.", "tr": "Üstelik büyük şirketler yavaş hareket eder, biz ise çok daha hızlı hareket edebiliriz." },
+        { "who": "Investor", "en": "And what is the biggest risk for your company?", "tr": "Peki şirketiniz için en büyük risk ne?" },
+        { "who": "Me", "en": "Honestly, the biggest risk is certification, because it can take longer than we plan.", "tr": "Açıkçası en büyük risk sertifikasyon, çünkü planladığımızdan uzun sürebilir." },
+        { "who": "Me", "en": "That's why we've already started the process, and we work with an experienced consultant.", "tr": "Bu yüzden sürece çoktan başladık ve deneyimli bir danışmanla çalışıyoruz." },
+        { "who": "Investor", "en": "That's a good answer, and I like founders who know their risks.", "tr": "Bu iyi bir cevap; risklerini bilen kurucuları severim." }
+      ],
+      "vocab": [
+        { "en": "main competitor", "tr": "başlıca rakip", "ex": "Who are your main competitors?", "def": "one of the most important companies you compete with" },
+        { "en": "certified", "tr": "sertifikalı", "ex": "The apps aren't certified.", "def": "officially approved as meeting a standard" },
+        { "en": "stop someone from doing something", "tr": "birinin bir şeyi yapmasını engellemek", "ex": "What stops a big company from copying you?", "def": "to make it impossible for someone to do something" },
+        { "en": "train a model on", "tr": "bir modeli ... ile eğitmek", "ex": "We've trained our model on thousands of real tests.", "def": "to teach an AI system by giving it examples" },
+        { "en": "hard to get", "tr": "elde etmesi zor", "ex": "That kind of data is hard to get.", "def": "difficult to find or collect" },
+        { "en": "move slowly", "tr": "yavaş hareket etmek", "ex": "Big companies move slowly.", "def": "to make decisions and changes slowly" },
+        { "en": "take longer than planned", "tr": "planlanandan uzun sürmek", "ex": "Certification can take longer than planned.", "def": "to need more time than you expected" },
+        { "en": "experienced consultant", "tr": "deneyimli danışman", "ex": "We work with an experienced consultant.", "def": "an expert adviser who has done this work many times" }
+      ],
+      "grammar": {
+        "title": "Present perfect: results that matter now",
+        "tr": "Geçmişte yapılmış ama sonucu şimdi önemli olan işler için 'have/has + V3' kullanılır. 'already' ve 'yet' ile sık görülür.",
+        "examples": ["We've trained our AI model on thousands of real tests.", "We've already started the certification process.", "We haven't got the CE mark yet."]
+      },
+      "questions": [
+        { "q": "Why are the apps not real competitors?", "options": ["They are too cheap", "They are too slow", "They aren't certified medical devices"], "a": 2 },
+        { "q": "Why is it hard to copy the company?", "options": ["Its AI is trained on data that is hard to get", "It has a patent in every country", "It has a very big office"], "a": 0 },
+        { "q": "What is the biggest risk?", "options": ["Marketing", "Certification", "Competition"], "a": 1 },
+        { "q": "How does the investor feel about the answer?", "options": ["Worried", "Bored", "Happy with it"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Who are your main ___?", "a": "competitors", "hint": "rakipler" },
+        { "s": "Big companies move ___, while we can move much faster.", "a": "slowly", "hint": "yavaş" },
+        { "s": "___, the biggest risk is certification.", "a": "Honestly", "hint": "açıkçası" }
+      ],
+      "order": [
+        { "a": "That kind of data is hard to get." },
+        { "a": "It can take longer than we plan." }
+      ],
+      "translate": [
+        { "tr": "Biz çok daha hızlı hareket edebiliriz.", "en": "We can move much faster.", "keys": ["move", "faster"] },
+        { "tr": "Deneyimli bir danışmanla çalışıyoruz.", "en": "We work with an experienced consultant.", "keys": ["experienced", "consultant"] }
+      ],
+      "roleplay": {
+        "persona": "Tough investor",
+        "personaTr": "Sert yatırımcı",
+        "scene": "Deneyimli bir yatırımcı en zor soruları soruyor.",
+        "turns": [
+          { "ai": "Who are your competitors, and why are you better?", "aiTr": "Rakipleriniz kimler ve neden daha iyisiniz?", "hint": "Big companies make classic audiometers, but they still need an expert. Some apps exist, but they aren't certified.", "keys": ["audiometers", "expert", "certified", "apps"] },
+          { "ai": "A big company could copy you in six months. What then?", "aiTr": "Büyük bir şirket sizi altı ayda kopyalayabilir. O zaman ne olacak?", "hint": "We've trained our AI on thousands of real tests, and that data is hard to get. And we move faster.", "keys": ["trained", "data", "hard to get", "faster"] },
+          { "ai": "What keeps you awake at night? What is the biggest risk?", "aiTr": "Sizi geceleri uyutmayan ne? En büyük risk ne?", "hint": "Honestly, certification. It can take longer than we plan, so we've already started and we work with a consultant.", "keys": ["honestly", "certification", "longer", "consultant"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Şüpheci bir yatırımcının rekabet, kopyalanma ve risk sorularını gerekçeli ve dürüst cevaplarla karşılıyorsun.",
+      "text": [
+        { "who": "Investor", "en": "Let me play devil's advocate for a moment: who are you really competing against?", "tr": "Bir an şeytanın avukatlığını yapayım: gerçekte kiminle rekabet ediyorsunuz?" },
+        { "who": "Me", "en": "The established players make classic audiometers, which are reliable but still have to be operated by a trained expert.", "tr": "Köklü oyuncular klasik odyometreler yapıyor; bunlar güvenilir ama hâlâ eğitimli bir uzman tarafından kullanılmaları gerekiyor." },
+        { "who": "Me", "en": "There are also hearing apps on the market, but none of them have been certified as medical devices.", "tr": "Piyasada işitme uygulamaları da var ama hiçbiri tıbbi cihaz olarak sertifikalandırılmadı." },
+        { "who": "Investor", "en": "If one of those big manufacturers decided to copy you tomorrow, what would stop them?", "tr": "O büyük üreticilerden biri yarın sizi kopyalamaya karar verse, onları ne durdururdu?" },
+        { "who": "Me", "en": "Our AI has been trained on thousands of real tests, and that kind of clinical data can't be bought overnight.", "tr": "Yapay zekâmız binlerce gerçek testle eğitildi ve bu tür klinik veriler bir gecede satın alınamaz." },
+        { "who": "Me", "en": "I'd also say that large companies tend to move slowly, whereas a team of six can change direction in weeks.", "tr": "Ayrıca büyük şirketlerin yavaş hareket etme eğiliminde olduğunu, altı kişilik bir ekibin ise haftalar içinde yön değiştirebildiğini söyleyebilirim." },
+        { "who": "Investor", "en": "Fair enough, so what's the biggest risk to the business?", "tr": "Makul; peki işiniz için en büyük risk ne?" },
+        { "who": "Me", "en": "To be honest, it's certification, since the process could take longer than we've planned.", "tr": "Dürüst olmak gerekirse sertifikasyon, çünkü süreç planladığımızdan uzun sürebilir." },
+        { "who": "Me", "en": "That's why we started early and are working with a regulatory consultant who has years of experience with the CE process.", "tr": "Bu yüzden erken başladık ve CE sürecinde yılların deneyimine sahip bir mevzuat danışmanıyla çalışıyoruz." },
+        { "who": "Investor", "en": "I've heard plenty of founders claim they have no real risks, so I appreciate the honesty.", "tr": "Gerçek bir riskleri olmadığını iddia eden pek çok kurucu dinledim, o yüzden bu dürüstlüğü takdir ediyorum." }
+      ],
+      "vocab": [
+        { "en": "play devil's advocate", "tr": "şeytanın avukatlığını yapmak", "ex": "Let me play devil's advocate for a moment.", "def": "to argue against an idea to test how strong it is" },
+        { "en": "established player", "tr": "köklü oyuncu, yerleşik şirket", "ex": "The established players make classic audiometers.", "def": "a company that has been in a market for a long time" },
+        { "en": "be operated by", "tr": "... tarafından kullanılmak", "ex": "The device has to be operated by an expert.", "def": "to be used or controlled by someone" },
+        { "en": "be certified as", "tr": "... olarak sertifikalandırılmak", "ex": "None of the apps have been certified as medical devices.", "def": "to be officially approved as a particular type of product" },
+        { "en": "overnight", "tr": "bir gecede, çok kısa sürede", "ex": "Clinical data can't be bought overnight.", "def": "very quickly or suddenly" },
+        { "en": "tend to", "tr": "...me eğiliminde olmak", "ex": "Large companies tend to move slowly.", "def": "to usually do something or behave in a certain way" },
+        { "en": "change direction", "tr": "yön değiştirmek", "ex": "A small team can change direction in weeks.", "def": "to change your plans or strategy" },
+        { "en": "regulatory consultant", "tr": "mevzuat danışmanı", "ex": "We're working with an experienced regulatory consultant.", "def": "an expert who helps companies meet official rules and get approval" }
+      ],
+      "grammar": {
+        "title": "The passive with modals and the present perfect",
+        "tr": "Edilgen yapı modal fiillerle (can't be bought, have to be operated) ve present perfect ile (has been trained, have been certified) de kurulur. Eylemi kimin yaptığından çok sonuca odaklanır.",
+        "examples": ["Classic audiometers have to be operated by a trained expert.", "None of the apps have been certified as medical devices.", "That kind of clinical data can't be bought overnight."]
+      },
+      "questions": [
+        { "q": "What is the weakness of classic audiometers, according to the founder?", "options": ["They are unreliable", "They need a trained expert to operate them", "They are too cheap"], "a": 1 },
+        { "q": "Why doesn't the founder see hearing apps as a serious threat?", "options": ["None of them have been certified as medical devices", "They are only sold in the US", "They are too slow"], "a": 0 },
+        { "q": "What two advantages does the founder mention against big manufacturers?", "options": ["Lower prices and more staff", "A patent and a big office", "Hard-to-get clinical data and speed"], "a": 2 },
+        { "q": "How is the company dealing with the certification risk?", "options": ["It is waiting for the investor's help", "It started early and works with an experienced regulatory consultant", "It has decided to skip the EU"], "a": 1 },
+        { "q": "What can you infer about the investor from the last line?", "options": ["They think the company has no chance", "They want the founder to hide the risks", "They value honest answers about risk more than a perfect story"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Classic audiometers still have to be ___ by a trained expert.", "a": "operated", "hint": "kullanılmak, çalıştırılmak" },
+        { "s": "Large companies ___ to move slowly.", "a": "tend", "hint": "eğiliminde olmak" },
+        { "s": "None of them have been ___ as medical devices.", "a": "certified", "hint": "sertifikalandırılmış" }
+      ],
+      "order": [
+        { "a": "That kind of clinical data can't be bought overnight." },
+        { "a": "A team of six can change direction in weeks." }
+      ],
+      "translate": [
+        { "tr": "Uygulamaların hiçbiri tıbbi cihaz olarak sertifikalandırılmadı.", "en": "None of the apps have been certified as medical devices.", "keys": ["none of", "certified", "medical devices"] },
+        { "tr": "Süreç planladığımızdan uzun sürebilir.", "en": "The process could take longer than we've planned.", "keys": ["take longer", "planned"] }
+      ],
+      "roleplay": {
+        "persona": "Sceptical investor",
+        "personaTr": "Şüpheci yatırımcı",
+        "scene": "Şüpheci bir yatırımcı şeytanın avukatlığını yapıyor; her soruya sakin ve gerekçeli cevap ver.",
+        "turns": [
+          { "ai": "Who are you really competing against?", "aiTr": "Gerçekte kiminle rekabet ediyorsunuz?", "hint": "The established players make classic audiometers, but they still have to be operated by a trained expert.", "keys": ["established", "operated", "expert"] },
+          { "ai": "And what about all those hearing apps?", "aiTr": "Peki o kadar işitme uygulamasına ne demeli?", "hint": "None of them have been certified as medical devices, so clinics can't really rely on them.", "keys": ["certified", "medical devices", "none of them"] },
+          { "ai": "If a big manufacturer copied you tomorrow, what would stop them?", "aiTr": "Büyük bir üretici yarın sizi kopyalasa, onları ne durdururdu?", "hint": "Our AI has been trained on thousands of real tests, and that data can't be bought overnight. We also move faster.", "keys": ["trained", "overnight", "faster", "data"] },
+          { "ai": "What's the biggest risk to the business?", "aiTr": "İşiniz için en büyük risk ne?", "hint": "To be honest, it's certification, which is why we started early and work with an experienced regulatory consultant.", "keys": ["certification", "started early", "consultant"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Yatırımcının en sert sorularını savunmaya geçmeden, net ve özgüvenli bir şekilde yanıtlıyorsun.",
+      "text": [
+        { "who": "Investor", "en": "I'll be blunt: this space already has well-funded incumbents, so why would anyone need you?", "tr": "Açık konuşacağım: bu alanda zaten iyi finanse edilmiş yerleşik şirketler var, o hâlde size neden ihtiyaç olsun?" },
+        { "who": "Me", "en": "The incumbents make excellent audiometers, but every one of them still relies on a trained audiologist in the room.", "tr": "Yerleşik şirketler mükemmel odyometreler yapıyor ama hepsi hâlâ odada eğitimli bir odyoloğun bulunmasına dayanıyor." },
+        { "who": "Me", "en": "That's exactly the bottleneck we remove, because our device runs the whole test autonomously in under ten minutes.", "tr": "Bizim ortadan kaldırdığımız darboğaz tam olarak bu, çünkü cihazımız tüm testi on dakikadan kısa sürede otonom olarak yapıyor." },
+        { "who": "Me", "en": "As for the consumer apps, none of them are certified medical devices, so no clinic can build a diagnosis on their results.", "tr": "Tüketici uygulamalarına gelince, hiçbiri sertifikalı tıbbi cihaz değil, bu yüzden hiçbir klinik sonuçlarına dayanarak teşhis koyamaz." },
+        { "who": "Investor", "en": "Fine, but what's to stop one of those incumbents from simply replicating your approach?", "tr": "Peki, ama o yerleşik şirketlerden birinin yaklaşımınızı basitçe taklit etmesini ne engelleyecek?" },
+        { "who": "Me", "en": "What they can't replicate quickly is our data, since the model has been trained on thousands of real clinical tests.", "tr": "Hızla taklit edemeyecekleri şey verimiz, çünkü model binlerce gerçek klinik testle eğitildi." },
+        { "who": "Me", "en": "Not only is that data hard to come by, but it also took close partnerships with hospitals to collect.", "tr": "Bu veriyi bulmak hem zor hem de toplamak için hastanelerle yakın iş birlikleri gerekti." },
+        { "who": "Me", "en": "Being a team of six, we can also iterate in weeks on decisions that would take a large manufacturer a year.", "tr": "Altı kişilik bir ekip olarak, büyük bir üreticinin bir yılını alacak kararlarda haftalar içinde yenileme yapabiliyoruz." },
+        { "who": "Investor", "en": "And what's the one thing that keeps you up at night?", "tr": "Peki sizi geceleri uyutmayan o tek şey ne?" },
+        { "who": "Me", "en": "Candidly, it's certification, since Class IIa timelines have a way of slipping no matter how well you plan.", "tr": "Açık söylemek gerekirse sertifikasyon, çünkü Sınıf IIa takvimleri ne kadar iyi planlarsanız planlayın kayma eğiliminde." },
+        { "who": "Me", "en": "Having anticipated that, we started the process early and brought in a regulatory consultant with a strong CE track record.", "tr": "Bunu öngördüğümüz için sürece erken başladık ve CE konusunda güçlü bir geçmişe sahip bir mevzuat danışmanıyla çalışmaya başladık." },
+        { "who": "Investor", "en": "That's refreshingly honest; most founders insist they have no real risks at all.", "tr": "Bu insanı ferahlatan bir dürüstlük, çünkü çoğu kurucu hiçbir gerçek riskleri olmadığında ısrar eder." }
+      ],
+      "vocab": [
+        { "en": "incumbent", "tr": "yerleşik şirket, pazardaki köklü oyuncu", "ex": "The incumbents make excellent audiometers.", "def": "a company that already holds a strong position in a market" },
+        { "en": "bottleneck", "tr": "darboğaz", "ex": "The shortage of audiologists is the real bottleneck.", "def": "a point where a process slows down because of a limit" },
+        { "en": "build a diagnosis on", "tr": "teşhisi ... üzerine kurmak", "ex": "No clinic can build a diagnosis on an uncertified app.", "def": "to use something as the basis for a medical decision" },
+        { "en": "replicate", "tr": "taklit etmek, aynısını yapmak", "ex": "They can't replicate our data quickly.", "def": "to copy something exactly" },
+        { "en": "hard to come by", "tr": "bulunması zor", "ex": "Clinical data is hard to come by.", "def": "difficult to find or get" },
+        { "en": "iterate", "tr": "yinelemeli olarak geliştirmek", "ex": "A small team can iterate in weeks.", "def": "to improve something by repeating cycles of changes" },
+        { "en": "keep someone up at night", "tr": "birini geceleri uyutmamak", "ex": "Certification is what keeps me up at night.", "def": "to worry someone a lot" },
+        { "en": "have a way of doing something", "tr": "...me eğiliminde olmak", "ex": "Timelines have a way of slipping.", "def": "to often happen in a certain way, usually an annoying one" },
+        { "en": "track record", "tr": "geçmiş başarı kaydı", "ex": "Our consultant has a strong CE track record.", "def": "the record of someone's past successes or failures" },
+        { "en": "refreshingly honest", "tr": "insanı ferahlatacak kadar dürüst", "ex": "Her answer was refreshingly honest.", "def": "honest in a pleasant and unusual way" }
+      ],
+      "grammar": {
+        "title": "Participle clauses: Being …, Having done …",
+        "tr": "Cümleyi kısaltmak ve sebep ya da zaman ilişkisini zarifçe göstermek için '-ing' ile başlayan yan cümle kullanılır. 'Having + V3' ana eylemden önce olan bir eylemi anlatır.",
+        "examples": ["Having anticipated that, we started the process early.", "Being a team of six, we can iterate in weeks.", "Having seen the clinical data, the investor relaxed."]
+      },
+      "questions": [
+        { "q": "What is the investor's tone at the start?", "options": ["Blunt and challenging", "Warm and supportive", "Confused", "Apologetic"], "a": 0 },
+        { "q": "According to the founder, what is the real bottleneck in hearing testing?", "options": ["The price of headphones", "Slow internet in clinics", "The need for a trained audiologist in the room", "The lack of apps"], "a": 2 },
+        { "q": "Why does the founder say clinics can't rely on consumer apps?", "options": ["They are too expensive", "They aren't certified medical devices", "They need an expert to run them"], "a": 1 },
+        { "q": "What does the founder imply by saying Class IIa timelines 'have a way of slipping'?", "options": ["Delays are common even with good planning", "Certification will probably be cancelled", "The founder has already missed a deadline"], "a": 0 },
+        { "q": "What does the investor's final remark suggest?", "options": ["They think the founder is naive", "They doubt the clinical data", "They want to end the meeting", "They see the founder's candour as a strength"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Every one of them still ___ on a trained audiologist in the room.", "a": "relies", "hint": "dayanmak" },
+        { "s": "That's exactly the ___ we remove.", "a": "bottleneck", "hint": "darboğaz" },
+        { "s": "That kind of data is hard to come ___.", "a": "by", "hint": "bulmak" },
+        { "s": "We brought in a consultant with a strong CE track ___.", "a": "record", "hint": "geçmiş başarı" }
+      ],
+      "order": [
+        { "a": "What they can't replicate quickly is our data." },
+        { "a": "Most founders insist they have no real risks at all." }
+      ],
+      "translate": [
+        { "tr": "Sizi geceleri uyutmayan tek şey ne?", "en": "What's the one thing that keeps you up at night?", "keys": ["keeps you up at night"] },
+        { "tr": "Bu tür verileri bulmak zor.", "en": "That kind of data is hard to come by.", "keys": ["hard to come by"] },
+        { "tr": "Sertifikasyon takvimleri, ne kadar iyi planlarsanız planlayın kayma eğilimindedir.", "en": "Certification timelines have a way of slipping, no matter how well you plan.", "keys": ["have a way of slipping", "no matter how"] }
+      ],
+      "roleplay": {
+        "persona": "Experienced angel investor",
+        "personaTr": "Deneyimli melek yatırımcı",
+        "scene": "Deneyimli bir yatırımcı sert ve doğrudan sorular soruyor; savunmaya geçmeden net cevaplar ver.",
+        "turns": [
+          { "ai": "This space already has well-funded incumbents. Why would anyone need you?", "aiTr": "Bu alanda zaten iyi finanse edilmiş yerleşik şirketler var. Size neden ihtiyaç olsun?", "hint": "The incumbents all rely on a trained audiologist in the room, and that's exactly the bottleneck we remove.", "keys": ["incumbents", "bottleneck", "audiologist"] },
+          { "ai": "And the consumer apps? Some of them are free.", "aiTr": "Peki tüketici uygulamaları? Bazıları ücretsiz.", "hint": "None of them are certified medical devices, so no clinic can build a diagnosis on their results.", "keys": ["certified", "medical devices", "diagnosis"] },
+          { "ai": "What's to stop an incumbent from replicating your approach?", "aiTr": "Yerleşik bir şirketin yaklaşımınızı taklit etmesini ne engelleyecek?", "hint": "What they can't replicate quickly is our data, and being a team of six, we iterate far faster than they do.", "keys": ["replicate", "data", "iterate", "faster"] },
+          { "ai": "What keeps you up at night?", "aiTr": "Sizi geceleri ne uyutmuyor?", "hint": "Candidly, certification, so having anticipated delays, we started early and brought in an experienced regulatory consultant.", "keys": ["certification", "started early", "consultant", "candidly"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Bir yatırımcının sert ve iğneleyici sorularına soğukkanlı, zarif ve ikna edici yanıtlar veriyorsun.",
+      "text": [
+        { "who": "Investor", "en": "Forgive the cynicism, but I've seen a dozen 'AI-powered' health startups this year, and most turned out to be a pretty interface on someone else's hardware.", "tr": "Kinizmimi bağışlayın ama bu yıl bir düzine 'yapay zekâ destekli' sağlık girişimi gördüm ve çoğu, başkasının donanımına giydirilmiş şık bir arayüzden ibaret çıktı." },
+        { "who": "Me", "en": "That's a fair suspicion, and I'd probably share it if I were in your seat.", "tr": "Bu yerinde bir şüphe; sizin yerinizde olsam muhtemelen ben de aynısını düşünürdüm." },
+        { "who": "Me", "en": "The incumbents build very good audiometers, but they all presuppose an audiologist in the room, which is precisely the scarce resource.", "tr": "Yerleşik şirketler çok iyi odyometreler üretiyor ama hepsi odada bir odyolog olduğunu varsayıyor; oysa kıt olan kaynak tam da bu." },
+        { "who": "Me", "en": "The consumer apps, meanwhile, are clever enough, but not one of them is certified, so no clinician can stake a diagnosis on them.", "tr": "Tüketici uygulamaları ise yeterince akıllıca ama hiçbiri sertifikalı değil, dolayısıyla hiçbir klinisyen teşhisini onlara dayandıramaz." },
+        { "who": "Investor", "en": "Granted, but what's to stop a large manufacturer from reverse-engineering the whole thing within a year?", "tr": "Kabul, ama büyük bir üreticinin bir yıl içinde her şeyi tersine mühendislikle çözmesini ne engelleyecek?" },
+        { "who": "Me", "en": "The interface, they could copy in a month; the model, trained on thousands of real clinical tests, is another matter entirely.", "tr": "Arayüzü bir ayda kopyalayabilirler; ama binlerce gerçek klinik testle eğitilmiş model bambaşka bir konu." },
+        { "who": "Me", "en": "That data isn't for sale, and by the time anyone has assembled a comparable dataset, we intend to be a few iterations further down the road.", "tr": "O veri satılık değil ve biri benzer bir veri seti toplayana kadar biz birkaç sürüm daha ileride olmayı hedefliyoruz." },
+        { "who": "Me", "en": "Size cuts both ways, too: a team of six can turn a decision around in a week that would sit in a committee elsewhere for a quarter.", "tr": "Büyüklük de iki yönlü keser: altı kişilik bir ekip, başka yerde bir komitede üç ay bekleyecek bir kararı bir haftada sonuçlandırabilir." },
+        { "who": "Investor", "en": "So what's the risk you'd rather I didn't ask about?", "tr": "Peki sormamamı tercih edeceğiniz risk hangisi?" },
+        { "who": "Me", "en": "Certification, without question, because Class IIa approvals have an unhappy habit of running over, however meticulously one plans.", "tr": "Hiç şüphesiz sertifikasyon, çünkü Sınıf IIa onaylarının, ne kadar titiz planlanırsa planlansın, uzama gibi can sıkıcı bir alışkanlığı var." },
+        { "who": "Me", "en": "That said, we started well ahead of time and brought in a seasoned regulatory consultant, so a delay would hurt us but not sink us.", "tr": "Bununla birlikte, işe çok erken başladık ve deneyimli bir mevzuat danışmanıyla çalışıyoruz; yani bir gecikme bize zarar verir ama bizi batırmaz." },
+        { "who": "Investor", "en": "Well, it makes a pleasant change to hear a founder name the risk before I do.", "tr": "Eh, bir kurucunun riski benden önce dile getirdiğini duymak hoş bir değişiklik." }
+      ],
+      "vocab": [
+        { "en": "turn out to be", "tr": "...olduğu ortaya çıkmak", "ex": "Most of them turned out to be just a pretty interface.", "def": "to be discovered to be something in the end" },
+        { "en": "presuppose", "tr": "önceden varsaymak, gerektirmek", "ex": "Classic audiometers presuppose an audiologist in the room.", "def": "to depend on something already being true or available" },
+        { "en": "stake something on", "tr": "bir şeyi ... üzerine bağlamak", "ex": "No clinician can stake a diagnosis on an uncertified app.", "def": "to risk something important by relying on something else" },
+        { "en": "reverse-engineer", "tr": "tersine mühendislikle çözmek", "ex": "A large manufacturer could try to reverse-engineer the device.", "def": "to take a product apart to understand and copy how it works" },
+        { "en": "another matter entirely", "tr": "bambaşka bir konu", "ex": "The interface is easy to copy; the model is another matter entirely.", "def": "a completely different and usually harder case" },
+        { "en": "further down the road", "tr": "daha ileride", "ex": "By then we'll be a few iterations further down the road.", "def": "at a more advanced stage of progress" },
+        { "en": "cut both ways", "tr": "iki yönlü kesmek, iki tarafı da etkilemek", "ex": "Size cuts both ways.", "def": "to have both good and bad effects" },
+        { "en": "turn a decision around", "tr": "bir kararı hızla sonuçlandırmak", "ex": "We can turn a decision around in a week.", "def": "to complete and deliver a decision quickly" },
+        { "en": "seasoned", "tr": "deneyimli, işin kurdu", "ex": "We brought in a seasoned regulatory consultant.", "def": "having a lot of experience in a particular area" },
+        { "en": "make a pleasant change", "tr": "hoş bir değişiklik olmak", "ex": "It makes a pleasant change to hear a founder admit a risk.", "def": "to be nicely different from what usually happens" }
+      ],
+      "grammar": {
+        "title": "Fronting for contrast",
+        "tr": "Vurgu veya karşıtlık için nesne cümlenin başına alınabilir: 'The interface, they could copy in a month.' Konuşmada iki şeyi keskin biçimde karşılaştırmak için kullanılır ve çok doğal, kendinden emin bir ton verir.",
+        "examples": ["The interface, they could copy in a month.", "The model is another matter entirely.", "That risk, I'd rather name myself."]
+      },
+      "questions": [
+        { "q": "What is the tone of the investor's opening remark?", "options": ["Openly hostile", "Cynical but not unfriendly", "Enthusiastic", "Indifferent"], "a": 1 },
+        { "q": "Why does the founder say 'I'd probably share it if I were in your seat'?", "options": ["To admit the product is weak", "To change the subject", "To acknowledge the doubt before answering it"], "a": 2 },
+        { "q": "According to the founder, what is the real barrier to copying?", "options": ["The clinical dataset behind the model", "The interface design", "A patent on the hardware"], "a": 0 },
+        { "q": "What is implied by 'Size cuts both ways'?", "options": ["Small companies always lose", "Being small has advantages as well as disadvantages", "The team plans to grow quickly"], "a": 1 },
+        { "q": "What does the investor's last line suggest?", "options": ["They are annoyed by the answer", "They think certification is not a real risk", "They are pleasantly surprised by the founder's candour"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "That's a fair ___, and I'd probably share it if I were in your seat.", "a": "suspicion", "hint": "şüphe" },
+        { "s": "The model, trained on thousands of real clinical tests, is another matter ___.", "a": "entirely", "hint": "tamamen" },
+        { "s": "Size cuts both ___, too.", "a": "ways", "hint": "iki yönlü kesmek" },
+        { "s": "We brought in a ___ regulatory consultant.", "a": "seasoned", "hint": "deneyimli" }
+      ],
+      "order": [
+        { "a": "They could copy the interface in a month." },
+        { "a": "That data isn't for sale." }
+      ],
+      "translate": [
+        { "tr": "Sizin yerinizde olsam ben de bu şüpheyi taşırdım.", "en": "I'd share that suspicion if I were in your seat.", "keys": ["share that suspicion", "in your seat"] },
+        { "tr": "Büyüklük iki yönlü keser.", "en": "Size cuts both ways.", "keys": ["cuts both ways"] },
+        { "tr": "Bir gecikme bize zarar verir ama bizi batırmaz.", "en": "A delay would hurt us, but it wouldn't sink us.", "keys": ["hurt us", "sink us"] }
+      ],
+      "roleplay": {
+        "persona": "Veteran investor",
+        "personaTr": "Kıdemli yatırımcı",
+        "scene": "Çok şey görmüş bir yatırımcı iğneleyici sorular soruyor; soğukkanlı ve zarif cevaplar ver.",
+        "turns": [
+          { "ai": "Forgive the cynicism, but isn't this just another 'AI-powered' gadget?", "aiTr": "Kinizmimi bağışlayın ama bu da 'yapay zekâ destekli' bir başka oyuncak değil mi?", "hint": "That's a fair suspicion, but the incumbents all presuppose an audiologist in the room, and that's precisely the scarce resource we replace.", "keys": ["fair suspicion", "presuppose", "audiologist", "scarce"] },
+          { "ai": "Surely a large manufacturer could reverse-engineer this within a year?", "aiTr": "Büyük bir üretici bunu bir yıl içinde tersine mühendislikle çözemez mi sanki?", "hint": "The interface, perhaps; the model, trained on thousands of real clinical tests, is another matter entirely.", "keys": ["another matter", "trained", "clinical tests"] },
+          { "ai": "And being so small, isn't that a weakness?", "aiTr": "Peki bu kadar küçük olmak bir zayıflık değil mi?", "hint": "Size cuts both ways: a team of six can turn a decision around in a week.", "keys": ["cuts both ways", "team of six", "turn a decision around"] },
+          { "ai": "So what's the risk you'd rather I didn't ask about?", "aiTr": "Peki sormamamı tercih edeceğiniz risk hangisi?", "hint": "Certification, without question, which is why we started early and brought in a seasoned regulatory consultant.", "keys": ["certification", "seasoned", "started early"] }
+        ]
+      }
+    }
+  }
+}

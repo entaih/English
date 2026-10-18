@@ -1,0 +1,374 @@
+{
+  "id": "ab-03",
+  "topic": "abroad",
+  "title": "Seeing a Doctor Abroad",
+  "titleTr": "Yurt Dışında Doktora Gitmek",
+  "levels": {
+    "A1": {
+      "intro": "Berlin'de doktordan randevu alıyorsun ve sırt ağrını ve uykusuzluğunu basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "who": "Receptionist", "en": "Dr Hoffmann's practice, how can I help?", "tr": "Dr. Hoffmann'ın muayenehanesi, nasıl yardımcı olabilirim?" },
+        { "who": "Me", "en": "Hello, I need an appointment with the doctor.", "tr": "Merhaba, doktordan randevu almam gerekiyor." },
+        { "who": "Receptionist", "en": "Can you come on Thursday at 9:30?", "tr": "Perşembe saat 9.30'da gelebilir misiniz?" },
+        { "who": "Receptionist", "en": "Please bring your health insurance card.", "tr": "Lütfen sağlık sigortası kartınızı getirin." },
+        { "who": "Doctor", "en": "What is the problem?", "tr": "Sorun nedir?" },
+        { "who": "Me", "en": "My back hurts, and I sleep badly.", "tr": "Sırtım ağrıyor ve kötü uyuyorum." },
+        { "who": "Me", "en": "I work twelve hours a day at my laptop.", "tr": "Günde on iki saat dizüstü bilgisayarımın başında çalışıyorum." },
+        { "who": "Doctor", "en": "Take this prescription to the pharmacy, and walk every day.", "tr": "Bu reçeteyi eczaneye götürün ve her gün yürüyün." }
+      ],
+      "vocab": [
+        { "en": "appointment", "tr": "randevu", "ex": "I need an appointment with the doctor." },
+        { "en": "health insurance card", "tr": "sağlık sigortası kartı", "ex": "Please bring your health insurance card." },
+        { "en": "My back hurts.", "tr": "Sırtım ağrıyor.", "ex": "My back hurts, and I am tired." },
+        { "en": "sleep badly", "tr": "kötü uyumak", "ex": "I sleep badly at night." },
+        { "en": "prescription", "tr": "reçete", "ex": "Take this prescription to the pharmacy." },
+        { "en": "pharmacy", "tr": "eczane", "ex": "The pharmacy is next to the practice." }
+      ],
+      "grammar": {
+        "title": "Present simple: my back hurts",
+        "tr": "Her gün olan şeyleri ve şu anki durumları present simple ile anlatırız. He/she/it ile fiile -s ekleriz: hurt → hurts.",
+        "examples": ["My back hurts.", "I sleep badly.", "I work twelve hours a day."]
+      },
+      "questions": [
+        { "q": "When is the appointment?", "options": ["Thursday at 9:30", "Friday at 9:30", "Thursday at 10:30"], "a": 0 },
+        { "q": "What does the speaker need to bring?", "options": ["A passport", "A health insurance card", "A photo"], "a": 1 },
+        { "q": "Where does the speaker take the prescription?", "options": ["To the office", "To the bank", "To the pharmacy"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "I need an ___ with the doctor.", "a": "appointment", "hint": "randevu" },
+        { "s": "Please bring your health insurance ___.", "a": "card", "hint": "kart" },
+        { "s": "Take this prescription to the ___.", "a": "pharmacy", "hint": "eczane" }
+      ],
+      "order": [
+        { "a": "I work twelve hours a day at my laptop." },
+        { "a": "Please bring your health insurance card." }
+      ],
+      "translate": [
+        { "tr": "Sırtım ağrıyor.", "en": "My back hurts.", "keys": ["back", "hurts"] },
+        { "tr": "Kötü uyuyorum.", "en": "I sleep badly.", "keys": ["sleep badly"] }
+      ],
+      "roleplay": {
+        "persona": "Doctor",
+        "personaTr": "Doktor",
+        "scene": "Berlin'de Dr. Hoffmann'ın muayenehanesindesin. Doktor sana sorular soruyor.",
+        "turns": [
+          { "ai": "Hello, what is the problem?", "aiTr": "Merhaba, sorun nedir?", "hint": "My back hurts, and I sleep badly.", "keys": ["back", "hurts", "sleep"] },
+          { "ai": "How many weeks?", "aiTr": "Kaç haftadır?", "hint": "Three weeks.", "keys": ["three weeks", "three"] },
+          { "ai": "Do you take any medicine?", "aiTr": "Herhangi bir ilaç alıyor musunuz?", "hint": "Yes, I take ibuprofen sometimes.", "keys": ["ibuprofen", "yes", "sometimes"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Doktordan telefonla randevu alıyorsun, sonra muayenede bel ağrını ve uyku sorununu anlatıyorsun.",
+      "text": [
+        { "who": "Receptionist", "en": "Good morning, Dr Hoffmann's practice, how can I help you?", "tr": "Günaydın, Dr. Hoffmann'ın muayenehanesi, size nasıl yardımcı olabilirim?" },
+        { "who": "Me", "en": "I'd like to make an appointment because I have back pain.", "tr": "Bel ağrım olduğu için randevu almak istiyorum." },
+        { "who": "Receptionist", "en": "Our next free appointment is on Thursday at 9:30.", "tr": "Bir sonraki boş randevumuz perşembe saat 9.30'da." },
+        { "who": "Receptionist", "en": "Please bring your health insurance card with you.", "tr": "Lütfen sağlık sigortası kartınızı yanınızda getirin." },
+        { "who": "Doctor", "en": "So, what's the problem, and when did it start?", "tr": "Evet, sorun nedir ve ne zaman başladı?" },
+        { "who": "Me", "en": "My lower back started to hurt three weeks ago.", "tr": "Belim üç hafta önce ağrımaya başladı." },
+        { "who": "Me", "en": "I work twelve hours a day at my laptop, and I sleep badly too.", "tr": "Günde on iki saat dizüstü bilgisayarımın başında çalışıyorum ve ayrıca kötü uyuyorum." },
+        { "who": "Doctor", "en": "Your muscles are very tight, but it's nothing serious.", "tr": "Kaslarınız çok gergin, ama ciddi bir şey değil." },
+        { "who": "Doctor", "en": "Take this prescription to the pharmacy, and try to walk thirty minutes a day.", "tr": "Bu reçeteyi eczaneye götürün ve günde otuz dakika yürümeye çalışın." }
+      ],
+      "vocab": [
+        { "en": "make an appointment", "tr": "randevu almak", "ex": "I'd like to make an appointment, please." },
+        { "en": "lower back", "tr": "bel", "ex": "My lower back hurts." },
+        { "en": "ago", "tr": "önce", "ex": "It started three weeks ago." },
+        { "en": "tight", "tr": "gergin, kasılmış", "ex": "Your muscles are very tight." },
+        { "en": "nothing serious", "tr": "ciddi bir şey değil", "ex": "Don't worry, it's nothing serious." },
+        { "en": "prescription", "tr": "reçete", "ex": "Take this prescription to the pharmacy." },
+        { "en": "health insurance card", "tr": "sağlık sigortası kartı", "ex": "Please bring your health insurance card." }
+      ],
+      "grammar": {
+        "title": "Past simple + ago",
+        "tr": "Bir şeyin geçmişte ne zaman olduğunu söylemek için past simple ve 'ago' kullanırız: 'three weeks ago' = üç hafta önce. Soru: 'When did it start?'",
+        "examples": ["My lower back started to hurt three weeks ago.", "When did it start?", "I called the practice two days ago."]
+      },
+      "questions": [
+        { "q": "Why does the speaker call the practice?", "options": ["To buy medicine", "To make an appointment", "To cancel a visit"], "a": 1 },
+        { "q": "When did the pain start?", "options": ["Three days ago", "Three months ago", "Three weeks ago"], "a": 2 },
+        { "q": "What does the doctor say about the muscles?", "options": ["They are very tight, but it's not serious", "They are broken", "They are fine"], "a": 0 },
+        { "q": "What does the doctor tell the speaker to do every day?", "options": ["Sleep twelve hours", "Walk thirty minutes", "Work at the laptop"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I'd like to make an ___ because I have back pain.", "a": "appointment", "hint": "randevu" },
+        { "s": "My lower back started to hurt three weeks ___.", "a": "ago", "hint": "önce" },
+        { "s": "Your muscles are very ___, but it's nothing serious.", "a": "tight", "hint": "gergin" }
+      ],
+      "order": [
+        { "a": "Our next free appointment is on Thursday." },
+        { "a": "Please bring your health insurance card with you." }
+      ],
+      "translate": [
+        { "tr": "Belim ağrıdığı için randevu almak istiyorum.", "en": "I'd like to make an appointment because my lower back hurts.", "keys": ["make an appointment", "lower back"] },
+        { "tr": "Belim üç hafta önce ağrımaya başladı.", "en": "My lower back started to hurt three weeks ago.", "keys": ["started to hurt", "three weeks ago"] }
+      ],
+      "roleplay": {
+        "persona": "Doctor",
+        "personaTr": "Doktor",
+        "scene": "Perşembe sabahı Dr. Hoffmann'ın muayenehanesindesin. Doktor ağrını soruyor.",
+        "turns": [
+          { "ai": "Hello, please sit down. What's the problem?", "aiTr": "Merhaba, lütfen oturun. Sorun nedir?", "hint": "My lower back hurts, and I sleep badly.", "keys": ["lower back", "hurts", "sleep badly"] },
+          { "ai": "When did it start?", "aiTr": "Ne zaman başladı?", "hint": "It started three weeks ago.", "keys": ["three weeks ago", "started"] },
+          { "ai": "Did you take any medicine?", "aiTr": "Herhangi bir ilaç aldınız mı?", "hint": "Yes, I took ibuprofen, but it only helped for a few hours.", "keys": ["ibuprofen", "took", "only helped"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Telefonla randevu alıyorsun, sonra doktora ağrının ne kadar sürdüğünü, ne kadar kötü olduğunu ve uyku sorununu anlatıyorsun.",
+      "text": [
+        { "who": "Receptionist", "en": "Dr Hoffmann's practice, good morning, how can I help?", "tr": "Dr. Hoffmann'ın muayenehanesi, günaydın, nasıl yardımcı olabilirim?" },
+        { "who": "Me", "en": "Hello, I've had back pain for three weeks, and I'd like to see the doctor.", "tr": "Merhaba, üç haftadır sırt ağrım var ve doktora görünmek istiyorum." },
+        { "who": "Receptionist", "en": "Is it an emergency, or can it wait until Thursday at 9:30?", "tr": "Acil bir durum mu, yoksa perşembe saat 9.30'a kadar bekleyebilir mi?" },
+        { "who": "Me", "en": "Thursday is fine, thanks, so should I bring anything with me?", "tr": "Perşembe uygun, teşekkürler; yanımda bir şey getirmem gerekiyor mu?" },
+        { "who": "Receptionist", "en": "Yes, you have to bring your health insurance card.", "tr": "Evet, sağlık sigortası kartınızı getirmeniz gerekiyor." },
+        { "who": "Doctor", "en": "So, how long have you had the pain, and how bad is it?", "tr": "Evet, ne zamandır ağrınız var ve ne kadar kötü?" },
+        { "who": "Me", "en": "It's been about three weeks, and in the evening it's around six out of ten.", "tr": "Yaklaşık üç hafta oldu; akşamları on üzerinden altı civarında." },
+        { "who": "Me", "en": "I've also been sleeping badly, and I often wake up at four in the morning.", "tr": "Ayrıca kötü uyuyorum ve sık sık sabah dörtte uyanıyorum." },
+        { "who": "Doctor", "en": "Your muscles are very tight, but if you take regular breaks, it should get better.", "tr": "Kaslarınız çok gergin, ama düzenli mola verirseniz düzelmesi gerekir." },
+        { "who": "Doctor", "en": "Here's a prescription for a pain-relief gel, which you can get at any pharmacy.", "tr": "İşte ağrı kesici bir jel için reçete; herhangi bir eczaneden alabilirsiniz." }
+      ],
+      "vocab": [
+        { "en": "have back pain", "tr": "sırt ağrısı olmak", "ex": "I've had back pain for three weeks.", "def": "to feel pain in your back" },
+        { "en": "emergency", "tr": "acil durum", "ex": "Is it an emergency?", "def": "a serious situation that needs help immediately" },
+        { "en": "health insurance card", "tr": "sağlık sigortası kartı", "ex": "You have to bring your health insurance card.", "def": "a card that shows you have health insurance" },
+        { "en": "out of ten", "tr": "on üzerinden", "ex": "The pain is about six out of ten.", "def": "used to give a score on a scale from one to ten" },
+        { "en": "wake up", "tr": "uyanmak", "ex": "I often wake up at four in the morning.", "def": "to stop sleeping" },
+        { "en": "take regular breaks", "tr": "düzenli mola vermek", "ex": "You should take regular breaks from your laptop.", "def": "to stop working for a short time again and again" },
+        { "en": "get better", "tr": "iyileşmek, düzelmek", "ex": "If you rest, it should get better.", "def": "to improve, especially after an illness" },
+        { "en": "pain-relief gel", "tr": "ağrı kesici jel", "ex": "Here's a prescription for a pain-relief gel.", "def": "a gel you put on your skin to reduce pain" }
+      ],
+      "grammar": {
+        "title": "Present perfect with 'for' and 'How long…?'",
+        "tr": "Geçmişte başlayıp hâlâ devam eden durumlar için 'have/has + V3' ve süre için 'for' kullanırız. Türkçedeki '-dır/-dir' gibidir: 'üç haftadır'.",
+        "examples": ["I've had back pain for three weeks.", "How long have you had the pain?", "I've been sleeping badly since I started this job."]
+      },
+      "questions": [
+        { "q": "How long has the speaker had back pain?", "options": ["Three days", "About three weeks", "Three months"], "a": 1 },
+        { "q": "How bad is the pain in the evening?", "options": ["Six out of ten", "Two out of ten", "Ten out of ten"], "a": 0 },
+        { "q": "What does the receptionist ask the speaker to bring?", "options": ["A passport", "A prescription", "A health insurance card"], "a": 2 },
+        { "q": "According to the doctor, what will help the back get better?", "options": ["Working longer", "Taking regular breaks", "Sleeping less"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I've had back pain ___ three weeks.", "a": "for", "hint": "-dır/-dir (süre)" },
+        { "s": "I often ___ up at four in the morning.", "a": "wake", "hint": "uyanmak" },
+        { "s": "If you take regular breaks, it should get ___.", "a": "better", "hint": "daha iyi" }
+      ],
+      "order": [
+        { "a": "Is it an emergency or can it wait?" },
+        { "a": "You have to bring your health insurance card." }
+      ],
+      "translate": [
+        { "tr": "Üç haftadır sırt ağrım var.", "en": "I've had back pain for three weeks.", "keys": ["I've had", "back pain", "for three weeks"] },
+        { "tr": "Düzenli mola verirseniz düzelmesi gerekir.", "en": "If you take regular breaks, it should get better.", "keys": ["regular breaks", "get better"] }
+      ],
+      "roleplay": {
+        "persona": "Doctor",
+        "personaTr": "Doktor",
+        "scene": "Perşembe sabahı muayenedesin. Dr. Hoffmann ağrını ve uykunu soruyor.",
+        "turns": [
+          { "ai": "Good morning, come in and have a seat. What seems to be the problem?", "aiTr": "Günaydın, girin, oturun. Sorun ne gibi görünüyor?", "hint": "I've had pain in my lower back for three weeks, and I've been sleeping badly.", "keys": ["lower back", "three weeks", "sleeping badly"] },
+          { "ai": "I see. How bad is the pain, on a scale from one to ten?", "aiTr": "Anlıyorum. Birden ona kadar bir ölçekte ağrı ne kadar kötü?", "hint": "It's about six out of ten, especially in the evening.", "keys": ["six out of ten", "evening", "six"] },
+          { "ai": "Have you taken anything for it?", "aiTr": "Bunun için bir şey aldınız mı?", "hint": "Yes, I've taken ibuprofen a few times, but it only helps for a few hours.", "keys": ["ibuprofen", "only helps", "taken"] },
+          { "ai": "OK, you should take regular breaks and walk thirty minutes a day. Do you have any questions?", "aiTr": "Tamam, düzenli mola vermeli ve günde otuz dakika yürümelisiniz. Sorunuz var mı?", "hint": "Yes, should I come back if it doesn't get better?", "keys": ["come back", "doesn't get better", "should"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Telefonla randevu alıyorsun ve muayenede belirtilerini ayrıntılı anlatıyorsun; doktor nedenini açıklıyor ve tavsiye veriyor.",
+      "text": [
+        { "who": "Receptionist", "en": "Dr Hoffmann's practice—how can I help?", "tr": "Dr. Hoffmann'ın muayenehanesi, nasıl yardımcı olabilirim?" },
+        { "who": "Me", "en": "I've been having lower back pain for about three weeks, and I was wondering if the doctor could see me this week.", "tr": "Yaklaşık üç haftadır bel ağrım var; doktorun beni bu hafta görüp göremeyeceğini merak ediyordum." },
+        { "who": "Receptionist", "en": "If it's not urgent, the earliest I can offer you is Thursday at 9:30.", "tr": "Acil değilse size verebileceğim en erken randevu perşembe saat 9.30." },
+        { "who": "Receptionist", "en": "Please bring your health insurance card, which will be scanned at reception.", "tr": "Lütfen sağlık sigortası kartınızı getirin; resepsiyonda okutulacak." },
+        { "who": "Doctor", "en": "So, tell me what's been going on.", "tr": "Evet, anlatın bakalım, neler oluyor." },
+        { "who": "Me", "en": "The pain started shortly after I began working twelve-hour days at my kitchen table, because our office furniture still hasn't been delivered.", "tr": "Ağrı, ofis mobilyalarımız hâlâ teslim edilmediği için mutfak masasında günde on iki saat çalışmaya başlamamdan kısa süre sonra başladı." },
+        { "who": "Me", "en": "By the evening it's around six out of ten, and it seems to get worse whenever I've been sitting for a long time.", "tr": "Akşama doğru on üzerinden altı civarında oluyor ve uzun süre oturduğumda daha da kötüleşiyor gibi." },
+        { "who": "Me", "en": "I'd also say my sleep has suffered, as I tend to wake up at four and can't get back to sleep.", "tr": "Uykumun da bundan etkilendiğini söyleyebilirim; genelde dörtte uyanıyorum ve tekrar uyuyamıyorum." },
+        { "who": "Doctor", "en": "Your muscles are extremely tight, which is very common in people who spend long hours at a desk, but there's no sign of anything serious.", "tr": "Kaslarınız aşırı gergin; bu, masa başında uzun saatler geçirenlerde çok yaygın, ama ciddi bir şeyin belirtisi yok." },
+        { "who": "Doctor", "en": "I'm going to prescribe a pain-relief gel, which can be picked up at any pharmacy.", "tr": "Ağrı kesici bir jel yazacağım; herhangi bir eczaneden alınabilir." },
+        { "who": "Doctor", "en": "If I were you, I'd get up every hour, walk for half an hour a day and keep screens out of the bedroom after ten.", "tr": "Yerinizde olsam her saat kalkardım, günde yarım saat yürürdüm ve saat ondan sonra ekranları yatak odasından uzak tutardım." }
+      ],
+      "vocab": [
+        { "en": "I was wondering if", "tr": "acaba ... diye merak ediyordum", "ex": "I was wondering if the doctor could see me this week.", "def": "a polite way to ask for something" },
+        { "en": "urgent", "tr": "acil", "ex": "If it's not urgent, you can come on Thursday.", "def": "needing attention very soon" },
+        { "en": "go on", "tr": "olmak, yaşanmak", "ex": "Tell me what's been going on.", "def": "to happen" },
+        { "en": "get worse", "tr": "kötüleşmek", "ex": "The pain gets worse when I sit for a long time.", "def": "to become more serious or unpleasant" },
+        { "en": "suffer", "tr": "kötü etkilenmek, zarar görmek", "ex": "My sleep has suffered because of the pain.", "def": "to become worse because of a situation" },
+        { "en": "get back to sleep", "tr": "tekrar uykuya dalmak", "ex": "I wake up at four and can't get back to sleep.", "def": "to fall asleep again after waking up" },
+        { "en": "no sign of", "tr": "...belirtisi yok", "ex": "There's no sign of anything serious.", "def": "no evidence that something exists or is happening" },
+        { "en": "prescribe", "tr": "reçete etmek, (ilaç) yazmak", "ex": "I'm going to prescribe a pain-relief gel.", "def": "to say officially what medicine a patient should take" }
+      ],
+      "grammar": {
+        "title": "Giving advice: If I were you, I'd…",
+        "tr": "Tavsiye verirken ikinci tip koşul kalıbını kullanırız: 'If I were you, I'd + fiil'. 'I' ile bile 'were' kullanılır; anlamı 'Senin yerinde olsam…'.",
+        "examples": ["If I were you, I'd get up every hour.", "If I were you, I'd keep screens out of the bedroom.", "If I had a proper desk, my back wouldn't hurt so much."]
+      },
+      "questions": [
+        { "q": "Why is the speaker working at the kitchen table?", "options": ["They prefer it", "The office furniture hasn't been delivered", "The flat has no other room"], "a": 1 },
+        { "q": "When does the pain get worse?", "options": ["After sitting for a long time", "In the morning", "After walking"], "a": 0 },
+        { "q": "What is the speaker's sleep problem?", "options": ["They can't fall asleep at night", "They sleep too long", "They wake at four and can't get back to sleep"], "a": 2 },
+        { "q": "What does the doctor suggest is the main cause?", "options": ["A serious injury", "Long hours at a desk", "Too much walking", "Bad food"], "a": 1 },
+        { "q": "Why does the doctor probably advise keeping screens out of the bedroom?", "options": ["To help the speaker sleep better", "To save electricity", "To protect the screens"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "I was ___ if the doctor could see me this week.", "a": "wondering", "hint": "merak ediyordum" },
+        { "s": "Our office furniture still hasn't been ___.", "a": "delivered", "hint": "teslim edilmek" },
+        { "s": "If I ___ you, I'd get up every hour.", "a": "were", "hint": "olsaydım" }
+      ],
+      "order": [
+        { "a": "There's no sign of anything serious." },
+        { "a": "The gel can be picked up at any pharmacy." }
+      ],
+      "translate": [
+        { "tr": "Yerinizde olsam her saat kalkardım.", "en": "If I were you, I'd get up every hour.", "keys": ["if I were you", "every hour"] },
+        { "tr": "Uykum da bundan kötü etkilendi.", "en": "My sleep has suffered too.", "keys": ["sleep", "suffered"] }
+      ],
+      "roleplay": {
+        "persona": "Doctor",
+        "personaTr": "Doktor",
+        "scene": "Dr. Hoffmann'ın muayene odasındasın. Doktor belirtilerini ayrıntılı soruyor.",
+        "turns": [
+          { "ai": "Good morning—so what brings you in today?", "aiTr": "Günaydın, bugün sizi buraya ne getirdi?", "hint": "I've been having lower back pain for about three weeks, and my sleep has suffered too.", "keys": ["lower back pain", "three weeks", "sleep"] },
+          { "ai": "Would you say it's getting worse, or has it stayed about the same?", "aiTr": "Sizce kötüleşiyor mu, yoksa aşağı yukarı aynı mı kaldı?", "hint": "I'd say it's about the same, but it gets worse when I've been sitting for a long time.", "keys": ["about the same", "gets worse", "sitting"] },
+          { "ai": "Have you been taking anything for it?", "aiTr": "Bunun için bir şey alıyor muydunuz?", "hint": "Just ibuprofen a few times a week, which helps for a few hours, but then the pain comes back.", "keys": ["ibuprofen", "a few times a week", "comes back"] },
+          { "ai": "Right, I'll prescribe a gel, and if I were you, I'd take a break every hour. Any questions?", "aiTr": "Peki, bir jel yazacağım; yerinizde olsam her saat mola verirdim. Sorunuz var mı?", "hint": "Yes, what should I do if it hasn't improved in a couple of weeks?", "keys": ["improved", "couple of weeks", "what should I do"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Randevu alıyor ve doktora belirtilerini kesin ve doğal bir dille anlatıyorsun; doktor tedaviyi ve yaşam tarzı tavsiyelerini açıklıyor.",
+      "text": [
+        { "who": "Receptionist", "en": "Dr Hoffmann's practice, good morning—what can I do for you?", "tr": "Dr. Hoffmann'ın muayenehanesi, günaydın, sizin için ne yapabilirim?" },
+        { "who": "Me", "en": "I've had a nagging pain in my lower back for about three weeks now, and I was hoping the doctor might be able to fit me in.", "tr": "Yaklaşık üç haftadır belimde geçmek bilmeyen bir ağrı var; doktorun beni araya sıkıştırabileceğini umuyordum." },
+        { "who": "Receptionist", "en": "Unless it's an emergency, the earliest slot I've got is Thursday at 9:30—and do bring your health insurance card.", "tr": "Acil değilse elimdeki en erken boşluk perşembe saat 9.30; sağlık sigortası kartınızı da mutlaka getirin." },
+        { "who": "Doctor", "en": "So, talk me through what's been happening.", "tr": "Evet, neler olduğunu bana anlatın." },
+        { "who": "Me", "en": "What set it off, I think, was working twelve-hour days hunched over a laptop at my kitchen table while we wait for our office furniture.", "tr": "Sanırım onu tetikleyen şey, ofis mobilyalarımızı beklerken mutfak masasında dizüstü bilgisayarın üzerine kamburlaşıp günde on iki saat çalışmaktı." },
+        { "who": "Me", "en": "It's a dull ache most of the time, but by the evening it's more like a six out of ten, and it flares up after long stretches of sitting.", "tr": "Çoğu zaman hafif ama sürekli bir sızı, ama akşama doğru on üzerinden altı gibi oluyor ve uzun süre oturduktan sonra alevleniyor." },
+        { "who": "Me", "en": "Not only has it affected my back, but it's also wrecking my sleep—I wake at four and lie there with my mind racing.", "tr": "Sadece belimi etkilemekle kalmıyor, uykumu da mahvediyor; dörtte uyanıyorum ve zihnim durmadan çalışırken öylece yatıyorum." },
+        { "who": "Me", "en": "I've been taking ibuprofen a few times a week, which takes the edge off but doesn't really solve anything.", "tr": "Haftada birkaç kez ibuprofen alıyorum; ağrıyı biraz hafifletiyor ama aslında hiçbir şeyi çözmüyor." },
+        { "who": "Doctor", "en": "Having examined you, I can tell you the muscles are extremely tense, though there's nothing to suggest a nerve problem.", "tr": "Sizi muayene ettikten sonra şunu söyleyebilirim: kaslarınız aşırı gergin, ama sinirle ilgili bir sorun olduğunu gösteren bir şey yok." },
+        { "who": "Doctor", "en": "I'll prescribe an anti-inflammatory gel, which any pharmacy can give you, but medication alone won't fix this.", "tr": "İltihap giderici bir jel yazacağım, herhangi bir eczane verebilir; ama yalnızca ilaç bu sorunu çözmez." },
+        { "who": "Doctor", "en": "What will make the real difference is getting up every hour, walking for half an hour a day and keeping screens out of the bedroom after ten.", "tr": "Asıl farkı yaratacak şey her saat kalkmak, günde yarım saat yürümek ve saat ondan sonra ekranları yatak odasından uzak tutmak." },
+        { "who": "Me", "en": "Ironically, I used to preach exactly that to my team, so I suppose I'd better start practising what I preach.", "tr": "İşin ironik yanı, ekibime tam olarak bunu öğütlerdim; sanırım artık söylediğimi kendim de yapmaya başlasam iyi olur." }
+      ],
+      "vocab": [
+        { "en": "nagging pain", "tr": "geçmek bilmeyen ağrı", "ex": "I've had a nagging pain in my lower back.", "def": "a pain that is not severe but continues for a long time" },
+        { "en": "fit someone in", "tr": "araya sıkıştırmak", "ex": "Could the doctor fit me in this week?", "def": "to find time to see someone in a busy schedule" },
+        { "en": "set something off", "tr": "tetiklemek, başlatmak", "ex": "Long hours at the laptop set it off.", "def": "to cause something to start" },
+        { "en": "hunched over", "tr": "üzerine kamburlaşmış", "ex": "I spend all day hunched over a laptop.", "def": "sitting with your back and shoulders bent forward" },
+        { "en": "dull ache", "tr": "hafif ama sürekli sızı", "ex": "It's a dull ache most of the time.", "def": "a pain that is not sharp but does not go away" },
+        { "en": "flare up", "tr": "alevlenmek, depreşmek", "ex": "The pain flares up after long meetings.", "def": "to suddenly become worse" },
+        { "en": "mind racing", "tr": "zihnin durmadan çalışması", "ex": "I lie awake with my mind racing.", "def": "thinking quickly about many things, so you cannot relax" },
+        { "en": "take the edge off", "tr": "hafifletmek, etkisini azaltmak", "ex": "Ibuprofen takes the edge off the pain.", "def": "to make something unpleasant less strong" },
+        { "en": "medication", "tr": "ilaç, ilaç tedavisi", "ex": "Medication alone won't fix this.", "def": "medicine that a doctor gives you" },
+        { "en": "practise what you preach", "tr": "başkasına öğütlediğini kendin de yapmak", "ex": "I'd better start practising what I preach.", "def": "to do what you tell other people to do" }
+      ],
+      "grammar": {
+        "title": "Cleft sentences: What … is/was …",
+        "tr": "Bir bilgiyi vurgulamak için cümleyi 'What … is/was …' ile böleriz: 'Long hours set it off' → 'What set it off was long hours.' Konuşmada önemli noktayı öne çıkarır.",
+        "examples": ["What set it off was working twelve-hour days.", "What will make the real difference is getting up every hour.", "What worries me most is the lack of sleep."]
+      },
+      "questions": [
+        { "q": "According to the speaker, what triggered the pain?", "options": ["A sports injury", "Long days hunched over a laptop", "An old mattress"], "a": 1 },
+        { "q": "What does 'takes the edge off' suggest about the ibuprofen?", "options": ["It cures the problem", "It has no effect", "It reduces the pain a little but doesn't solve it"], "a": 2 },
+        { "q": "What is the doctor's attitude towards medication?", "options": ["It helps but isn't enough on its own", "It is the only solution", "It is dangerous"], "a": 0 },
+        { "q": "What does the doctor rule out?", "options": ["Tense muscles", "Sleep problems", "A nerve problem"], "a": 2 },
+        { "q": "What is the tone of the speaker's last remark?", "options": ["Angry", "Self-mocking", "Fearful"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I was hoping the doctor might be able to ___ me in.", "a": "fit", "hint": "araya sıkıştırmak" },
+        { "s": "It ___ up after long stretches of sitting.", "a": "flares", "hint": "alevlenmek" },
+        { "s": "Ibuprofen takes the ___ off but doesn't really solve anything.", "a": "edge", "hint": "kenar (hafifletmek)" },
+        { "s": "I'd better start practising what I ___.", "a": "preach", "hint": "öğütlemek" }
+      ],
+      "order": [
+        { "a": "It's a dull ache most of the time." },
+        { "a": "Medication alone won't fix this." }
+      ],
+      "translate": [
+        { "tr": "Onu tetikleyen şey mutfak masasında günde on iki saat çalışmaktı.", "en": "What set it off was working twelve hours a day at my kitchen table.", "keys": ["what set it off", "kitchen table"] },
+        { "tr": "Uykumu da mahvediyor; saat dörtte uyanıyorum.", "en": "It's also wrecking my sleep, and I wake at four.", "keys": ["wrecking my sleep", "wake at four"] }
+      ],
+      "roleplay": {
+        "persona": "Doctor",
+        "personaTr": "Doktor",
+        "scene": "Dr. Hoffmann'ın muayene odasındasın. Belirtilerini kesin ve ayrıntılı anlatman gerekiyor.",
+        "turns": [
+          { "ai": "Come in, have a seat—so what seems to be the trouble?", "aiTr": "Girin, oturun; sorun ne gibi görünüyor?", "hint": "I've had a nagging pain in my lower back for about three weeks, and it's starting to wreck my sleep.", "keys": ["nagging pain", "lower back", "three weeks"] },
+          { "ai": "Is it a sharp pain, or more of a dull ache, and does anything make it worse?", "aiTr": "Keskin bir ağrı mı, yoksa daha çok hafif bir sızı mı; onu kötüleştiren bir şey var mı?", "hint": "It's more of a dull ache, but it flares up whenever I've been sitting for hours.", "keys": ["dull ache", "flares up", "sitting"] },
+          { "ai": "And how exactly is your sleep affected?", "aiTr": "Peki uykunuz tam olarak nasıl etkileniyor?", "hint": "I tend to wake at four with my mind racing and simply can't get back to sleep.", "keys": ["wake at four", "mind racing", "get back to sleep"] },
+          { "ai": "I'll prescribe a gel, but the real fix is regular movement. Is there anything you'd like to ask me?", "aiTr": "Bir jel yazacağım, ama asıl çözüm düzenli hareket. Bana sormak istediğiniz bir şey var mı?", "hint": "Just one thing—if it hasn't eased off in a fortnight, should I come back and see you?", "keys": ["come back", "eased off", "fortnight"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Doktora belirtilerini son derece kesin ve incelikli bir dille anlatıyorsun; doktor dürüstçe tavsiye veriyor, sen de kendinle dalga geçerek karşılık veriyorsun.",
+      "text": [
+        { "who": "Receptionist", "en": "Dr Hoffmann's practice, good morning.", "tr": "Dr. Hoffmann'ın muayenehanesi, günaydın." },
+        { "who": "Me", "en": "Good morning—I've had a persistent ache in my lower back for the best part of three weeks, and I wondered whether the doctor might squeeze me in this week.", "tr": "Günaydın; neredeyse üç haftadır belimde inatçı bir ağrı var, doktorun beni bu hafta araya sıkıştırıp sıkıştıramayacağını merak ettim." },
+        { "who": "Receptionist", "en": "Barring an emergency, Thursday at 9:30 is the earliest I can do, and you'll need to bring your health insurance card.", "tr": "Acil bir durum olmadıkça verebileceğim en erken saat perşembe 9.30; sağlık sigortası kartınızı da getirmeniz gerekecek." },
+        { "who": "Doctor", "en": "So, what's brought you in?", "tr": "Evet, sizi buraya ne getirdi?" },
+        { "who": "Me", "en": "In a nutshell, I've spent the past three weeks working twelve-hour days at my kitchen table, our office furniture being apparently lost somewhere between the warehouse and Berlin.", "tr": "Kısacası son üç haftayı mutfak masasında günde on iki saat çalışarak geçirdim, çünkü ofis mobilyalarımız anlaşılan depoyla Berlin arasında bir yerde kayıp." },
+        { "who": "Me", "en": "It started as a vague stiffness, but by the evening it's a solid six out of ten, and long stretches of sitting make it noticeably worse.", "tr": "Belli belirsiz bir tutulma olarak başladı, ama akşama doğru on üzerinden net bir altı oluyor ve uzun süre oturmak onu belirgin şekilde kötüleştiriyor." },
+        { "who": "Me", "en": "My sleep, if I'm honest, has gone to pieces as well—I'm wide awake by four, mentally drafting emails.", "tr": "Dürüst olmak gerekirse uykum da darmadağın oldu; saat dörtte gözüm fal taşı gibi açık, kafamda e-posta taslakları yazıyorum." },
+        { "who": "Me", "en": "Ibuprofen a few times a week dulls it for a few hours, but I'm conscious that I'm treating the symptom rather than the cause.", "tr": "Haftada birkaç kez ibuprofen ağrıyı birkaç saatliğine köreltiyor, ama sorunun kaynağını değil belirtisini tedavi ettiğimin farkındayım." },
+        { "who": "Doctor", "en": "Well, the good news is that, tense as those muscles are, there's no indication whatsoever of nerve involvement.", "tr": "İyi haber şu ki, o kaslar ne kadar gergin olsa da sinir tutulumuna dair hiçbir belirti yok." },
+        { "who": "Doctor", "en": "I'll give you a prescription for an anti-inflammatory gel, which any pharmacy will fill, though I'd be doing you a disservice if I let you think that was the cure.", "tr": "Size iltihap giderici bir jel için reçete vereceğim, her eczane karşılar; ama bunun tedavi olduğunu düşünmenize izin verirsem size kötülük etmiş olurum." },
+        { "who": "Doctor", "en": "Get up every hour, walk for thirty minutes a day and banish screens from the bedroom after ten—and if it hasn't eased in two weeks, come back.", "tr": "Her saat kalkın, günde otuz dakika yürüyün ve saat ondan sonra ekranları yatak odasından kovun; iki hafta içinde hafiflemezse tekrar gelin." },
+        { "who": "Me", "en": "Rather humblingly, that's almost word for word the routine I used to swear by before I moved.", "tr": "Biraz utandırıcı ama bu, taşınmadan önce yeminle savunduğum rutinin neredeyse kelimesi kelimesine aynısı." }
+      ],
+      "vocab": [
+        { "en": "the best part of", "tr": "neredeyse tamamı", "ex": "I've had it for the best part of three weeks.", "def": "most of a period of time" },
+        { "en": "squeeze someone in", "tr": "araya sıkıştırmak", "ex": "Could the doctor squeeze me in this week?", "def": "to find time for someone in a busy schedule" },
+        { "en": "barring", "tr": "...olmadıkça", "ex": "Barring an emergency, Thursday is the earliest.", "def": "unless something happens; except for" },
+        { "en": "in a nutshell", "tr": "kısacası", "ex": "In a nutshell, I've been working too much.", "def": "in a few words" },
+        { "en": "go to pieces", "tr": "darmadağın olmak", "ex": "My sleep has gone to pieces.", "def": "to become very bad or fall apart" },
+        { "en": "treat the symptom rather than the cause", "tr": "sorunun kaynağını değil belirtisini tedavi etmek", "ex": "Painkillers treat the symptom rather than the cause.", "def": "to deal with the effects of a problem, not its origin" },
+        { "en": "no indication whatsoever", "tr": "hiçbir belirti yok", "ex": "There's no indication whatsoever of nerve damage.", "def": "absolutely no sign of something" },
+        { "en": "fill a prescription", "tr": "reçeteyi karşılamak", "ex": "Any pharmacy will fill the prescription.", "def": "to give a patient the medicine written on a prescription" },
+        { "en": "do someone a disservice", "tr": "birine kötülük etmek", "ex": "I'd be doing you a disservice if I didn't tell you.", "def": "to harm someone, often by not being honest with them" },
+        { "en": "swear by", "tr": "bir şeye çok güvenmek", "ex": "I used to swear by that routine.", "def": "to believe strongly that something works well" }
+      ],
+      "grammar": {
+        "title": "Concessive clauses: tense as they are",
+        "tr": "'Although they are tense' yerine 'tense as they are' demek daha zarif ve vurgulu bir zıtlık kurar. Sıfat başa gelir, ardından 'as + özne + fiil' gelir.",
+        "examples": ["Tense as those muscles are, there's no sign of nerve involvement.", "Tired as I was, I couldn't get back to sleep.", "Useful as ibuprofen is, it only treats the symptom."]
+      },
+      "questions": [
+        { "q": "What is implied about the office furniture?", "options": ["It has been delivered", "It seems to be stuck somewhere in transit", "It was never ordered"], "a": 1 },
+        { "q": "What is the speaker's attitude towards the ibuprofen?", "options": ["They know it only masks the problem", "They think it's a cure", "They refuse to take it"], "a": 0 },
+        { "q": "What does the doctor mean by 'I'd be doing you a disservice'?", "options": ["The gel is expensive", "The pharmacy may be closed", "It would be misleading to present the gel as a cure"], "a": 2 },
+        { "q": "What does 'mentally drafting emails' suggest?", "options": ["The speaker writes emails at night", "Work worries keep the speaker awake", "The speaker loves email"], "a": 1 },
+        { "q": "What is the tone of the speaker's final remark?", "options": ["Defensive irritation", "Cheerful indifference", "Open disbelief", "Rueful self-awareness"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "I've had a persistent ache for the best ___ of three weeks.", "a": "part", "hint": "neredeyse tamamı" },
+        { "s": "___ an emergency, Thursday at 9:30 is the earliest I can do.", "a": "Barring", "hint": "...olmadıkça" },
+        { "s": "My sleep has gone to ___ as well.", "a": "pieces", "hint": "darmadağın olmak" },
+        { "s": "Tense ___ those muscles are, there's no sign of nerve involvement.", "a": "as", "hint": "-e rağmen (ne kadar … olsa da)" }
+      ],
+      "order": [
+        { "a": "Any pharmacy will fill the prescription." },
+        { "a": "I'm treating the symptom rather than the cause." }
+      ],
+      "translate": [
+        { "tr": "Kısacası üç haftadır mutfak masasında çalışıyorum.", "en": "In a nutshell, I've been working at my kitchen table for three weeks.", "keys": ["in a nutshell", "kitchen table"] },
+        { "tr": "Sinir tutulumuna dair hiçbir belirti yok.", "en": "There's no indication whatsoever of nerve involvement.", "keys": ["no indication whatsoever", "nerve"] },
+        { "tr": "Taşınmadan önce bu rutine çok güvenirdim.", "en": "I used to swear by this routine before I moved.", "keys": ["used to swear by", "routine"] }
+      ],
+      "roleplay": {
+        "persona": "Doctor",
+        "personaTr": "Doktor",
+        "scene": "Dr. Hoffmann'ın muayene odasındasın. Doktor dikkatli ve doğrudan; belirtilerini olabildiğince kesin anlatıyorsun.",
+        "turns": [
+          { "ai": "Do sit down—so what's been troubling you?", "aiTr": "Buyurun oturun; sizi rahatsız eden ne?", "hint": "A persistent ache in my lower back for the best part of three weeks, and my sleep has gone to pieces too.", "keys": ["lower back", "best part of three weeks", "gone to pieces"] },
+          { "ai": "Can you characterise the pain—sharp, burning, or more of a dull ache?", "aiTr": "Ağrıyı tarif edebilir misiniz; keskin mi, yanıcı mı, yoksa daha çok hafif bir sızı mı?", "hint": "Predominantly a dull ache, though it can creep up to a six out of ten after a long day at the desk.", "keys": ["dull ache", "six out of ten", "after a long day"] },
+          { "ai": "And the sleep—is it getting to sleep that's the problem, or staying asleep?", "aiTr": "Peki uyku; sorun uykuya dalmak mı, yoksa uykuda kalmak mı?", "hint": "Staying asleep, without question—I'm wide awake by four with my mind already at work.", "keys": ["staying asleep", "wide awake", "by four"] },
+          { "ai": "I'll write you a prescription for a gel, but I'd rather you changed your habits than relied on it. Fair?", "aiTr": "Size bir jel için reçete yazacağım, ama ona güvenmektense alışkanlıklarınızı değiştirmenizi tercih ederim. Makul mü?", "hint": "Entirely fair—I'll take the gel, but I take your point that the real cure lies in how I work.", "keys": ["entirely fair", "take your point", "how I work"] }
+        ]
+      }
+    }
+  }
+}

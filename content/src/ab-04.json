@@ -1,0 +1,373 @@
+{
+  "id": "ab-04",
+  "topic": "abroad",
+  "title": "Small Talk with Neighbours and Colleagues",
+  "titleTr": "Komşular ve İş Arkadaşlarıyla Sohbet",
+  "levels": {
+    "A1": {
+      "intro": "Merdivende üst kattaki komşunla, pazartesi de kahve makinesinin başında iş arkadaşınla kısa ve kibar bir sohbet ediyorsun.",
+      "text": [
+        { "who": "Lena", "en": "Hi, I'm Lena from upstairs.", "tr": "Merhaba, ben Lena, üst kattan." },
+        { "who": "Me", "en": "Nice to meet you, I'm {name}.", "tr": "Tanıştığımıza memnun oldum, ben {name}." },
+        { "who": "Lena", "en": "It is sunny today, but it is cold.", "tr": "Bugün hava güneşli ama soğuk." },
+        { "who": "Lena", "en": "Where are you from, and what do you do?", "tr": "Nerelisin ve ne iş yapıyorsun?" },
+        { "who": "Me", "en": "I am from Istanbul, and I run a startup.", "tr": "İstanbulluyum ve bir girişimim var." },
+        { "who": "Lena", "en": "There is a barbecue in the courtyard on Sunday.", "tr": "Pazar günü avluda mangal var." },
+        { "who": "Tom", "en": "Good morning, how was your weekend?", "tr": "Günaydın, hafta sonun nasıldı?" },
+        { "who": "Me", "en": "It was great, thanks, and I met my neighbours.", "tr": "Harikaydı, teşekkürler; komşularımla tanıştım." }
+      ],
+      "vocab": [
+        { "en": "neighbour", "tr": "komşu", "ex": "Lena is my neighbour." },
+        { "en": "upstairs", "tr": "üst katta", "ex": "Lena lives upstairs." },
+        { "en": "sunny", "tr": "güneşli", "ex": "It is sunny today." },
+        { "en": "Where are you from?", "tr": "Nerelisin?", "ex": "Where are you from, Lena?" },
+        { "en": "barbecue", "tr": "mangal (partisi)", "ex": "There is a barbecue on Sunday." },
+        { "en": "weekend", "tr": "hafta sonu", "ex": "How was your weekend?" }
+      ],
+      "grammar": {
+        "title": "Simple questions: Where…? What…? How…?",
+        "tr": "Soru kelimesi (where, what, how) en başa gelir. 'To be' ile: 'Where are you from?' Diğer fiillerle 'do' kullanırız: 'What do you do?'",
+        "examples": ["Where are you from?", "What do you do?", "How was your weekend?"]
+      },
+      "questions": [
+        { "q": "Where does Lena live?", "options": ["Upstairs", "In Istanbul", "Next to the office"], "a": 0 },
+        { "q": "What is the weather like?", "options": ["Rainy and warm", "Sunny but cold", "Snowy"], "a": 1 },
+        { "q": "Where is the barbecue?", "options": ["In a park", "At the office", "In the courtyard"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Hi, I'm Lena from ___.", "a": "upstairs", "hint": "üst kat" },
+        { "s": "It is ___ today, but it is cold.", "a": "sunny", "hint": "güneşli" },
+        { "s": "Good morning, how was your ___?", "a": "weekend", "hint": "hafta sonu" }
+      ],
+      "order": [
+        { "a": "There is a barbecue in the courtyard on Sunday." },
+        { "a": "I am from Istanbul." }
+      ],
+      "translate": [
+        { "tr": "Tanıştığımıza memnun oldum.", "en": "Nice to meet you.", "keys": ["nice to meet you"] },
+        { "tr": "Hafta sonun nasıldı?", "en": "How was your weekend?", "keys": ["how was", "weekend"] }
+      ],
+      "roleplay": {
+        "persona": "Neighbour (Lena)",
+        "personaTr": "Komşu (Lena)",
+        "scene": "Cumartesi sabahı apartman merdiveninde üst kattaki komşun Lena ile karşılaşıyorsun.",
+        "turns": [
+          { "ai": "Hi! I'm Lena from upstairs. Are you new here?", "aiTr": "Merhaba! Ben Lena, üst kattan. Burada yeni misin?", "hint": "Yes, I am new, and I am from Istanbul.", "keys": ["yes", "new", "Istanbul"] },
+          { "ai": "Do you like Berlin?", "aiTr": "Berlin'i seviyor musun?", "hint": "Yes, I love the parks and the bikes.", "keys": ["love", "parks", "yes"] },
+          { "ai": "There is a barbecue on Sunday. Can you come?", "aiTr": "Pazar günü mangal var. Gelebilir misin?", "hint": "Yes, thank you, and I can bring baklava.", "keys": ["thank you", "yes", "baklava"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Merdivende üst kattaki komşun Lena ile tanışıyorsun, pazartesi de iş arkadaşın Tom'la hafta sonunu konuşuyorsun.",
+      "text": [
+        { "who": "Lena", "en": "Hi, I'm Lena from upstairs, so you're my new neighbour!", "tr": "Merhaba, ben Lena, üst kattan; demek yeni komşum sensin!" },
+        { "who": "Me", "en": "Yes, nice to meet you, I'm {name}.", "tr": "Evet, tanıştığımıza memnun oldum, ben {name}." },
+        { "who": "Lena", "en": "It's cold, but it's nice to see the sun after all that rain.", "tr": "Hava soğuk ama onca yağmurdan sonra güneşi görmek güzel." },
+        { "who": "Me", "en": "I'm from Istanbul, and I came here to open my startup's European office.", "tr": "İstanbulluyum; buraya girişimimin Avrupa ofisini açmak için geldim." },
+        { "who": "Lena", "en": "We're going to have a barbecue in the courtyard on Sunday.", "tr": "Pazar günü avluda mangal yapacağız." },
+        { "who": "Me", "en": "I'd love to come, and I'm going to bring some baklava.", "tr": "Gelmeyi çok isterim; biraz baklava getireceğim." },
+        { "who": "Tom", "en": "Morning, how was your weekend?", "tr": "Günaydın, hafta sonun nasıldı?" },
+        { "who": "Me", "en": "It was great because I went to a barbecue with my neighbours.", "tr": "Harikaydı, çünkü komşularımla mangala gittim." },
+        { "who": "Tom", "en": "Nice, so do you want to come for a drink with us on Friday?", "tr": "Güzel; cuma günü bizimle bir şeyler içmeye gelmek ister misin?" }
+      ],
+      "vocab": [
+        { "en": "neighbour", "tr": "komşu", "ex": "You're my new neighbour!" },
+        { "en": "upstairs", "tr": "üst kat, üst katta", "ex": "I'm Lena from upstairs." },
+        { "en": "courtyard", "tr": "avlu", "ex": "We're going to have a barbecue in the courtyard." },
+        { "en": "I'd love to", "tr": "çok isterim", "ex": "I'd love to come on Sunday." },
+        { "en": "How was your weekend?", "tr": "Hafta sonun nasıldı?", "ex": "Morning, Tom, how was your weekend?" },
+        { "en": "go for a drink", "tr": "bir şeyler içmeye gitmek", "ex": "Do you want to go for a drink on Friday?" }
+      ],
+      "grammar": {
+        "title": "'Going to' for plans",
+        "tr": "Önceden planlanmış şeyleri anlatırken 'am/is/are going to + fiil' kullanırız: 'We're going to have a barbecue.'",
+        "examples": ["We're going to have a barbecue on Sunday.", "I'm going to bring some baklava.", "Are you going to come on Friday?"]
+      },
+      "questions": [
+        { "q": "Where does Lena live?", "options": ["On the ground floor", "Upstairs", "Next door to Tom"], "a": 1 },
+        { "q": "Why did the speaker come to Berlin?", "options": ["To study German", "To visit friends", "To open the startup's European office"], "a": 2 },
+        { "q": "What is the speaker going to bring to the barbecue?", "options": ["Baklava", "Drinks", "A salad"], "a": 0 },
+        { "q": "What does Tom invite the speaker to?", "options": ["A barbecue", "A drink on Friday", "A football match"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "It's nice to see the ___ after all that rain.", "a": "sun", "hint": "güneş" },
+        { "s": "We're going to have a barbecue in the ___ on Sunday.", "a": "courtyard", "hint": "avlu" },
+        { "s": "I'd ___ to come.", "a": "love", "hint": "çok isterim" }
+      ],
+      "order": [
+        { "a": "I went to a barbecue with my neighbours." },
+        { "a": "I'm going to bring some baklava." }
+      ],
+      "translate": [
+        { "tr": "Harikaydı, çünkü komşularımla mangala gittim.", "en": "It was great because I went to a barbecue with my neighbours.", "keys": ["went to a barbecue", "neighbours"] },
+        { "tr": "Gelmeyi çok isterim.", "en": "I'd love to come.", "keys": ["I'd love to", "come"] }
+      ],
+      "roleplay": {
+        "persona": "Neighbour (Lena)",
+        "personaTr": "Komşu (Lena)",
+        "scene": "Cumartesi sabahı merdivende üst kattaki komşun Lena seninle sohbet ediyor.",
+        "turns": [
+          { "ai": "Hi, I'm Lena from upstairs! Are you the new neighbour?", "aiTr": "Merhaba, ben Lena, üst kattan! Yeni komşu sen misin?", "hint": "Yes, I am, and nice to meet you, I'm {name}.", "keys": ["nice to meet you", "yes", "I am"] },
+          { "ai": "Welcome! What do you think of Berlin so far?", "aiTr": "Hoş geldin! Şimdiye kadar Berlin hakkında ne düşünüyorsun?", "hint": "I really like it, because there are so many parks.", "keys": ["like", "parks", "because"] },
+          { "ai": "Is it very different from Istanbul?", "aiTr": "İstanbul'dan çok farklı mı?", "hint": "Yes, the shops are closed on Sundays, and that was a surprise.", "keys": ["closed on Sundays", "surprise", "different"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Komşun Lena ile merdivende tanışıyorsun: hava, nereli olduğun, ne iş yaptığın, Berlin'i neden sevdiğin; pazartesi de Tom'la hafta sonunu konuşuyorsun.",
+      "text": [
+        { "who": "Lena", "en": "Oh hi, you must be the new neighbour—I'm Lena, from the fourth floor.", "tr": "Aa merhaba, yeni komşu sen olmalısın; ben Lena, dördüncü kattan." },
+        { "who": "Me", "en": "Nice to meet you, I'm {name}, and I've just moved into the flat below you.", "tr": "Tanıştığımıza memnun oldum, ben {name}; senin alt katındaki daireye yeni taşındım." },
+        { "who": "Lena", "en": "Finally some sunshine, even if it's freezing—we've had rain all week!", "tr": "Nihayet biraz güneş, buz gibi olsa da; bütün hafta yağmur yağdı!" },
+        { "who": "Lena", "en": "So, where are you from, and what brings you to Berlin?", "tr": "Eee, nerelisin ve seni Berlin'e ne getirdi?" },
+        { "who": "Me", "en": "I'm from Istanbul, and I've come here to open the European office of my health-tech startup.", "tr": "İstanbulluyum; buraya sağlık teknolojisi girişimimin Avrupa ofisini açmak için geldim." },
+        { "who": "Me", "en": "I love how green the city is, but I wasn't ready for the shops to close on Sundays!", "tr": "Şehrin bu kadar yeşil olmasına bayılıyorum, ama pazar günleri dükkânların kapanmasına hazır değildim!" },
+        { "who": "Lena", "en": "We're having a barbecue in the courtyard on Sunday afternoon, so if you're free, you should come.", "tr": "Pazar öğleden sonra avluda mangal yapıyoruz; müsaitsen sen de gelmelisin." },
+        { "who": "Tom", "en": "Morning—how was your weekend?", "tr": "Günaydın, hafta sonun nasıldı?" },
+        { "who": "Me", "en": "Really nice, thanks, I went to my neighbours' barbecue and finally made some friends.", "tr": "Çok güzeldi, teşekkürler; komşularımın mangalına gittim ve nihayet birkaç arkadaş edindim." },
+        { "who": "Tom", "en": "Great, so if you're free on Friday, come for a drink with the team after work.", "tr": "Harika; cuma müsaitsen iş çıkışı ekiple bir şeyler içmeye gel." }
+      ],
+      "vocab": [
+        { "en": "move into", "tr": "(bir eve) taşınmak", "ex": "I've just moved into the flat below you.", "def": "to start living in a new home" },
+        { "en": "freezing", "tr": "buz gibi, dondurucu", "ex": "It's sunny but freezing today.", "def": "very cold" },
+        { "en": "what brings you to", "tr": "seni ...'e ne getirdi", "ex": "What brings you to Berlin?", "def": "a friendly way to ask why someone has come to a place" },
+        { "en": "health-tech startup", "tr": "sağlık teknolojisi girişimi", "ex": "I run a health-tech startup.", "def": "a new company that uses technology to improve health care" },
+        { "en": "be ready for", "tr": "...e hazır olmak", "ex": "I wasn't ready for the shops to close on Sundays.", "def": "to be prepared for something" },
+        { "en": "if you're free", "tr": "müsaitsen", "ex": "If you're free, come to the barbecue.", "def": "if you have no other plans" },
+        { "en": "make friends", "tr": "arkadaş edinmek", "ex": "I've finally made some friends here.", "def": "to start new friendships" },
+        { "en": "after work", "tr": "iş çıkışı", "ex": "Let's go for a drink after work.", "def": "when the working day has finished" }
+      ],
+      "grammar": {
+        "title": "Present perfect: just, all week",
+        "tr": "Yakın zamanda olmuş ve şimdiyi etkileyen olaylar için 'have/has + V3' kullanırız. 'Just' = yeni, az önce; 'all week' gibi ifadeler bugüne kadar süren bir durumu gösterir.",
+        "examples": ["I've just moved into the flat below you.", "We've had rain all week.", "I've come here to open our European office."]
+      },
+      "questions": [
+        { "q": "Where does Lena live?", "options": ["On the fourth floor", "On the ground floor", "In the flat next door"], "a": 0 },
+        { "q": "What was the weather like before this weekend?", "options": ["Sunny all week", "Rainy all week", "Snowy"], "a": 1 },
+        { "q": "What surprised the speaker about Berlin?", "options": ["The parks", "The weather", "Shops are closed on Sundays"], "a": 2 },
+        { "q": "What does Tom suggest?", "options": ["A drink with the team on Friday", "A barbecue on Sunday", "Lunch on Monday"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "I've just moved ___ the flat below you.", "a": "into", "hint": "-e (taşınmak)" },
+        { "s": "We've had rain all ___!", "a": "week", "hint": "hafta" },
+        { "s": "If you're ___, you should come.", "a": "free", "hint": "müsait" }
+      ],
+      "order": [
+        { "a": "I love how green the city is." },
+        { "a": "I've finally made some friends here." }
+      ],
+      "translate": [
+        { "tr": "Seni Berlin'e ne getirdi?", "en": "What brings you to Berlin?", "keys": ["what brings you", "Berlin"] },
+        { "tr": "Pazar günleri dükkânların kapanmasına hazır değildim.", "en": "I wasn't ready for the shops to close on Sundays.", "keys": ["wasn't ready for", "close on Sundays"] }
+      ],
+      "roleplay": {
+        "persona": "Neighbour (Lena)",
+        "personaTr": "Komşu (Lena)",
+        "scene": "Cumartesi sabahı merdivende dördüncü kattaki komşun Lena ile karşılaşıyorsun ve sohbet başlıyor.",
+        "turns": [
+          { "ai": "Hi there, you must be the new neighbour! I'm Lena, from upstairs.", "aiTr": "Selam, yeni komşu sen olmalısın! Ben Lena, üst kattan.", "hint": "Nice to meet you, Lena, I've just moved into the flat below you.", "keys": ["nice to meet you", "just moved", "below"] },
+          { "ai": "So, what brings you to Berlin?", "aiTr": "Eee, seni Berlin'e ne getirdi?", "hint": "I've come to open the European office of my health-tech startup.", "keys": ["European office", "startup", "open"] },
+          { "ai": "And how are you finding it so far? Is it very different from home?", "aiTr": "Peki şimdiye kadar nasıl buluyorsun? Memleketinden çok farklı mı?", "hint": "I love the parks, but people here are much more direct than in Istanbul.", "keys": ["love", "more direct", "parks"] },
+          { "ai": "We're having a barbecue in the courtyard on Sunday. Would you like to come?", "aiTr": "Pazar günü avluda mangal yapıyoruz. Gelmek ister misin?", "hint": "I'd love to, thank you, and I'll bring some baklava.", "keys": ["I'd love to", "baklava", "thank you"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Komşun Lena ile merdivende sohbet ediyorsun, pazartesi de kahve makinesinin başında iş arkadaşın Tom'la; havadan kültürel farklara, davetlere kadar konuşuyorsun.",
+      "text": [
+        { "who": "Lena", "en": "Hi, you must be the person who's just moved into the third floor—I'm Lena, from directly above you.", "tr": "Merhaba, üçüncü kata yeni taşınan kişi sen olmalısın; ben Lena, tam üst katından." },
+        { "who": "Me", "en": "Lovely to meet you, I'm {name}, and I hope my moving boxes weren't too noisy last week.", "tr": "Tanıştığımıza çok sevindim, ben {name}; umarım geçen hafta taşınma kutularım çok gürültü yapmamıştır." },
+        { "who": "Lena", "en": "Not at all—and isn't it nice to finally see some sun, even if it's bitterly cold?", "tr": "Hiç de değil; hem dondurucu soğuk olsa da nihayet biraz güneş görmek güzel değil mi?" },
+        { "who": "Lena", "en": "It seems like it's rained every single day this week.", "tr": "Bu hafta her gün yağmur yağmış gibi geliyor." },
+        { "who": "Lena", "en": "So what's brought you to Berlin, if you don't mind me asking?", "tr": "Sormamda sakınca yoksa, seni Berlin'e ne getirdi?" },
+        { "who": "Me", "en": "I'm from Istanbul, and I've been sent—well, I've sent myself—to open the European office of my health-tech startup.", "tr": "İstanbulluyum ve sağlık teknolojisi girişimimin Avrupa ofisini açmak için gönderildim; yani, kendimi gönderdim." },
+        { "who": "Me", "en": "I love how green the city is, although I learned the hard way that everything closes on Sundays.", "tr": "Şehrin bu kadar yeşil olmasına bayılıyorum, ama pazar günleri her şeyin kapandığını acı tecrübeyle öğrendim." },
+        { "who": "Lena", "en": "Well, we're having a barbecue in the courtyard on Sunday, which would be a good chance to meet everyone in the building.", "tr": "O zaman pazar günü avluda mangal yapıyoruz; binadaki herkesle tanışmak için iyi bir fırsat olur." },
+        { "who": "Tom", "en": "So, how was your first proper weekend in Berlin?", "tr": "Eee, Berlin'deki ilk gerçek hafta sonun nasıldı?" },
+        { "who": "Me", "en": "Better than I expected—my neighbours invited me to a barbecue and told me Berliners only seem cold at first.", "tr": "Beklediğimden iyiydi; komşularım beni mangala davet etti ve Berlinlilerin sadece ilk başta soğuk göründüğünü söylediler." },
+        { "who": "Tom", "en": "That's true, and if you fancy it, a few of us are going for a drink on Friday after work.", "tr": "Doğru; canın isterse cuma iş çıkışı birkaçımız bir şeyler içmeye gidiyoruz." }
+      ],
+      "vocab": [
+        { "en": "moving boxes", "tr": "taşınma kutuları", "ex": "I hope my moving boxes weren't too noisy.", "def": "boxes you use to carry your things to a new home" },
+        { "en": "bitterly cold", "tr": "dondurucu soğuk", "ex": "It's sunny but bitterly cold.", "def": "extremely cold" },
+        { "en": "if you don't mind me asking", "tr": "sormamda sakınca yoksa", "ex": "Where are you from, if you don't mind me asking?", "def": "a polite way to start a personal question" },
+        { "en": "learn the hard way", "tr": "acı tecrübeyle öğrenmek", "ex": "I learned the hard way that shops close on Sundays.", "def": "to learn something through an unpleasant experience" },
+        { "en": "a good chance to", "tr": "...için iyi bir fırsat", "ex": "The barbecue is a good chance to meet everyone.", "def": "a good opportunity to do something" },
+        { "en": "proper", "tr": "gerçek, doğru dürüst", "ex": "It was my first proper weekend in Berlin.", "def": "real or complete" },
+        { "en": "seem cold", "tr": "soğuk görünmek", "ex": "Berliners only seem cold at first.", "def": "to appear unfriendly" },
+        { "en": "fancy", "tr": "canı istemek", "ex": "If you fancy it, come for a drink.", "def": "to want to do or have something (informal)" }
+      ],
+      "grammar": {
+        "title": "Relative clauses: who, which",
+        "tr": "Bir kişi ya da şey hakkında ek bilgi vermek için 'who' (insanlar) ve 'which' (şeyler, durumlar) kullanırız. 'Which' bütün bir cümleyi de niteleyebilir.",
+        "examples": ["You must be the person who's just moved in.", "We're having a barbecue, which would be a good chance to meet everyone.", "Tom is the colleague who invited me for a drink."]
+      },
+      "questions": [
+        { "q": "Where exactly does Lena live?", "options": ["Directly above the speaker", "Next to the office", "On the ground floor"], "a": 0 },
+        { "q": "Why does the speaker mention the moving boxes?", "options": ["To ask for help", "To apologise in case they were noisy", "To complain about the stairs"], "a": 1 },
+        { "q": "What does 'well, I've sent myself' tell us about the speaker?", "options": ["They work for a big corporation", "They lost their job", "They are the boss of their own company"], "a": 2 },
+        { "q": "Why does Lena think the barbecue is a good idea for the speaker?", "options": ["The food is free", "It's a chance to meet everyone in the building", "It's her birthday"], "a": 1 },
+        { "q": "What does Tom invite the speaker to?", "options": ["A drink on Friday after work", "A barbecue on Sunday", "A meeting"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Isn't it nice to see some sun, even if it's ___ cold?", "a": "bitterly", "hint": "dondurucu" },
+        { "s": "I learned the hard ___ that everything closes on Sundays.", "a": "way", "hint": "acı tecrübeyle" },
+        { "s": "If you ___ it, a few of us are going for a drink.", "a": "fancy", "hint": "canın isterse" }
+      ],
+      "order": [
+        { "a": "Berliners only seem cold at first." },
+        { "a": "It's a good chance to meet everyone." }
+      ],
+      "translate": [
+        { "tr": "Sormamda sakınca yoksa, seni Berlin'e ne getirdi?", "en": "What's brought you to Berlin, if you don't mind me asking?", "keys": ["brought you to Berlin", "don't mind me asking"] },
+        { "tr": "Pazar günleri her şeyin kapandığını acı tecrübeyle öğrendim.", "en": "I learned the hard way that everything closes on Sundays.", "keys": ["learned the hard way", "closes on Sundays"] }
+      ],
+      "roleplay": {
+        "persona": "Neighbour (Lena)",
+        "personaTr": "Komşu (Lena)",
+        "scene": "Cumartesi sabahı merdivende tam üst katındaki komşun Lena ile karşılaşıyorsun.",
+        "turns": [
+          { "ai": "Hi, you must be the person who's just moved in downstairs—I'm Lena.", "aiTr": "Merhaba, alt kata yeni taşınan kişi sen olmalısın; ben Lena.", "hint": "That's me, I'm {name}, and I hope my moving boxes weren't too noisy.", "keys": ["that's me", "moving boxes", "noisy"] },
+          { "ai": "Not at all! So, what's brought you to Berlin, if you don't mind me asking?", "aiTr": "Hiç de değil! Peki, sormamda sakınca yoksa, seni Berlin'e ne getirdi?", "hint": "I'm opening the European office of my health-tech startup, which is both exciting and a bit scary.", "keys": ["European office", "startup", "exciting"] },
+          { "ai": "And what do you make of the city so far?", "aiTr": "Peki şimdiye kadar şehir hakkında ne düşünüyorsun?", "hint": "I love how green it is, although I learned the hard way that shops close on Sundays.", "keys": ["green", "learned the hard way", "Sundays"] },
+          { "ai": "We're having a barbecue in the courtyard on Sunday—would you like to join us?", "aiTr": "Pazar günü avluda mangal yapıyoruz; bize katılmak ister misin?", "hint": "I'd love to, and if nobody minds, I'll bring some baklava from a Turkish bakery.", "keys": ["I'd love to", "baklava", "join"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Komşun Lena ve iş arkadaşın Tom'la sıcak, esprili ve doğal bir sohbet ediyorsun; deyimleri ve nüansları rahatça kullanıyorsun.",
+      "text": [
+        { "who": "Lena", "en": "Ah, you must be the mystery tenant from the third floor—I'm Lena, the one clomping about directly above you.", "tr": "Aa, üçüncü kattaki gizemli kiracı sen olmalısın; ben Lena, tam üstünde güm güm yürüyen kişi." },
+        { "who": "Me", "en": "Lovely to finally put a face to the footsteps—I'm {name}, and apologies if my moving boxes kept you up last week.", "tr": "Sonunda ayak seslerinin sahibini görmek çok güzel; ben {name}, geçen hafta taşınma kutularım seni uyutmadıysa özür dilerim." },
+        { "who": "Lena", "en": "Don't give it a second thought—and isn't it glorious to see the sun, even if it's bitterly cold?", "tr": "Hiç kafana takma; hem dondurucu soğuk olsa da güneşi görmek harika değil mi?" },
+        { "who": "Me", "en": "After a week of solid rain, I was starting to wonder whether Berlin had a sun at all.", "tr": "Bir hafta aralıksız yağmurdan sonra Berlin'in güneşi olup olmadığını merak etmeye başlamıştım." },
+        { "who": "Lena", "en": "So, what's lured you to Berlin, of all places?", "tr": "Peki onca yer varken seni Berlin'e ne çekti?" },
+        { "who": "Me", "en": "I'm from Istanbul, and I'm here to set up the European office of my health-tech startup, which is as thrilling as it is terrifying.", "tr": "İstanbulluyum; sağlık teknolojisi girişimimin Avrupa ofisini kurmak için buradayım, bu da ne kadar heyecan vericiyse o kadar korkutucu." },
+        { "who": "Me", "en": "What's won me over is how green the city is, though I learned the hard way, with an empty fridge, that everything shuts on Sundays.", "tr": "Beni asıl kazanan şehrin bu kadar yeşil olması, ama pazar günleri her şeyin kapandığını boş bir buzdolabıyla acı tecrübeyle öğrendim." },
+        { "who": "Lena", "en": "Well, if you can bear the cold, we're having a barbecue in the courtyard on Sunday—the last one before winter sets in.", "tr": "Soğuğa dayanabilirsen pazar günü avluda mangal yapıyoruz; kış bastırmadan önceki son mangal." },
+        { "who": "Tom", "en": "Morning—so, how did your first proper weekend in Berlin treat you?", "tr": "Günaydın; Berlin'deki ilk gerçek hafta sonun nasıl geçti bakalım?" },
+        { "who": "Me", "en": "Surprisingly well, actually; the neighbours roped me into a barbecue, and contrary to the stereotype, they couldn't have been warmer.", "tr": "Aslında şaşırtıcı derecede iyi; komşular beni bir mangala dahil etti ve klişenin aksine, daha sıcak olamazlardı." },
+        { "who": "Tom", "en": "Berliners are a bit like coconuts—hard on the outside, soft on the inside—and speaking of which, fancy a drink on Friday after work?", "tr": "Berlinliler biraz hindistancevizine benzer: dışı sert, içi yumuşak; hazır lafı açılmışken, cuma iş çıkışı bir şeyler içmeye ne dersin?" },
+        { "who": "Me", "en": "Count me in, provided you let me get the first round.", "tr": "Ben de varım, yeter ki ilk içkileri ben ısmarlayayım." }
+      ],
+      "vocab": [
+        { "en": "put a face to", "tr": "(adını/sesini bildiğin birinin) yüzünü görmek", "ex": "It's nice to put a face to the name.", "def": "to finally meet someone you have only heard of" },
+        { "en": "keep someone up", "tr": "uyutmamak", "ex": "I hope the noise didn't keep you up.", "def": "to stop someone from going to sleep" },
+        { "en": "don't give it a second thought", "tr": "hiç kafana takma", "ex": "The boxes? Don't give it a second thought.", "def": "don't worry about it at all" },
+        { "en": "lure", "tr": "cezbetmek, çekmek", "ex": "What's lured you to Berlin?", "def": "to attract someone to a place or activity" },
+        { "en": "of all places", "tr": "onca yer varken", "ex": "Why Berlin, of all places?", "def": "used to show surprise at someone's choice of place" },
+        { "en": "win someone over", "tr": "birinin gönlünü kazanmak", "ex": "The parks have won me over.", "def": "to make someone like or support something" },
+        { "en": "set in", "tr": "bastırmak, başlamak", "ex": "It's the last barbecue before winter sets in.", "def": "to begin and seem likely to continue" },
+        { "en": "rope someone into", "tr": "birini bir işe dahil etmek", "ex": "My neighbours roped me into a barbecue.", "def": "to persuade someone to take part in something" },
+        { "en": "count me in", "tr": "ben de varım", "ex": "A drink on Friday? Count me in.", "def": "include me in your plans" },
+        { "en": "get the first round", "tr": "ilk içkileri ısmarlamak", "ex": "Let me get the first round.", "def": "to pay for the first drinks for a group" }
+      ],
+      "grammar": {
+        "title": "'As … as it is …': balancing two qualities",
+        "tr": "'X as it is Y' kalıbı bir şeyin aynı anda iki (çoğu zaman zıt) özelliğe eşit ölçüde sahip olduğunu zarifçe vurgular: 'as thrilling as it is terrifying' = ne kadar heyecan vericiyse o kadar korkutucu.",
+        "examples": ["It's as thrilling as it is terrifying.", "Berlin is as friendly as it is direct.", "The weather was as sunny as it was cold."]
+      },
+      "questions": [
+        { "q": "What is the tone of Lena describing herself as 'clomping about'?", "options": ["Self-deprecating and playful", "Angry", "Formal"], "a": 0 },
+        { "q": "What does 'put a face to the footsteps' imply?", "options": ["The speaker dislikes Lena", "The speaker had heard Lena before meeting her", "The speaker had seen photos of Lena"], "a": 1 },
+        { "q": "How does the speaker feel about opening the European office?", "options": ["Purely excited", "Purely nervous", "Excited and nervous at the same time"], "a": 2 },
+        { "q": "What does Tom's coconut comparison suggest about Berliners?", "options": ["They seem reserved at first but are warm underneath", "They love tropical food", "They are friendly at first but cold later"], "a": 0 },
+        { "q": "What does 'provided you let me get the first round' show about the speaker?", "options": ["They don't drink", "They want to return the kindness", "They are reluctant to go"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Lovely to finally put a ___ to the footsteps.", "a": "face", "hint": "yüz" },
+        { "s": "What's ___ me over is how green the city is.", "a": "won", "hint": "kazanmak" },
+        { "s": "The neighbours ___ me into a barbecue.", "a": "roped", "hint": "dahil etmek" },
+        { "s": "Count me ___, provided you let me get the first round.", "a": "in", "hint": "ben de varım" }
+      ],
+      "order": [
+        { "a": "I learned the hard way that everything shuts on Sundays." },
+        { "a": "They couldn't have been warmer." }
+      ],
+      "translate": [
+        { "tr": "Onca yer varken seni Berlin'e ne çekti?", "en": "What's lured you to Berlin, of all places?", "keys": ["lured", "of all places"] },
+        { "tr": "Bu iş ne kadar heyecan vericiyse o kadar da korkutucu.", "en": "It's as thrilling as it is terrifying.", "keys": ["as thrilling as it is terrifying"] }
+      ],
+      "roleplay": {
+        "persona": "Neighbour (Lena)",
+        "personaTr": "Komşu (Lena)",
+        "scene": "Cumartesi sabahı merdivende üst kattaki esprili komşun Lena ile karşılaşıyorsun.",
+        "turns": [
+          { "ai": "Ah, the mystery tenant at last! I'm Lena—I'm the one clomping about above you.", "aiTr": "Aa, sonunda gizemli kiracı! Ben Lena; üstünde güm güm yürüyen benim.", "hint": "Lovely to put a face to the footsteps—I'm {name}, and I hope my moving boxes didn't keep you up.", "keys": ["put a face", "moving boxes", "keep you up"] },
+          { "ai": "Not in the least. So what's lured you to Berlin, of all places?", "aiTr": "Hiç de değil. Peki onca yer varken seni Berlin'e ne çekti?", "hint": "I'm setting up the European office of my health-tech startup, which is as thrilling as it is terrifying.", "keys": ["European office", "startup", "thrilling"] },
+          { "ai": "And has the city won you over yet, or is the jury still out?", "aiTr": "Peki şehir gönlünü kazandı mı, yoksa hâlâ karar vermedin mi?", "hint": "It's well on its way—I adore the parks, though the Sunday closing hours caught me off guard.", "keys": ["parks", "Sunday", "caught me off guard"] },
+          { "ai": "Well, we're having a barbecue in the courtyard on Sunday, cold permitting—fancy joining us?", "aiTr": "Peki, soğuk izin verirse pazar günü avluda mangal yapıyoruz; bize katılmak ister misin?", "hint": "Count me in, and I'll bring some baklava so you can sample a bit of Istanbul.", "keys": ["count me in", "baklava", "Istanbul"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Komşun Lena ve iş arkadaşın Tom'la ince espriler, ironi ve zarif ifadelerle dolu, tamamen doğal bir sohbet ediyorsun.",
+      "text": [
+        { "who": "Lena", "en": "You must be the new arrival on the third floor—I'm Lena, the one whose footsteps you've no doubt been cursing.", "tr": "Üçüncü kata yeni gelen sen olmalısın; ben Lena, ayak seslerine şüphesiz söylenip durduğun kişi." },
+        { "who": "Me", "en": "Not at all, though I'm relieved to put a face to them—I'm {name}, and I suspect my moving boxes did rather more damage to your sleep.", "tr": "Hiç de değil, ama sahibini görmek içimi rahatlattı; ben {name}, ve sanırım asıl benim taşınma kutularım senin uykuna çok daha fazla zarar verdi." },
+        { "who": "Lena", "en": "Water under the bridge—besides, after the week we've had, a bit of sunshine makes up for almost anything, even this biting cold.", "tr": "Geçmiş geçmişte kaldı; hem geçirdiğimiz haftadan sonra biraz güneş neredeyse her şeyi telafi ediyor, bu iliklere işleyen soğuğu bile." },
+        { "who": "Me", "en": "I'd begun to suspect the sun was a rumour put about by the tourist board.", "tr": "Güneşin turizm bürosunun yaydığı bir söylenti olduğundan şüphelenmeye başlamıştım." },
+        { "who": "Lena", "en": "So what possessed you to swap the Bosphorus for the Spree?", "tr": "Peki hangi akla hizmet Boğaz'ı Spree'ye değiştirdin?" },
+        { "who": "Me", "en": "I'm opening the European office of my health-tech startup, a prospect I find exhilarating and terrifying in roughly equal measure.", "tr": "Sağlık teknolojisi girişimimin Avrupa ofisini açıyorum; bu, aşağı yukarı eşit ölçüde heyecan verici ve korkutucu bulduğum bir şey." },
+        { "who": "Me", "en": "The city's greenery has won me over completely, though I learned the hard way, staring into an empty fridge, that Sunday is sacred here.", "tr": "Şehrin yeşilliği gönlümü tamamen kazandı, ama boş bir buzdolabına bakarken burada pazarın kutsal olduğunu acı tecrübeyle öğrendim." },
+        { "who": "Lena", "en": "Then let me make amends on Berlin's behalf: we're having a barbecue in the courtyard on Sunday, quite possibly the last before winter closes in.", "tr": "O zaman Berlin adına gönlünü almama izin ver: pazar günü avluda mangal yapıyoruz, büyük ihtimalle kış bastırmadan önceki sonuncusu." },
+        { "who": "Tom", "en": "So, did Berlin live up to its fearsome reputation at the weekend?", "tr": "Eee, Berlin hafta sonu o korkutucu şöhretini hak etti mi?" },
+        { "who": "Me", "en": "On the contrary—my neighbours dragged me to a barbecue and were so welcoming that the famous Berlin frostiness has yet to make an appearance.", "tr": "Tam tersine; komşularım beni bir mangala sürükledi ve o kadar sıcak karşıladılar ki meşhur Berlin soğukluğu henüz ortaya çıkmadı." },
+        { "who": "Tom", "en": "Give it time, but the trick is that once they let you in, you're in for life—and on that note, drinks on Friday after work?", "tr": "Zamanla görürsün, ama işin sırrı şu: seni bir kez içeri aldılar mı, ömür boyu içeridesin; hazır lafı gelmişken, cuma iş çıkışı içkiye ne dersin?" },
+        { "who": "Me", "en": "I wouldn't miss it, provided the first round is on me.", "tr": "Kaçırmam, yeter ki ilk içkiler benden olsun." }
+      ],
+      "vocab": [
+        { "en": "no doubt", "tr": "şüphesiz, muhtemelen", "ex": "You've no doubt heard my footsteps.", "def": "certainly; very probably" },
+        { "en": "water under the bridge", "tr": "geçmiş geçmişte kaldı", "ex": "The noise last week? That's water under the bridge.", "def": "something in the past that no longer matters" },
+        { "en": "make up for", "tr": "telafi etmek", "ex": "A bit of sunshine makes up for almost anything.", "def": "to compensate for something bad" },
+        { "en": "biting cold", "tr": "iliklere işleyen soğuk", "ex": "Even the biting cold couldn't spoil the day.", "def": "very sharp, unpleasant cold" },
+        { "en": "what possessed you", "tr": "hangi akla hizmet, ne diye", "ex": "What possessed you to move to Berlin in winter?", "def": "used to ask why someone did something surprising" },
+        { "en": "in equal measure", "tr": "eşit ölçüde", "ex": "It's exhilarating and terrifying in equal measure.", "def": "to the same degree" },
+        { "en": "make amends", "tr": "gönül almak, telafi etmek", "ex": "Let me make amends on Berlin's behalf.", "def": "to do something good to show you are sorry" },
+        { "en": "live up to", "tr": "(beklentiyi) karşılamak, hak etmek", "ex": "Did Berlin live up to its reputation?", "def": "to be as good or bad as people expected" },
+        { "en": "has yet to", "tr": "henüz ...-medi", "ex": "The famous frostiness has yet to appear.", "def": "has not happened so far" },
+        { "en": "be on me", "tr": "benden olsun (hesap)", "ex": "The first round is on me.", "def": "I will pay for it" }
+      ],
+      "grammar": {
+        "title": "Softening and hedging: rather, roughly, quite possibly, has yet to",
+        "tr": "C2 düzeyinde konuşmacılar iddiaları yumuşatmak ya da ironi katmak için 'rather', 'roughly', 'quite possibly', 'has yet to' gibi ifadeler kullanır. Bu, cümleye kibar ve esprili bir ton verir.",
+        "examples": ["My moving boxes did rather more damage to your sleep.", "I find it exhilarating and terrifying in roughly equal measure.", "It's quite possibly the last barbecue before winter.", "The famous Berlin frostiness has yet to make an appearance."]
+      },
+      "questions": [
+        { "q": "What does 'swap the Bosphorus for the Spree' refer to?", "options": ["Moving from Istanbul to Berlin", "Changing jobs", "Taking a boat trip"], "a": 0 },
+        { "q": "What is the tone of 'a rumour put about by the tourist board'?", "options": ["Bitter", "Dry and humorous", "Anxious", "Formal"], "a": 1 },
+        { "q": "What does 'Sunday is sacred here' imply?", "options": ["Everyone goes to church", "Sunday is only for tourists", "Almost everything is closed on Sundays"], "a": 2 },
+        { "q": "What does Tom imply with 'once they let you in, you're in for life'?", "options": ["Berliners are slow to open up but very loyal", "Berliners always lock their doors", "Tom wants to move in with the speaker"], "a": 0 },
+        { "q": "What does the speaker's last line convey?", "options": ["Reluctance", "Eager acceptance with a generous gesture", "A polite refusal"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Water under the ___.", "a": "bridge", "hint": "köprü (geçmiş geçmişte kaldı)" },
+        { "s": "What ___ you to swap the Bosphorus for the Spree?", "a": "possessed", "hint": "hangi akla hizmet" },
+        { "s": "Let me make ___ on Berlin's behalf.", "a": "amends", "hint": "gönül almak" },
+        { "s": "The famous Berlin frostiness has ___ to make an appearance.", "a": "yet", "hint": "henüz" }
+      ],
+      "order": [
+        { "a": "A bit of sunshine makes up for almost anything." },
+        { "a": "The first round is on me." }
+      ],
+      "translate": [
+        { "tr": "Biraz güneş neredeyse her şeyi telafi ediyor, bu iliklere işleyen soğuğu bile.", "en": "A bit of sunshine makes up for almost anything, even this biting cold.", "keys": ["makes up for", "biting cold"] },
+        { "tr": "Bunu aşağı yukarı eşit ölçüde heyecan verici ve korkutucu buluyorum.", "en": "I find it exhilarating and terrifying in roughly equal measure.", "keys": ["exhilarating", "equal measure"] },
+        { "tr": "Berlin adına gönlünü almama izin ver.", "en": "Let me make amends on Berlin's behalf.", "keys": ["make amends", "on Berlin's behalf"] }
+      ],
+      "roleplay": {
+        "persona": "Neighbour (Lena)",
+        "personaTr": "Komşu (Lena)",
+        "scene": "Cumartesi sabahı merdivende üst kattaki komşun Lena ile karşılaşıyorsun. Lena hazırcevap; sen de aynı incelikte karşılık veriyorsun.",
+        "turns": [
+          { "ai": "You must be the new arrival—I'm Lena, the owner of the footsteps you've no doubt been cursing.", "aiTr": "Yeni gelen sen olmalısın; ben Lena, şüphesiz söylenip durduğun ayak seslerinin sahibi.", "hint": "Not in the slightest—I'm {name}, and if anything, I owe you an apology for all my moving boxes.", "keys": ["owe you an apology", "moving boxes", "not in the slightest"] },
+          { "ai": "Water under the bridge. So what possessed you to swap the Bosphorus for the Spree?", "aiTr": "Geçmiş geçmişte kaldı. Peki hangi akla hizmet Boğaz'ı Spree'ye değiştirdin?", "hint": "Ambition, mostly—I'm opening the European office of my health-tech startup, which I find thrilling and terrifying in equal measure.", "keys": ["European office", "equal measure", "startup"] },
+          { "ai": "And how's Berlin treating you—any culture shocks yet?", "aiTr": "Peki Berlin sana nasıl davranıyor; şimdiden bir kültür şoku yaşadın mı?", "hint": "The greenery has won me over, but I learned the hard way that Sunday is sacred here and the shops stay firmly shut.", "keys": ["won me over", "Sunday", "learned the hard way"] },
+          { "ai": "Then let me make amends: we're having a barbecue in the courtyard on Sunday, weather permitting. Will you join us?", "aiTr": "O zaman gönlünü alayım: hava izin verirse pazar günü avluda mangal yapıyoruz. Bize katılır mısın?", "hint": "I'd be delighted, and I'll bring some baklava, if only to prove that Istanbul does desserts rather well.", "keys": ["delighted", "baklava", "join"] }
+        ]
+      }
+    }
+  }
+}

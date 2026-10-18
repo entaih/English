@@ -1,0 +1,375 @@
+{
+  "id": "ai-05",
+  "topic": "aihear",
+  "title": "Talking to a Hospital Buyer",
+  "titleTr": "Bir Hastane Satın Alma Yöneticisiyle Konuşmak",
+  "levels": {
+    "A1": {
+      "intro": "Bir hastane alıcısına fiyatı, garantiyi ve ücretsiz denemeyi basitçe anlatıyorsun.",
+      "text": [
+        { "who": "Buyer", "en": "How much is your audiometer?", "tr": "Odyometreniz ne kadar?" },
+        { "who": "Me", "en": "The device is 4,000 euros.", "tr": "Cihaz 4.000 euro." },
+        { "who": "Me", "en": "The software is 99 euros a month.", "tr": "Yazılım ayda 99 euro." },
+        { "who": "Buyer", "en": "That is more than a normal audiometer.", "tr": "Bu, normal bir odyometreden daha fazla." },
+        { "who": "Me", "en": "Yes, but you don't need an expert for every test.", "tr": "Evet ama her test için bir uzmana ihtiyacınız yok." },
+        { "who": "Me", "en": "There is also a two-year warranty.", "tr": "Ayrıca iki yıl garanti var." },
+        { "who": "Buyer", "en": "Can we try it first?", "tr": "Önce deneyebilir miyiz?" },
+        { "who": "Me", "en": "Yes, you can try it for free for one month.", "tr": "Evet, bir ay boyunca ücretsiz deneyebilirsiniz." }
+      ],
+      "vocab": [
+        { "en": "How much is …?", "tr": "… ne kadar?", "ex": "How much is the device?" },
+        { "en": "a month", "tr": "ayda, aylık", "ex": "The software is 99 euros a month." },
+        { "en": "expert", "tr": "uzman", "ex": "You don't need an expert for every test." },
+        { "en": "warranty", "tr": "garanti", "ex": "There is a two-year warranty." },
+        { "en": "try", "tr": "denemek", "ex": "Can we try it first?" },
+        { "en": "for free", "tr": "ücretsiz", "ex": "You can try it for free." }
+      ],
+      "grammar": {
+        "title": "can: asking and saying yes",
+        "tr": "'Can' ile izin isteriz ve bir şeyin mümkün olduğunu söyleriz. Soru: Can + özne + fiil? Cevap: Yes, you can.",
+        "examples": ["Can we try it first?", "Yes, you can try it for free.", "Can you train our staff?"]
+      },
+      "questions": [
+        { "q": "How much is the device?", "options": ["400 euros", "4,000 euros", "99 euros"], "a": 1 },
+        { "q": "How long is the warranty?", "options": ["Two years", "One year", "One month"], "a": 0 },
+        { "q": "How long is the free trial?", "options": ["One week", "One year", "One month"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "The software is 99 euros a ___.", "a": "month", "hint": "ay" },
+        { "s": "You don't need an ___ for every test.", "a": "expert", "hint": "uzman" },
+        { "s": "There is also a two-year ___.", "a": "warranty", "hint": "garanti" }
+      ],
+      "order": [
+        { "a": "The software is 99 euros a month." },
+        { "a": "Can we try it first?" }
+      ],
+      "translate": [
+        { "tr": "Cihaz 4.000 euro.", "en": "The device is 4,000 euros.", "keys": ["device", "4,000 euros"] },
+        { "tr": "Önce deneyebilir miyiz?", "en": "Can we try it first?", "keys": ["can we try", "first"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital buyer",
+        "personaTr": "Hastane satın alma yöneticisi",
+        "scene": "Bir hastanenin satın alma yöneticisi fiyatı ve denemeyi soruyor.",
+        "turns": [
+          { "ai": "How much is the device?", "aiTr": "Cihaz ne kadar?", "hint": "The device is 4,000 euros. The software is 99 euros a month.", "keys": ["4,000", "euros", "a month"] },
+          { "ai": "That is expensive.", "aiTr": "Bu pahalı.", "hint": "Yes, but you don't need an expert for every test.", "keys": ["expert", "every test"] },
+          { "ai": "Can we try it first?", "aiTr": "Önce deneyebilir miyiz?", "hint": "Yes, you can try it for free for one month.", "keys": ["free", "one month", "try"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "Bir hastane alıcısının fiyat, arıza ve deneme sorularına cevap veriyorsun.",
+      "text": [
+        { "who": "Buyer", "en": "We're interested in your audiometer, so can you tell me the price?", "tr": "Odyometrenizle ilgileniyoruz, fiyatını söyleyebilir misiniz?" },
+        { "who": "Me", "en": "The device costs 4,000 euros, and the software is 99 euros a month.", "tr": "Cihaz 4.000 euro, yazılım da ayda 99 euro." },
+        { "who": "Buyer", "en": "That's more expensive than a classic audiometer.", "tr": "Bu, klasik bir odyometreden daha pahalı." },
+        { "who": "Me", "en": "Yes, but you don't need an expert for every test, so you save money.", "tr": "Evet ama her test için bir uzmana ihtiyacınız yok, böylece para tasarrufu yaparsınız." },
+        { "who": "Buyer", "en": "What happens if the device breaks?", "tr": "Cihaz bozulursa ne olur?" },
+        { "who": "Me", "en": "There's a two-year warranty, and we can fix most problems remotely.", "tr": "İki yıl garanti var ve çoğu sorunu uzaktan çözebiliyoruz." },
+        { "who": "Buyer", "en": "Can we try it before we buy it?", "tr": "Satın almadan önce deneyebilir miyiz?" },
+        { "who": "Me", "en": "Of course, we can give you a free one-month trial.", "tr": "Tabii ki, size bir aylık ücretsiz deneme verebiliriz." }
+      ],
+      "vocab": [
+        { "en": "be interested in", "tr": "...ile ilgilenmek", "ex": "We're interested in your audiometer." },
+        { "en": "cost", "tr": "(fiyatı) tutmak", "ex": "The device costs 4,000 euros." },
+        { "en": "more expensive than", "tr": "...den daha pahalı", "ex": "It's more expensive than a classic audiometer." },
+        { "en": "save money", "tr": "para tasarrufu yapmak", "ex": "You save money because you don't need an expert." },
+        { "en": "break", "tr": "bozulmak", "ex": "What happens if the device breaks?" },
+        { "en": "warranty", "tr": "garanti", "ex": "There's a two-year warranty." },
+        { "en": "remotely", "tr": "uzaktan", "ex": "We can fix most problems remotely." },
+        { "en": "free trial", "tr": "ücretsiz deneme", "ex": "We can give you a free one-month trial." }
+      ],
+      "grammar": {
+        "title": "Comparatives: more expensive than",
+        "tr": "İki şeyi karşılaştırırken kısa sıfatlara -er (cheap → cheaper), uzun sıfatlara 'more' (more expensive) ekleriz ve ardından 'than' kullanırız.",
+        "examples": ["That's more expensive than a classic audiometer.", "Our test is faster than a classic test.", "In the long run, it is cheaper."]
+      },
+      "questions": [
+        { "q": "How much is the software?", "options": ["99 euros a month", "4,000 euros a year", "Nothing"], "a": 0 },
+        { "q": "Why does the hospital save money?", "options": ["The device is cheap", "They don't need an expert for every test", "The software is free"], "a": 1 },
+        { "q": "What happens if the device breaks?", "options": ["Nothing can be done", "The hospital pays for a new one", "It is covered by a two-year warranty"], "a": 2 },
+        { "q": "What does the founder offer at the end?", "options": ["A discount", "A second device", "A lower price", "A free one-month trial"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "We're ___ in your audiometer.", "a": "interested", "hint": "ilgili" },
+        { "s": "That's more expensive ___ a classic audiometer.", "a": "than", "hint": "-den (karşılaştırma)" },
+        { "s": "We can fix most problems ___.", "a": "remotely", "hint": "uzaktan" }
+      ],
+      "order": [
+        { "a": "We can give you a free one-month trial." },
+        { "a": "You don't need an expert for every test." }
+      ],
+      "translate": [
+        { "tr": "Cihaz bozulursa ne olur?", "en": "What happens if the device breaks?", "keys": ["what happens", "breaks"] },
+        { "tr": "Bu, klasik bir odyometreden daha pahalı.", "en": "That's more expensive than a classic audiometer.", "keys": ["more expensive than"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital buyer",
+        "personaTr": "Hastane satın alma yöneticisi",
+        "scene": "Özel bir hastanenin satın alma yöneticisiyle görüşüyorsun; fiyatı pahalı buluyor.",
+        "turns": [
+          { "ai": "We like your audiometer. Can you tell me the price?", "aiTr": "Odyometrenizi beğendik. Fiyatını söyleyebilir misiniz?", "hint": "The device costs 4,000 euros, and the software is 99 euros a month.", "keys": ["4,000 euros", "99 euros", "a month", "costs"] },
+          { "ai": "Hmm, that's more expensive than other audiometers.", "aiTr": "Hmm, bu diğer odyometrelerden daha pahalı.", "hint": "Yes, but you don't need an expert for every test, so you save money.", "keys": ["expert", "save money"] },
+          { "ai": "Can we try it before we buy it?", "aiTr": "Satın almadan önce deneyebilir miyiz?", "hint": "Of course. We can give you a free one-month trial.", "keys": ["free", "trial", "of course"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "Fiyat, kurulum, eğitim, servis ve ücretsiz deneme gibi satış sorularına cevap veriyorsun.",
+      "text": [
+        { "who": "Buyer", "en": "We're interested in your audiometer, but I need to understand the costs first.", "tr": "Odyometrenizle ilgileniyoruz ama önce maliyetleri anlamam gerekiyor." },
+        { "who": "Me", "en": "The device costs 4,000 euros, and there's a monthly software fee of 99 euros per clinic.", "tr": "Cihaz 4.000 euro ve klinik başına aylık 99 euro yazılım ücreti var." },
+        { "who": "Buyer", "en": "That's quite a lot more than a classic audiometer.", "tr": "Bu, klasik bir odyometreden epey fazla." },
+        { "who": "Me", "en": "That's true, but you don't need an expert for every test, so you'll save time and money every day.", "tr": "Doğru ama her test için bir uzmana ihtiyacınız yok, bu yüzden her gün zamandan ve paradan tasarruf edeceksiniz." },
+        { "who": "Buyer", "en": "How long does installation take?", "tr": "Kurulum ne kadar sürüyor?" },
+        { "who": "Me", "en": "About an hour, and we train your staff on the same day.", "tr": "Yaklaşık bir saat ve personelinizi aynı gün eğitiyoruz." },
+        { "who": "Buyer", "en": "What happens if the device breaks down?", "tr": "Cihaz arızalanırsa ne olur?" },
+        { "who": "Me", "en": "It comes with a two-year warranty and remote support, and most problems can be fixed with a software update.", "tr": "İki yıl garanti ve uzaktan destekle geliyor; çoğu sorun da bir yazılım güncellemesiyle çözülebiliyor." },
+        { "who": "Buyer", "en": "Can we try it before we make a decision?", "tr": "Karar vermeden önce deneyebilir miyiz?" },
+        { "who": "Me", "en": "Of course, and if you're not happy after a free one-month trial, you can simply send it back.", "tr": "Tabii ki; bir aylık ücretsiz denemeden sonra memnun kalmazsanız cihazı geri gönderebilirsiniz." }
+      ],
+      "vocab": [
+        { "en": "monthly fee", "tr": "aylık ücret", "ex": "There's a monthly software fee of 99 euros.", "def": "money you pay every month for a service" },
+        { "en": "save time and money", "tr": "zamandan ve paradan tasarruf etmek", "ex": "You'll save time and money every day.", "def": "to need less time and spend less money" },
+        { "en": "installation", "tr": "kurulum", "ex": "Installation takes about an hour.", "def": "putting a machine in place and making it ready to use" },
+        { "en": "train the staff", "tr": "personeli eğitmek", "ex": "We train your staff on the same day.", "def": "to teach employees how to do something" },
+        { "en": "break down", "tr": "arızalanmak, bozulmak", "ex": "What happens if the device breaks down?", "def": "(of a machine) to stop working" },
+        { "en": "warranty", "tr": "garanti", "ex": "It comes with a two-year warranty.", "def": "a promise to repair or replace a product if it breaks" },
+        { "en": "remote support", "tr": "uzaktan destek", "ex": "We offer remote support.", "def": "help that is given online or by phone, not in person" },
+        { "en": "free trial", "tr": "ücretsiz deneme", "ex": "We can set up a free one-month trial.", "def": "a period when you can use a product without paying" }
+      ],
+      "grammar": {
+        "title": "First conditional: if + present, will / can",
+        "tr": "Gerçekleşmesi mümkün durumlar için: If + present simple, will/can + fiil. Satışta müşteriye ne olacağını anlatmak için çok kullanılır.",
+        "examples": ["If you're not happy, you can send it back.", "If the device breaks down, we'll fix it remotely.", "If you buy it, you'll save time every day."]
+      },
+      "questions": [
+        { "q": "How much is the monthly software fee?", "options": ["99 euros per clinic", "4,000 euros", "Nothing in the first year"], "a": 0 },
+        { "q": "Why does the founder say the price is worth it?", "options": ["The device looks modern", "Clinics don't need an expert for every test", "It's the cheapest on the market"], "a": 1 },
+        { "q": "How long does installation take?", "options": ["About a day", "About a week", "About an hour"], "a": 2 },
+        { "q": "What can the hospital do if it's not happy after the trial?", "options": ["Ask for a discount", "Get a second device", "Extend the warranty", "Send the device back"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "There's a monthly software ___ of 99 euros.", "a": "fee", "hint": "ücret" },
+        { "s": "We train your ___ on the same day.", "a": "staff", "hint": "personel" },
+        { "s": "Most problems can be fixed with a software ___.", "a": "update", "hint": "güncelleme" }
+      ],
+      "order": [
+        { "a": "How long does installation take?" },
+        { "a": "It comes with a two-year warranty and remote support." }
+      ],
+      "translate": [
+        { "tr": "Her gün zamandan ve paradan tasarruf edeceksiniz.", "en": "You'll save time and money every day.", "keys": ["save time and money", "every day"] },
+        { "tr": "Memnun kalmazsanız cihazı geri gönderebilirsiniz.", "en": "If you're not happy, you can send the device back.", "keys": ["if you're not happy", "send"] }
+      ],
+      "roleplay": {
+        "persona": "Hospital buyer",
+        "personaTr": "Hastane satın alma yöneticisi",
+        "scene": "Yabancı bir özel hastanenin satın alma yöneticisiyle görüşüyorsun.",
+        "turns": [
+          { "ai": "We like your product. What does it cost?", "aiTr": "Ürününüzü beğendik. Fiyatı ne kadar?", "hint": "The device costs 4,000 euros, and there's a monthly software fee of 99 euros.", "keys": ["4,000", "monthly", "fee", "euros"] },
+          { "ai": "Hmm, that's expensive. Why should we pay more?", "aiTr": "Hmm, bu pahalı. Neden daha fazla ödeyelim?", "hint": "Because you don't need an expert for every test, so you'll save time and money every day.", "keys": ["expert", "save", "time and money"] },
+          { "ai": "What if it breaks down?", "aiTr": "Ya arızalanırsa?", "hint": "It comes with a two-year warranty and remote support, and most problems can be fixed with a software update.", "keys": ["warranty", "remote support", "software update"] },
+          { "ai": "Can we test it first?", "aiTr": "Önce test edebilir miyiz?", "hint": "Of course. We can set up a free one-month trial.", "keys": ["free", "trial", "of course"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Fiyat itirazını, veri güvenliği sorusunu ve servis endişesini profesyonelce karşılıyorsun.",
+      "text": [
+        { "who": "Buyer", "en": "We've been looking at your audiometer, and to be honest, the price is what's holding us back.", "tr": "Odyometrenizi inceliyoruz ve açıkçası bizi tutan şey fiyat." },
+        { "who": "Me", "en": "I understand: the device is 4,000 euros, plus a software subscription of 99 euros a month per clinic.", "tr": "Anlıyorum: Cihaz 4.000 euro, buna klinik başına ayda 99 euroluk yazılım aboneliği ekleniyor." },
+        { "who": "Buyer", "en": "That's considerably more than the conventional audiometers we currently use.", "tr": "Bu, şu anda kullandığımız klasik odyometrelerden hatırı sayılır ölçüde fazla." },
+        { "who": "Me", "en": "It is, but I'd say the upfront price is only part of the picture.", "tr": "Öyle, ama bence ilk ödenen fiyat resmin yalnızca bir parçası." },
+        { "who": "Me", "en": "If every test still needed an audiologist, I'd agree, but ours doesn't, so your audiologists can focus on the patients who really need them.", "tr": "Her test hâlâ bir odyolog gerektirseydi size katılırdım ama bizimki gerektirmiyor; böylece odyologlarınız onlara gerçekten ihtiyacı olan hastalara odaklanabilir." },
+        { "who": "Buyer", "en": "Our IT department will want to know how patient data is handled.", "tr": "BT departmanımız hasta verilerinin nasıl işlendiğini bilmek isteyecek." },
+        { "who": "Me", "en": "The AI runs on the device itself, so the data never has to leave your hospital, and it works offline too.", "tr": "Yapay zekâ cihazın kendi üzerinde çalışıyor, yani verilerin hastanenizden hiç çıkması gerekmiyor; ayrıca internetsiz de çalışıyor." },
+        { "who": "Buyer", "en": "And what if something went wrong after installation?", "tr": "Peki kurulumdan sonra bir şeyler ters giderse?" },
+        { "who": "Me", "en": "You'd be covered by a two-year warranty, and most issues can be resolved remotely with a software update.", "tr": "İki yıllık garanti kapsamında olursunuz ve çoğu sorun bir yazılım güncellemesiyle uzaktan çözülebiliyor." },
+        { "who": "Buyer", "en": "If we went ahead, how quickly could your team get us up and running?", "tr": "İlerlemeye karar verirsek ekibiniz bizi ne kadar hızlı çalışır hale getirebilir?" },
+        { "who": "Me", "en": "Installation would take about an hour and we'd train your staff the same day, but I'd suggest starting with a free one-month trial.", "tr": "Kurulum yaklaşık bir saat sürer ve personelinizi aynı gün eğitiriz, ama bir aylık ücretsiz denemeyle başlamanızı öneririm." }
+      ],
+      "vocab": [
+        { "en": "hold back", "tr": "geri tutmak, frenlemek", "ex": "The price is what's holding us back.", "def": "to stop someone from doing something" },
+        { "en": "upfront price", "tr": "peşin ödenen fiyat, ilk maliyet", "ex": "The upfront price is only part of the picture.", "def": "the amount you pay at the start" },
+        { "en": "software subscription", "tr": "yazılım aboneliği", "ex": "There's a software subscription of 99 euros a month.", "def": "a regular payment that lets you keep using software" },
+        { "en": "part of the picture", "tr": "resmin bir parçası", "ex": "Price is only part of the picture.", "def": "only one aspect of a situation" },
+        { "en": "handle data", "tr": "veriyi işlemek", "ex": "We need to know how patient data is handled.", "def": "to collect, store and use information" },
+        { "en": "be covered by a warranty", "tr": "garanti kapsamında olmak", "ex": "You're covered by a two-year warranty.", "def": "to have repairs paid for by the seller for a period of time" },
+        { "en": "resolve an issue", "tr": "bir sorunu çözmek", "ex": "Most issues can be resolved remotely.", "def": "to find a solution to a problem" },
+        { "en": "go ahead", "tr": "ilerlemek, karar verip başlamak", "ex": "If we went ahead, when could you start?", "def": "to decide to do something you have been considering" },
+        { "en": "up and running", "tr": "çalışır durumda", "ex": "We can get you up and running in a day.", "def": "working properly and in use" }
+      ],
+      "grammar": {
+        "title": "Second conditional: if + past, would",
+        "tr": "Gerçek dışı ya da şimdilik varsayımsal durumlar için: If + past simple, would + fiil. Satışta karşı tarafa baskı yapmadan 'diyelim ki' diye konuşmayı sağlar.",
+        "examples": ["If every test still needed an audiologist, I'd agree with you.", "If we went ahead, how quickly could your team get us up and running?", "If something went wrong, you'd be covered by a two-year warranty."]
+      },
+      "questions": [
+        { "q": "What is the buyer's main concern at the start?", "options": ["The size of the device", "The price", "The training", "The warranty"], "a": 1 },
+        { "q": "Why is the upfront price 'only part of the picture', according to the founder?", "options": ["The software is free", "Prices will fall next year", "No audiologist is needed for every test, so their time is freed up"], "a": 2 },
+        { "q": "Why should the IT department feel reassured?", "options": ["Patient data stays in the hospital because the AI runs on the device", "The data is stored in the cloud", "The device doesn't collect any data"], "a": 0 },
+        { "q": "What can we infer from the buyer's question 'If we went ahead…'?", "options": ["The buyer has already signed a contract", "The buyer is seriously considering a purchase", "The buyer has decided not to buy", "The buyer only wants a lower price"], "a": 1 },
+        { "q": "What does the founder suggest as a next step?", "options": ["A meeting with investors", "A larger order", "A discount", "A free one-month trial"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "To be honest, the price is what's holding us ___.", "a": "back", "hint": "geri (tutmak)" },
+        { "s": "Most issues can be ___ remotely with a software update.", "a": "resolved", "hint": "çözülmek" },
+        { "s": "If we ___ ahead, how quickly could your team get us up and running?", "a": "went", "hint": "ilerlemek (go ahead, geçmiş hâli)" }
+      ],
+      "order": [
+        { "a": "The upfront price is only part of the picture." },
+        { "a": "Your audiologists can focus on the patients who really need them." }
+      ],
+      "translate": [
+        { "tr": "Hasta verilerinin nasıl işlendiğini bilmek isteyecekler.", "en": "They'll want to know how patient data is handled.", "keys": ["patient data", "handled"] },
+        { "tr": "Her test hâlâ bir odyolog gerektirseydi size katılırdım.", "en": "If every test still needed an audiologist, I'd agree with you.", "keys": ["needed", "I'd agree"] }
+      ],
+      "roleplay": {
+        "persona": "Procurement manager",
+        "personaTr": "Hastane satın alma müdürü",
+        "scene": "Yabancı bir özel hastanenin satın alma müdürü fiyat, veri güvenliği ve servis konusunda seni zorluyor.",
+        "turns": [
+          { "ai": "Frankly, your price is higher than we expected. Can you justify it?", "aiTr": "Açıkçası fiyatınız beklediğimizden yüksek. Bunu gerekçelendirebilir misiniz?", "hint": "I'd say the upfront price is only part of the picture. Since no audiologist is needed for every test, your audiologists can focus on the patients who really need them.", "keys": ["part of the picture", "audiologist", "focus"] },
+          { "ai": "How is patient data handled?", "aiTr": "Hasta verileri nasıl işleniyor?", "hint": "The AI runs on the device itself, so the data never has to leave your hospital, and it works offline.", "keys": ["on the device", "offline", "leave your hospital"] },
+          { "ai": "What would happen if the device stopped working?", "aiTr": "Cihaz çalışmayı durdursaydı ne olurdu?", "hint": "You'd be covered by a two-year warranty, and most issues can be resolved remotely with a software update.", "keys": ["warranty", "remotely", "software update"] },
+          { "ai": "If we went ahead, what would the next step be?", "aiTr": "İlerlemeye karar verirsek bir sonraki adım ne olurdu?", "hint": "I'd suggest starting with a free one-month trial. Installation would take about an hour, and we'd train your staff the same day.", "keys": ["trial", "installation", "train your staff"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Satın alma direktörünün fiyat, veri koruma ve devreye alma kaygılarını ikna edici ve resmî bir dille karşılıyorsun.",
+      "text": [
+        { "who": "Buyer", "en": "I'll be candid: on paper, your audiometer looks expensive next to the conventional units we've been using for years.", "tr": "Açık konuşacağım: Kâğıt üzerinde odyometreniz, yıllardır kullandığımız klasik cihazların yanında pahalı görünüyor." },
+        { "who": "Me", "en": "That's a fair point, and I'd rather address it head-on than gloss over it.", "tr": "Haklı bir nokta ve bunu geçiştirmek yerine doğrudan ele almayı tercih ederim." },
+        { "who": "Me", "en": "The device itself is €4,000, with a software subscription of €99 per month per clinic.", "tr": "Cihazın kendisi 4.000 euro, buna klinik başına ayda 99 euroluk yazılım aboneliği ekleniyor." },
+        { "who": "Me", "en": "What really shifts the economics, though, is that the test runs without an audiologist in the room.", "tr": "Ancak ekonomik dengeyi asıl değiştiren şey, testin odada bir odyolog olmadan yapılabilmesi." },
+        { "who": "Me", "en": "Freed from routine screenings, your specialists can focus on the complex cases that genuinely require their expertise.", "tr": "Rutin taramalardan kurtulan uzmanlarınız, gerçekten uzmanlıklarını gerektiren karmaşık vakalara odaklanabilir." },
+        { "who": "Buyer", "en": "Our data protection officer will have concerns about patient data leaving the building.", "tr": "Veri koruma görevlimiz, hasta verilerinin binadan çıkması konusunda kaygılanacaktır." },
+        { "who": "Me", "en": "They needn't worry, since the AI runs entirely on the device and the system works offline.", "tr": "Endişelenmelerine gerek yok, çünkü yapay zekâ tamamen cihaz üzerinde çalışıyor ve sistem internetsiz de çalışabiliyor." },
+        { "who": "Buyer", "en": "And how disruptive would the rollout be for our staff?", "tr": "Peki devreye alma süreci personelimizin işini ne kadar aksatır?" },
+        { "who": "Me", "en": "Hardly at all: installation takes about an hour, and we train your team on the same day.", "tr": "Neredeyse hiç: Kurulum yaklaşık bir saat sürüyor ve ekibinizi aynı gün eğitiyoruz." },
+        { "who": "Me", "en": "Should anything go wrong, you're covered by a two-year warranty, and most issues can be resolved remotely through a software update.", "tr": "Bir sorun çıkarsa iki yıllık garanti kapsamındasınız ve çoğu sorun bir yazılım güncellemesiyle uzaktan çözülebiliyor." },
+        { "who": "Buyer", "en": "It all sounds compelling, but I'd need to see it working in our own setting before taking it to the board.", "tr": "Hepsi ikna edici görünüyor ama yönetim kuruluna götürmeden önce cihazı kendi ortamımızda çalışırken görmem gerekir." },
+        { "who": "Me", "en": "Which is exactly why we offer a free one-month trial, so you can judge it on your own patients rather than on our word.", "tr": "Tam da bu yüzden bir aylık ücretsiz deneme sunuyoruz; böylece bizim sözümüze göre değil, kendi hastalarınızla değerlendirebilirsiniz." }
+      ],
+      "vocab": [
+        { "en": "be candid", "tr": "açık sözlü olmak", "ex": "I'll be candid with you about the price.", "def": "to speak honestly and directly" },
+        { "en": "address something head-on", "tr": "bir konuyu doğrudan ele almak", "ex": "I'd rather address the price head-on.", "def": "to deal with a problem directly, without avoiding it" },
+        { "en": "gloss over", "tr": "geçiştirmek, üstünkörü geçmek", "ex": "I don't want to gloss over your concerns.", "def": "to avoid dealing with something by treating it as unimportant" },
+        { "en": "shift the economics", "tr": "ekonomik dengeyi değiştirmek", "ex": "Removing the need for an expert shifts the economics.", "def": "to change how costs and benefits compare" },
+        { "en": "routine screening", "tr": "rutin tarama", "ex": "Your specialists are freed from routine screenings.", "def": "a standard test done on many people to find problems early" },
+        { "en": "data protection officer", "tr": "veri koruma görevlisi", "ex": "Our data protection officer will ask about patient data.", "def": "the person responsible for how an organization handles personal data" },
+        { "en": "rollout", "tr": "devreye alma, yaygınlaştırma", "ex": "The rollout will take less than a day.", "def": "the process of introducing a new product or system" },
+        { "en": "disruptive", "tr": "işleri aksatan", "ex": "How disruptive would the installation be?", "def": "causing problems that interrupt normal activity" },
+        { "en": "compelling", "tr": "ikna edici", "ex": "It all sounds compelling.", "def": "very convincing" },
+        { "en": "take something to the board", "tr": "bir şeyi yönetim kuruluna götürmek", "ex": "I'd need to see it working before taking it to the board.", "def": "to present a proposal to the people who make final decisions" }
+      ],
+      "grammar": {
+        "title": "Inverted conditionals: Should anything go wrong…",
+        "tr": "Resmî dilde 'If anything goes wrong' yerine 'Should anything go wrong' denebilir: 'if' düşer, 'should' başa gelir ve fiil yalın kalır. Kibar ve profesyonel bir tondur.",
+        "examples": ["Should anything go wrong, you're covered by a two-year warranty.", "Should you need more training, we can arrange it remotely.", "Should the trial go well, we can discuss a full rollout."]
+      },
+      "questions": [
+        { "q": "How does the founder respond to the price objection?", "options": ["By offering an immediate discount", "By acknowledging it and reframing the costs", "By changing the subject", "By criticizing other audiometers"], "a": 1 },
+        { "q": "What does the founder imply about specialists' time today?", "options": ["Much of it goes on routine tests the device could handle", "It is cheaper than the device", "It won't be affected by the device"], "a": 0 },
+        { "q": "Why should the data protection officer be reassured?", "options": ["The data is encrypted in the cloud", "The hospital doesn't need to store any results", "The AI runs on the device and the system works offline"], "a": 2 },
+        { "q": "What is the buyer's attitude by the end of the conversation?", "options": ["Dismissive", "Annoyed", "Fully convinced", "Interested but cautious"], "a": 3 },
+        { "q": "What does 'rather than on our word' suggest?", "options": ["The founder doesn't trust the buyer", "The founder is confident the product can prove itself", "The trial will cost extra", "The founder has no data"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "I'd rather address it ___ than gloss over it.", "a": "head-on", "hint": "doğrudan" },
+        { "s": "___ anything go wrong, you're covered by a two-year warranty.", "a": "Should", "hint": "olur da (devrik koşul)" },
+        { "s": "___ from routine screenings, your specialists can focus on complex cases.", "a": "Freed", "hint": "kurtulan, serbest kalan" },
+        { "s": "How ___ would the rollout be for our staff?", "a": "disruptive", "hint": "işleri aksatan" }
+      ],
+      "order": [
+        { "a": "Installation takes about an hour." },
+        { "a": "The AI runs entirely on the device." }
+      ],
+      "translate": [
+        { "tr": "Kâğıt üzerinde odyometreniz pahalı görünüyor.", "en": "On paper, your audiometer looks expensive.", "keys": ["on paper", "looks expensive"] },
+        { "tr": "Ekonomik dengeyi asıl değiştiren şey, testin odada bir uzman olmadan yapılabilmesi.", "en": "What really shifts the economics is that the test runs without an expert in the room.", "keys": ["what really shifts", "without an expert"] }
+      ],
+      "roleplay": {
+        "persona": "Head of Procurement",
+        "personaTr": "Satın alma direktörü",
+        "scene": "Uluslararası bir özel hastane grubunun satın alma direktörü, teklifini yönetim kuruluna götürmeden önce sorguluyor.",
+        "turns": [
+          { "ai": "I'll be candid: next to conventional audiometers, your price is hard to justify. Convince me.", "aiTr": "Açık konuşacağım: Klasik odyometrelerin yanında fiyatınızı savunmak zor. Beni ikna edin.", "hint": "That's a fair point, but what really shifts the economics is that the test runs without an audiologist in the room, so your specialists can focus on complex cases.", "keys": ["shifts the economics", "without an audiologist", "complex cases"] },
+          { "ai": "Our data protection officer will ask where patient data goes. What do I tell them?", "aiTr": "Veri koruma görevlimiz hasta verilerinin nereye gittiğini soracak. Ona ne söyleyeyim?", "hint": "Tell them the AI runs entirely on the device and the system works offline, so patient data never has to leave the building.", "keys": ["on the device", "offline", "leave the building"] },
+          { "ai": "How reliable are the results compared with a human audiologist?", "aiTr": "Sonuçlar bir odyologla karşılaştırıldığında ne kadar güvenilir?", "hint": "In a blind study at two university hospitals, our results matched a trained audiologist's in 94% of cases.", "keys": ["94", "blind study", "matched"] },
+          { "ai": "Supposing we went ahead, what would you propose as a first step?", "aiTr": "Diyelim ki ilerlemeye karar verdik, ilk adım olarak ne önerirsiniz?", "hint": "I'd propose a free one-month trial, so you can judge it in your own setting before taking it to the board.", "keys": ["trial", "own setting", "board"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Her satıcının aynı vaatleri verdiğini düşünen deneyimli ve şüpheci bir satın alma direktörünü, ölçülü ve esprili bir dille ikna ediyorsun.",
+      "text": [
+        { "who": "Buyer", "en": "I'll spare you the small talk: every vendor who walks through that door tells me their device will pay for itself.", "tr": "Lafı uzatmayacağım: O kapıdan giren her satıcı bana cihazının kendini amorti edeceğini söylüyor." },
+        { "who": "Me", "en": "I'd be surprised if they didn't, so let me try to earn the claim rather than simply assert it.", "tr": "Söylemeselerdi şaşırırdım; o yüzden bu iddiayı öylece ileri sürmek yerine hak ettiğimi göstermeye çalışayım." },
+        { "who": "Me", "en": "The unit is €4,000, with a software subscription of €99 a month per clinic, which, admittedly, puts us well above a conventional audiometer on paper.", "tr": "Cihaz 4.000 euro, buna klinik başına ayda 99 euroluk yazılım aboneliği ekleniyor; kabul etmek gerekir ki bu, bizi kâğıt üzerinde klasik bir odyometrenin epey üstüne koyuyor." },
+        { "who": "Me", "en": "Where the comparison starts to tilt, though, is staffing: the test runs in under ten minutes with no audiologist in the room.", "tr": "Ancak karşılaştırmanın lehimize dönmeye başladığı yer personel: Test, odada odyolog olmadan on dakikadan kısa sürede tamamlanıyor." },
+        { "who": "Me", "en": "In other words, your specialists stop spending their days on routine screenings and get back to the cases that genuinely warrant their expertise.", "tr": "Başka bir deyişle uzmanlarınız günlerini rutin taramalarla geçirmeyi bırakıp gerçekten uzmanlık gerektiren vakalara dönüyor." },
+        { "who": "Buyer", "en": "That's all very well, but our data protection officer will have my head if patient data ends up on some server abroad.", "tr": "Bunlar güzel de hasta verileri yurt dışında bir sunucuya düşerse veri koruma görevlimiz kellemi alır." },
+        { "who": "Me", "en": "Then you can set their mind at rest: the AI runs entirely on the device, so nothing needs to leave your network, and it works offline to boot.", "tr": "O zaman içini rahatlatabilirsiniz: Yapay zekâ tamamen cihaz üzerinde çalışıyor, yani hiçbir şeyin ağınızdan çıkması gerekmiyor; üstelik internetsiz de çalışıyor." },
+        { "who": "Buyer", "en": "And when it inevitably breaks down at the worst possible moment?", "tr": "Peki kaçınılmaz olarak en kötü anda bozulduğunda?" },
+        { "who": "Me", "en": "You'd be covered by a two-year warranty, and in our experience most issues are resolved remotely with a software update before anyone has to call a technician.", "tr": "İki yıllık garanti kapsamında olursunuz ve deneyimimize göre çoğu sorun, kimse teknisyen çağırmak zorunda kalmadan bir yazılım güncellemesiyle uzaktan çözülüyor." },
+        { "who": "Buyer", "en": "Even so, I'd want to see it hold up in our own clinics before putting my name to anything.", "tr": "Yine de herhangi bir şeye imza atmadan önce cihazın kendi kliniklerimizde ayakta kaldığını görmek isterim." },
+        { "who": "Me", "en": "Which is precisely why we offer a free one-month trial: installation takes about an hour, and we train your staff the same day.", "tr": "Tam da bu yüzden bir aylık ücretsiz deneme sunuyoruz: Kurulum yaklaşık bir saat sürüyor ve personelinizi aynı gün eğitiyoruz." },
+        { "who": "Me", "en": "If it doesn't earn its keep in that month, by all means send it back, no hard feelings.", "tr": "O ay içinde masrafına değmezse lütfen geri gönderin, hiç gönül koymayız." }
+      ],
+      "vocab": [
+        { "en": "spare someone the small talk", "tr": "lafı uzatmamak, sohbeti atlamak", "ex": "Let me spare you the small talk and get to the price.", "def": "to skip polite conversation and get to the point" },
+        { "en": "pay for itself", "tr": "kendini amorti etmek", "ex": "Every vendor says their device will pay for itself.", "def": "to save or earn as much money as it cost" },
+        { "en": "tilt", "tr": "(denge) bir tarafa kaymak", "ex": "The comparison starts to tilt in our favor when you look at staffing.", "def": "to start to favor one side" },
+        { "en": "warrant", "tr": "gerektirmek, hak etmek", "ex": "Only complex cases warrant a specialist's time.", "def": "to make something necessary or deserved" },
+        { "en": "have someone's head", "tr": "birinin kellesini almak", "ex": "Our data protection officer will have my head.", "def": "(informal) to punish or blame someone severely" },
+        { "en": "set someone's mind at rest", "tr": "birinin içini rahatlatmak", "ex": "This should set your mind at rest.", "def": "to stop someone from worrying" },
+        { "en": "to boot", "tr": "üstelik, cabası", "ex": "It's fast, and it works offline to boot.", "def": "as well; in addition" },
+        { "en": "hold up", "tr": "dayanmak, sağlam çıkmak", "ex": "I want to see it hold up in our own clinics.", "def": "to remain strong or valid when tested" },
+        { "en": "earn its keep", "tr": "masrafına değmek, hakkını vermek", "ex": "If it doesn't earn its keep, send it back.", "def": "to be worth the money spent on it" },
+        { "en": "no hard feelings", "tr": "gönül koymak yok", "ex": "If you decide against it, no hard feelings.", "def": "used to say you won't be upset or offended" }
+      ],
+      "grammar": {
+        "title": "Conceding a point without losing ground",
+        "tr": "'Admittedly', 'in our experience', 'I'd be surprised if…' gibi ifadelerle karşı tarafın haklı olduğu noktayı kabul eder, yine de kendi argümanını güçlü tutarsın. Şüpheci alıcılar karşısında güven kazandırır.",
+        "examples": ["I'd be surprised if they didn't.", "Admittedly, it puts us well above a conventional audiometer on paper.", "In our experience, most issues are resolved remotely."]
+      },
+      "questions": [
+        { "q": "What is the tone of the buyer's opening line?", "options": ["Warm and enthusiastic", "Wearily skeptical", "Openly hostile", "Confused"], "a": 1 },
+        { "q": "What does the founder mean by 'earn the claim rather than simply assert it'?", "options": ["Back it up with concrete reasons", "Repeat it more confidently", "Lower the price", "Avoid making any claims"], "a": 0 },
+        { "q": "According to the founder, where does the device's real value lie?", "options": ["Its low purchase price", "Its design", "Freeing specialists from routine screenings", "Its cloud storage"], "a": 2 },
+        { "q": "What does the buyer imply with 'when it inevitably breaks down at the worst possible moment'?", "options": ["The device has already failed in their hospital", "They don't need a warranty", "They want a discount", "Experience tells them all equipment fails eventually, so support matters"], "a": 3 },
+        { "q": "What attitude does the founder's final line convey?", "options": ["Desperation to close the deal", "Quiet confidence in the product", "Indifference to the sale", "Irritation with the buyer"], "a": 1 }
+      ],
+      "gaps": [
+        { "s": "Every vendor tells me their device will pay for ___.", "a": "itself", "hint": "kendini (amorti etmek)" },
+        { "s": "Your specialists get back to the cases that genuinely ___ their expertise.", "a": "warrant", "hint": "gerektirmek" },
+        { "s": "Then you can set their mind at ___.", "a": "rest", "hint": "rahat (içini rahatlatmak)" },
+        { "s": "If it doesn't earn its ___ in that month, send it back.", "a": "keep", "hint": "masrafına değmek (earn its …)" }
+      ],
+      "order": [
+        { "a": "I'd want to see it hold up in our clinics." },
+        { "a": "Nothing needs to leave your network." }
+      ],
+      "translate": [
+        { "tr": "Kabul etmek gerekir ki kâğıt üzerinde klasik bir odyometrenin epey üstündeyiz.", "en": "Admittedly, on paper we're well above a conventional audiometer.", "keys": ["admittedly", "on paper", "well above"] },
+        { "tr": "Üstelik internetsiz de çalışıyor.", "en": "It works offline to boot.", "keys": ["offline", "to boot"] },
+        { "tr": "Masrafına değmezse geri gönderin.", "en": "If it doesn't earn its keep, send it back.", "keys": ["earn its keep", "send it back"] }
+      ],
+      "roleplay": {
+        "persona": "Procurement director",
+        "personaTr": "Satın alma direktörü",
+        "scene": "Deneyimli ve şüpheci bir satın alma direktörü her satıcının aynı vaatleri verdiğini düşünüyor; onu somut gerekçelerle ikna etmelisin.",
+        "turns": [
+          { "ai": "Every vendor tells me their kit pays for itself. Why should I believe you're any different?", "aiTr": "Her satıcı bana ekipmanının kendini amorti ettiğini söylüyor. Sizin farklı olduğunuza neden inanayım?", "hint": "Fair enough, so let me earn the claim: the test runs in under ten minutes with no audiologist in the room, which frees your specialists for the cases that genuinely warrant their expertise.", "keys": ["no audiologist", "under ten minutes", "warrant", "specialists"] },
+          { "ai": "Our data protection officer will have my head if patient data leaves the building.", "aiTr": "Hasta verileri binadan çıkarsa veri koruma görevlimiz kellemi alır.", "hint": "Then you can set their mind at rest: the AI runs entirely on the device, so nothing needs to leave your network, and it works offline to boot.", "keys": ["on the device", "mind at rest", "offline", "leave your network"] },
+          { "ai": "And when it breaks down at the worst possible moment, as these things do?", "aiTr": "Peki bu tür cihazların hep yaptığı gibi en kötü anda bozulduğunda?", "hint": "You'd be covered by a two-year warranty, and in our experience most issues are resolved remotely with a software update.", "keys": ["two-year warranty", "remotely", "software update"] },
+          { "ai": "I'm not putting my name to anything until I've seen it in our own clinics.", "aiTr": "Kendi kliniklerimizde görmeden hiçbir şeye imza atmam.", "hint": "Nor would I expect you to, which is precisely why we offer a free one-month trial; if it doesn't earn its keep, send it back.", "keys": ["trial", "earn its keep", "send it back"] }
+        ]
+      }
+    }
+  }
+}

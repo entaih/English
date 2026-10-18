@@ -1,0 +1,372 @@
+{
+  "id": "li-02",
+  "topic": "life",
+  "title": "Why People Say No (and How to Change It)",
+  "titleTr": "İnsanlar Neden Hayır Der (ve Bu Nasıl Değişir)",
+  "levels": {
+    "A1": {
+      "intro": "Müşteriler neden hayır der? Üç nedeni basit cümlelerle anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "Sometimes a customer says no to me.", "tr": "Bazen bir müşteri bana hayır der." },
+        { "who": "Me", "en": "There are three big reasons.", "tr": "Bunun üç büyük nedeni var." },
+        { "who": "Me", "en": "First, they do not trust me yet.", "tr": "Birincisi, bana henüz güvenmiyorlar." },
+        { "who": "Me", "en": "Second, they do not understand my product.", "tr": "İkincisi, ürünümü anlamıyorlar." },
+        { "who": "Me", "en": "Third, the time is not right for them.", "tr": "Üçüncüsü, zaman onlar için uygun değil." },
+        { "who": "Me", "en": "I answer emails fast, and my words are simple.", "tr": "E-postalara hızlı cevap veriyorum ve kelimelerim basit." },
+        { "who": "Me", "en": "A no today is often a not yet.", "tr": "Bugünkü bir 'hayır' çoğu zaman 'henüz değil' demektir." },
+        { "who": "Me", "en": "I wait three months, and then I ask again.", "tr": "Üç ay bekliyorum, sonra tekrar soruyorum." }
+      ],
+      "vocab": [
+        { "en": "say no", "tr": "hayır demek", "ex": "Sometimes a customer says no." },
+        { "en": "reason", "tr": "neden, sebep", "ex": "There are three big reasons." },
+        { "en": "trust", "tr": "güvenmek", "ex": "They do not trust me yet." },
+        { "en": "understand", "tr": "anlamak", "ex": "They do not understand my product." },
+        { "en": "not yet", "tr": "henüz değil", "ex": "A no today is often a not yet." },
+        { "en": "ask again", "tr": "tekrar sormak", "ex": "I wait, and then I ask again." }
+      ],
+      "grammar": {
+        "title": "Present simple: do not",
+        "tr": "Olumsuz cümle kurmak için 'do not' (kısaca don't) + fiil kullanılır: I/you/we/they do not trust. He/she/it ile 'does not' kullanılır.",
+        "examples": ["They do not trust me yet.", "They do not understand my product.", "The customer does not say yes."]
+      },
+      "questions": [
+        { "q": "How many big reasons are there?", "options": ["Two", "Three", "Five"], "a": 1 },
+        { "q": "What does the speaker do after three months?", "options": ["Asks again", "Stops", "Sells the company"], "a": 0 },
+        { "q": "How are the speaker's words?", "options": ["Long", "Difficult", "Simple"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "There are three big ___.", "a": "reasons", "hint": "nedenler" },
+        { "s": "They do not ___ me yet.", "a": "trust", "hint": "güvenmek" },
+        { "s": "I wait three months, and then I ask ___.", "a": "again", "hint": "tekrar" }
+      ],
+      "order": [
+        { "a": "There are three big reasons." },
+        { "a": "A no today is often a not yet." }
+      ],
+      "translate": [
+        { "tr": "Bana henüz güvenmiyorlar.", "en": "They do not trust me yet.", "keys": ["trust", "yet"] },
+        { "tr": "Üç ay sonra tekrar soruyorum.", "en": "I ask again in three months.", "keys": ["ask again", "three months"] }
+      ],
+      "roleplay": {
+        "persona": "Clinic owner",
+        "personaTr": "Klinik sahibi",
+        "scene": "Bir klinik sahibi cihazına 'şimdi değil' diyor. Nedenini öğrenmeye çalışıyorsun.",
+        "turns": [
+          { "ai": "Your device is nice, but not now.", "aiTr": "Cihazınız güzel ama şimdi değil.", "hint": "I understand. What is your big problem today?", "keys": ["understand", "problem", "today"] },
+          { "ai": "Our patients wait six weeks for a test.", "aiTr": "Hastalarımız bir test için altı hafta bekliyor.", "hint": "That is a long time. You can try the device free for one month.", "keys": ["try", "free", "one month", "long"] },
+          { "ai": "Hmm. I need time to think.", "aiTr": "Hmm. Düşünmek için zamana ihtiyacım var.", "hint": "No problem. I can write to you next week.", "keys": ["no problem", "next week", "write"] }
+        ]
+      }
+    },
+    "A2": {
+      "intro": "İnsanların neden hayır dediğini ve bir 'hayır'ın nasıl 'evet'e dönüştüğünü anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "When a customer says no, it is usually not about the product.", "tr": "Bir müşteri hayır dediğinde, bu genellikle ürünle ilgili değildir." },
+        { "who": "Me", "en": "People say no for three reasons: trust, understanding and timing.", "tr": "İnsanlar üç nedenle hayır der: güven, anlama ve zamanlama." },
+        { "who": "Me", "en": "They need to trust you, so small things are important.", "tr": "Size güvenmeleri gerekir, bu yüzden küçük şeyler önemlidir." },
+        { "who": "Me", "en": "A quick reply to an email is better than a big office.", "tr": "Bir e-postaya hızlı cevap vermek, büyük bir ofisten daha iyidir." },
+        { "who": "Me", "en": "They also need to understand you, so I use simple words.", "tr": "Sizi anlamaları da gerekir, bu yüzden basit kelimeler kullanırım." },
+        { "who": "Me", "en": "People change only when the old way becomes too painful.", "tr": "İnsanlar ancak eski yöntem fazla zahmetli hale gelince değişir." },
+        { "who": "Me", "en": "Last year, one clinic said no to us.", "tr": "Geçen yıl bir klinik bize hayır dedi." },
+        { "who": "Me", "en": "Three months later, their waiting list was much longer.", "tr": "Üç ay sonra bekleme listeleri çok daha uzundu." },
+        { "who": "Me", "en": "We stayed in contact, asked again and got a yes.", "tr": "İletişimde kaldık, tekrar sorduk ve bir 'evet' aldık." }
+      ],
+      "vocab": [
+        { "en": "reason", "tr": "neden, sebep", "ex": "People say no for three reasons." },
+        { "en": "trust", "tr": "güvenmek, güven", "ex": "They need to trust you first." },
+        { "en": "quick reply", "tr": "hızlı cevap", "ex": "A quick reply to an email builds trust." },
+        { "en": "timing", "tr": "zamanlama", "ex": "This time the timing was right." },
+        { "en": "painful", "tr": "zahmetli, can sıkıcı", "ex": "The old way became too painful." },
+        { "en": "waiting list", "tr": "bekleme listesi", "ex": "Their waiting list was much longer." },
+        { "en": "stay in contact", "tr": "iletişimde kalmak", "ex": "We stayed in contact with the clinic." }
+      ],
+      "grammar": {
+        "title": "Past simple: what happened",
+        "tr": "Geçmişte olmuş ve bitmiş olaylar için past simple kullanılır. Düzenli fiillere -ed eklenir (stayed, asked); bazı fiiller düzensizdir (say → said, get → got, is → was).",
+        "examples": ["Last year, one clinic said no to us.", "We stayed in contact and asked again.", "Their waiting list was much longer."]
+      },
+      "questions": [
+        { "q": "What is usually NOT the reason for a 'no'?", "options": ["Trust", "Timing", "The product"], "a": 2 },
+        { "q": "What is better than a big office?", "options": ["A quick reply to an email", "A long contract", "An expensive website"], "a": 0 },
+        { "q": "What happened to the clinic's waiting list?", "options": ["It was shorter", "It was much longer", "It stopped"], "a": 1 },
+        { "q": "What did the team do after the first 'no'?", "options": ["They forgot the clinic", "They lowered the price", "They stayed in contact"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "People say no for three ___.", "a": "reasons", "hint": "nedenler" },
+        { "s": "A quick ___ to an email is better than a big office.", "a": "reply", "hint": "cevap" },
+        { "s": "Three months later, their waiting ___ was much longer.", "a": "list", "hint": "liste" }
+      ],
+      "order": [
+        { "a": "Last year one clinic said no to us." },
+        { "a": "We stayed in contact and asked again." }
+      ],
+      "translate": [
+        { "tr": "Zamanlama sonunda doğruydu.", "en": "The timing was finally right.", "keys": ["timing", "right"] },
+        { "tr": "Basit kelimeler kullanırım çünkü insanların beni anlaması gerekir.", "en": "I use simple words because people need to understand me.", "keys": ["simple words", "understand"] }
+      ],
+      "roleplay": {
+        "persona": "Hesitant clinic owner",
+        "personaTr": "Kararsız klinik sahibi",
+        "scene": "Klinik sahibi 'şimdi değil' diyor. Gerçek nedeni bulmaya ve kapıyı açık tutmaya çalışıyorsun.",
+        "turns": [
+          { "ai": "I like your device, but I don't think we are ready.", "aiTr": "Cihazınızı beğendim ama hazır olduğumuzu sanmıyorum.", "hint": "I understand. Can I ask what your biggest problem is today?", "keys": ["understand", "biggest problem", "ask"] },
+          { "ai": "Our patients wait six weeks for a hearing test, but a new device is a risk.", "aiTr": "Hastalarımız işitme testi için altı hafta bekliyor ama yeni bir cihaz risk demek.", "hint": "Six weeks is a long time. You can try our device free for one month, so there is no risk.", "keys": ["try", "free", "one month", "no risk"] },
+          { "ai": "OK, I need to talk to my team first.", "aiTr": "Tamam, önce ekibimle konuşmam gerekiyor.", "hint": "Of course. I am going to send you a short email next week.", "keys": ["of course", "email", "next week"] }
+        ]
+      }
+    },
+    "B1": {
+      "intro": "İnsanların neden hayır dediğini ve bunu nasıl değiştirebileceğini anlatıyorsun: güven, anlaşılırlık ve zamanlama.",
+      "text": [
+        { "who": "Me", "en": "I have learned that when a customer says no, it is usually not about the product.", "tr": "Şunu öğrendim: bir müşteri hayır dediğinde, bu genellikle ürünle ilgili değildir." },
+        { "who": "Me", "en": "People say no for three main reasons: they don't trust you, they don't understand you, or the timing is wrong.", "tr": "İnsanlar üç ana nedenle hayır der: size güvenmezler, sizi anlamazlar ya da zamanlama yanlıştır." },
+        { "who": "Me", "en": "Trust comes from small signals, like a clear website, a quick reply or a customer who recommends you.", "tr": "Güven küçük işaretlerden gelir: net bir web sitesi, hızlı bir cevap ya da sizi tavsiye eden bir müşteri gibi." },
+        { "who": "Me", "en": "Understanding comes from simple language: if a buyer needs an engineer to understand your pitch, you have already lost.", "tr": "Anlaşılmak sade bir dilden geçer: bir alıcı sunumunuzu anlamak için mühendise ihtiyaç duyuyorsa, zaten kaybetmişsinizdir." },
+        { "who": "Me", "en": "Timing is about pain, because people only change when the old way becomes too painful.", "tr": "Zamanlama sıkıntıyla ilgilidir, çünkü insanlar ancak eski yöntem fazla zahmetli hale gelince değişir." },
+        { "who": "Me", "en": "That's why I ask myself three questions before every meeting.", "tr": "Bu yüzden her toplantıdan önce kendime üç soru sorarım." },
+        { "who": "Me", "en": "Why should they trust me, will they understand me in one minute, and what is their pain today?", "tr": "Bana neden güvensinler, beni bir dakikada anlayacaklar mı ve bugünkü sıkıntıları ne?" },
+        { "who": "Me", "en": "Last year, a clinic said no to us, but we stayed in contact and asked again three months later.", "tr": "Geçen yıl bir klinik bize hayır dedi, ama iletişimde kaldık ve üç ay sonra tekrar sorduk." },
+        { "who": "Me", "en": "Their waiting list was much longer by then, and this time they said yes.", "tr": "O zamana kadar bekleme listeleri çok uzamıştı ve bu sefer evet dediler." },
+        { "who": "Me", "en": "In the end, a 'no' today is often just a 'not yet'.", "tr": "Sonuçta bugünkü bir 'hayır' çoğu zaman sadece 'henüz değil' demektir." }
+      ],
+      "vocab": [
+        { "en": "main reason", "tr": "ana neden", "ex": "People say no for three main reasons.", "def": "the most important cause of something" },
+        { "en": "signal", "tr": "işaret", "ex": "A quick reply is a strong signal.", "def": "something that shows what is true or what will happen" },
+        { "en": "recommend", "tr": "tavsiye etmek", "ex": "A happy customer recommends you to others.", "def": "to tell people that someone or something is good" },
+        { "en": "pitch", "tr": "tanıtım konuşması, sunum", "ex": "Can a buyer understand your pitch in one minute?", "def": "a short talk that tries to persuade someone to buy or invest" },
+        { "en": "timing", "tr": "zamanlama", "ex": "The timing was wrong last year.", "def": "the moment when something happens or is done" },
+        { "en": "painful", "tr": "zahmetli, can sıkıcı", "ex": "People change when the old way becomes too painful.", "def": "causing a lot of trouble or difficulty" },
+        { "en": "stay in contact", "tr": "iletişimde kalmak", "ex": "We stayed in contact and asked again.", "def": "to keep talking or writing to someone over time" },
+        { "en": "not yet", "tr": "henüz değil", "ex": "A 'no' today is often a 'not yet'.", "def": "not now, but maybe later" }
+      ],
+      "grammar": {
+        "title": "Present perfect vs past simple",
+        "tr": "Present perfect (have/has + V3), ne zaman olduğu önemli olmayan ve bugüne etkisi süren deneyimler için kullanılır: 'I have learned', 'you have already lost'. Belirli bir geçmiş zaman varsa (last year) past simple kullanılır.",
+        "examples": ["I have learned that a 'no' is usually not about the product.", "If a buyer needs an engineer, you have already lost.", "Last year, a clinic said no to us."]
+      },
+      "questions": [
+        { "q": "What are the three reasons people say no?", "options": ["Price, colour and size", "Weather, mood and luck", "Trust, understanding and timing"], "a": 2 },
+        { "q": "Where does trust come from?", "options": ["Small signals like quick replies", "Big offices", "Long contracts"], "a": 0 },
+        { "q": "Why did the clinic say yes the second time?", "options": ["The price was lower", "Their waiting list was much longer", "A new manager arrived"], "a": 1 },
+        { "q": "What does the speaker do before every meeting?", "options": ["Calls the customer", "Lowers the price", "Writes a long email", "Asks three questions"], "a": 3 }
+      ],
+      "gaps": [
+        { "s": "Trust comes from small ___, like a quick reply.", "a": "signals", "hint": "işaretler" },
+        { "s": "If a buyer needs an engineer to understand your ___, you have already lost.", "a": "pitch", "hint": "sunum" },
+        { "s": "We stayed in ___ and asked again three months later.", "a": "contact", "hint": "iletişim" }
+      ],
+      "order": [
+        { "a": "Understanding comes from simple language." },
+        { "a": "A no today is often just a not yet." }
+      ],
+      "translate": [
+        { "tr": "Bana neden güvensinler?", "en": "Why should they trust me?", "keys": ["why should", "trust"] },
+        { "tr": "Zamanlama yanlıştı ama iletişimde kaldık.", "en": "The timing was wrong, but we stayed in contact.", "keys": ["timing", "stayed in contact"] }
+      ],
+      "roleplay": {
+        "persona": "Hesitant clinic owner",
+        "personaTr": "Kararsız klinik sahibi",
+        "scene": "Klinik sahibi 'şimdi değil' diyor. Nedenini anlamaya ve iletişimi sürdürmeye çalışıyorsun.",
+        "turns": [
+          { "ai": "It's a nice device, but I don't think we're ready. Maybe next year.", "aiTr": "Güzel bir cihaz ama sanırım hazır değiliz. Belki seneye.", "hint": "I understand. Can I ask what the biggest problem is for you today?", "keys": ["understand", "biggest problem", "ask"] },
+          { "ai": "Honestly, our patients wait six weeks for a test. But a new device is a risk.", "aiTr": "Açıkçası hastalarımız test için altı hafta bekliyor. Ama yeni bir cihaz risk demek.", "hint": "Six weeks is a long wait. What if you try the device free for one month, with no risk?", "keys": ["what if", "free", "one month", "no risk"] },
+          { "ai": "Hmm. Let me think about it.", "aiTr": "Hmm. Bir düşüneyim.", "hint": "Of course. I'll stay in contact and send you a short email next week.", "keys": ["stay in contact", "email", "next week", "of course"] }
+        ]
+      }
+    },
+    "B2": {
+      "intro": "Bir 'hayır'ın arkasındaki üç nedeni ve reddedilen bir teklifi zamanla nasıl 'evet'e çevirdiğini anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "I've learned that when a customer says no, it's rarely about the product itself.", "tr": "Şunu öğrendim: bir müşteri hayır dediğinde, mesele nadiren ürünün kendisidir." },
+        { "who": "Me", "en": "In most cases, a 'no' can be traced back to one of three things: trust, understanding or timing.", "tr": "Çoğu durumda bir 'hayır'ın kökeninde üç şeyden biri vardır: güven, anlama ya da zamanlama." },
+        { "who": "Me", "en": "Trust tends to be built through small signals, such as a clear website, a quick reply or a customer who recommends you.", "tr": "Güven genellikle küçük işaretlerle oluşur: net bir web sitesi, hızlı bir cevap ya da sizi tavsiye eden bir müşteri gibi." },
+        { "who": "Me", "en": "Understanding depends on how simply you explain things.", "tr": "Anlaşılmak, işleri ne kadar sade anlattığınıza bağlıdır." },
+        { "who": "Me", "en": "If a buyer needed an engineer to make sense of your pitch, you would already have lost them.", "tr": "Bir alıcı sunumunuzu anlamak için bir mühendise ihtiyaç duysaydı, onu çoktan kaybetmiş olurdunuz." },
+        { "who": "Me", "en": "Timing, on the other hand, is all about pain: people only switch when the old way becomes too painful to live with.", "tr": "Zamanlama ise tamamen sıkıntıyla ilgilidir: insanlar ancak eski yöntem katlanılmaz hale gelince değişir." },
+        { "who": "Me", "en": "Before every meeting, I ask myself three questions: why should they trust me, will they get it in a minute, and what's hurting them today?", "tr": "Her toplantıdan önce kendime üç soru sorarım: bana neden güvensinler, bir dakikada anlarlar mı ve bugün canlarını sıkan ne?" },
+        { "who": "Me", "en": "Last year, a clinic that had shown real interest turned us down.", "tr": "Geçen yıl, gerçekten ilgi göstermiş bir klinik bizi geri çevirdi." },
+        { "who": "Me", "en": "We stayed in touch, though, and three months later their waiting list had grown so long that the timing was suddenly right.", "tr": "Yine de iletişimi koparmadık ve üç ay sonra bekleme listeleri o kadar uzamıştı ki zamanlama birden doğru hale geldi." },
+        { "who": "Me", "en": "When we asked again, they agreed almost immediately.", "tr": "Tekrar sorduğumuzda neredeyse hemen kabul ettiler." },
+        { "who": "Me", "en": "So I'd say a 'no' today is often just a 'not yet'.", "tr": "Bu yüzden bugünkü bir 'hayır'ın çoğu zaman sadece 'henüz değil' olduğunu söyleyebilirim." }
+      ],
+      "vocab": [
+        { "en": "turn someone down", "tr": "birini geri çevirmek", "ex": "A clinic turned us down last year.", "def": "to refuse an offer or a request" },
+        { "en": "be traced back to", "tr": "kökeni ...e dayanmak", "ex": "Most refusals can be traced back to trust.", "def": "to have a particular cause or starting point" },
+        { "en": "make sense of", "tr": "anlamlandırmak, çözmek", "ex": "The buyer couldn't make sense of the pitch.", "def": "to understand something that is difficult or unclear" },
+        { "en": "build trust", "tr": "güven oluşturmak", "ex": "Trust tends to be built through small signals.", "def": "to make people feel they can rely on you" },
+        { "en": "switch", "tr": "geçmek, değiştirmek", "ex": "People only switch when the old way hurts.", "def": "to change from one thing to another" },
+        { "en": "stay in touch", "tr": "irtibatta kalmak", "ex": "We stayed in touch for three months.", "def": "to keep communicating with someone" },
+        { "en": "waiting list", "tr": "bekleme listesi", "ex": "Their waiting list had grown very long.", "def": "a list of people who are waiting for something" },
+        { "en": "the timing is right", "tr": "zamanlama uygun", "ex": "Three months later, the timing was right.", "def": "it is a good moment to do something" }
+      ],
+      "grammar": {
+        "title": "The passive: focusing on the action",
+        "tr": "Passive (be + V3), eylemi kimin yaptığı değil eylemin kendisi önemli olduğunda kullanılır. 'Trust is built', 'can be traced back' gibi yapılar genel gözlemleri daha nesnel gösterir.",
+        "examples": ["Trust tends to be built through small signals.", "A 'no' can be traced back to one of three things.", "The offer was turned down last year."]
+      },
+      "questions": [
+        { "q": "According to the speaker, what is a 'no' rarely about?", "options": ["The timing", "The product itself", "Trust"], "a": 1 },
+        { "q": "Which trust signal is mentioned?", "options": ["A large office", "A famous investor", "A customer who recommends you", "A low price"], "a": 2 },
+        { "q": "What changed at the clinic in those three months?", "options": ["Their waiting list grew much longer", "They hired more audiologists", "Their budget doubled"], "a": 0 },
+        { "q": "What can we infer about the speaker's view of rejection?", "options": ["They lower the price immediately", "They treat a 'no' as final", "They see a 'no' as information and keep the door open"], "a": 2 }
+      ],
+      "gaps": [
+        { "s": "Last year, a clinic ___ us down.", "a": "turned", "hint": "geri çevirdi" },
+        { "s": "Most refusals can be ___ back to trust, understanding or timing.", "a": "traced", "hint": "kökeni bulunabilir" },
+        { "s": "People only ___ when the old way becomes too painful.", "a": "switch", "hint": "değiştirmek, geçmek" }
+      ],
+      "order": [
+        { "a": "Understanding depends on how simply you explain things." },
+        { "a": "We stayed in touch for three months." }
+      ],
+      "translate": [
+        { "tr": "Bir alıcı sunumunu anlamak için bir mühendise ihtiyaç duysaydı, onu çoktan kaybetmiş olurdun.", "en": "If a buyer needed an engineer to understand your pitch, you would already have lost them.", "keys": ["needed an engineer", "would already have lost"] },
+        { "tr": "Güven küçük işaretlerle oluşturulur.", "en": "Trust is built through small signals.", "keys": ["is built", "small signals"] }
+      ],
+      "roleplay": {
+        "persona": "Hesitant clinic owner",
+        "personaTr": "Kararsız klinik sahibi",
+        "scene": "Bir klinik sahibi ilgileniyor ama 'şimdilik değil' diyor. Asıl itirazı ortaya çıkarıp ilişkiyi canlı tutmalısın.",
+        "turns": [
+          { "ai": "I can see the value of your device, but I'm not sure this is the right moment for us.", "aiTr": "Cihazınızın değerini görüyorum ama bunun bizim için doğru zaman olduğundan emin değilim.", "hint": "That's completely fair. Could I ask what's causing you the most trouble at the moment?", "keys": ["fair", "most trouble", "at the moment", "could i ask"] },
+          { "ai": "Well, patients are waiting six weeks for a hearing test, but switching systems feels risky.", "aiTr": "Hastalar işitme testi için altı hafta bekliyor ama sistem değiştirmek riskli geliyor.", "hint": "I understand. If you could try the device free for a month, would that reduce the risk for you?", "keys": ["free for a month", "reduce the risk", "try"] },
+          { "ai": "Possibly. But I'd need to discuss it with my audiologists first.", "aiTr": "Olabilir. Ama önce odyologlarımla konuşmam gerekir.", "hint": "Of course. Shall I send you a short summary they can read, and follow up next week?", "keys": ["summary", "follow up", "next week"] }
+        ]
+      }
+    },
+    "C1": {
+      "intro": "Bir 'hayır'ın ardındaki gerçek nedenleri çözümleyip itirazları nasıl fırsata çevirdiğini incelikli bir dille anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "If there's one thing I've learned from selling, it's that a 'no' is rarely about the product.", "tr": "Satış yaparken öğrendiğim bir şey varsa, o da bir 'hayır'ın nadiren ürünle ilgili olduğudur." },
+        { "who": "Me", "en": "More often than not, it comes down to one of three things: trust, understanding or timing.", "tr": "Çoğu zaman mesele üç şeyden birine dayanır: güven, anlama ya da zamanlama." },
+        { "who": "Me", "en": "Trust is rarely won in a single meeting; it accumulates through small signals, like a clean website, a prompt reply or a customer willing to vouch for you.", "tr": "Güven nadiren tek bir toplantıda kazanılır; derli toplu bir web sitesi, hızlı bir cevap ya da size kefil olmaya hazır bir müşteri gibi küçük işaretlerle birikir." },
+        { "who": "Me", "en": "Understanding, meanwhile, hinges on clarity.", "tr": "Anlaşılmak ise netliğe bağlıdır." },
+        { "who": "Me", "en": "Should a buyer need an engineer to decipher your pitch, you've already lost them.", "tr": "Bir alıcı sunumunuzu çözmek için mühendise ihtiyaç duyuyorsa, onu çoktan kaybetmişsinizdir." },
+        { "who": "Me", "en": "Timing is the hardest to read, because what ultimately drives change is pain.", "tr": "Zamanlamayı okumak en zorudur, çünkü değişimi asıl tetikleyen şey sıkıntıdır." },
+        { "who": "Me", "en": "People rarely abandon a familiar process until it becomes more painful to keep it than to replace it.", "tr": "İnsanlar alışık oldukları bir süreci, onu sürdürmek değiştirmekten daha zahmetli hale gelene kadar nadiren bırakır." },
+        { "who": "Me", "en": "Before every meeting, then, I put three questions to myself: why should they trust me, will they grasp this in a minute, and where does it hurt today?", "tr": "Bu yüzden her toplantıdan önce kendime üç soru sorarım: bana neden güvensinler, bunu bir dakikada kavrayabilirler mi ve bugün canlarını sıkan ne?" },
+        { "who": "Me", "en": "Last year, a clinic that had seemed genuinely keen turned us down.", "tr": "Geçen yıl, gerçekten istekli görünen bir klinik bizi geri çevirdi." },
+        { "who": "Me", "en": "Having stayed in touch, we asked again three months later, by which point their waiting list had spiralled and the timing was finally right.", "tr": "İletişimi koparmadığımız için üç ay sonra tekrar sorduk; o noktada bekleme listeleri kontrolden çıkmıştı ve zamanlama nihayet doğruydu." },
+        { "who": "Me", "en": "Not only does a 'no' rarely mean 'never', but it often tells you exactly what to fix.", "tr": "Bir 'hayır' nadiren 'asla' anlamına gelmekle kalmaz, çoğu zaman tam olarak neyi düzeltmeniz gerektiğini de söyler." },
+        { "who": "Me", "en": "A 'no' today, in other words, is very often just a 'not yet'.", "tr": "Başka bir deyişle, bugünkü bir 'hayır' çoğu zaman sadece bir 'henüz değil'dir." }
+      ],
+      "vocab": [
+        { "en": "come down to", "tr": "özünde ...e dayanmak", "ex": "Most refusals come down to trust, understanding or timing.", "def": "to be mainly about one particular thing" },
+        { "en": "vouch for", "tr": "kefil olmak", "ex": "A customer willing to vouch for you is worth more than an advert.", "def": "to say that someone is reliable or good" },
+        { "en": "hinge on", "tr": "...e bağlı olmak", "ex": "Understanding hinges on clarity.", "def": "to depend completely on something" },
+        { "en": "decipher", "tr": "çözmek, sökmek", "ex": "No buyer should have to decipher your pitch.", "def": "to work out the meaning of something hard to understand" },
+        { "en": "abandon a process", "tr": "bir süreci bırakmak", "ex": "People rarely abandon a familiar process.", "def": "to stop using a way of working completely" },
+        { "en": "grasp", "tr": "kavramak", "ex": "Will they grasp this in a minute?", "def": "to understand something fully" },
+        { "en": "keen", "tr": "istekli, hevesli", "ex": "The clinic seemed genuinely keen at first.", "def": "very interested and eager" },
+        { "en": "spiral", "tr": "kontrolden çıkmak, hızla artmak", "ex": "Their waiting list had spiralled.", "def": "to increase quickly and get out of control" },
+        { "en": "turn down", "tr": "geri çevirmek", "ex": "A clinic turned us down last year.", "def": "to refuse an offer" },
+        { "en": "more often than not", "tr": "çoğu zaman", "ex": "More often than not, the real problem is timing.", "def": "usually; in more than half of cases" }
+      ],
+      "grammar": {
+        "title": "Inversion for emphasis and conditions",
+        "tr": "Resmî ve vurgulu konuşmada yardımcı fiil özneden önce gelir. 'Should a buyer need…' = 'If a buyer needs…' anlamındadır; 'Not only does…' ise olumsuz bir ifadeyle başlayan vurgulu bir yapıdır.",
+        "examples": ["Should a buyer need an engineer to decipher your pitch, you've already lost them.", "Not only does a 'no' rarely mean 'never', but it often tells you what to fix.", "Rarely is trust won in a single meeting."]
+      },
+      "questions": [
+        { "q": "According to the speaker, what usually lies behind a 'no'?", "options": ["A weak product", "Trust, understanding or timing", "An unrealistic price", "Bad luck"], "a": 1 },
+        { "q": "What does the speaker imply about trust?", "options": ["It builds up gradually through small details", "It depends mainly on a big marketing budget", "It can be won in one strong meeting"], "a": 0 },
+        { "q": "Why did the clinic eventually say yes?", "options": ["The device became cheaper", "A competitor closed down", "Their waiting list had spiralled, so the timing was right"], "a": 2 },
+        { "q": "What is the speaker's attitude towards rejection?", "options": ["Bitter and defensive", "Indifferent", "Anxious", "Pragmatic and patient"], "a": 3 },
+        { "q": "What does 'you've already lost them' suggest about complicated pitches?", "options": ["The buyer stops listening before the pitch is over", "Engineers are difficult buyers", "The price must be lowered"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "More often than not, a refusal comes ___ to trust, understanding or timing.", "a": "down", "hint": "özünde ...e dayanır" },
+        { "s": "A customer willing to ___ for you is a powerful signal.", "a": "vouch", "hint": "kefil olmak" },
+        { "s": "Understanding ___ on clarity.", "a": "hinges", "hint": "bağlıdır" },
+        { "s": "By then, their waiting list had ___.", "a": "spiralled", "hint": "kontrolden çıkmıştı" }
+      ],
+      "order": [
+        { "a": "Trust is rarely won in a single meeting." },
+        { "a": "What ultimately drives change is pain." }
+      ],
+      "translate": [
+        { "tr": "Güven tek bir toplantıda nadiren kazanılır.", "en": "Trust is rarely won in a single meeting.", "keys": ["rarely won", "single meeting"] },
+        { "tr": "Değişimi asıl tetikleyen şey sıkıntıdır.", "en": "What really drives change is pain.", "keys": ["drives change", "pain"] },
+        { "tr": "Bugünkü bir 'hayır' çoğu zaman sadece 'henüz değil' demektir.", "en": "A 'no' today is often just a 'not yet'.", "keys": ["not yet", "often"] }
+      ],
+      "roleplay": {
+        "persona": "Hesitant clinic owner",
+        "personaTr": "Kararsız klinik sahibi",
+        "scene": "İlgili ama temkinli bir klinik sahibi kararı erteliyor. Asıl itirazı nazikçe ortaya çıkarmalı, riski azaltmalı ve kapıyı açık bırakmalısın.",
+        "turns": [
+          { "ai": "I'm genuinely impressed by the device, but I can't help feeling the timing isn't quite right for us.", "aiTr": "Cihazdan gerçekten etkilendim ama zamanlamanın bizim için pek uygun olmadığını hissetmeden edemiyorum.", "hint": "I appreciate your honesty. Would you mind telling me what's weighing on you most at the moment?", "keys": ["appreciate", "weighing on you", "at the moment", "honesty"] },
+          { "ai": "Our patients are waiting six weeks for a hearing test, yet overhauling our workflow feels like a gamble.", "aiTr": "Hastalarımız işitme testi için altı hafta bekliyor; yine de iş akışımızı baştan değiştirmek kumar gibi geliyor.", "hint": "That's understandable. What if you trialled it free for a month alongside your current process, so there's nothing to lose?", "keys": ["free for a month", "alongside", "nothing to lose"] },
+          { "ai": "And what happens if my audiologists don't take to it?", "aiTr": "Peki odyologlarım ısınamazsa ne olacak?", "hint": "Then you walk away at the end of the month, and in the meantime our remote support team will help them settle in.", "keys": ["walk away", "remote support", "settle in"] },
+          { "ai": "Let me sleep on it and talk it through with the team.", "aiTr": "Bir gece düşüneyim ve ekiple konuşayım.", "hint": "Of course, take your time. I'll send a short summary for your team and follow up next week.", "keys": ["take your time", "summary", "follow up", "next week"] }
+        ]
+      }
+    },
+    "C2": {
+      "intro": "Reddedilmenin psikolojisini ve bir 'hayır'ı zamanla 'evet'e dönüştürmeyi, deneyimli bir girişimcinin incelikli diliyle anlatıyorsun.",
+      "text": [
+        { "who": "Me", "en": "If selling has taught me anything, it's that a 'no' is seldom a verdict on the product.", "tr": "Satış bana bir şey öğrettiyse, o da bir 'hayır'ın nadiren ürün hakkında bir hüküm olduğudur." },
+        { "who": "Me", "en": "Nine times out of ten, it boils down to one of three things: trust, understanding or timing.", "tr": "On vakadan dokuzunda mesele özünde üç şeyden birine dayanır: güven, anlama ya da zamanlama." },
+        { "who": "Me", "en": "Trust, for its part, is rarely won in the boardroom; it accrues quietly, through a clean website, a prompt reply, a customer prepared to vouch for you.", "tr": "Güven ise nadiren toplantı odasında kazanılır; derli toplu bir web sitesiyle, hızlı bir cevapla, size kefil olmaya hazır bir müşteriyle sessizce birikir." },
+        { "who": "Me", "en": "Understanding is a matter of clarity, and here the rule is brutally simple: if a buyer needs an engineer to decode your pitch, you've lost them before you've begun.", "tr": "Anlaşılmak bir netlik meselesidir ve kural acımasızca basittir: bir alıcı sunumunuzu çözmek için mühendise ihtiyaç duyuyorsa, daha başlamadan onu kaybetmişsinizdir." },
+        { "who": "Me", "en": "Timing is the slipperiest of the three, since what moves people, by and large, isn't a better option but a worse status quo.", "tr": "Zamanlama üçü arasında en kaygan olanıdır, çünkü insanları harekete geçiren genellikle daha iyi bir seçenek değil, kötüleşen mevcut durumdur." },
+        { "who": "Me", "en": "Put bluntly, nobody abandons a familiar process until living with it hurts more than replacing it.", "tr": "Açıkçası, kimse alışık olduğu bir süreci, onunla yaşamak onu değiştirmekten daha çok can yakana kadar bırakmaz." },
+        { "who": "Me", "en": "So before every meeting I put three questions to myself: why on earth should they trust me, could they grasp this in a minute, and where exactly does it hurt?", "tr": "Bu yüzden her toplantıdan önce kendime üç soru sorarım: bana neden güvensinler ki, bunu bir dakikada kavrayabilirler mi ve tam olarak neresi acıyor?" },
+        { "who": "Me", "en": "Last year, a clinic that had seemed genuinely keen turned us down, which, I'll admit, stung.", "tr": "Geçen yıl, gerçekten istekli görünen bir klinik bizi geri çevirdi ve itiraf edeyim, bu canımı sıktı." },
+        { "who": "Me", "en": "Rather than chase them, we simply stayed in touch, and when we asked again three months later, their waiting list had spiralled to the point where saying no had become the riskier option.", "tr": "Peşlerine düşmek yerine sadece iletişimde kaldık; üç ay sonra tekrar sorduğumuzda bekleme listeleri öyle kontrolden çıkmıştı ki hayır demek daha riskli seçenek haline gelmişti." },
+        { "who": "Me", "en": "Tellingly, our offer hadn't changed in the slightest; their pain had.", "tr": "Manidar olan şu ki teklifimiz zerre kadar değişmemişti; değişen onların sıkıntısıydı." },
+        { "who": "Me", "en": "That said, I try not to read every refusal as a hidden yes, since some prospects are simply not a fit.", "tr": "Bununla birlikte, her reddi gizli bir 'evet' olarak okumamaya çalışırım, çünkü bazı potansiyel müşteriler bize gerçekten uygun değildir." },
+        { "who": "Me", "en": "More often than not, though, a 'no' today is merely a 'not yet' in disguise.", "tr": "Yine de çoğu zaman bugünkü bir 'hayır', kılık değiştirmiş bir 'henüz değil'den ibarettir." }
+      ],
+      "vocab": [
+        { "en": "boil down to", "tr": "özünde ...e dayanmak", "ex": "Most refusals boil down to trust, understanding or timing.", "def": "to have something as its most basic cause" },
+        { "en": "accrue", "tr": "birikmek", "ex": "Trust accrues quietly through small signals.", "def": "to grow gradually over time" },
+        { "en": "vouch for", "tr": "kefil olmak", "ex": "A customer prepared to vouch for you is worth a dozen adverts.", "def": "to say publicly that someone is reliable" },
+        { "en": "status quo", "tr": "mevcut durum", "ex": "People move when the status quo gets worse.", "def": "the existing state of affairs" },
+        { "en": "put bluntly", "tr": "açık konuşmak gerekirse", "ex": "Put bluntly, nobody likes change.", "def": "said in a very direct and honest way" },
+        { "en": "sting", "tr": "canını yakmak, koymak", "ex": "It can sting when a keen prospect says no.", "def": "to hurt someone's feelings for a short time" },
+        { "en": "spiral", "tr": "kontrolden çıkmak, hızla artmak", "ex": "Their waiting list had spiralled.", "def": "to increase quickly and get out of control" },
+        { "en": "tellingly", "tr": "manidar biçimde", "ex": "Tellingly, our offer hadn't changed at all.", "def": "in a way that reveals something important" },
+        { "en": "prospect", "tr": "potansiyel müşteri", "ex": "Some prospects are simply not a fit.", "def": "a person or company that might become a customer" },
+        { "en": "in disguise", "tr": "kılık değiştirmiş", "ex": "A 'no' is often a 'not yet' in disguise.", "def": "looking like something else, so its true nature is hidden" }
+      ],
+      "grammar": {
+        "title": "Hedging with frequency and concession",
+        "tr": "C2 düzeyinde kesin genellemelerden kaçınılır: 'nine times out of ten', 'by and large', 'more often than not' gibi ifadeler iddiayı yumuşatır. 'That said' ve 'I'll admit' ise karşı görüşü kabul ederek dengeli bir ton kurar.",
+        "examples": ["Nine times out of ten, it boils down to trust, understanding or timing.", "What moves people, by and large, isn't a better option but a worse status quo.", "That said, I try not to read every refusal as a hidden yes."]
+      },
+      "questions": [
+        { "q": "According to the speaker, what is a 'no' seldom about?", "options": ["Timing", "The product itself", "Trust", "Clarity"], "a": 1 },
+        { "q": "What does the speaker mean by 'a worse status quo'?", "options": ["A competitor's cheaper offer", "A drop in product quality", "A current situation that has become painful"], "a": 2 },
+        { "q": "What does 'Tellingly' imply about the clinic's change of mind?", "options": ["It was driven by their pain, not by a better product", "The team was too lazy to improve the offer", "The clinic had been misled"], "a": 0 },
+        { "q": "How would you describe the tone of 'which, I'll admit, stung'?", "options": ["Bitter and resentful", "Sarcastic towards the clinic", "Detached and clinical", "Candid and slightly self-deprecating"], "a": 3 },
+        { "q": "What does the sentence beginning 'That said' add to the argument?", "options": ["A caveat that not every refusal is temporary", "A claim that every 'no' becomes a 'yes'", "A complaint about difficult customers"], "a": 0 }
+      ],
+      "gaps": [
+        { "s": "Nine times out of ten, a refusal ___ down to trust, understanding or timing.", "a": "boils", "hint": "özünde ...e dayanır" },
+        { "s": "Trust ___ quietly, through a clean website and a prompt reply.", "a": "accrues", "hint": "birikir" },
+        { "s": "What moves people isn't a better option but a worse ___.", "a": "status quo", "hint": "mevcut durum" },
+        { "s": "A 'no' today is often a 'not yet' in ___.", "a": "disguise", "hint": "kılık değiştirmiş" }
+      ],
+      "order": [
+        { "a": "Our offer had not changed but their pain had." },
+        { "a": "Trust is rarely won in the boardroom." }
+      ],
+      "translate": [
+        { "tr": "Açıkçası, kimse alışık olduğu bir süreci kolay kolay bırakmaz.", "en": "Put bluntly, nobody abandons a familiar process easily.", "keys": ["put bluntly", "familiar process"] },
+        { "tr": "Bununla birlikte, her reddi gizli bir 'evet' olarak okumamaya çalışıyorum.", "en": "That said, I try not to read every refusal as a hidden yes.", "keys": ["that said", "refusal", "hidden yes"] },
+        { "tr": "Teklifimiz hiç değişmemişti; değişen onların sıkıntısıydı.", "en": "Our offer hadn't changed at all; what had changed was their pain.", "keys": ["hadn't changed", "their pain"] }
+      ],
+      "roleplay": {
+        "persona": "Hesitant clinic owner",
+        "personaTr": "Kararsız klinik sahibi",
+        "scene": "Deneyimli ve temkinli bir klinik sahibi, cihazı beğense de değişime direniyor. Asıl sıkıntıyı ortaya çıkarmalı, riski ortadan kaldırmalı ve ilişkiyi zarafetle sürdürmelisin.",
+        "turns": [
+          { "ai": "I'll be frank: the device is impressive, but I'm not convinced now is the moment to rock the boat.", "aiTr": "Açık konuşacağım: cihaz etkileyici ama şu an ortalığı karıştırmanın doğru zaman olduğuna ikna olmuş değilim.", "hint": "I appreciate the candour. If you don't mind my asking, what's keeping you up at night at the moment?", "keys": ["appreciate", "keeping you up at night", "if you don't mind"] },
+          { "ai": "If I'm honest, it's the six-week wait for hearing tests, but tearing up a workflow that broadly works hardly feels like the answer.", "aiTr": "Dürüst olmak gerekirse, işitme testleri için altı haftalık bekleme; ama genel olarak işleyen bir iş akışını yıkıp atmak da pek çözüm gibi gelmiyor.", "hint": "Nor would I suggest it. Why not run it free for a month alongside your current set-up and let the waiting list do the talking?", "keys": ["free for a month", "alongside", "waiting list"] },
+          { "ai": "And if my audiologists turn their noses up at it?", "aiTr": "Ya odyologlarım burun kıvırırsa?", "hint": "Then you walk away with nothing lost, though in my experience they warm to it once it frees them up for the trickier cases.", "keys": ["walk away", "nothing lost", "warm to it", "trickier cases"] },
+          { "ai": "Let me mull it over with the team and get back to you.", "aiTr": "Ekiple bir düşüneyim, size dönerim.", "hint": "By all means, there's no rush. I'll send over a one-page summary for the team and check in next week, if that suits you.", "keys": ["by all means", "no rush", "summary", "check in"] }
+        ]
+      }
+    }
+  }
+}
