@@ -57,7 +57,7 @@
   // ---------- Depo ----------
   const KEY = "aihear-english-v1";
   const defaults = () => ({
-    settings: { font: "lexend", size: "m", space: "normal", paper: "ivory", theme: "auto", rate: 0.85, autoSpeak: true, showTr: true, apiKey: "", aiMode: false, name: "" },
+    settings: { font: "lexend", size: "m", space: "normal", paper: "cool", theme: "auto", rate: 0.85, autoSpeak: true, showTr: false, apiKey: "", aiMode: false, name: "" },
     done: {},        // lessonId -> { date, score, steps: {1..5: true} }
     srs: {},         // word -> { tr, ex, lesson, ease, interval, due, reps, lapses, added }
     streak: { last: "", count: 0 },
@@ -67,7 +67,8 @@
   const load = () => {
     try {
       const raw = localStorage.getItem(KEY);
-      if (raw) { const s = JSON.parse(raw); state = Object.assign(defaults(), s); state.settings = Object.assign(defaults().settings, s.settings || {}); }
+      if (raw) { const s = JSON.parse(raw); state = Object.assign(defaults(), s); state.settings = Object.assign(defaults().settings, s.settings || {});
+        if (!s.v2) { state.settings.paper = "cool"; state.settings.showTr = false; state.v2 = true; } }
     } catch (e) { /* özel pencere ya da engellenmiş depo: hafızada devam */ }
   };
   const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) { /* yok say */ } };
@@ -212,9 +213,9 @@
         el("div", { class: "stat" }, el("b", null, doneCount + "/" + ordered.length), el("span", null, "ders bitti")),
         el("div", { class: "stat" }, el("b", null, String(Object.keys(state.srs).length)), el("span", null, "kelime"))
       ),
-      el("section", { class: "card" },
+      el("section", { class: "card primary" },
         el("p", { class: "eyebrow" }, doneCount === ordered.length ? "Tekrar et" : "Bugünün dersi"),
-        el("div", { class: "row" }, el("span", { class: "pill topic", style: "background:" + topicById(next.topic).color }, topicById(next.topic).short), el("span", { class: "pill level" }, next.level), el("span", { class: "pill" }, "~" + next.minutes + " dk")),
+        el("div", { class: "row" }, el("span", { class: "pill" }, topicById(next.topic).short), el("span", { class: "pill" }, next.level), el("span", { class: "pill" }, "~" + next.minutes + " dk")),
         el("h2", null, next.title),
         el("p", { class: "muted" }, next.titleTr),
         el("button", { class: "btn wide", onclick: () => go("lesson/" + next.id) }, "Derse başla", svg("next"))
@@ -584,7 +585,7 @@
         setting("Yazı tipi", "Lexend ve Atkinson Hyperlegible, disleksi için okunabilirliği artıran yazı tipleridir.", seg("font", [["lexend", "Lexend"], ["atkinson", "Atkinson"], ["system", "Sistem"]])),
         setting("Yazı boyutu", null, seg("size", [["s", "Küçük"], ["m", "Normal"], ["l", "Büyük"], ["xl", "Çok büyük"]])),
         setting("Satır ve harf aralığı", "Harfler birbirine karışıyorsa “Geniş” seçeneğini dene.", seg("space", [["tight", "Dar"], ["normal", "Normal"], ["wide", "Geniş"]])),
-        setting("Kâğıt rengi", "Bembeyaz zemin disleksiyi zorlar; krem ya da mavi genelde daha rahattır.", seg("paper", [["ivory", "Krem"], ["blue", "Mavi"], ["yellow", "Sarı"], ["white", "Beyaz"]])),
+        setting("Kâğıt rengi", "Bembeyaz zemin disleksiyi zorlar; açık gri ya da krem genelde daha rahattır.", seg("paper", [["cool", "Açık gri"], ["cream", "Krem"], ["mint", "Nane"], ["white", "Beyaz"]])),
         setting("Tema", null, seg("theme", [["auto", "Otomatik"], ["light", "Açık"], ["dark", "Koyu"]]))
       ),
       el("section", { class: "card" },

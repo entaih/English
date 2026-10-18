@@ -1,12 +1,12 @@
 // Konu tanımları ve müfredat sırası
 window.TOPICS = [
-  { id: "startup", name: "Girişimcilik ve şirket yönetimi", short: "Girişimcilik", color: "#2563a6", desc: "Şirket kurmak, ekip yönetmek, karar almak, müzakere etmek." },
-  { id: "aihear", name: "AIHEAR ve medikal teknoloji", short: "AIHEAR", color: "#0f766e", desc: "Kendi ürününü, prototipini ve sertifikasyon sürecini anlatmak." },
-  { id: "tech", name: "Yapay zekâ ve yazılım", short: "Yapay zekâ", color: "#6d28d9", desc: "Teknik açıklama, hata çözme, sistem tasarımı." },
-  { id: "invest", name: "Yatırım ve iş geliştirme", short: "Yatırım", color: "#b45309", desc: "Pitch, gelir modeli, değerleme, zor yatırımcı soruları." },
-  { id: "comms", name: "Profesyonel iletişim", short: "İletişim", color: "#be185d", desc: "Networking, e-posta, toplantıda fikir savunma." },
-  { id: "science", name: "Bilim ve araştırma", short: "Bilim", desc: "Klinik çalışma, hipotez, hibe başvurusu.", color: "#047857" },
-  { id: "life", name: "Strateji, günlük yaşam ve seyahat", short: "Yaşam", color: "#4b5563", desc: "Seyahat, ikna psikolojisi, enerji yönetimi." }
+  { id: "startup", name: "Girişimcilik ve şirket yönetimi", short: "Girişimcilik", color: "#3b5bfd", desc: "Şirket kurmak, ekip yönetmek, karar almak, müzakere etmek." },
+  { id: "aihear", name: "AIHEAR ve medikal teknoloji", short: "AIHEAR", color: "#0ea5a4", desc: "Kendi ürününü, prototipini ve sertifikasyon sürecini anlatmak." },
+  { id: "tech", name: "Yapay zekâ ve yazılım", short: "Yapay zekâ", color: "#8b5cf6", desc: "Teknik açıklama, hata çözme, sistem tasarımı." },
+  { id: "invest", name: "Yatırım ve iş geliştirme", short: "Yatırım", color: "#f59e0b", desc: "Pitch, gelir modeli, değerleme, zor yatırımcı soruları." },
+  { id: "comms", name: "Profesyonel iletişim", short: "İletişim", color: "#ec4899", desc: "Networking, e-posta, toplantıda fikir savunma." },
+  { id: "science", name: "Bilim ve araştırma", short: "Bilim", desc: "Klinik çalışma, hipotez, hibe başvurusu.", color: "#10b981" },
+  { id: "life", name: "Strateji, günlük yaşam ve seyahat", short: "Yaşam", color: "#64748b", desc: "Seyahat, ikna psikolojisi, enerji yönetimi." }
 ];
 // Önerilen çalışma sırası: kolaydan zora, konular karışık
 window.CURRICULUM = [

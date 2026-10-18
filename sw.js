@@ -1,5 +1,5 @@
 /* Çevrimdışı çalışma: uygulama kabuğu önbelleğe alınır, sonraki açılışlar internetsiz çalışır. */
-const VERSION = "aihear-en-v1.0.0";
+const VERSION = "aihear-en-v1.1.0";
 const SHELL = [
   "./", "./index.html", "./manifest.json", "./css/app.css", "./js/app.js",
   "./js/data/topics.js", "./js/data/01-startup.js", "./js/data/02-aihear.js", "./js/data/03-tech.js",
