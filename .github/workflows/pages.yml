@@ -45,7 +45,7 @@ jobs:
         run: |
           mkdir -p _site/content
           cp -r index.html privacy.html manifest.json sw.js css js icons screenshots _site/
-          cp -r content/catalog.js content/placement.js content/levels _site/content/
+          cp -r content/catalog.js content/placement.js content/story.js content/levels _site/content/
           touch _site/.nojekyll
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3

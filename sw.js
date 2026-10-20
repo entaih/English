@@ -1,10 +1,10 @@
 /* Çevrimdışı çalışma. Uygulama kabuğu ve tüm seviye içerikleri kurulumda önbelleğe alınır.
    Yeni sürüm hazır olduğunda sayfa kullanıcıya sorar; onaylarsa "skipWaiting" mesajı gelir. */
-const VERSION = "aihear-en-2.0.0";
+const VERSION = "aihear-en-2.1.0";
 const FONT_CACHE = "aihear-en-fonts";
 const SHELL = [
   "./", "./index.html", "./privacy.html", "./manifest.json", "./css/app.css", "./js/app.js",
-  "./content/catalog.js", "./content/placement.js",
+  "./content/catalog.js", "./content/placement.js", "./content/story.js",
   "./content/levels/A1.js", "./content/levels/A2.js", "./content/levels/B1.js",
   "./content/levels/B2.js", "./content/levels/C1.js", "./content/levels/C2.js",
   "./icons/icon-192.png", "./icons/icon-512.png", "./icons/apple-touch-icon.png"

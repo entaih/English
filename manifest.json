@@ -24,7 +24,7 @@
   "screenshots": [
     { "src": "screenshots/home.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Ana sayfa" },
     { "src": "screenshots/lesson.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Okuma ve sesli vurgulama" },
-    { "src": "screenshots/levels.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "A1'den C2'ye seviye seçimi" },
+    { "src": "screenshots/story.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Kurucunun hikâyesi: 32 bölüm" },
     { "src": "screenshots/talk.png", "sizes": "780x1688", "type": "image/png", "form_factor": "narrow", "label": "Konuşma simülasyonu" }
   ]
 }

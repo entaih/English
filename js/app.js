@@ -90,6 +90,14 @@
     x: '<path d="M18 6L6 18"/><path d="M6 6l12 12"/>',
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/>',
     globe: '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3a14 14 0 0 1 0 18"/><path d="M12 3a14 14 0 0 0 0 18"/>',
+    trend: '<path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/>',
+    map: '<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14"/><path d="M15 6v14"/>',
+    lock: '<rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/>',
+    timer: '<circle cx="12" cy="13" r="8"/><path d="M12 9v4l2 2"/><path d="M9 2h6"/>',
+    puzzle: '<rect x="3" y="3" width="7" height="7" rx="2"/><rect x="14" y="3" width="7" height="7" rx="2"/><rect x="3" y="14" width="7" height="7" rx="2"/><rect x="14" y="14" width="7" height="7" rx="2"/>',
+    ear: '<path d="M6 8.5a6 6 0 0 1 12 0c0 3-2 4.5-3 5.5s-1 2-1 3a3 3 0 0 1-6 0"/><path d="M9.5 9a2.5 2.5 0 0 1 5 0c0 1.5-1.5 2-1.5 3"/>',
+    rocket: '<path d="M5 15c-1.5 1.5-2 5-2 5s3.5-.5 5-2"/><path d="M9 15l-3-3a12 12 0 0 1 11-9 12 12 0 0 1-9 11z"/><path d="M14 10a1.5 1.5 0 1 0 0-3"/>',
+    handshake: '<path d="M11 17l2 2a1.4 1.4 0 0 0 2-2"/><path d="M14 14l2.5 2.5a1.4 1.4 0 0 0 2-2L15 11l-3 3-2-2 4-4h3l4 4"/><path d="M3 11l5-5 4 2"/><path d="M3 11l6 6 2-2"/>',
     trophy: '<path d="M8 21h8"/><path d="M12 17v4"/><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3"/><path d="M7 5H4v2a3 3 0 0 0 3 3"/>'
   };
   const icon = (name, cls) => { const s = document.createElementNS("http://www.w3.org/2000/svg", "svg"); s.setAttribute("viewBox", "0 0 24 24"); s.setAttribute("fill", "none"); s.setAttribute("stroke", "currentColor"); s.setAttribute("stroke-width", "2"); s.setAttribute("stroke-linecap", "round"); s.setAttribute("stroke-linejoin", "round"); s.setAttribute("aria-hidden", "true"); if (cls) s.setAttribute("class", cls); s.innerHTML = ICONS[name] || ""; return s; };
@@ -132,7 +140,12 @@
     const v = window.LEVEL_DATA && window.LEVEL_DATA[L] && window.LEVEL_DATA[L][id];
     if (!v) return null;
     const safe = learnerName().replace(/["\\\u0000-\u001f]/g, "");
-    return JSON.parse(JSON.stringify(v).replace(/\{name\}/g, safe));
+    const out = JSON.parse(JSON.stringify(v).replace(/\{name\}/g, safe));
+    // Hikâyedeki karakter adları (Sarah, Dr. Weber, Bayan Becker...) etiketlerde görünür; İngilizce metin değişmez.
+    const ch = chapterOf(id);
+    if (ch && ch.cast) out.text.forEach((t) => { if (t.who && ch.cast[t.who]) t.who = ch.cast[t.who]; });
+    if (ch && ch.persona && new RegExp(ch.persona[0], "i").test(out.roleplay.persona)) out.roleplay.persona = ch.persona[1];
+    return out;
   };
 
   /* ================= Durum ================= */
@@ -145,14 +158,16 @@
       name: "", goal: 20,
       font: "lexend", size: "m", space: "normal", paper: "cool", theme: "auto",
       accent: "GB", rate: 0, autoSpeak: true, showTr: false, karaoke: true, choices: "auto", haptics: true,
-      apiKey: "", aiMode: false
+      apiKey: "", aiMode: false, locks: true
     },
     done: {},
     srs: {},
     streak: { last: "", count: 0, best: 0 },
     xp: 0,
     activity: {},
-    placement: null
+    placement: null,
+    games: { listen: 0, match: 0, blitz: 0 },
+    duel: { played: 0, wins: 0, best: 0 }
   });
   let state = defaults();
   const OLD_LEVELS = { "st-01": "A2", "st-02": "A2", "ai-01": "A2", "ai-02": "A2", "te-01": "A2", "co-01": "A2", "li-01": "A2" };
@@ -166,6 +181,8 @@
       state.settings = Object.assign(d.settings, s.settings || {});
       state.streak = Object.assign(d.streak, s.streak || {});
       state.activity = s.activity || {};
+      state.games = Object.assign(d.games, s.games || {});
+      state.duel = Object.assign(d.duel, s.duel || {});
       if (!s.v || s.v < 3) {
         // Eski tek seviyeli sürümden geçiş
         const done = {};
@@ -183,7 +200,10 @@
   const addXp = (n) => {
     if (!n) return;
     const t = dateKey();
+    const before = roundIndex(valuation(state.xp));
     state.xp += n;
+    const after = roundIndex(valuation(state.xp));
+    if (after > before) pending.push({ type: "round", round: ROUNDS[after] });
     state.activity[t] = (state.activity[t] || 0) + n;
     if (state.streak.last !== t) {
       const y = dateKey(Date.now() - DAY);
@@ -205,6 +225,64 @@
     for (let i = 0; i < ORDER.length; i++) { const id = ORDER[(start + i) % ORDER.length]; if (!isDone(id, L)) return id; }
     return null;
   };
+
+  /* ================= Şirket değeri ================= */
+  // Puanlar arka planda tutulur; kullanıcı onları AIHEAR'ın değeri olarak görür.
+  // Değer hızlı başlar: ilk derslerde Pre-seed, birkaç günde Seed, bir seviyenin çoğunda Series A.
+  const valuation = (xp) => 100000 * Math.pow(1 + Math.max(0, xp) / 40, 1.6);
+  const ROUNDS = [
+    { id: "idea", name: "Fikir", at: 100000, line: "Bir dizüstü bilgisayar, bir kulaklık ve büyük bir fikir." },
+    { id: "pre", name: "Pre-seed", at: 500000, line: "Melek yatırımcılar ilk çeki yazdı. Prototip artık bir şirket." },
+    { id: "seed", name: "Seed", at: 2500000, line: "Seed turu kapandı. Ekip büyüyor, klinik çalışma başlıyor." },
+    { id: "a", name: "Series A", at: 10000000, line: "Series A tamam. AIHEAR Avrupa'da yüzlerce kliniğe ulaşıyor." },
+    { id: "b", name: "Series B", at: 40000000, line: "Series B ile ABD pazarı ve FDA onayı yolda." },
+    { id: "ipo", name: "Halka arz", at: 150000000, line: "AIHEAR borsada. Zil senin için çalıyor." },
+    { id: "unicorn", name: "Unicorn", at: 1000000000, line: "Bir milyar euro. Artık bir unicorn kurucususun." }
+  ];
+  const roundIndex = (v) => ROUNDS.reduce((i, r, k) => (v >= r.at ? k : i), 0);
+  const fmt = (n, d) => n.toFixed(d).replace(".", ",").replace(/,0$/, "");
+  const euro = (v) => (v >= 1e9 ? "€" + fmt(v / 1e9, v < 1e10 ? 1 : 0) + " milyar" : v >= 1e6 ? "€" + fmt(v / 1e6, v < 1e7 ? 1 : 0) + " milyon" : "€" + Math.max(1, Math.round(v / 1000)) + " bin");
+  const euroShort = (v) => (v >= 1e9 ? "€" + fmt(v / 1e9, 1) + " Mlr" : v >= 1e6 ? "€" + fmt(v / 1e6, v < 1e7 ? 1 : 0) + "M" : "€" + Math.round(v / 1000) + "K");
+  const gain = (a, b) => valuation(b) - valuation(a);
+  const todayGain = () => { const t = state.activity[dateKey()] || 0; return gain(state.xp - t, state.xp); };
+  const mood = () => { const t = dateKey(), y = dateKey(Date.now() - DAY); if (state.streak.last === t) return "happy"; if (state.streak.last === y) return "waiting"; return state.xp ? "worried" : "new"; };
+  const MOOD = {
+    happy: { label: "Yatırımcılar memnun", cls: "good", say: "Bugün de ilerledin. Böyle devam." },
+    waiting: { label: "Yatırımcılar bekliyor", cls: "info", say: "Dün iyi gitti. Bugünkü dersi merakla bekliyorlar." },
+    worried: { label: "Yatırımcılar biraz endişeli", cls: "warn", say: "Bir süredir haber yok. Kısa bir dersle güveni tazele. Şirket değeri düşmez." },
+    new: { label: "Yatırımcılar merakla bekliyor", cls: "info", say: "İlk dersinle AIHEAR'ın değeri artmaya başlar." }
+  };
+
+  // Kutlamalar: yeni yatırım turu ya da biten sezon. Etkinlik bitince gösterilir.
+  const pending = [];
+  const celebrate = () => {
+    if (document.querySelector(".celebrate-wrap")) return;
+    const c = pending.shift();
+    if (!c) return;
+    const close = () => { wrap.remove(); setTimeout(celebrate, 200); };
+    const isRound = c.type === "round";
+    const card = el("div", { class: "celebrate", role: "dialog", "aria-modal": "true", "aria-label": isRound ? c.round.name : c.act.title },
+      el("div", { class: "badge-big" }, icon(isRound ? "rocket" : "map")),
+      el("p", { class: "eyebrow" }, isRound ? "Yeni yatırım turu" : "Sezon " + c.act.n + " tamamlandı"),
+      el("h2", { class: "celebrate-title" }, isRound ? c.round.name : c.act.title),
+      el("p", { class: "muted" }, isRound ? c.round.line : (STORY.acts[c.act.n] ? "Sırada: Sezon " + (c.act.n + 1) + " · " + STORY.acts[c.act.n].title + ", " + STORY.acts[c.act.n].city + "." : "Hikâyenin sonuna geldin. Başka bir seviyede baştan oynayabilirsin.")),
+      isRound ? el("div", { class: "celebrate-value" }, "AIHEAR değeri " + euro(valuation(state.xp))) : null,
+      el("button", { class: "btn wide", onclick: close }, "Devam"));
+    const wrap = el("div", { class: "celebrate-wrap", onclick: (e) => { if (e.target === wrap) close(); } }, card);
+    document.body.appendChild(wrap);
+    haptic();
+    setTimeout(() => card.querySelector("button").focus(), 50);
+  };
+
+  /* ================= Hikâye ================= */
+  const STORY = window.STORY || { acts: [], chapters: [] };
+  function chapterOf(id) { return STORY.chapters.find((c) => c.id === id); }
+  const chapterNo = (id) => ORDER.indexOf(id) + 1;
+  const actOf = (id) => { const c = chapterOf(id); return c ? STORY.acts.find((a) => a.id === c.act) : null; };
+  const unlocked = (id) => { const i = ORDER.indexOf(id); return !state.settings.locks || i <= 0 || doneAny(id) || doneAny(ORDER[i - 1]); };
+  const chaptersDone = () => ORDER.filter(doneAny).length;
+  const nextChapter = () => ORDER.find((id) => !doneAny(id)) || nextLesson(state.level) || ORDER[0];
+  let onLeave = null; // sayaçları durdurmak için: sayfa değişince çağrılır
 
   /* ================= Ayarlar ================= */
   const applySettings = () => {
@@ -339,12 +417,14 @@
   let route = { name: "home", args: [] };
   const go = (hash) => { if (location.hash === "#" + hash) render(); else location.hash = hash; };
   const NO_CHROME = ["welcome", "placement"];
-  const BACK_TO = { lesson: "lessons", review: "words", about: "settings" };
+  const BACK_TO = { lesson: "story", review: "words", games: "words", duel: "home", about: "settings" };
   const render = async () => {
     TTS.stop();
+    if (onLeave) { try { onLeave(); } catch (e) { /* yok say */ } onLeave = null; }
     document.querySelectorAll(".sheet-wrap").forEach((n) => n.remove());
     const parts = (location.hash || "#home").slice(1).split("/");
-    let name = routes[parts[0]] ? parts[0] : "home";
+    const ALIAS = { lessons: "story", progress: "company" };
+    let name = ALIAS[parts[0]] || (routes[parts[0]] ? parts[0] : "home");
     if (!state.onboarded && !NO_CHROME.includes(name)) { location.replace("#welcome"); return; }
     route = { name, args: parts.slice(1) };
     document.body.classList.toggle("bare", NO_CHROME.includes(name));
@@ -368,12 +448,12 @@
   const currentLevelForChip = () => (route.name === "lesson" && LEVELS.includes(route.args[1]) ? route.args[1] : state.level);
   function updateLevelChip() { levelChip.textContent = currentLevelForChip(); levelChip.setAttribute("aria-label", "Seviye: " + currentLevelForChip() + ". Değiştir"); }
   function updateGoalChip() {
-    const today = state.activity[dateKey()] || 0, goal = state.settings.goal;
-    goalChip.replaceChildren(icon("flame"), el("span", null, String(streakNow())));
-    goalChip.classList.toggle("hit", today >= goal);
-    goalChip.setAttribute("aria-label", streakNow() + " gün seri. Bugün " + today + "/" + goal + " puan");
+    const v = valuation(state.xp);
+    goalChip.replaceChildren(icon("trend"), el("span", null, euroShort(v)));
+    goalChip.classList.toggle("hit", (state.activity[dateKey()] || 0) >= state.settings.goal);
+    goalChip.setAttribute("aria-label", "AIHEAR değeri " + euro(v) + ". Şirket sayfasını aç");
   }
-  goalChip.addEventListener("click", () => go("progress"));
+  goalChip.addEventListener("click", () => go("company"));
   levelChip.addEventListener("click", () => openLevelSheet());
 
   function openLevelSheet() {
@@ -410,9 +490,9 @@
         el("h1", { class: "ob-title" }, "İngilizceyi kendi işinle öğren."),
         el("p", { class: "ob-sub" }, "Yatırımcı sunumu, ürün demosu, yurt dışında hayat. Her ders A1'den C2'ye altı seviyede, disleksi dostu bir arayüzle."),
         el("ul", { class: "ob-list" },
-          el("li", null, icon("book"), "32 ders, 9 konu, her biri 6 seviyede"),
-          el("li", null, icon("speaker"), "Her cümle sesli, okurken kelime kelime vurgulu"),
-          el("li", null, icon("cards"), "Unutmaya yaklaştığın kelimeler tekrar gelir")),
+          el("li", null, icon("map"), "İstanbul'dan yatırım turuna 32 bölümlük bir kurucu hikâyesi"),
+          el("li", null, icon("trend"), "Her ders AIHEAR'ın değerini artırır: Pre-seed, Seed, Series A…"),
+          el("li", null, icon("ear"), "Sesli kelime oyunları, yatırımcı düellosu, telaffuz karaokesi")),
         el("button", { class: "btn wide", onclick: () => go("welcome/name") }, "Başlayalım", icon("next")),
         dots);
     } else if (at === "name") {
@@ -428,10 +508,10 @@
           el("span", { class: "lv" }, L), el("span", { class: "lt" }, el("b", null, LEVEL_INFO[L].name), el("span", null, LEVEL_INFO[L].desc))))),
         dots);
     } else {
-      const opts = [[10, "Rahat", "Günde ~5 dakika"], [20, "Düzenli", "Günde ~10 dakika"], [40, "Yoğun", "Günde ~20 dakika"]];
+      const opts = [[10, "Rahat", "Günde ~5 dakika"], [20, "Düzenli", "Günde ~10 dakika, yaklaşık bir bölüm"], [40, "Yoğun", "Günde ~20 dakika"]];
       wrap.append(el("h1", { class: "ob-title" }, "Günlük hedefin?"), el("p", { class: "ob-sub" }, "Kısa ve her gün, uzun ve ara sıra çalışmaktan daha etkilidir."),
         el("div", { class: "levels" }, opts.map(([v, t, d]) => el("button", { class: "level-opt", "aria-pressed": String(state.settings.goal === v), onclick: () => { state.settings.goal = v; state.onboarded = true; save(); loadLevel(state.level).catch(() => {}); go("home"); } },
-          el("span", { class: "lv" }, String(v)), el("span", { class: "lt" }, el("b", null, t), el("span", null, d + " · " + v + " puan"))))),
+          el("span", { class: "lv" }, icon(v === 10 ? "timer" : v === 20 ? "target" : "rocket")), el("span", { class: "lt" }, el("b", null, t), el("span", null, d))))),
         dots);
     }
   };
@@ -492,69 +572,122 @@
     if (recent.length >= 2 && recent.slice(0, 2).every(([, d]) => d.pct < 0.5) && state.level !== "A1") return "down";
     return null;
   };
+  const roundProgress = () => {
+    const v = valuation(state.xp), i = roundIndex(v), cur = ROUNDS[i], nx = ROUNDS[i + 1];
+    const pct = nx ? (Math.log(v) - Math.log(cur.at)) / (Math.log(nx.at) - Math.log(cur.at)) : 1;
+    return { v, cur, nx, pct: Math.max(0.02, Math.min(1, pct)) };
+  };
+  const companyCard = () => {
+    const r = roundProgress(), md = MOOD[mood()];
+    return el("section", { class: "card primary company" },
+      el("div", { class: "row between" }, el("p", { class: "eyebrow" }, "AIHEAR · şirket değeri"), el("span", { class: "pill" }, r.cur.name)),
+      el("div", { class: "valuation" }, euro(r.v)),
+      el("div", { class: "progressbar light" }, el("i", { style: "width:" + Math.round(r.pct * 100) + "%" })),
+      el("p", { class: "small muted" }, r.nx ? "Sıradaki tur: " + r.nx.name + " · " + euro(r.nx.at) : "Bütün turlar tamam. Efsanesin."),
+      el("div", { class: "mood " + md.cls }, el("span", { class: "mood-dot", "aria-hidden": "true" }), el("span", null, el("b", null, md.label + ". "), md.say)));
+  };
   routes.home = () => {
     setTitle("AIHEAR English");
-    const L = state.level, done = doneAt(L), nextId = nextLesson(L) || ORDER[0], m = meta(nextId), t = topic(m.topic);
+    const L = state.level, nid = nextChapter(), m = meta(nid), ch = chapterOf(nid) || { title: m.titleTr, intro: "" }, act = actOf(nid);
     const due = SRS.due().length, today = state.activity[dateKey()] || 0, goal = state.settings.goal;
+    const pct = Math.min(100, Math.round((today / goal) * 100));
     const h = new Date().getHours();
     const greet = (h < 5 ? "İyi geceler" : h < 12 ? "Günaydın" : h < 18 ? "İyi günler" : "İyi akşamlar") + (state.settings.name ? ", " + state.settings.name : "") + ".";
     const sug = lessonSuggestion();
+    const storyDone = chaptersDone() === ORDER.length;
     main.append(
       el("section", { class: "hero" }, el("p", { class: "eyebrow" }, new Date().toLocaleDateString("tr-TR", { weekday: "long", day: "numeric", month: "long" })), el("h1", null, greet)),
+      companyCard(),
       el("section", { class: "card goal" },
-        el("div", { class: "goal-ring" }, ring(today, goal, 72), el("span", { class: "goal-num" }, String(Math.min(today, 999)))),
+        el("div", { class: "goal-ring" }, ring(today, goal, 72), el("span", { class: "goal-num" }, "%" + pct)),
         el("div", { class: "goal-text" },
-          el("b", null, today >= goal ? "Bugünkü hedef tamam" : "Bugün " + (goal - today) + " puan kaldı"),
-          el("span", { class: "muted small" }, "Hedef " + goal + " puan · " + streakNow() + " gün seri"),
-          el("button", { class: "linkbtn", onclick: () => go("progress") }, "İlerlemeni gör"))),
+          el("b", null, today >= goal ? "Bugünkü hedef tamam" : today ? "Bugün +" + euro(todayGain()) + " değer kattın" : "Bugün henüz başlamadın"),
+          el("span", { class: "muted small" }, "Günlük hedef: %" + pct + " · Seri: " + streakNow() + " gün"),
+          el("button", { class: "linkbtn", onclick: () => go("company") }, "Şirketi gör"))),
       sug ? el("section", { class: "card nudge" }, el("div", { class: "row" }, icon(sug === "up" ? "up" : "down", "nudge-ic"), el("b", null, sug === "up" ? "Bu seviye sana kolay gelmeye başladı." : "Son dersler zorlamış olabilir.")),
         el("p", { class: "muted small" }, sug === "up" ? "Son üç dersi %90'ın üstünde bitirdin. " + levelUp(L) + " seviyesini denemeye ne dersin?" : levelDown(L) + " seviyesinde aynı dersleri daha rahat okuyabilirsin. Sıkılmak yerine akışta kalmak daha verimli."),
         el("div", { class: "row" }, el("button", { class: "btn small", onclick: () => setLevel(sug === "up" ? levelUp(L) : levelDown(L)) }, (sug === "up" ? levelUp(L) : levelDown(L)) + " seviyesine geç"))) : null,
-      el("section", { class: "card primary" },
-        el("div", { class: "row between" }, el("p", { class: "eyebrow" }, done === ORDER.length ? "Bu seviye bitti, tekrar et" : "Sıradaki ders"), el("span", { class: "pill" }, L + " · ~" + LEVEL_INFO[L].minutes + " dk")),
-        el("h2", null, m.title),
-        el("p", { class: "muted" }, m.titleTr),
-        el("div", { class: "row" }, el("span", { class: "pill" }, t.short)),
-        el("button", { class: "btn wide", onclick: () => go("lesson/" + nextId + "/" + L) }, "Derse başla", icon("next"))),
+      el("section", { class: "card chapter-card" },
+        el("div", { class: "row between" }, el("p", { class: "eyebrow" }, storyDone ? "Hikâye bitti · " + L + " seviyesinde tekrar" : "Bölüm " + chapterNo(nid) + " / " + ORDER.length + (act ? " · " + act.city : "")), el("span", { class: "pill level" }, L + " · ~" + LEVEL_INFO[L].minutes + " dk")),
+        el("h2", null, ch.title),
+        ch.intro ? el("p", { class: "muted" }, ch.intro) : null,
+        el("p", { class: "small lesson-sub" }, m.title),
+        el("button", { class: "btn wide", onclick: () => go("lesson/" + nid + "/" + L) }, chapterNo(nid) === 1 && !doneAny(nid) ? "Hikâyeye başla" : "Bölümü oyna", icon("next"))),
       el("section", { class: "grid2" },
+        el("button", { class: "tile", onclick: () => go("games/listen") },
+          el("span", { class: "tile-ic" }, icon("ear")), el("b", null, "Kelime oyunları"), el("span", { class: "muted small" }, "Dinle, eşleştir, 60 saniye")),
+        el("button", { class: "tile", onclick: () => go("duel") },
+          el("span", { class: "tile-ic" }, icon("handshake")), el("b", null, "Yatırımcı düellosu"), el("span", { class: "muted small" }, state.duel.wins ? state.duel.wins + " kez yatırım aldın" : "Sarah'yı ikna et")),
         el("button", { class: "tile", onclick: () => go(due ? "review" : "words") },
           el("span", { class: "tile-ic" }, icon("cards")), el("b", null, due ? due + " kelime" : "Kelimeler"), el("span", { class: "muted small" }, due ? "tekrar bekliyor" : Object.keys(state.srs).length + " kelime listende")),
         el("button", { class: "tile", onclick: () => openLevelSheet() },
-          el("span", { class: "tile-ic" }, el("b", { class: "lvmini" }, L)), el("b", null, LEVEL_INFO[L].name), el("span", { class: "muted small" }, done + "/" + ORDER.length + " ders bitti"))),
-      el("section", { class: "card flat" },
-        el("div", { class: "row between" }, el("p", { class: "eyebrow" }, L + " seviyesinde ilerleme"), el("span", { class: "small muted tnum" }, Math.round((done / ORDER.length) * 100) + "%")),
-        el("div", { class: "progressbar" }, el("i", { style: "width:" + Math.round((done / ORDER.length) * 100) + "%" })),
-        el("div", { class: "topics" }, CATALOG.topics.map((tp) => {
-          const ids = ORDER.filter((id) => meta(id).topic === tp.id); const d = ids.filter((id) => isDone(id, L)).length;
-          return el("button", { class: "topic-row", onclick: () => { listFilter = tp.id; go("lessons"); } }, el("i", { class: "dot", style: "background:" + tp.color }), el("span", { class: "tname" }, tp.name), el("span", { class: "muted tnum" }, d + "/" + ids.length));
-        })))
-    );
+          el("span", { class: "tile-ic" }, el("b", { class: "lvmini" }, L)), el("b", null, LEVEL_INFO[L].name), el("span", { class: "muted small" }, "Seviyeyi değiştir"))));
+    celebrate();
   };
 
-  /* ================= Ders listesi ================= */
-  let listFilter = "all";
-  routes.lessons = () => {
-    setTitle("Dersler");
-    const L = state.level;
-    const tabs = el("div", { class: "segbar", role: "tablist", "aria-label": "Seviye" }, LEVELS.map((x) => el("button", { role: "tab", "aria-selected": String(x === L), onclick: () => setLevel(x) }, x)));
-    const chips = el("div", { class: "chips", role: "group", "aria-label": "Konu" });
-    const mk = (id, label) => el("button", { class: "chip", "aria-pressed": String(listFilter === id), onclick: () => { listFilter = id; render(); } }, label);
-    chips.append(mk("all", "Tümü"), ...CATALOG.topics.map((t) => mk(t.id, t.short)));
-    const list = el("div", { class: "stack" });
-    ORDER.forEach((id, i) => {
-      const m = meta(id); if (listFilter !== "all" && m.topic !== listFilter) return;
-      const t = topic(m.topic), d = isDone(id, L);
-      list.append(el("button", { class: "lesson-item" + (d ? " done" : ""), onclick: () => go("lesson/" + id + "/" + L) },
-        el("span", { class: "num", style: "background:" + t.color }, d ? icon("check") : String(i + 1)),
-        el("span", { class: "t" }, el("b", null, m.title), el("span", null, m.titleTr),
-          el("span", { class: "meta" }, t.short + " · ~" + LEVEL_INFO[L].minutes + " dk",
-            el("span", { class: "lvdots", "aria-label": "Bitirilen seviyeler" }, LEVELS.map((x) => el("i", { class: isDone(id, x) ? "on" : "", title: x }))))),
-        icon("next", "chev")));
-    });
+  /* ================= Hikâye haritası ================= */
+  routes.story = () => {
+    setTitle("Hikâye");
+    const L = state.level, done = chaptersDone();
+    const current = ORDER.find((id) => !doneAny(id));
+    const tabs = el("div", { class: "segbar", role: "tablist", "aria-label": "Okuma seviyesi" }, LEVELS.map((x) => el("button", { role: "tab", "aria-selected": String(x === L), onclick: () => setLevel(x) }, x)));
     main.append(
-      el("div", { class: "stack tight" }, tabs, el("p", { class: "small muted" }, L + " · " + LEVEL_INFO[L].name + ": " + LEVEL_INFO[L].desc)),
-      chips, list);
+      el("section", { class: "card flat story-head" },
+        el("div", { class: "row between" }, el("h2", null, "Kurucunun hikâyesi"), el("span", { class: "small muted tnum" }, done + " / " + ORDER.length + " bölüm")),
+        el("div", { class: "progressbar" }, el("i", { style: "width:" + Math.round((done / ORDER.length) * 100) + "%" })),
+        el("p", { class: "small muted" }, "İstanbul'daki küçük ofisten yatırım turuna. Her bölüm bir ders; bitirdikçe sıradaki açılır. Okuma seviyesi:"),
+        tabs));
+    STORY.acts.forEach((act) => {
+      const chs = STORY.chapters.filter((c) => c.act === act.id && ORDER.includes(c.id));
+      const d = chs.filter((c) => doneAny(c.id)).length;
+      const path = el("div", { class: "path" });
+      const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute("class", "path-line"); svg.setAttribute("aria-hidden", "true");
+      path.append(svg);
+      const OFF = [0, 36, 72, 36];
+      chs.forEach((c, k) => {
+        const id = c.id, n = chapterNo(id), isDoneCh = doneAny(id), open = unlocked(id), cur = id === current && open;
+        const node = el("span", { class: "node" + (isDoneCh ? " done" : cur ? " current" : open ? "" : " locked") }, isDoneCh ? icon("check") : open ? String(n) : icon("lock"));
+        path.append(el("button", { class: "node-row" + (open ? "" : " is-locked"), style: "--off:" + OFF[k % OFF.length] + "px", "aria-label": "Bölüm " + n + ": " + c.title + (isDoneCh ? ", tamamlandı" : open ? "" : ", kilitli"), onclick: () => openChapter(id) },
+          node,
+          el("span", { class: "node-t" }, el("b", null, c.title), el("span", null, isDoneCh ? "Tamamlandı · " + LEVELS.filter((x) => isDone(id, x)).join(", ") : cur ? "Sıradaki bölüm" : open ? meta(id).titleTr : "Kilitli"))));
+      });
+      main.append(el("section", { class: "act" + (d === chs.length ? " act-done" : "") },
+        el("div", { class: "act-head" },
+          el("p", { class: "eyebrow" }, "Sezon " + act.n + " · " + act.city),
+          el("div", { class: "row between" }, el("h2", null, act.title), el("span", { class: "small muted tnum" }, d + "/" + chs.length)),
+          el("p", { class: "small muted" }, act.intro)),
+        path));
+      requestAnimationFrame(() => drawPath(path, svg));
+    });
+    const ro = window.ResizeObserver ? new ResizeObserver(() => main.querySelectorAll(".path").forEach((p) => drawPath(p, p.querySelector("svg")))) : null;
+    if (ro) { ro.observe(main); onLeave = () => ro.disconnect(); }
+    const cur = main.querySelector(".node.current");
+    if (cur) setTimeout(() => cur.scrollIntoView({ block: "center", behavior: "smooth" }), 150);
   };
+  function drawPath(path, svg) {
+    if (!path.isConnected) return;
+    const box = path.getBoundingClientRect();
+    const pts = [...path.querySelectorAll(".node")].map((n) => { const r = n.getBoundingClientRect(); return [r.left - box.left + r.width / 2, r.top - box.top + r.height / 2, n.classList.contains("done")]; });
+    if (pts.length < 2) { svg.innerHTML = ""; return; }
+    svg.setAttribute("viewBox", "0 0 " + box.width + " " + box.height);
+    svg.setAttribute("width", box.width); svg.setAttribute("height", box.height);
+    const d = (arr) => arr.map((p, i) => (i ? "L" : "M") + p[0].toFixed(1) + " " + p[1].toFixed(1)).join(" ");
+    let lastDone = -1; pts.forEach((p, i) => { if (p[2]) lastDone = i; });
+    const solid = lastDone >= 0 ? pts.slice(0, Math.min(pts.length, lastDone + 2)) : [];
+    svg.innerHTML = '<path class="pl-bg" d="' + d(pts) + '"/>' + (solid.length > 1 ? '<path class="pl-fg" d="' + d(solid) + '"/>' : "");
+  }
+  function openChapter(id) {
+    const c = chapterOf(id) || { title: meta(id).titleTr, intro: "" }, m = meta(id), act = actOf(id), n = chapterNo(id), L = state.level;
+    if (!unlocked(id)) { toast("Bu bölüm kilitli. Önce bir önceki bölümü bitir: Bölüm " + (n - 1) + "."); return; }
+    const close = sheet("Bölüm " + n, el("div", { class: "stack" },
+      act ? el("p", { class: "eyebrow" }, "Sezon " + act.n + " · " + act.title + " · " + act.city) : null,
+      el("h2", null, c.title),
+      c.intro ? el("p", { class: "muted" }, c.intro) : null,
+      el("div", { class: "card flat" }, el("b", null, m.title), el("span", { class: "small muted" }, m.titleTr),
+        el("div", { class: "row small muted" }, "Bitirdiğin seviyeler:", el("span", { class: "lvdots" }, LEVELS.map((x) => el("i", { class: isDone(id, x) ? "on" : "", title: x }))))),
+      el("button", { class: "btn wide", onclick: () => { close(); go("lesson/" + id + "/" + L); } }, isDone(id, L) ? "Tekrar oyna · " + L : "Oyna · " + L, icon("next"))));
+  }
 
   /* ================= Ders ================= */
   const vocabPatterns = (vocab) => vocab.map((v) => {
@@ -584,13 +717,35 @@
     if (last < text.length) frag.append(text.slice(last));
     return { node: frag, spans };
   };
+  // Telaffuz karaokesi: tanınan konuşmayı cümledeki kelimelerle eşleştirir.
+  // Kısaltmalar ("we're" ~ "we are") ve sayılar ("six" ~ "6") eşit sayılır; küçük farklar tolere edilir.
+  const NUMS = { zero: "0", one: "1", two: "2", three: "3", four: "4", five: "5", six: "6", seven: "7", eight: "8", nine: "9", ten: "10", eleven: "11", twelve: "12", fifteen: "15", twenty: "20", thirty: "30", forty: "40", fifty: "50", sixty: "60", hundred: "100" };
+  const speechParts = (t) => norm(String(t).replace(/(\d)[,.](\d{3})/g, "$1$2")).replace(/n't\b/g, " not").replace(/'re\b/g, " are").replace(/'m\b/g, " am").replace(/'ll\b/g, " will").replace(/'ve\b/g, " have").replace(/'d\b/g, " would").replace(/'s\b/g, "").replace(/'/g, "").split(" ").filter(Boolean).map((x) => NUMS[x] || x);
+  const scoreSpeech = (words, heard) => {
+    const H = speechParts(heard);
+    let p = 0;
+    const hits = words.map((w) => {
+      const parts = speechParts(w);
+      if (!parts.length) return true;
+      let ok = true;
+      parts.forEach((part) => {
+        let found = -1;
+        for (let j = p; j < Math.min(H.length, p + 4); j++) if (H[j] === part || close(H[j], part)) { found = j; break; }
+        if (found < 0) ok = false; else p = found + 1;
+      });
+      return ok;
+    });
+    return { hits, pct: hits.filter(Boolean).length / Math.max(1, hits.length) };
+  };
   const karaoke = (spans) => (idx) => { spans.forEach((s) => s.classList.toggle("now", idx >= +s.dataset.s && idx < +s.dataset.e)); };
   const clearKaraoke = (spans) => spans.forEach((s) => s.classList.remove("now"));
 
   routes.lesson = async (id, lv) => {
     const m = meta(id);
-    if (!m) { go("lessons"); return; }
+    if (!m) { go("story"); return; }
+    if (!unlocked(id)) { toast("Bu bölüm kilitli. Önce bir önceki bölümü bitir: Bölüm " + (chapterNo(id) - 1) + "."); go("story"); return; }
     const L = LEVELS.includes(lv) ? lv : state.level;
+    const xpStart = state.xp;
     setTitle(m.title);
     main.append(el("div", { class: "card center" }, el("div", { class: "spinner", "aria-hidden": "true" }), el("p", { class: "muted" }, "Ders hazırlanıyor…")));
     await loadLevel(L);
@@ -606,12 +761,16 @@
     const pats = vocabPatterns(V.vocab);
     const gloss = (v) => { TTS.speak(v.en, { level: L, silent: true }); toast(v.en + " · " + v.tr); };
 
+    const ch = chapterOf(id), act = actOf(id);
     const header = el("header", { class: "lesson-head" },
+      el("p", { class: "eyebrow" }, "Bölüm " + chapterNo(id) + " / " + ORDER.length + (act ? " · Sezon " + act.n + " · " + act.city : "")),
+      el("h1", null, ch ? ch.title : m.title),
+      ch && ch.intro ? el("p", { class: "story-intro" }, ch.intro) : null,
       el("div", { class: "row" },
         el("span", { class: "pill topic", style: "background:" + t.color }, t.short),
         el("button", { class: "pill level as-btn", onclick: () => openLevelSheet(), "aria-label": "Seviye " + L + ". Değiştir" }, L + " · " + LEVEL_INFO[L].name),
         el("span", { class: "pill" }, "~" + LEVEL_INFO[L].minutes + " dk")),
-      el("h1", null, m.title), el("p", { class: "muted" }, m.titleTr));
+      el("p", { class: "lesson-sub" }, m.title));
     const names = ["Metin", "Kelimeler", "Anlama", "Kullanım", "Konuşma"];
     const steps = el("nav", { class: "steps", "aria-label": "Ders adımları" }, names.map((n, i) => el("button", { class: prog.steps[i + 1] ? "ok" : "", onclick: () => goStep(i + 1) }, el("b", null, prog.steps[i + 1] ? "✓" : String(i + 1)), el("span", null, n))));
     const body = el("div", { class: "stack", id: "stepbody" });
@@ -625,12 +784,42 @@
     // 1) Metin
     function stepText() {
       let showTr = state.settings.showTr, focus = false, fi = 0, playing = false;
+      const saidOk = new Set();
+      const sayBtn = (getSpans, res, i) => {
+        let rec = null;
+        const b = el("button", { class: "iconbtn say", "aria-label": "Cümleyi sesli oku, telaffuzunu kontrol et", onclick: (e) => {
+          e.stopPropagation();
+          if (rec) { rec.stop(); return; }
+          TTS.stop();
+          const spans = getSpans();
+          spans.forEach((x) => x.classList.remove("said", "missed"));
+          res.hidden = false; res.className = "say-result"; res.textContent = "Dinliyorum… cümleyi sesli oku.";
+          b.classList.add("active");
+          let heard = "";
+          rec = STT.listen((t) => { heard = t; res.textContent = "“" + t + "”"; }, () => {
+            b.classList.remove("active"); rec = null;
+            if (!heard) { res.textContent = "Ses alınamadı. Mikrofona yakın konuşup tekrar dene."; return; }
+            const r = scoreSpeech(spans.map((x) => x.textContent), heard);
+            spans.forEach((x, k) => x.classList.add(r.hits[k] ? "said" : "missed"));
+            const pc = Math.round(r.pct * 100);
+            res.className = "say-result " + (pc >= 85 ? "good" : pc >= 60 ? "ok" : "low");
+            res.textContent = "%" + pc + " · " + (pc >= 85 ? "Harika telaffuz!" : pc >= 60 ? "Fena değil. Kırmızı kelimelere dikkat." : "Tekrar dene: önce dinle, sonra söyle.");
+            if (pc >= 80 && !saidOk.has(i)) { saidOk.add(i); addXp(1); haptic(); }
+          });
+          if (!rec) { b.classList.remove("active"); res.hidden = true; }
+        } }, icon("mic"));
+        if (!STT.ok()) b.hidden = true;
+        return b;
+      };
       const cards = V.text.map((s, i) => {
         const ws = wordSpans(s.en, pats, gloss);
         const tr = el("p", { class: "tr", hidden: !showTr }, s.tr);
+        const res = el("p", { class: "say-result", hidden: true, "aria-live": "polite" });
         const card = el("article", { class: "sentence" },
-          el("div", { class: "body", onclick: () => { tr.hidden = !tr.hidden; } }, s.who ? el("div", { class: "who" }, whoLabel(s.who)) : null, ws.node, tr),
-          el("button", { class: "iconbtn", "aria-label": "Cümleyi dinle", onclick: () => playOne(i) }, icon("speaker")));
+          el("div", { class: "body", onclick: () => { tr.hidden = !tr.hidden; } }, s.who ? el("div", { class: "who" }, whoLabel(s.who)) : null, ws.node, res, tr),
+          el("div", { class: "card-tools" },
+            el("button", { class: "iconbtn", "aria-label": "Cümleyi dinle", onclick: () => playOne(i) }, icon("speaker")),
+            sayBtn(() => card._spans, res, i)));
         card._spans = ws.spans; card._tr = tr;
         return card;
       });
@@ -659,7 +848,9 @@
         const s = V.text[fi];
         const ws = wordSpans(s.en, pats, gloss);
         const tr = el("p", { class: "tr", hidden: !showTr }, s.tr);
-        focusCard = el("article", { class: "sentence big" }, el("div", { class: "body", onclick: () => { tr.hidden = !tr.hidden; } }, s.who ? el("div", { class: "who" }, whoLabel(s.who)) : null, ws.node, tr));
+        const res = el("p", { class: "say-result", hidden: true, "aria-live": "polite" });
+        focusCard = el("article", { class: "sentence big" }, el("div", { class: "body", onclick: () => { tr.hidden = !tr.hidden; } }, s.who ? el("div", { class: "who" }, whoLabel(s.who)) : null, ws.node, res, tr));
+        const fc = focusCard;
         focusCard._spans = ws.spans;
         focusWrap.replaceChildren(
           el("div", { class: "row between small muted" }, el("span", null, "Cümle " + (fi + 1) + " / " + V.text.length), el("span", null, "Dokun: Türkçesi")),
@@ -667,7 +858,9 @@
           focusCard,
           el("div", { class: "focus-nav" },
             el("button", { class: "btn ghost", disabled: fi === 0, onclick: () => { TTS.stop(); fi--; drawFocus(); if (state.settings.autoSpeak) playOne(fi, focusCard); } }, icon("back"), "Önceki"),
-            el("button", { class: "iconbtn big", "aria-label": "Dinle", onclick: () => playOne(fi, focusCard) }, icon("speaker")),
+            el("div", { class: "row nowrap focus-mid" },
+              el("button", { class: "iconbtn big", "aria-label": "Dinle", onclick: () => playOne(fi, focusCard) }, icon("speaker")),
+              sayBtn(() => fc._spans, res, fi)),
             el("button", { class: "btn ghost", disabled: fi === V.text.length - 1, onclick: () => { TTS.stop(); fi++; drawFocus(); if (state.settings.autoSpeak) playOne(fi, focusCard); } }, "Sonraki", icon("next"))));
       }
       const easier = L !== "A1" ? el("button", { class: "btn ghost small", onclick: () => go("lesson/" + id + "/" + levelDown(L)) }, icon("down"), "Daha kolay: " + levelDown(L)) : null;
@@ -675,7 +868,7 @@
       body.append(
         el("p", { class: "intro" }, V.intro),
         el("div", { class: "toolbar" }, allBtn, trBtn, focusBtn),
-        el("p", { class: "small muted" }, "Cümleye dokun: Türkçesi açılır. Renkli kelimeye dokun: anlamı ve okunuşu."),
+        el("p", { class: "small muted" }, "Cümleye dokun: Türkçesi açılır. Renkli kelimeye dokun: anlamı ve okunuşu." + (STT.ok() ? " Mikrofona bas ve cümleyi sesli oku: doğru söylediğin kelimeler yeşil olur." : "")),
         list, focusWrap,
         el("div", { class: "card flat diff" }, el("p", { class: "small" }, el("b", null, "Zorluk uygun mu? "), "Aynı metni başka seviyede oku."), el("div", { class: "row" }, easier, harder)),
         nextBtn("Kelimelere geç", 1, () => addXp(prog.steps[1] ? 0 : 5)));
@@ -878,23 +1071,27 @@
         markStep(5);
         const got = score.quiz + score.use + score.talk, max = score.quizTotal + score.useTotal + score.talkTotal;
         const pct = max ? got / max : 1;
-        const first = !prog.complete;
+        const first = !prog.complete, wasDoneAny = doneAny(id);
         prog.complete = true; prog.pct = Math.max(prog.pct || 0, pct); prog.date = dateKey(); prog.ts = Date.now(); save();
         addXp(score.talk * 4 + (first ? 10 : 2));
-        const nx = nextLesson(L, id);
+        const g = gain(xpStart, state.xp);
+        if (!wasDoneAny && act && STORY.chapters.filter((c) => c.act === act.id).every((c) => doneAny(c.id))) pending.push({ type: "act", act });
+        const nx = ORDER[ORDER.indexOf(id) + 1] || null;
         const up = pct >= 0.9 && L !== "C2", down = pct < 0.5 && L !== "A1";
         chat.append(el("div", { class: "card center done-card" },
           el("div", { class: "badge-big" }, icon("trophy")),
-          el("p", { class: "eyebrow" }, "Ders tamamlandı"),
+          el("p", { class: "eyebrow" }, "Bölüm " + chapterNo(id) + " tamamlandı"),
           el("div", { class: "score-big" }, Math.round(pct * 100) + "%"),
+          el("div", { class: "value-gain" }, el("span", { class: "small muted" }, "AIHEAR değeri"), el("b", null, euro(valuation(state.xp))), el("span", { class: "pill done" }, "+" + euro(g))),
           el("p", { class: "muted" }, "Anlama " + score.quiz + "/" + score.quizTotal + " · Kullanım " + score.use + "/" + score.useTotal + " · Konuşma " + score.talk + "/" + score.talkTotal),
           up ? el("p", { class: "small" }, "Bu seviye rahat geliyor. Aynı dersi " + levelUp(L) + " seviyesinde denemek ister misin?") : down ? el("p", { class: "small" }, "Zorlandıysan sorun değil. " + levelDown(L) + " seviyesinde aynı hikâye daha akıcı okunur.") : null,
           el("div", { class: "stack tight", style: "width:100%" },
-            nx ? el("button", { class: "btn wide", onclick: () => go("lesson/" + nx + "/" + L) }, "Sıradaki ders", icon("next")) : el("button", { class: "btn wide", onclick: () => go("home") }, "Ana sayfa"),
+            nx ? el("button", { class: "btn wide", onclick: () => go("lesson/" + nx + "/" + L) }, "Bölüm " + chapterNo(nx) + ": " + (chapterOf(nx) ? chapterOf(nx).title : meta(nx).titleTr), icon("next")) : el("button", { class: "btn wide", onclick: () => go("home") }, "Hikâye bitti · Ana sayfa"),
             up ? el("button", { class: "btn secondary wide", onclick: () => go("lesson/" + id + "/" + levelUp(L)) }, icon("up"), levelUp(L) + " seviyesinde oku") : null,
             down ? el("button", { class: "btn secondary wide", onclick: () => go("lesson/" + id + "/" + levelDown(L)) }, icon("down"), levelDown(L) + " seviyesinde oku") : null,
             el("button", { class: "btn ghost wide", onclick: () => goStep(5) }, "Tekrar konuş"))));
         chat.lastChild.scrollIntoView({ behavior: "smooth", block: "center" });
+        setTimeout(celebrate, 900);
       }
     }
 
@@ -951,13 +1148,20 @@
     setTitle("Kelimeler");
     const all = Object.keys(state.srs);
     const due = SRS.due().length, known = all.filter((w) => SRS.known(w)).length;
+    const gameCard = (type, ic, title, desc, best) => el("button", { class: "game-card", onclick: () => go("games/" + type) },
+      el("span", { class: "tile-ic" }, icon(ic)), el("span", { class: "gc-t" }, el("b", null, title), el("span", { class: "small muted" }, desc)), best ? el("span", { class: "pill" }, best) : null);
     main.append(
+      el("section", { class: "stack tight" }, el("p", { class: "eyebrow" }, "Kelime oyunları · okumadan, dinleyerek"),
+        el("div", { class: "games" },
+          gameCard("listen", "ear", "Dinle ve seç", "Kelimeyi duy, anlamına dokun.", state.games.listen ? "Rekor " + state.games.listen + "/10" : null),
+          gameCard("match", "puzzle", "Eşleştir", "Sesleri Türkçe anlamlarıyla eşleştir.", state.games.match ? state.games.match + " tur" : null),
+          gameCard("blitz", "timer", "60 saniye", "Duyduğun kelime bu anlama mı geliyor?", state.games.blitz ? "Rekor " + state.games.blitz : null))),
       el("section", { class: "stats" },
         el("div", { class: "stat" }, el("b", null, String(all.length)), el("span", null, "toplam")),
         el("div", { class: "stat" }, el("b", null, String(all.length - known)), el("span", null, "öğreniliyor")),
         el("div", { class: "stat" }, el("b", null, String(known)), el("span", null, "biliyorsun"))),
       el("button", { class: "btn wide", disabled: !all.length, onclick: () => go("review") }, icon("cards"), due ? "Tekrara başla · " + due + " kelime" : "Serbest tekrar"));
-    if (!all.length) { main.append(el("div", { class: "card center" }, el("h2", null, "Listen henüz boş"), el("p", { class: "muted" }, "Bir dersin “Kelimeler” adımını bitirdiğinde kelimeler buraya eklenir."), el("button", { class: "btn secondary", onclick: () => go("lessons") }, "Derslere git"))); return; }
+    if (!all.length) { main.append(el("div", { class: "card center" }, el("h2", null, "Listen henüz boş"), el("p", { class: "muted" }, "Bir dersin “Kelimeler” adımını bitirdiğinde kelimeler buraya eklenir."), el("button", { class: "btn secondary", onclick: () => go("story") }, "Hikâyeye git"))); return; }
     const search = el("input", { class: "text", id: "word-search", type: "search", placeholder: "Kelime ara (İngilizce ya da Türkçe)", value: wordsQuery, "aria-label": "Kelime ara" });
     const chips = el("div", { class: "chips" }, [["all", "Tümü"], ["due", "Tekrar zamanı"], ["learning", "Öğreniliyor"], ["known", "Biliyorum"]].map(([k, t]) => el("button", { class: "chip", "aria-pressed": String(wordsFilter === k), onclick: () => { wordsFilter = k; render(); } }, t)));
     const list = el("div", { class: "wordlist" });
@@ -990,7 +1194,7 @@
     if (!queue.length) queue = shuffle(Object.keys(state.srs)).slice(0, 15);
     if (!queue.length) { go("words"); return; }
     let reverse = false, i = 0, correct = 0;
-    const total = queue.length;
+    const total = queue.length, xpStart = state.xp;
     const bar = el("div", { class: "progressbar" }, el("i", { style: "width:0%" }));
     const dirBtn = el("button", { class: "btn ghost small", onclick: () => { reverse = !reverse; dirBtn.lastChild.textContent = reverse ? "Türkçe → İngilizce" : "İngilizce → Türkçe"; show(); } }, icon("swap"), el("span", null, "İngilizce → Türkçe"));
     const wrap = el("div", { class: "stack" });
@@ -999,7 +1203,8 @@
       bar.firstChild.style.width = Math.round((i / total) * 100) + "%";
       if (i >= total) {
         addXp(correct * 2);
-        wrap.replaceChildren(el("div", { class: "card center" }, el("div", { class: "score-big" }, correct + "/" + total), el("p", { class: "muted" }, "kelimeyi hatırladın. “Zor” dediklerin 10 dakika sonra yeniden gelir."), el("button", { class: "btn", onclick: () => go("home") }, "Ana sayfa"), el("button", { class: "btn ghost", onclick: () => go("words") }, "Kelime listesi")));
+        wrap.replaceChildren(el("div", { class: "card center" }, el("div", { class: "score-big" }, correct + "/" + total), el("p", { class: "muted" }, "kelimeyi hatırladın. “Zor” dediklerin 10 dakika sonra yeniden gelir."), valueGain(xpStart), el("button", { class: "btn", onclick: () => go("home") }, "Ana sayfa"), el("button", { class: "btn ghost", onclick: () => go("words") }, "Kelime listesi")));
+        celebrate();
         return;
       }
       const w = queue[i], d = state.srs[w];
@@ -1024,49 +1229,342 @@
     show();
   };
 
-  /* ================= İlerleme ================= */
-  const BADGES = [
-    { id: "first", t: "İlk adım", d: "İlk dersini bitir", ok: () => lessonsDone() >= 1 },
-    { id: "five", t: "Isınma turu", d: "5 ders bitir", ok: () => lessonsDone() >= 5 },
-    { id: "twenty", t: "Maratoncu", d: "20 ders bitir", ok: () => lessonsDone() >= 20 },
-    { id: "s3", t: "Ritim", d: "3 gün üst üste çalış", ok: () => (state.streak.best || 0) >= 3 },
-    { id: "s7", t: "Bir hafta", d: "7 gün üst üste çalış", ok: () => (state.streak.best || 0) >= 7 },
-    { id: "w50", t: "Kelime avcısı", d: "50 kelime öğren", ok: () => Object.keys(state.srs).filter((w) => SRS.known(w)).length >= 50 },
-    { id: "pitch", t: "Sahneye hazır", d: "Pitch dersini bitir", ok: () => doneAny("in-01") },
-    { id: "abroad", t: "Valiz hazır", d: "Yurt dışı derslerinin hepsini bitir", ok: () => ["ab-01", "ab-02", "ab-03", "ab-04"].every(doneAny) },
-    { id: "c1", t: "Üst lig", d: "C1 ya da C2'de bir ders bitir", ok: () => ORDER.some((id) => isDone(id, "C1") || isDone(id, "C2")) }
-  ];
-  routes.progress = () => {
-    setTitle("İlerleme");
-    const known = Object.keys(state.srs).filter((w) => SRS.known(w)).length;
-    const days = Array.from({ length: 14 }, (_, k) => { const t = Date.now() - (13 - k) * DAY; return { k: dateKey(t), d: new Date(t), v: state.activity[dateKey(t)] || 0 }; });
-    const max = Math.max(state.settings.goal, ...days.map((x) => x.v)) * 1.15;
-    const W = 336, H = 150, pad = 4, padR = 18, bw = (W - pad - padR) / 14;
+  /* ================= Ortak: değer artışı ================= */
+  function valueGain(xpStart) {
+    const g = gain(xpStart, state.xp);
+    return el("div", { class: "value-gain" }, el("span", { class: "small muted" }, "AIHEAR değeri"), el("b", null, euro(valuation(state.xp))), g > 0 ? el("span", { class: "pill done" }, "+" + euro(g)) : null);
+  }
+
+  /* ================= Kelime oyunları ================= */
+  // Az okuma, çok dinleme: kelime sesli gelir, cevaplar kısa Türkçe anlamlardır.
+  const wordPool = async () => {
+    const items = [], seen = new Set();
+    const add = (en, tr) => {
+      if (!en || !tr) return;
+      const e = String(en).replace(/\s*\(.*?\)\s*/g, " ").trim(), k1 = "e:" + norm(e), k2 = "t:" + norm(tr);
+      if (!e || seen.has(k1) || seen.has(k2) || tr.length > 40) return;
+      seen.add(k1); seen.add(k2); items.push({ en: e, tr });
+    };
+    Object.keys(state.srs).forEach((w) => add(w, state.srs[w].tr));
+    if (items.length < 16) {
+      await loadLevel(state.level);
+      const D = window.LEVEL_DATA[state.level];
+      ORDER.filter(unlocked).forEach((id) => D[id].vocab.forEach((v) => add(v.en, v.tr)));
+      if (items.length < 16) ORDER.forEach((id) => D[id].vocab.forEach((v) => add(v.en, v.tr)));
+    }
+    return items;
+  };
+  const sayWord = (w) => TTS.speak(w, { silent: true, rate: Math.min(0.95, speechRate()) });
+  const gameHead = (title, desc) => el("div", { class: "stack tight" }, el("h1", null, title), el("p", { class: "muted" }, desc));
+  const gameEnd = (wrap, opts) => {
+    wrap.replaceChildren(el("div", { class: "card center done-card" },
+      el("div", { class: "badge-big" }, icon(opts.icon || "star")),
+      el("p", { class: "eyebrow" }, opts.eyebrow),
+      el("div", { class: "score-big" }, opts.score),
+      opts.note ? el("p", { class: "muted" }, opts.note) : null,
+      valueGain(opts.xpStart),
+      el("div", { class: "stack tight", style: "width:100%" },
+        el("button", { class: "btn wide", onclick: () => render() }, "Tekrar oyna"),
+        el("button", { class: "btn ghost wide", onclick: () => go("words") }, "Diğer oyunlar"))));
+    setTimeout(celebrate, 600);
+  };
+
+  routes.games = async (type, secs) => {
+    const pool = await wordPool();
+    if (route.name !== "games") return;
+    if (pool.length < 6) { main.append(el("div", { class: "card center" }, el("h2", null, "Biraz daha kelime lazım"), el("p", { class: "muted" }, "Oyunlar için önce bir iki bölüm oyna."), el("button", { class: "btn", onclick: () => go("story") }, "Hikâyeye git"))); return; }
+    if (type === "match") return gameMatch(pool);
+    if (type === "blitz") return gameBlitz(pool, Math.max(5, Math.min(120, parseInt(secs, 10) || 60)));
+    return gameListen(pool);
+  };
+
+  function gameListen(pool) {
+    setTitle("Dinle ve seç");
+    const N = Math.min(10, pool.length), targets = shuffle(pool).slice(0, N), xpStart = state.xp;
+    let i = 0, correct = 0;
+    const wrap = el("div", { class: "stack" });
+    main.append(gameHead("Dinle ve seç", "Kelimeyi dinle ve anlamına dokun. Gerekirse yazısını açabilirsin."), wrap);
+    const show = () => {
+      if (i >= N) {
+        addXp(correct * 2);
+        state.games.listen = Math.max(state.games.listen || 0, correct); save();
+        gameEnd(wrap, { eyebrow: "Dinle ve seç", score: correct + "/" + N, note: correct === N ? "Kusursuz kulak!" : correct >= N * 0.7 ? "Çok iyi. Kaçırdıkların tekrar listende öne geçti." : "Kaçırdıkların tekrar listende öne geçti; yakında yine gelecek.", xpStart, icon: "ear" });
+        return;
+      }
+      const t = targets[i];
+      const opts = shuffle([t].concat(shuffle(pool.filter((p) => p !== t)).slice(0, 3)));
+      const word = el("div", { class: "g-word", hidden: true }, t.en);
+      const reveal = el("button", { class: "linkbtn", onclick: () => { word.hidden = false; reveal.hidden = true; } }, "Yazısını göster");
+      const grid = el("div", { class: "g-options" });
+      let locked = false;
+      opts.forEach((o) => grid.append(el("button", { class: "g-opt", "data-ok": o === t ? "1" : null, onclick: (e) => {
+        if (locked) return; locked = true;
+        const ok = o === t;
+        if (ok) { e.currentTarget.classList.add("correct"); correct++; haptic(); }
+        else { e.currentTarget.classList.add("wrong"); grid.querySelector('[data-ok="1"]').classList.add("correct"); if (state.srs[t.en]) SRS.rate(t.en, 1); }
+        word.hidden = false; reveal.hidden = true;
+        setTimeout(() => { i++; show(); }, ok ? 900 : 1700);
+      } }, o.tr)));
+      wrap.replaceChildren(
+        el("div", { class: "row between small muted" }, el("span", null, (i + 1) + " / " + N), el("span", null, correct + " doğru")),
+        el("div", { class: "progressbar thin" }, el("i", { style: "width:" + Math.round((i / N) * 100) + "%" })),
+        el("div", { class: "g-stage" }, el("button", { class: "g-speaker", "aria-label": "Kelimeyi tekrar dinle", onclick: () => sayWord(t.en) }, icon("speaker")), word, reveal),
+        grid);
+      sayWord(t.en);
+    };
+    show();
+  }
+
+  function gameMatch(pool) {
+    setTitle("Eşleştir");
+    const pairs = shuffle(pool).slice(0, Math.min(5, pool.length)), xpStart = state.xp;
+    let sel = null, matched = 0, mistakes = 0;
+    const wrap = el("div", { class: "stack" });
+    const left = pairs.map((p, k) => el("button", { class: "m-tile m-audio", "data-k": String(k), "aria-label": "Ses " + (k + 1), onclick: () => {
+      if (left[k].classList.contains("done")) return;
+      left.forEach((b) => b.classList.remove("sel"));
+      left[k].classList.add("sel"); sel = k; sayWord(p.en);
+    } }, icon("speaker"), el("span", { class: "m-label" }, String(k + 1))));
+    const right = shuffle(pairs.map((p, k) => ({ p, k }))).map(({ p, k }) => el("button", { class: "m-tile m-tr", "data-k": String(k), onclick: (e) => {
+      const b = e.currentTarget;
+      if (b.classList.contains("done")) return;
+      if (sel == null) { toast("Önce soldan bir sese dokun."); return; }
+      if (sel === k) {
+        b.classList.add("done"); left[k].classList.add("done"); left[k].classList.remove("sel");
+        left[k].querySelector(".m-label").textContent = p.en;
+        b.disabled = true; left[k].disabled = true; sel = null; matched++; haptic();
+        if (matched === pairs.length) {
+          const xp = Math.max(3, 10 - mistakes * 2);
+          addXp(xp);
+          state.games.match = (state.games.match || 0) + 1; save();
+          setTimeout(() => gameEnd(wrap, { eyebrow: "Eşleştir", score: mistakes ? mistakes + " hata" : "Hatasız", note: mistakes ? "Her turda kelimeler değişir. Bir tur daha?" : "Bütün sesleri ilk denemede tanıdın.", xpStart, icon: "puzzle" }), 700);
+        }
+      } else {
+        mistakes++;
+        b.classList.add("wrong"); setTimeout(() => b.classList.remove("wrong"), 500);
+        const w = pairs[sel].en; if (state.srs[w]) SRS.rate(w, 1);
+      }
+    } }, p.tr));
+    wrap.append(el("p", { class: "small muted" }, "Soldaki sese dokun, dinle, sonra sağdaki anlamına dokun."), el("div", { class: "match" }, el("div", { class: "m-col" }, left), el("div", { class: "m-col" }, right)));
+    main.append(gameHead("Eşleştir", "Sesleri anlamlarıyla eşleştir. Eşleşince kelimenin yazısı görünür."), wrap);
+  }
+
+  function gameBlitz(pool, total) {
+    setTitle("60 saniye");
+    const xpStart = state.xp;
+    const wrap = el("div", { class: "stack" });
+    main.append(gameHead(total + " saniye", "Kelimeyi duy ve altındaki anlamın doğru olup olmadığını söyle. Ne kadar çok, o kadar iyi."), wrap);
+    wrap.append(el("div", { class: "card center" },
+      el("p", null, "Hazır olunca başla. Ses açık olsun."),
+      el("button", { class: "btn wide", id: "blitz-start", onclick: () => start() }, icon("timer"), "Başla")));
+    let score = 0, tries = 0, end = 0, timer = null, finished = false;
+    const bar = el("div", { class: "progressbar timebar" }, el("i", { style: "width:100%" }));
+    const stat = el("div", { class: "row between small muted" });
+    const stage = el("div", { class: "stack" });
+    function start() {
+      end = Date.now() + total * 1000;
+      wrap.replaceChildren(stat, bar, stage);
+      timer = setInterval(tick, 200);
+      onLeave = () => clearInterval(timer);
+      next();
+    }
+    function tick() {
+      const left = Math.max(0, end - Date.now());
+      bar.firstChild.style.width = (left / (total * 1000)) * 100 + "%";
+      stat.replaceChildren(el("span", null, Math.ceil(left / 1000) + " sn"), el("span", null, score + " doğru"));
+      if (!left) finish();
+    }
+    function finish() {
+      if (finished) return; finished = true;
+      clearInterval(timer); onLeave = null; TTS.stop();
+      addXp(score);
+      const rec = score > (state.games.blitz || 0);
+      state.games.blitz = Math.max(state.games.blitz || 0, score); save();
+      gameEnd(wrap, { eyebrow: total + " saniye", score: String(score), note: (rec ? "Yeni rekor! " : "") + tries + " kelimeden " + score + " tanesini bildin.", xpStart, icon: "timer" });
+    }
+    function next() {
+      if (finished) return;
+      const t = pool[Math.floor(Math.random() * pool.length)];
+      const truth = Math.random() < 0.5;
+      const other = shuffle(pool.filter((p) => p !== t))[0];
+      const shown = truth ? t.tr : other.tr;
+      const word = el("div", { class: "g-word", hidden: true }, t.en);
+      const answer = (yes, btn) => {
+        tries++;
+        const ok = yes === truth;
+        if (ok) { score++; haptic(); }
+        btn.classList.add(ok ? "correct" : "wrong");
+        word.hidden = false;
+        stage.querySelectorAll(".b-btn").forEach((x) => { x.disabled = true; });
+        tick();
+        setTimeout(next, ok ? 300 : 900);
+      };
+      stage.replaceChildren(
+        el("div", { class: "g-stage" }, el("button", { class: "g-speaker", "aria-label": "Tekrar dinle", onclick: () => sayWord(t.en) }, icon("speaker")), word, el("div", { class: "b-meaning" }, shown)),
+        el("div", { class: "b-row" },
+          el("button", { class: "b-btn no", "data-ok": truth ? null : "1", onclick: (e) => answer(false, e.currentTarget) }, icon("x"), "Yanlış"),
+          el("button", { class: "b-btn yes", "data-ok": truth ? "1" : null, onclick: (e) => answer(true, e.currentTarget) }, icon("check"), "Doğru")));
+      sayWord(t.en);
+    }
+  }
+
+  /* ================= Yatırımcı düellosu ================= */
+  // Sarah'yla süreli pitch turu. Her doğru cevapta soru bir seviye zorlaşır.
+  const DUEL_LESSONS = ["in-01", "in-02", "in-03", "in-04", "ai-03", "ai-04", "te-02", "sc-02"];
+  const DUEL_TIME = { A1: 75, A2: 70, B1: 60, B2: 55, C1: 50, C2: 50 };
+  const DUEL_OFFER = { A1: 100000, A2: 200000, B1: 350000, B2: 500000, C1: 750000, C2: 1000000 };
+  const DUEL_Q = 6;
+  routes.duel = async () => {
+    setTitle("Yatırımcı düellosu");
+    const startL = state.level === "A1" ? "A1" : levelDown(state.level);
+    const intro = el("section", { class: "card duel-intro" },
+      el("div", { class: "row" }, el("span", { class: "avatar" }, "S"), el("div", { class: "stack tight" }, el("b", null, "Sarah"), el("span", { class: "small muted" }, "Sağlık fonu yatırım ortağı"))),
+      el("h2", null, "Sarah'yı ikna et"),
+      el("ul", { class: "plain" },
+        el("li", null, DUEL_Q + " soru. Her soru için süren var."),
+        el("li", null, "Doğru cevap verdikçe sorular bir seviye zorlaşır. " + startL + " ile başlarsın."),
+        el("li", null, "İpucu kullanabilirsin ama Sarah'nın ilgisi daha az artar."),
+        el("li", null, "Sonunda ilgisi %70'i geçerse yatırımı alırsın.")),
+      state.duel.played ? el("p", { class: "small muted" }, state.duel.played + " düello · " + state.duel.wins + " yatırım · en yüksek ilgi %" + state.duel.best) : null,
+      el("button", { class: "btn wide", id: "duel-start", onclick: () => begin() }, icon("handshake"), "Düelloyu başlat"));
+    main.append(intro);
+
+    async function begin() {
+      intro.replaceChildren(el("div", { class: "spinner", "aria-hidden": "true" }));
+      const levels = LEVELS.slice(levelIdx(startL));
+      await Promise.all(levels.map(loadLevel));
+      if (route.name !== "duel") return;
+      const pool = {};
+      levels.forEach((L) => { pool[L] = []; DUEL_LESSONS.forEach((id) => { const V = variant(id, L); if (V) V.roleplay.turns.forEach((t) => pool[L].push(t)); }); });
+      let interest = 50, q = 0, L = startL, maxL = startL, right = 0, timer = null;
+      const used = new Set(), xpStart = state.xp;
+      const meter = el("div", { class: "meter" }, el("i"));
+      const meterLabel = el("span", { class: "small" });
+      const setMeter = () => { meter.firstChild.style.width = interest + "%"; meter.className = "meter " + (interest >= 70 ? "hi" : interest >= 40 ? "mid" : "lo"); meterLabel.textContent = "Sarah'nın ilgisi: %" + interest; };
+      const top = el("div", { class: "stack tight duel-top" }, el("div", { class: "row between" }, meterLabel, el("span", { class: "small muted q-count" })), meter);
+      const stage = el("div", { class: "stack" });
+      main.replaceChildren(top, stage);
+      setMeter();
+      ask();
+
+      function ask() {
+        const list = pool[L].filter((t) => !used.has(t.ai));
+        const t = (list.length ? list : pool[L])[Math.floor(Math.random() * (list.length || pool[L].length))];
+        used.add(t.ai);
+        const limit = DUEL_TIME[L] * 1000, t0 = Date.now();
+        let hintUsed = false, done = false;
+        top.querySelector(".q-count").textContent = "Soru " + (q + 1) + " / " + DUEL_Q + " · " + L;
+        const timebar = el("div", { class: "progressbar timebar" }, el("i", { style: "width:100%" }));
+        const secs = el("span", { class: "small muted tnum" });
+        const trEl = el("div", { class: "tr", hidden: true }, t.aiTr);
+        const hint = el("div", { class: "hintbox", hidden: true }, "Örnek: " + t.hint);
+        const ta = el("textarea", { class: "answer", id: "duel-input", rows: "2", placeholder: "Cevabını yaz ya da mikrofona bas…", "aria-label": "Cevabın" });
+        const send = el("button", { class: "btn send", "aria-label": "Gönder", onclick: () => judge(ta.value, false) }, icon("send"));
+        ta.addEventListener("keydown", (e) => { if (e.key === "Enter" && !e.shiftKey) { e.preventDefault(); judge(ta.value, false); } });
+        const fb = el("div", { class: "stack tight", "aria-live": "polite" });
+        stage.replaceChildren(
+          el("div", { class: "row between" }, timebar, secs),
+          el("div", { class: "bubble ai" }, el("div", { class: "who" }, "Sarah"), el("div", null, t.ai), trEl,
+            el("div", { class: "tools" }, el("button", { onclick: () => TTS.speak(t.ai, { level: L }) }, icon("speaker"), "Dinle"), el("button", { onclick: () => { trEl.hidden = !trEl.hidden; } }, "Türkçe"))),
+          hint,
+          el("div", { class: "composer" }, micButton(ta), ta, send),
+          el("button", { class: "btn ghost small", onclick: (e) => { hint.hidden = false; hintUsed = true; e.currentTarget.disabled = true; } }, icon("bulb"), "İpucu"),
+          fb);
+        TTS.speak(t.ai, { level: L, silent: true });
+        timer = setInterval(() => {
+          const left = Math.max(0, limit - (Date.now() - t0));
+          timebar.firstChild.style.width = (left / limit) * 100 + "%";
+          secs.textContent = Math.ceil(left / 1000) + " sn";
+          timebar.classList.toggle("urgent", left < 10000);
+          if (!left) judge(ta.value, true);
+        }, 200);
+        onLeave = () => clearInterval(timer);
+
+        function judge(text, timeout) {
+          if (done) return;
+          if (!timeout && !norm(text)) return;
+          done = true; clearInterval(timer); onLeave = null; TTS.stop();
+          ta.disabled = true; send.disabled = true;
+          const hits = t.keys.filter((k) => hasKey(text, k));
+          const ok = !timeout && hits.length > 0;
+          const fast = Date.now() - t0 < limit / 2;
+          const delta = ok ? (hintUsed ? 5 : fast ? 20 : 15) : -12;
+          interest = Math.max(0, Math.min(100, interest + delta));
+          setMeter();
+          if (ok) { right++; haptic(); if (L !== "C2") L = levelUp(L); if (levelIdx(L) > levelIdx(maxL)) maxL = L; }
+          fb.append(el("div", { class: "bubble tip " + (ok ? "" : "warn") }, timeout ? "Süre doldu. Güçlü bir cevap şöyle olabilirdi: “" + t.hint + "”" : ok ? "İkna edici! “" + hits[0] + "” tam yerinde. İlgi +" + delta + "." + (L !== startL ? " Sıradaki soru " + L + " seviyesinde." : "") : "Sarah tam ikna olmadı. Daha güçlü cevap: “" + t.hint + "”"));
+          q++;
+          fb.append(el("button", { class: "btn wide", id: "duel-next", onclick: () => (q >= DUEL_Q ? finish() : ask()) }, q >= DUEL_Q ? "Sonucu gör" : "Sıradaki soru", icon("next")));
+          fb.lastChild.scrollIntoView({ behavior: "smooth", block: "center" });
+        }
+      }
+
+      function finish() {
+        const win = interest >= 70, maybe = !win && interest >= 40;
+        addXp(right * 5 + (win ? 20 : 5));
+        state.duel.played++; if (win) state.duel.wins++; state.duel.best = Math.max(state.duel.best || 0, interest); save();
+        const offer = DUEL_OFFER[maxL];
+        top.remove();
+        stage.replaceChildren(el("div", { class: "card center done-card" },
+          el("div", { class: "badge-big" + (win ? "" : " muted-badge") }, icon(win ? "handshake" : "info")),
+          el("p", { class: "eyebrow" }, "Sarah'nın kararı"),
+          el("h2", { class: "duel-verdict" }, win ? "Yatırım aldın!" : maybe ? "İkinci görüşme" : "Şimdilik hayır"),
+          el("p", { class: "muted" }, win ? euro(offer) + ", %20 hisse karşılığında. Sarah: “We're in. Let's build this together.”" : maybe ? "Sarah ilgili ama emin değil: “Send me the numbers and let's talk again next week.”" : "Sarah: “Not right now, but keep me posted.” Bir “hayır” çoğu zaman “henüz değil” demektir."),
+          el("p", { class: "small muted" }, right + "/" + DUEL_Q + " ikna edici cevap · ilgi %" + interest + " · en zor soru " + maxL),
+          valueGain(xpStart),
+          el("div", { class: "stack tight", style: "width:100%" },
+            el("button", { class: "btn wide", onclick: () => render() }, "Tekrar dene"),
+            el("button", { class: "btn ghost wide", onclick: () => go("home") }, "Ana sayfa"))));
+        setTimeout(celebrate, 700);
+      }
+    }
+  };
+
+  /* ================= Şirket ================= */
+  routes.company = () => {
+    setTitle("Şirket");
+    const r = roundProgress();
+    const days = Array.from({ length: 14 }, (_, k) => { const t = Date.now() - (13 - k) * DAY; return { k: dateKey(t), d: new Date(t), x: state.activity[dateKey(t)] || 0 }; });
+    let cum = state.xp;
+    for (let k = 13; k >= 0; k--) { days[k].end = cum; days[k].g = gain(cum - days[k].x, cum); cum -= days[k].x; }
+    const week = days.slice(7).reduce((a, d) => a + d.g, 0);
+    const max = Math.max(1, ...days.map((d) => d.g)) * 1.12;
+    const W = 336, H = 140, pad = 4, padR = 18, bw = (W - pad - padR) / 14;
     const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
     svg.setAttribute("viewBox", "0 0 " + W + " " + (H + 22)); svg.setAttribute("class", "chart"); svg.setAttribute("role", "img");
-    svg.setAttribute("aria-label", "Son 14 günün puanları. Bugün " + days[13].v + " puan.");
-    const y = (v) => H - (v / max) * (H - 10);
-    let inner = '<line x1="' + pad + '" x2="' + (W - padR) + '" y1="' + y(state.settings.goal).toFixed(1) + '" y2="' + y(state.settings.goal).toFixed(1) + '" class="goal-line"/>';
-    inner += '<text x="' + (pad + 2) + '" y="' + (y(state.settings.goal) - 5).toFixed(1) + '" class="axis goal-label" text-anchor="start">hedef ' + state.settings.goal + '</text>';
-    days.forEach((x, k) => {
-      const h = Math.max(x.v ? 3 : 0, H - y(x.v)), bx = pad + k * bw + 3;
-      inner += '<rect x="' + bx.toFixed(1) + '" y="' + (H - h).toFixed(1) + '" width="' + (bw - 6).toFixed(1) + '" height="' + h.toFixed(1) + '" rx="4" class="' + (x.v >= state.settings.goal ? "bar hit" : "bar") + '"><title>' + x.k + ": " + x.v + ' puan</title></rect>';
-      if (k % 2 === 1 && k < 13) inner += '<text x="' + (bx + (bw - 6) / 2).toFixed(1) + '" y="' + (H + 16) + '" class="axis" text-anchor="middle">' + x.d.getDate() + "</text>";
-      if (k === 13) inner += '<text x="' + (W - 1) + '" y="' + (H + 16) + '" class="axis" text-anchor="end">bugün</text>';
+    svg.setAttribute("aria-label", "Son 14 günde şirket değerine eklenen değer. Bu hafta " + euro(week) + ".");
+    let inner = "";
+    days.forEach((d, k) => {
+      const h = d.g ? Math.max(3, (d.g / max) * (H - 8)) : 0, bx = pad + k * bw + 3;
+      inner += '<rect x="' + bx.toFixed(1) + '" y="' + (H - h).toFixed(1) + '" width="' + (bw - 6).toFixed(1) + '" height="' + h.toFixed(1) + '" rx="4" class="' + (d.x >= state.settings.goal ? "bar hit" : "bar") + '"><title>' + d.k + ": +" + euro(d.g) + "</title></rect>";
+      if (k % 2 === 1 && k < 13) inner += '<text x="' + (bx + (bw - 6) / 2).toFixed(1) + '" y="' + (H + 16) + '" class="axis" text-anchor="middle">' + d.d.getDate() + "</text>";
     });
+    inner += '<text x="' + (W - 1) + '" y="' + (H + 16) + '" class="axis" text-anchor="end">bugün</text>';
     inner += '<line x1="' + pad + '" x2="' + (W - padR) + '" y1="' + H + '" y2="' + H + '" class="baseline"/>';
     svg.innerHTML = inner;
+    const ri = roundIndex(r.v);
     main.append(
+      companyCard(),
       el("section", { class: "stats four" },
         el("div", { class: "stat" }, el("b", null, String(streakNow())), el("span", null, "gün seri")),
         el("div", { class: "stat" }, el("b", null, String(state.streak.best || 0)), el("span", null, "rekor")),
-        el("div", { class: "stat" }, el("b", null, String(lessonsDone())), el("span", null, "ders")),
+        el("div", { class: "stat" }, el("b", null, chaptersDone() + "/" + ORDER.length), el("span", null, "bölüm")),
         el("div", { class: "stat" }, el("b", null, String(Object.keys(state.srs).length)), el("span", null, "kelime"))),
-      el("section", { class: "card" }, el("div", { class: "row between" }, el("p", { class: "eyebrow" }, "Son 14 gün"), el("span", { class: "small muted tnum" }, state.xp + " toplam puan")), el("div", { class: "chart-wrap" }, svg)),
-      el("section", { class: "card" }, el("p", { class: "eyebrow" }, "Seviyelere göre dersler"),
-        el("div", { class: "levelbars" }, LEVELS.map((L) => { const d = doneAt(L); return el("button", { class: "levelbar" + (L === state.level ? " cur" : ""), onclick: () => setLevel(L) }, el("span", { class: "lv" }, L), el("span", { class: "progressbar" }, el("i", { style: "width:" + Math.round((d / ORDER.length) * 100) + "%" })), el("span", { class: "tnum small muted" }, d + "/" + ORDER.length)); }))),
-      el("section", { class: "card" }, el("p", { class: "eyebrow" }, "Rozetler"),
-        el("div", { class: "badges" }, BADGES.map((b) => { const ok = b.ok(); return el("div", { class: "badge" + (ok ? " on" : "") }, el("span", { class: "b-ic" }, icon(ok ? "star" : "target")), el("b", null, b.t), el("span", null, b.d)); }))));
+      el("section", { class: "card" }, el("div", { class: "row between" }, el("p", { class: "eyebrow" }, "Son 14 günde eklenen değer"), el("span", { class: "small muted tnum" }, "Bu hafta +" + euro(week))),
+        el("div", { class: "chart-wrap" }, svg),
+        el("p", { class: "small muted" }, "Dolu çubuklar günlük hedefe ulaştığın günler. Çalışmadığın günlerde değer düşmez; sadece yatırımcılar biraz endişelenir.")),
+      el("section", { class: "card" }, el("p", { class: "eyebrow" }, "Yatırım turları"),
+        el("ol", { class: "rounds" }, ROUNDS.map((x, k) => el("li", { class: k < ri ? "past" : k === ri ? "now" : "future" },
+          el("span", { class: "r-dot", "aria-hidden": "true" }, k <= ri ? icon("check") : null),
+          el("div", { class: "r-t" }, el("div", { class: "row between" }, el("b", null, x.name), el("span", { class: "small muted tnum" }, euro(x.at))), el("span", { class: "small muted" }, k <= ri ? x.line : k === ri + 1 ? "Kalan: " + euro(x.at - r.v) : "Kilitli")))))),
+      el("section", { class: "card" }, el("p", { class: "eyebrow" }, "Rekorlar"),
+        el("div", { class: "records" },
+          el("div", null, el("b", null, state.duel.wins + " / " + state.duel.played), el("span", null, "düelloda yatırım")),
+          el("div", null, el("b", null, (state.games.listen || 0) + "/10"), el("span", null, "Dinle ve seç")),
+          el("div", null, el("b", null, String(state.games.blitz || 0)), el("span", null, "60 saniye")))),
+      el("section", { class: "card" }, el("p", { class: "eyebrow" }, "Seviyelere göre bölümler"),
+        el("div", { class: "levelbars" }, LEVELS.map((L) => { const d = doneAt(L); return el("button", { class: "levelbar" + (L === state.level ? " cur" : ""), onclick: () => setLevel(L) }, el("span", { class: "lv" }, L), el("span", { class: "progressbar" }, el("i", { style: "width:" + Math.round((d / ORDER.length) * 100) + "%" })), el("span", { class: "tnum small muted" }, d + "/" + ORDER.length)); }))));
+    celebrate();
   };
 
   /* ================= Ayarlar ================= */
@@ -1090,7 +1588,8 @@
     main.append(
       el("section", { class: "card" }, el("p", { class: "eyebrow" }, "Seviye ve hedef"),
         row("Seviye", LEVEL_INFO[state.level].name + ": " + LEVEL_INFO[state.level].desc, seg("level", LEVELS.map((L) => [L, L]), (L) => { setLevel(L); }, state)),
-        row("Günlük hedef", null, seg("goal", [[10, "10 · Rahat"], [20, "20 · Düzenli"], [40, "40 · Yoğun"]], () => updateGoalChip())),
+        row("Günlük hedef", "Hedefe ulaştığın günler şirket grafiğinde dolu görünür.", seg("goal", [[10, "Rahat · 5 dk"], [20, "Düzenli · 10 dk"], [40, "Yoğun · 20 dk"]], () => updateGoalChip())),
+        sw("Hikâye kilitleri", "locks", "Açıkken bölümler sırayla açılır. Kapatırsan istediğin bölümü istediğin zaman oynarsın."),
         el("div", { class: "setting" }, el("button", { class: "btn ghost small", onclick: () => go("placement") }, icon("target"), "Seviye testini yap"))),
       el("section", { class: "card" }, el("p", { class: "eyebrow" }, "Okuma rahatlığı"),
         row("Yazı tipi", "Lexend ve Atkinson Hyperlegible disleksi için okunabilirliği artırır.", seg("font", [["lexend", "Lexend"], ["atkinson", "Atkinson"], ["system", "Sistem"]])),
@@ -1140,7 +1639,9 @@
     main.append(
       el("section", { class: "card" }, el("h2", null, "AIHEAR English"), el("p", { class: "muted" }, "Girişimciler için, gerçek iş durumlarıyla İngilizce. Disleksi dostu tasarlandı."),
         el("ul", { class: "plain" },
-          el("li", null, n + " ders, " + CATALOG.topics.length + " konu, her ders 6 seviyede (" + n * 6 + " metin)."),
+          el("li", null, n + " bölümlük kurucu hikâyesi, 6 sezon, her bölüm 6 seviyede (" + n * 6 + " metin)."),
+          el("li", null, "Her ders AIHEAR'ın değerini artırır; yatırım turları Pre-seed'den unicorn'a kadar."),
+          el("li", null, "Sesli kelime oyunları, Sarah'yla yatırımcı düellosu ve telaffuz karaokesi (Chrome ve Android)."),
           el("li", null, "Her derste 5 adım: metin, kelimeler ve dil yapısı, anlama, kullanım, konuşma."),
           el("li", null, "Kelimeler aralıklı tekrar sistemiyle takip edilir."),
           el("li", null, "İnternetsiz çalışır; telefona uygulama gibi kurulabilir."))),
@@ -1150,7 +1651,7 @@
         el("a", { class: "btn ghost small", href: "privacy.html", target: "_blank", rel: "noopener" }, "Gizlilik politikasının tamamı")),
       el("p", { class: "small muted center" }, "Sürüm " + VERSION));
   };
-  const VERSION = "2.0.0";
+  const VERSION = "2.1.0";
 
   /* ================= Hizmet çalışanı güncellemesi ================= */
   if ("serviceWorker" in navigator && /^https?:$/.test(location.protocol)) {
@@ -1172,5 +1673,5 @@
   render();
   const idle = window.requestIdleCallback || ((f) => setTimeout(f, 800));
   idle(() => loadLevel(state.level).catch(() => {}));
-  window.AIHEAR = { get state() { return state; }, SRS, TTS, loadLevel, version: VERSION };
+  window.AIHEAR = { get state() { return state; }, SRS, TTS, loadLevel, scoreSpeech, valuation, version: VERSION };
 })();

@@ -12,7 +12,7 @@ const fragment = process.argv.includes("--fragment");
 const read = (p) => fs.readFileSync(path.join(ROOT, p), "utf8");
 const html = read("index.html");
 const css = read("css/app.css");
-const scripts = ["content/catalog.js", "content/placement.js", ...["A1", "A2", "B1", "B2", "C1", "C2"].map((l) => `content/levels/${l}.js`), "js/app.js"].map(read).join("\n;\n").replace(/<\/script/gi, "<\\/script");
+const scripts = ["content/catalog.js", "content/placement.js", "content/story.js", ...["A1", "A2", "B1", "B2", "C1", "C2"].map((l) => `content/levels/${l}.js`), "js/app.js"].map(read).join("\n;\n").replace(/<\/script/gi, "<\\/script");
 const body = html.slice(html.indexOf('<div id="app">'), html.indexOf("<!-- build:inline -->"));
 const fonts = '<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&family=Atkinson+Hyperlegible:wght@400;700&display=swap">';
 const doc = fragment
